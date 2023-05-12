@@ -1,0 +1,40 @@
+.header-box {
+  --tw-bg-opacity: 1;
+  background: var(--brend-color);
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+
+  .header-links {
+    float: right;
+    display: flex;
+    padding: 20px;
+
+    a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 40px;
+      font-weight: 500;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    .lng {
+      display: inline-flex;
+      align-items: center;
+
+      .icon-lng {
+        font-size: 20px;
+        margin-right: 5px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1600px) {
+  .header-box {
+    width: 100%;
+  }
+}

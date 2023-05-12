@@ -1,0 +1,45 @@
+.achema {
+  padding: 0 15px;
+  > div {
+    margin: 50px 0;
+    border-bottom: 3px solid var(--brend-color);
+  }
+
+  h1 {
+    margin-bottom: 0;
+  }
+  .sub {
+    font-size: 23px;
+    text-align: center;
+  }
+  span {
+    font-weight: bold;
+    font-size: 18px;
+  }
+}
+
+.day1,
+.day3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  div {
+    img {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 800px) {
+    flex-direction: column;
+    gap: 0;
+
+    div {
+      margin-bottom: 0;
+
+      img {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

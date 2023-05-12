@@ -1,0 +1,50 @@
+// .finger {
+//   cursor: pointer;
+//   background: var(--brend-color);
+//   width: 50px;
+//   height: 50px;
+//   font-size: 100%;
+// }
+
+.cookies {
+  width: 700px;
+  padding: 40px;
+  background: var(--light-blue-color);
+  position: fixed;
+  bottom: 0;
+  right: -100%;
+  font-size: 16px;
+  transition: all 0.5s;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    padding: 20px;
+    font-size: 14px;
+  }
+
+  a {
+    color: var(--dark-blue-color);
+  }
+
+  div {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+
+    button {
+      border: none;
+      background: transparent;
+      color: var(--dark-blue-color);
+      padding: 0;
+      font-size: 16px;
+      cursor: pointer;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+.cookies.active {
+  right: 0;
+}
