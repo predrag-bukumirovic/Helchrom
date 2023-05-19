@@ -38,7 +38,7 @@ export default function Achema() {
         </div>
         {/* Slider end */}
 
-        <div className="box-text">
+        <div>
           <div className="achema">
             <h1 className="title">Achema 2022</h1>
             <center>
@@ -53,7 +53,7 @@ export default function Achema() {
               </p>
             </center>
 
-            <div className="day1">
+            <div className="day1 padding30">
               <div>
                 <span>Day 1.</span>
                 <p>

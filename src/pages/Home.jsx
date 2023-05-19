@@ -138,10 +138,8 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="our-home">
-        <h1 className="title" style={{ marginBottom: 5 }}>
-          OUR SERVICES
-        </h1>
+      <div className="our-home container-main padding30">
+        <h1 className="title">OUR SERVICES</h1>
         <p>
           We provide best-in-class process and chemical engineering solutions to
           clients worldwide.
@@ -192,7 +190,7 @@ export default function Home() {
       </div>
 
       <div className="facts-box">
-        <div className="facts container-main">
+        <div className="facts container-main padding30">
           <div>
             <h2>FACTS ABOUT US</h2>
             <p>
@@ -213,10 +211,10 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="storyline container-main">
-        <h2>OUR STORYLINE</h2>
+      <div className="storyline container-main padding30">
+        <h2 className="title">OUR STORYLINE</h2>
 
-        <p className="padding15">
+        <p>
           Our story began in 2010. and since then we have been providing
           services to international and local leaders.{" "}
         </p>
@@ -295,13 +293,16 @@ export default function Home() {
         </center>
       </div>
 
-      <div className="areas padding15 container-main">
+      <div className="areas padding30 container-main">
         <div className="areas-text">
-          <h2>OUR BUSINESS AREAS</h2>
-          <p>
-            Helmchron is non-exclusively working in the following business
-            segments:
-          </p>
+          <h2 className="title">OUR BUSINESS AREAS</h2>
+
+          <center>
+            <p>
+              Helmchron is non-exclusively working in the following business
+              segments:
+            </p>
+          </center>
         </div>
         <div className="areas-icon">
           <div>
@@ -332,8 +333,8 @@ export default function Home() {
       </div>
 
       <div className="testimonials container-main">
-        <div className="slider-testi padding15">
-          <h2>WE VALUE OUR PARTNERS' FEEDBACK</h2>
+        <div className="slider-testi padding30">
+          <h2 className="title">WE VALUE OUR PARTNERS' FEEDBACK</h2>
           <Carousel
             responsive={responsive}
             showDots={true}

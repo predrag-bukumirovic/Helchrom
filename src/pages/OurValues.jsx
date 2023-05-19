@@ -40,7 +40,7 @@ export default function OurValues() {
       </div>
       {/* Slider end */}
 
-      <div className="box-text">
+      <div className="padding30">
         <h1 className="title">Our values</h1>
 
         <center>

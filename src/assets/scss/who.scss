@@ -5,7 +5,7 @@
   gap: 50px;
 
   div img {
-    width: 220px;
+    width: 100%;
   }
   p {
     text-align: center;
@@ -23,16 +23,18 @@
   background: var(--brend-color);
   width: 100%;
   margin: 80px 0;
-  padding: 10px 0;
+  padding: 50px 0;
   color: var(--light-blue-color);
 
   h2 {
     margin-bottom: 30px;
     margin-top: 0;
+    color: #fff !important;
   }
 
   p {
     text-align: center;
+    font-size: 20px;
     color: var(--light-blue-color) !important;
   }
 
@@ -64,8 +66,13 @@
 .basic {
   display: flex;
   align-items: flex-start;
+  justify-content: center;
   gap: 30px;
   margin-bottom: 50px;
+
+  h2 {
+    margin-top: 0;
+  }
 
   div ul {
     padding-inline-start: 0;

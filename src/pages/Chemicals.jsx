@@ -40,7 +40,7 @@ export default function Chemicals() {
       </div>
       {/* Slider end */}
 
-      <div className="box-text">
+      <div className="padding30">
         <h1 className="title">
           {t("chemicals.title")}
         </h1>

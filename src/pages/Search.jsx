@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import { useSearchParams } from "react-router-dom";
 import searchMap from "../pages/searchMap";
 import "../assets/scss/search.scss";
+import NoResultsImg from "../assets/images/no-results.png";
 
 export default function Search() {
   const [results, setResults] = useState([]);
@@ -29,12 +30,25 @@ export default function Search() {
   );
 
   if (results.length === 0) {
-    return <h2 className="container-main no-result">No results</h2>;
+    return (
+      <div
+        style={{ textAlign: "center" }}
+        className="container-main searchResult"
+      >
+        <img src={NoResultsImg} alt="NoResultsImg" />
+        <h2 className="no-result">
+          Sorry! No results <b>'{search}'</b>
+        </h2>
+      </div>
+    );
   }
 
   return (
     <div className="container-main">
       <ul className="searchResult">
+        <p style={{ textAlign: "start" }}>
+          Result <b>'{search}'</b>
+        </p>
         {results.map((result, index) =>
           <li key={result.path + index}>
             <h1 className="title">

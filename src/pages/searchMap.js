@@ -1,4 +1,5 @@
 import texts from '../texts'
+
 const en = texts.en.translation
 
 const data = {
@@ -15,12 +16,14 @@ const data = {
         en.team1_text3,
         en.who_text4,
         en.team1_text5,
+      
         en.team_contact1,
         en.team2_text1,
         en.team2_text2,
-        en.team_contact2
+        en.team_contact2,
       ]
     },
+
     {
       title: en.title_vm,
       texts: [en.vm_text1, en.vm_text2, en.vm_text3]

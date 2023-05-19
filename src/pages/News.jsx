@@ -40,7 +40,7 @@ export default function News() {
       </div>
       {/* Slider end */}
 
-      <div className="box-text">
+      <div>
         <h1 className="title">FAIRS AND CONFERENCES</h1>
 
         <center>
@@ -55,40 +55,44 @@ export default function News() {
           </p>
         </center>
 
-        <div className="news-box">
+        <div className="news-box padding30">
           <div>
-            <h2>K2022</h2>
-            <span>19 - 26 October 2022 I Dusseldorf, Germany</span>
-            <p>
-              K2022 covered the main challenges and hot topics from the global
-              plastic and rubber industry - circular economy, sustainable
-              materials for the future, and the scope of digitalization in
-              achieving these outcomes.{" "}
-            </p>
-            <a href="/news">Read more</a>
+            <div>
+              <h2>K2022</h2>
+              <span>19 - 26 October 2022 I Dusseldorf, Germany</span>
+              <p>
+                K2022 covered the main challenges and hot topics from the global
+                plastic and rubber industry - circular economy, sustainable
+                materials for the future, and the scope of digitalization in
+                achieving these outcomes.{" "}
+              </p>
+              <a href="/news/k2022">Read more</a>
+            </div>
+            <div>
+              <img src={Dusseldorf} alt="News" />
+            </div>
           </div>
-          <div>
-            <img src={Dusseldorf} alt="News" />
-          </div>
+
+          <div className="line" />
         </div>
 
-        <div className="line" />
-
-        <div className="news-box">
+        <div className="news-box padding30">
           <div>
-            <h2>ACHEMA 2022</h2>
-            <span>22 - 26 August 2022 I Frankfurt, Germany</span>
-            <p>
-              ACHEMA 2022 was focused on the latest trends and innovations in
-              process and chemical engineering, including sustainability,
-              digitalization, and industry 4.0. It provided an opportunity to
-              discuss some of the most pressing challenges of today and assess
-              potential solutions for the future.
-            </p>
-            <a href="/news/achema">Read more</a>
-          </div>
-          <div>
-            <img src={Frankfurt} alt="News" />
+            <div>
+              <h2>ACHEMA 2022</h2>
+              <span>22 - 26 August 2022 I Frankfurt, Germany</span>
+              <p>
+                ACHEMA 2022 was focused on the latest trends and innovations in
+                process and chemical engineering, including sustainability,
+                digitalization, and industry 4.0. It provided an opportunity to
+                discuss some of the most pressing challenges of today and assess
+                potential solutions for the future.
+              </p>
+              <a href="/news/achema">Read more</a>
+            </div>
+            <div>
+              <img src={Frankfurt} alt="News" />
+            </div>
           </div>
         </div>
       </div>

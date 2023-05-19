@@ -1,52 +1,15 @@
-.box-img {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-
-  :nth-child(1) {
-    margin-left: 0;
-  }
-
-  :nth-child(3) {
-    margin-right: 0;
-  }
-
-  .img-text {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 20px;
-    height: 50px;
-
-    p {
-      margin: 0;
-      font-size: 20px !important;
-      font-weight: bold;
-    }
-
-    .text-icon {
-      font-size: 40px;
-      color: var(--gray-text-color);
-    }
-  }
-}
-
 .our-home {
   text-align: center;
-  padding: 0 15px;
-  width: 100%;
+  p {
+    font-size: 20px;
+  }
 
   > div {
     display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    margin: 50px 0;
-    gap: 30px;
+    justify-content: space-between;
+    gap: 10px;
     flex-wrap: wrap;
+    margin-top: 80px;
 
     div {
       width: 250px;
@@ -58,8 +21,12 @@
       }
 
       :nth-child(3) {
-        font-size: 13px;
+        font-size: 15px;
       }
+    }
+
+    @media (max-width: 600px) {
+      justify-content: center;
     }
   }
 }
@@ -68,11 +35,16 @@
   width: 100%;
   background: var(--brend-color);
   padding: 20px 0;
+  margin-top: 80px;
+
+  p {
+    font-size: 20px;
+  }
 
   .facts {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
 
     h2,
@@ -114,14 +86,10 @@
 }
 
 .storyline {
-  margin: 50px auto;
-
-  h2 {
-    text-align: center;
-    font-weight: bold;
-  }
+  margin: 80px auto;
   p {
     text-align: center;
+    font-size: 20px;
   }
 
   > div {
@@ -129,11 +97,9 @@
     justify-content: space-between;
     gap: 10px;
     flex-wrap: wrap;
-    padding: 7.5px;
 
     div {
       width: 200px;
-      padding: 7.5px;
 
       .logos {
         display: flex;
@@ -152,7 +118,7 @@
       }
 
       p {
-        font-size: 14px;
+        font-size: 16px;
       }
 
       span {
@@ -168,12 +134,7 @@
   }
 }
 .testimonials {
-  margin: 50px auto;
-
-  h2 {
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
+  margin-top: 80px;
 
   .testi-item {
     display: flex;
@@ -248,13 +209,9 @@
 }
 
 .areas-text {
-  h2 {
-    color: var(--gray-text-color);
-    font-weight: bold;
-  }
   p {
     color: var(--dark-blue-color);
-    font-size: 16px;
+    font-size: 20px;
   }
 }
 
@@ -263,6 +220,7 @@
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  margin-top: 50px;
 
   @media (max-width: 680px) {
     justify-content: center;
@@ -299,7 +257,7 @@
   }
 
   video {
-    width: 600px;
+    width: 800px;
     margin: 0 auto;
   }
 

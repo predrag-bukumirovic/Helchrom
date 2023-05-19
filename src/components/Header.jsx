@@ -11,7 +11,7 @@ export default function Header() {
           <a className="lng" href="/">
             <GoGlobe className="icon-lng" />ENGLISH
           </a>
-          <a href="/contact">Contact</a>
+          <a href="/contact">CONTACT</a>
         </div>
         <Navbar />
       </div>

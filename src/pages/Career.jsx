@@ -39,7 +39,7 @@ export default function Career() {
         </div>
         {/* Slider end */}
 
-        <div className="box-text">
+        <div>
           <h1 className="title">Join helmchron team</h1>
           <center>
             <p>
@@ -61,7 +61,7 @@ export default function Career() {
         </div>
       </div>
       <div className="career-logo-box">
-        <div className="career-text padding15">
+        <div className="career-text">
           <span>In caase:</span>
           <ul>
             <li>you hold Process or Thermotechnics Engineer Degree,</li>
@@ -75,7 +75,7 @@ export default function Career() {
         </div>
       </div>
 
-      <div className="box-career container-main padding15">
+      <div className="box-career container-main padding30">
         <h2>CONNECT WITH OUR TEAM</h2>
 
         <div className="connect-team">
@@ -110,13 +110,15 @@ export default function Career() {
         </div>
       </div>
 
-      <div className="box-text box-career">
-        <h2>FIND OUT MORE ABOUT WORKING IN OUR TEAM</h2>
+      <div className=" box-career">
+        <h2 style={{ marginBottom: 80 }}>
+          FIND OUT MORE ABOUT WORKING IN OUR TEAM
+        </h2>
 
         <center>
           <iframe
-            width="600"
-            height="300"
+            width="800"
+            height="500"
             loading="lazy"
             src="https://www.youtube.com/embed/kL0TWeEXIzk"
             title="Helmchron - Working in our team"

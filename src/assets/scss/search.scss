@@ -1,7 +1,11 @@
 .searchResult {
   padding-inline-start: 0;
-  margin-top: 150px;
+  margin-top: 200px;
   padding: 0 15px;
+
+  img {
+    width: 150px;
+  }
 }
 .searchResult li {
   list-style: none;
@@ -12,7 +16,7 @@
 }
 
 .no-result {
-  margin-top: 200px;
+  margin-top: 50px;
   font-size: 40px;
   font-weight: normal;
 }

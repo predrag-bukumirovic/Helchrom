@@ -5,18 +5,20 @@
   background-size: cover;
   height: 400px;
   width: 100%;
-  margin-bottom: 100px;
+  margin: 80px 0;
   display: flex;
   justify-content: center;
   align-items: center;
 
   .career-text {
-    margin-left: 300px;
+    margin-left: 200px;
+    padding: 0 30px;
 
     span,
     li,
     p {
       color: #fff !important;
+      font-size: 20px;
     }
   }
 }

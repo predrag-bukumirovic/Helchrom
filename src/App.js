@@ -20,6 +20,8 @@ const Environment = lazy(() => import("./pages/Environment"));
 const Pharma = lazy(() => import("./pages/Pharma"));
 const Chemicals = lazy(() => import("./pages/Chemicals"));
 const Achema = lazy(() => import("./pages/Achema"));
+const K2022 = lazy(() => import("./pages/K2022"));
+const NotFound = lazy(() => import("./pages/NotFound"));
 
 function App() {
 
@@ -51,6 +53,8 @@ function App() {
             <Route path="/pharma" element={<Pharma />} />
             <Route path="/environment" element={<Environment />} />
             <Route path="/news/achema" element={<Achema />} />
+            <Route path="/news/k2022" element={<K2022 />} />
+            <Route path="/*" element={<NotFound />} />
           </Routes>
 
           <Cookies />

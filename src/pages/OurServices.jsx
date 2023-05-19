@@ -46,7 +46,7 @@ export default function OurServices() {
       </div>
       {/* Slider end */}
 
-      <div className="box-text">
+      <div className="">
         <img className="quote" src={quote} alt="quote" />
 
         <h1 className="title">OUR SERVICES</h1>

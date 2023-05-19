@@ -52,7 +52,7 @@ export default function Environment() {
       </div>
       {/* Slider end */}
 
-      <div className="box-text">
+      <div className="padding30">
         <h1 className="title">Environment protection</h1>
 
         <p style={{ textAlign: "center" }}>

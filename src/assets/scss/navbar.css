@@ -33,14 +33,16 @@ nav ul li {
 
 nav ul li a,
 nav ul li span {
-  margin-left: 20px;
-  margin-right: 20px;
-  font-size: 16px;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 13px;
   text-transform: uppercase;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: bold;
   color: var(--gray-text-color);
   cursor: pointer;
+  padding: 10px 20px;
+  transition: .3s;
 }
 
 .menu nav ul {
@@ -50,11 +52,13 @@ nav ul li span {
 
 nav ul li a:hover,
 nav ul li span:hover {
-  color: var(--brend-color) !important;
+  background: var(--brend-color);
+  color: var(--light-blue-color) !important;
 }
 
 nav ul li a.active {
-  color: var(--brend-color) !important;
+  background: var(--brend-color);
+  color: var(--light-blue-color) !important;
 }
 
 .about-us,
@@ -70,18 +74,31 @@ ul li ol.menu-down {
   position: absolute;
   left: 20px;
   background: var(--light-blue-color);
-  padding: 30px 10px 10px 10px;
   z-index: 99999999;
+  animation: menu_down 1s;
 }
 
-ul li ol.menu-down li {
-  margin-bottom: 20px;
+@keyframes menu_down {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 ul li ol.menu-down li a {
   color: var(--gray-text-color);
   margin: 0;
+  padding: 15px 20px;
   text-transform: capitalize !important;
+  display: flex;
+  width: 100%;
+}
+
+ul li ol.menu-down li a:hover {
+  background: var(--brend-color);
+  color: var(--light-blue-color) !important;
 }
 .search {
   display: flex;
@@ -112,6 +129,7 @@ ul li ol.menu-down li a {
 @media (min-width: 1060px) {
   ul li:hover ol.menu-down {
     display: block !important;
+    box-shadow: 0px 10px 30px 2px rgba(0, 0, 0, 0.5);
   }
   .showMenu {
     display: none;
@@ -141,7 +159,7 @@ ul li ol.menu-down li a {
     display: block;
     margin: 0;
     padding: 30px 0 0 0;
-    transition: .8s;
+    transition: .5s all ease-in-out;
     z-index: 9;
     overflow-x: auto;
   }
@@ -161,6 +179,16 @@ ul li ol.menu-down li a {
 
   ul li ol.active {
     display: block !important;
+    animation: menu_down 1s;
+  }
+
+  @keyframes menu_down {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
   }
 
   .internet-mob {
@@ -193,7 +221,7 @@ ul li ol.menu-down li a {
   }
 
   .menu nav ul li {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     width: 100%;
   }
 

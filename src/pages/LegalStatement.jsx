@@ -4,7 +4,7 @@ import Logo from "../assets/images/policy.png";
 export default function LegalStatement() {
   return (
     <div className="container-main">
-      <div className="box-text legal-statement">
+      <div className=" legal-statement">
         <div className="policy-logo">
           <img src={Logo} alt="" />
         </div>

@@ -75,7 +75,7 @@ export default function OurVision() {
         </div>
       </div>
       {/* Slider end */}
-      <div className="box-text container-main">
+      <div className=" container-main">
         <h1 className="title">
           {t("title_vm")}
         </h1>
@@ -97,7 +97,7 @@ export default function OurVision() {
         <div>
           <h2 className="title">OUR STRATEGIC FOCUS AREAS</h2>
 
-          <div className="strategic">
+          <div className="strategic padding30">
             <div onClick={openModal1}>
               <img src={icon1} alt="icon1" />
             </div>
@@ -125,7 +125,7 @@ export default function OurVision() {
       </div>
 
       <div className="facts-box">
-        <div className="facts container-main">
+        <div className="facts  container-main">
           <div>
             <h2>OUR VISION</h2>
             <p>
@@ -150,14 +150,14 @@ export default function OurVision() {
         </div>
       </div>
 
-      <div className="kawasaki container-main padding15">
+      <div className="kawasaki container-main padding30">
         <div>
           <img src={imgTesti} alt="imgTesti" />
 
           <img src={Kawasaki} alt="Kawasaki" />
         </div>
 
-        <p>
+        <p style={{ margin: 0 }}>
           Download our{" "}
           <a href="../HelmchronBrochure.pdf" download>
             new corporate brochure

@@ -53,18 +53,20 @@ export default function OurTeam() {
       </div>
       {/* Slider end */}
 
-      <div className="box-text">
+      <div className="">
         <h1 className="title">
           {t("title_team")}
         </h1>
 
-        <p style={{ textAlign: "center", fontSize: 23 }}>
-          We are a team of professionals with diverse educational backgrounds
-          and experiences passionate about process and chemical engineering.<br />
-          Meet our procurators:
-        </p>
+        <center>
+          <p>
+            We are a team of professionals with diverse educational backgrounds
+            and experiences passionate about process and chemical engineering.<br />
+            Meet our procurators:
+          </p>
+        </center>
 
-        <div className="text-members">
+        <div className="text-members padding30">
           <div className="member">
             <div className="member-img">
               <img src={milos} alt="Milos" />
@@ -131,12 +133,12 @@ export default function OurTeam() {
           <img src={structure} alt="structure" />
         </div>
 
-        <div className="quote">
+        <div className="quote padding30">
           <img src={bigLogo} alt="bigLogo" />
           <img src={quote} alt="quote" />
         </div>
 
-        <div className="our-home">
+        <div className="our-home padding30">
           <h1 className="title">Our values</h1>
           <p>
             We provide best-in-class process and chemical engineering solutions

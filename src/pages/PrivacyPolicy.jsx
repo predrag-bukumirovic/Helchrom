@@ -6,7 +6,7 @@ export default function PrivacyPolicy() {
   const { t } = useTranslation();
   return (
     <div className="container-main">
-      <div className="box-text privacy-policy">
+      <div className=" privacy-policy">
         <div className="policy-logo">
           <img src={Logo} alt="" />
         </div>

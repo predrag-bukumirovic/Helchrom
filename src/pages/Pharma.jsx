@@ -38,7 +38,7 @@ export default function Pharma() {
         </div>
       </div>
       {/* Slider end */}
-      <div className="box-text">
+      <div className="padding30">
         <h1 className="title">PHARMACEUTICALS</h1>
 
         <p style={{ textAlign: "center", fontSize: 20 }}>

@@ -48,11 +48,11 @@ export default function WhoAreWe() {
       </div>
       {/* Slider end */}
 
-      <div className="container-main padding15">
+      <div className="container-main padding30">
         <h1 className="title">
           {t("title_who")}
         </h1>
-        <center>
+        <center className="">
           <p>
             {t("who_text1")}
           </p>
@@ -94,15 +94,15 @@ export default function WhoAreWe() {
             </p>
           </div>
         </div>
-        <center>
+        <center className="">
           <p>
             {t("who_text3")}
           </p>
         </center>
       </div>
       <div className="history">
-        <div className="box-text">
-          <div className="container-main">
+        <div>
+          <div className="container-main padding30">
             <h2 className="title">OUR HISTORY</h2>
 
             <p>
@@ -146,10 +146,12 @@ export default function WhoAreWe() {
       </div>
 
       <div className="container-main">
-        <div className="basic">
+        <div className="basic padding30">
           <img src={basicImg} alt="Basic" />
-          <div className="padding15">
-            <h2>BASIC COMPANY INFORMATION</h2>
+          <div className="padding30">
+            <h2>
+              <b>BASIC COMPANY INFORMATION</b>
+            </h2>
 
             <ul>
               <li>Registered activity: Engineering Services</li>

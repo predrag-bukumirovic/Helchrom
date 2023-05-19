@@ -1,6 +1,5 @@
 import React from "react";
 import "../assets/scss/cookies.scss";
-// import { GiFingerPrint } from "react-icons/gi";
 
 export default function Cookies() {
   setTimeout(() => {
@@ -19,9 +18,6 @@ export default function Cookies() {
   };
   return (
     <div>
-      {/* <div className="finger">
-        <GiFingerPrint />
-      </div> */}
       <div className="cookies">
         We, at Helmchron, consider your data protection a priority. This privacy
         policy only applies to our website, i.e. does not apply to any sites

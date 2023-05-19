@@ -44,7 +44,7 @@ export default function OurCore() {
       </div>
       {/* Slider end */}
 
-      <div className="box-text">
+      <div>
         <img className="quote" src={quote} alt="quote" />
 
         <h1 className="title">Our core competencies</h1>
