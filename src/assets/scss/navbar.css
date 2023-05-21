@@ -35,7 +35,7 @@ nav ul li a,
 nav ul li span {
   margin-left: 10px;
   margin-right: 10px;
-  font-size: 13px;
+  font-size: 15px;
   text-transform: uppercase;
   text-decoration: none;
   font-weight: bold;
@@ -72,7 +72,7 @@ ul li ol.menu-down {
   display: none;
   width: max-content;
   position: absolute;
-  left: 20px;
+  left: 10px;
   background: var(--light-blue-color);
   z-index: 99999999;
   animation: menu_down 1s;

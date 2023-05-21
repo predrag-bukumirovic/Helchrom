@@ -47,7 +47,9 @@ export default function OurServices() {
       {/* Slider end */}
 
       <div className="">
-        <img className="quote" src={quote} alt="quote" />
+        <div className="quote-box">
+          <img className="quote" src={quote} alt="quote" />
+        </div>
 
         <h1 className="title">OUR SERVICES</h1>
 
@@ -114,6 +116,24 @@ export default function OurServices() {
             </center>
           </div>
         </div>
+
+        <div style={{ marginTop: 0 }} className="video-envi">
+          <h3 style={{ marginTop: 0 }} className="title">
+            HOW CAN WE SUPPORT YOU?
+          </h3>
+
+          <iframe
+            width="600"
+            height="300"
+            src="https://www.youtube.com/embed/83NXIfcKSzs"
+            title="Helmchron - Our Business areas and Services"
+            frameborder="0"
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          />
+        </div>
+
         <center>
           <p>
             For detailed information on services, projects and references,

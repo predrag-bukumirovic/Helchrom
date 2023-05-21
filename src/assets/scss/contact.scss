@@ -57,18 +57,25 @@ form {
 
 .icon-contact {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   text-align: center;
+  flex-wrap: wrap;
   margin: 80px 0;
-  gap: 30px;
+  gap: 150px;
 
   img {
     width: 200px;
+    transition: .6s;
+
+    &:hover {
+      transform: scale(1.07);
+    }
   }
 
   p {
     margin-top: 25px;
+    font-size: 25px;
   }
 }
 

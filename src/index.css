@@ -50,8 +50,12 @@ center {
   text-align: center;
   font-size: 35px;
   font-weight: 700;
-  margin: 50px 0;
+  margin: 80px 0 50px 0;
   text-transform: uppercase;
+}
+
+.text-title p {
+  font-size: 24px;
 }
 
 h1,
@@ -114,7 +118,6 @@ footer {
 .privacy-policy,
 .legal-statement {
   padding: 0 200px;
-  margin-top: 120px;
 }
 
 .policy-logo img {

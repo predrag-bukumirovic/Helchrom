@@ -4,7 +4,7 @@ import "../assets/scss/who.scss";
 
 import mainImg from "../assets/images/Who/who1.webp";
 import mainImg1 from "../assets/images/Who/who2.webp";
-import mainImg2 from "../assets/images/Who/who3.webp";
+import mainImg2 from "../assets/images/Who/who3.jpg";
 import { CCarousel, CCarouselItem, CImage } from "@coreui/react";
 import "@coreui/coreui/dist/css/coreui.min.css";
 import { useTranslation } from "react-i18next";
@@ -13,7 +13,7 @@ import icon1 from "../assets/images/Who/Chemicals.png";
 import icon2 from "../assets/images/Who/Pharmaceuticals.png";
 import icon3 from "../assets/images/Who/Vehicles.png";
 import icon4 from "../assets/images/Who/Environment.png";
-import basicImg from "../assets/images/Who/basicImg.webp";
+import basicImg from "../assets/images/Who/basicImg.png";
 
 import dubleLogo from "../assets/images/Who/dubleWhite.png";
 
@@ -52,7 +52,7 @@ export default function WhoAreWe() {
         <h1 className="title">
           {t("title_who")}
         </h1>
-        <center className="">
+        <center>
           <p>
             {t("who_text1")}
           </p>
@@ -62,36 +62,44 @@ export default function WhoAreWe() {
         </center>
         <div className="who-icon">
           <div>
-            <img src={icon1} alt="icon1" />
-            <p>
-              <b>
-                {t("ul1")}
-              </b>
-            </p>
+            <a href="/chemicals">
+              <img src={icon1} alt="icon1" />
+              <p>
+                <b>
+                  {t("ul1")}
+                </b>
+              </p>
+            </a>
           </div>
           <div>
-            <img src={icon2} alt="icon2" />
-            <p>
-              <b>
-                {t("ul2")}
-              </b>
-            </p>
+            <a href="/pharma">
+              <img src={icon2} alt="icon2" />
+              <p>
+                <b>
+                  {t("ul2")}
+                </b>
+              </p>
+            </a>
           </div>
           <div>
-            <img src={icon3} alt="icon3" />
-            <p>
-              <b>
-                {t("ul3")}
-              </b>
-            </p>
+            <a href="/vehicles">
+              <img src={icon3} alt="icon3" />
+              <p>
+                <b>
+                  {t("ul3")}
+                </b>
+              </p>
+            </a>
           </div>
           <div>
-            <img src={icon4} alt="icon4" />
-            <p>
-              <b>
-                {t("ul4")}
-              </b>
-            </p>
+            <a href="/environment">
+              <img src={icon4} alt="icon4" />
+              <p>
+                <b>
+                  {t("ul4")}
+                </b>
+              </p>
+            </a>
           </div>
         </div>
         <center className="">
@@ -175,11 +183,11 @@ export default function WhoAreWe() {
               <li>
                 Linkedin profile:{" "}
                 <a
-                  href="https://www.linkedin.com/company/helmchron/"
+                  href="https://www.linkedin.com/in/milos-ivosevic-300263166/"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  Helmchron_global
+                  milos-ivosevic
                 </a>{" "}
               </li>
             </ul>

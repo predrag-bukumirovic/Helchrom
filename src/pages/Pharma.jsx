@@ -41,15 +41,17 @@ export default function Pharma() {
       <div className="padding30">
         <h1 className="title">PHARMACEUTICALS</h1>
 
-        <p style={{ textAlign: "center", fontSize: 20 }}>
-          We provide best-in-class process and chemical engineering solutions in
-          all segments of pharmaceutical and biotechnology manufacturing.{" "}
-        </p>
+        <center>
+          <p>
+            We provide best-in-class process and chemical engineering solutions
+            in all segments of pharmaceutical and biotechnology manufacturing.{" "}
+          </p>
 
-        <p style={{ textAlign: "center", marginTop: 30 }}>
-          Our reference list includes pharmaceutical innovator companies and
-          various pharmaceutical forms:
-        </p>
+          <p>
+            Our reference list includes pharmaceutical innovator companies and
+            various pharmaceutical forms:
+          </p>
+        </center>
 
         <div className="box-pharma">
           <div>

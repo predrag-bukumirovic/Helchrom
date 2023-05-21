@@ -89,7 +89,7 @@
   .box-img {
     > div {
       width: 100%;
-      margin: 0 10px;
+      margin: 0 2px;
       position: relative;
 
       img {
@@ -153,6 +153,16 @@
 
   p {
     color: #0000ff;
+  }
+}
+
+.references {
+  li {
+    font-size: 13px;
+  }
+
+  p {
+    font-size: 13px;
   }
 }
 

@@ -93,7 +93,7 @@ export default function Contact() {
           </p>
         </center>
 
-        <div className="icon-contact padding30">
+        <div className="icon-contact container-main padding30">
           <div>
             <a
               href="https://www.google.com/maps/place/Helmchron/@44.8191938,20.4047006,17z/data=!4m14!1m7!3m6!1s0x475a65428c286c47:0x23ade1e32fe70968!2sHelmchron!8m2!3d44.8191938!4d20.4072755!16s%2Fg%2F11qby527tz!3m5!1s0x475a65428c286c47:0x23ade1e32fe70968!8m2!3d44.8191938!4d20.4072755!16s%2Fg%2F11qby527tz"

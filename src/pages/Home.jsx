@@ -8,7 +8,7 @@ import Video from "../assets/videos/Ver4WhoweareHCvideo.mp4";
 import Poster from "../assets/images/poster.jpg";
 import mainImg from "../assets/images/Home/main-img.jpg";
 import mainImg1 from "../assets/images/Home/main-img1.jpg";
-import mainImg2 from "../assets/images/Home/main-img2.jpg";
+import mainImg2 from "../assets/images/Home/main-img2.png";
 import dubleLogo from "../assets/images/dubleLogo.png";
 
 import bigLogo from "../assets/images/Home/bigLogo.png";
@@ -310,7 +310,7 @@ export default function Home() {
               <LazyLoadImage src={Chemicals} alt="Chemicals" />
             </a>
             <center>
-              <p>Read more</p>
+              <a href="/chemicals">Read more</a>
             </center>
           </div>
           <div>
@@ -318,7 +318,7 @@ export default function Home() {
               <LazyLoadImage src={Pharma} alt="Pharma" />
             </a>
             <center>
-              <p>Read more</p>
+              <a href="/pharma">Read more</a>
             </center>
           </div>
           <div>
@@ -326,7 +326,7 @@ export default function Home() {
               <LazyLoadImage src={Environment} alt="Environment" />
             </a>
             <center>
-              <p>Read more</p>
+              <a href="/environment">Read more</a>
             </center>
           </div>
         </div>

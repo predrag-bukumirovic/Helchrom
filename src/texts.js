@@ -10,7 +10,7 @@ const data = {
       ul1: "Chemicals",
       ul2: "Pharmaceutical products",
       ul3: "Vehicles manufacturing",
-      ul4: "Environment protection",
+      ul4: "Environmental protection",
       who_text3:
         "Most of our expertise comes from German and Serbian markets and is a combination of our diverse educational and professional backgrounds. Our knowledge, passion and commitment are integral parts of everything we do and make our team your trustworthy, long-term partner.",
       who_text4: "Contact us for more information at ",

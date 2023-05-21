@@ -75,7 +75,7 @@ export default function OurVision() {
         </div>
       </div>
       {/* Slider end */}
-      <div className=" container-main">
+      <div className="container-main">
         <h1 className="title">
           {t("title_vm")}
         </h1>

@@ -45,7 +45,9 @@ export default function OurCore() {
       {/* Slider end */}
 
       <div>
-        <img className="quote" src={quote} alt="quote" />
+        <div className="quote-box">
+          <img className="quote" src={quote} alt="quote" />
+        </div>
 
         <h1 className="title">Our core competencies</h1>
 
@@ -81,7 +83,7 @@ export default function OurCore() {
           </div>
         </div>
 
-        <div className="core-item">
+        <div className="core-item core2">
           <div className="flip-card">
             <div className="flip-card-inner">
               <div className="flip-card-front">
@@ -111,6 +113,23 @@ export default function OurCore() {
               <p href="/">Read more</p>
             </center>
           </div>
+        </div>
+
+        <div style={{ marginTop: 0 }} className="video-envi">
+          <h3 style={{ marginTop: 0 }} className="title">
+            HOW CAN WE SUPPORT YOU?
+          </h3>
+
+          <iframe
+            width="600"
+            height="300"
+            src="https://www.youtube.com/embed/83NXIfcKSzs"
+            title="Helmchron - Our Business areas and Services"
+            frameborder="0"
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          />
         </div>
 
         <center>

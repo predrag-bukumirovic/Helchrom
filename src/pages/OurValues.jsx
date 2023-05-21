@@ -148,7 +148,7 @@ export default function OurValues() {
         </div>
 
         <div className="video-envi">
-          <h3>WHAT CONNECTS US?</h3>
+          <h3 className="title">WHAT CONNECTS US?</h3>
 
           <iframe
             width="600"

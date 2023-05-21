@@ -62,7 +62,7 @@ export default function Career() {
       </div>
       <div className="career-logo-box">
         <div className="career-text">
-          <span>In caase:</span>
+          <span>In case:</span>
           <ul>
             <li>you hold Process or Thermotechnics Engineer Degree,</li>
             <li>you are located in Belgrade and</li>

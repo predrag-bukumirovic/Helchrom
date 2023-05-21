@@ -53,7 +53,7 @@ export default function Environment() {
       {/* Slider end */}
 
       <div className="padding30">
-        <h1 className="title">Environment protection</h1>
+        <h1 className="title">ENVIRONMENTAL protection</h1>
 
         <p style={{ textAlign: "center" }}>
           No matter what we do, achieving our outcomes and vision while taking
@@ -107,7 +107,7 @@ export default function Environment() {
         </p>
 
         <div className="video-envi">
-          <h3>PLASTICS - THEN AND NOW</h3>
+          <h3 className="title">PLASTICS - THEN AND NOW</h3>
 
           <iframe
             width="600"
@@ -122,7 +122,7 @@ export default function Environment() {
         </div>
 
         <h2 className="subtitle">References:</h2>
-        <ol>
+        <ol className="references">
           <li>
             Can chemical engineering save the world from mounting plastic
             pollution? Available at:{" "}

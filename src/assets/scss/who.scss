@@ -13,6 +13,10 @@
     margin-top: 20px;
   }
 
+  a {
+    text-decoration: none;
+  }
+
   @media (max-width: 810px) {
     flex-wrap: wrap;
     justify-content: center;

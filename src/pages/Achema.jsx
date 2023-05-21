@@ -41,9 +41,9 @@ export default function Achema() {
         <div>
           <div className="achema">
             <h1 className="title">Achema 2022</h1>
-            <center>
+            <center className="text-title">
               <p className="sub">22 - 26 August 2022 I Frankfurt, Germany</p>
-              <p style={{ marginTop: 50, fontSize: 20 }}>
+              <p style={{ marginTop: 50 }}>
                 ACHEMA 2022 brought together industry leaders, researchers, and
                 innovators from around the world and our team attended it.{" "}
                 <br /> The event showcased the latest trends and innovations in

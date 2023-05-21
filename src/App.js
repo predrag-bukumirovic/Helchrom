@@ -17,6 +17,7 @@ const Footer = lazy(() => import("./components/Footer"));
 const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy"));
 const LegalStatement = lazy(() => import("./pages/LegalStatement"));
 const Environment = lazy(() => import("./pages/Environment"));
+const Vehicles = lazy(() => import("./pages/Vehicles"));
 const Pharma = lazy(() => import("./pages/Pharma"));
 const Chemicals = lazy(() => import("./pages/Chemicals"));
 const Achema = lazy(() => import("./pages/Achema"));
@@ -52,6 +53,7 @@ function App() {
             <Route path="/chemicals" element={<Chemicals />} />
             <Route path="/pharma" element={<Pharma />} />
             <Route path="/environment" element={<Environment />} />
+            <Route path="/vehicles" element={<Vehicles />} />
             <Route path="/news/achema" element={<Achema />} />
             <Route path="/news/k2022" element={<K2022 />} />
             <Route path="/*" element={<NotFound />} />

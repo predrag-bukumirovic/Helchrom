@@ -1,9 +1,41 @@
 import React from "react";
 import Logo from "../assets/images/policy.png";
+import { CCarousel, CCarouselItem, CImage } from "@coreui/react";
+import mainImg from "../assets/images/Legal/1.jpg";
+import mainImg1 from "../assets/images/Legal/2.jpeg";
+import mainImg2 from "../assets/images/Legal/3.jpeg";
+import "@coreui/coreui/dist/css/coreui.min.css";
+import "../assets/scss/slider.scss";
 
 export default function LegalStatement() {
   return (
     <div className="container-main">
+      {/* Slider start */}
+      <CCarousel className="slider-main" controls transition="crossfade">
+        <CCarouselItem>
+          <CImage className="d-block w-100" src={mainImg} alt="slide 1" />
+        </CCarouselItem>
+        <CCarouselItem>
+          <CImage className="d-block w-100" src={mainImg1} alt="slide 2" />
+        </CCarouselItem>
+        <CCarouselItem>
+          <CImage className="d-block w-100" src={mainImg2} alt="slide 3" />
+        </CCarouselItem>
+      </CCarousel>
+
+      <div className="box-img">
+        <div>
+          <img src={mainImg} alt="Main" />
+        </div>
+        <div>
+          <img src={mainImg1} alt="Main" />
+        </div>
+        <div>
+          <img src={mainImg2} alt="Main" />
+        </div>
+      </div>
+      {/* Slider end */}
+
       <div className=" legal-statement">
         <div className="policy-logo">
           <img src={Logo} alt="" />

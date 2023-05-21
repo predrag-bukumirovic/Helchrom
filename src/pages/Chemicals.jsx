@@ -79,7 +79,7 @@ export default function Chemicals() {
           </div>
         </div>
 
-        <p>
+        <p style={{ marginBottom: 50 }}>
           {t("chemicals.text6")}{" "}
           <a href="mailto:milos.ivosevic@helmchron.com">
             milos.ivosevic@helmchron.com
