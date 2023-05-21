@@ -39,7 +39,7 @@ export default function Achema() {
         {/* Slider end */}
 
         <div>
-          <div className="achema">
+          <div className="achema padding30">
             <h1 className="title">Achema 2022</h1>
             <center className="text-title">
               <p className="sub">22 - 26 August 2022 I Frankfurt, Germany</p>
@@ -53,7 +53,7 @@ export default function Achema() {
               </p>
             </center>
 
-            <div className="day1 padding30">
+            <div className="day1">
               <div>
                 <span>Day 1.</span>
                 <p>
@@ -121,7 +121,7 @@ export default function Achema() {
               </div>
             </div>
 
-            <div>
+            <div className="day4">
               <span>Day 4.</span>
               <p>
                 The final day of ACHEMA 2022 was focused on the latest trends
