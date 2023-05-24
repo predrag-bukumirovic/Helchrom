@@ -3,7 +3,7 @@ footer {
 }
 .footer-container {
   background: var(--brend-color);
-  color: var(--light-blue-color);
+  color: #fff;
   padding: 50px 10px 0;
 
   .copyright {
@@ -38,7 +38,7 @@ footer {
   a {
     display: block;
     text-decoration: none;
-    color: var(--light-blue-color);
+    color: #fff;
     font-size: 18px;
 
     &:hover {

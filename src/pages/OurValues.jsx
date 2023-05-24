@@ -1,9 +1,9 @@
 import React from "react";
 import "../assets/scss/slider.scss";
 import "../assets/scss/mission-vision.scss";
-import mainImg from "../assets/images/Values/baner1.webp";
-import mainImg1 from "../assets/images/Values/baner2.webp";
-import mainImg2 from "../assets/images/Values/baner3.webp";
+import mainImg from "../assets/images/Values/baner1.jpg";
+import mainImg1 from "../assets/images/Values/baner2.jpg";
+import mainImg2 from "../assets/images/Values/baner3.jpg";
 import Integrity from "../assets/images/Values/1.png";
 import valueicon2 from "../assets/images/Values/2.png";
 import agility from "../assets/images/Values/3.png";

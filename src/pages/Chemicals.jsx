@@ -1,8 +1,8 @@
 import React from "react";
 import "../assets/scss/slider.scss";
-import mainImg from "../assets/images/Chemicals/chemicals1.webp";
-import mainImg1 from "../assets/images/Chemicals/chemicals2.webp";
-import mainImg2 from "../assets/images/Chemicals/chemicals3.webp";
+import mainImg from "../assets/images/Chemicals/chemicals1.jpg";
+import mainImg1 from "../assets/images/Chemicals/chemicals2.jpg";
+import mainImg2 from "../assets/images/Chemicals/chemicals3.jpg";
 import { CCarousel, CCarouselItem, CImage } from "@coreui/react";
 import "@coreui/coreui/dist/css/coreui.min.css";
 import icon1 from "../assets/images/Chemicals/1.png";

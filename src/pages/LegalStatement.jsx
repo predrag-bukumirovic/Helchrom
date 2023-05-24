@@ -56,7 +56,7 @@ export default function LegalStatement() {
           understood this Legal statement.
         </p>
 
-        <h2>No warranty and liability</h2>
+        <h2 className="sub-title">No warranty and liability</h2>
 
         <p>
           Helmchron is dedicated to providing accurate and up-to-date
@@ -75,13 +75,13 @@ export default function LegalStatement() {
           omissions in the content.
         </p>
 
-        <h2>Links to third parties</h2>
+        <h3 className="sub-title">Links to third parties</h3>
         <p>
           Helmchron disclaims any liability for information on third party
           websites and its use, even if they can be accessed from our website.
           These links are provided for your convenience only.
         </p>
-        <h2>Copyright and intellectual property</h2>
+        <h3 className="sub-title">Copyright and intellectual property</h3>
         <p>
           Content on this website (excluding banner photos) are subject to
           copyright and other intellectual property protection laws. This

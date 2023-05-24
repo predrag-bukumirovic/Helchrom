@@ -2,9 +2,9 @@ import React from "react";
 import "../assets/scss/slider.scss";
 import "../assets/scss/who.scss";
 
-import mainImg from "../assets/images/Who/who1.webp";
-import mainImg1 from "../assets/images/Who/who2.webp";
-import mainImg2 from "../assets/images/Who/who3.jpg";
+import mainImg from "../assets/images/Who/who3.jpg";
+import mainImg1 from "../assets/images/Who/who1.jpg";
+import mainImg2 from "../assets/images/Who/who2.png";
 import { CCarousel, CCarouselItem, CImage } from "@coreui/react";
 import "@coreui/coreui/dist/css/coreui.min.css";
 import { useTranslation } from "react-i18next";

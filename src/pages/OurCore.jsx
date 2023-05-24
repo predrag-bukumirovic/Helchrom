@@ -1,9 +1,9 @@
 import React from "react";
 import "../assets/scss/slider.scss";
 import "../assets/scss/services.scss";
-import mainImg from "../assets/images/c-s1.webp";
-import mainImg1 from "../assets/images/c-s2.webp";
-import mainImg2 from "../assets/images/c-s3.webp";
+import mainImg from "../assets/images/OurCore/c-s1.jpg";
+import mainImg1 from "../assets/images/OurCore/c-s2.jpg";
+import mainImg2 from "../assets/images/OurCore/c-s3.jpg";
 import core1 from "../assets/images/OurCore/1.1.png";
 import coreflip1 from "../assets/images/OurCore/1.2.png";
 import core2 from "../assets/images/OurCore/2.1.png";

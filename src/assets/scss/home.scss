@@ -37,6 +37,7 @@
   background: var(--brend-color);
   padding: 20px 0;
   margin-top: 80px;
+  position: relative;
 
   p {
     font-size: 20px;
@@ -48,9 +49,16 @@
     justify-content: space-around;
     flex-wrap: wrap;
 
+    div {
+      padding-top: 0 !important;
+    }
+    h2 {
+      padding-top: 0 !important;
+    }
+
     h2,
     p {
-      color: var(--light-blue-color) !important;
+      color: #fff !important;
       padding-left: 0 !important;
       margin-bottom: 2rem;
     }
@@ -71,16 +79,21 @@
     :nth-child(2) img {
       width: 300px;
     }
+
+    @media (max-width: 1060px) {
+      :nth-child(2) img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100% !important;
+      }
+    }
   }
 
   @media (max-width: 720px) {
     .facts {
       :nth-child(1) {
         width: 100%;
-      }
-
-      :nth-child(2) img {
-        width: 60%;
       }
     }
   }

@@ -3,7 +3,7 @@ import "@coreui/coreui/dist/css/coreui.min.css";
 import "../assets/scss/mission-vision.scss";
 import "../assets/scss/slider.scss";
 import { CCarousel, CCarouselItem, CImage } from "@coreui/react";
-import mainImg from "../assets/images/Vehicles/baner1.jpeg";
+import mainImg from "../assets/images/Vehicles/baner1.jpg";
 import mainImg1 from "../assets/images/Vehicles/baner2.jpg";
 import mainImg2 from "../assets/images/Vehicles/baner3.jpg";
 

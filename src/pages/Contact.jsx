@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import "../assets/scss/contact.scss";
 import "../assets/scss/slider.scss";
-import mainImg from "../assets/images/Contact/contact1.webp";
-import mainImg1 from "../assets/images/Contact/contact2.webp";
-import mainImg2 from "../assets/images/Contact/contact3.webp";
+import mainImg from "../assets/images/Contact/contact1.jpg";
+import mainImg1 from "../assets/images/Contact/contact2.jpg";
+import mainImg2 from "../assets/images/Contact/contact3.jpg";
 import icon1 from "../assets/images/Contact/1.png";
 import icon2 from "../assets/images/Contact/2.png";
 import icon3 from "../assets/images/Contact/3.png";
@@ -11,49 +11,41 @@ import { CCarousel, CCarouselItem, CImage } from "@coreui/react";
 import "@coreui/coreui/dist/css/coreui.min.css";
 
 export default function Contact() {
-  const [name, setName] = useState("");
-  const [company, setCompany] = useState("");
-  const [email, setEmail] = useState("");
-  const [position, setPosition] = useState("");
-  const [phone, setPhone] = useState("");
-  const [subject, setSubject] = useState("");
-  const [message, setMessage] = useState("");
+  // const [name, setName] = useState("");
+  // const [company, setCompany] = useState("");
+  // const [email, setEmail] = useState("");
+  // const [position, setPosition] = useState("");
+  // const [phone, setPhone] = useState("");
+  // const [subject, setSubject] = useState("");
+  // const [message, setMessage] = useState("");
 
-  const submitForm = async e => {
-    e.preventDefault();
+  // const submitForm = async e => {
+  //   e.preventDefault();
 
-    try {
-      await fetch("/contact.php", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify({
-          name: name,
-          email: email,
-          subject: subject,
-          message: `
-            Name: ${name}<br />
-            Company: ${company}<br />
-            Email: ${email}<br />
-            Position: ${position}<br />
-            Phone: ${phone}<br />
-            Message: ${message}
-          `
-        })
-      });
-
-      // clear form
-      // setName("");
-      // setCompany("");
-      // setEmail("");
-      // setPhone("");
-      // setMessage("");
-      // setSubject("");
-    } catch (e) {
-      console.error(e);
-    }
-  };
+  //   try {
+  //     await fetch("/contact.php", {
+  //       method: "POST",
+  //       headers: {
+  //         "Content-Type": "application/json"
+  //       },
+  //       body: JSON.stringify({
+  //         name: name,
+  //         email: email,
+  //         subject: subject,
+  //         message: `
+  //           Name: ${name}<br />
+  //           Company: ${company}<br />
+  //           Email: ${email}<br />
+  //           Position: ${position}<br />
+  //           Phone: ${phone}<br />
+  //           Message: ${message}
+  //         `
+  //       })
+  //     });
+  //   } catch (e) {
+  //     console.error(e);
+  //   }
+  // };
 
   return (
     <div className="container-main">
@@ -129,50 +121,32 @@ export default function Contact() {
         </center>
 
         <div className="form padding30">
-          <form onSubmit={submitForm}>
+          <form method="post" action="./contact.php">
             <div>
               <label htmlFor="">
                 Full Name <span className="star">*</span>
                 <input
-                  value={name}
                   type="text"
                   placeholder="Full Name"
+                  name="name"
                   required
-                  onChange={e => setName(e.target.value)}
                 />
               </label>
               <label htmlFor="company">
                 Company
-                <input
-                  type="text"
-                  placeholder="Company"
-                  onChange={e => setCompany(e.target.value)}
-                />
+                <input type="text" placeholder="Company" name="company" />
               </label>
               <label htmlFor="email">
                 Email <span className="star">*</span>
-                <input
-                  type="email"
-                  placeholder="Email"
-                  required
-                  onChange={e => setEmail(e.target.value)}
-                />
+                <input type="email" placeholder="Email" required name="email" />
               </label>
               <label htmlFor="position">
                 Position
-                <input
-                  type="text"
-                  placeholder="Position"
-                  onChange={e => setPosition(e.target.value)}
-                />
+                <input type="text" placeholder="Position" name="position" />
               </label>
               <label htmlFor="number">
                 Phone Number
-                <input
-                  type="number"
-                  placeholder="Phone Number"
-                  onChange={e => setPhone(e.target.value)}
-                />
+                <input type="number" placeholder="Phone Number" name="phone" />
               </label>
             </div>
 
@@ -182,8 +156,8 @@ export default function Contact() {
                 <input
                   type="text"
                   placeholder="Subject"
+                  name="subject"
                   required
-                  onChange={e => setSubject(e.target.value)}
                 />
               </label>
               <label htmlFor="message">
@@ -192,8 +166,8 @@ export default function Contact() {
                   placeholder="Message"
                   cols="30"
                   rows="10"
+                  name="message"
                   required
-                  onChange={e => setMessage(e.target.value)}
                 />
               </label>
 

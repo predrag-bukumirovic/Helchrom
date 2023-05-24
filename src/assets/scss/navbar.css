@@ -148,7 +148,7 @@ ul li ol.menu-down li a:hover {
   }
 }
 
-@media (max-width: 1115px) {
+@media (max-width: 1178px) {
   .menu nav ul {
     background: #fff;
     position: fixed;

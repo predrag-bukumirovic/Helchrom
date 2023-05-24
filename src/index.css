@@ -55,7 +55,7 @@ center {
 }
 
 .text-title p {
-  font-size: 24px;
+  font-size: 22px;
 }
 
 h1,
@@ -93,6 +93,9 @@ footer {
   .title {
     font-size: 30px;
   }
+  p {
+    font-size: 18px;
+  }
 }
 
 @keyframes transitionIn {
@@ -122,6 +125,11 @@ footer {
 
 .policy-logo img {
   width: 100%;
+}
+
+.sub-title {
+  font-weight: bold;
+  font-size: 28px;
 }
 
 @media (max-width: 1130px) {

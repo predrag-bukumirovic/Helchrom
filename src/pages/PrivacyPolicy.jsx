@@ -66,7 +66,7 @@ export default function PrivacyPolicy() {
           {t("plicy.text4")}
         </p>
 
-        <h3>
+        <h3 className="sub-title">
           {t("plicy.sub2")}
         </h3>
 
@@ -74,7 +74,7 @@ export default function PrivacyPolicy() {
           {t("plicy.text5")}{" "}
           <a href="mailto:office@helmchron.com">office@helmchron.com</a>.
         </p>
-        <h3>
+        <h3 className="sub-title">
           {t("plicy.sub3")}
         </h3>
 
@@ -121,7 +121,7 @@ export default function PrivacyPolicy() {
           </li>
           <li>Responding to a complaint or security threat.</li>
         </ul>
-        <h3>Processing your data</h3>
+        <h3 className="sub-title">Processing your data</h3>
 
         <p>For the following purposes:</p>
 
@@ -145,7 +145,7 @@ export default function PrivacyPolicy() {
           </li>
         </ol>
 
-        <h3>Your rights regarding your personal data</h3>
+        <h3 className="sub-title">Your rights regarding your personal data</h3>
 
         <p>
           We declare that you have certain rights in regards to the use and
@@ -174,7 +174,7 @@ export default function PrivacyPolicy() {
           lawfulness of data processing based on your consent prior to its
           withdrawal.{" "}
         </p>
-        <h3>Data security</h3>
+        <h3 className="sub-title">Data security</h3>
 
         <p>
           To protect your personal data from loss, misuse, disclosure,
