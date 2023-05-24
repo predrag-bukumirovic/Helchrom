@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import logo from "../assets/images/logo.webp";
 import "../assets/scss/navbar.css";
-import { CgMenuLeft } from "react-icons/cg";
+import { BiMenuAltRight } from "react-icons/bi";
 import { BiChevronDown } from "react-icons/bi";
 import { TfiClose } from "react-icons/tfi";
 import TikTok from "../assets/images/tiktok.webp";
@@ -174,7 +174,7 @@ export default function Navbar() {
         />
 
         <div onClick={() => setOpenMenu(!openMenu)}>
-          <CgMenuLeft className="burger-icon" />
+          <BiMenuAltRight className="burger-icon" />
         </div>
       </div>
     </div>

@@ -6,10 +6,14 @@ import mainImg1 from "../assets/images/Legal/2.jpeg";
 import mainImg2 from "../assets/images/Legal/3.jpeg";
 import "@coreui/coreui/dist/css/coreui.min.css";
 import "../assets/scss/slider.scss";
+import { Helmet } from "react-helmet";
 
 export default function LegalStatement() {
   return (
     <div className="container-main">
+      <Helmet>
+        <title>Legal statement | Helmchron</title>
+      </Helmet>
       {/* Slider start */}
       <CCarousel className="slider-main" controls transition="crossfade">
         <CCarouselItem>

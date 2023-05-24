@@ -9,10 +9,14 @@ import iconLinkedine from "../assets/images/linkedine.webp";
 import "../assets/scss/slider.scss";
 import "../assets/scss/career.scss";
 import "@coreui/coreui/dist/css/coreui.min.css";
+import { Helmet } from "react-helmet";
 
 export default function Career() {
   return (
     <div>
+      <Helmet>
+        <title>Career | Helmchron</title>
+      </Helmet>
       <div className="container-main">
         {/* Slider start */}
         <CCarousel className="slider-main" controls transition="crossfade">

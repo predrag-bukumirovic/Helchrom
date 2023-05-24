@@ -17,10 +17,14 @@ import quote from "../assets/images/OurServices/quote.png";
 
 import { CCarousel, CCarouselItem, CImage } from "@coreui/react";
 import "@coreui/coreui/dist/css/coreui.min.css";
+import { Helmet } from "react-helmet";
 
 export default function OurServices() {
   return (
     <div className="container-main">
+      <Helmet>
+        <title>Out services | Helmchron</title>
+      </Helmet>
       {/* Slider start */}
       <CCarousel className="slider-main" controls transition="crossfade">
         <CCarouselItem>

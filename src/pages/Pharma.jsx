@@ -10,10 +10,14 @@ import icon2 from "../assets/images/Pharma/2.png";
 import icon3 from "../assets/images/Pharma/3.png";
 import icon4 from "../assets/images/Pharma/4.png";
 import icon5 from "../assets/images/Pharma/5.png";
+import { Helmet } from "react-helmet";
 
 export default function Pharma() {
   return (
     <div className="container-main">
+      <Helmet>
+        <title>Pharmaceuticals | Helmchron</title>
+      </Helmet>
       {/* Slider start */}
       <CCarousel className="slider-main" controls transition="crossfade">
         <CCarouselItem>

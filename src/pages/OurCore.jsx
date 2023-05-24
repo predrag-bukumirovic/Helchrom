@@ -15,10 +15,14 @@ import coreflip4 from "../assets/images/OurCore/4.2.png";
 import quote from "../assets/images/OurCore/quote.png";
 import { CCarousel, CCarouselItem, CImage } from "@coreui/react";
 import "@coreui/coreui/dist/css/coreui.min.css";
+import { Helmet } from "react-helmet";
 
 export default function OurCore() {
   return (
     <div className="container-main">
+      <Helmet>
+        <title>Out core competencies | Helmchron</title>
+      </Helmet>
       {/* Slider start */}
       <CCarousel className="slider-main" controls transition="crossfade">
         <CCarouselItem>

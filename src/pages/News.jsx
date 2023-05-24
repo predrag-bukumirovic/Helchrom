@@ -10,10 +10,14 @@ import "../assets/scss/news.scss";
 
 import { CCarousel, CCarouselItem, CImage } from "@coreui/react";
 import "@coreui/coreui/dist/css/coreui.min.css";
+import { Helmet } from "react-helmet";
 
 export default function News() {
   return (
     <div className="container-main">
+      <Helmet>
+        <title>News | Helmchron</title>
+      </Helmet>
       {/* Slider start */}
       <CCarousel className="slider-main" controls transition="crossfade">
         <CCarouselItem>

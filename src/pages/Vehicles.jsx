@@ -12,10 +12,14 @@ import icon2 from "../assets/images/Vehicles/2.png";
 import icon3 from "../assets/images/Vehicles/3.png";
 import icon4 from "../assets/images/Vehicles/4.png";
 import icon5 from "../assets/images/Vehicles/5.png";
+import { Helmet } from "react-helmet";
 
 export default function Vehicles() {
   return (
     <div className="container-main">
+      <Helmet>
+        <title>Vehicles manufacturing | Helmchron</title>
+      </Helmet>
       {/* Slider start */}
       <CCarousel className="slider-main" controls transition="crossfade">
         <CCarouselItem>

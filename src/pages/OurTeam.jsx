@@ -23,11 +23,15 @@ import icon5 from "../assets/images/Team/Courage.png";
 import { CCarousel, CCarouselItem, CImage } from "@coreui/react";
 import "@coreui/coreui/dist/css/coreui.min.css";
 import { useTranslation } from "react-i18next";
+import { Helmet } from "react-helmet";
 
 export default function OurTeam() {
   const { t } = useTranslation();
   return (
     <div className="container-main">
+      <Helmet>
+        <title>Out Team | Helmchron</title>
+      </Helmet>
       {/* Slider start */}
       <CCarousel className="slider-main" controls transition="crossfade">
         <CCarouselItem>

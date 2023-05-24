@@ -8,10 +8,15 @@ import school from "../assets/images/Achema/school.jpg";
 import "@coreui/coreui/dist/css/coreui.min.css";
 import "../assets/scss/slider.scss";
 import "../assets/scss/achema.scss";
+import { Helmet } from "react-helmet";
 
 export default function Achema() {
   return (
     <div>
+      <Helmet>
+        <title>Achema | Helmchron</title>
+      </Helmet>
+
       <div className="container-main">
         {/* Slider start */}
         <CCarousel className="slider-main" controls transition="crossfade">

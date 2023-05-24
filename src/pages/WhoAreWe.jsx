@@ -16,11 +16,15 @@ import icon4 from "../assets/images/Who/Environment.png";
 import basicImg from "../assets/images/Who/basicImg.png";
 
 import dubleLogo from "../assets/images/Who/dubleWhite.png";
+import { Helmet } from "react-helmet";
 
 export default function WhoAreWe() {
   const { t } = useTranslation();
   return (
     <div>
+      <Helmet>
+        <title>Who are we? | Helmchron</title>
+      </Helmet>
       <div className="container-main">
         {/* Slider start */}
         <CCarousel className="slider-main" controls transition="crossfade">

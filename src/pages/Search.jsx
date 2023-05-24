@@ -4,6 +4,7 @@ import { useSearchParams } from "react-router-dom";
 import searchMap from "../pages/searchMap";
 import "../assets/scss/search.scss";
 import NoResultsImg from "../assets/images/no-results.png";
+import { Helmet } from "react-helmet";
 
 export default function Search() {
   const [results, setResults] = useState([]);
@@ -45,6 +46,11 @@ export default function Search() {
 
   return (
     <div className="container-main">
+      <Helmet>
+        <title>
+          {search} | Helmchron
+        </title>
+      </Helmet>
       <ul className="searchResult">
         <p style={{ textAlign: "start" }}>
           Result <b>'{search}'</b>

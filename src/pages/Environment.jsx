@@ -8,10 +8,14 @@ import "@coreui/coreui/dist/css/coreui.min.css";
 import icon1 from "../assets/images/Environment/1.png";
 import icon2 from "../assets/images/Environment/2.png";
 import icon3 from "../assets/images/Environment/3.png";
+import { Helmet } from "react-helmet";
 
 export default function Environment() {
   return (
     <div className="container-main">
+      <Helmet>
+        <title>Environmental | Helmchron</title>
+      </Helmet>
       {/* Slider start */}
       <CCarousel className="slider-main" controls transition="crossfade">
         <CCarouselItem>

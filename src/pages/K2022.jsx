@@ -9,10 +9,14 @@ import img3 from "../assets/images/K2022/3.png";
 import "../assets/scss/slider.scss";
 import "@coreui/coreui/dist/css/coreui.min.css";
 import "../assets/scss/news-post.scss";
+import { Helmet } from "react-helmet";
 
 export default function K2022() {
   return (
     <div>
+      <Helmet>
+        <title>K2022 | Helmchron</title>
+      </Helmet>
       <div className="container-main">
         {/* Slider start */}
         <CCarousel className="slider-main" controls transition="crossfade">

@@ -23,6 +23,7 @@ import sustainability from "../assets/images/Vision/sustainability.png";
 import { CCarousel, CCarouselItem, CImage } from "@coreui/react";
 import "@coreui/coreui/dist/css/coreui.min.css";
 import { useTranslation } from "react-i18next";
+import { Helmet } from "react-helmet";
 
 export default function OurVision() {
   const { t } = useTranslation();
@@ -51,6 +52,9 @@ export default function OurVision() {
 
   return (
     <div>
+      <Helmet>
+        <title>Out vision and mission | Helmchron</title>
+      </Helmet>
       {/* Slider start */}
       <CCarousel className="slider-main" controls transition="crossfade">
         <CCarouselItem>

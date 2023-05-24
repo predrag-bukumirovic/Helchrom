@@ -75,12 +75,29 @@ const data = {
           particular information that does not identify you by your name, but
           may use as an identifier a specific device that has accessed our
           website.</p>`,
-        text8: ``,
-        text9: ``,
+        text8: `<p>We collect the stated information only if you voluntarily provide it to us.</p>`,
+        text9: `<p>We do not sell or transfer your personal data to any third party for their own direct use, unless we obtain your explicit consent. However, we may share your personal data with third parties, such as service providers, for any of the following purposes:</p>`,
         text9ul: {
-          li1: "",
-          li2: "",
-          li3: ""
+          li1: "Technical maintenance of our website,",
+          li2:
+            "Responding to requests of legitimate authorities or when required by the law or other regulations,",
+          li3: "Responding to a complaint or security threat."
+        },
+
+        purposes: {
+          sub: "Processing your data",
+          text1: "For the following purposes:",
+          li1: `<b>Maintenance of our website</b> - when you access our website,
+            your browser automatically sends us information about your visit
+            that is temporarily saved (IP address, time and date of your visit,
+            geographic location, resources you have accessed etc.). We may use
+            this information to secure our website, as well.`,
+          li2: `<b>Responding to your requests, inquiries and comments</b> - We may
+            use your personal information to respond to your request. Depending
+            on the type of your request, we may need to collect different types
+            of data. This is based on our interest to respond to your request in
+            an optimal and comprehensive manner.`,
+          li3: "<b>Website analytics</b>"
         }
       },
       chemicals: {

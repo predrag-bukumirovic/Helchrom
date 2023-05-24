@@ -9,6 +9,7 @@ import icon2 from "../assets/images/Contact/2.png";
 import icon3 from "../assets/images/Contact/3.png";
 import { CCarousel, CCarouselItem, CImage } from "@coreui/react";
 import "@coreui/coreui/dist/css/coreui.min.css";
+import { Helmet } from "react-helmet";
 
 export default function Contact() {
   // const [name, setName] = useState("");
@@ -49,6 +50,9 @@ export default function Contact() {
 
   return (
     <div className="container-main">
+      <Helmet>
+        <title>Contact | Helmchron</title>
+      </Helmet>
       {/* Slider start */}
       <CCarousel className="slider-main" controls transition="crossfade">
         <CCarouselItem>

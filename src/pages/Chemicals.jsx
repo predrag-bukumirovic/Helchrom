@@ -9,12 +9,16 @@ import icon1 from "../assets/images/Chemicals/1.png";
 import icon2 from "../assets/images/Chemicals/2.png";
 import icon3 from "../assets/images/Chemicals/3.png";
 import { useTranslation } from "react-i18next";
+import { Helmet } from "react-helmet";
 
 export default function Chemicals() {
   const { t } = useTranslation();
 
   return (
     <div className="container-main">
+      <Helmet>
+        <title>Chemicals | Helmchron</title>
+      </Helmet>
       {/* Slider start */}
       <CCarousel className="slider-main" controls transition="crossfade">
         <CCarouselItem>
@@ -89,7 +93,10 @@ export default function Chemicals() {
         <span>
           <h2 className="subtitle">References:</h2>
 
-          <p dangerouslySetInnerHTML={{ __html: `${t("chemicals.text7")}` }} />
+          <p
+            style={{ fontSize: 13 }}
+            dangerouslySetInnerHTML={{ __html: t("chemicals.text7") }}
+          />
         </span>
       </div>
     </div>
