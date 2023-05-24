@@ -53,12 +53,9 @@ export default function WhoAreWe() {
           {t("title_who")}
         </h1>
         <center>
-          <p>
-            {t("who_text1")}
-          </p>
-          <p>
-            {t("who_text2")}
-          </p>
+          <p dangerouslySetInnerHTML={{ __html: t("who_text1") }} />
+
+          <p dangerouslySetInnerHTML={{ __html: t("who_text2") }} />
         </center>
         <div className="who-icon">
           <div>
@@ -103,9 +100,7 @@ export default function WhoAreWe() {
           </div>
         </div>
         <center className="">
-          <p>
-            {t("who_text3")}
-          </p>
+          <p dangerouslySetInnerHTML={{ __html: t("who_text3") }} />
         </center>
       </div>
       <div className="history">
@@ -113,13 +108,7 @@ export default function WhoAreWe() {
           <div className="container-main padding30">
             <h2 className="title">OUR HISTORY</h2>
 
-            <p>
-              Our company was established in 2010. with the goal to deliver
-              valuable solutions that will improve the quality of life for the
-              coming generations. Our mission was always focused on our partners
-              and innovative products and services that bring value to end users
-              and the environment.{" "}
-            </p>
+            <p dangerouslySetInnerHTML={{ __html: t("who_text4") }} />
           </div>
 
           <div className="logos-text">

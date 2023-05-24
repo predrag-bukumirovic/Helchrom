@@ -4,31 +4,31 @@ const data = {
       //Who are we? Page
       title_who: "Who are we?",
       who_text1:
-        "Helmchron is a family-owned company located in Belgrade, Serbia. We provide best-in-class process and chemical engineering solutions in an agile and sustainable way to both, international and local clients, for more than 10 years.",
+        "<p>Helmchron is a family-owned company located in Belgrade, Serbia. We provide best-in-class process and chemical engineering solutions in an agile and sustainable way to both, international and local clients, for more than 10 years.</p>",
       who_text2:
-        "We are specialized in delivering process and chemical engineering solutions in following business ares:",
+        "<p>We are specialized in delivering process and chemical engineering solutions in following business ares:</p>",
       ul1: "Chemicals",
       ul2: "Pharmaceutical products",
       ul3: "Vehicles manufacturing",
       ul4: "Environmental protection",
       who_text3:
-        "Most of our expertise comes from German and Serbian markets and is a combination of our diverse educational and professional backgrounds. Our knowledge, passion and commitment are integral parts of everything we do and make our team your trustworthy, long-term partner.",
-      who_text4: "Contact us for more information at ",
+        "<p>Most of our expertise comes from German and Serbian markets and is a combination of our diverse educational and professional backgrounds. Our knowledge, passion and commitment are integral parts of everything we do and make our team your trustworthy, long-term partner.</p>",
+      who_text4:
+        "<p>Our company was established in 2010. with the goal to deliver valuable solutions that will improve the quality of life for the coming generations. Our mission was always focused on our partners and innovative products and services that bring value to end users and the environment.</p>",
       //Our team page
       title_team: "Our team",
       team1_text1:
-        "Milos Ivosevic is the founder of the company and creator of the vision. Enthusiastic and entrepreneurial, Milos was always focused on extensive international projects that contribute to improving the quality of life for the coming generations.",
-      team1_text2: `The high point of his university period was the experience he gained at the well-known Paul Scherrer Institut (PSI) in Switzerland. While studying, he was, also, hands-on and involved in multiple engineering projects in Serbia and Croatia.`,
-      team1_text3: `During the last 10 years, Milos worked as part of various multinational teams and did projects for the leading chemical and pharmaceutical innovators (BASF, Novartis, Roche, etc.).`,
+        "<p>Milos Ivosevic is the founder of the company and creator of the vision. Enthusiastic and entrepreneurial, Milos was always focused on extensive international projects that contribute to improving the quality of life for the coming generations.</p>",
+      team1_text2: `<p>The high point of his university period was the experience he gained at the well-known Paul Scherrer Institut (PSI) in Switzerland. While studying, he was, also, hands-on and involved in multiple engineering projects in Serbia and Croatia.</p>`,
+      team1_text3: `<p>During the last 10 years, Milos worked as part of various multinational teams and did projects for the leading chemical and pharmaceutical innovators (BASF, Novartis, Roche, etc.).</p>`,
       team1_text4:
-        "He did his Master's and PhD thesis at the University of Belgrade, Faculty of Mechanical Engineering.",
+        "<p>He did his Master's and PhD thesis at the University of Belgrade, Faculty of Mechanical Engineering.</p>",
       team1_text5:
         "In his leisure time, he enjoys traveling and discovering new cultures, sports, and relaxing by the river.",
       team_contact1: "Connect with Miloš:<br/>",
       team2_text1:
-        "<br/>Anja Andjelković joined the team in 2020. bringing additional focus to our operations and expansion. Her comprehensive skill set, knowledge, and motivation have brought a new perspective and strengthened the outcomes we deliver to our partners. As a projects lead, she coaches our team of projects associates and is in charge of seamless execution.",
-      team2_text2: `
-Anja used to play volleyball professionally and her discipline is one of the most valuable assets of our team.`,
+        "<p>Anja Andjelković joined the team in 2020. bringing additional focus to our operations and expansion. Her comprehensive skill set, knowledge, and motivation have brought a new perspective and strengthened the outcomes we deliver to our partners. As a projects lead, she coaches our team of projects associates and is in charge of seamless execution.</p>",
+      team2_text2: `<p>Anja used to play volleyball professionally and her discipline is one of the most valuable assets of our team.</p>`,
       team2_text3: `She holds a Masters degree in Mechanical Engineering from the University of Belgrade. In her free time, Anja likes to do sports and travel with her family..`,
       team_contact2: "Connect with Anja:",
       //Our vision and mission page
@@ -41,39 +41,40 @@ Anja used to play volleyball professionally and her discipline is one of the mos
       plicy: {
         title: "Privacy Policy",
         sub1:
-          "Thank you for visiting our website and showing interest in our company.",
-        text1: ` We, at Helmchron, consider your data protection a priority. This
+          "<h2>Thank you for visiting our website and showing interest in our company.</h2>",
+        text1: `<p>We, at Helmchron, consider your data protection a priority. This
           privacy policy only applies to our website, i.e. does not apply to any
           sites that are not affiliated with our company. We do not take
           responsibility for the content of any third-party websites, even if we
-          share their links.`,
-        text2: `This Privacy Policy outlines types of personal information we may
+          share their links.</p>`,
+        text2: `<p>This Privacy Policy outlines types of personal information we may
           collect, what we do to protect your personal information we collect
-          and your rights.`,
+          and your rights.</p>`,
         text3: {
-          text: `We process the personal data that you make available to us via this
-          website and via email.`,
-          textI: `Personal data are defined as all information related to one
+          text: `<p>We process the personal data that you make available to us via this
+          website and via email.</p>`,
+          textI: `<p>Personal data are defined as all information related to one
             identifiable natural person, meaning one person can be directly /
             indirectly identified through their name, location, index number or
-            any other personal characteristic.`
+            any other personal characteristic.</p>`
         },
-        text4: `This website is not designed or intended to be used by individuals under the age of 16. We do not knowingly collect any personal data on this website from individuals under the age of 16. All minors should seek their parents or guardians permissions prior to disclosing any personal data on any online platform, including this website.`,
-        sub2: "Contact details",
-        text5: `Data controller is legal entity HC Gruppe, Bulevar Arsenija Carnojevica 133, 11000 Belgrade, Serbia. Should you have any queries, please contact us by mail or email to`,
-        sub3: "Why do we process your personal data?",
-        text6: `Reasons we process your personal data include:`,
+        text4: `<p>This website is not designed or intended to be used by individuals under the age of 16. We do not knowingly collect any personal data on this website from individuals under the age of 16. All minors should seek their parents or guardians permissions prior to disclosing any personal data on any online platform, including this website.</p>`,
+        sub2: "<h3 class='sub-title'>Contact details</h3>",
+        text5: `<p>Data controller is legal entity HC Gruppe, Bulevar Arsenija Carnojevica 133, 11000 Belgrade, Serbia. Should you have any queries, please contact us by mail or email to <a href="mailto:office@helmchron.com">office@helmchron.com</a></p>`,
+        sub3:
+          "<h3 class='sub-title'>Why do we process your personal data?</h3>",
+        text6: `<p>Reasons we process your personal data include:</p>`,
         text6ul: {
-          li1: `Responding to your request, comments or inquiries delivered to us via contact form or email address,`,
-          li2: `Measuring website performance (analytics),`,
-          li3: `Maintaining and securing our website,`,
-          li4: `Aligning with regulations.`
+          li1: `<li>Responding to your request, comments or inquiries delivered to us via contact form or email address,</li>`,
+          li2: `<li>Measuring website performance (analytics),</li>`,
+          li3: `<li>Maintaining and securing our website,</li>`,
+          li4: `<li>Aligning with regulations.</li>`
         },
-        text7: `Examples of personal data we may collect include your first and last
+        text7: `<p>Examples of personal data we may collect include your first and last
           name, email address and other contact information. We may also collect
           particular information that does not identify you by your name, but
           may use as an identifier a specific device that has accessed our
-          website.`,
+          website.</p>`,
         text8: ``,
         text9: ``,
         text9ul: {

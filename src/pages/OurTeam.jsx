@@ -73,21 +73,11 @@ export default function OurTeam() {
             </div>
             <div>
               <div>
-                <p>
-                  {t("team1_text1")}
-                </p>
-                <p>
-                  {t("team1_text2")}
-                </p>
-                <p>
-                  {t("team1_text3")}
-                </p>
-                <p>
-                  {t("team1_text4")}
-                </p>
-                <p>
-                  {t("team1_text5")}{" "}
-                </p>
+                <p dangerouslySetInnerHTML={{ __html: t("team1_text1") }} />
+                <p dangerouslySetInnerHTML={{ __html: t("team1_text2") }} />
+                <p dangerouslySetInnerHTML={{ __html: t("team1_text3") }} />
+                <p dangerouslySetInnerHTML={{ __html: t("team1_text4") }} />
+                <p dangerouslySetInnerHTML={{ __html: t("team1_text5") }} />
               </div>
               <div className="member-links">
                 <a href="mailto:milos.ivosevic@helmchron.com">

@@ -7,12 +7,17 @@
     width: 150px;
   }
 }
+
 .searchResult li {
   list-style: none;
 
   p {
     font-size: 20px;
   }
+}
+
+.text-result {
+  font-weight: 100 !important;
 }
 
 .no-result {

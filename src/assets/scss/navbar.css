@@ -76,6 +76,7 @@ ul li ol.menu-down {
   background: var(--light-blue-color);
   z-index: 99999999;
   animation: menu_down 1s;
+  padding-left: 0;
 }
 
 @keyframes menu_down {

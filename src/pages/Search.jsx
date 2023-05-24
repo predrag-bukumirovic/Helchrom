@@ -54,7 +54,11 @@ export default function Search() {
             <h1 className="title">
               {result.title}
             </h1>
-            <p dangerouslySetInnerHTML={{ __html: result.texts }} />
+
+            <div
+              className="text-result"
+              dangerouslySetInnerHTML={{ __html: result.texts }}
+            />
           </li>
         )}
       </ul>

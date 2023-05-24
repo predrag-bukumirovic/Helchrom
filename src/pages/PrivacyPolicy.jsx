@@ -46,9 +46,7 @@ export default function PrivacyPolicy() {
           {t("plicy.title")}
         </h1>
 
-        <h2>
-          {t("plicy.sub1")}
-        </h2>
+        <h2 dangerouslySetInnerHTML={{ __html: t("plicy.sub1") }} />
 
         <p>
           {t("plicy.text1")}
@@ -66,26 +64,23 @@ export default function PrivacyPolicy() {
           {t("plicy.text4")}
         </p>
 
-        <h3 className="sub-title">
-          {t("plicy.sub2")}
-        </h3>
+        <h3
+          className="sub-title"
+          dangerouslySetInnerHTML={{ __html: t("plicy.sub2") }}
+        />
 
-        <p>
-          {t("plicy.text5")}{" "}
-          <a href="mailto:office@helmchron.com">office@helmchron.com</a>.
-        </p>
-        <h3 className="sub-title">
-          {t("plicy.sub3")}
-        </h3>
+        <p dangerouslySetInnerHTML={{ __html: t("plicy.text5") }} />
 
-        <p>
-          {t("plicy.text6")}
-        </p>
+        <h3
+          className="sub-title"
+          dangerouslySetInnerHTML={{ __html: t("plicy.sub3") }}
+        />
+
+        <p dangerouslySetInnerHTML={{ __html: t("plicy.text6") }} />
 
         <ul>
-          <li>
-            {t("plicy.text6ul.li1")}
-          </li>
+          <li dangerouslySetInnerHTML={{ __html: t("plicy.text6ul.li1") }} />
+
           <li>
             {" "}{t("plicy.text6ul.li2")}
           </li>
