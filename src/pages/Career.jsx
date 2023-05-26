@@ -16,6 +16,10 @@ export default function Career() {
     <div>
       <Helmet>
         <title>Career | Helmchron</title>
+        <meta
+          name="description"
+          content="Join the Helmchron team and explore career opportunities in process and thermotechnics engineering. Contact us to share your CV and learn more about working with us."
+        />
       </Helmet>
       <div className="container-main">
         {/* Slider start */}
@@ -32,19 +36,19 @@ export default function Career() {
         </CCarousel>
         <div className="box-img">
           <div>
-            <img src={mainImg} alt="Main" />
+            <img src={mainImg} alt="Helmchron Career - Slide 1" />
           </div>
           <div>
-            <img src={mainImg1} alt="Main" />
+            <img src={mainImg1} alt="Helmchron Career - Slide 2" />
           </div>
           <div>
-            <img src={mainImg2} alt="Main" />
+            <img src={mainImg2} alt="Helmchron Career - Slide 3" />
           </div>
         </div>
         {/* Slider end */}
 
         <div>
-          <h1 className="title">Join helmchron team</h1>
+          <h1 className="title">Join the helmchron team</h1>
           <center>
             <p>
               We work hard and are dedicated with a strong team focus but with
@@ -66,7 +70,7 @@ export default function Career() {
       </div>
       <div className="career-logo-box">
         <div className="career-text">
-          <span>In case:</span>
+          <h2>In case:</h2>
           <ul>
             <li>you hold Process or Thermotechnics Engineer Degree,</li>
             <li>you are located in Belgrade and</li>
@@ -84,7 +88,10 @@ export default function Career() {
 
         <div className="connect-team">
           <div>
-            <img src={icon1} alt="icon1" />
+            <img
+              src={icon1}
+              alt="Miloš Ivošević, PhD - CEO, Mechanical engineer"
+            />
             <div>
               <span>Miloš Ivošević, PhD</span>
               <p>CEO, Mechanical engineer</p>
@@ -98,7 +105,10 @@ export default function Career() {
             </div>
           </div>
           <div>
-            <img src={icon2} alt="Icon2" />
+            <img
+              src={icon2}
+              alt="Anja Anđelković, MSc - Projects Lead, Mechanical engineer"
+            />
             <div>
               <span>Anja Anđelković, MSc</span>
               <p>Projects Lead, Mechanical engineer</p>
@@ -107,7 +117,7 @@ export default function Career() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src={iconLinkedine} alt="Icon linkedin" />{" "}
+                <img src={iconLinkedine} alt="LinkedIn icon" />{" "}
               </a>
             </div>
           </div>

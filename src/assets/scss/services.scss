@@ -55,10 +55,10 @@
   margin-top: 50px;
 }
 
-@media (max-width: 660px) {
+@media (max-width: 440px) {
   .core-item {
     div {
-      width: 400px;
+      width: 100% !important;
       margin-bottom: 50px;
     }
   }
@@ -67,14 +67,15 @@
 @media (max-width: 660px) {
   .core-item {
     flex-direction: column;
-
     div {
+      width: 400px;
+      margin-bottom: 50px;
+
       .flip-card-inner {
         margin-bottom: 200px;
       }
     }
   }
-
   .core2 {
     margin-top: 50px;
   }
