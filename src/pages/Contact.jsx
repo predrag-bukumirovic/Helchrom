@@ -8,22 +8,134 @@ import icon1 from "../assets/images/Contact/1.png";
 import icon2 from "../assets/images/Contact/2.png";
 import icon3 from "../assets/images/Contact/3.png";
 import { CCarousel, CCarouselItem, CImage } from "@coreui/react";
+import "@coreui/coreui/dist/css/coreui.min.css";
 import { Helmet } from "react-helmet";
 
-const Contact = () => {
-  const [formData, setFormData] = useState({});
+export default function Contact() {
+  const [name, setName] = useState("");
+  const [company, setCompany] = useState("");
+  const [email, setEmail] = useState("");
+  const [position, setPosition] = useState("");
+  const [phone, setPhone] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
+
   const [loading, setLoading] = useState(false);
 
-  const handleChange = e => {
-    setFormData(prevState => ({
-      ...prevState,
-      [e.target.name]: e.target.value
-    }));
-  };
-
-  const handleSubmit = async e => {
+  const submitForm = async e => {
     e.preventDefault();
-    setLoading(true);
+
+    const emailTemplate = `
+      <html>
+        <head>
+          <style>
+            body {
+              font-family: Arial, sans-serif;
+              color: #333333;
+            }
+
+            * {
+              box-sizing: border-box;
+            }
+
+            .container {
+              width: 100%;
+              max-width: 600px;
+              margin: 0 auto;
+              padding: 20px;
+              background-color: #f5f5f5;
+            }
+
+            p {
+              font-size: 16px;
+              margin: 0 0 10px;
+            }
+
+            a {
+              color: #0066cc;
+              text-decoration: underline;
+            }
+
+    
+            .section {
+              margin-bottom: 40px;
+            }
+
+            .section-heading {
+              font-size: 20px;
+              font-weight: bold;
+              margin: 0 0 10px;
+            }
+
+            .section-content {
+              font-size: 16px;
+              margin: 0;
+            }
+
+            /* Stilovi za dugme */
+            .button {
+              display: inline-block;
+              padding: 10px 20px;
+              background-color: #0066cc;
+              color: #ffffff;
+              text-decoration: none;
+              border-radius: 5px;
+            }
+
+            .button:hover {
+              background-color: #004f9f;
+            }
+
+            .header {
+              background-color: #ffffff;
+              padding: 20px;
+              text-align: center;
+            }
+
+            .footer {
+              background-color: #f5f5f5;
+              padding: 20px;
+              text-align: center;
+            }
+
+            .logo {
+              width: 100%;
+              margin: 0 auto;
+            }
+
+            @media only screen and (max-width: 600px) {
+              .container {
+                padding: 10px;
+              }
+            }
+
+            .message-box {
+              padding: 30px;
+            }
+          </style>
+        </head>
+
+        <body>
+          <div class="container">
+            <div class="header">
+              <img src='https://www.helmchron.gold-digital.rs/static/media/policy.346a6f0b269c86290ae3.png' alt="Logo" class="logo">
+            </div>
+            <div class="section">
+              <b>Subject:</b> <p>${subject}</p>
+              <b>Name:</b> <p>${name}</p>
+              <b>Company:</b> <p>${company}</p>
+              <b>Email:</b> <p>${email}</p>
+              <b>Position:</b> <p>${position}</p>
+              <b>Phone Number:</b> <p>${phone}</p>
+              <p class="message-box"><b><Message:></b> ${message}</p>
+            </div>
+            <div class="footer">
+              <p>© 2023 Helmchron | Sva prava zadržana.</p>
+            </div>
+          </div>
+        </body>
+      </html>
+    `;
 
     try {
       await fetch("/contact.php", {
@@ -31,14 +143,21 @@ const Contact = () => {
         headers: {
           "Content-Type": "application/json"
         },
-        body: JSON.stringify(formData)
+        body: JSON.stringify({
+          name: name,
+          email: email,
+          subject: subject,
+          message: emailTemplate
+        })
       });
 
+      setLoading(true);
       setTimeout(() => {
         setLoading(false);
-        window.open("/thanks", "_self");
-        document.getElementById("form").reset();
-      }, 4000);
+      }, 3000);
+
+      window.open("/thanks", "_self");
+      document.getElementById("form").reset();
     } catch (e) {
       console.error(e);
       setLoading(false);
@@ -49,6 +168,7 @@ const Contact = () => {
     <div className="container-main">
       <Helmet>
         <title>Contact | Helmchron</title>
+        <meta charset="utf-8" />
       </Helmet>
 
       {/* Slider start */}
@@ -65,11 +185,15 @@ const Contact = () => {
       </CCarousel>
 
       <div className="box-img">
-        {[mainImg, mainImg1, mainImg2].map((img, index) =>
-          <div key={index}>
-            <img src={img} alt="Main" />
-          </div>
-        )}
+        <div>
+          <img src={mainImg} alt="Main" />
+        </div>
+        <div>
+          <img src={mainImg1} alt="Main" />
+        </div>
+        <div>
+          <img src={mainImg2} alt="Main" />
+        </div>
       </div>
       {/* Slider end */}
 
@@ -84,34 +208,34 @@ const Contact = () => {
         </center>
 
         <div className="icon-contact container-main padding30">
-          {[
-            {
-              icon: icon1,
-              text: "Belgrade, Serbia",
-              link:
-                "https://www.google.com/maps/place/Helmchron/@44.8191938,20.4047006,17z/data=!4m14!1m7!3m6!1s0x475a65428c286c47:0x23ade1e32fe70968!2sHelmchron!8m2!3d44.8191938!4d20.4072755!16s%2Fg%2F11qby527tz!3m5!1s0x475a65428c286c47:0x23ade1e32fe70968!8m2!3d44.8191938!4d20.4072755!16s%2Fg%2F11qby527tz"
-            },
-            { icon: icon2, text: "+381642938533", link: "tel:+381642938533" },
-            {
-              icon: icon3,
-              text: "office@helmchron.com",
-              link: "mailto:office@helmchron.com"
-            }
-          ].map((item, index) =>
-            <div key={index}>
-              <a href={item.link} target="_blank" rel="noreferrer">
-                <img src={item.icon} alt={`icon${index + 1}`} />
-              </a>
-              <p>
-                {item.text}
-              </p>
-            </div>
-          )}
+          <div>
+            <a
+              href="https://www.google.com/maps/place/Helmchron/@44.8191938,20.4047006,17z/data=!4m14!1m7!3m6!1s0x475a65428c286c47:0x23ade1e32fe70968!2sHelmchron!8m2!3d44.8191938!4d20.4072755!16s%2Fg%2F11qby527tz!3m5!1s0x475a65428c286c47:0x23ade1e32fe70968!8m2!3d44.8191938!4d20.4072755!16s%2Fg%2F11qby527tz"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={icon1} alt="icon1" />
+            </a>
+            <p>Belgrade, Serbia</p>
+          </div>
+          <div>
+            <a href="tel:+381642938533">
+              <img src={icon2} alt="icon2" />
+            </a>
+            <p>+381642938533</p>
+          </div>
+          <div>
+            <a href="mailto:office@helmchron.com">
+              <img src={icon3} alt="icon3" />
+            </a>
+
+            <p>office@helmchron.com</p>
+          </div>
         </div>
 
         <center>
           <p>
-            You can also submit your inquiries via the contact form. <br />{" "}
+            You can also submit your inquires via the contact form. <br />{" "}
             <span className="info-send">
               Fields marked with an asterisk (*) are required.
             </span>
@@ -119,7 +243,7 @@ const Contact = () => {
         </center>
 
         <div className="form padding30">
-          <form method="post" id="form" onSubmit={handleSubmit}>
+          <form method="post" id="form" onSubmit={submitForm}>
             <div>
               <label htmlFor="">
                 Full Name <span className="star">*</span>
@@ -128,7 +252,7 @@ const Contact = () => {
                   placeholder="Full Name"
                   name="name"
                   required
-                  onChange={handleChange}
+                  onChange={event => setName(event.target.value)}
                 />
               </label>
               <label htmlFor="company">
@@ -137,7 +261,7 @@ const Contact = () => {
                   type="text"
                   placeholder="Company"
                   name="company"
-                  onChange={handleChange}
+                  onChange={event => setCompany(event.target.value)}
                 />
               </label>
               <label htmlFor="email">
@@ -147,7 +271,7 @@ const Contact = () => {
                   placeholder="Email"
                   required
                   name="email"
-                  onChange={handleChange}
+                  onChange={event => setEmail(event.target.value)}
                 />
               </label>
               <label htmlFor="position">
@@ -156,7 +280,7 @@ const Contact = () => {
                   type="text"
                   placeholder="Position"
                   name="position"
-                  onChange={handleChange}
+                  onChange={event => setPosition(event.target.value)}
                 />
               </label>
               <label htmlFor="number">
@@ -165,7 +289,7 @@ const Contact = () => {
                   type="number"
                   placeholder="Phone Number"
                   name="phone"
-                  onChange={handleChange}
+                  onChange={event => setPhone(event.target.value)}
                 />
               </label>
             </div>
@@ -178,7 +302,7 @@ const Contact = () => {
                   placeholder="Subject"
                   name="subject"
                   required
-                  onChange={handleChange}
+                  onChange={event => setSubject(event.target.value)}
                 />
               </label>
               <label htmlFor="message">
@@ -189,14 +313,14 @@ const Contact = () => {
                   rows="10"
                   name="message"
                   required
-                  onChange={handleChange}
+                  onChange={event => setMessage(event.target.value)}
                 />
               </label>
 
               <button type="submit" className="btn">
                 Submit{" "}
                 {loading &&
-                  <div className="lds-ring">
+                  <div class="lds-ring">
                     <div />
                     <div />
                     <div />
@@ -209,6 +333,4 @@ const Contact = () => {
       </div>
     </div>
   );
-};
-
-export default Contact;
+}
