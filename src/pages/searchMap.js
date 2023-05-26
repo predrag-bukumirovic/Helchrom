@@ -1,5 +1,7 @@
 import texts from '../texts'
 
+import anjaImg from '../assets/images/Team/anja.png'
+
 const en = texts.en.translation
 
 const data = {
@@ -10,6 +12,7 @@ const data = {
     },
     {
       title: en.title_team,
+      images: [anjaImg],
       texts: [
         en.team1_text1,
         en.team1_text2,

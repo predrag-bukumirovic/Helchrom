@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "../assets/scss/contact.scss";
 import "../assets/scss/slider.scss";
 import mainImg from "../assets/images/Contact/contact1.jpg";
@@ -12,41 +12,41 @@ import "@coreui/coreui/dist/css/coreui.min.css";
 import { Helmet } from "react-helmet";
 
 export default function Contact() {
-  // const [name, setName] = useState("");
-  // const [company, setCompany] = useState("");
-  // const [email, setEmail] = useState("");
-  // const [position, setPosition] = useState("");
-  // const [phone, setPhone] = useState("");
-  // const [subject, setSubject] = useState("");
-  // const [message, setMessage] = useState("");
+  const [name, setName] = useState("");
+  const [company, setCompany] = useState("");
+  const [email, setEmail] = useState("");
+  const [position, setPosition] = useState("");
+  const [phone, setPhone] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
 
-  // const submitForm = async e => {
-  //   e.preventDefault();
+  const submitForm = async e => {
+    e.preventDefault();
 
-  //   try {
-  //     await fetch("/contact.php", {
-  //       method: "POST",
-  //       headers: {
-  //         "Content-Type": "application/json"
-  //       },
-  //       body: JSON.stringify({
-  //         name: name,
-  //         email: email,
-  //         subject: subject,
-  //         message: `
-  //           Name: ${name}<br />
-  //           Company: ${company}<br />
-  //           Email: ${email}<br />
-  //           Position: ${position}<br />
-  //           Phone: ${phone}<br />
-  //           Message: ${message}
-  //         `
-  //       })
-  //     });
-  //   } catch (e) {
-  //     console.error(e);
-  //   }
-  // };
+    try {
+      await fetch("/contact.php", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+          name: name,
+          email: email,
+          subject: subject,
+          message: `
+            Name: ${name}<br />
+            Company: ${company}<br />
+            Email: ${email}<br />
+            Position: ${position}<br />
+            Phone: ${phone}<br />
+            Message: ${message}
+          `
+        })
+      });
+    } catch (e) {
+      console.error(e);
+    }
+  };
 
   return (
     <div className="container-main">
@@ -125,7 +125,7 @@ export default function Contact() {
         </center>
 
         <div className="form padding30">
-          <form method="post" action="./contact.php">
+          <form method="post" onSubmit={submitForm}>
             <div>
               <label htmlFor="">
                 Full Name <span className="star">*</span>
@@ -133,24 +133,45 @@ export default function Contact() {
                   type="text"
                   placeholder="Full Name"
                   name="name"
-                  required
+                  onChange={event => setName(event.target.value)}
                 />
               </label>
               <label htmlFor="company">
                 Company
-                <input type="text" placeholder="Company" name="company" />
+                <input
+                  type="text"
+                  placeholder="Company"
+                  name="company"
+                  onChange={event => setCompany(event.target.value)}
+                />
               </label>
               <label htmlFor="email">
                 Email <span className="star">*</span>
-                <input type="email" placeholder="Email" required name="email" />
+                <input
+                  type="email"
+                  placeholder="Email"
+                  required
+                  name="email"
+                  onChange={event => setEmail(event.target.value)}
+                />
               </label>
               <label htmlFor="position">
                 Position
-                <input type="text" placeholder="Position" name="position" />
+                <input
+                  type="text"
+                  placeholder="Position"
+                  name="position"
+                  onChange={event => setPosition(event.target.value)}
+                />
               </label>
               <label htmlFor="number">
                 Phone Number
-                <input type="number" placeholder="Phone Number" name="phone" />
+                <input
+                  type="number"
+                  placeholder="Phone Number"
+                  name="phone"
+                  onChange={event => setPhone(event.target.value)}
+                />
               </label>
             </div>
 
@@ -162,6 +183,7 @@ export default function Contact() {
                   placeholder="Subject"
                   name="subject"
                   required
+                  onChange={event => setSubject(event.target.value)}
                 />
               </label>
               <label htmlFor="message">
@@ -172,6 +194,7 @@ export default function Contact() {
                   rows="10"
                   name="message"
                   required
+                  onChange={event => setMessage(event.target.value)}
                 />
               </label>
 

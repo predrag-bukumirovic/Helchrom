@@ -14,20 +14,37 @@ export default function Search() {
 
   const search = searchParams.get("q");
 
+  const addMarkerToSearch = (textContent, searchTerm) => {
+    var regex = new RegExp(searchTerm, "gi");
+    var markedText = textContent.replace(regex, "<mark>$&</mark>");
+    return markedText;
+  };
+
   useEffect(
     () => {
       if (!search) return setResults([]);
-      const r = searchMap[i18n.language].filter(map => {
+      let r = searchMap[i18n.language].filter(map => {
         return (
           map.title.toLowerCase().includes(search.toLowerCase()) ||
-          map.texts.find(text =>
+          map.texts.some(text =>
             text.toLowerCase().includes(search.toLowerCase())
           )
         );
       });
+
+      r = r.map(map => {
+        const texts = map.texts
+          .filter(text => text.toLowerCase().includes(search.toLowerCase()))
+          .map(text => addMarkerToSearch(text, search));
+        return {
+          images: map.images,
+          title: addMarkerToSearch(map.title, search),
+          texts: texts.length ? texts : [map.texts[0]]
+        };
+      });
       setResults(r);
     },
-    [search]
+    [search, i18n]
   );
 
   if (results.length === 0) {
@@ -57,14 +74,24 @@ export default function Search() {
         </p>
         {results.map((result, index) =>
           <li key={result.path + index}>
-            <h1 className="title">
-              {result.title}
-            </h1>
-
-            <div
-              className="text-result"
-              dangerouslySetInnerHTML={{ __html: result.texts }}
+            <h1
+              className="title"
+              dangerouslySetInnerHTML={{ __html: result.title }}
             />
+
+            {result.images?.length && (
+              <div className="images">
+                {result.images?.map(img => <img src={img} key={img} alt="Img" className="slika" />)}
+              </div>
+            )}
+
+            {result.texts.map((text, index) =>
+              <p
+                key={text + index}
+                className="text-result"
+                dangerouslySetInnerHTML={{ __html: text }}
+              />
+            )}
           </li>
         )}
       </ul>
