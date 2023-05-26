@@ -17,106 +17,81 @@ import { CCarousel, CCarouselItem, CImage } from "@coreui/react";
 import "@coreui/coreui/dist/css/coreui.min.css";
 import { Helmet } from "react-helmet";
 
+const mainImages = [mainImg, mainImg1, mainImg2];
+
+const coreImages = [
+  { main: core1, flip: coreflip1 },
+  { main: core2, flip: coreflip2 },
+  { main: core3, flip: coreflip3 },
+  { main: core4, flip: coreflip4 }
+];
+
 export default function OurCore() {
   return (
     <div className="container-main">
       <Helmet>
-        <title>Out core competencies | Helmchron</title>
+        <title>Out services | Helmchron</title>
       </Helmet>
-      {/* Slider start */}
       <CCarousel className="slider-main" controls transition="crossfade">
-        <CCarouselItem>
-          <CImage className="d-block w-100" src={mainImg} alt="slide 1" />
-        </CCarouselItem>
-        <CCarouselItem>
-          <CImage className="d-block w-100" src={mainImg1} alt="slide 2" />
-        </CCarouselItem>
-        <CCarouselItem>
-          <CImage className="d-block w-100" src={mainImg2} alt="slide 3" />
-        </CCarouselItem>
+        {mainImages.map((image, index) =>
+          <CCarouselItem key={index}>
+            <CImage
+              className="d-block w-100"
+              src={image}
+              alt={`slide ${index + 1}`}
+            />
+          </CCarouselItem>
+        )}
       </CCarousel>
       <div className="box-img">
-        <div>
-          <img src={mainImg} alt="Main" />
-        </div>
-        <div>
-          <img src={mainImg1} alt="Main" />
-        </div>
-        <div>
-          <img src={mainImg2} alt="Main" />
-        </div>
+        {mainImages.map((image, index) =>
+          <div key={index}>
+            <img src={image} alt="Main" />
+          </div>
+        )}
       </div>
-      {/* Slider end */}
 
-      <div>
+      <div className="">
         <div className="quote-box">
           <img className="quote" src={quote} alt="quote" />
         </div>
 
-        <h1 className="title">Our core competencies</h1>
+        <h1 className="title">OUR SERVICES</h1>
 
         <div className="core-item">
-          <div className="flip-card">
-            <div className="flip-card-inner">
-              <div className="flip-card-front">
-                <img src={core1} alt="core 1" />
+          {coreImages.slice(0, 2).map((image, index) =>
+            <div key={index} className="flip-card">
+              <div className="flip-card-inner">
+                <div className="flip-card-front">
+                  <img src={image.main} alt={`core ${index + 1}`} />
+                </div>
+                <div className="flip-card-back">
+                  <img src={image.flip} alt={`core ${index + 1} flip`} />
+                </div>
               </div>
-
-              <div className="flip-card-back">
-                <img src={coreflip1} alt="core 1 flip" />
-              </div>
+              <center>
+                <p href="/">Read more</p>
+              </center>
             </div>
-            <center>
-              <p href="/">Read more</p>
-            </center>
-          </div>
-          <div className="flip-card">
-            <div className="flip-card-inner">
-              <div className="flip-card-front">
-                <img src={core2} alt="core 2" />
-              </div>
-
-              <div className="flip-card-back">
-                <img src={coreflip2} alt="core 2 flip" />
-              </div>
-            </div>
-
-            <center>
-              <p href="/">Read more</p>
-            </center>
-          </div>
+          )}
         </div>
 
-        <div className="core-item core2">
-          <div className="flip-card">
-            <div className="flip-card-inner">
-              <div className="flip-card-front">
-                <img src={core3} alt="core 3" />
+        <div className="core-item">
+          {coreImages.slice(2, 4).map((image, index) =>
+            <div key={index} className="flip-card">
+              <div className="flip-card-inner">
+                <div className="flip-card-front">
+                  <img src={image.main} alt={`core ${index + 3}`} />
+                </div>
+                <div className="flip-card-back">
+                  <img src={image.flip} alt={`core ${index + 3} flip`} />
+                </div>
               </div>
-
-              <div className="flip-card-back">
-                <img src={coreflip3} alt="core 3 flip" />
-              </div>
+              <center>
+                <p href="/">Read more</p>
+              </center>
             </div>
-            <center>
-              <p href="/">Read more</p>
-            </center>
-          </div>
-          <div className="flip-card">
-            <div className="flip-card-inner">
-              <div className="flip-card-front">
-                <img src={core4} alt="core 4" />
-              </div>
-
-              <div className="flip-card-back">
-                <img src={coreflip4} alt="core 4 flip" />
-              </div>
-            </div>
-
-            <center>
-              <p href="/">Read more</p>
-            </center>
-          </div>
+          )}
         </div>
 
         <div style={{ marginTop: 0 }} className="video-envi">
@@ -129,10 +104,10 @@ export default function OurCore() {
             height="300"
             src="https://www.youtube.com/embed/83NXIfcKSzs"
             title="Helmchron - Our Business areas and Services"
-            frameborder="0"
+            frameBorder="0"
             loading="lazy"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
+            allowFullScreen
           />
         </div>
 

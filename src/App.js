@@ -2,6 +2,7 @@ import React, {lazy, Suspense } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Cookies from "./components/Cookies";
 import Search from "./pages/Search";
+import Thanks from "./pages/Thanks";
 const Header = lazy(() => import("./components/Header"));
 const Home = lazy(() => import('./pages/Home'))
 const Career = lazy(() => import("./pages/Career"));
@@ -56,6 +57,7 @@ function App() {
             <Route path="/vehicles" element={<Vehicles />} />
             <Route path="/news/achema" element={<Achema />} />
             <Route path="/news/k2022" element={<K2022 />} />
+            <Route path="/thanks" element={<Thanks />} />
             <Route path="/*" element={<NotFound />} />
           </Routes>
 

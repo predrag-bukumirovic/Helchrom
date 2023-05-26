@@ -1,107 +1,75 @@
 import React from "react";
-import "../assets/scss/slider.scss";
-import "../assets/scss/who.scss";
+import { CCarousel, CCarouselItem, CImage } from "@coreui/react";
+import { useTranslation } from "react-i18next";
+import { Helmet } from "react-helmet";
 
 import mainImg from "../assets/images/Who/who3.jpg";
 import mainImg1 from "../assets/images/Who/who1.jpg";
 import mainImg2 from "../assets/images/Who/who2.png";
-import { CCarousel, CCarouselItem, CImage } from "@coreui/react";
-import "@coreui/coreui/dist/css/coreui.min.css";
-import { useTranslation } from "react-i18next";
-
 import icon1 from "../assets/images/Who/Chemicals.png";
 import icon2 from "../assets/images/Who/Pharmaceuticals.png";
 import icon3 from "../assets/images/Who/Vehicles.png";
 import icon4 from "../assets/images/Who/Environment.png";
 import basicImg from "../assets/images/Who/basicImg.png";
-
 import dubleLogo from "../assets/images/Who/dubleWhite.png";
-import { Helmet } from "react-helmet";
+import "../assets/scss/slider.scss";
+import "../assets/scss/who.scss";
 
 export default function WhoAreWe() {
   const { t } = useTranslation();
+
   return (
     <div>
       <Helmet>
         <title>Who are we? | Helmchron</title>
       </Helmet>
       <div className="container-main">
-        {/* Slider start */}
         <CCarousel className="slider-main" controls transition="crossfade">
-          <CCarouselItem>
-            <CImage className="d-block w-100" src={mainImg2} alt="slide 1" />
-          </CCarouselItem>
-          <CCarouselItem>
-            <CImage className="d-block w-100" src={mainImg1} alt="slide 2" />
-          </CCarouselItem>
-          <CCarouselItem>
-            <CImage className="d-block w-100" src={mainImg} alt="slide 3" />
-          </CCarouselItem>
+          {[mainImg2, mainImg1, mainImg].map((img, index) =>
+            <CCarouselItem key={index}>
+              <CImage
+                className="d-block w-100"
+                src={img}
+                alt={`slide ${index + 1}`}
+              />
+            </CCarouselItem>
+          )}
         </CCarousel>
         <div className="box-img">
-          <div>
-            <img src={mainImg2} alt="Main" />
-          </div>
-          <div>
-            <img src={mainImg1} alt="Main" />
-          </div>
-          <div>
-            <img src={mainImg} alt="Main" />
-          </div>
+          {[mainImg2, mainImg1, mainImg].map((img, index) =>
+            <div key={index}>
+              <img src={img} alt="Main" />
+            </div>
+          )}
         </div>
       </div>
-      {/* Slider end */}
-
       <div className="container-main padding30">
         <h1 className="title">
           {t("title_who")}
         </h1>
         <center>
-          <p dangerouslySetInnerHTML={{ __html: t("who_text1") }} />
-
-          <p dangerouslySetInnerHTML={{ __html: t("who_text2") }} />
+          {[t("who_text1"), t("who_text2")].map((text, index) =>
+            <p key={index} dangerouslySetInnerHTML={{ __html: text }} />
+          )}
         </center>
         <div className="who-icon">
-          <div>
-            <a href="/chemicals">
-              <img src={icon1} alt="icon1" />
-              <p>
-                <b>
-                  {t("ul1")}
-                </b>
-              </p>
-            </a>
-          </div>
-          <div>
-            <a href="/pharma">
-              <img src={icon2} alt="icon2" />
-              <p>
-                <b>
-                  {t("ul2")}
-                </b>
-              </p>
-            </a>
-          </div>
-          <div>
-            <a href="/vehicles">
-              <img src={icon3} alt="icon3" />
-              <p>
-                <b>
-                  {t("ul3")}
-                </b>
-              </p>
-            </a>
-          </div>
-          <div>
-            <a href="/environment">
-              <img src={icon4} alt="icon4" />
-              <p>
-                <b>
-                  {t("ul4")}
-                </b>
-              </p>
-            </a>
-          </div>
+          {[
+            { img: icon1, text: t("ul1"), link: "/chemicals" },
+            { img: icon2, text: t("ul2"), link: "/pharma" },
+            { img: icon3, text: t("ul3"), link: "/vehicles" },
+            { img: icon4, text: t("ul4"), link: "/environment" }
+          ].map((item, index) =>
+            <div key={index}>
+              <a href={item.link}>
+                <img src={item.img} alt={`icon${index + 1}`} />
+                <p>
+                  <b>
+                    {item.text}
+                  </b>
+                </p>
+              </a>
+            </div>
+          )}
         </div>
         <center className="">
           <p dangerouslySetInnerHTML={{ __html: t("who_text3") }} />
@@ -111,41 +79,20 @@ export default function WhoAreWe() {
         <div>
           <div className="container-main padding30">
             <h2 className="title">OUR HISTORY</h2>
-
             <p dangerouslySetInnerHTML={{ __html: t("who_text4") }} />
           </div>
-
           <div className="logos-text">
-            <div className="logos">
-              <img src={dubleLogo} alt="Logo" />
-              <div>2010</div>
-            </div>
-            <div className="logos">
-              <img src={dubleLogo} alt="Logo" />
-              <div>2013</div>
-            </div>
-            <div className="logos">
-              <img src={dubleLogo} alt="Logo" />
-              <div>2015</div>
-            </div>
-            <div className="logos">
-              <img src={dubleLogo} alt="Logo" />
-              <div>2016</div>
-            </div>
-            <div className="logos">
-              <img src={dubleLogo} alt="Logo" />
-              <div>2020</div>
-            </div>
-            <div className="logos">
-              <img src={dubleLogo} alt="Logo" />
-              <div>2023</div>
-            </div>
+            {[2010, 2013, 2015, 2016, 2020, 2023].map((year, index) =>
+              <div key={index} className="logos">
+                <img src={dubleLogo} alt="Logo" />
+                <div>
+                  {year}
+                </div>
+              </div>
+            )}
           </div>
-
-          {/* <div className="year" /> */}
         </div>
       </div>
-
       <div className="container-main">
         <div className="basic padding30">
           <img src={basicImg} alt="Basic" />
@@ -153,7 +100,6 @@ export default function WhoAreWe() {
             <h2>
               <b>BASIC COMPANY INFORMATION</b>
             </h2>
-
             <ul>
               <li>Registered activity: Engineering Services</li>
               <li>Year of establishment: 2010.</li>
@@ -161,7 +107,6 @@ export default function WhoAreWe() {
               <li>TIN: 112690991</li>
               <li>Registration number: 66287432</li>
             </ul>
-
             <ul>
               <li>Contact person: Milos Ivosevic, PhD, Process Engineer</li>
               <li>

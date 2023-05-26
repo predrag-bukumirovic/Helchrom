@@ -1,4 +1,8 @@
 import React from "react";
+import { Helmet } from "react-helmet";
+import { CCarousel, CCarouselItem, CImage } from "@coreui/react";
+import "@coreui/coreui/dist/css/coreui.min.css";
+
 import mainImg from "../assets/images/News/1.webp";
 import mainImg1 from "../assets/images/News/2.webp";
 import mainImg2 from "../assets/images/News/3.webp";
@@ -8,45 +12,34 @@ import Frankfurt from "../assets/images/News/Frankfurt.webp";
 import "../assets/scss/slider.scss";
 import "../assets/scss/news.scss";
 
-import { CCarousel, CCarouselItem, CImage } from "@coreui/react";
-import "@coreui/coreui/dist/css/coreui.min.css";
-import { Helmet } from "react-helmet";
-
 export default function News() {
   return (
     <div className="container-main">
       <Helmet>
         <title>News | Helmchron</title>
       </Helmet>
-      {/* Slider start */}
       <CCarousel className="slider-main" controls transition="crossfade">
-        <CCarouselItem>
-          <CImage className="d-block w-100" src={mainImg} alt="slide 1" />
-        </CCarouselItem>
-        <CCarouselItem>
-          <CImage className="d-block w-100" src={mainImg1} alt="slide 2" />
-        </CCarouselItem>
-        <CCarouselItem>
-          <CImage className="d-block w-100" src={mainImg2} alt="slide 3" />
-        </CCarouselItem>
+        {[mainImg, mainImg1, mainImg2].map((img, index) =>
+          <CCarouselItem key={index}>
+            <CImage
+              className="d-block w-100"
+              src={img}
+              alt={`slide ${index + 1}`}
+            />
+          </CCarouselItem>
+        )}
       </CCarousel>
 
       <div className="box-img">
-        <div>
-          <img src={mainImg} alt="Main" />
-        </div>
-        <div>
-          <img src={mainImg1} alt="Main" />
-        </div>
-        <div>
-          <img src={mainImg2} alt="Main" />
-        </div>
+        {[mainImg, mainImg1, mainImg2].map((img, index) =>
+          <div key={index}>
+            <img src={img} alt="Main" />
+          </div>
+        )}
       </div>
-      {/* Slider end */}
 
       <div>
         <h1 className="title">FAIRS AND CONFERENCES</h1>
-
         <center>
           <p>
             We love participating in and attending professional fairs and
@@ -68,7 +61,7 @@ export default function News() {
                 K2022 covered the main challenges and hot topics from the global
                 plastic and rubber industry - circular economy, sustainable
                 materials for the future, and the scope of digitalization in
-                achieving these outcomes.{" "}
+                achieving these outcomes.
               </p>
               <a href="/news/k2022">Read more</a>
             </div>
@@ -76,7 +69,6 @@ export default function News() {
               <img src={Dusseldorf} alt="News" />
             </div>
           </div>
-
           <div className="line" />
         </div>
 

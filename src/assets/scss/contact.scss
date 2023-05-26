@@ -4,57 +4,49 @@ form {
   justify-content: space-between;
   gap: 80px;
   margin: 80px 0;
-
-  div {
-    width: 100%;
-  }
-
-  input,
-  textarea {
-    padding: 10px;
-    font-size: 18px;
-    display: block;
-    border-radius: 10px;
-    border: 1px solid rgb(190, 190, 190);
-    width: 100%;
-    margin-bottom: 15px;
-    resize: none;
-    outline: none;
-
-    &::placeholder {
-      font-size: 18px;
-    }
-  }
-
-  .btn {
-    background: var(--brend-color);
-    color: var(--light-blue-color) !important;
-    padding: 15px 50px;
-    font-size: 15px;
-    border: 1px solid var(--brend-color);
-    border-radius: 100px;
-    display: block;
-    cursor: pointer;
-
-    &:hover {
-      background: var(--brend-color);
-    }
-
-    &:active {
-      box-shadow: 10px 5px 10px var(--brend-color);
-    }
-  }
-
-  label {
-    display: block;
-    font-size: 16px;
-
-    .star {
-      color: #ff0000 !important;
-    }
-  }
 }
-
+form div {
+  width: 100%;
+}
+input,
+textarea {
+  padding: 10px;
+  font-size: 18px;
+  display: block;
+  border-radius: 10px;
+  border: 1px solid #bebebe;
+  width: 100%;
+  margin-bottom: 15px;
+  resize: none;
+  outline: none;
+}
+input::placeholder,
+textarea::placeholder {
+  font-size: 18px;
+}
+.btn {
+  background: var(--brend-color);
+  color: var(--light-blue-color) !important;
+  padding: 15px 50px;
+  font-size: 15px;
+  border: 1px solid var(--brend-color);
+  border-radius: 100px;
+  display: block;
+  cursor: pointer;
+}
+.btn:hover {
+  background: var(--brend-color);
+}
+.btn:active {
+  box-shadow: 10px 5px 10px var(--brend-color);
+}
+label {
+  display: block;
+  font-size: 16px;
+}
+label .star {
+  color: #f00 !important;
+}
 .icon-contact {
   display: flex;
   justify-content: center;
@@ -63,36 +55,29 @@ form {
   flex-wrap: wrap;
   margin: 80px 0;
   gap: 150px;
-
-  img {
-    width: 200px;
-    transition: .6s;
-
-    &:hover {
-      transform: scale(1.07);
-    }
-  }
-
-  p {
-    margin-top: 25px;
-    font-size: 25px;
-  }
 }
-
+.icon-contact img {
+  width: 200px;
+  transition: .6s;
+}
+.icon-contact img:hover {
+  transform: scale(1.07);
+}
+.icon-contact p {
+  margin-top: 25px;
+  font-size: 25px;
+}
 .info-send {
   color: var(--brend-color) !important;
 }
-
 @media (max-width: 545px) {
   .icon-contact {
     flex-direction: column;
-
-    img {
-      width: 200px !important;
-    }
+  }
+  .icon-contact img {
+    width: 200px !important;
   }
 }
-
 @media (max-width: 670px) {
   form {
     gap: 0;
@@ -100,9 +85,39 @@ form {
   }
 }
 @media (max-width: 700px) {
-  .icon-contact {
-    img {
-      width: 100px;
-    }
+  .icon-contact img {
+    width: 100px;
   }
+}
+.loading-spiner {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  z-index: 99999999999999;
+  top: 0;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  height: 100%;
+}
+.loading-spiner.active {
+  display: none;
+}
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 20px;
+  height: 20px;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  margin: 4px 0 0 10px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(.5, 0, .5, 1) infinite;
+  border-color: #fff transparent transparent transparent;
 }
