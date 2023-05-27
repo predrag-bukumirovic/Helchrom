@@ -2,12 +2,12 @@ import React from "react";
 import { CCarousel, CCarouselItem, CImage } from "@coreui/react";
 import { Helmet } from "react-helmet";
 
-import mainImg1 from "../assets/images/K2022/baner1.png";
-import mainImg2 from "../assets/images/K2022/baner2.jpeg";
-import mainImg3 from "../assets/images/K2022/baner3.jpeg";
-import img1 from "../assets/images/K2022/1.jpeg";
-import img2 from "../assets/images/K2022/2.png";
-import img3 from "../assets/images/K2022/3.png";
+import mainImg1 from "../assets/images/K2022/baner1.webp";
+import mainImg2 from "../assets/images/K2022/baner2.webp";
+import mainImg3 from "../assets/images/K2022/baner3.webp";
+import img1 from "../assets/images/K2022/1.webp";
+import img2 from "../assets/images/K2022/2.webp";
+import img3 from "../assets/images/K2022/3.webp";
 
 import "../assets/scss/slider.scss";
 import "@coreui/coreui/dist/css/coreui.min.css";

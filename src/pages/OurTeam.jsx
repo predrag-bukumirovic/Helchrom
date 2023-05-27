@@ -2,23 +2,23 @@ import React from "react";
 import "../assets/scss/slider.scss";
 import "../assets/scss/our-team.scss";
 import "../assets/scss/home.scss";
-import mainImg from "../assets/images/Team/team1.jpg";
-import mainImg1 from "../assets/images/Team/team2.jpg";
-import mainImg2 from "../assets/images/Team/team3.jpg";
+import mainImg from "../assets/images/Team/team1.webp";
+import mainImg1 from "../assets/images/Team/team2.webp";
+import mainImg2 from "../assets/images/Team/team3.webp";
 import { AiOutlineMail } from "react-icons/ai";
 import linkedine from "../assets/images/linkedine.webp";
-import structure from "../assets/images/Team/structureHC.png";
+import structure from "../assets/images/Team/structureHC.webp";
 import quote from "../assets/images/Team/quote.png";
 import bigLogo from "../assets/images/Team/orangeLogo.png";
 
-import milos from "../assets/images/Team/milos.png";
-import anja from "../assets/images/Team/anja.png";
+import milos from "../assets/images/Team/milos.webp";
+import anja from "../assets/images/Team/anja.webp";
 
-import icon1 from "../assets/images/Team/Interity.png";
-import icon2 from "../assets/images/Team/Commitment.png";
-import icon4 from "../assets/images/Team/Agility.png";
-import icon3 from "../assets/images/Team/Diversity.png";
-import icon5 from "../assets/images/Team/Courage.png";
+import icon1 from "../assets/images/Team/Interity.webp";
+import icon2 from "../assets/images/Team/Commitment.webp";
+import icon4 from "../assets/images/Team/Agility.webp";
+import icon3 from "../assets/images/Team/Diversity.webp";
+import icon5 from "../assets/images/Team/Courage.webp";
 
 import { CCarousel, CCarouselItem, CImage } from "@coreui/react";
 import "@coreui/coreui/dist/css/coreui.min.css";

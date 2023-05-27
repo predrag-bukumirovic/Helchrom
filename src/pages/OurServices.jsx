@@ -5,14 +5,14 @@ import mainImg from "../assets/images/OurServices/services1.webp";
 import mainImg1 from "../assets/images/OurServices/services2.webp";
 import mainImg2 from "../assets/images/OurServices/services3.webp";
 
-import core1 from "../assets/images/OurServices/1.1.png";
-import coreflip1 from "../assets/images/OurServices/1.2.png";
-import core2 from "../assets/images/OurServices/2.1.png";
-import coreflip2 from "../assets/images/OurServices/2.2.png";
-import core3 from "../assets/images/OurServices/3.1.png";
-import coreflip3 from "../assets/images/OurServices/3.2.png";
-import core4 from "../assets/images/OurServices/4.1.png";
-import coreflip4 from "../assets/images/OurServices/4.2.png";
+import core1 from "../assets/images/OurServices/1.1.webp";
+import coreflip1 from "../assets/images/OurServices/1.2.webp";
+import core2 from "../assets/images/OurServices/2.1.webp";
+import coreflip2 from "../assets/images/OurServices/2.2.webp";
+import core3 from "../assets/images/OurServices/3.1.webp";
+import coreflip3 from "../assets/images/OurServices/3.2.webp";
+import core4 from "../assets/images/OurServices/4.1.webp";
+import coreflip4 from "../assets/images/OurServices/4.2.webp";
 import quote from "../assets/images/OurServices/quote.png";
 
 import { CCarousel, CCarouselItem, CImage } from "@coreui/react";

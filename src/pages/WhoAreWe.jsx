@@ -3,14 +3,14 @@ import { CCarousel, CCarouselItem, CImage } from "@coreui/react";
 import { useTranslation } from "react-i18next";
 import { Helmet } from "react-helmet";
 
-import mainImg from "../assets/images/Who/who3.jpg";
-import mainImg1 from "../assets/images/Who/who1.jpg";
-import mainImg2 from "../assets/images/Who/who2.png";
+import mainImg from "../assets/images/Who/who3.webp";
+import mainImg1 from "../assets/images/Who/who1.webp";
+import mainImg2 from "../assets/images/Who/who2.webp";
 import icon1 from "../assets/images/Who/Chemicals.png";
 import icon2 from "../assets/images/Who/Pharmaceuticals.png";
 import icon3 from "../assets/images/Who/Vehicles.png";
 import icon4 from "../assets/images/Who/Environment.png";
-import basicImg from "../assets/images/Who/basicImg.png";
+import basicImg from "../assets/images/Who/basicImg.webp";
 import dubleLogo from "../assets/images/Who/dubleWhite.png";
 import "../assets/scss/slider.scss";
 import "../assets/scss/who.scss";

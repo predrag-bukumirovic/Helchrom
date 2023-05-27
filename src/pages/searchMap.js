@@ -1,6 +1,6 @@
 import texts from '../texts'
 
-import anjaImg from '../assets/images/Team/anja.png'
+import anjaImg from '../assets/images/Team/anja.webp'
 
 const en = texts.en.translation
 

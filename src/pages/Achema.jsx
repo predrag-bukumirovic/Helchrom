@@ -1,10 +1,10 @@
 import { CCarousel, CCarouselItem, CImage } from "@coreui/react";
 import React from "react";
-import mainImg from "../assets/images/Achema/baner1.jpg";
-import mainImg1 from "../assets/images/Achema/baner2.jpg";
-import mainImg2 from "../assets/images/Achema/baner3.jpg";
-import gustavo from "../assets/images/Achema/gustavo.jpg";
-import school from "../assets/images/Achema/school.jpg";
+import mainImg from "../assets/images/Achema/baner1.webp";
+import mainImg1 from "../assets/images/Achema/baner2.webp";
+import mainImg2 from "../assets/images/Achema/baner3.webp";
+import gustavo from "../assets/images/Achema/gustavo.webp";
+import school from "../assets/images/Achema/school.webp";
 import "@coreui/coreui/dist/css/coreui.min.css";
 import "../assets/scss/slider.scss";
 import "../assets/scss/achema.scss";
