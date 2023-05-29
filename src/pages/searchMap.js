@@ -1,6 +1,7 @@
 import texts from '../texts'
 
 import anjaImg from '../assets/images/Team/anja.webp'
+import milosImg from '../assets/images/Team/milos.webp'
 
 const en = texts.en.translation
 
@@ -12,7 +13,7 @@ const data = {
     },
     {
       title: en.title_team,
-      images: [anjaImg],
+      images: [anjaImg, milosImg],
       texts: [
         en.team1_text1,
         en.team1_text2,
@@ -24,7 +25,7 @@ const data = {
         en.team2_text1,
         en.team2_text2,
         en.team_contact2
-      ],
+      ]
     },
 
     {

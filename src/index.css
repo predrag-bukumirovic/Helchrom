@@ -1,4 +1,15 @@
 @import './assets/scss/fonts.scss';
+@supports (padding: max(0px)) {
+  /* Safari za iOS 15+ */
+  header {
+    background: var(--brend-color);
+    padding-top: constant(safe-area-inset-top);
+    padding-left: constant(safe-area-inset-left);
+    padding-right: constant(safe-area-inset-right);
+    /* background-clip: padding-box; */
+  }
+}
+
 :root {
   --brend-color: #ffa500;
   --light-blue-color: #f4f6fc;
