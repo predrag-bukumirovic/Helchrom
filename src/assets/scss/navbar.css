@@ -111,6 +111,7 @@ ul li ol.menu-down li a:hover {
   outline: none;
   width: 100%;
   margin-left: 20px;
+  margin-bottom: 0;
   border: none;
   background: #efefef;
 }

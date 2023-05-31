@@ -154,9 +154,9 @@ export default function Contact() {
       setLoading(true);
       setTimeout(() => {
         setLoading(false);
+        window.open("/thanks", "_self");
       }, 3000);
 
-      window.open("/thanks", "_self");
       document.getElementById("form").reset();
     } catch (e) {
       console.error(e);
@@ -249,7 +249,7 @@ export default function Contact() {
                 Full Name <span className="star">*</span>
                 <input
                   type="text"
-                  placeholder="Full Name"
+                  placeholder="Please enter your full name"
                   name="name"
                   required
                   onChange={event => setName(event.target.value)}
@@ -259,7 +259,7 @@ export default function Contact() {
                 Company
                 <input
                   type="text"
-                  placeholder="Company"
+                  placeholder="Please enter your company"
                   name="company"
                   onChange={event => setCompany(event.target.value)}
                 />
@@ -268,7 +268,7 @@ export default function Contact() {
                 Email <span className="star">*</span>
                 <input
                   type="email"
-                  placeholder="Email"
+                  placeholder="Please enter your email"
                   required
                   name="email"
                   onChange={event => setEmail(event.target.value)}
@@ -278,7 +278,7 @@ export default function Contact() {
                 Position
                 <input
                   type="text"
-                  placeholder="Position"
+                  placeholder="Please enter your position"
                   name="position"
                   onChange={event => setPosition(event.target.value)}
                 />
@@ -286,8 +286,8 @@ export default function Contact() {
               <label htmlFor="number">
                 Phone Number
                 <input
-                  type="number"
-                  placeholder="Phone Number"
+                  type="text"
+                  placeholder="Please enter your phone number"
                   name="phone"
                   onChange={event => setPhone(event.target.value)}
                 />
@@ -299,7 +299,7 @@ export default function Contact() {
                 Subject <span className="star">*</span>
                 <input
                   type="text"
-                  placeholder="Subject"
+                  placeholder="Please enter your subject"
                   name="subject"
                   required
                   onChange={event => setSubject(event.target.value)}
@@ -308,7 +308,7 @@ export default function Contact() {
               <label htmlFor="message">
                 Message <span className="star">*</span>
                 <textarea
-                  placeholder="Message"
+                  placeholder="Please enter your message here"
                   cols="30"
                   rows="10"
                   name="message"
@@ -318,7 +318,7 @@ export default function Contact() {
               </label>
 
               <button type="submit" className="btn">
-                Submit{" "}
+                {loading ? "Sending... " : "Send "}
                 {loading &&
                   <div class="lds-ring">
                     <div />
