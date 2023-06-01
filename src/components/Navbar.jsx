@@ -35,6 +35,7 @@ export default function Navbar() {
         pathname: "/search",
         search: `?${createSearchParams({ q: search })}`
       });
+      document.activeElement.blur();
     }
   };
 
