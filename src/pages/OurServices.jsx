@@ -1,18 +1,19 @@
 import React from "react";
 import "../assets/scss/slider.scss";
 import "../assets/scss/services.scss";
+
 import mainImg from "../assets/images/OurServices/services1.webp";
 import mainImg1 from "../assets/images/OurServices/services2.webp";
 import mainImg2 from "../assets/images/OurServices/services3.webp";
 
-import core1 from "../assets/images/OurServices/1.1.webp";
-import coreflip1 from "../assets/images/OurServices/1.2.webp";
-import core2 from "../assets/images/OurServices/2.1.webp";
+import core1 from "../assets/images/OurServices/1.1.png";
+import coreflip1 from "../assets/images/OurServices/1.2.png";
+import core2 from "../assets/images/OurServices/2.1.png";
 import coreflip2 from "../assets/images/OurServices/2.2.webp";
-import core3 from "../assets/images/OurServices/3.1.webp";
+import core3 from "../assets/images/OurServices/3.1.png";
 import coreflip3 from "../assets/images/OurServices/3.2.webp";
-import core4 from "../assets/images/OurServices/4.1.webp";
-import coreflip4 from "../assets/images/OurServices/4.2.webp";
+import core4 from "../assets/images/OurServices/4.1.png";
+import coreflip4 from "../assets/images/OurServices/4.2.png";
 import quote from "../assets/images/OurServices/quote.png";
 
 import { CCarousel, CCarouselItem, CImage } from "@coreui/react";
@@ -96,14 +97,11 @@ export default function OurServices() {
           )}
         </div>
 
-        <div style={{ marginTop: 0 }} className="video-envi">
-          <h3 style={{ marginTop: 0 }} className="title">
-            HOW CAN WE SUPPORT YOU?
-          </h3>
+        <div className="video-envi padding30">
+          <h3 className="title">HOW CAN WE SUPPORT YOU?</h3>
 
           <iframe
-            width="600"
-            height="300"
+            className="video-yt"
             src="https://www.youtube.com/embed/83NXIfcKSzs"
             title="Helmchron - Our Business areas and Services"
             frameBorder="0"

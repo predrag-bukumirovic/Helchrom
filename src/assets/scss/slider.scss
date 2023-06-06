@@ -154,6 +154,10 @@
   p {
     color: #0000ff;
   }
+
+  @media (min-width: 1250px) {
+    margin-top: 0 !important;
+  }
 }
 
 .references {

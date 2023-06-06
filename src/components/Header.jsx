@@ -8,9 +8,9 @@ export default function Header() {
     <div className="w-100">
       <div className="header-box container-main">
         <div className="header-links">
-          <a className="lng" href="/">
+          <p className="lng">
             <GoGlobe className="icon-lng" />ENGLISH
-          </a>
+          </p>
           <a href="/contact">CONTACT</a>
         </div>
         <Navbar />

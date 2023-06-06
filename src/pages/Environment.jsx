@@ -114,8 +114,7 @@ export default function Environment() {
           <h3 className="title">PLASTICS - THEN AND NOW</h3>
 
           <iframe
-            width="600"
-            height="300"
+            className="video-yt"
             loading="lazy"
             src="https://www.youtube.com/embed/0leFkWYyv4c"
             title="Plastics - then and now I Helmchron I Chemistry Connects Us"

@@ -124,23 +124,20 @@ export default function Career() {
         </div>
       </div>
 
-      <div className=" box-career">
+      <div className="video-envi box-career padding30">
         <h2 style={{ marginBottom: 80 }}>
           FIND OUT MORE ABOUT WORKING IN OUR TEAM
         </h2>
 
-        <center>
-          <iframe
-            width="800"
-            height="500"
-            loading="lazy"
-            src="https://www.youtube.com/embed/kL0TWeEXIzk"
-            title="Helmchron - Working in our team"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-          />
-        </center>
+        <iframe
+          className="video-yt"
+          loading="lazy"
+          src="https://www.youtube.com/embed/kL0TWeEXIzk"
+          title="Helmchron - Working in our team"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        />
       </div>
     </div>
   );

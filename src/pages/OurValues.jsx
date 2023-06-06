@@ -155,8 +155,7 @@ export default function OurValues() {
           <h3 className="title">WHAT CONNECTS US?</h3>
 
           <iframe
-            width="600"
-            height="300"
+            className="video-yt"
             loading="lazy"
             src="https://www.youtube.com/embed/ggIoQMjqkVM"
             title="Helmchron - Our core values"

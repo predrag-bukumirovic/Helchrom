@@ -1,8 +1,8 @@
 import { CCarousel, CCarouselItem, CImage } from "@coreui/react";
 import React from "react";
-import mainImg from "../assets/images/Contact/contact1.jpg";
-import mainImg1 from "../assets/images/Contact/contact2.jpg";
-import mainImg2 from "../assets/images/Contact/contact3.jpg";
+import mainImg from "../assets/images/Contact/contact1.png";
+import mainImg1 from "../assets/images/Contact/contact2.png";
+import mainImg2 from "../assets/images/Contact/contact3.png";
 import "@coreui/coreui/dist/css/coreui.min.css";
 import "../assets/scss/slider.scss";
 

@@ -4,13 +4,13 @@ import "../assets/scss/services.scss";
 import mainImg from "../assets/images/OurCore/c-s1.webp";
 import mainImg1 from "../assets/images/OurCore/c-s2.webp";
 import mainImg2 from "../assets/images/OurCore/c-s3.webp";
-import core1 from "../assets/images/OurCore/1.1.webp";
+import core1 from "../assets/images/OurCore/1.1.png";
 import coreflip1 from "../assets/images/OurCore/1.2.webp";
-import core2 from "../assets/images/OurCore/2.1.webp";
+import core2 from "../assets/images/OurCore/2.1.png";
 import coreflip2 from "../assets/images/OurCore/2.2.webp";
-import core3 from "../assets/images/OurCore/3.1.webp";
+import core3 from "../assets/images/OurCore/3.1.png";
 import coreflip3 from "../assets/images/OurCore/3.2.webp";
-import core4 from "../assets/images/OurCore/4.1.webp";
+import core4 from "../assets/images/OurCore/4.1.png";
 import coreflip4 from "../assets/images/OurCore/4.2.webp";
 import quote from "../assets/images/OurCore/quote.png";
 import { CCarousel, CCarouselItem, CImage } from "@coreui/react";
@@ -94,14 +94,11 @@ export default function OurCore() {
           )}
         </div>
 
-        <div style={{ marginTop: 0 }} className="video-envi">
-          <h3 style={{ marginTop: 0 }} className="title">
-            HOW CAN WE SUPPORT YOU?
-          </h3>
+        <div className="video-envi padding30">
+          <h3 className="title">HOW CAN WE SUPPORT YOU?</h3>
 
           <iframe
-            width="600"
-            height="300"
+            className="video-yt"
             src="https://www.youtube.com/embed/83NXIfcKSzs"
             title="Helmchron - Our Business areas and Services"
             frameBorder="0"

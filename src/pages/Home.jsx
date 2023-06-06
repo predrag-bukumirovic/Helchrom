@@ -16,6 +16,7 @@ import icon1 from "../assets/images/Home/1.png";
 import icon2 from "../assets/images/Home/2.png";
 import icon3 from "../assets/images/Home/3.png";
 import icon4 from "../assets/images/Home/4.png";
+import icon5 from "../assets/images/Home/5.png";
 
 import quotation from "../assets/images/quotation.png";
 
@@ -149,11 +150,21 @@ export default function Home() {
           <div>
             <img src={icon1} alt="icon1" />
             <p>
-              <b>Design of unit operations</b>
+              <b>Plant construction</b>
             </p>
             <p>
-              We design units for fluid flow operations, mechanical operations,
-              mass transfer, and heat transfer.{" "}
+              We deliver plant, equipment, and process design solutions,
+              including plant engineering, process simulation, and upgrade.
+            </p>
+          </div>
+          <div>
+            <img src={icon5} alt="icon1" className="icon-water" />
+            <p>
+              <b>Water treatment</b>
+            </p>
+            <p>
+              Purification, treatment for specialized industrial applications,
+              and treatment of wastewater.
             </p>
           </div>
           <div>
@@ -182,8 +193,8 @@ export default function Home() {
               <b>Innovation Lab / R&D</b>
             </p>
             <p>
-              We observe our partners` needs as opportunities to create new
-              solutions.
+              We develop innovative technical concepts, products, and services
+              anticipating our partners` needs.
             </p>
           </div>
         </div>

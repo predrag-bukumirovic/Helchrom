@@ -17,6 +17,9 @@
       img {
         width: 200px;
       }
+      .icon-water {
+        width: 100px;
+      }
       > p {
         margin-top: 15px;
       }
@@ -78,6 +81,7 @@
 
     :nth-child(2) img {
       width: 300px;
+      opacity: 0.4;
     }
 
     @media (max-width: 1060px) {

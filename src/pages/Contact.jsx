@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import "../assets/scss/contact.scss";
 import "../assets/scss/slider.scss";
-import mainImg from "../assets/images/Contact/contact1.jpg";
-import mainImg1 from "../assets/images/Contact/contact2.jpg";
-import mainImg2 from "../assets/images/Contact/contact3.jpg";
+import mainImg from "../assets/images/Contact/contact1.png";
+import mainImg1 from "../assets/images/Contact/contact2.png";
+import mainImg2 from "../assets/images/Contact/contact3.png";
 import icon1 from "../assets/images/Contact/1.png";
 import icon2 from "../assets/images/Contact/2.png";
 import icon3 from "../assets/images/Contact/3.png";
@@ -19,6 +19,9 @@ export default function Contact() {
   const [phone, setPhone] = useState("");
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
+  const [policy, setPolicy] = useState(
+    "The user has aligned their consent with the privacy policy."
+  );
 
   const [loading, setLoading] = useState(false);
 
@@ -112,6 +115,10 @@ export default function Contact() {
             .message-box {
               padding: 30px;
             }
+
+            .policy {
+              color: #ffa500 !important;
+            }
           </style>
         </head>
 
@@ -127,6 +134,7 @@ export default function Contact() {
               <b>Email:</b> <p>${email}</p>
               <b>Position:</b> <p>${position}</p>
               <b>Phone Number:</b> <p>${phone}</p>
+              <b>Privacy policy:</b> <p class="policy">${policy}</p>
               <p class="message-box"><b><Message:></b> ${message}</p>
             </div>
             <div class="footer">
@@ -155,9 +163,8 @@ export default function Contact() {
       setTimeout(() => {
         setLoading(false);
         window.open("/thanks", "_self");
+        document.getElementById("form").reset();
       }, 3000);
-
-      document.getElementById("form").reset();
     } catch (e) {
       console.error(e);
       setLoading(false);
@@ -317,7 +324,23 @@ export default function Contact() {
                 />
               </label>
 
-              <button type="submit" className="btn">
+              <label className="label-policy" htmlFor="policy">
+                <p>
+                  I agree to the <a href="/privacy-policy">Privacy Policy</a>
+                </p>
+                <input
+                  id="policy"
+                  type="checkbox"
+                  name="policyAccepted"
+                  value={
+                    "The privacy policy has been accepted and is now in effect."
+                  }
+                  required
+                  onChange={event => setPolicy(event.target.value)}
+                />
+              </label>
+
+              <button type="submit" className="btn" disabled={loading}>
                 {loading ? "Sending... " : "Send "}
                 {loading &&
                   <div class="lds-ring">
