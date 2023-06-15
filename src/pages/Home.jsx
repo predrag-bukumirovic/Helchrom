@@ -64,7 +64,7 @@ const responsive = {
 
 export default function Home() {
   useEffect(() => {
-    AOS.init();
+    AOS.init({ duration: 1500 });
   }, []);
   return (
     <div className="home">
@@ -282,61 +282,61 @@ export default function Home() {
 
         <div>
           <div className="row-logos no-reverse">
-            <div className="logos">
+            <div data-aos="fade-right" className="logos">
               <img src={HC2010} alt="Midle Logo" />
             </div>
 
-            <p>
+            <p data-aos="fade-left">
               Our first projects were local, but our vision was the same - to
               improve the quality of life for everyone.
             </p>
           </div>
           <div className="row-logos reverse">
-            <div className="logos">
+            <div data-aos="fade-left" className="logos">
               <img src={HC2013} alt="Midle Logo" />
             </div>
 
-            <p>
+            <p data-aos="fade-right">
               We are participating in our first non-local projects and gaining
               perspective from working in big, complex teams.{" "}
             </p>
           </div>
           <div className="row-logos no-reverse">
-            <div className="logos">
+            <div data-aos="fade-right" className="logos">
               <img src={HC2015} alt="Midle Logo" />
             </div>
 
-            <p>
+            <p data-aos="fade-left">
               Our mission and vision are starting to come true - we are working
               on projects in the German market...
             </p>
           </div>
           <div className="row-logos reverse">
-            <div className="logos">
+            <div data-aos="fade-left" className="logos">
               <img src={HC2016} alt="Midle Logo" />
             </div>
 
-            <p>
+            <p data-aos="fade-right">
               ...and continuing our growth and development towards additional
               big projects.{" "}
             </p>
           </div>
           <div className="row-logos no-reverse">
-            <div className="logos">
+            <div data-aos="fade-right" className="logos">
               <img src={HC2020} alt="Midle Logo" />
             </div>
 
-            <p>
+            <p data-aos="fade-left">
               During the pandemic, we focused more on projects in the
               pharmaceutical sector to achieve and sustain health globally.
             </p>
           </div>
           <div className="row-logos reverse">
-            <div className="logos">
+            <div data-aos="fade-left" className="logos">
               <img src={HC2023} alt="Midle Logo" />
             </div>
 
-            <p>
+            <p data-aos="fade-right">
               We continue to learn, develop and innovate in order to bring more
               value to the coming generations.{" "}
             </p>

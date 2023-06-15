@@ -41,7 +41,7 @@ export default function PrivacyPolicy() {
       </div>
       {/* Slider end */}
 
-      <div className="privacy-policy">
+      <div className="padding30 privacy-policy">
         <h1 className="title">
           {t("plicy.title")}
         </h1>

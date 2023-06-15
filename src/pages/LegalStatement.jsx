@@ -39,7 +39,7 @@ export default function LegalStatement() {
       </div>
       {/* Slider end */}
 
-      <div className=" legal-statement">
+      <div className="padding30 legal-statement">
         <h1 className="title">Legal statement</h1>
 
         <p>

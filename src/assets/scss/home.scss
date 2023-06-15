@@ -188,7 +188,7 @@
 
   .row-logos.no-reverse img {
     position: relative;
-    left: -215px;
+    left: -230px;
     width: 400px !important;
   }
 
@@ -201,12 +201,12 @@
   .row-logos.reverse img {
     position: relative;
     right: -455px;
-    width: 400px;
+    width: 400px !important;
   }
   .row-logos.reverse p {
     position: absolute;
     left: 50px;
-    width: 300px;
+    width: 250px;
   }
 
   .row-logos .logos {
@@ -216,7 +216,7 @@
 @media (max-width: 650px) {
   .row-logos.reverse img {
     position: relative;
-    right: -400px;
+    right: -325px;
     width: 400px !important;
   }
 
@@ -230,7 +230,7 @@
 @media (max-width: 550px) {
   .row-logos.reverse img {
     position: relative;
-    right: -320px;
+    right: -220px;
     width: 400px !important;
   }
   .row-logos.reverse p {

@@ -31,8 +31,6 @@ function App() {
 
 
   return <Router>
-      <div className="body-bg">
-        <div className="App">
           <Suspense fallback={renderLoader()}>
             <Header />
             {/* <Navbar /> */}
@@ -63,8 +61,6 @@ function App() {
 
           <Cookies />
           <Footer />
-        </div>
-      </div>
     </Router>;
 }
 
