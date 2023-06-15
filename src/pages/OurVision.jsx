@@ -96,7 +96,7 @@ export default function OurVision() {
         </div>
       </div>
       <div className="facts-box">
-        <div className="facts  container-main">
+        <div className="facts container-main">
           <div>
             <h2>OUR VISION</h2>
             <p>

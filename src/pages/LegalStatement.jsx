@@ -1,5 +1,4 @@
 import React from "react";
-import Logo from "../assets/images/policy.png";
 import { CCarousel, CCarouselItem, CImage } from "@coreui/react";
 import mainImg from "../assets/images/Legal/1.jpg";
 import mainImg1 from "../assets/images/Legal/2.jpeg";
@@ -41,10 +40,6 @@ export default function LegalStatement() {
       {/* Slider end */}
 
       <div className=" legal-statement">
-        <div className="policy-logo">
-          <img src={Logo} alt="" />
-        </div>
-
         <h1 className="title">Legal statement</h1>
 
         <p>

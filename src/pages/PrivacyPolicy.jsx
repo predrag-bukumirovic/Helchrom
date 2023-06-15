@@ -1,9 +1,9 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import Logo from "../assets/images/policy.png";
 import { CCarousel, CCarouselItem, CImage } from "@coreui/react";
-import mainImg from "../assets/images/Privacy/1.jpeg";
+import mainImg from "../assets/images/Privacy/1.jpg";
 import mainImg1 from "../assets/images/Privacy/2.jpeg";
+import mainImg2 from "../assets/images/Privacy/3.jpeg";
 import "@coreui/coreui/dist/css/coreui.min.css";
 import "../assets/scss/slider.scss";
 import { Helmet } from "react-helmet";
@@ -24,7 +24,7 @@ export default function PrivacyPolicy() {
           <CImage className="d-block w-100" src={mainImg1} alt="slide 2" />
         </CCarouselItem>
         <CCarouselItem>
-          <CImage className="d-block w-100" src={mainImg1} alt="slide 3" />
+          <CImage className="d-block w-100" src={mainImg2} alt="slide 3" />
         </CCarouselItem>
       </CCarousel>
 
@@ -36,16 +36,12 @@ export default function PrivacyPolicy() {
           <img src={mainImg1} alt="Main" />
         </div>
         <div>
-          <img src={mainImg1} alt="Main" />
+          <img src={mainImg2} alt="Main" />
         </div>
       </div>
       {/* Slider end */}
 
-      <div className=" privacy-policy">
-        <div className="policy-logo">
-          <img src={Logo} alt="" />
-        </div>
-
+      <div className="privacy-policy">
         <h1 className="title">
           {t("plicy.title")}
         </h1>

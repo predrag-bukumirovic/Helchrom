@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../assets/scss/home.scss";
 import "../assets/scss/slider.scss";
 import Chemicals from "../assets/images/Home/Chemicals.png";
+import Chemicals1 from "../assets/images/Home/ChemicalsWhite.png";
 import Environment from "../assets/images/Home/Environment.png";
+import Environment1 from "../assets/images/Home/EnvironmentWhite.png";
 import Pharma from "../assets/images/Home/Pharma.png";
+import Pharma1 from "../assets/images/Home/PharmaWhite.png";
 import Video from "../assets/videos/Ver4WhoweareHCvideo.mp4";
 import Poster from "../assets/images/poster.jpg";
 import mainImg from "../assets/images/Home/main-img.jpg";
@@ -11,7 +14,6 @@ import mainImg1 from "../assets/images/Home/main-img1.jpg";
 import mainImg2 from "../assets/images/Home/main-img2.png";
 import dubleLogo from "../assets/images/dubleLogo.png";
 
-import bigLogo from "../assets/images/Home/bigLogo.png";
 import icon1 from "../assets/images/Home/1.png";
 import icon2 from "../assets/images/Home/2.png";
 import icon3 from "../assets/images/Home/3.png";
@@ -33,6 +35,9 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 const responsive = {
   superLargeDesktop: {
     breakpoint: { max: 4000, min: 3000 },
@@ -53,6 +58,9 @@ const responsive = {
 };
 
 export default function Home() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <div className="home">
       <CCarousel className="slider-main" controls transition="crossfade">
@@ -139,8 +147,49 @@ export default function Home() {
         </div>
       </div>
 
+      <div className="welcome container-main padding30">
+        <h1>
+          <p data-aos="fade-up" data-aos-duration="500">
+            W
+          </p>
+          <p data-aos="fade-down" data-aos-duration="800">
+            E
+          </p>
+          <p data-aos="fade-up" data-aos-duration="1100">
+            L
+          </p>
+          <p data-aos="fade-down" data-aos-duration="1400">
+            C
+          </p>
+          <p data-aos="fade-up" data-aos-duration="1700">
+            O
+          </p>
+          <p data-aos="fade-down" data-aos-duration="2000">
+            M
+          </p>
+          <p data-aos="fade-up" data-aos-duration="2300">
+            E
+          </p>{" "}
+          to Helmchron official website.
+        </h1>
+        <p>
+          Helmchron is a family-owned company that provides process and chemical
+          engineering solutions to worldwide leaders in the chemical and
+          pharmaceutical industry since 2010. <br /> Our mission has remained
+          the same since the beginning - to improve the quality of life for
+          everyone everywhere whilst keeping our environment healthy for the
+          coming generations. <br /> Today, our scope is broader and our team
+          more diverse providing unique perspectives, agility, and efficacy. Our
+          process and chemical engineering solutions are now delivered to
+          partners across different industries with focus on global impact,
+          sustainable outcomes, and partners` satisfaction.
+        </p>
+
+        <a href="/about-us/our-vision-and-mission">Read More</a>
+      </div>
+
       <div className="our-home container-main padding30">
-        <h1 className="title">OUR SERVICES</h1>
+        <h2 className="title">OUR SERVICES</h2>
         <p>
           We provide best-in-class process and chemical engineering solutions to
           clients worldwide.
@@ -214,10 +263,6 @@ export default function Home() {
               accountaility.
             </p>
             <a href="/about-us/who-are-we">Read more</a>
-          </div>
-
-          <div>
-            <img src={bigLogo} alt="Big Logo" />
           </div>
         </div>
       </div>
@@ -317,25 +362,44 @@ export default function Home() {
         </div>
         <div className="areas-icon">
           <div>
-            <a href="/chemicals">
-              <LazyLoadImage src={Chemicals} alt="Chemicals" />
-            </a>
+            <div className="row-icon">
+              <a href="/chemicals">
+                <div className="icon1">
+                  <LazyLoadImage src={Chemicals} alt="Chemicals" />
+                </div>
+
+                <LazyLoadImage src={Chemicals1} alt="Chemicals" />
+              </a>
+            </div>
+
             <center>
               <a href="/chemicals">Read more</a>
             </center>
           </div>
           <div>
-            <a href="/pharma">
-              <LazyLoadImage src={Pharma} alt="Pharma" />
-            </a>
+            <div className="row-icon">
+              <a href="/pharma">
+                <div className="icon1">
+                  <LazyLoadImage src={Pharma} alt="Pharma" />
+                </div>
+                <LazyLoadImage src={Pharma1} alt="Pharma" />
+              </a>
+            </div>
+
             <center>
               <a href="/pharma">Read more</a>
             </center>
           </div>
           <div>
-            <a href="/environment">
-              <LazyLoadImage src={Environment} alt="Environment" />
-            </a>
+            <div className="row-icon">
+              <a href="/environment">
+                <div className="icon1">
+                  <LazyLoadImage src={Environment} alt="Environment" />
+                </div>
+                <LazyLoadImage src={Environment1} alt="Environment" />
+              </a>
+            </div>
+
             <center>
               <a href="/environment">Read more</a>
             </center>

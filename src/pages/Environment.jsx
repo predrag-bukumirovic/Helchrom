@@ -102,13 +102,15 @@ export default function Environment() {
           </p>
         </div>
 
-        <p>
-          For our list of references and details on our projects, please contact
-          Miloš Ivošević,{" "}
-          <a href="mailto:milos.ivosevic@helmchron.com">
-            milos.ivosevic@helmchron.com
-          </a>
-        </p>
+        <center>
+          <p>
+            For our list of references and details on our projects, please
+            contact Miloš Ivošević,{" "}
+            <a href="mailto:milos.ivosevic@helmchron.com">
+              milos.ivosevic@helmchron.com
+            </a>
+          </p>
+        </center>
 
         <div className="video-envi">
           <h3 className="title">PLASTICS - THEN AND NOW</h3>

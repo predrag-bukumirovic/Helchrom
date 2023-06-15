@@ -1,3 +1,32 @@
+.welcome {
+  text-align: center;
+  margin: 80px auto;
+
+  h1 {
+    margin-bottom: 50px;
+    font-size: 35px;
+    p {
+      color: var(--brend-color) !important;
+      font-weight: bold;
+      font-size: 40px;
+      margin: 0;
+      display: inline-flex;
+    }
+  }
+
+  p {
+    margin-bottom: 50px;
+  }
+
+  a {
+    background: var(--brend-color);
+    text-decoration: none;
+    color: #fff;
+    padding: 15px 50px;
+    border-radius: 100px;
+  }
+}
+
 .our-home {
   text-align: center;
   margin: 80px auto;
@@ -77,11 +106,6 @@
     :nth-child(1) {
       width: 700px;
       padding: 15px;
-    }
-
-    :nth-child(2) img {
-      width: 300px;
-      opacity: 0.4;
     }
 
     @media (max-width: 1060px) {
@@ -247,11 +271,15 @@
 
   div {
     width: 400px;
+    height: 100%;
+
+    .row-icon {
+      margin: 20px 0;
+    }
 
     img {
       width: 100%;
       height: auto;
-      margin: 20px 0;
     }
     center a {
       text-decoration: none;
@@ -266,6 +294,48 @@
     div {
       width: 350px;
     }
+  }
+}
+// .icon1-hover {
+//   display: none;
+// }
+// .icon1:hover + .icon1-hover {
+//   display: block;
+// }
+
+// .icon1:hover {
+//   display: none !important;
+// }
+
+.icon1 {
+  position: relative;
+}
+
+.icon1 img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.3s ease;
+}
+
+.icon1 img:nth-child(2) {
+  opacity: 0;
+}
+
+.icon1:hover img:nth-child(1) {
+  opacity: 0;
+}
+
+.icon1:hover img:nth-child(2) {
+  opacity: 1;
+}
+
+@keyframes animation {
+  to {
+    opacity: 0;
+  }
+  from {
+    opacity: 1;
   }
 }
 
