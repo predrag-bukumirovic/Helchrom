@@ -12,7 +12,12 @@ import Poster from "../assets/images/poster.jpg";
 import mainImg from "../assets/images/Home/main-img.jpg";
 import mainImg1 from "../assets/images/Home/main-img1.jpg";
 import mainImg2 from "../assets/images/Home/main-img2.png";
-import dubleLogo from "../assets/images/dubleLogo.png";
+import HC2010 from "../assets/images/Home/HC-orange2010.png";
+import HC2013 from "../assets/images/Home/HC-orange2013.png";
+import HC2015 from "../assets/images/Home/HC-orange2015.png";
+import HC2016 from "../assets/images/Home/HC-orange2016.png";
+import HC2020 from "../assets/images/Home/HC-orange2020.png";
+import HC2023 from "../assets/images/Home/HC-orange2023.png";
 
 import icon1 from "../assets/images/Home/1.png";
 import icon2 from "../assets/images/Home/2.png";
@@ -276,62 +281,61 @@ export default function Home() {
         </p>
 
         <div>
-          <div>
+          <div className="row-logos no-reverse">
             <div className="logos">
-              <img src={dubleLogo} alt="Midle Logo" />
+              <img src={HC2010} alt="Midle Logo" />
             </div>
 
-            <span>2010</span>
             <p>
               Our first projects were local, but our vision was the same - to
               improve the quality of life for everyone.
             </p>
           </div>
-          <div>
+          <div className="row-logos reverse">
             <div className="logos">
-              <img src={dubleLogo} alt="Midle Logo" />
+              <img src={HC2013} alt="Midle Logo" />
             </div>
-            <span>2013</span>
+
             <p>
               We are participating in our first non-local projects and gaining
               perspective from working in big, complex teams.{" "}
             </p>
           </div>
-          <div>
+          <div className="row-logos no-reverse">
             <div className="logos">
-              <img src={dubleLogo} alt="Midle Logo" />
+              <img src={HC2015} alt="Midle Logo" />
             </div>
-            <span>2015</span>
+
             <p>
               Our mission and vision are starting to come true - we are working
               on projects in the German market...
             </p>
           </div>
-          <div>
+          <div className="row-logos reverse">
             <div className="logos">
-              <img src={dubleLogo} alt="Midle Logo" />
+              <img src={HC2016} alt="Midle Logo" />
             </div>
-            <span>2016</span>
+
             <p>
               ...and continuing our growth and development towards additional
               big projects.{" "}
             </p>
           </div>
-          <div>
+          <div className="row-logos no-reverse">
             <div className="logos">
-              <img src={dubleLogo} alt="Midle Logo" />
+              <img src={HC2020} alt="Midle Logo" />
             </div>
-            <span>2020</span>
+
             <p>
               During the pandemic, we focused more on projects in the
               pharmaceutical sector to achieve and sustain health globally.
             </p>
           </div>
-          <div>
+          <div className="row-logos reverse">
             <div className="logos">
-              <img src={dubleLogo} alt="Midle Logo" />
+              <img src={HC2023} alt="Midle Logo" />
             </div>
-            <span>2023</span>
+
             <p>
               We continue to learn, develop and innovate in order to bring more
               value to the coming generations.{" "}

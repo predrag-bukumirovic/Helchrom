@@ -19,11 +19,15 @@ export default function Cookies() {
   return (
     <div>
       <div className="cookies">
-        We, at Helmchron, consider your data protection a priority. This privacy
-        policy only applies to our website, i.e. does not apply to any sites
-        that are not affiliated with our company. We do not take responsibility
-        for the content of any third-party websites, even if we share their
-        links. <a href="/privacy-policy">More about the privacy policy</a>
+        <p>
+          We, at Helmchron, consider your data protection a priority. This
+          privacy policy only applies to our website, i.e. does not apply to any
+          sites that are not affiliated with our company. We do not take
+          responsibility for the content of any third-party websites, even if we
+          share their links.{" "}
+          <a href="/privacy-policy">More about the privacy policy</a>
+        </p>
+
         <div>
           <button onClick={() => btnCookies()}>allow</button>
           <button onClick={() => closeCookies()}>decline</button>
