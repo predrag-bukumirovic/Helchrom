@@ -4,27 +4,20 @@ import "../assets/scss/services.scss";
 import mainImg from "../assets/images/OurCore/c-s1.webp";
 import mainImg1 from "../assets/images/OurCore/c-s2.webp";
 import mainImg2 from "../assets/images/OurCore/c-s3.webp";
-import core1 from "../assets/images/OurCore/1.1.png";
-import coreflip1 from "../assets/images/OurCore/1.2.webp";
-import core2 from "../assets/images/OurCore/2.1.png";
-import coreflip2 from "../assets/images/OurCore/2.2.webp";
-import core3 from "../assets/images/OurCore/3.1.png";
-import coreflip3 from "../assets/images/OurCore/3.2.webp";
-import core4 from "../assets/images/OurCore/4.1.png";
-import coreflip4 from "../assets/images/OurCore/4.2.webp";
-import quote from "../assets/images/OurCore/quote.png";
 import { CCarousel, CCarouselItem, CImage } from "@coreui/react";
 import "@coreui/coreui/dist/css/coreui.min.css";
 import { Helmet } from "react-helmet";
 
+import BasicImg from "../assets/images/OurCore/BasicE.png";
+import DetailedImg from "../assets/images/OurCore/DetailedE.png";
+import PipingImg from "../assets/images/OurCore/PipingE.png";
+import ProcessE from "../assets/images/OurCore/ProcessE.png";
+import OptimizationE from "../assets/images/OurCore/OptimizationE.png";
+import ProcessD from "../assets/images/OurCore/ProcessD.png";
+
+
 const mainImages = [mainImg, mainImg1, mainImg2];
 
-const coreImages = [
-  { main: core1, flip: coreflip1 },
-  { main: core2, flip: coreflip2 },
-  { main: core3, flip: coreflip3 },
-  { main: core4, flip: coreflip4 }
-];
 
 export default function OurCore() {
   return (
@@ -51,72 +44,110 @@ export default function OurCore() {
         )}
       </div>
 
-      <div className="">
-        <div className="quote-box">
-          <img className="quote" src={quote} alt="quote" />
-        </div>
-
-        <h1 className="title">OUR SERVICES</h1>
-
-        <div className="core-item">
-          {coreImages.slice(0, 2).map((image, index) =>
-            <div key={index} className="flip-card">
-              <div className="flip-card-inner">
-                <div className="flip-card-front">
-                  <img src={image.main} alt={`core ${index + 1}`} />
-                </div>
-                <div className="flip-card-back">
-                  <img src={image.flip} alt={`core ${index + 1} flip`} />
-                </div>
-              </div>
-              <center>
-                <p href="/">Read more</p>
-              </center>
-            </div>
-          )}
-        </div>
-
-        <div className="core-item">
-          {coreImages.slice(2, 4).map((image, index) =>
-            <div key={index} className="flip-card">
-              <div className="flip-card-inner">
-                <div className="flip-card-front">
-                  <img src={image.main} alt={`core ${index + 3}`} />
-                </div>
-                <div className="flip-card-back">
-                  <img src={image.flip} alt={`core ${index + 3} flip`} />
-                </div>
-              </div>
-              <center>
-                <p href="/">Read more</p>
-              </center>
-            </div>
-          )}
-        </div>
-
-        <div className="video-envi padding30">
-          <h3 className="title">HOW CAN WE SUPPORT YOU?</h3>
-
-          <iframe
-            className="video-yt"
-            src="https://www.youtube.com/embed/83NXIfcKSzs"
-            title="Helmchron - Our Business areas and Services"
-            frameBorder="0"
-            loading="lazy"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowFullScreen
-          />
-        </div>
-
+      <div className="padding30">
+    
+        <h1 className="title">OUR CORE COMPETENCIES</h1>
         <center>
           <p>
-            For detailed information on our competencies, projects and
-            references, please contact{" "}
-            <a href="mailto:milos.ivosevic@helmchron.com">
-              milos.ivosevic@helmchron.com
-            </a>
+            We measure our success by the satisfaction of our partners, and we are dedicated to continuously sharpening and upgrading our competencies and improving and refining our services to ensure   their continued success.<br/>
+            We believe our competencies and our values are the main driving forces of our mission and vision. Our competencies enable us to understand the unique needs and challenges of each project and tailor our solutions in order to achieve the outcomes<br/> and maintain strong, lasting partnerships.<br/>  
+            Our proactive approach and continuous competencies` development demonstrate the highest level of commitment<br/> to our partners` success.
           </p>
+          <p>For detailed information on our services, projects, and references, please contact <a href="mailto:milos.ivosevic@helmchron.com">milos.ivosevic@helmchron.com.</a></p>
         </center>
+
+        <section className="core-wrapper padding30">
+          <div className="core-row">
+            <div className="core-text">
+              <h2>Besic engineering</h2>
+              <div className="line"></div>
+
+              <ul>
+                <li>Feasibility studies and data analysis</li>
+                <li>Process description and design</li>
+                <li>P&IDs (process and instrumentation diagram) and process flow diagrams</li>
+                <li>Prototypes development and testing</li>
+                <li>Risks assessment and safety analysis</li>
+                <li>Equipment specification</li>
+                <li>Process simulation</li>
+              </ul>
+            </div>
+            <div>
+              <img src={BasicImg} alt="Besic engineering" />
+            </div>
+          </div>
+          <div className="core-row">
+            <div>
+              <img src={DetailedImg} alt="Detailed engineering" />
+            </div>
+            <div className="core-text">
+              <h2>Detailed engineering</h2>
+              <div className="line"></div>
+
+              <ul>
+                <li>Detailed design development</li>
+                <li>Technical calculations and simulations</li>
+                <li>Integration of various systems and subsystems within the overall project</li>
+                <li>Comprehensive testing</li>
+              </ul>
+            </div>
+          </div>
+          <div className="core-row">
+            <div className="core-text">
+              <h2>Piping engineering</h2>
+              <div className="line"></div>
+
+              <ul>
+                <li>Piping design</li>
+                <li>Pipe stress analysis</li>
+                <li>Hydraulic design</li>
+              </ul>
+            </div>
+            <div>
+              <img src={PipingImg} alt="Piping engineering" />
+            </div>
+          </div>
+          <div className="core-row">
+            <div>
+              <img src={ProcessE} alt="Process equipment" />
+            </div>
+            <div className="core-text">
+              <h2>Process equipment</h2>
+              <div className="line"></div>
+
+              <ul>
+                <li>Equipment design</li>
+                <li>Preparation of documentation and follow up activities</li>
+              </ul>
+            </div>
+          </div>
+          <div className="core-row">
+            <div className="core-text">
+              <h2>Process design and optimization</h2>
+              <div className="line"></div>
+
+              <ul>
+                <li>Design, optimization and innovation of processes to improve efficacy, productivity, and quality while reassessing costs and waste</li>
+              </ul>
+            </div>
+            <div>
+              <img src={OptimizationE} alt="Process design and optimization" />
+            </div>
+          </div>
+          <div className="core-row">
+            <div>
+              <img src={ProcessD} alt="Process documentation" />
+            </div>
+            <div className="core-text">
+              <h2>Process documentation</h2>
+              <div className="line"></div>
+
+              <ul>
+                <li>Proficiency in creating and managing process documentation including P&IDs, process flow diagrams, SOPs and other technical documentation.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
       </div>
     </div>
   );

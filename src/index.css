@@ -23,13 +23,13 @@ body {
   padding: 0;
   font-family: 'Neue Einstellung' !important;
   font-display: swap;
-  background-color: var(--light-blue-color) !important;
   position: relative;
   overflow-y: scroll;
   height: 100%;
 }
 
 #root {
+  position: relative;
   overflow-x: hidden;
 }
 
