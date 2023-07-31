@@ -7,17 +7,16 @@ import Environment from "../assets/images/Home/Environment.png";
 import Environment1 from "../assets/images/Home/EnvironmentWhite.png";
 import Pharma from "../assets/images/Home/Pharma.png";
 import Pharma1 from "../assets/images/Home/PharmaWhite.png";
-import Video from "../assets/videos/Ver4WhoweareHCvideo.mp4";
-import Poster from "../assets/images/poster.jpg";
-import mainImg from "../assets/images/Home/main-img.jpg";
-import mainImg1 from "../assets/images/Home/main-img1.jpg";
-import mainImg2 from "../assets/images/Home/main-img2.png";
+import mainImg from "../assets/images/Home/main-img1.png";
+import mainImg1 from "../assets/images/Home/main-img2.png";
+import mainImg2 from "../assets/images/Home/main-img3.png";
 import HC2010 from "../assets/images/Home/HC-orange2010.png";
 import HC2013 from "../assets/images/Home/HC-orange2013.png";
 import HC2015 from "../assets/images/Home/HC-orange2015.png";
 import HC2016 from "../assets/images/Home/HC-orange2016.png";
 import HC2020 from "../assets/images/Home/HC-orange2020.png";
 import HC2023 from "../assets/images/Home/HC-orange2023.png";
+import Facts from "../assets/images/Home/Facts.png";
 
 import icon1 from "../assets/images/Home/1.png";
 import icon2 from "../assets/images/Home/2.png";
@@ -27,7 +26,6 @@ import icon5 from "../assets/images/Home/5.png";
 
 import quotation from "../assets/images/quotation.png";
 
-import { RiShareForwardLine } from "react-icons/ri";
 import {
   CCarousel,
   CCarouselCaption,
@@ -76,9 +74,6 @@ export default function Home() {
               <div>
                 <p>Who are we?</p>
               </div>
-              <div>
-                <RiShareForwardLine className="text-icon" />
-              </div>
             </CCarouselCaption>
           </a>
         </CCarouselItem>
@@ -87,10 +82,7 @@ export default function Home() {
             <CImage className="d-block w-100" src={mainImg1} alt="slide 2" />
             <CCarouselCaption className="img">
               <div>
-                <p>Services: process engineering solutions</p>
-              </div>
-              <div>
-                <RiShareForwardLine className="text-icon" />
+                <p>Our Services: Process Engineering</p>
               </div>
             </CCarouselCaption>
           </a>
@@ -101,9 +93,6 @@ export default function Home() {
             <CCarouselCaption className="img">
               <div>
                 <p>How do we work?</p>
-              </div>
-              <div>
-                <RiShareForwardLine className="text-icon" />
               </div>
             </CCarouselCaption>
           </a>
@@ -118,9 +107,6 @@ export default function Home() {
               <div>
                 <p>Who are we?</p>
               </div>
-              <div>
-                <RiShareForwardLine className="text-icon" />
-              </div>
             </div>
           </a>
         </div>
@@ -129,10 +115,7 @@ export default function Home() {
             <img src={mainImg1} alt="Main" />
             <div className="img-text">
               <div>
-                <p>Services: process engineering solutions</p>
-              </div>
-              <div>
-                <RiShareForwardLine className="text-icon" />
+                <p>Our Services: Process Engineering</p>
               </div>
             </div>
           </a>
@@ -143,9 +126,6 @@ export default function Home() {
             <div className="img-text">
               <div>
                 <p>How do we work?</p>
-              </div>
-              <div>
-                <RiShareForwardLine className="text-icon" />
               </div>
             </div>
           </a>
@@ -256,18 +236,23 @@ export default function Home() {
 
       <div className="facts-box">
         <div className="facts container-main padding30">
-          <div>
-            <h2>FACTS ABOUT US</h2>
-            <p>
-              We are a team of highly skilled, focused, and self-motivated
-              enthusiasts passionate about outcomes, competencies, and
-              partnerships. <br /> We are located in Belgrade, Serbia, however,
-              we are driven by international projects and collaborations. <br />{" "}
-              We put priority on quality solutions in process engineering while
-              maintaining the highest level of integrity, agility, and
-              accountaility.
-            </p>
-            <a href="/about-us/who-are-we">Read more</a>
+          <h2>FACTS ABOUT US</h2>
+          <div className="facts-row"> 
+            <div>
+              <p>
+                We are a team of highly skilled, focused, and self-motivated
+                enthusiasts passionate about outcomes, competencies, and
+                partnerships. <br /> We are located in Belgrade, Serbia, however,
+                we are driven by international projects and collaborations. <br />{" "}
+                We put priority on quality solutions in process engineering while
+                maintaining the highest level of integrity, agility, and
+                accountaility.
+              </p>
+              <a href="/about-us/who-are-we">Read more</a>
+            </div>
+            <div>
+              <img src={Facts} alt="FACTS ABOUT US" />
+            </div>
           </div>
         </div>
       </div>
@@ -347,9 +332,7 @@ export default function Home() {
       <div className="video">
         <p>We have at least one thing in common...</p>
         <center>
-          <video preload="none" poster={Poster} controls>
-            <source src={Video} type="video/mp4" />
-          </video>
+          <iframe height='300' width='600' src="https://www.youtube.com/embed/KjxWR92Yb4o" title="Helmchron - Chemistry Connects Us" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </center>
       </div>
 

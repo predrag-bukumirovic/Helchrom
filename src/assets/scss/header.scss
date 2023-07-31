@@ -46,3 +46,15 @@
     width: 100%;
   }
 }
+
+@media (min-width: 1178px) {
+   .header-links {
+    display: flex !important;
+  }
+}
+
+@media (max-width: 1178px) {
+  .header-links {
+    display: none !important;
+  }
+}

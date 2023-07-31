@@ -7,8 +7,7 @@
   background: var(--light-blue-color);
 }
 .logo img {
-  width: 150px;
-  height: 32.27px;
+  width: 120px;
 }
 .logo-mobile-menu {
   margin: 0 30px 50px 30px;
@@ -79,6 +78,21 @@ ul li ol.menu-down {
   padding-left: 0;
 }
 
+.search ul ol {
+  background: #fff !important;
+  width: max-content;
+  position: absolute;
+  animation: menu_down 1s;
+  padding: 10px 20px;
+  box-shadow: 0px 10px 30px 2px rgba(0, 0, 0, 0.5);
+}
+
+.search ul ol li a {
+  text-decoration: none;
+  color: #000;
+  margin-bottom: 50px;
+}
+
 @keyframes menu_down {
   from {
     opacity: 0;
@@ -105,15 +119,31 @@ ul li ol.menu-down li a:hover {
   display: flex;
   align-items: center;
 }
+
+.search ul {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+  padding-inline-start: 0;
+}
+
+.search ul li {
+  list-style: none;
+}
+
 .search input {
-  padding: 5px;
+  padding: 5px 10px;
   font-size: 16px;
   outline: none;
   width: 100%;
   margin-left: 20px;
   margin-bottom: 0;
-  border: none;
-  background: #efefef;
+  border-radius: 10px;
+  border: 1px solid #939393;
+}
+
+.search input::placeholder {
+  color: #939393;
 }
 
 .burger-icon {
@@ -123,12 +153,32 @@ ul li ol.menu-down li a:hover {
   cursor: pointer;
 }
 
+.line1 {
+  height: 2px;
+  width: 35px;
+  background: #939393;
+}
+
+.line2 {
+  height: 2px;
+  width: 25px;
+  margin: 10px 0;
+  background: #939393;
+}
+.line3 {
+  height: 2px;
+  width: 15px;
+  background: #939393;
+}
+
+
+
 @media (max-width: 1600px) {
   .navbar-box {
     width: 100%;
   }
 }
-@media (min-width: 1060px) {
+@media (min-width: 1178px) {
   ul li:hover ol.menu-down {
     display: block !important;
     box-shadow: 0px 10px 30px 2px rgba(0, 0, 0, 0.5);
@@ -148,6 +198,15 @@ ul li ol.menu-down li a:hover {
   .internet-mob {
     display: none;
   }
+  .search-mobile {
+    display: none;
+  }
+  .email-mobile {
+    display: none;
+  }
+  .lng-change {
+    display: none;
+  }
 }
 
 @media (max-width: 1178px) {
@@ -156,7 +215,7 @@ ul li ol.menu-down li a:hover {
     position: fixed;
     top: 0;
     right: -100%;
-    width: 100%;
+    width: 50%;
     height: 100%;
     display: block;
     margin: 0;
@@ -228,13 +287,46 @@ ul li ol.menu-down li a:hover {
   }
 
   .burger-icon {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
   }
 
   .close-menu {
     font-size: 30px;
     color: var(--gray-text-color);
     cursor: pointer;
+  }
+
+  .search input {
+    display: none;
+  }
+
+  .search-icon {
+    font-size: 20px;
+    color: #939393;
+    cursor: pointer;
+  }
+
+  .email-icon {
+    font-size: 20px;
+    color: #939393;
+  }
+
+  .email-mobile a{
+    margin: 0 20px;
+  }
+
+  .lng-change {
+    font-size: 20px;
+    color: #939393;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 790px) {
+  .menu nav ul {
+    width: 100%;
   }
 }
 

@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import logo from "../assets/images/logo.webp";
 import "../assets/scss/navbar.css";
-import { BiMenuAltRight } from "react-icons/bi";
+import { GoSearch } from "react-icons/go";
 import { BiChevronDown } from "react-icons/bi";
-import { TfiClose } from "react-icons/tfi";
+import { TfiClose, TfiEmail } from "react-icons/tfi";
+import { AiOutlineCaretDown } from "react-icons/ai";
 import TikTok from "../assets/images/tiktok.webp";
 import Instagram from "../assets/images/instagram.webp";
 import Linkedine from "../assets/images/linkedine.webp";
@@ -173,9 +174,39 @@ export default function Navbar() {
           onChange={e => setSearch(e.target.value)}
           onKeyUp={handleKeyDown}
         />
+        
+        <ul>
+          <li>
+            <div className="lng-change" onClick={() => setDownMenu(!downMenu)}>
+              EN <AiOutlineCaretDown className="down-icon"/>
+            </div>
 
-        <div onClick={() => setOpenMenu(!openMenu)}>
-          <BiMenuAltRight className="burger-icon" />
+            <ol style={{ display: "none" }}
+                className={`${downMenu ? "active" : "lng-menu"}`}>
+              <li><a href="/">EN</a></li>
+              <li><a href="/">SR</a></li>
+              <li><a href="/">GR</a></li>
+            </ol>
+          </li>
+
+          <li>
+            <div className="email-mobile">
+              <a href="/contact">
+                <TfiEmail className="email-icon"/>
+              </a>
+            </div>
+          </li>
+
+          <li>
+            <div className="search-mobile">
+              <GoSearch className="search-icon"/>
+            </div>
+          </li>
+        </ul>
+        <div className="burger-icon" onClick={() => setOpenMenu(!openMenu)}>
+          <div className="line1"></div>
+          <div className="line2"></div>
+          <div className="line3"></div>
         </div>
       </div>
     </div>

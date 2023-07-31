@@ -3,7 +3,7 @@
 :root {
   --brend-color: #ffa500;
   --light-blue-color: #f4f6fc;
-  --dark-blue-color: #0b41cd;
+  --dark-blue-color: #0B41CD;
   --gray-text-color: #000;
 }
 
@@ -27,6 +27,11 @@ body {
   overflow-y: scroll;
   height: 100%;
 }
+
+::selection {
+  background: var(--brend-color);
+  color: #fff
+}; 
 
 #root {
   position: relative;

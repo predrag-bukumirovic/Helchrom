@@ -9,6 +9,13 @@ import { CCarousel, CCarouselItem, CImage } from "@coreui/react";
 import "@coreui/coreui/dist/css/coreui.min.css";
 import { Helmet } from "react-helmet";
 
+import PlantC from "../assets/images/OurServices/PlantC.png";
+import WaterT from "../assets/images/OurServices/WaterT.png";
+import ProjectM from "../assets/images/OurServices/ProjectM.png";
+import EconomicA from "../assets/images/OurServices/EconomicA.png";
+import SofrwareE from "../assets/images/OurServices/SofrwareE.png";
+import InnovationL from "../assets/images/OurServices/InnovationL.png";
+
 const mainImages = [mainImg, mainImg1, mainImg2];
 
 export default function OurServices() {
@@ -37,10 +44,111 @@ export default function OurServices() {
       </div>
 
       <div className="">
-    
-
         <h1 className="title">OUR SERVICES</h1>
-        
+        <center>
+          <p>
+            At Helmchron, we pride ourselves on delivering exceptional process and chemical engineering solutions that are driven by our partners' needs and satisfaction. Our unwavering commitment to understanding and fulfilling the unique requirements of each of our clients<br/> drives our mission and vision.<br/>
+            At the core of our operational philosophy is a deep understanding that our success is extensively linked to the success of our partners<br/> and outcomes for the individuals and environment. We believe that by placing end users at the forefront of everything we do,<br/> we can create loyal partnerships and meaningful impact for everyone.
+          </p>
+
+          <p>For detailed information on our services, projects, and references, please contact <a href="mailto:milos.ivosevic@helmchron.com">milos.ivosevic@helmchron.com.</a></p>
+        </center>
+
+        <section className="core-wrapper padding30">
+          <div className="core-row">
+            <div className="core-text">
+              <h2>Plant construction</h2>
+              <div className="line"></div>
+
+              <ul>
+                <li>Plant, equipment, and process design</li>
+                <li>Plant engineering</li>
+                <li>Process simulation and upgrade</li>
+                <li>Production process sustainability</li>
+              </ul>
+            </div>
+            <div>
+              <img src={PlantC} alt="Plant construction" />
+            </div>
+          </div>
+          <div className="core-row">
+            <div>
+              <img src={WaterT} alt="Water treatment" />
+            </div>
+            <div className="core-text">
+              <h2>Water treatment</h2>
+              <div className="line"></div>
+
+              <ul>
+                <li>Development of innovative technical concepts, products, and services</li>
+                <li>Technology and process upgrade</li>
+                <li>Plant`s modernization engineering</li>
+              </ul>
+            </div>
+          </div>
+          <div className="core-row">
+            <div className="core-text">
+              <h2>Project management</h2>
+              <div className="line"></div>
+
+              <ul>
+                <li>Scope and milestones management</li>
+                <li>Time and cost management</li>
+                <li>Quality management</li>
+                <li>Human Resources planning</li>
+                <li>Risk assessment</li>
+              </ul>
+            </div>
+            <div>
+              <img src={ProjectM} alt="Project management" />
+            </div>
+          </div>
+          <div className="core-row">
+            <div>
+              <img src={EconomicA} alt="Engineering – economic analysis" />
+            </div>
+            <div className="core-text">
+              <h2>Engineering – economic analysis</h2>
+              <div className="line"></div>
+
+              <ul>
+                <li>Cost evaluation</li>
+                <li>Budgeting</li>
+                <li>Plant optimization</li>
+              </ul>
+            </div>
+          </div>
+          <div className="core-row">
+            <div className="core-text">
+              <h2>Software for engineering purposes</h2>
+              <div className="line"></div>
+
+              <ul>
+                <li>Design and development of custom-made software solutions</li>
+                <li>Testing</li>
+                <li>Maintenance</li>
+              </ul>
+            </div>
+            <div>
+              <img src={SofrwareE} alt="Software for engineering purposes" />
+            </div>
+          </div>
+          <div className="core-row">
+            <div>
+              <img src={InnovationL} alt="Innovation Lab" />
+            </div>
+            <div className="core-text">
+              <h2>Innovation Lab</h2>
+              <div className="line"></div>
+
+              <ul>
+                <li>Development of innovative technical concepts, products and services</li>
+                <li>Technology and process upgrade</li>
+                <li>Plant`s modernization engineering</li>
+              </ul>
+            </div>
+          </div>
+        </section>
       </div>
     </div>
   );
