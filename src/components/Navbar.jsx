@@ -120,6 +120,8 @@ export default function Navbar() {
 
             <CustomLink href="/news">news</CustomLink>
 
+            <CustomLink href="/blog">blog</CustomLink>
+
             {/* Mreze */}
 
             <div className="internet-mob">

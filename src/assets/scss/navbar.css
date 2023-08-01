@@ -32,9 +32,9 @@ nav ul li {
 
 nav ul li a,
 nav ul li span {
-  margin-left: 10px;
-  margin-right: 10px;
-  font-size: 15px;
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: 14px;
   text-transform: uppercase;
   text-decoration: none;
   font-weight: bold;
