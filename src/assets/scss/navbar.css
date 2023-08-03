@@ -7,7 +7,7 @@
   background: var(--light-blue-color);
 }
 .logo img {
-  width: 120px;
+  width: 150px;
 }
 .logo-mobile-menu {
   margin: 0 30px 50px 30px;
@@ -182,6 +182,7 @@ ul li ol.menu-down li a:hover {
   ul li:hover ol.menu-down {
     display: block !important;
     box-shadow: 0px 10px 30px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
   }
   .showMenu {
     display: none;
@@ -238,6 +239,10 @@ ul li ol.menu-down li a:hover {
     text-transform: capitalize;
   }
 
+.logo img {
+  width: 120px;
+}
+
   ul li ol.active {
     display: block !important;
     animation: menu_down 1s;
@@ -289,7 +294,7 @@ ul li ol.menu-down li a:hover {
   .burger-icon {
     display: flex;
     flex-direction: column;
-    align-items: end;
+    align-items: flex-end;
   }
 
   .close-menu {
@@ -298,7 +303,7 @@ ul li ol.menu-down li a:hover {
     cursor: pointer;
   }
 
-  .search input {
+  .search > input {
     display: none;
   }
 

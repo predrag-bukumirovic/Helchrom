@@ -76,7 +76,7 @@ h6 {
   color: #000 !important;
 }
 p {
-  font-size: 20px;
+  font-size: 18px;
 }
 .subtitle {
   font-size: 25px;
@@ -98,7 +98,7 @@ footer {
     font-size: 30px;
   }
   p {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 @keyframes transitionIn {
