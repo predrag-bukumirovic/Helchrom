@@ -8,12 +8,12 @@ import { CCarousel, CCarouselItem, CImage } from "@coreui/react";
 import "@coreui/coreui/dist/css/coreui.min.css";
 import { Helmet } from "react-helmet";
 
-import BasicImg from "../assets/images/OurCore/BasicE.png";
-import DetailedImg from "../assets/images/OurCore/DetailedE.png";
-import PipingImg from "../assets/images/OurCore/PipingE.png";
-import ProcessE from "../assets/images/OurCore/ProcessE.png";
-import OptimizationE from "../assets/images/OurCore/OptimizationE.png";
-import ProcessD from "../assets/images/OurCore/ProcessD.png";
+import BasicImg from "../assets/images/OurCore/BasicE.jpeg";
+import DetailedImg from "../assets/images/OurCore/DetailedE.jpeg";
+import PipingImg from "../assets/images/OurCore/PipingE.jpeg";
+import ProcessE from "../assets/images/OurCore/ProcessE.jpeg";
+import OptimizationE from "../assets/images/OurCore/OptimizationE.jpeg";
+import ProcessD from "../assets/images/OurCore/ProcessD.jpeg";
 
 
 const mainImages = [mainImg, mainImg1, mainImg2];

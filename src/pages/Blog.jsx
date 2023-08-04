@@ -5,8 +5,8 @@ import mainImg from "../assets/images/Blog/Baner1.jpg";
 import mainImg1 from "../assets/images/Blog/Baner2.jpg";
 import mainImg2 from "../assets/images/Blog/Baner3.jpg";
 
-import Diversity from "../assets/images/Blog/Diversity.png";
-import Odbojka from "../assets/images/Blog/Odbojka.png";
+import Diversity from "../assets/images/Blog/Diversity.jpeg";
+import Odbojka from "../assets/images/Blog/Odbojka.jpeg";
 
 export default function Blog() {
   return (

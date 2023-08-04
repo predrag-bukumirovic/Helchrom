@@ -9,12 +9,12 @@ import { CCarousel, CCarouselItem, CImage } from "@coreui/react";
 import "@coreui/coreui/dist/css/coreui.min.css";
 import { Helmet } from "react-helmet";
 
-import PlantC from "../assets/images/OurServices/PlantC.png";
-import WaterT from "../assets/images/OurServices/WaterT.png";
-import ProjectM from "../assets/images/OurServices/ProjectM.png";
-import EconomicA from "../assets/images/OurServices/EconomicA.png";
-import SofrwareE from "../assets/images/OurServices/SofrwareE.png";
-import InnovationL from "../assets/images/OurServices/InnovationL.png";
+import PlantC from "../assets/images/OurServices/PlantC.jpeg";
+import WaterT from "../assets/images/OurServices/WaterT.jpeg";
+import ProjectM from "../assets/images/OurServices/ProjectM.jpeg";
+import EconomicA from "../assets/images/OurServices/EconomicA.jpeg";
+import SofrwareE from "../assets/images/OurServices/SofrwareE.jpeg";
+import InnovationL from "../assets/images/OurServices/InnovationL.jpeg";
 
 const mainImages = [mainImg, mainImg1, mainImg2];
 

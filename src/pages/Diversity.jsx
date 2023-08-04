@@ -1,12 +1,12 @@
 import React from 'react'
 
-import mainImg from "../assets/images/Blog//Diversitybaner1.png";
-import mainImg1 from "../assets/images/Blog/Diversitybaner2.png";
-import mainImg2 from "../assets/images/Blog/Diversitybaner3.png";
+import mainImg from "../assets/images/Blog//Diversitybaner1.jpeg";
+import mainImg1 from "../assets/images/Blog/Diversitybaner2.jpeg";
+import mainImg2 from "../assets/images/Blog/Diversitybaner3.jpeg";
 import '../assets/scss/news-post.scss';
 
-import OdbojkaSlikaG from "../assets/images/Blog/Srceduga.png";
-import OdbojkaSlikaD from "../assets/images/Blog/Diversitydole.png";
+import OdbojkaSlikaG from "../assets/images/Blog/Srceduga.jpeg";
+import OdbojkaSlikaD from "../assets/images/Blog/Diversitydole.jpeg";
 import { CCarousel, CCarouselItem, CImage } from '@coreui/react';
 
 export default function Diversity() {
