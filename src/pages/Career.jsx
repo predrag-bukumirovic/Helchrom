@@ -51,7 +51,7 @@ export default function Career() {
           <h1 className="title">Join the helmchron team</h1>
           <center>
             <p>
-              We work hard and are dedicated with a strong team focus but with
+              We work hard and dedicated with a strong team focus but with
               respect and enablement towards diverse personal perspectives.
               Feeling well within the team and feeling safe to express your
               opinion is the way we work.
@@ -96,7 +96,7 @@ export default function Career() {
               <span>Miloš Ivošević, PhD</span>
               <p>CEO, Mechanical engineer</p>
               <a
-                href="https://www.linkedin.com/in/milos-ivosevic-300263166/"
+                href="https://www.linkedin.com/in/dr-milos-ivosevic-300263166/"
                 target="_blank"
                 rel="noreferrer"
               >

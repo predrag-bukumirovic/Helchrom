@@ -3,6 +3,9 @@ import texts from '../texts'
 import anjaImg from '../assets/images/Team/anja.webp'
 import milosImg from '../assets/images/Team/milos.webp'
 
+import imgBlog1 from '../assets/images/Blog/Diversity.jpeg'
+import imgBlog2 from "../assets/images/Blog/Odbojka.jpeg";
+
 const en = texts.en.translation
 
 const data = {
@@ -68,6 +71,11 @@ const data = {
         en.plicy.text9ul.li2,
         en.plicy.text9ul.li3
       ]
+    },
+    {
+      title: en.blog.title,
+      images: [imgBlog1, imgBlog2],
+      texts: [en.blog.text1, en.blog.blog1.title, en.blog.blog1.text]
     }
   ]
 };

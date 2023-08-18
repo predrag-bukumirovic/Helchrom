@@ -95,6 +95,7 @@ label .star {
 @media (max-width: 545px) {
   .icon-contact {
     flex-direction: column;
+    gap: 30px;
   }
   .icon-contact img {
     width: 200px !important;

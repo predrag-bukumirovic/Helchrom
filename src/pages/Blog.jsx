@@ -7,8 +7,11 @@ import mainImg2 from "../assets/images/Blog/Baner3.jpg";
 
 import Diversity from "../assets/images/Blog/Diversity.jpeg";
 import Odbojka from "../assets/images/Blog/Odbojka.jpeg";
+import { useTranslation } from 'react-i18next';
 
 export default function Blog() {
+  const { t } = useTranslation();
+
   return (
     <div className='container-main'>
       {/* Slider start */}
@@ -37,20 +40,20 @@ export default function Blog() {
         {/* Slider end */}
 
         <div className='padding30'>
-          <h1 className='title'>Blog</h1>
+          <h1 className='title'>{t('blog.title')}</h1>
 
           <center>
-            <p>What we love most about our job is the fact it impacts greatly the everyday lives of people worldwide. Even though engineering, chemicals, pharmaceuticals, and our other business areas might seem complex, in our Blog we wish to share our knowledge and expertise in a captivating manner and make it interesting for everyone.</p>
+            <p>{t('blog.text1')}</p>
           </center>
 
             <div className="news-box padding30">
               <div>
                 <div>
-                  <h2>A WORKPLACE WHERE WE FEEL INCLUDED</h2>
+                  <h2>{t('blog.blog1.title')}</h2>
                   <p>
-                    The concept of diversity in the workplace has gained significant traction over the past few decades as organizations recognize the immense value it brings. Read a short overview of the various benefits Diversity and Inclusion bring to organizations and society. 
+                  {t('blog.blog1.text')}
                   </p>
-                  <a href="/blog/volleyball">Read more</a>
+                  <a href="/blog/diversity">Read more</a>
                 </div>
                 <div>
                   <img src={Diversity} alt="A WORKPLACE WHERE WE FEEL INCLUDED" />
@@ -66,7 +69,7 @@ export default function Blog() {
                   <p>
                     We supported an amazing junior female volleyball team that participated in National Championship held in Belgrade, Serbia, in May 2023. We are so proud of their team spirit, discipline, and results and we are sure there are many great things ahead of them. Find out similarities between volleyball and engineering.  
                   </p>
-                  <a href="/blog/diversity">Read more</a>
+                  <a href="/blog/volleyball">Read more</a>
                 </div>
                 <div>
                   <img src={Odbojka} alt="SUPPORTING JUNIOR FEMALE VOLLEYBALL TEAM" />

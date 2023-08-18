@@ -100,6 +100,16 @@ const data = {
           li3: "<b>Website analytics</b>"
         }
       },
+      blog: {
+        title: "Blog",
+        text1:
+          "What we love most about our job is the fact it impacts greatly the everyday lives of people worldwide. Even though engineering, chemicals, pharmaceuticals, and our other business areas might seem complex, in our Blog we wish to share our knowledge and expertise in a captivating manner and make it interesting for everyone.",
+
+        blog1: {
+          title: 'A WORKPLACE WHERE WE FEEL INCLUDED',
+          text: 'The concept of diversity in the workplace has gained significant traction over the past few decades as organizations recognize the immense value it brings. Read a short overview of the various benefits Diversity and Inclusion bring to organizations and society.'
+        }
+      },
       chemicals: {
         title: "Chemicals",
         text1:

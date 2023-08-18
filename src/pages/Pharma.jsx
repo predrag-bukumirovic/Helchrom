@@ -93,7 +93,7 @@ export default function Pharma() {
               <img src={icon4} alt="ICON4" />
             </center>
             <p>
-              <b>PARENTERAL preparations</b>
+              <b>PARENTERAL <br /> preparations</b>
             </p>
           </div>
           <div>

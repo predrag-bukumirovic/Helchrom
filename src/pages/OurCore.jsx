@@ -59,7 +59,7 @@ export default function OurCore() {
         <section className="core-wrapper padding30">
           <div className="core-row">
             <div className="core-text">
-              <h2>Besic engineering</h2>
+              <h2>Basic engineering</h2>
               <div className="line"></div>
 
               <ul>

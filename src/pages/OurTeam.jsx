@@ -88,7 +88,7 @@ export default function OurTeam() {
                   <AiOutlineMail /> milos.ivosevic@helmchron.com
                 </a>{" "}
                 <a
-                  href="https://www.linkedin.com/in/milos-ivosevic-300263166/"
+                  href="https://www.linkedin.com/in/dr-milos-ivosevic-300263166/"
                   target="_blank"
                   rel="noreferrer"
                 >

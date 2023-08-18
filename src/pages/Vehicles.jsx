@@ -57,7 +57,7 @@ export default function Vehicles() {
           <p>However, it is undergoing significant transformation.</p>
         </center>
 
-        <div className="m-v-text">
+        <div className="text-icon" style={{marginTop: 50}}>
           <div>
             <img src={icon1} alt="ads" />
           </div>
@@ -75,7 +75,7 @@ export default function Vehicles() {
           </div>
         </div>
 
-        <div className="m-v-text">
+        <div className="text-icon">
           <div>
             <img src={icon2} alt="ads" />
           </div>
@@ -91,7 +91,7 @@ export default function Vehicles() {
             </p>
           </div>
         </div>
-        <div className="m-v-text">
+        <div className="text-icon">
           <div>
             <img src={icon3} alt="ads" />
           </div>
@@ -106,7 +106,7 @@ export default function Vehicles() {
             </p>
           </div>
         </div>
-        <div className="m-v-text">
+        <div className="text-icon">
           <div>
             <img src={icon4} alt="ads" />
           </div>
@@ -124,7 +124,7 @@ export default function Vehicles() {
             </p>
           </div>
         </div>
-        <div className="m-v-text">
+        <div className="text-icon">
           <div>
             <img src={icon5} alt="ads" />
           </div>

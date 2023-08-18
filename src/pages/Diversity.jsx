@@ -46,10 +46,10 @@ export default function Diversity() {
 
           <div className='post'>
             <div style={{width: '100%'}}>
-              <p>The concept of diversity in the workplace has gained significant traction over the past few decades as organizations recognize the immense value it brings. 
-              The dawn of the civil rights movement in the 1960s marked a pivotal moment in history, sparking conversations around equality, justice, and social change. Organizations realized there is a huge need in embracing individuals from different backgrounds, perspectives, and experiences not only as a reflection of societal progress but also as their own contribution in creating a higher quality of life for the coming generations.</p>
+              <p>The concept of diversity in the workplace has gained significant traction over the past few decades as organizations recognize the immense value it brings. <br />
+              The dawn of the civil rights movement in the 1960s marked a pivotal moment in history, sparking conversations around equality, justice, and social change. <br /> Organizations realized there is a huge need in embracing individuals from different backgrounds, perspectives, and experiences not only as a reflection of societal progress but also as their own contribution in creating a higher quality of life for the coming generations.</p>
             </div>
-            <div style={{width: '50%'}} className='post-img'>
+            <div style={{width: '40%'}} className='post-img'>
               <img src={OdbojkaSlikaG} alt="Odbojka" />
             </div>
           </div>

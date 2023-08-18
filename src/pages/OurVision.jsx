@@ -78,9 +78,9 @@ export default function OurVision() {
         <div className={showModal ? "modal-img" : "show"} onClick={closeModal}>
           <img src={showModal} alt="Modal Images" />
         </div>
-        <div>
+        <div className="padding30">
           <h2 className="title">OUR STRATEGIC FOCUS AREAS</h2>
-          <div className="strategic padding30">
+          <div className="strategic">
             {strategicFocusAreas.map((item, index) =>
               <div key={index} onClick={() => openModal(item.image)}>
                 <img src={item.icon} alt={`icon${index + 1}`} />
@@ -95,9 +95,10 @@ export default function OurVision() {
           </center>
         </div>
       </div>
-      <div className="facts-box">
+      <div className="facts-box padding30">
         <div className="facts container-main">
           <div>
+            <center>
             <h2>OUR VISION</h2>
             <p>
               We deliver high-quality process and chemical engineering solutions
@@ -111,6 +112,7 @@ export default function OurVision() {
               innovative, and sustainable ways of producing safe, qualitative,
               and novel products for everyone.
             </p>
+            </center>
           </div>
           <div>
             <img src={bigLogo} alt="Big Logo" />
