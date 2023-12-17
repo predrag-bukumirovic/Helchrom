@@ -33,7 +33,8 @@ function App() {
   const renderLoader = () => <p>Loading</p>;
 
 
-  return <Router>
+  return <div id="App"> 
+    <Router>
       <Suspense fallback={renderLoader()}>
         <Header />
         {/* <Navbar /> */}
@@ -67,7 +68,8 @@ function App() {
 
       <Cookies />
       <Footer />
-    </Router>;
+    </Router>
+    </div>;
 }
 
 export default App;

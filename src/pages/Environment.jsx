@@ -1,8 +1,8 @@
 import React from "react";
 import "../assets/scss/slider.scss";
-import mainImg from "../assets/images/Environment/baner1.jpg";
-import mainImg1 from "../assets/images/Environment/baner2.jpg";
-import mainImg2 from "../assets/images/Environment/baner3.jpg";
+import mainImg from "../assets/images/Environment/baner1.jpeg";
+import mainImg1 from "../assets/images/Environment/baner2.jpeg";
+import mainImg2 from "../assets/images/Environment/baner3.jpeg";
 import { CCarousel, CCarouselItem, CImage } from "@coreui/react";
 import "@coreui/coreui/dist/css/coreui.min.css";
 import icon1 from "../assets/images/Environment/1.png";

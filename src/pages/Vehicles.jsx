@@ -4,8 +4,8 @@ import "../assets/scss/mission-vision.scss";
 import "../assets/scss/slider.scss";
 import { CCarousel, CCarouselItem, CImage } from "@coreui/react";
 import mainImg from "../assets/images/Vehicles/baner1.jpg";
-import mainImg1 from "../assets/images/Vehicles/baner2.jpg";
-import mainImg2 from "../assets/images/Vehicles/baner3.jpg";
+import mainImg1 from "../assets/images/Vehicles/baner2.png";
+import mainImg2 from "../assets/images/Vehicles/baner3.png";
 
 import icon1 from "../assets/images/Vehicles/1.png";
 import icon2 from "../assets/images/Vehicles/2.png";
