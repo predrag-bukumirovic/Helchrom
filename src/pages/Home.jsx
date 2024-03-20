@@ -10,13 +10,10 @@ import Pharma1 from "../assets/images/Home/PharmaWhite.png";
 import mainImg from "../assets/images/Home/main-img1.jpeg";
 import mainImg1 from "../assets/images/Home/main-img2.jpeg";
 import mainImg2 from "../assets/images/Home/main-img3.jpeg";
-import HC2010 from "../assets/images/Home/HC-orange2010.png";
-import HC2013 from "../assets/images/Home/HC-orange2013.png";
-import HC2015 from "../assets/images/Home/HC-orange2015.png";
-import HC2016 from "../assets/images/Home/HC-orange2016.png";
-import HC2020 from "../assets/images/Home/HC-orange2020.png";
-import HC2023 from "../assets/images/Home/HC-orange2023.png";
+import Dusseldorf from "../assets/images/News/Dusseldorf.webp";
+
 import Facts from "../assets/images/Home/Facts.png";
+import HCOne from "../assets/images/HCOne.png";
 
 import icon1 from "../assets/images/Home/1.png";
 import icon2 from "../assets/images/Home/2.png";
@@ -155,19 +152,11 @@ export default function Home() {
           <p data-aos="fade-up" data-aos-duration="2300">
             E
           </p>{" "}
-          to Helmchron official website.
+          <b>to Helmchron official website.</b>
         </h1>
         <p>
-          Helmchron is a family-owned company that provides process and chemical
-          engineering solutions to worldwide leaders in the chemical and
-          pharmaceutical industry since 2010. <br /> Our mission has remained
-          the same since the beginning - to improve the quality of life for
-          everyone everywhere whilst keeping our environment healthy for the
-          coming generations. <br /> Today, our scope is broader and our team
-          more diverse providing unique perspectives, agility, and efficacy. Our
-          process and chemical engineering solutions are now delivered to
-          partners across different industries with focus on global impact,
-          sustainable outcomes, and partners` satisfaction.
+          Helmchron is a family-owned company dedicated to providing comprehensive and full-service engineering solutions for the manufacturing facilities of pharmaceuticals, chemicals, food and bio products, electronics, energy, and oil and gas. We take pride in contributing to the manufacturing of globally available, safe, and high-quality products since 2010.<br /> Our mission has remained the same since our beginnings - we improve the quality of life for everyone everywhere whilst keeping our environment healthy for the coming generations. <br /> Today, our scope is broader and our team more diverse providing unique perspectives, agility, and efficacy.<br /> Our engineering solutions are now delivered to leaders and innovators across different industries with a focus on global impact, sustainable outcomes, and long-lasting partnerships.
+          
         </p>
 
         <a href="/about-us/our-vision-and-mission">Read More</a>
@@ -175,9 +164,8 @@ export default function Home() {
 
       <div className="our-home container-main padding30">
         <h2 className="title">OUR SERVICES</h2>
-        <p>
-          We provide best-in-class process and chemical engineering solutions to
-          clients worldwide.
+        <p style={{textAlign: 'start'}}>
+          We provide end-to-end engineering services for manufacturing facility design and operations management.
         </p>
 
         <div>
@@ -232,6 +220,34 @@ export default function Home() {
             </p>
           </div>
         </div>
+
+        <a className="book-btn" href="/contact">Book a meeting</a>
+      </div>
+
+      <div className="unique">
+        <div className="container-main padding30">
+          <h2>Unique service concept</h2>
+          <h3>HELMCHR<span>ONe</span></h3>
+
+          <div className="unique-row">
+            <div className="text">
+              <p>In a constant pursuit to upgrade our services and expertise, we noticed a significant gap in focus on one project`s outcomes that led to prolonged delivery time and budget overrun.</p>
+              <p>To overcome this gap and meet the unique requirements of each of our clients, we have implemented an innovative service concept - Helmchron ONE.</p>
+              <p>Helmchron ONE enables the complete focus of ONE team on ONE client and ONE project only.</p>
+              <p><b>One Team:</b> Each of our projects is assigned to one of our teams. The team is fully dedicated and accountable for the outcomes, ensuring that every aspect is meticulously considered and executed.</p>
+              <p>
+                <b>One Client:</b> We believe in forging strong, long-lasting partnerships, and that starts with putting the client first - each team delivers to one client only. 
+              </p>
+
+              <p><b>One Project:</b> By channeling our expertise, resources, and creativity into delivering the best results for one project, we ensure unmatched quality, efficiency, and effectiveness.</p>
+
+              <p>Ready to focus on success and experience Helmchron ONE?</p>
+            </div>
+            <div className="img">
+              <img src={HCOne} alt="HC One" />
+            </div>
+          </div>
+        </div>
       </div>
 
       <div className="facts-box">
@@ -260,73 +276,99 @@ export default function Home() {
       <div className="storyline container-main padding30">
         <h2 className="title">OUR STORYLINE</h2>
 
-        <p>
+        <p style={{textAlign: 'center', fontSize: 20}}>
           Our story began in 2010. and since then we have been providing
           services to international and local leaders.{" "}
         </p>
 
-        <div>
-          <div className="row-logos no-reverse">
-            <div data-aos="fade-right" className="logos">
-              <img src={HC2010} alt="Midle Logo" />
+        <section className="storyline-box">
+          <div className="box box1">
+            <div className="text text1-1">
+              <p>We deliver plant, equipment, and process design solutions, including plant engineering, process simulation, and upgrade</p>
             </div>
-
-            <p data-aos="fade-left">
-              Our first projects were local, but our vision was the same - to
-              improve the quality of life for everyone.
-            </p>
-          </div>
-          <div className="row-logos reverse">
-            <div data-aos="fade-left" className="logos">
-              <img src={HC2013} alt="Midle Logo" />
+            <div className="img-date img1-1">
+              <img src={Dusseldorf} alt="" />
+              <span>2001</span>
             </div>
-
-            <p data-aos="fade-right">
-              We are participating in our first non-local projects and gaining
-              perspective from working in big, complex teams.{" "}
-            </p>
-          </div>
-          <div className="row-logos no-reverse">
-            <div data-aos="fade-right" className="logos">
-              <img src={HC2015} alt="Midle Logo" />
+            <div className="text text1-2">
+              <p>We deliver plant, equipment, and process design solutions, including plant engineering, process simulation, and upgrade</p>
             </div>
-
-            <p data-aos="fade-left">
-              Our mission and vision are starting to come true - we are working
-              on projects in the German market...
-            </p>
-          </div>
-          <div className="row-logos reverse">
-            <div data-aos="fade-left" className="logos">
-              <img src={HC2016} alt="Midle Logo" />
+            <div className="img-date img1-2">
+              <img src={Dusseldorf} alt="" />
+              <span>2003</span>
             </div>
-
-            <p data-aos="fade-right">
-              ...and continuing our growth and development towards additional
-              big projects.{" "}
-            </p>
-          </div>
-          <div className="row-logos no-reverse">
-            <div data-aos="fade-right" className="logos">
-              <img src={HC2020} alt="Midle Logo" />
+            <div className="text text1-3">
+              <p>We deliver plant, equipment, and process design solutions, including plant engineering, process simulation, and upgrade</p>
             </div>
-
-            <p data-aos="fade-left">
-              During the pandemic, we focused more on projects in the
-              pharmaceutical sector to achieve and sustain health globally.
-            </p>
-          </div>
-          <div className="row-logos reverse">
-            <div data-aos="fade-left" className="logos">
-              <img src={HC2023} alt="Midle Logo" />
+            <div className="img-date img1-3">
+            <img src={Dusseldorf} alt="" />
+              <span>2003</span>
             </div>
-
-            <p data-aos="fade-right">
-              We continue to learn, develop and innovate in order to bring more
-              value to the coming generations.{" "}
-            </p>
           </div>
-        </div>
+          <div className="story-line">
+            <div className="item-round-line">
+              <div className="round-line">
+                <div className="line"></div>
+                <div className="round"></div>
+                <div className="line"></div>
+              </div>
+              <div className="round-line">
+                <div className="line"></div>
+                <div className="round"></div>
+                <div className="line"></div>
+              </div>
+
+              <div className="round-line">
+                <div className="line"></div>
+                <div className="round"></div>
+                <div className="line"></div>
+              </div>
+
+              <div className="round-line">
+                <div className="line"></div>
+                <div className="round"></div>
+                <div className="line"></div>
+              </div>
+
+              <div className="round-line">
+                <div className="line"></div>
+                <div className="round"></div>
+                <div className="line"></div>
+              </div>
+
+              <div className="round-line">
+                <div className="line"></div>
+                <div className="round"></div>
+                <div className="line"></div>
+              </div>
+            </div>
+          </div>
+            <div className="box box2" style={{alignItems: 'start'}}>
+              <div className="img-date img2-1">
+                <span>2003</span>
+                <img src={Dusseldorf} alt="" />
+              </div>
+              <div className="text text2-1">
+                <p>We deliver plant, equipment, and process design solutions, including plant engineering, process simulation, and upgrade</p>
+              </div>
+
+              <div className="img-date img2-2">
+                <span>2003</span>
+                <img src={Dusseldorf} alt="" />
+              </div>
+              <div className="text text2-2">
+                <p>We deliver plant, equipment, and process design solutions, including plant engineering, process simulation, and upgrade</p>
+              </div>
+
+              <div className="img-date img2-3">
+                <span>2003</span>
+                <img src={Dusseldorf} alt="" />
+              </div>
+              <div className="text text2-3">
+                <p>We deliver plant, equipment, and process design solutions, including plant engineering, process simulation, and upgrade</p>
+              </div>
+          </div>
+        </section>
       </div>
 
       <div className="video">

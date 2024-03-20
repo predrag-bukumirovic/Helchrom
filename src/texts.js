@@ -6,7 +6,7 @@ const data = {
       who_text1:
         "Helmchron is a family-owned company located in Belgrade, Serbia. We provide best-in-class process and chemical engineering solutions in an agile and sustainable way to both, international and local clients, for more than 10 years.",
       who_text2:
-        "We are specialized in delivering process and chemical engineering solutions in following business ares:",
+        "We specialize in delivering process and chemical engineering solutions in the following business areas:",
       ul1: "Chemicals",
       ul2: "Pharmaceutical products",
       ul3: "Vehicles manufacturing",
@@ -106,8 +106,13 @@ const data = {
           "What we love most about our job is the fact it impacts greatly the everyday lives of people worldwide. Even though engineering, chemicals, pharmaceuticals, and our other business areas might seem complex, in our Blog we wish to share our knowledge and expertise in a captivating manner and make it interesting for everyone.",
 
         blog1: {
-          title: 'A WORKPLACE WHERE WE FEEL INCLUDED',
-          text: 'The concept of diversity in the workplace has gained significant traction over the past few decades as organizations recognize the immense value it brings. Read a short overview of the various benefits Diversity and Inclusion bring to organizations and society.'
+          title: "A WORKPLACE WHERE WE FEEL INCLUDED",
+          text:
+            "The concept of diversity in the workplace has gained significant traction over the past few decades as organizations recognize the immense value it brings. Read a short overview of the various benefits Diversity and Inclusion bring to organizations and society."
+        },
+        blog2: {
+          title: "IMPERATIV OF SUSTAINABILITY",
+          text: "Embracing sustainability from a process and chemical engineering perspective involves adopting green principles, optimizing processes, managing waste efficiently, and utilizing renewable energy sources."
         }
       },
       chemicals: {

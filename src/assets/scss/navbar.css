@@ -7,7 +7,7 @@
   background: var(--light-blue-color);
 }
 .logo img {
-  width: 150px;
+  width: 200px;
 }
 .logo-mobile-menu {
   margin: 0 30px 50px 30px;
@@ -235,6 +235,7 @@ ul li ol.menu-down li a:hover {
   .menu nav ul ol {
     margin-top: 20px;
     padding-left: 15px;
+    padding-right: 15px;
   }
 
   .menu nav ul ol li a {

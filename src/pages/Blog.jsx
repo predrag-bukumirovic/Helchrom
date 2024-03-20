@@ -7,6 +7,9 @@ import mainImg2 from "../assets/images/Blog/Baner3.jpg";
 
 import Diversity from "../assets/images/Blog/Diversity.jpeg";
 import Odbojka from "../assets/images/Blog/Odbojka.jpeg";
+import Sustainability from "../assets/images/Blog/Sustainability.png";
+
+
 import { useTranslation } from 'react-i18next';
 
 export default function Blog() {
@@ -45,6 +48,22 @@ export default function Blog() {
           <center>
             <p>{t('blog.text1')}</p>
           </center>
+
+          <div className="news-box padding30">
+              <div>
+                <div>
+                  <h2>{t('blog.blog2.title')}</h2>
+                  <p>
+                  {t('blog.blog2.text')}
+                  </p>
+                  <a href="/blog/sustainability">Read more</a>
+                </div>
+                <div>
+                  <img src={Sustainability} alt="A WORKPLACE WHERE WE FEEL INCLUDED" />
+                </div>
+              </div>
+            <div className="line" />
+          </div>
 
             <div className="news-box padding30">
               <div>

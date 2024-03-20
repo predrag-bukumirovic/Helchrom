@@ -3,9 +3,11 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Cookies from "./components/Cookies";
 import Search from "./pages/Search";
 import Thanks from "./pages/Thanks";
+
 const Blog = lazy(() => import("./pages/Blog"));
 const Volleyball = lazy(() => import("./pages/Volleyball"));
 const Diversity = lazy(() => import("./pages/Diversity"));
+const Sustainability = lazy(() => import("./pages/Sustainability"));
 const Header = lazy(() => import("./components/Header"));
 const Home = lazy(() => import('./pages/Home'))
 const Career = lazy(() => import("./pages/Career"));
@@ -33,42 +35,43 @@ function App() {
   const renderLoader = () => <p>Loading</p>;
 
 
-  return <div id="App"> 
-    <Router>
-      <Suspense fallback={renderLoader()}>
-        <Header />
-        {/* <Navbar /> */}
-      </Suspense>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/career" element={<Career />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/news" element={<News />} />
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/blog/volleyball" element={<Volleyball />} />
-        <Route path="/blog/diversity" element={<Diversity />} />
-        <Route path="/about-us/who-are-we" element={<WhoAreWe />} />
-        <Route path="/about-us/our-team" element={<OurTeam />} />
-        <Route path="/about-us/our-vision-and-mission" element={<OurVision />} />
-        <Route path="/about-us/our-values" element={<OurValues />} />
-        <Route path="/competences&services/our-core-competencies" element={<OurCore />} />
-        <Route path="/competences&services/our-services" element={<OurServices />} />
-        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-        <Route path="/legal-statement" element={<LegalStatement />} />
-        <Route path="/search" element={<Search />} />
-        <Route path="/chemicals" element={<Chemicals />} />
-        <Route path="/pharma" element={<Pharma />} />
-        <Route path="/environment" element={<Environment />} />
-        <Route path="/vehicles" element={<Vehicles />} />
-        <Route path="/news/achema" element={<Achema />} />
-        <Route path="/news/k2022" element={<K2022 />} />
-        <Route path="/thanks" element={<Thanks />} />
-        <Route path="/*" element={<NotFound />} />
-      </Routes>
+  return <div id="App">
+      <Router>
+        <Suspense fallback={renderLoader()}>
+          <Header />
+          {/* <Navbar /> */}
+        </Suspense>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/career" element={<Career />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/news" element={<News />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/volleyball" element={<Volleyball />} />
+          <Route path="/blog/diversity" element={<Diversity />} />
+          <Route path="/blog/sustainability" element={<Sustainability />} />
+          <Route path="/about-us/who-are-we" element={<WhoAreWe />} />
+          <Route path="/about-us/our-team" element={<OurTeam />} />
+          <Route path="/about-us/our-vision-and-mission" element={<OurVision />} />
+          <Route path="/about-us/our-values" element={<OurValues />} />
+          <Route path="/competences&services/our-core-competencies" element={<OurCore />} />
+          <Route path="/competences&services/our-services" element={<OurServices />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/legal-statement" element={<LegalStatement />} />
+          <Route path="/search" element={<Search />} />
+          <Route path="/chemicals" element={<Chemicals />} />
+          <Route path="/pharma" element={<Pharma />} />
+          <Route path="/environment" element={<Environment />} />
+          <Route path="/vehicles" element={<Vehicles />} />
+          <Route path="/news/achema" element={<Achema />} />
+          <Route path="/news/k2022" element={<K2022 />} />
+          <Route path="/thanks" element={<Thanks />} />
+          <Route path="/*" element={<NotFound />} />
+        </Routes>
 
-      <Cookies />
-      <Footer />
-    </Router>
+        <Cookies />
+        <Footer />
+      </Router>
     </div>;
 }
 
