@@ -7,15 +7,12 @@ import Modal from "react-modal";
 import mainImg from "../assets/images/Who/who3.webp";
 import mainImg1 from "../assets/images/Who/who1.webp";
 import mainImg2 from "../assets/images/Who/who2.webp";
-import icon1 from "../assets/images/Who/Chemicals.png";
-import icon2 from "../assets/images/Who/Pharmaceuticals.png";
-import icon3 from "../assets/images/Who/Vehicles.png";
-import icon4 from "../assets/images/Who/Environment.png";
 import basicImg from "../assets/images/Who/basicImg.webp";
 import OurImg from "../assets/images/Who/our-history.png";
 import OUR_CREDO from "../assets/images/Who/OUR_CREDO.png";
 import "../assets/scss/slider.scss";
 import "../assets/scss/who.scss";
+import WhoIcons from "../components/WhoIcons"
 
 const customStyles = {
   content: {
@@ -79,26 +76,9 @@ const WhoAreWe = () => {
             <p key={index} dangerouslySetInnerHTML={{ __html: text }} />
           ))}
         </center>
-        <div className="who-icon">
-          {[
-            { img: icon1, text: t("ul1"), link: "/chemicals" },
-            { img: icon2, text: t("ul2"), link: "/pharma" },
-            { img: icon3, text: t("ul3"), link: "/vehicles" },
-            { img: icon4, text: t("ul4"), link: "/environment" },
-          ].map((item, index) => (
-            <div key={index}>
-              <a href={item.link}>
-                <img src={item.img} alt={`icon${index + 1}`} />
-                <p>
-                  <b>{item.text}</b>
-                </p>
-              </a>
-            </div>
-          ))}
-        </div>
-        <center>
-          <p dangerouslySetInnerHTML={{ __html: t("who_text3") }} />
-        </center>
+
+        <WhoIcons/>
+      
       </div>
       <div className="history">
         <div>

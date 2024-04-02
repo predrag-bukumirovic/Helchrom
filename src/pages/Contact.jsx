@@ -10,6 +10,9 @@ import icon3 from "../assets/images/Contact/3.png";
 import { CCarousel, CCarouselItem, CImage } from "@coreui/react";
 import "@coreui/coreui/dist/css/coreui.min.css";
 import { Helmet } from "react-helmet";
+import Calendar from 'react-calendar'
+import 'react-calendar/dist/Calendar.css';
+
 
 export default function Contact() {
   const [name, setName] = useState("");
@@ -22,6 +25,11 @@ export default function Contact() {
   const [policy, setPolicy] = useState(
     "The user has aligned their consent with the privacy policy."
   );
+
+  const [dateState, setDateState] = useState(new Date())
+  const changeDate = (e) => {
+    setDateState(e)
+  }
 
   const [loading, setLoading] = useState(false);
 
@@ -352,6 +360,81 @@ export default function Contact() {
               </button>
             </div>
           </form>
+
+          <div>
+            <h2 className="title">Book a meeting</h2>
+            <p>Schedule a 30-minute meeting with our team to explore how we can tailor our support to meet the unique needs of your project and work collaboratively to achieve your desired outcomes.</p>
+
+            <form action="">
+              <div className="book-form">
+                <label htmlFor="">
+                  Full Name <span className="star">*</span>
+                  <input
+                    type="text"
+                    placeholder="Please enter your full name"
+                    name="name"
+                    required
+                    onChange={event => setName(event.target.value)}
+                  />
+                </label>
+
+                <label htmlFor="company">
+                  Company
+                  <input
+                    type="text"
+                    placeholder="Please enter your company"
+                    name="company"
+                    onChange={event => setCompany(event.target.value)}
+                  />
+                </label>
+
+                <label htmlFor="email">
+                  Email <span className="star">*</span>
+                  <input
+                    type="email"
+                    placeholder="Please enter your email"
+                    required
+                    name="email"
+                    onChange={event => setEmail(event.target.value)}
+                  />
+                </label>
+
+                <label className="label-policy" htmlFor="policy">
+                  <p>
+                    I agree to the <a href="/privacy-policy">Privacy Policy</a>
+                  </p>
+                  <input
+                    id="policy"
+                    type="checkbox"
+                    name="policyAccepted"
+                    value={
+                      "The privacy policy has been accepted and is now in effect."
+                    }
+                    required
+                    onChange={event => setPolicy(event.target.value)}
+                  />
+                </label>
+
+                <button type="submit" className="btn" disabled={loading}>
+                {loading ? "Sending... " : "Send "}
+                {loading &&
+                  <div class="lds-ring">
+                    <div />
+                    <div />
+                    <div />
+                    <div />
+                  </div>}
+              </button>
+              </div>
+              <div className="calendar">
+                <Calendar 
+                value={dateState}
+                onChange={changeDate}
+                />
+              </div>
+            </form>
+          </div>
+
         </div>
       </div>
     </div>
