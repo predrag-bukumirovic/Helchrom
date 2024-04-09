@@ -14,11 +14,11 @@ import bigLogo from "../assets/images/Team/orangeLogo.png";
 import milos from "../assets/images/Team/milos.webp";
 import anja from "../assets/images/Team/anja.webp";
 
-import icon1 from "../assets/images/Team/Interity.webp";
-import icon2 from "../assets/images/Team/Commitment.webp";
-import icon4 from "../assets/images/Team/Agility.webp";
-import icon3 from "../assets/images/Team/Diversity.webp";
-import icon5 from "../assets/images/Team/Courage.webp";
+import icon1 from "../assets/images/Team/Integrity.png";
+import icon2 from "../assets/images/Team/Commitment.png";
+import icon4 from "../assets/images/Team/Agility.png";
+import icon3 from "../assets/images/Team/Diversity.png";
+import icon5 from "../assets/images/Team/Courage.png";
 
 import { CCarousel, CCarouselItem, CImage } from "@coreui/react";
 import "@coreui/coreui/dist/css/coreui.min.css";
@@ -139,7 +139,7 @@ export default function OurTeam() {
             to clients worldwide.
           </p>
 
-          <div>
+          <div className="icon-values">
             <div>
               <img src={icon1} alt="icon1" />
               <p>

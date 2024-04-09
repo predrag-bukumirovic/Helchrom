@@ -8,7 +8,7 @@
     margin-bottom: 50px;
     font-size: 25px;
     text-align: center;
-    
+
     p {
       color: var(--brend-color) !important;
       font-weight: bold;
@@ -53,6 +53,7 @@
     display: grid;
     grid-template-columns: auto auto auto auto auto auto;
     width: 100%;
+    gap: 20px;
     margin-top: 30px;
     margin-bottom: 30px;
 
@@ -72,6 +73,17 @@
       img {
         width: 100%;
       }
+    }
+  }
+
+  .icon-values {
+    text-align: center;
+    > div {
+      border-radius: 10px;
+      background: var(--light-blue-color);
+    }
+    img {
+      width: 200px;
     }
   }
 }
@@ -179,8 +191,6 @@
   }
 }
 
-
-
 .storyline {
   margin: 80px auto;
   overflow: hidden;
@@ -248,11 +258,10 @@
       height: 15px;
       width: 100%;
       margin: 50px 0 50px 0;
-      
+
       .item-round-line {
         display: flex;
         justify-content: space-around;
-
 
         .round-line {
           display: flex;
@@ -290,7 +299,6 @@
     }
   }
 }
-
 
 @media (max-width: 700px) {
   .row-logos {
@@ -492,7 +500,6 @@
   grid-template-columns: auto auto auto auto auto auto;
   width: 100%;
   gap: 20px;
-
 
   @media (max-width: 850px) {
     grid-template-columns: auto auto auto;
