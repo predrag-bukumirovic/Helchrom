@@ -51,7 +51,7 @@
 
   > div {
     display: grid;
-    grid-template-columns: auto auto auto auto auto;
+    grid-template-columns: auto auto auto auto auto auto;
     width: 100%;
     margin-top: 30px;
     margin-bottom: 30px;
@@ -492,6 +492,7 @@
   grid-template-columns: auto auto auto auto auto auto;
   width: 100%;
   gap: 20px;
+
 
   @media (max-width: 850px) {
     grid-template-columns: auto auto auto;
