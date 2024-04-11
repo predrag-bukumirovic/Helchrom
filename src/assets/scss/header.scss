@@ -3,7 +3,7 @@
   background: var(--brend-color);
   position: fixed;
   width: 100%;
-  z-index: 99;
+  z-index: 999999;
   top: 0;
 
   .header-links {
@@ -48,7 +48,7 @@
 }
 
 @media (min-width: 1178px) {
-   .header-links {
+  .header-links {
     display: flex !important;
   }
 }

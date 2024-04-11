@@ -75,9 +75,9 @@ export default function OurValues() {
           <div className="row-img-text row1">
             <div className="row-img">
               <img src={Integrity} alt="" />
-              <div>
-                <div>Integrity</div>
-                <div>Connects us</div>
+              <div className="rotatingText">
+                <div className="rotatingText-adjective">Integrity</div>
+                <div className="rotatingText-adjective">Connects us</div>
               </div>
             </div>
             <div className="row-text">
@@ -118,9 +118,9 @@ export default function OurValues() {
           <div className="row-img-text row3">
             <div className="row-img">
               <img src={Agility} alt="" />
-              <div>
-                <div>Agility</div>
-                <div>Connects us</div>
+              <div className="rotatingText">
+                <div className="rotatingText-adjective">Agility</div>
+                <div className="rotatingText-adjective">Connects us</div>
               </div>
             </div>
             <div className="row-text">
@@ -150,9 +150,9 @@ export default function OurValues() {
           <div className="row-img-text row5">
             <div className="row-img">
               <img src={Courage} alt="" />
-              <div>
-                <div>Courage</div>
-                <div>Connects us</div>
+              <div className="rotatingText">
+                <div className="rotatingText-adjective">Courage</div>
+                <div className="rotatingText-adjective">Connects us</div>
               </div>
             </div>
             <div className="row-text">
