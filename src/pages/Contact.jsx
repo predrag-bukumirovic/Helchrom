@@ -10,9 +10,8 @@ import icon3 from "../assets/images/Contact/3.png";
 import { CCarousel, CCarouselItem, CImage } from "@coreui/react";
 import "@coreui/coreui/dist/css/coreui.min.css";
 import { Helmet } from "react-helmet";
-import Calendar from 'react-calendar'
-import 'react-calendar/dist/Calendar.css';
-
+import Calendar from "react-calendar";
+import "react-calendar/dist/Calendar.css";
 
 export default function Contact() {
   const [name, setName] = useState("");
@@ -26,10 +25,10 @@ export default function Contact() {
     "The user has aligned their consent with the privacy policy."
   );
 
-  const [dateState, setDateState] = useState(new Date())
-  const changeDate = (e) => {
-    setDateState(e)
-  }
+  const [dateState, setDateState] = useState(new Date());
+  const changeDate = e => {
+    setDateState(e);
+  };
 
   const [loading, setLoading] = useState(false);
 
@@ -363,7 +362,11 @@ export default function Contact() {
 
           <div>
             <h2 className="title">Book a meeting</h2>
-            <p>Schedule a 30-minute meeting with our team to explore how we can tailor our support to meet the unique needs of your project and work collaboratively to achieve your desired outcomes.</p>
+            <p>
+              Schedule a 30-minute meeting with our team to explore how we can
+              tailor our support to meet the unique needs of your project and
+              work collaboratively to achieve your desired outcomes.
+            </p>
 
             <form action="">
               <div className="book-form">
@@ -416,25 +419,21 @@ export default function Contact() {
                 </label>
 
                 <button type="submit" className="btn" disabled={loading}>
-                {loading ? "Sending... " : "Send "}
-                {loading &&
-                  <div class="lds-ring">
-                    <div />
-                    <div />
-                    <div />
-                    <div />
-                  </div>}
-              </button>
+                  {loading ? "Sending... " : "Send "}
+                  {loading &&
+                    <div class="lds-ring">
+                      <div />
+                      <div />
+                      <div />
+                      <div />
+                    </div>}
+                </button>
               </div>
               <div className="calendar">
-                <Calendar 
-                value={dateState}
-                onChange={changeDate}
-                />
+                <Calendar value={dateState} onChange={changeDate} />
               </div>
             </form>
           </div>
-
         </div>
       </div>
     </div>
