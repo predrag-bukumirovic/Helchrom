@@ -1,7 +1,6 @@
-import React, { useState} from "react";
+import React, { useState } from "react";
 import logo from "../assets/images/logo.webp";
 import "../assets/scss/navbar.css";
-import { GoSearch } from "react-icons/go";
 import { BiChevronDown } from "react-icons/bi";
 import { TfiClose, TfiEmail } from "react-icons/tfi";
 import { AiOutlineCaretDown } from "react-icons/ai";
@@ -9,16 +8,11 @@ import TikTok from "../assets/images/tiktok.webp";
 import Instagram from "../assets/images/instagram.webp";
 import Linkedine from "../assets/images/linkedine.webp";
 import Twitter from "../assets/images/twitter.webp";
-import { createSearchParams, useNavigate } from "react-router-dom";
 
 export default function Navbar() {
   const [openMenu, setOpenMenu] = useState(false);
   const [downMenuAbout, setDownMenuAbout] = useState(false);
   const [downMenu, setDownMenu] = useState(false);
-  const [downSearch, setDownSearch] = useState(false);
-  const [search, setSearch] = useState("");
-
-  const navigate = useNavigate();
 
   function CustomLink({ href, children, ...props }) {
     const path = window.location.pathname;
@@ -30,16 +24,6 @@ export default function Navbar() {
       </li>
     );
   }
-
-  const handleKeyDown = (event) => {
-    if (event.key === "Enter" && search.length >= 3) {
-      navigate({
-        pathname: "/search",
-        search: `?${createSearchParams({ q: search })}`,
-      });
-      document.activeElement.blur();
-    }
-  };
 
   return (
     <div className="navbar-box container-main">
@@ -77,7 +61,9 @@ export default function Navbar() {
                 className={`${downMenuAbout ? "active" : "menu-down"}`}
               >
                 <li>
-                  <CustomLink href="/about-us/who-are-we">Who are we?</CustomLink>
+                  <CustomLink href="/about-us/who-are-we">
+                    Who are we?
+                  </CustomLink>
                 </li>
                 <li>
                   <CustomLink href="/about-us/our-team">Our team</CustomLink>
@@ -165,68 +151,47 @@ export default function Navbar() {
           </ul>
         </nav>
       </div>
-      <div className="search">
-        <input
-          type="text"
-          placeholder="Search"
-          value={search}
-          onChange={(e) => setSearch(e.target.value)}
-          onKeyUp={handleKeyDown}
-        />
-        <ul>
-          <li>
-            <div
-              className={`lng-change ${downMenu ? "active" : ""}`}
-              onClick={() => setDownMenu(!downMenu)}
+
+      <ul className="lng-con">
+        <li style={{ width: 55 }}>
+          <div
+            className={`lng-change ${downMenu ? "active" : ""}`}
+            onClick={() => setDownMenu(!downMenu)}
+          >
+            EN <AiOutlineCaretDown className="down-icon" />
+          </div>
+          <ol
+            style={{ display: "none", width: 150 }}
+            className={`${downMenu ? "active" : ""}`}
+          >
+            <li
+              style={{
+                fontSize: 11,
+                color: "red",
+                position: "absolute",
+                width: 100,
+                background: "#fff",
+                padding: 10
+              }}
             >
-              EN <AiOutlineCaretDown className="down-icon" />
-            </div>
-            <ol
-              style={{ display: "none", width: 150 }}
-              className={`${downMenu ? "active" : ""}`}
-            >
-              <li style={{ fontSize: 11, color: "red" }}>
-                trenutno je dostupan samo engleski jezik
-              </li>
-            </ol>
-          </li>
-          <li>
-            <div className="email-mobile">
-              <a href="/contact">
-                <TfiEmail className="email-icon" />
-              </a>
-            </div>
-          </li>
-          <li>
-            <div
-              onClick={() => setDownSearch(!downSearch)}
-              className="search-mobile"
-            >
-              <GoSearch className="search-icon" />
-            </div>
-            <ol
-              style={{ padding: 0, borderRadius: 10, display: 'none', transform: 'translateX(-165px)'}}
-              className={`${downSearch ? "active" : "search-input"}`}
-            >
-              <li>
-                <input
-                  style={{ margin: 0 }} 
-                  type="text"
-                  placeholder="Search"
-                  value={search}
-                  onChange={(e) => setSearch(e.target.value)}
-                  onKeyUp={handleKeyDown}
-                />
-              </li>
-            </ol>
-          </li>
-        </ul>
+              trenutno je dostupan samo engleski jezik
+            </li>
+          </ol>
+        </li>
+        <li>
+          <div className="email-mobile">
+            <a href="/contact">
+              <TfiEmail className="email-icon" />
+            </a>
+          </div>
+        </li>
+
         <div className="burger-icon" onClick={() => setOpenMenu(!openMenu)}>
-          <div className="line1"></div>
-          <div className="line2"></div>
-          <div className="line3"></div>
+          <div className="line1" />
+          <div className="line2" />
+          <div className="line3" />
         </div>
-      </div>
+      </ul>
     </div>
   );
 }

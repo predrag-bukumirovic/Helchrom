@@ -1,7 +1,6 @@
 import React, {lazy, Suspense } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Cookies from "./components/Cookies";
-import Search from "./pages/Search";
 import Thanks from "./pages/Thanks";
 
 const Blog = lazy(() => import("./pages/Blog"));
@@ -58,7 +57,6 @@ function App() {
           <Route path="/competences&services/our-services" element={<OurServices />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/legal-statement" element={<LegalStatement />} />
-          <Route path="/search" element={<Search />} />
           <Route path="/chemicals" element={<Chemicals />} />
           <Route path="/pharma" element={<Pharma />} />
           <Route path="/environment" element={<Environment />} />

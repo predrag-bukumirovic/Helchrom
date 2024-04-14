@@ -55,6 +55,15 @@ nav ul li span:hover {
   color: var(--light-blue-color) !important;
 }
 
+.lng-con {
+  display: flex;
+  padding-inline-start: 0;
+  margin-bottom: 0;
+}
+.lng-con li {
+  list-style: none;
+}
+
 nav ul li a.active {
   background: var(--brend-color);
   color: var(--light-blue-color) !important;
@@ -78,21 +87,6 @@ ul li ol.menu-down {
   padding-left: 0;
 }
 
-.search ul ol {
-  background: #fff !important;
-  width: max-content;
-  position: absolute;
-  animation: menu_down 1s;
-  padding: 10px 20px;
-  box-shadow: 0px 0px 29px -11px rgba(0, 0, 0, 0.5);
-}
-
-.search ul ol li a {
-  text-decoration: none;
-  color: #000;
-  margin-bottom: 50px;
-}
-
 @keyframes menu_down {
   from {
     opacity: 0;
@@ -114,38 +108,6 @@ ul li ol.menu-down li a {
 ul li ol.menu-down li a:hover {
   background: var(--brend-color);
   color: var(--light-blue-color) !important;
-}
-.search {
-  display: flex;
-  align-items: center;
-}
-
-.search ul {
-  display: flex;
-  align-items: center;
-  margin-bottom: 0;
-  padding-inline-start: 0;
-}
-
-.search ul li {
-  list-style: none;
-}
-
-.search input {
-  padding: 5px 10px;
-  font-size: 14px;
-  outline: none;
-  width: 100%;
-  margin-left: 20px;
-  margin-bottom: 0;
-  border-radius: 10px;
-  box-shadow: 0px 0px 29px -11px rgba(0, 0, 0, 0.5);
-  border: none;
-}
-
-.search input::placeholder {
-  color: #939393;
-  font-size: 14px;
 }
 
 .burger-icon {
@@ -173,8 +135,6 @@ ul li ol.menu-down li a:hover {
   background: #939393;
 }
 
-
-
 @media (max-width: 1600px) {
   .navbar-box {
     width: 100%;
@@ -198,10 +158,10 @@ ul li ol.menu-down li a:hover {
   .logo-mobile-menu {
     display: none;
   }
-  .internet-mob {
+  .lng-con {
     display: none;
   }
-  .search-mobile {
+  .internet-mob {
     display: none;
   }
   .email-mobile {
@@ -242,9 +202,9 @@ ul li ol.menu-down li a:hover {
     text-transform: capitalize;
   }
 
-.logo img {
-  width: 120px;
-}
+  .logo img {
+    width: 150px;
+  }
 
   ul li ol.active {
     display: block !important;
@@ -306,22 +266,12 @@ ul li ol.menu-down li a:hover {
     cursor: pointer;
   }
 
-  .search > input {
-    display: none;
-  }
-
-  .search-icon {
-    font-size: 20px;
-    color: #939393;
-    cursor: pointer;
-  }
-
   .email-icon {
     font-size: 20px;
     color: #939393;
   }
 
-  .email-mobile a{
+  .email-mobile a {
     margin: 0 20px;
   }
 
@@ -329,6 +279,7 @@ ul li ol.menu-down li a:hover {
     font-size: 20px;
     color: #939393;
     cursor: pointer;
+    width: 55px;
   }
 }
 
