@@ -12,14 +12,12 @@ import mainImg1 from "../assets/images/Vision/vision2.jpg";
 import mainImg2 from "../assets/images/Vision/vision3.jpg";
 import imgTesti from "../assets/images/Vision/imgtesti.jpg";
 import Kawasaki from "../assets/images/Vision/Kawasaki.png";
-import bigLogo from "../assets/images/Home/bigLogo.png";
-
+import bigLogo from "../assets/images/Home/bigLogo.webp";
 import partnerships from "../assets/images/Vision/partnerships.png";
 import portfolio from "../assets/images/Vision/portfolio.png";
 import team from "../assets/images/Vision/team.png";
 import Innovation from "../assets/images/Vision/Innovation.png";
 import sustainability from "../assets/images/Vision/sustainability.png";
-
 import icon1 from "../assets/images/Vision/1.png";
 import icon2 from "../assets/images/Vision/2.png";
 import icon3 from "../assets/images/Vision/3.png";
@@ -99,19 +97,19 @@ export default function OurVision() {
         <div className="facts container-main">
           <div>
             <center>
-            <h2>OUR VISION</h2>
-            <p>
-              We deliver high-quality process and chemical engineering solutions
-              that are meant to enhance the quality of life and keep our
-              environment healthy for the coming generations.
-            </p>
-            <h2>OUR MISSION</h2>
-            <p>
-              We are a reliable partner of choice for leading global chemicals
-              and pharmaceutical manufacturers in achieving more effective,
-              innovative, and sustainable ways of producing safe, qualitative,
-              and novel products for everyone.
-            </p>
+              <h2>OUR VISION</h2>
+              <p>
+                We deliver high-quality process and chemical engineering
+                solutions that are meant to enhance the quality of life and keep
+                our environment healthy for the coming generations.
+              </p>
+              <h2>OUR MISSION</h2>
+              <p>
+                We are a reliable partner of choice for leading global chemicals
+                and pharmaceutical manufacturers in achieving more effective,
+                innovative, and sustainable ways of producing safe, qualitative,
+                and novel products for everyone.
+              </p>
             </center>
           </div>
           <div>

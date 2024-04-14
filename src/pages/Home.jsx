@@ -1,50 +1,41 @@
 import React, { useEffect } from "react";
-import "../assets/scss/home.scss";
-import "../assets/scss/slider.scss";
-import mainImg from "../assets/images/Home/main-img1.jpeg";
-import mainImg1 from "../assets/images/Home/main-img2.jpeg";
-import mainImg2 from "../assets/images/Home/main-img3.jpeg";
-
-import Facts2010 from "../assets/images/Home/Facts2010.png";
-import Facts6 from "../assets/images/Home/Facts6.png";
-import Facts7 from "../assets/images/Home/Facts7.png";
-import Facts180 from "../assets/images/Home/Facts180.png";
-import Factshappy from "../assets/images/Home/Factshappy.png";
-import Facts5 from "../assets/images/Home/Facts5.png";
-
-
-import Story2010 from "../assets/images/Home/Story2010.jpg";
-import Story2013 from "../assets/images/Home/Story2013.png";
-import Story2015 from "../assets/images/Home/Story2015.png";
-import Story2016 from "../assets/images/Home/Story2016.png";
-import Story2020 from "../assets/images/Home/Story2020.png";
-import Story2023 from "../assets/images/Home/Story2023.png";
-
-
-import HCOne from "../assets/images/HCOne.png";
-
-import icon1 from "../assets/images/Home/1.png";
-import icon2 from "../assets/images/Home/2.png";
-import icon3 from "../assets/images/Home/3.png";
-import icon4 from "../assets/images/Home/4.png";
-import icon5 from "../assets/images/Home/5.png";
-
-import quotation from "../assets/images/quotation.png";
-
 import {
   CCarousel,
   CCarouselCaption,
   CCarouselItem,
   CImage
 } from "@coreui/react";
-import "@coreui/coreui/dist/css/coreui.min.css";
-
 import Carousel from "react-multi-carousel";
+// import AOS from "aos";
+// import "aos/dist/aos.css";
+import WhoIcons from "../components/WhoIcons";
+import "../assets/scss/home.scss";
+import "../assets/scss/slider.scss";
+import "@coreui/coreui/dist/css/coreui.min.css";
 import "react-multi-carousel/lib/styles.css";
 
-import AOS from "aos";
-import "aos/dist/aos.css";
-import WhoIcons from "../components/WhoIcons";
+import mainImg from "../assets/images/Home/main-img1.webp";
+import mainImg1 from "../assets/images/Home/main-img2.webp";
+import mainImg2 from "../assets/images/Home/main-img3.webp";
+import Facts2010 from "../assets/images/Home/Facts2010.webp";
+import Facts6 from "../assets/images/Home/Facts6.webp";
+import Facts7 from "../assets/images/Home/Facts7.webp";
+import Facts180 from "../assets/images/Home/Facts180.webp";
+import Factshappy from "../assets/images/Home/Factshappy.webp";
+import Facts5 from "../assets/images/Home/Facts5.webp";
+import Story2013 from "../assets/images/Home/Story2013.webp";
+import Story2010 from "../assets/images/Home/Story2010.webp";
+import Story2015 from "../assets/images/Home/Story2015.webp";
+import Story2016 from "../assets/images/Home/Story2016.webp";
+import Story2020 from "../assets/images/Home/Story2020.webp";
+import Story2023 from "../assets/images/Home/Story2023.webp";
+import HCOne from "../assets/images/HCOne.png";
+import icon1 from "../assets/images/Home/1.webp";
+import icon2 from "../assets/images/Home/2.webp";
+import icon3 from "../assets/images/Home/3.webp";
+import icon4 from "../assets/images/Home/4.webp";
+import icon5 from "../assets/images/Home/5.webp";
+import quotation from "../assets/images/quotation.png";
 
 const responsive = {
   superLargeDesktop: {
@@ -67,7 +58,7 @@ const responsive = {
 
 export default function Home() {
   useEffect(() => {
-    AOS.init({ duration: 1500 });
+    // AOS.init({ duration: 1500 });
   }, []);
   return (
     <div className="home">
@@ -163,8 +154,19 @@ export default function Home() {
           <b>to Helmchron official website.</b>
         </h1>
         <p>
-          Helmchron is a family-owned company dedicated to providing comprehensive and full-service engineering solutions for the manufacturing facilities of pharmaceuticals, chemicals, food and bio products, electronics, energy, and oil and gas. We take pride in contributing to the manufacturing of globally available, safe, and high-quality products since 2010.<br /> Our mission has remained the same since our beginnings - we improve the quality of life for everyone everywhere whilst keeping our environment healthy for the coming generations. <br /> Today, our scope is broader and our team more diverse providing unique perspectives, agility, and efficacy.<br /> Our engineering solutions are now delivered to leaders and innovators across different industries with a focus on global impact, sustainable outcomes, and long-lasting partnerships.
-          
+          Helmchron is a family-owned company dedicated to providing
+          comprehensive and full-service engineering solutions for the
+          manufacturing facilities of pharmaceuticals, chemicals, food and bio
+          products, electronics, energy, and oil and gas. We take pride in
+          contributing to the manufacturing of globally available, safe, and
+          high-quality products since 2010.<br /> Our mission has remained the
+          same since our beginnings - we improve the quality of life for
+          everyone everywhere whilst keeping our environment healthy for the
+          coming generations. <br /> Today, our scope is broader and our team
+          more diverse providing unique perspectives, agility, and efficacy.<br />{" "}
+          Our engineering solutions are now delivered to leaders and innovators
+          across different industries with a focus on global impact, sustainable
+          outcomes, and long-lasting partnerships.
         </p>
 
         <a href="/about-us/our-vision-and-mission">Read More</a>
@@ -172,8 +174,9 @@ export default function Home() {
 
       <div className="our-home container-main padding30">
         <h2 className="title">OUR SERVICES</h2>
-        <p style={{textAlign: 'start'}}>
-          We provide end-to-end engineering services for manufacturing facility design and operations management.
+        <p style={{ textAlign: "start" }}>
+          We provide end-to-end engineering services for manufacturing facility
+          design and operations management.
         </p>
 
         <div>
@@ -195,26 +198,52 @@ export default function Home() {
         </div>
 
         <center>
-          <a className="book-btn" href="/contact">Book a meeting</a>
-        </center>   
+          <a className="book-btn" href="/contact">
+            Book a meeting
+          </a>
+        </center>
       </div>
 
       <div className="unique">
         <div className="container-main padding30">
           <h2>Unique service concept</h2>
-          <h3>HELMCHR<span>ONe</span></h3>
+          <h3>
+            HELMCHR<span>ONe</span>
+          </h3>
 
           <div className="unique-row">
             <div className="text">
-              <p>In a constant pursuit to upgrade our services and expertise, we noticed a significant gap in focus on one project`s outcomes that led to prolonged delivery time and budget overrun.</p>
-              <p>To overcome this gap and meet the unique requirements of each of our clients, we have implemented an innovative service concept - Helmchron ONE.</p>
-              <p>Helmchron ONE enables the complete focus of ONE team on ONE client and ONE project only.</p>
-              <p><b>One Team:</b> Each of our projects is assigned to one of our teams. The team is fully dedicated and accountable for the outcomes, ensuring that every aspect is meticulously considered and executed.</p>
               <p>
-                <b>One Client:</b> We believe in forging strong, long-lasting partnerships, and that starts with putting the client first - each team delivers to one client only. 
+                In a constant pursuit to upgrade our services and expertise, we
+                noticed a significant gap in focus on one project`s outcomes
+                that led to prolonged delivery time and budget overrun.
+              </p>
+              <p>
+                To overcome this gap and meet the unique requirements of each of
+                our clients, we have implemented an innovative service concept -
+                Helmchron ONE.
+              </p>
+              <p>
+                Helmchron ONE enables the complete focus of ONE team on ONE
+                client and ONE project only.
+              </p>
+              <p>
+                <b>One Team:</b> Each of our projects is assigned to one of our
+                teams. The team is fully dedicated and accountable for the
+                outcomes, ensuring that every aspect is meticulously considered
+                and executed.
+              </p>
+              <p>
+                <b>One Client:</b> We believe in forging strong, long-lasting
+                partnerships, and that starts with putting the client first -
+                each team delivers to one client only.
               </p>
 
-              <p><b>One Project:</b> By channeling our expertise, resources, and creativity into delivering the best results for one project, we ensure unmatched quality, efficiency, and effectiveness.</p>
+              <p>
+                <b>One Project:</b> By channeling our expertise, resources, and
+                creativity into delivering the best results for one project, we
+                ensure unmatched quality, efficiency, and effectiveness.
+              </p>
 
               <p>Ready to focus on success and experience Helmchron ONE?</p>
             </div>
@@ -230,18 +259,26 @@ export default function Home() {
           <h2 className="title">OUR BUSINESS AREAS</h2>
 
           <p>
-            Our areas of operations are aligned with our mission - to deliver impact globally. We are non-exclusively working in the following business sectors:
+            Our areas of operations are aligned with our mission - to deliver
+            impact globally. We are non-exclusively working in the following
+            business sectors:
           </p>
         </div>
-      <WhoIcons/>
+        <WhoIcons />
       </div>
 
       <div className="facts-box">
         <div className="facts container-main padding30">
           <h2 className="title">FACTS ABOUT US</h2>
-          <div className="facts-row"> 
+          <div className="facts-row">
             <p>
-              We are a team of highly skilled, focused and self-motivated enthusiasts passionate about outcomes, competencies, and partnerships. <br/> Our team is located in Belgrade, Serbia, however, we are driven by international projects and collaborations. <br/> We prioritize delivering high-quality solutions in process and chemical engineering, while upholding the utmost standards of integrity, agility, and accountability.
+              We are a team of highly skilled, focused and self-motivated
+              enthusiasts passionate about outcomes, competencies, and
+              partnerships. <br /> Our team is located in Belgrade, Serbia,
+              however, we are driven by international projects and
+              collaborations. <br /> We prioritize delivering high-quality
+              solutions in process and chemical engineering, while upholding the
+              utmost standards of integrity, agility, and accountability.
             </p>
           </div>
 
@@ -275,7 +312,7 @@ export default function Home() {
       <div className="storyline container-main padding30">
         <h2 className="title">OUR STORYLINE</h2>
 
-        <p style={{textAlign: 'center', fontSize: 20}}>
+        <p style={{ textAlign: "center", fontSize: 20 }}>
           Our story began in 2010. and since then we have been providing
           services to international and local leaders.{" "}
         </p>
@@ -283,89 +320,114 @@ export default function Home() {
         <section className="storyline-box">
           <div className="box box1">
             <div className="text text1-1">
-              <p>Our initial projects were community-focused, yet our vision was always global - to deliver solutions for international initiatives that enhance the quality of life for everyone everywhere.</p>
+              <p>
+                Our initial projects were community-focused, yet our vision was
+                always global - to deliver solutions for international
+                initiatives that enhance the quality of life for everyone
+                everywhere.
+              </p>
             </div>
             <div className="img-date img1-1">
               <img src={Story2013} alt="" />
               <span>2013</span>
             </div>
             <div className="text text1-2">
-              <p>We were proud and enthusiastic to witness our outcomes materializing and our mission taking shape as we actively engaged in projects within the global market...</p>
+              <p>
+                We were proud and enthusiastic to witness our outcomes
+                materializing and our mission taking shape as we actively
+                engaged in projects within the global market...
+              </p>
             </div>
             <div className="img-date img1-2">
               <img src={Story2016} alt="" />
               <span>2016</span>
             </div>
             <div className="text text1-3">
-              <p>Throughout the pandemic, our strong focus has been on projects within the pharmaceutical sector, aiming to achieve and sustain global health.</p>
+              <p>
+                Throughout the pandemic, our strong focus has been on projects
+                within the pharmaceutical sector, aiming to achieve and sustain
+                global health.
+              </p>
             </div>
             <div className="img-date img1-3">
-            <img src={Story2023} alt="" />
+              <img src={Story2023} alt="" />
               <span>2023</span>
             </div>
           </div>
           <div className="story-line">
             <div className="item-round-line">
               <div className="round-line">
-                <div className="line"></div>
-                <div className="round"></div>
-                <div className="line"></div>
+                <div className="line" />
+                <div className="round" />
+                <div className="line" />
               </div>
               <div className="round-line">
-                <div className="line"></div>
-                <div className="round"></div>
-                <div className="line"></div>
-              </div>
-
-              <div className="round-line">
-                <div className="line"></div>
-                <div className="round"></div>
-                <div className="line"></div>
+                <div className="line" />
+                <div className="round" />
+                <div className="line" />
               </div>
 
               <div className="round-line">
-                <div className="line"></div>
-                <div className="round"></div>
-                <div className="line"></div>
+                <div className="line" />
+                <div className="round" />
+                <div className="line" />
               </div>
 
               <div className="round-line">
-                <div className="line"></div>
-                <div className="round"></div>
-                <div className="line"></div>
+                <div className="line" />
+                <div className="round" />
+                <div className="line" />
               </div>
 
               <div className="round-line">
-                <div className="line"></div>
-                <div className="round"></div>
-                <div className="line"></div>
+                <div className="line" />
+                <div className="round" />
+                <div className="line" />
+              </div>
+
+              <div className="round-line">
+                <div className="line" />
+                <div className="round" />
+                <div className="line" />
               </div>
             </div>
           </div>
-            <div className="box box2" style={{alignItems: 'start'}}>
-              <div className="img-date img2-1">
-                <span>2010</span>
-                <img src={Story2010} alt="" />
-              </div>
-              <div className="text text2-1">
-                <p>We are making the first steps towards our vision, gaining valuable perspective from contributing to big, complex teams and projects.</p>
-              </div>
+          <div className="box box2" style={{ alignItems: "start" }}>
+            <div className="img-date img2-1">
+              <span>2010</span>
+              <img src={Story2010} alt="" />
+            </div>
+            <div className="text text2-1">
+              <p>
+                We are making the first steps towards our vision, gaining
+                valuable perspective from contributing to big, complex teams and
+                projects.
+              </p>
+            </div>
 
-              <div className="img-date img2-2">
-                <span>2015</span>
-                <img src={Story2015} alt="" />
-              </div>
-              <div className="text text2-2">
-                <p>As we continue our growth and development with additional worldwide projects, we fine-tune our strategy towards new business areas to elevate our impact.</p>
-              </div>
+            <div className="img-date img2-2">
+              <span>2015</span>
+              <img src={Story2015} alt="" />
+            </div>
+            <div className="text text2-2">
+              <p>
+                As we continue our growth and development with additional
+                worldwide projects, we fine-tune our strategy towards new
+                business areas to elevate our impact.
+              </p>
+            </div>
 
-              <div className="img-date img2-3">
-                <span>2020</span>
-                <img src={Story2020} alt="" />
-              </div>
-              <div className="text text2-3">
-                <p>We are committed to development and innovation, aiming to master the challenges of manufacturing and sustainability. Enduring value for the coming generations is our goal.</p>
-              </div>
+            <div className="img-date img2-3">
+              <span>2020</span>
+              <img src={Story2020} alt="" />
+            </div>
+            <div className="text text2-3">
+              <p>
+                We are committed to development and innovation, aiming to master
+                the challenges of manufacturing and sustainability. Enduring
+                value for the coming generations is our goal.
+              </p>
+            </div>
           </div>
         </section>
       </div>
@@ -373,10 +435,17 @@ export default function Home() {
       <div className="video">
         <p>We have at least one thing in common...</p>
         <center>
-          <iframe height='300' width='600' src="https://www.youtube.com/embed/KjxWR92Yb4o" title="Helmchron - Chemistry Connects Us" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <iframe
+            height="300"
+            width="600"
+            src="https://www.youtube.com/embed/KjxWR92Yb4o"
+            title="Helmchron - Chemistry Connects Us"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          />
         </center>
       </div>
-
 
       <div className="testimonials container-main">
         <div className="slider-testi padding30">

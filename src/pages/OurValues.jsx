@@ -1,19 +1,19 @@
 import React from "react";
+import { CCarousel, CCarouselItem, CImage } from "@coreui/react";
+import "@coreui/coreui/dist/css/coreui.min.css";
+import { Helmet } from "react-helmet";
+
 import "../assets/scss/slider.scss";
 import "../assets/scss/mission-vision.scss";
+
 import mainImg from "../assets/images/Values/baner1.png";
 import mainImg1 from "../assets/images/Values/baner2.png";
 import mainImg2 from "../assets/images/Values/baner3.png";
-
 import Integrity from "../assets/images/Values/Integrity.png";
 import Committment from "../assets/images/Values/Committment.png";
 import Agility from "../assets/images/Values/Agility.png";
 import Diversity from "../assets/images/Values/Diversity.png";
 import Courage from "../assets/images/Values/Courage.png";
-
-import { CCarousel, CCarouselItem, CImage } from "@coreui/react";
-import "@coreui/coreui/dist/css/coreui.min.css";
-import { Helmet } from "react-helmet";
 
 export default function OurValues() {
   return (
