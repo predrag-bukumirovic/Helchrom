@@ -2,8 +2,8 @@
 
 :root {
   --brend-color: #ffa500;
-  --light-blue-color: #f4f6fc;
-  --dark-blue-color: #0B41CD;
+  --light-blue-color: #eef1fd;
+  --dark-blue-color: #0b41cd;
   --gray-text-color: #000;
 }
 
@@ -27,6 +27,7 @@ body {
   padding: 0;
   font-family: 'Neue Einstellung' !important;
   font-display: swap;
+  background: #fff !important;
   position: relative;
   overflow-x: hidden;
   height: 100%;
@@ -34,8 +35,8 @@ body {
 
 ::selection {
   background: var(--brend-color);
-  color: #fff
-}; 
+  color: #fff;
+}
 
 #root {
   position: relative;
@@ -144,5 +145,3 @@ footer {
     height: 250px;
   }
 }
-
-

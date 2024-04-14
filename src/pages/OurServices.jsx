@@ -10,7 +10,7 @@ import "@coreui/coreui/dist/css/coreui.min.css";
 import { Helmet } from "react-helmet";
 
 import PlantC from "../assets/images/OurServices/PlantC.jpeg";
-import WaterT from "../assets/images/OurServices/WaterT.jpeg";
+import WaterT from "../assets/images/OurServices/WaterT.png";
 import ProjectM from "../assets/images/OurServices/ProjectM.jpeg";
 import EconomicA from "../assets/images/OurServices/EconomicA.jpeg";
 import SofrwareE from "../assets/images/OurServices/SofrwareE.jpeg";
@@ -47,18 +47,33 @@ export default function OurServices() {
         <h1 className="title">OUR SERVICES</h1>
         <center>
           <p>
-            At Helmchron, we pride ourselves on delivering exceptional process and chemical engineering solutions that are driven by our partners' needs and satisfaction. Our unwavering commitment to understanding and fulfilling the unique requirements of each of our clients<br/> drives our mission and vision.<br/>
-            At the core of our operational philosophy is a deep understanding that our success is extensively linked to the success of our partners<br/> and outcomes for the individuals and environment. We believe that by placing end users at the forefront of everything we do,<br/> we can create loyal partnerships and meaningful impact for everyone.
+            At Helmchron, we pride ourselves on delivering exceptional process
+            and chemical engineering solutions that are driven by our partners'
+            needs and satisfaction. Our unwavering commitment to understanding
+            and fulfilling the unique requirements of each of our clients<br />{" "}
+            drives our mission and vision.<br />
+            At the core of our operational philosophy is a deep understanding
+            that our success is extensively linked to the success of our
+            partners<br /> and outcomes for the individuals and environment. We
+            believe that by placing end users at the forefront of everything we
+            do,<br /> we can create loyal partnerships and meaningful impact for
+            everyone.
           </p>
 
-          <p>For detailed information on our services, projects, and references, please contact <a href="mailto:milos.ivosevic@helmchron.com">milos.ivosevic@helmchron.com.</a></p>
+          <p>
+            For detailed information on our services, projects, and references,
+            please contact{" "}
+            <a href="mailto:milos.ivosevic@helmchron.com">
+              milos.ivosevic@helmchron.com.
+            </a>
+          </p>
         </center>
 
         <section className="core-wrapper padding30">
           <div className="core-row">
             <div className="core-text">
               <h2>Plant construction</h2>
-              <div className="line"></div>
+              <div className="line" />
 
               <ul>
                 <li>Plant, equipment, and process design</li>
@@ -77,10 +92,13 @@ export default function OurServices() {
             </div>
             <div className="core-text">
               <h2>Water treatment</h2>
-              <div className="line"></div>
+              <div className="line" />
 
               <ul>
-                <li>Development of innovative technical concepts, products, and services</li>
+                <li>
+                  Development of innovative technical concepts, products, and
+                  services
+                </li>
                 <li>Technology and process upgrade</li>
                 <li>Plant`s modernization engineering</li>
               </ul>
@@ -89,7 +107,7 @@ export default function OurServices() {
           <div className="core-row">
             <div className="core-text">
               <h2>Project management</h2>
-              <div className="line"></div>
+              <div className="line" />
 
               <ul>
                 <li>Scope and milestones management</li>
@@ -109,7 +127,7 @@ export default function OurServices() {
             </div>
             <div className="core-text">
               <h2>Engineering – economic analysis</h2>
-              <div className="line"></div>
+              <div className="line" />
 
               <ul>
                 <li>Cost evaluation</li>
@@ -121,10 +139,12 @@ export default function OurServices() {
           <div className="core-row">
             <div className="core-text">
               <h2>Software for engineering purposes</h2>
-              <div className="line"></div>
+              <div className="line" />
 
               <ul>
-                <li>Design and development of custom-made software solutions</li>
+                <li>
+                  Design and development of custom-made software solutions
+                </li>
                 <li>Testing</li>
                 <li>Maintenance</li>
               </ul>
@@ -139,10 +159,13 @@ export default function OurServices() {
             </div>
             <div className="core-text">
               <h2>Innovation Lab</h2>
-              <div className="line"></div>
+              <div className="line" />
 
               <ul>
-                <li>Development of innovative technical concepts, products and services</li>
+                <li>
+                  Development of innovative technical concepts, products and
+                  services
+                </li>
                 <li>Technology and process upgrade</li>
                 <li>Plant`s modernization engineering</li>
               </ul>
