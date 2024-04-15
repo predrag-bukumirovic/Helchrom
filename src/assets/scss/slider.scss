@@ -177,10 +177,22 @@
   gap: 200px;
   margin-bottom: 70px;
 
+  @media (max-width: 1000px) {
+    gap: 150px;
+  }
+
+  @media (max-width: 740px) {
+    flex-direction: column;
+  }
+
   .row-img {
     position: relative;
     img {
       width: 600px;
+
+      @media (max-width: 1000px) {
+        width: 300px;
+      }
     }
 
     > div {
@@ -202,9 +214,18 @@
   }
 }
 
+.our-social {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
 .row2,
 .row4 {
   flex-direction: row-reverse;
+
+  @media (max-width: 740px) {
+    flex-direction: column !important;
+  }
 
   .row-img {
     > div {

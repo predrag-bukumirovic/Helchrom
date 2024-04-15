@@ -14,6 +14,7 @@ import Committment from "../assets/images/Values/Committment.png";
 import Agility from "../assets/images/Values/Agility.png";
 import Diversity from "../assets/images/Values/Diversity.png";
 import Courage from "../assets/images/Values/Courage.png";
+import Oursocial from "../assets/images/Values/Oursocial.png";
 
 export default function OurValues() {
   return (
@@ -192,7 +193,10 @@ export default function OurValues() {
             </p>
           </div>
 
+          <img className="our-social" src={Oursocial} alt="" />
+
           <center>
+            <h2 className="title">WHAT DO WE HAVE IN COMMON?</h2>
             <iframe
               className="video-yt"
               loading="lazy"
