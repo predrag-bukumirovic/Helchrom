@@ -2,15 +2,11 @@
 
 :root {
   --brend-color: #ffa500;
-  --light-blue-color: #eef1fd;
+  --light-blue-color: #f2f3fa;
   --dark-blue-color: #0b41cd;
   --gray-text-color: #000;
   --font-family: 'Neue Einstellung', sans-serif;
 }
-
-/* :root {
-  overflow-x: hidden;
-} */
 
 html {
   scroll-behavior: smooth;

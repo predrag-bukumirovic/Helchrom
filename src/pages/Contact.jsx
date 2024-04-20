@@ -25,9 +25,18 @@ export default function Contact() {
     "The user has aligned their consent with the privacy policy."
   );
 
-  const [dateState, setDateState] = useState(new Date());
-  const changeDate = e => {
-    setDateState(e);
+  const [selectedDate, setSelectedDate] = useState(null);
+  const [busyDates] = useState([
+    new Date("2024-04-20"),
+    new Date("2024-04-28")
+  ]);
+
+  const isDateAvailable = date => {
+    return !busyDates.some(busyDate => isSameDay(busyDate, date));
+  };
+
+  const handleDateChange = date => {
+    setSelectedDate(date);
   };
 
   const [loading, setLoading] = useState(false);
@@ -145,7 +154,7 @@ export default function Contact() {
               <p class="message-box"><b><Message:></b> ${message}</p>
             </div>
             <div class="footer">
-              <p>© 2023 Helmchron | Sva prava zadržana.</p>
+              <p>© 2023 Helmchron | Sva prava zadržana. <a href="https://www.helmchron.gold-digital.rs/privacy-policy">Privacy policy</a></p>
             </div>
           </div>
         </body>
@@ -162,6 +171,151 @@ export default function Contact() {
           name: name,
           email: email,
           subject: subject,
+          message: emailTemplate
+        })
+      });
+
+      setLoading(true);
+      setTimeout(() => {
+        setLoading(false);
+        window.open("/thanks", "_self");
+        document.getElementById("form").reset();
+      }, 3000);
+    } catch (e) {
+      console.error(e);
+      setLoading(false);
+    }
+  };
+
+  const submitFormBook = async e => {
+    e.preventDefault();
+
+    const emailTemplate = `
+      <html>
+        <head>
+          <style>
+            body {
+              font-family: Arial, sans-serif;
+              color: #333333;
+            }
+
+            * {
+              box-sizing: border-box;
+            }
+
+            .container {
+              width: 100%;
+              max-width: 600px;
+              margin: 0 auto;
+              padding: 20px;
+              background-color: #f5f5f5;
+            }
+
+            p {
+              font-size: 16px;
+              margin: 0 0 10px;
+            }
+
+            a {
+              color: #0066cc;
+              text-decoration: underline;
+            }
+
+    
+            .section {
+              margin-bottom: 40px;
+            }
+
+            .section-heading {
+              font-size: 20px;
+              font-weight: bold;
+              margin: 0 0 10px;
+            }
+
+            .section-content {
+              font-size: 16px;
+              margin: 0;
+            }
+
+            /* Stilovi za dugme */
+            .button {
+              display: inline-block;
+              padding: 10px 20px;
+              background-color: #0066cc;
+              color: #ffffff;
+              text-decoration: none;
+              border-radius: 5px;
+            }
+
+            .button:hover {
+              background-color: #004f9f;
+            }
+
+            .header {
+              background-color: #ffffff;
+              padding: 20px;
+              text-align: center;
+            }
+
+            .footer {
+              background-color: #f5f5f5;
+              padding: 20px;
+              text-align: center;
+            }
+
+            .logo {
+              width: 100%;
+              margin: 0 auto;
+            }
+
+            @media only screen and (max-width: 600px) {
+              .container {
+                padding: 10px;
+              }
+            }
+
+            .message-box {
+              padding: 30px;
+            }
+
+            .policy {
+              color: #ffa500 !important;
+            }
+          </style>
+        </head>
+
+        <body>
+          <div class="container">
+            <div class="header">
+              <img src='https://www.helmchron.gold-digital.rs/static/media/policy.346a6f0b269c86290ae3.png' alt="Logo" class="logo">
+            </div>
+            <div class="section">
+              <b>Subject:</b> <p>Meeting scheduling</p>
+              <b>Name:</b> <p>${name}</p>
+              <b>Company:</b> <p>${company}</p>
+              <b>Email:</b> <p>${email}</p>
+              <b>Meeting date:</b> <p>${selectedDate}</p>
+              <b>Privacy policy:</b> <p class="policy">${policy}</p>
+            </div>
+            <div class="footer">
+              <p>© 2023 Helmchron | Sva prava zadržana.  <a href="https://www.helmchron.gold-digital.rs/privacy-policy">Privacy policy</a></p>
+            </div>
+          </div>
+        </body>
+      </html>
+    `;
+
+    try {
+      await fetch("/contact.php", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+          name: name,
+          email: email,
+          subject: subject,
+          date: selectedDate,
           message: emailTemplate
         })
       });
@@ -368,7 +522,7 @@ export default function Contact() {
               work collaboratively to achieve your desired outcomes.
             </p>
 
-            <form action="">
+            <form action="" onSubmit={submitFormBook}>
               <div className="book-form">
                 <label htmlFor="">
                   Full Name <span className="star">*</span>
@@ -430,12 +584,25 @@ export default function Contact() {
                 </button>
               </div>
               <div className="calendar">
-                <Calendar value={dateState} onChange={changeDate} />
+                <Calendar
+                  value={selectedDate}
+                  onChange={handleDateChange}
+                  tileDisabled={({ date, view }) =>
+                    view === "month" && !isDateAvailable(date)}
+                />
               </div>
             </form>
           </div>
         </div>
       </div>
     </div>
+  );
+}
+
+function isSameDay(date1, date2) {
+  return (
+    date1.getDate() === date2.getDate() &&
+    date1.getMonth() === date2.getMonth() &&
+    date1.getFullYear() === date2.getFullYear()
   );
 }
