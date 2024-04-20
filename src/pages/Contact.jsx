@@ -26,9 +26,13 @@ export default function Contact() {
   );
 
   const [selectedDate, setSelectedDate] = useState(null);
+  const [dateSelected, setDateSelected] = useState(false);
   const [busyDates] = useState([
-    new Date("2024-04-20"),
-    new Date("2024-04-28")
+    new Date("2024-04-15"),
+    new Date("2024-04-19"),
+    new Date("2024-04-23"),
+    new Date("2024-04-27"),
+    new Date("2024-04-30")
   ]);
 
   const isDateAvailable = date => {
@@ -37,6 +41,7 @@ export default function Contact() {
 
   const handleDateChange = date => {
     setSelectedDate(date);
+    setDateSelected(true);
   };
 
   const [loading, setLoading] = useState(false);
@@ -189,6 +194,11 @@ export default function Contact() {
 
   const submitFormBook = async e => {
     e.preventDefault();
+
+    if (!dateSelected) {
+      alert("Please select a meeting date.");
+      return;
+    }
 
     const emailTemplate = `
       <html>
@@ -524,73 +534,76 @@ export default function Contact() {
 
             <form action="" onSubmit={submitFormBook}>
               <div className="book-form">
-                <label htmlFor="">
-                  Full Name <span className="star">*</span>
-                  <input
-                    type="text"
-                    placeholder="Please enter your full name"
-                    name="name"
-                    required
-                    onChange={event => setName(event.target.value)}
-                  />
-                </label>
+                <div>
+                  <label htmlFor="">
+                    Full Name <span className="star">*</span>
+                    <input
+                      type="text"
+                      placeholder="Please enter your full name"
+                      name="name"
+                      required
+                      onChange={event => setName(event.target.value)}
+                    />
+                  </label>
 
-                <label htmlFor="company">
-                  Company
-                  <input
-                    type="text"
-                    placeholder="Please enter your company"
-                    name="company"
-                    onChange={event => setCompany(event.target.value)}
-                  />
-                </label>
+                  <label htmlFor="company">
+                    Company
+                    <input
+                      type="text"
+                      placeholder="Please enter your company"
+                      name="company"
+                      onChange={event => setCompany(event.target.value)}
+                    />
+                  </label>
 
-                <label htmlFor="email">
-                  Email <span className="star">*</span>
-                  <input
-                    type="email"
-                    placeholder="Please enter your email"
-                    required
-                    name="email"
-                    onChange={event => setEmail(event.target.value)}
-                  />
-                </label>
+                  <label htmlFor="email">
+                    Email <span className="star">*</span>
+                    <input
+                      type="email"
+                      placeholder="Please enter your email"
+                      required
+                      name="email"
+                      onChange={event => setEmail(event.target.value)}
+                    />
+                  </label>
+                </div>
 
-                <label className="label-policy" htmlFor="policy">
-                  <p>
-                    I agree to the <a href="/privacy-policy">Privacy Policy</a>
-                  </p>
-                  <input
-                    id="policy"
-                    type="checkbox"
-                    name="policyAccepted"
-                    value={
-                      "The privacy policy has been accepted and is now in effect."
-                    }
-                    required
-                    onChange={event => setPolicy(event.target.value)}
+                <div className="calendar">
+                  <Calendar
+                    value={selectedDate}
+                    onChange={handleDateChange}
+                    tileDisabled={({ date, view }) =>
+                      view === "month" && !isDateAvailable(date)}
                   />
-                </label>
-
-                <button type="submit" className="btn" disabled={loading}>
-                  {loading ? "Sending... " : "Send "}
-                  {loading &&
-                    <div class="lds-ring">
-                      <div />
-                      <div />
-                      <div />
-                      <div />
-                    </div>}
-                </button>
+                </div>
               </div>
-              <div className="calendar">
-                <Calendar
-                  value={selectedDate}
-                  onChange={handleDateChange}
-                  tileDisabled={({ date, view }) =>
-                    view === "month" && !isDateAvailable(date)}
+
+              <label className="label-policy" htmlFor="policy">
+                <p>
+                  I agree to the <a href="/privacy-policy">Privacy Policy</a>
+                </p>
+                <input
+                  id="policy"
+                  type="checkbox"
+                  name="policyAccepted"
+                  value={
+                    "The privacy policy has been accepted and is now in effect."
+                  }
+                  required
+                  onChange={event => setPolicy(event.target.value)}
                 />
-              </div>
+              </label>
+
+              <button type="submit" className="btn" disabled={loading}>
+                {loading ? "Sending... " : "Send "}
+                {loading &&
+                  <div class="lds-ring">
+                    <div />
+                    <div />
+                    <div />
+                    <div />
+                  </div>}
+              </button>
             </form>
           </div>
         </div>

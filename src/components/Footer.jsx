@@ -10,9 +10,9 @@ export default function Footer() {
   return (
     <footer>
       <div className="w-100">
-        <div className="container-main">
+        <div className="">
           <div className="footer-container">
-            <div className="footer-box">
+            <div className="footer-box container-main">
               <div className="logo">
                 <img src={Logo} alt="Logo" />
               </div>
@@ -74,7 +74,7 @@ export default function Footer() {
                 <a href="mailto:office@helmchron.com">office@helmchron.com</a>
               </div>
             </div>
-            <div className="copyright">
+            <div className="copyright container-main">
               <div>
                 Helmchron © 2023 {/*{new Date().getFullYear()} {""} */}
                 <a href="/privacy-policy">Privacy policy</a> | by{" "}

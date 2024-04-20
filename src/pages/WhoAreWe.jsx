@@ -12,7 +12,7 @@ import OurImg from "../assets/images/Who/our-history.png";
 import OUR_CREDO from "../assets/images/Who/OUR_CREDO.png";
 import "../assets/scss/slider.scss";
 import "../assets/scss/who.scss";
-import WhoIcons from "../components/WhoIcons"
+import WhoIcons from "../components/WhoIcons";
 
 const customStyles = {
   content: {
@@ -27,8 +27,8 @@ const customStyles = {
     maxHeight: "80%",
     overflow: "auto",
     padding: "20px",
-    marginTop: 50,
-  },
+    marginTop: 50
+  }
 };
 
 const WhoAreWe = () => {
@@ -51,7 +51,7 @@ const WhoAreWe = () => {
       </Helmet>
       <div className="container-main">
         <CCarousel className="slider-main" controls transition="crossfade">
-          {[mainImg2, mainImg1, mainImg].map((img, index) => (
+          {[mainImg2, mainImg1, mainImg].map((img, index) =>
             <CCarouselItem key={index}>
               <CImage
                 className="d-block w-100"
@@ -59,26 +59,27 @@ const WhoAreWe = () => {
                 alt={`slide ${index + 1}`}
               />
             </CCarouselItem>
-          ))}
+          )}
         </CCarousel>
         <div className="box-img">
-          {[mainImg2, mainImg1, mainImg].map((img, index) => (
+          {[mainImg2, mainImg1, mainImg].map((img, index) =>
             <div key={index}>
               <img src={img} alt={`Main ${index + 1}`} />
             </div>
-          ))}
+          )}
         </div>
       </div>
       <div className="container-main padding30">
-        <h1 className="title">{t("title_who")}</h1>
+        <h1 className="title">
+          {t("title_who")}
+        </h1>
         <center>
-          {[t("who_text1"), t("who_text2")].map((text, index) => (
+          {[t("who_text1"), t("who_text2")].map((text, index) =>
             <p key={index} dangerouslySetInnerHTML={{ __html: text }} />
-          ))}
+          )}
         </center>
 
-        <WhoIcons/>
-      
+        <WhoIcons />
       </div>
       <div className="history">
         <div>
@@ -104,10 +105,9 @@ const WhoAreWe = () => {
                 <p>
                   Helmchron path is one of continuous growth and evolution,
                   where every project is a testament to our unwavering
-                  commitment to excellence and sustainability. As we look
-                  ahead, our aspiration remains steadfast—to make an even
-                  greater impact globally, ultimately benefiting everyone
-                  everywhere.
+                  commitment to excellence and sustainability. As we look ahead,
+                  our aspiration remains steadfast—to make an even greater
+                  impact globally, ultimately benefiting everyone everywhere.
                 </p>
               </div>
               <div className="img">
@@ -131,9 +131,7 @@ const WhoAreWe = () => {
           stability of our business operations, envisioning a high quality of
           life for everyone.
         </p>
-        <a href="javascript:void(0);" onClick={openModal}>
-          Read more
-        </a>
+        <span onClick={openModal}>Read more</span>
         <Modal
           isOpen={modalIsOpen}
           onRequestClose={closeModal}
@@ -146,7 +144,7 @@ const WhoAreWe = () => {
               padding: 10,
               background: "var(--brend-color)",
               marginBottom: 10,
-              color: "#fff",
+              color: "#fff"
             }}
             onClick={closeModal}
           >
@@ -172,8 +170,7 @@ const WhoAreWe = () => {
             <ul>
               <li>Contact person: Milos Ivosevic, PhD, Process Engineer</li>
               <li>
-                Phone number:{" "}
-                <a href="tel:+381642938533">+381 64 293 85 33</a>
+                Phone number: <a href="tel:+381642938533">+381 64 293 85 33</a>
               </li>
               <li>
                 Email address:{" "}

@@ -174,7 +174,7 @@ export default function Home() {
 
       <div className="our-home container-main padding30">
         <h2 className="title">OUR SERVICES</h2>
-        <p style={{ textAlign: "start" }}>
+        <p style={{ textAlign: "center" }}>
           We provide end-to-end engineering services for manufacturing facility
           design and operations management.
         </p>
@@ -258,7 +258,7 @@ export default function Home() {
         <div className="areas-text">
           <h2 className="title">OUR BUSINESS AREAS</h2>
 
-          <p>
+          <p style={{ textAlign: "center" }}>
             Our areas of operations are aligned with our mission - to deliver
             impact globally. We are non-exclusively working in the following
             business sectors:
@@ -312,7 +312,7 @@ export default function Home() {
       <div className="storyline container-main padding30">
         <h2 className="title">OUR STORYLINE</h2>
 
-        <p style={{ textAlign: "center", fontSize: 20 }}>
+        <p style={{ textAlign: "center" }}>
           Our story began in 2010. and since then we have been providing
           services to international and local leaders.{" "}
         </p>

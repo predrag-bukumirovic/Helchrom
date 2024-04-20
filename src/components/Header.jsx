@@ -6,12 +6,15 @@ import Navbar from "../components/Navbar";
 export default function Header() {
   return (
     <div className="w-100">
-      <div className="header-box container-main">
-        <div className="header-links">
-          <p className="lng">
-            <GoGlobe className="icon-lng" />ENGLISH
-          </p>
-          <a href="/contact">CONTACT</a>
+      <div className="header-box">
+        <div className="header-links container-main">
+          <div />
+          <div style={{ display: "flex", float: "right" }}>
+            <p className="lng">
+              <GoGlobe className="icon-lng" />ENGLISH
+            </p>
+            <a href="/contact">CONTACT</a>
+          </div>
         </div>
         <Navbar />
       </div>
