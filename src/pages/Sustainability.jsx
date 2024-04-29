@@ -1,12 +1,9 @@
 import React from "react";
 
-import mainImg from "../assets/images/Blog//Diversitybaner1.jpeg";
-import mainImg1 from "../assets/images/Blog/Diversitybaner2.jpeg";
-import mainImg2 from "../assets/images/Blog/Diversitybaner3.jpeg";
+import mainImg from "../assets/images/Blog//Prvaslika.jpg";
+import mainImg1 from "../assets/images/Blog/Drugaslika.jpg";
+import mainImg2 from "../assets/images/Blog/Slika3.jpg";
 import "../assets/scss/news-post.scss";
-
-// import OdbojkaSlikaG from "../assets/images/Blog/Srceduga.jpeg";
-// import OdbojkaSlikaD from "../assets/images/Blog/Diversitydole.jpeg";
 import { CCarousel, CCarouselItem, CImage } from "@coreui/react";
 
 export default function Sustainability() {
@@ -137,9 +134,9 @@ export default function Sustainability() {
             loading="lazy"
             src="https://www.youtube.com/embed/0leFkWYyv4c"
             title="Plastics - then and now I Helmchron I Chemistry Connects Us"
-            frameborder="0"
+            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
+            allowFullScreen
           />
         </div>
 

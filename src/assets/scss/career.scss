@@ -1,35 +1,4 @@
-.career-logo-box {
-  background-image: url("../../assets/images/Career/CAREERLOGOIMG.webp");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  margin: 80px 0;
-  padding: 20px 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  .career-text {
-    margin-left: 300px;
-    padding: 0 30px;
-
-    span,
-    h2,
-    li,
-    p {
-      color: #fff !important;
-      font-size: 20px;
-    }
-  }
-}
-
 .box-career {
-  h2 {
-    text-align: center;
-    font-weight: bold;
-  }
-
   .connect-team {
     display: flex;
     justify-content: space-around;
@@ -50,28 +19,52 @@
 
       span {
         color: var(--brend-color) !important;
-        font-weight: bold;
+        font-weight: normal;
       }
 
       p {
-        font-weight: bold;
+        font-weight: normal;
       }
 
       > img {
-        width: 120px;
+        width: 170px;
       }
     }
   }
 }
 
-@media (max-width: 850px) {
-  .career-logo-box {
-    background-position: right;
+.accordion-row {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 100px;
+  width: 1200px;
+  margin: 0 auto;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  .career-img img {
+    width: 600px;
   }
 
-  .career-text {
-    margin-left: 0 !important;
+  @media (max-width: 950px) {
+    grid-template-columns: auto;
+    gap: 0;
+
+    .accordion {
+      height: auto;
+    }
   }
+
+  @media (max-width: 1240px) {
+    width: 100%;
+
+    .career-img img {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 850px) {
   .connect-team {
     flex-direction: column;
     text-align: center;

@@ -114,6 +114,8 @@ export default function Navbar() {
 
               <CustomLink href="/blog">blog</CustomLink>
 
+              <CustomLink href="/contact">contact</CustomLink>
+
               {/* Mreze */}
               <div className="internet-mob">
                 <p>

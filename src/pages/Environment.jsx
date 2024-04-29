@@ -120,9 +120,9 @@ export default function Environment() {
             loading="lazy"
             src="https://www.youtube.com/embed/0leFkWYyv4c"
             title="Plastics - then and now I Helmchron I Chemistry Connects Us"
-            frameborder="0"
+            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
+            allowFullScreen
           />
         </div>
 

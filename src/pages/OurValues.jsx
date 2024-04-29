@@ -202,9 +202,9 @@ export default function OurValues() {
               loading="lazy"
               src="https://www.youtube.com/embed/ggIoQMjqkVM"
               title="Helmchron - Our core values"
-              frameborder="0"
+              frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
+              allowFullScreen
             />
           </center>
         </div>

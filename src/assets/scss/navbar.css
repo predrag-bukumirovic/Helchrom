@@ -38,7 +38,7 @@ nav ul li span {
   text-transform: uppercase;
   text-decoration: none;
   font-weight: bold;
-  color: var(--gray-text-color);
+  color: var(--gray-text-color) !important;
   cursor: pointer;
   padding: 10px 20px;
   transition: .3s;

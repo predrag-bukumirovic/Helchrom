@@ -436,13 +436,13 @@ export default function Home() {
         <p>We have at least one thing in common...</p>
         <center>
           <iframe
-            height="300"
-            width="600"
+            height="500"
+            width="1000"
             src="https://www.youtube.com/embed/KjxWR92Yb4o"
             title="Helmchron - Chemistry Connects Us"
-            frameborder="0"
+            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
+            allowFullScreen
           />
         </center>
       </div>

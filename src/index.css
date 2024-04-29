@@ -135,3 +135,13 @@ footer {
     height: 250px;
   }
 }
+
+.text-width {
+  width: 1200px;
+  margin: 0 auto;
+}
+@media (max-width: 850px) {
+  .text-width {
+    width: 100%;
+  }
+}
