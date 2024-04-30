@@ -6,14 +6,7 @@ import {
   CImage
 } from "@coreui/react";
 import Carousel from "react-multi-carousel";
-// import AOS from "aos";
-// import "aos/dist/aos.css";
 import WhoIcons from "../components/WhoIcons";
-import "../assets/scss/home.scss";
-import "../assets/scss/slider.scss";
-import "@coreui/coreui/dist/css/coreui.min.css";
-import "react-multi-carousel/lib/styles.css";
-
 import mainImg from "../assets/images/Home/main-img1.webp";
 import mainImg1 from "../assets/images/Home/main-img2.webp";
 import mainImg2 from "../assets/images/Home/main-img3.webp";
@@ -23,12 +16,6 @@ import Facts7 from "../assets/images/Home/7days.png";
 import Facts180 from "../assets/images/Home/180min.png";
 import Factshappy from "../assets/images/Home/Happy.png";
 import Facts5 from "../assets/images/Home/Inno.png";
-import Story2013 from "../assets/images/Home/Story2013.webp";
-import Story2010 from "../assets/images/Home/Story2010.webp";
-import Story2015 from "../assets/images/Home/Story2015.webp";
-import Story2016 from "../assets/images/Home/Story2016.webp";
-import Story2020 from "../assets/images/Home/Story2020.webp";
-import Story2023 from "../assets/images/Home/Story2023.webp";
 import HCOne from "../assets/images/HCOne.png";
 import icon1 from "../assets/images/Home/1.webp";
 import icon2 from "../assets/images/Home/2.webp";
@@ -36,24 +23,17 @@ import icon3 from "../assets/images/Home/3.webp";
 import icon4 from "../assets/images/Home/4.webp";
 import icon5 from "../assets/images/Home/5.webp";
 import quotation from "../assets/images/quotation.png";
+import "../assets/scss/home.scss";
+import "../assets/scss/slider.scss";
+import "@coreui/coreui/dist/css/coreui.min.css";
+import "react-multi-carousel/lib/styles.css";
+import Storyline from "../components/Storyline";
 
 const responsive = {
-  superLargeDesktop: {
-    breakpoint: { max: 4000, min: 3000 },
-    items: 1
-  },
-  desktop: {
-    breakpoint: { max: 3000, min: 1024 },
-    items: 1
-  },
-  tablet: {
-    breakpoint: { max: 1024, min: 464 },
-    items: 1
-  },
-  mobile: {
-    breakpoint: { max: 464, min: 0 },
-    items: 1
-  }
+  superLargeDesktop: { breakpoint: { max: 4000, min: 3000 }, items: 1 },
+  desktop: { breakpoint: { max: 3000, min: 1024 }, items: 1 },
+  tablet: { breakpoint: { max: 1024, min: 464 }, items: 1 },
+  mobile: { breakpoint: { max: 464, min: 0 }, items: 1 }
 };
 
 export default function Home() {
@@ -63,20 +43,10 @@ export default function Home() {
   const factsRef = useRef(null);
 
   useEffect(() => {
-    const options = { root: null, rootMargin: "0px", threshold: 0.5 }; // Change this threshold value according to your need
-
+    const options = { root: null, rootMargin: "0px", threshold: 0.5 };
     const observer = new IntersectionObserver(handleIntersect, options);
-
-    if (factsRef.current) {
-      observer.observe(factsRef.current);
-    }
-
-    return () => {
-      if (factsRef.current) {
-        observer.unobserve(factsRef.current);
-      }
-    };
-  }, []);
+    if (factsRef.current) observer.observe(factsRef.current);
+  });
 
   const handleIntersect = entries => {
     entries.forEach(entry => {
@@ -93,7 +63,6 @@ export default function Home() {
     const duration = 5000; // 5 seconds
     const stepTime = duration / finalNumber;
     let currentNumber = 0;
-
     const interval = setInterval(() => {
       currentNumber++;
       setNumbers(prevNumbers => {
@@ -101,83 +70,62 @@ export default function Home() {
         newNumbers[index] = currentNumber;
         return newNumbers;
       });
-
-      if (currentNumber === finalNumber) {
-        clearInterval(interval);
-      }
+      if (currentNumber === finalNumber) clearInterval(interval);
     }, stepTime);
   };
 
   return (
     <div>
+      {/* Slider */}
       <div className="slider">
         <CCarousel className="slider-main" controls transition="crossfade">
-          <CCarouselItem>
-            <a href="/about-us/who-are-we">
-              <CImage className="d-block w-100" src={mainImg} alt="slide 1" />
-              <CCarouselCaption className="img">
-                <div>
-                  <p>Who are we?</p>
-                </div>
-              </CCarouselCaption>
-            </a>
-          </CCarouselItem>
-          <CCarouselItem>
-            <a href="/competences&services/our-services">
-              <CImage className="d-block w-100" src={mainImg1} alt="slide 2" />
-              <CCarouselCaption className="img">
-                <div>
-                  <p>Our Services: Process Engineering</p>
-                </div>
-              </CCarouselCaption>
-            </a>
-          </CCarouselItem>
-          <CCarouselItem>
-            <a href="/about-us/our-values">
-              <CImage className="d-block w-100" src={mainImg2} alt="slide 3" />
-              <CCarouselCaption className="img">
-                <div>
-                  <p>How do we work?</p>
-                </div>
-              </CCarouselCaption>
-            </a>
-          </CCarouselItem>
+          {[mainImg, mainImg1, mainImg2].map((img, index) =>
+            <CCarouselItem key={index}>
+              <a href={`/about-us/who-are-we`}>
+                <CImage
+                  className="d-block w-100"
+                  src={img}
+                  alt={`slide ${index + 1}`}
+                />
+                <CCarouselCaption className="img">
+                  <div>
+                    <p>
+                      {index === 0
+                        ? "Who are we?"
+                        : index === 1
+                          ? "Our Services: Process Engineering"
+                          : "How do we work?"}
+                    </p>
+                  </div>
+                </CCarouselCaption>
+              </a>
+            </CCarouselItem>
+          )}
         </CCarousel>
 
         <div className="box-img">
-          <div>
-            <a href="/about-us/who-are-we">
-              <img src={mainImg} alt="Main" />
-              <div className="img-text">
-                <div>
-                  <p>Who are we?</p>
+          {[mainImg, mainImg1, mainImg2].map((img, index) =>
+            <div key={index}>
+              <a href={`/about-us/who-are-we`}>
+                <img src={img} alt="Main" />
+                <div className="img-text">
+                  <div>
+                    <p>
+                      {index === 0
+                        ? "Who are we?"
+                        : index === 1
+                          ? "Our Services: Process Engineering"
+                          : "How do we work?"}
+                    </p>
+                  </div>
                 </div>
-              </div>
-            </a>
-          </div>
-          <div>
-            <a href="/competences&services/our-services">
-              <img src={mainImg1} alt="Main" />
-              <div className="img-text">
-                <div>
-                  <p>Our Services: Process Engineering</p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div>
-            <a href="/about-us/our-values">
-              <img src={mainImg2} alt="Main" />
-              <div className="img-text">
-                <div>
-                  <p>How do we work?</p>
-                </div>
-              </div>
-            </a>
-          </div>
+              </a>
+            </div>
+          )}
         </div>
       </div>
 
+      {/* Welcome */}
       <div className="welcome container-main padding30">
         <h1>
           <p data-aos="fade-up" data-aos-duration="500">
@@ -222,6 +170,7 @@ export default function Home() {
         <a href="/about-us/our-vision-and-mission">Read More</a>
       </div>
 
+      {/* Our Services */}
       <div className="our-home container-main padding30">
         <h2 className="title">OUR SERVICES</h2>
         <p style={{ textAlign: "center" }}>
@@ -230,21 +179,11 @@ export default function Home() {
         </p>
 
         <div>
-          <div>
-            <img src={icon1} alt="" />
-          </div>
-          <div>
-            <img src={icon2} alt="" />
-          </div>
-          <div>
-            <img src={icon3} alt="" />
-          </div>
-          <div>
-            <img src={icon4} alt="" />
-          </div>
-          <div>
-            <img src={icon5} alt="" />
-          </div>
+          {[icon1, icon2, icon3, icon4, icon5].map((icon, index) =>
+            <div key={index}>
+              <img src={icon} alt="" />
+            </div>
+          )}
         </div>
 
         <center>
@@ -254,6 +193,7 @@ export default function Home() {
         </center>
       </div>
 
+      {/* Unique Service Concept */}
       <div className="unique">
         <div className="container-main padding30">
           <h2>Unique service concept</h2>
@@ -304,6 +244,7 @@ export default function Home() {
         </div>
       </div>
 
+      {/* Our Business Areas */}
       <div className="areas padding30 container-main">
         <div className="areas-text">
           <h2 className="title">OUR BUSINESS AREAS</h2>
@@ -317,6 +258,7 @@ export default function Home() {
         <WhoIcons />
       </div>
 
+      {/* Facts About Us */}
       <div className="facts-box">
         <div className="facts container-main padding30">
           <h2 className="title">FACTS ABOUT US</h2>
@@ -333,71 +275,34 @@ export default function Home() {
           </div>
 
           <div ref={factsRef} className="facts-icon">
-            <div className="icon-item">
-              <img src={Facts2010} alt="" />
-              <div className="text">
-                <span className="word">founder in</span>
-                <span className="number">
-                  {numbers[0]}
-                </span>
-              </div>
-            </div>
-            <div className="icon-item">
-              <img src={Facts6} alt="" />
-
-              <div className="text">
-                <span className="word">operations areas</span>
-                <span className="number">
-                  {numbers[1]}
-                </span>
-              </div>
-            </div>
-            <div className="icon-item">
-              <img src={Facts7} alt="" />
-
-              <div className="text">
-                <span className="word">
-                  numeba of week days we provide support to our clients
-                </span>
-                <span className="number">
-                  {numbers[2]}
-                </span>
-              </div>
-            </div>
-            <div className="icon-item">
-              <img src={Facts180} alt="" />
-
-              <div className="text">
-                <span className="number" style={{ lineHeight: "23px" }}>
-                  {numbers[3]}{" "}
-                  <span className="word-180">
-                    {" "}minuter average feedback time
+            {[
+              Facts2010,
+              Facts6,
+              Facts7,
+              Facts180,
+              Factshappy,
+              Facts5
+            ].map((img, index) =>
+              <div key={index} className="icon-item">
+                <img src={img} alt="" />
+                <div className="text">
+                  <span className="word">
+                    {index === 0
+                      ? "founder in"
+                      : index === 1
+                        ? "operations areas"
+                        : index === 2
+                          ? "number of week days we provide support to our clients"
+                          : index === 3
+                            ? "minute average feedback time"
+                            : index === 4
+                              ? "happy clients and partners"
+                              : "published papers as a result of our inno lab"}
                   </span>
-                </span>
+                  <span className="number">{`>${numbers[index]}`}</span>
+                </div>
               </div>
-            </div>
-            <div className="icon-item">
-              <img src={Factshappy} alt="" />
-
-              <div className="text">
-                <span className="word">happy clients and partnets</span>
-                <span className="number">
-                  {" "}&gt; {numbers[4]}
-                </span>
-              </div>
-            </div>
-            <div className="icon-item">
-              <img src={Facts5} alt="" />
-
-              <div className="text" style={{ flexDirection: "column-reverse" }}>
-                <span className="word">
-                  published papers as a result of our inno lab
-                </span>
-                <span className="number">
-                  &gt; {numbers[5]}
-                </span>
-              </div>
-            </div>
+            )}
           </div>
 
           <center>
@@ -406,129 +311,9 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="storyline container-main padding30">
-        <h2 className="title">OUR STORYLINE</h2>
+      <Storyline />
 
-        <p style={{ textAlign: "center" }}>
-          Our story began in 2010. and since then we have been providing
-          services to international and local leaders.{" "}
-        </p>
-
-        <section className="storyline-box">
-          <div className="box box1">
-            <div className="text text1-1">
-              <p>
-                Our initial projects were community-focused, yet our vision was
-                always global - to deliver solutions for international
-                initiatives that enhance the quality of life for everyone
-                everywhere.
-              </p>
-            </div>
-            <div className="img-date img1-1">
-              <img src={Story2013} alt="" />
-              <span>2013</span>
-            </div>
-            <div className="text text1-2">
-              <p>
-                We were proud and enthusiastic to witness our outcomes
-                materializing and our mission taking shape as we actively
-                engaged in projects within the global market...
-              </p>
-            </div>
-            <div className="img-date img1-2">
-              <img src={Story2016} alt="" />
-              <span>2016</span>
-            </div>
-            <div className="text text1-3">
-              <p>
-                Throughout the pandemic, our strong focus has been on projects
-                within the pharmaceutical sector, aiming to achieve and sustain
-                global health.
-              </p>
-            </div>
-            <div className="img-date img1-3">
-              <img src={Story2023} alt="" />
-              <span>2023</span>
-            </div>
-          </div>
-          <div className="story-line">
-            <div className="item-round-line">
-              <div className="round-line">
-                <div className="line" />
-                <div className="round" />
-                <div className="line" />
-              </div>
-              <div className="round-line">
-                <div className="line" />
-                <div className="round" />
-                <div className="line" />
-              </div>
-
-              <div className="round-line">
-                <div className="line" />
-                <div className="round" />
-                <div className="line" />
-              </div>
-
-              <div className="round-line">
-                <div className="line" />
-                <div className="round" />
-                <div className="line" />
-              </div>
-
-              <div className="round-line">
-                <div className="line" />
-                <div className="round" />
-                <div className="line" />
-              </div>
-
-              <div className="round-line">
-                <div className="line" />
-                <div className="round" />
-                <div className="line" />
-              </div>
-            </div>
-          </div>
-          <div className="box box2" style={{ alignItems: "start" }}>
-            <div className="img-date img2-1">
-              <span>2010</span>
-              <img src={Story2010} alt="" />
-            </div>
-            <div className="text text2-1">
-              <p>
-                We are making the first steps towards our vision, gaining
-                valuable perspective from contributing to big, complex teams and
-                projects.
-              </p>
-            </div>
-
-            <div className="img-date img2-2">
-              <span>2015</span>
-              <img src={Story2015} alt="" />
-            </div>
-            <div className="text text2-2">
-              <p>
-                As we continue our growth and development with additional
-                worldwide projects, we fine-tune our strategy towards new
-                business areas to elevate our impact.
-              </p>
-            </div>
-
-            <div className="img-date img2-3">
-              <span>2020</span>
-              <img src={Story2020} alt="" />
-            </div>
-            <div className="text text2-3">
-              <p>
-                We are committed to development and innovation, aiming to master
-                the challenges of manufacturing and sustainability. Enduring
-                value for the coming generations is our goal.
-              </p>
-            </div>
-          </div>
-        </section>
-      </div>
-
+      {/* Video */}
       <div className="video">
         <p>We have at least one thing in common...</p>
         <center>
@@ -544,6 +329,7 @@ export default function Home() {
         </center>
       </div>
 
+      {/* Testimonials */}
       <div className="testimonials container-main">
         <div className="slider-testi padding30">
           <h2 className="title">WE VALUE OUR PARTNERS' FEEDBACK</h2>
