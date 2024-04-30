@@ -34,33 +34,35 @@ export default function Career(i) {
           content="Join the Helmchron team and explore career opportunities in process and thermotechnics engineering. Contact us to share your CV and learn more about working with us."
         />
       </Helmet>
-      <div className="container-main">
+      <div>
         {/* Slider start */}
-        <CCarousel className="slider-main" controls transition="crossfade">
-          <CCarouselItem>
-            <CImage className="d-block w-100" src={mainImg} alt="slide 1" />
-          </CCarouselItem>
-          <CCarouselItem>
-            <CImage className="d-block w-100" src={mainImg1} alt="slide 2" />
-          </CCarouselItem>
-          <CCarouselItem>
-            <CImage className="d-block w-100" src={mainImg2} alt="slide 3" />
-          </CCarouselItem>
-        </CCarousel>
-        <div className="box-img">
-          <div>
-            <img src={mainImg} alt="Helmchron Career - Slide 1" />
-          </div>
-          <div>
-            <img src={mainImg1} alt="Helmchron Career - Slide 2" />
-          </div>
-          <div>
-            <img src={mainImg2} alt="Helmchron Career - Slide 3" />
+        <div className="slider">
+          <CCarousel className="slider-main" controls transition="crossfade">
+            <CCarouselItem>
+              <CImage className="d-block w-100" src={mainImg} alt="slide 1" />
+            </CCarouselItem>
+            <CCarouselItem>
+              <CImage className="d-block w-100" src={mainImg1} alt="slide 2" />
+            </CCarouselItem>
+            <CCarouselItem>
+              <CImage className="d-block w-100" src={mainImg2} alt="slide 3" />
+            </CCarouselItem>
+          </CCarousel>
+          <div className="box-img">
+            <div>
+              <img src={mainImg} alt="Helmchron Career - Slide 1" />
+            </div>
+            <div>
+              <img src={mainImg1} alt="Helmchron Career - Slide 2" />
+            </div>
+            <div>
+              <img src={mainImg2} alt="Helmchron Career - Slide 3" />
+            </div>
           </div>
         </div>
         {/* Slider end */}
 
-        <div className="padding30">
+        <div className="container-main padding30">
           <h1 className="title">Join the helmchron team</h1>
           <p style={{ textAlign: "justify" }}>
             At Helmchron, we foster a culture of teamwork and agility, where

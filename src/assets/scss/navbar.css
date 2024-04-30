@@ -246,6 +246,7 @@ ul li ol.menu-down li a:hover {
   .menu nav ul span {
     font-size: 20px;
     display: flex;
+    margin-right: 10px;
   }
 
   .menu nav ul li {

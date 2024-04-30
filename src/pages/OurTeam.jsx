@@ -28,36 +28,38 @@ import { Helmet } from "react-helmet";
 export default function OurTeam() {
   const { t } = useTranslation();
   return (
-    <div className="container-main">
+    <div>
       <Helmet>
         <title>Out Team | Helmchron</title>
       </Helmet>
       {/* Slider start */}
-      <CCarousel className="slider-main" controls transition="crossfade">
-        <CCarouselItem>
-          <CImage className="d-block w-100" src={mainImg} alt="slide 1" />
-        </CCarouselItem>
-        <CCarouselItem>
-          <CImage className="d-block w-100" src={mainImg1} alt="slide 2" />
-        </CCarouselItem>
-        <CCarouselItem>
-          <CImage className="d-block w-100" src={mainImg2} alt="slide 3" />
-        </CCarouselItem>
-      </CCarousel>
-      <div className="box-img">
-        <div>
-          <img src={mainImg} alt="Main" />
-        </div>
-        <div>
-          <img src={mainImg1} alt="Main" />
-        </div>
-        <div>
-          <img src={mainImg2} alt="Main" />
+      <div className="slider">
+        <CCarousel className="slider-main" controls transition="crossfade">
+          <CCarouselItem>
+            <CImage className="d-block w-100" src={mainImg} alt="slide 1" />
+          </CCarouselItem>
+          <CCarouselItem>
+            <CImage className="d-block w-100" src={mainImg1} alt="slide 2" />
+          </CCarouselItem>
+          <CCarouselItem>
+            <CImage className="d-block w-100" src={mainImg2} alt="slide 3" />
+          </CCarouselItem>
+        </CCarousel>
+        <div className="box-img">
+          <div>
+            <img src={mainImg} alt="Main" />
+          </div>
+          <div>
+            <img src={mainImg1} alt="Main" />
+          </div>
+          <div>
+            <img src={mainImg2} alt="Main" />
+          </div>
         </div>
       </div>
       {/* Slider end */}
 
-      <div className="">
+      <div className="container-main">
         <h1 className="title">
           {t("title_team")}
         </h1>

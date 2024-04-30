@@ -343,39 +343,41 @@ export default function Contact() {
   };
 
   return (
-    <div className="container-main">
+    <div>
       <Helmet>
         <title>Contact | Helmchron</title>
         <meta charset="utf-8" />
       </Helmet>
 
       {/* Slider start */}
-      <CCarousel className="slider-main" controls transition="crossfade">
-        <CCarouselItem>
-          <CImage className="d-block w-100" src={mainImg} alt="slide 1" />
-        </CCarouselItem>
-        <CCarouselItem>
-          <CImage className="d-block w-100" src={mainImg1} alt="slide 2" />
-        </CCarouselItem>
-        <CCarouselItem>
-          <CImage className="d-block w-100" src={mainImg2} alt="slide 3" />
-        </CCarouselItem>
-      </CCarousel>
+      <div className="slider">
+        <CCarousel className="slider-main" controls transition="crossfade">
+          <CCarouselItem>
+            <CImage className="d-block w-100" src={mainImg} alt="slide 1" />
+          </CCarouselItem>
+          <CCarouselItem>
+            <CImage className="d-block w-100" src={mainImg1} alt="slide 2" />
+          </CCarouselItem>
+          <CCarouselItem>
+            <CImage className="d-block w-100" src={mainImg2} alt="slide 3" />
+          </CCarouselItem>
+        </CCarousel>
 
-      <div className="box-img">
-        <div>
-          <img src={mainImg} alt="Main" />
-        </div>
-        <div>
-          <img src={mainImg1} alt="Main" />
-        </div>
-        <div>
-          <img src={mainImg2} alt="Main" />
+        <div className="box-img">
+          <div>
+            <img src={mainImg} alt="Main" />
+          </div>
+          <div>
+            <img src={mainImg1} alt="Main" />
+          </div>
+          <div>
+            <img src={mainImg2} alt="Main" />
+          </div>
         </div>
       </div>
       {/* Slider end */}
 
-      <div className="">
+      <div className="container-main">
         <center>
           <h1 className="title">GET IN TOUCH</h1>
           <p>

@@ -1,5 +1,4 @@
 .header-box {
-  // --tw-bg-opacity: 1;
   background: var(--brend-color);
   position: fixed;
   z-index: 999999;
@@ -7,10 +6,16 @@
   right: 0;
   left: 0;
 
+  .header {
+    width: 100%;
+    background: var(--brend-colors);
+  }
+
   .header-links {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    padding: 10px 23px;
+    width: 2000px;
 
     p {
       text-decoration: none !important;
@@ -55,7 +60,7 @@
 }
 
 @media (max-width: 1178px) {
-  .header-links {
+  .header {
     display: none !important;
   }
 }

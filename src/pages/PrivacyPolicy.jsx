@@ -11,37 +11,40 @@ import { Helmet } from "react-helmet";
 export default function PrivacyPolicy() {
   const { t } = useTranslation();
   return (
-    <div className="container-main">
+    <div>
       <Helmet>
         <title>Privacy policy | Helmchron</title>
       </Helmet>
       {/* Slider start */}
-      <CCarousel className="slider-main" controls transition="crossfade">
-        <CCarouselItem>
-          <CImage className="d-block w-100" src={mainImg} alt="slide 1" />
-        </CCarouselItem>
-        <CCarouselItem>
-          <CImage className="d-block w-100" src={mainImg1} alt="slide 2" />
-        </CCarouselItem>
-        <CCarouselItem>
-          <CImage className="d-block w-100" src={mainImg2} alt="slide 3" />
-        </CCarouselItem>
-      </CCarousel>
 
-      <div className="box-img">
-        <div>
-          <img src={mainImg} alt="Main" />
-        </div>
-        <div>
-          <img src={mainImg1} alt="Main" />
-        </div>
-        <div>
-          <img src={mainImg2} alt="Main" />
+      <div className="slider">
+        <CCarousel className="slider-main" controls transition="crossfade">
+          <CCarouselItem>
+            <CImage className="d-block w-100" src={mainImg} alt="slide 1" />
+          </CCarouselItem>
+          <CCarouselItem>
+            <CImage className="d-block w-100" src={mainImg1} alt="slide 2" />
+          </CCarouselItem>
+          <CCarouselItem>
+            <CImage className="d-block w-100" src={mainImg2} alt="slide 3" />
+          </CCarouselItem>
+        </CCarousel>
+
+        <div className="box-img">
+          <div>
+            <img src={mainImg} alt="Main" />
+          </div>
+          <div>
+            <img src={mainImg1} alt="Main" />
+          </div>
+          <div>
+            <img src={mainImg2} alt="Main" />
+          </div>
         </div>
       </div>
       {/* Slider end */}
 
-      <div className="padding30 privacy-policy">
+      <div className="container-main padding30 privacy-policy">
         <h1 className="title">
           {t("plicy.title")}
         </h1>

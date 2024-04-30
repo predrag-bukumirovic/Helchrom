@@ -14,31 +14,34 @@ import "../assets/scss/news.scss";
 
 export default function News() {
   return (
-    <div className="container-main">
+    <div>
       <Helmet>
         <title>News | Helmchron</title>
       </Helmet>
-      <CCarousel className="slider-main" controls transition="crossfade">
-        {[mainImg, mainImg1, mainImg2].map((img, index) =>
-          <CCarouselItem key={index}>
-            <CImage
-              className="d-block w-100"
-              src={img}
-              alt={`slide ${index + 1}`}
-            />
-          </CCarouselItem>
-        )}
-      </CCarousel>
 
-      <div className="box-img">
-        {[mainImg, mainImg1, mainImg2].map((img, index) =>
-          <div key={index}>
-            <img src={img} alt="Main" />
-          </div>
-        )}
+      <div className="slider">
+        <CCarousel className="slider-main" controls transition="crossfade">
+          {[mainImg, mainImg1, mainImg2].map((img, index) =>
+            <CCarouselItem key={index}>
+              <CImage
+                className="d-block w-100"
+                src={img}
+                alt={`slide ${index + 1}`}
+              />
+            </CCarouselItem>
+          )}
+        </CCarousel>
+
+        <div className="box-img">
+          {[mainImg, mainImg1, mainImg2].map((img, index) =>
+            <div key={index}>
+              <img src={img} alt="Main" />
+            </div>
+          )}
+        </div>
       </div>
 
-      <div>
+      <div className="container-main">
         <h1 className="title">FAIRS AND CONFERENCES</h1>
         <center>
           <p>

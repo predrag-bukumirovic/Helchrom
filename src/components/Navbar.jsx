@@ -30,7 +30,11 @@ export default function Navbar() {
     <div className="navbar-box">
       <div
         className="container-main"
-        style={{ display: "flex", justifyContent: "space-between" }}
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+          width: 2000
+        }}
       >
         <div
           onClick={() => setOpenMenu(false)}

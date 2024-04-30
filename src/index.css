@@ -41,6 +41,12 @@ body {
   width: 1500px;
   margin: 0 auto;
 }
+
+.slider {
+  width: 2000px;
+  margin: 0 auto;
+}
+
 .padding30,
 center {
   padding: 0 30px;
@@ -109,6 +115,11 @@ footer {
     width: 100%;
   }
   #App {
+    width: 100%;
+  }
+}
+@media (max-width: 2050px) {
+  .slider {
     width: 100%;
   }
 }

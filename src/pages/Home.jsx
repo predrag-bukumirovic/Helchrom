@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import {
   CCarousel,
   CCarouselCaption,
@@ -17,12 +17,12 @@ import "react-multi-carousel/lib/styles.css";
 import mainImg from "../assets/images/Home/main-img1.webp";
 import mainImg1 from "../assets/images/Home/main-img2.webp";
 import mainImg2 from "../assets/images/Home/main-img3.webp";
-import Facts2010 from "../assets/images/Home/Facts2010.webp";
-import Facts6 from "../assets/images/Home/Facts6.webp";
-import Facts7 from "../assets/images/Home/Facts7.webp";
-import Facts180 from "../assets/images/Home/Facts180.webp";
-import Factshappy from "../assets/images/Home/Factshappy.webp";
-import Facts5 from "../assets/images/Home/Facts5.webp";
+import Facts2010 from "../assets/images/Home/Founded.png";
+import Facts6 from "../assets/images/Home/Operations.png";
+import Facts7 from "../assets/images/Home/7days.png";
+import Facts180 from "../assets/images/Home/180min.png";
+import Factshappy from "../assets/images/Home/Happy.png";
+import Facts5 from "../assets/images/Home/Inno.png";
 import Story2013 from "../assets/images/Home/Story2013.webp";
 import Story2010 from "../assets/images/Home/Story2010.webp";
 import Story2015 from "../assets/images/Home/Story2015.webp";
@@ -57,74 +57,124 @@ const responsive = {
 };
 
 export default function Home() {
-  useEffect(() => {
-    // AOS.init({ duration: 1500 });
-  }, []);
-  return (
-    <div className="home">
-      <CCarousel className="slider-main" controls transition="crossfade">
-        <CCarouselItem>
-          <a href="/about-us/who-are-we">
-            <CImage className="d-block w-100" src={mainImg} alt="slide 1" />
-            <CCarouselCaption className="img">
-              <div>
-                <p>Who are we?</p>
-              </div>
-            </CCarouselCaption>
-          </a>
-        </CCarouselItem>
-        <CCarouselItem>
-          <a href="/competences&services/our-services">
-            <CImage className="d-block w-100" src={mainImg1} alt="slide 2" />
-            <CCarouselCaption className="img">
-              <div>
-                <p>Our Services: Process Engineering</p>
-              </div>
-            </CCarouselCaption>
-          </a>
-        </CCarouselItem>
-        <CCarouselItem>
-          <a href="/about-us/our-values">
-            <CImage className="d-block w-100" src={mainImg2} alt="slide 3" />
-            <CCarouselCaption className="img">
-              <div>
-                <p>How do we work?</p>
-              </div>
-            </CCarouselCaption>
-          </a>
-        </CCarouselItem>
-      </CCarousel>
+  const [numbers, setNumbers] = useState([0, 0, 0, 0, 0, 0]);
+  const finalNumbers = [2010, 6, 7, 180, 50, 5];
+  const animationStarted = useRef(false);
+  const factsRef = useRef(null);
 
-      <div className="box-img container-main">
-        <div>
-          <a href="/about-us/who-are-we">
-            <img src={mainImg} alt="Main" />
-            <div className="img-text">
-              <div>
-                <p>Who are we?</p>
+  useEffect(() => {
+    const options = { root: null, rootMargin: "0px", threshold: 0.5 }; // Change this threshold value according to your need
+
+    const observer = new IntersectionObserver(handleIntersect, options);
+
+    if (factsRef.current) {
+      observer.observe(factsRef.current);
+    }
+
+    return () => {
+      if (factsRef.current) {
+        observer.unobserve(factsRef.current);
+      }
+    };
+  }, []);
+
+  const handleIntersect = entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting && !animationStarted.current) {
+        finalNumbers.forEach((finalNumber, index) => {
+          animateNumber(index, finalNumber);
+        });
+        animationStarted.current = true;
+      }
+    });
+  };
+
+  const animateNumber = (index, finalNumber) => {
+    const duration = 5000; // 5 seconds
+    const stepTime = duration / finalNumber;
+    let currentNumber = 0;
+
+    const interval = setInterval(() => {
+      currentNumber++;
+      setNumbers(prevNumbers => {
+        const newNumbers = [...prevNumbers];
+        newNumbers[index] = currentNumber;
+        return newNumbers;
+      });
+
+      if (currentNumber === finalNumber) {
+        clearInterval(interval);
+      }
+    }, stepTime);
+  };
+
+  return (
+    <div>
+      <div className="slider">
+        <CCarousel className="slider-main" controls transition="crossfade">
+          <CCarouselItem>
+            <a href="/about-us/who-are-we">
+              <CImage className="d-block w-100" src={mainImg} alt="slide 1" />
+              <CCarouselCaption className="img">
+                <div>
+                  <p>Who are we?</p>
+                </div>
+              </CCarouselCaption>
+            </a>
+          </CCarouselItem>
+          <CCarouselItem>
+            <a href="/competences&services/our-services">
+              <CImage className="d-block w-100" src={mainImg1} alt="slide 2" />
+              <CCarouselCaption className="img">
+                <div>
+                  <p>Our Services: Process Engineering</p>
+                </div>
+              </CCarouselCaption>
+            </a>
+          </CCarouselItem>
+          <CCarouselItem>
+            <a href="/about-us/our-values">
+              <CImage className="d-block w-100" src={mainImg2} alt="slide 3" />
+              <CCarouselCaption className="img">
+                <div>
+                  <p>How do we work?</p>
+                </div>
+              </CCarouselCaption>
+            </a>
+          </CCarouselItem>
+        </CCarousel>
+
+        <div className="box-img">
+          <div>
+            <a href="/about-us/who-are-we">
+              <img src={mainImg} alt="Main" />
+              <div className="img-text">
+                <div>
+                  <p>Who are we?</p>
+                </div>
               </div>
-            </div>
-          </a>
-        </div>
-        <div>
-          <a href="/competences&services/our-services">
-            <img src={mainImg1} alt="Main" />
-            <div className="img-text">
-              <div>
-                <p>Our Services: Process Engineering</p>
+            </a>
+          </div>
+          <div>
+            <a href="/competences&services/our-services">
+              <img src={mainImg1} alt="Main" />
+              <div className="img-text">
+                <div>
+                  <p>Our Services: Process Engineering</p>
+                </div>
               </div>
-            </div>
-          </a>
-        </div>
-        <div>
-          <a href="/about-us/our-values">
-            <img src={mainImg2} alt="Main" />
-            <div className="img-text">
-              <div>
-                <p>How do we work?</p>
+            </a>
+          </div>
+          <div>
+            <a href="/about-us/our-values">
+              <img src={mainImg2} alt="Main" />
+              <div className="img-text">
+                <div>
+                  <p>How do we work?</p>
+                </div>
               </div>
-            </div>
-          </a>
+            </a>
+          </div>
         </div>
       </div>
 
@@ -282,24 +332,71 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="facts-icon">
-            <div>
+          <div ref={factsRef} className="facts-icon">
+            <div className="icon-item">
               <img src={Facts2010} alt="" />
+              <div className="text">
+                <span className="word">founder in</span>
+                <span className="number">
+                  {numbers[0]}
+                </span>
+              </div>
             </div>
-            <div>
+            <div className="icon-item">
               <img src={Facts6} alt="" />
+
+              <div className="text">
+                <span className="word">operations areas</span>
+                <span className="number">
+                  {numbers[1]}
+                </span>
+              </div>
             </div>
-            <div>
+            <div className="icon-item">
               <img src={Facts7} alt="" />
+
+              <div className="text">
+                <span className="word">
+                  numeba of week days we provide support to our clients
+                </span>
+                <span className="number">
+                  {numbers[2]}
+                </span>
+              </div>
             </div>
-            <div>
+            <div className="icon-item">
               <img src={Facts180} alt="" />
+
+              <div className="text">
+                <span className="number" style={{ lineHeight: "23px" }}>
+                  {numbers[3]}{" "}
+                  <span className="word-180">
+                    {" "}minuter average feedback time
+                  </span>
+                </span>
+              </div>
             </div>
-            <div>
+            <div className="icon-item">
               <img src={Factshappy} alt="" />
+
+              <div className="text">
+                <span className="word">happy clients and partnets</span>
+                <span className="number">
+                  {" "}&gt; {numbers[4]}
+                </span>
+              </div>
             </div>
-            <div>
+            <div className="icon-item">
               <img src={Facts5} alt="" />
+
+              <div className="text" style={{ flexDirection: "column-reverse" }}>
+                <span className="word">
+                  published papers as a result of our inno lab
+                </span>
+                <span className="number">
+                  &gt; {numbers[5]}
+                </span>
+              </div>
             </div>
           </div>
 

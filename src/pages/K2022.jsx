@@ -18,26 +18,28 @@ const K2022 = () =>
     <Helmet>
       <title>K2022 | Helmchron</title>
     </Helmet>
-    <div className="container-main">
-      <CCarousel className="slider-main" controls transition="crossfade">
-        <CCarouselItem>
-          <CImage className="d-block w-100" src={mainImg1} alt="slide 1" />
-        </CCarouselItem>
-        <CCarouselItem>
-          <CImage className="d-block w-100" src={mainImg2} alt="slide 2" />
-        </CCarouselItem>
-        <CCarouselItem>
-          <CImage className="d-block w-100" src={mainImg3} alt="slide 3" />
-        </CCarouselItem>
-      </CCarousel>
-      <div className="box-img">
-        {[mainImg1, mainImg2, mainImg3].map((img, index) =>
-          <div key={index}>
-            <img src={img} alt="Main" />
-          </div>
-        )}
+    <div>
+      <div className="slider">
+        <CCarousel className="slider-main" controls transition="crossfade">
+          <CCarouselItem>
+            <CImage className="d-block w-100" src={mainImg1} alt="slide 1" />
+          </CCarouselItem>
+          <CCarouselItem>
+            <CImage className="d-block w-100" src={mainImg2} alt="slide 2" />
+          </CCarouselItem>
+          <CCarouselItem>
+            <CImage className="d-block w-100" src={mainImg3} alt="slide 3" />
+          </CCarouselItem>
+        </CCarousel>
+        <div className="box-img">
+          {[mainImg1, mainImg2, mainImg3].map((img, index) =>
+            <div key={index}>
+              <img src={img} alt="Main" />
+            </div>
+          )}
+        </div>
       </div>
-      <div className="padding30">
+      <div className="container-main padding30">
         <div className="news-post">
           <h1 className="title">K 2022</h1>
           <center>

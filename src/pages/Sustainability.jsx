@@ -8,33 +8,35 @@ import { CCarousel, CCarouselItem, CImage } from "@coreui/react";
 
 export default function Sustainability() {
   return (
-    <div className="container-main">
+    <div>
       {/* Slider start */}
-      <CCarousel className="slider-main" controls transition="crossfade">
-        <CCarouselItem>
-          <CImage className="d-block w-100" src={mainImg} alt="slide 1" />
-        </CCarouselItem>
-        <CCarouselItem>
-          <CImage className="d-block w-100" src={mainImg1} alt="slide 2" />
-        </CCarouselItem>
-        <CCarouselItem>
-          <CImage className="d-block w-100" src={mainImg2} alt="slide 3" />
-        </CCarouselItem>
-      </CCarousel>
-      <div className="box-img">
-        <div>
-          <img src={mainImg} alt="Helmchron Career - Slide 1" />
-        </div>
-        <div>
-          <img src={mainImg1} alt="Helmchron Career - Slide 2" />
-        </div>
-        <div>
-          <img src={mainImg2} alt="Helmchron Career - Slide 3" />
+      <div className="slider">
+        <CCarousel className="slider-main" controls transition="crossfade">
+          <CCarouselItem>
+            <CImage className="d-block w-100" src={mainImg} alt="slide 1" />
+          </CCarouselItem>
+          <CCarouselItem>
+            <CImage className="d-block w-100" src={mainImg1} alt="slide 2" />
+          </CCarouselItem>
+          <CCarouselItem>
+            <CImage className="d-block w-100" src={mainImg2} alt="slide 3" />
+          </CCarouselItem>
+        </CCarousel>
+        <div className="box-img">
+          <div>
+            <img src={mainImg} alt="Helmchron Career - Slide 1" />
+          </div>
+          <div>
+            <img src={mainImg1} alt="Helmchron Career - Slide 2" />
+          </div>
+          <div>
+            <img src={mainImg2} alt="Helmchron Career - Slide 3" />
+          </div>
         </div>
       </div>
       {/* Slider end */}
 
-      <div className="padding30">
+      <div className="container-main padding30">
         <center>
           <h1 style={{ textTransform: "inherit" }} className="title">
             SUSTAINABILITY <br /> in Chemical and Pharmaceutical Industries

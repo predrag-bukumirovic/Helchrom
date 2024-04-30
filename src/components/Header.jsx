@@ -5,18 +5,18 @@ import Navbar from "../components/Navbar";
 
 export default function Header() {
   return (
-    <div className="w-100">
-      <div className="header-box">
+    <div className="header-box">
+      <div className="header">
         <div className="header-links container-main">
           <div />
-          <div style={{ display: "flex", float: "right" }}>
+          <div>
             <p className="lng">
               <GoGlobe className="icon-lng" />ENGLISH
             </p>
           </div>
         </div>
-        <Navbar />
       </div>
+      <Navbar />
     </div>
   );
 }

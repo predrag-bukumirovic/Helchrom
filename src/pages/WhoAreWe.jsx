@@ -35,7 +35,6 @@ const WhoAreWe = () => {
   const { t } = useTranslation();
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
-  // Optimizovane funkcije za otvaranje i zatvaranje modala
   const openModal = useCallback(() => {
     setModalIsOpen(true);
   }, []);
@@ -49,24 +48,26 @@ const WhoAreWe = () => {
       <Helmet>
         <title>Who are we? | Helmchron</title>
       </Helmet>
-      <div className="container-main">
-        <CCarousel className="slider-main" controls transition="crossfade">
-          {[mainImg2, mainImg1, mainImg].map((img, index) =>
-            <CCarouselItem key={index}>
-              <CImage
-                className="d-block w-100"
-                src={img}
-                alt={`slide ${index + 1}`}
-              />
-            </CCarouselItem>
-          )}
-        </CCarousel>
-        <div className="box-img">
-          {[mainImg2, mainImg1, mainImg].map((img, index) =>
-            <div key={index}>
-              <img src={img} alt={`Main ${index + 1}`} />
-            </div>
-          )}
+      <div>
+        <div className="slider">
+          <CCarousel className="slider-main" controls transition="crossfade">
+            {[mainImg2, mainImg1, mainImg].map((img, index) =>
+              <CCarouselItem key={index}>
+                <CImage
+                  className="d-block w-100"
+                  src={img}
+                  alt={`slide ${index + 1}`}
+                />
+              </CCarouselItem>
+            )}
+          </CCarousel>
+          <div className="box-img">
+            {[mainImg2, mainImg1, mainImg].map((img, index) =>
+              <div key={index}>
+                <img src={img} alt={`Main ${index + 1}`} />
+              </div>
+            )}
+          </div>
         </div>
       </div>
       <div className="container-main padding30">

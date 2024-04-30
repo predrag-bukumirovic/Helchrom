@@ -20,30 +20,33 @@ const mainImages = [mainImg, mainImg1, mainImg2];
 
 export default function OurServices() {
   return (
-    <div className="container-main">
+    <div>
       <Helmet>
         <title>Out services | Helmchron</title>
       </Helmet>
-      <CCarousel className="slider-main" controls transition="crossfade">
-        {mainImages.map((image, index) =>
-          <CCarouselItem key={index}>
-            <CImage
-              className="d-block w-100"
-              src={image}
-              alt={`slide ${index + 1}`}
-            />
-          </CCarouselItem>
-        )}
-      </CCarousel>
-      <div className="box-img">
-        {mainImages.map((image, index) =>
-          <div key={index}>
-            <img src={image} alt="Main" />
-          </div>
-        )}
+
+      <div className="slider">
+        <CCarousel className="slider-main" controls transition="crossfade">
+          {mainImages.map((image, index) =>
+            <CCarouselItem key={index}>
+              <CImage
+                className="d-block w-100"
+                src={image}
+                alt={`slide ${index + 1}`}
+              />
+            </CCarouselItem>
+          )}
+        </CCarousel>
+        <div className="box-img">
+          {mainImages.map((image, index) =>
+            <div key={index}>
+              <img src={image} alt="Main" />
+            </div>
+          )}
+        </div>
       </div>
 
-      <div className="">
+      <div className="container-main">
         <h1 className="title">OUR SERVICES & COMPETENCIES</h1>
         <center>
           <p>

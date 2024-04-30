@@ -45,23 +45,26 @@ export default function OurVision() {
       <Helmet>
         <title>Out vision and mission | Helmchron</title>
       </Helmet>
-      <CCarousel className="slider-main" controls transition="crossfade">
-        <CCarouselItem>
-          <CImage className="d-block w-100" src={mainImg} alt="slide 1" />
-        </CCarouselItem>
-        <CCarouselItem>
-          <CImage className="d-block w-100" src={mainImg1} alt="slide 2" />
-        </CCarouselItem>
-        <CCarouselItem>
-          <CImage className="d-block w-100" src={mainImg2} alt="slide 3" />
-        </CCarouselItem>
-      </CCarousel>
-      <div className="box-img container-main">
-        {[mainImg, mainImg1, mainImg2].map((image, index) =>
-          <div key={index}>
-            <img src={image} alt="Main" />
-          </div>
-        )}
+
+      <div className="slider">
+        <CCarousel className="slider-main" controls transition="crossfade">
+          <CCarouselItem>
+            <CImage className="d-block w-100" src={mainImg} alt="slide 1" />
+          </CCarouselItem>
+          <CCarouselItem>
+            <CImage className="d-block w-100" src={mainImg1} alt="slide 2" />
+          </CCarouselItem>
+          <CCarouselItem>
+            <CImage className="d-block w-100" src={mainImg2} alt="slide 3" />
+          </CCarouselItem>
+        </CCarousel>
+        <div className="box-img">
+          {[mainImg, mainImg1, mainImg2].map((image, index) =>
+            <div key={index}>
+              <img src={image} alt="Main" />
+            </div>
+          )}
+        </div>
       </div>
       <div className="container-main">
         <h1 className="title">
