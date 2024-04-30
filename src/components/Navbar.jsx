@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import logo from "../assets/images/logo.webp";
+import ChemistryConnects from "../assets/images/ChemistryConnects.png";
 import "../assets/scss/navbar.css";
 import { BiChevronDown } from "react-icons/bi";
 import { TfiClose, TfiEmail } from "react-icons/tfi";
@@ -38,6 +39,7 @@ export default function Navbar() {
         <div className="logo">
           <a href="/">
             <img src={logo} alt="Helmchron Logo" />
+            <img className="logo-connects" src={ChemistryConnects} alt="" />
           </a>
         </div>
         <div className="menu">
@@ -187,13 +189,13 @@ export default function Navbar() {
               </li>
             </ol>
           </li>
-          <li>
+          {/* <li>
             <div className="email-mobile">
               <a href="/contact">
                 <TfiEmail className="email-icon" />
               </a>
             </div>
-          </li>
+          </li> */}
 
           <div className="burger-icon" onClick={() => setOpenMenu(!openMenu)}>
             <div className="line1" />

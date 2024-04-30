@@ -44,7 +44,7 @@ export default function OurServices() {
       </div>
 
       <div className="">
-        <h1 className="title">OUR SERVICES</h1>
+        <h1 className="title">OUR SERVICES & COMPETENCIES</h1>
         <center>
           <p>
             At Helmchron, we pride ourselves on delivering exceptional process

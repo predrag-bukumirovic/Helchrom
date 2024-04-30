@@ -12,7 +12,8 @@ import mainImg1 from "../assets/images/Vision/vision2.jpg";
 import mainImg2 from "../assets/images/Vision/vision3.jpg";
 import imgTesti from "../assets/images/Vision/imgtesti.jpg";
 import Kawasaki from "../assets/images/Vision/Kawasaki.png";
-import bigLogo from "../assets/images/Home/bigLogo.webp";
+import MVDesno from "../assets/images/Vision/m-v-desno.png";
+import MVLevo from "../assets/images/Vision/m-v-levo.png";
 import partnerships from "../assets/images/Vision/partnerships.png";
 import portfolio from "../assets/images/Vision/portfolio.png";
 import team from "../assets/images/Vision/team.png";
@@ -76,7 +77,7 @@ export default function OurVision() {
         <div className={showModal ? "modal-img" : "show"} onClick={closeModal}>
           <img src={showModal} alt="Modal Images" />
         </div>
-        <div className="padding30">
+        <div style={{ marginTop: 100 }} className="padding30">
           <h2 className="title">OUR STRATEGIC FOCUS AREAS</h2>
           <div className="strategic">
             {strategicFocusAreas.map((item, index) =>
@@ -93,27 +94,50 @@ export default function OurVision() {
           </center>
         </div>
       </div>
-      <div className="facts-box padding30">
-        <div className="facts container-main">
-          <div>
-            <center>
-              <h2>OUR VISION</h2>
-              <p>
-                We deliver high-quality process and chemical engineering
-                solutions that are meant to enhance the quality of life and keep
-                our environment healthy for the coming generations.
-              </p>
-              <h2>OUR MISSION</h2>
-              <p>
-                We are a reliable partner of choice for leading global chemicals
-                and pharmaceutical manufacturers in achieving more effective,
-                innovative, and sustainable ways of producing safe, qualitative,
-                and novel products for everyone.
-              </p>
-            </center>
-          </div>
-          <div>
-            <img src={bigLogo} alt="Big Logo" />
+      {/* Our mision */}
+      <div>
+        <div className="mission-vision">
+          <h2 style={{ marginTop: 100 }} className="title">
+            OUR MISSION AND OUR VISION
+          </h2>
+
+          <div className="row-m-v">
+            <div className="container-main padding30">
+              <div className="col">
+                <div className="col-img">
+                  <img src={MVLevo} alt="Slika" />
+                </div>
+                <div className="col-text">
+                  <h3>OUR MISSION</h3>
+                  <p>
+                    We are a reliable partner of choice for leading global
+                    manufacturers in achieving more effective, innovative, and
+                    sustainable ways of producing safe, qualitative, and novel
+                    products for everyone. <br /> Learn about our references.
+                  </p>
+                  <a className="book-btn" href="/">
+                    Read more
+                  </a>
+                </div>
+              </div>
+              <div className="col">
+                <div className="col-img">
+                  <img src={MVDesno} alt="Slika" />
+                </div>
+                <div className="col-text">
+                  <h3>OUR VISION</h3>
+                  <p>
+                    We deliver high-quality process and chemical engineering
+                    solutions that are meant to enhance the quality of life and
+                    keep our environment healthy for the coming generations.{" "}
+                    <br /> Learn about our services and competencies.
+                  </p>
+                  <a className="book-btn" href="/">
+                    Read more
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

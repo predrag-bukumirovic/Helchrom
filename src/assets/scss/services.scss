@@ -1,7 +1,6 @@
 .core-wrapper {
   margin: 100px 0;
 
-  
   .core-row {
     display: flex;
     justify-content: space-around;
@@ -9,13 +8,10 @@
     margin: 100px 0;
     flex-wrap: wrap;
 
-
-
-
     .core-text {
       width: 400px;
 
-      @media (max-width:450px) {
+      @media (max-width: 450px) {
         width: 100%;
       }
     }

@@ -34,9 +34,9 @@ const data = {
       //Our vision and mission page
       title_vm: "Our vision and mission",
       vm_text1:
-        "In an era when the health of our planet and humankind has never been more fragile, comprehensive and diverse partnerships will be the ones to lead the change toward a better future for the coming generations.",
-      vm_text2: `With our mission as the priority, we put our clients at the center of everything we do. Our team proactively partners with international leaders that have the same values and same passion for innovative products and services that will improve the world we live in now and in the future.`,
-      vm_text3: `We believe that bringing value to our clients will bring value to our team, end users, and the planet.`,
+        "In an era when the health of our planet and humankind has never been more fragile, diverse and long-lasting partnerships will lead the change toward a better future for the coming generations.",
+      vm_text2: `With our vision and mission as the priority, we put our clients at the center of everything we do. Our team proactively partners with international and local leaders who share our values and passion for innovative products that will improve the quality of life today and tomorrow.`,
+      vm_text3: `We believe that bringing value to our clients brings value to our team, end users, and the planet. Together, we build a future that's brighter, fairer, and better for everyone.`,
       //Privacy policy page
       plicy: {
         title: "Privacy Policy",
@@ -112,7 +112,8 @@ const data = {
         },
         blog2: {
           title: "IMPERATIV OF SUSTAINABILITY",
-          text: "Embracing sustainability from a process and chemical engineering perspective involves adopting green principles, optimizing processes, managing waste efficiently, and utilizing renewable energy sources."
+          text:
+            "Embracing sustainability from a process and chemical engineering perspective involves adopting green principles, optimizing processes, managing waste efficiently, and utilizing renewable energy sources."
         }
       },
       chemicals: {

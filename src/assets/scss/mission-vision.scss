@@ -51,6 +51,8 @@
 }
 
 .kawasaki {
+  margin-top: 100px;
+
   p {
     text-align: center;
     font-weight: bold;
@@ -85,32 +87,54 @@
   }
 }
 
+.row-m-v {
+  // background: #fff2ee;
 
-.facts-box {
-  background: var(--brend-color);
-  margin-top: 50px;
-}
-
-.facts {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  color: #fff;
-  padding: 20px;
-
-  div {
-    h2, p {
-      color: #fff !important;
-      text-align: start !important;
-    }
+  :nth-child(2) {
+    flex-direction: row-reverse;
   }
 
-  div img {
-    width: 400px !important;
-    opacity: 0.4;
+  .col {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 50px;
 
-    @media (max-width: 768px) {
-      display: none;;
-    } 
+    @media (max-width: 1000px) {
+      flex-direction: column;
+      gap: 10px;
+
+      .col-text {
+        width: 100%;
+      }
+    }
+
+    .col-img {
+      width: 100%;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .col-text {
+      width: 50%;
+      padding: 30px 0;
+      text-align: justify;
+
+      @media (max-width: 1000px) {
+        width: 100%;
+      }
+
+      a {
+        padding: 10px 30px;
+      }
+
+      h3 {
+        color: var(--brend-color) !important;
+        font-weight: bold;
+      }
+    }
   }
 }
