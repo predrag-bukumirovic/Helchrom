@@ -319,7 +319,7 @@ export default function Home() {
         <center>
           <iframe
             height="500"
-            width="1000"
+            width="800"
             src="https://www.youtube.com/embed/KjxWR92Yb4o"
             title="Helmchron - Chemistry Connects Us"
             frameBorder="0"
