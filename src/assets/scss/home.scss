@@ -34,7 +34,7 @@
 .book-btn {
   background: var(--brend-color);
   text-decoration: none;
-  color: #fff;
+  color: #fff !important;
   font-weight: 600;
   padding: 15px 50px;
   border-radius: 100px;
@@ -47,7 +47,7 @@
 .our-home {
   margin: 100px auto;
 
-  > div {
+  > .services-icon {
     display: grid;
     grid-template-columns: auto auto auto auto auto auto;
     width: 100%;
@@ -64,8 +64,29 @@
     }
 
     div {
+      text-align: center;
+      background: var(--light-blue-color);
+      border-radius: 20px;
+      padding: 10px;
+
+      &:hover {
+        img {
+          transform: scale(1.2);
+        }
+      }
+
       img {
-        width: 100%;
+        width: 110px;
+        transition: .5s;
+      }
+
+      h3 {
+        font-weight: bold;
+        font-size: 18px;
+        margin-top: 20px;
+      }
+      p {
+        font-size: 14px;
       }
     }
   }

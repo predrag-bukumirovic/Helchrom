@@ -4,12 +4,14 @@ import { useTranslation } from "react-i18next";
 import { Helmet } from "react-helmet";
 import Modal from "react-modal";
 
-import mainImg from "../assets/images/Who/who3.webp";
-import mainImg1 from "../assets/images/Who/who1.webp";
-import mainImg2 from "../assets/images/Who/who2.webp";
-import basicImg from "../assets/images/Who/basicImg.webp";
+import mainImg from "../assets/images/Who/who3.png";
+import mainImg2 from "../assets/images/Who/who1.png";
+import mainImg1 from "../assets/images/Who/who2.png";
+import basicImg from "../assets/images/Who/basicImg.png";
 import OurImg from "../assets/images/Who/our-history.png";
 import OUR_CREDO from "../assets/images/Who/OUR_CREDO.png";
+import quotation from "../assets/images/quotation.png";
+import OurcredoImg from "../assets/images/Who/OurcredoImg.png";
 import "../assets/scss/slider.scss";
 import "../assets/scss/who.scss";
 import WhoIcons from "../components/WhoIcons";
@@ -82,6 +84,7 @@ const WhoAreWe = () => {
 
         <WhoIcons />
       </div>
+
       <div className="history">
         <div>
           <div className="container-main padding30">
@@ -111,52 +114,79 @@ const WhoAreWe = () => {
                   impact globally, ultimately benefiting everyone everywhere.
                 </p>
               </div>
-              <div className="img">
-                <img src={OurImg} alt="Our history" />
-              </div>
+
+              <img src={OurImg} alt="Our history" />
             </div>
           </div>
         </div>
       </div>
+
       <div className="credo container-main padding30">
         <h2 className="title">Our credo</h2>
         <p>
           Our expertise and our impact are led by our vision and purpose to
-          upgrade the quality of life, maintain strong, long-lasting
+          upgrade the quality of life, maintain strong, long-lasting <br />
           partnerships, and empower our team with living by our values. Our
-          accountability lies in providing process and chemical engineering
-          solutions that enable manufacturing of efficient and safe products
-          globally, guided by the belief in equal access to pharmaceuticals,
-          chemicals, fuels, energy, and food. We prioritize our partners` needs
-          and outcomes, our core values, environmental sustainability and
-          stability of our business operations, envisioning a high quality of
-          life for everyone.
+          accountability lies in providing process and chemical <br />{" "}
+          engineering solutions that enable manufacturing of efficient and safe
+          products globally, guided by the belief in equal <br /> access to
+          pharmaceuticals, chemicals, fuels, energy, and food. We prioritize our
+          partners` needs and outcomes, our core <br /> values, environmental
+          sustainability and stability of our business operations, envisioning a
+          high quality of life for everyone.
         </p>
-        <span onClick={openModal}>Read more</span>
-        <Modal
-          isOpen={modalIsOpen}
-          onRequestClose={closeModal}
-          style={customStyles}
-          contentLabel="Our Credo Modal"
-        >
-          <button
-            style={{
-              border: "none",
-              padding: 10,
-              background: "var(--brend-color)",
-              marginBottom: 10,
-              color: "#fff"
-            }}
-            onClick={closeModal}
-          >
-            Close Modal
-          </button>
-          <img style={{ width: "100%" }} src={OUR_CREDO} alt="Our Credo" />
-        </Modal>
       </div>
+
+      <div style={{ background: "#fff2ee" }}>
+        <div className="container-main credo-testimonial">
+          <div>
+            <img src={OurcredoImg} alt="OurcredoImg" />
+          </div>
+          <div>
+            <p>
+              <img src={quotation} alt="" />
+              We believe that expertise, innovation, and values create long-term
+              impact. Our purpose is to deliver outcomes that positively change
+              the world around us, maintain strong partnerships, and empower our
+              team to thrive in an environment built on our core values. <br
+              />{" "}
+              Our main responsibility lies within our vision - to support the
+              manufacturing of products that will be efficient and safe and
+              serve the global society and environment.
+            </p>
+            <span
+              style={{ float: "right", cursor: "pointer" }}
+              className="book-btn"
+              onClick={openModal}
+            >
+              Read more
+            </span>
+            <Modal
+              isOpen={modalIsOpen}
+              onRequestClose={closeModal}
+              style={customStyles}
+              contentLabel="Our Credo Modal"
+            >
+              <button
+                style={{
+                  border: "none",
+                  padding: 10,
+                  background: "var(--brend-color)",
+                  marginBottom: 10,
+                  color: "#fff"
+                }}
+                onClick={closeModal}
+              >
+                Close Modal
+              </button>
+              <img style={{ width: "100%" }} src={OUR_CREDO} alt="Our Credo" />
+            </Modal>
+          </div>
+        </div>
+      </div>
+
       <div className="container-main">
         <div className="basic padding30">
-          <img src={basicImg} alt="Basic" />
           <div className="padding30">
             <h2>
               <b>BASIC COMPANY INFORMATION</b>
@@ -191,6 +221,7 @@ const WhoAreWe = () => {
               </li>
             </ul>
           </div>
+          <img src={basicImg} alt="Basic" />
         </div>
       </div>
     </div>

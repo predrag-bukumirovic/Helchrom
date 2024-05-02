@@ -82,7 +82,6 @@
 
 .services {
   padding: 100px 42px;
-  position: relative;
 
   @media (max-width: 990px) {
     h3 {
@@ -171,15 +170,11 @@
 
 .img-text {
   position: absolute !important;
-  top: 20px;
-  left: 50px;
+  top: -70px;
+  left: -30px;
   display: flex;
   align-items: center;
   gap: 30px;
-
-  @media (max-width: 1600px) {
-    left: 8px;
-  }
 
   span {
     font-weight: 900;
@@ -196,6 +191,6 @@
   }
 
   img {
-    width: 50px;
+    width: 50px !important;
   }
 }

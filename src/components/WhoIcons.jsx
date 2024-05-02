@@ -31,6 +31,12 @@ export default function WhoIcons() {
           <img src={oilandgas} alt="" />
         </div>
       </div>
+
+      <center style={{ marginTop: 50 }}>
+        <a className="book-btn" href="/contact">
+          Book a meeting
+        </a>
+      </center>
     </div>
   );
 }

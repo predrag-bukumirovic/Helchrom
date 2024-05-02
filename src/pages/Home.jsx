@@ -17,11 +17,11 @@ import Facts180 from "../assets/images/Home/180min.png";
 import Factshappy from "../assets/images/Home/Happy.png";
 import Facts5 from "../assets/images/Home/Inno.png";
 import HCOne from "../assets/images/HCOne.png";
-import icon1 from "../assets/images/Home/1.webp";
-import icon2 from "../assets/images/Home/2.webp";
-import icon3 from "../assets/images/Home/3.webp";
-import icon4 from "../assets/images/Home/4.webp";
-import icon5 from "../assets/images/Home/5.webp";
+import icon1 from "../assets/images/Home/1.png";
+import icon2 from "../assets/images/Home/2.png";
+import icon3 from "../assets/images/Home/3.png";
+import icon4 from "../assets/images/Home/4.png";
+import icon5 from "../assets/images/Home/5.png";
 import quotation from "../assets/images/quotation.png";
 import "../assets/scss/home.scss";
 import "../assets/scss/slider.scss";
@@ -178,10 +178,47 @@ export default function Home() {
           design and operations management.
         </p>
 
-        <div>
-          {[icon1, icon2, icon3, icon4, icon5].map((icon, index) =>
+        <div className="services-icon">
+          {[
+            {
+              icon: icon1,
+              title: "Consulting & Master Planning",
+              text:
+                "Our master plan is designed to be flexible to address potential changes in technology, market demands, or trends."
+            },
+            {
+              icon: icon2,
+              title: "Engineering & Design",
+              text:
+                "We deliver sustainable solutions for facilities, equipment, and process design including process simulation and upgrade"
+            },
+            {
+              icon: icon3,
+              title: "Project Management",
+              text:
+                "We ensure efficient and seamless project execution, including timely delivery, resources management, and targeted outcomes."
+            },
+            {
+              icon: icon4,
+              title: "Equipment & Services",
+              text:
+                "We design, develop, select, install and integrate facility equipment to ensure performance optimization and efficiency."
+            },
+            {
+              icon: icon5,
+              title: "Commissioning",
+              text:
+                "We provide verification that all components and systems of the facility are installed, tested, and operate according to the predefined specifications and regulatory requirements."
+            }
+          ].map((item, index) =>
             <div key={index}>
-              <img src={icon} alt="" />
+              <img src={item.icon} alt="" />
+              <h3>
+                {item.title}
+              </h3>
+              <p>
+                {item.text}
+              </p>
             </div>
           )}
         </div>
@@ -206,17 +243,13 @@ export default function Home() {
               <p>
                 In a constant pursuit to upgrade our services and expertise, we
                 noticed a significant gap in focus on one project`s outcomes
-                that led to prolonged delivery time and budget overrun.
-              </p>
-              <p>
+                that led to prolonged delivery time and budget overrun. <br />{" "}
                 To overcome this gap and meet the unique requirements of each of
                 our clients, we have implemented an innovative service concept -
-                Helmchron ONE.
+                Helmchron ONE. <br /> Helmchron ONE enables the complete focus
+                of ONE team on ONE client and ONE project only.
               </p>
-              <p>
-                Helmchron ONE enables the complete focus of ONE team on ONE
-                client and ONE project only.
-              </p>
+
               <p>
                 <b>One Team:</b> Each of our projects is assigned to one of our
                 teams. The team is fully dedicated and accountable for the
@@ -235,7 +268,13 @@ export default function Home() {
                 ensure unmatched quality, efficiency, and effectiveness.
               </p>
 
-              <p>Ready to focus on success and experience Helmchron ONE?</p>
+              <p style={{ marginBottom: 50 }}>
+                Ready to focus on success and experience Helmchron ONE?
+              </p>
+
+              <a className="book-btn" href="/contact">
+                Book a meeting
+              </a>
             </div>
             <div className="img">
               <img src={HCOne} alt="HC One" />

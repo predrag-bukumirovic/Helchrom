@@ -91,10 +91,10 @@ export default function OurCore() {
         className="services"
         style={{ background: "#fff2ee", marginTop: 100 }}
       >
-        <div className="img-text">
-          <img src={logo} alt="Slika" /> <span>HELMCHRON</span>
-        </div>
         <div style={{ gap: 100 }} className="services-row container-main">
+          <div className="img-text">
+            <img src={logo} alt="Slika" /> <span>HELMCHRON</span>
+          </div>
           <div className="vertical-text">
             <h4>SERVICES</h4>
           </div>
@@ -136,13 +136,14 @@ export default function OurCore() {
       </div>
 
       <div ref={sectionRefs[1]} className="services">
-        <div className="img-text">
-          <img src={logo} alt="Slika" /> <span className="blue">HELMCHRON</span>
-        </div>
         <h3 style={{ width: "1440px" }} className="container-main">
           engineering & design
         </h3>
         <div className="services-row row-duble container-main">
+          <div className="img-text" style={{ top: -100 }}>
+            <img src={logo} alt="Slika" />{" "}
+            <span className="blue">HELMCHRON</span>
+          </div>
           <div className="vertical-text">
             <h4 style={{ WebkitTextStroke: "1px var(--dark-blue-color)" }}>
               SERVICES
@@ -220,11 +221,11 @@ export default function OurCore() {
         className="services"
         style={{ background: "#f3fadc" }}
       >
-        <div className="img-text">
-          <img src={logo} alt="Slika" />{" "}
-          <span className="green">HELMCHRON</span>
-        </div>
         <div style={{ gap: 500 }} className="services-row container-main">
+          <div className="img-text">
+            <img src={logo} alt="Slika" />{" "}
+            <span className="green">HELMCHRON</span>
+          </div>
           <div className="vertical-text">
             <h4 style={{ WebkitTextStroke: "1px #4e8351" }}>SERVICES</h4>
           </div>
@@ -252,10 +253,11 @@ export default function OurCore() {
       </div>
 
       <div ref={sectionRefs[3]} className="services">
-        <div className="img-text">
-          <img src={logo} alt="Slika" /> <span className="blue">HELMCHRON</span>
-        </div>
         <div style={{ gap: 350 }} className="services-row container-main">
+          <div className="img-text">
+            <img src={logo} alt="Slika" />{" "}
+            <span className="blue">HELMCHRON</span>
+          </div>
           <div className="vertical-text">
             <h4 style={{ WebkitTextStroke: "1px var(--dark-blue-color)" }}>
               SERVICES
@@ -295,10 +297,10 @@ export default function OurCore() {
         className="services"
         style={{ background: "#fff2ee" }}
       >
-        <div className="img-text">
-          <img src={logo} alt="Slika" /> <span>HELMCHRON</span>
-        </div>
         <div style={{ gap: 350 }} className="services-row container-main">
+          <div className="img-text">
+            <img src={logo} alt="Slika" /> <span>HELMCHRON</span>
+          </div>
           <div className="vertical-text">
             <h4>SERVICES</h4>
           </div>
