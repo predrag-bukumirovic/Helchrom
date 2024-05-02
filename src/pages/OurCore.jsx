@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import "../assets/scss/slider.scss";
 import "../assets/scss/services.scss";
 import "../assets/scss/home.scss";
@@ -19,6 +19,18 @@ import { Helmet } from "react-helmet";
 const mainImages = [mainImg, mainImg1, mainImg2];
 
 export default function OurCore() {
+  const sectionRefs = [
+    useRef(null),
+    useRef(null),
+    useRef(null),
+    useRef(null),
+    useRef(null)
+  ];
+
+  const handleClick = index => {
+    sectionRefs[index].current.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <div>
       <Helmet>
@@ -66,27 +78,28 @@ export default function OurCore() {
         </p>
 
         <div className="icon-core">
-          <div>Pre-planning & Consulting </div>
-          <div>Engineering & Design</div>
-          <div>Project Management</div>
-          <div>Equipment & Services</div>
-          <div>Commissioning</div>
+          <div onClick={() => handleClick(0)}>Pre-planning & Consulting </div>
+          <div onClick={() => handleClick(1)}>Engineering & Design</div>
+          <div onClick={() => handleClick(2)}>Project Management</div>
+          <div onClick={() => handleClick(3)}>Equipment & Services</div>
+          <div onClick={() => handleClick(4)}>Commissioning</div>
         </div>
       </div>
 
       <div
+        ref={sectionRefs[0]}
         className="services"
         style={{ background: "#fff2ee", marginTop: 100 }}
       >
+        <div className="img-text">
+          <img src={logo} alt="Slika" /> <span>HELMCHRON</span>
+        </div>
         <div style={{ gap: 100 }} className="services-row container-main">
           <div className="vertical-text">
             <h4>SERVICES</h4>
           </div>
 
-          <div className="img-text">
-            <img src={logo} alt="Slika" /> <span>HELMCHRON</span>
-          </div>
-          <div>
+          <div className="img-row">
             <img src={Consulting} alt="Consulting" />
           </div>
           <div>
@@ -122,8 +135,11 @@ export default function OurCore() {
         </div>
       </div>
 
-      <div className="services">
-        <h3 style={{ width: "1240px" }} className="container-main">
+      <div ref={sectionRefs[1]} className="services">
+        <div className="img-text">
+          <img src={logo} alt="Slika" /> <span className="blue">HELMCHRON</span>
+        </div>
+        <h3 style={{ width: "1440px" }} className="container-main">
           engineering & design
         </h3>
         <div className="services-row row-duble container-main">
@@ -131,11 +147,6 @@ export default function OurCore() {
             <h4 style={{ WebkitTextStroke: "1px var(--dark-blue-color)" }}>
               SERVICES
             </h4>
-
-            <div style={{ top: -270, left: 50 }} className="img-text">
-              <img src={logo} alt="Slika" />{" "}
-              <span className="blue">HELMCHRON</span>
-            </div>
           </div>
           <div className="text">
             <div>
@@ -198,23 +209,27 @@ export default function OurCore() {
               </a>
             </div>
           </div>
-          <div className="img-design">
+          <div className="img-design img-row">
             <img src={Design} alt="" />
           </div>
         </div>
       </div>
 
-      <div className="services" style={{ background: "#f3fadc" }}>
+      <div
+        ref={sectionRefs[2]}
+        className="services"
+        style={{ background: "#f3fadc" }}
+      >
+        <div className="img-text">
+          <img src={logo} alt="Slika" />{" "}
+          <span className="green">HELMCHRON</span>
+        </div>
         <div style={{ gap: 500 }} className="services-row container-main">
           <div className="vertical-text">
             <h4 style={{ WebkitTextStroke: "1px #4e8351" }}>SERVICES</h4>
           </div>
 
-          <div className="img-text">
-            <img src={logo} alt="Slika" />{" "}
-            <span className="green">HELMCHRON</span>
-          </div>
-          <div>
+          <div className="img-row">
             <img src={management} alt="management" />
           </div>
           <div>
@@ -236,16 +251,15 @@ export default function OurCore() {
         </div>
       </div>
 
-      <div className="services">
+      <div ref={sectionRefs[3]} className="services">
+        <div className="img-text">
+          <img src={logo} alt="Slika" /> <span className="blue">HELMCHRON</span>
+        </div>
         <div style={{ gap: 350 }} className="services-row container-main">
           <div className="vertical-text">
             <h4 style={{ WebkitTextStroke: "1px var(--dark-blue-color)" }}>
               SERVICES
             </h4>
-            <div style={{ left: 50, top: -150 }} className="img-text">
-              <img src={logo} alt="Slika" />{" "}
-              <span className="blue">HELMCHRON</span>
-            </div>
           </div>
           <div>
             <h3>equipment & services</h3>
@@ -270,22 +284,26 @@ export default function OurCore() {
               Our references
             </a>
           </div>
-          <div>
+          <div className="img-row">
             <img src={Equipment} alt="Equipment" />
           </div>
         </div>
       </div>
 
-      <div className="services" style={{ background: "#fff2ee" }}>
+      <div
+        ref={sectionRefs[4]}
+        className="services"
+        style={{ background: "#fff2ee" }}
+      >
+        <div className="img-text">
+          <img src={logo} alt="Slika" /> <span>HELMCHRON</span>
+        </div>
         <div style={{ gap: 350 }} className="services-row container-main">
           <div className="vertical-text">
             <h4>SERVICES</h4>
           </div>
 
-          <div className="img-text">
-            <img src={logo} alt="Slika" /> <span>HELMCHRON</span>
-          </div>
-          <div>
+          <div className="img-row">
             <img src={Commissioning} alt="" />
           </div>
           <div>

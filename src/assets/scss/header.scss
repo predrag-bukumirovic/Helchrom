@@ -4,7 +4,12 @@
   z-index: 999999;
   top: 0;
   right: 0;
+  transition: .5s;
   left: 0;
+
+  &.hidden {
+    top: -100%;
+  }
 
   .header {
     width: 100%;

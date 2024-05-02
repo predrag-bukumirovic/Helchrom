@@ -168,9 +168,10 @@
         align-items: center;
         width: 480px;
 
-        @media (max-width: 1150px) {
+        @media (max-width: 1500px) {
           width: 100%;
         }
+
         img {
           width: 220px;
         }

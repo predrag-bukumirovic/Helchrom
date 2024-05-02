@@ -42,7 +42,7 @@ export default function News() {
       </div>
 
       <div className="container-main">
-        <h1 className="title">FAIRS AND CONFERENCES</h1>
+        <h1 className="title">NEWS AND PROFESSIONAL EVENTS</h1>
         <center>
           <p>
             We love participating in and attending professional fairs and

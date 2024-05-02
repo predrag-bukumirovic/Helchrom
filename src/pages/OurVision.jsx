@@ -135,7 +135,10 @@ export default function OurVision() {
                     keep our environment healthy for the coming generations.{" "}
                     <br /> Learn about our services and competencies.
                   </p>
-                  <a className="book-btn" href="/">
+                  <a
+                    className="book-btn"
+                    href="/competences&services/our-core-competencies"
+                  >
                     Read more
                   </a>
                 </div>
