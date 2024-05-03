@@ -35,7 +35,7 @@
   background: var(--brend-color);
   text-decoration: none;
   color: #fff !important;
-  font-weight: 600;
+  font-weight: 500;
   padding: 15px 50px;
   border-radius: 100px;
 }
@@ -45,7 +45,7 @@
 }
 
 .our-home {
-  margin: 100px auto;
+  margin: 100px auto 50px auto;
 
   > .services-icon {
     display: grid;
@@ -67,7 +67,8 @@
       text-align: center;
       background: var(--light-blue-color);
       border-radius: 20px;
-      padding: 10px;
+      box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+      padding: 5px 20px;
 
       &:hover {
         img {
@@ -93,18 +94,48 @@
 
   .icon-values {
     text-align: center;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    gap: 40px;
+    margin: 50px 0;
+
     > div {
-      border-radius: 10px;
+      border-radius: 20px;
+      padding: 5px 20px;
       background: var(--light-blue-color);
+      box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+
+      &:hover {
+        img {
+          transform: scale(1.2);
+        }
+      }
     }
     img {
-      width: 200px;
+      width: 150px;
+      transition: .5s;
+    }
+
+    @media (max-width: 1160px) {
+      grid-template-columns: auto auto auto;
+    }
+    @media (max-width: 730px) {
+      grid-template-columns: auto auto;
+    }
+    @media (max-width: 500px) {
+      grid-template-columns: auto;
+
+      > div {
+        width: 260px;
+        margin: 0 auto;
+      }
     }
   }
 }
 
 .unique {
   margin-bottom: 50px;
+  margin-top: 100px;
   h2 {
     font-weight: 700;
     text-align: center;

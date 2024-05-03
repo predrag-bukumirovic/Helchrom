@@ -137,7 +137,7 @@ const WhoAreWe = () => {
         </p>
       </div>
 
-      <div style={{ background: "#fff2ee" }}>
+      <div style={{ background: "var(--lite-orange-color)" }}>
         <div className="container-main credo-testimonial">
           <div>
             <img src={OurcredoImg} alt="OurcredoImg" />

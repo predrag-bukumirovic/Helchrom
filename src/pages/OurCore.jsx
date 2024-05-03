@@ -89,7 +89,7 @@ export default function OurCore() {
       <div
         ref={sectionRefs[0]}
         className="services"
-        style={{ background: "#fff2ee", marginTop: 100 }}
+        style={{ background: "var(--lite-orange-color)", marginTop: 100 }}
       >
         <div style={{ gap: 100 }} className="services-row container-main">
           <div className="img-text">
@@ -219,7 +219,7 @@ export default function OurCore() {
       <div
         ref={sectionRefs[2]}
         className="services"
-        style={{ background: "#f3fadc" }}
+        style={{ background: "var(--lite-green-color)" }}
       >
         <div style={{ gap: 500 }} className="services-row container-main">
           <div className="img-text">
@@ -227,7 +227,9 @@ export default function OurCore() {
             <span className="green">HELMCHRON</span>
           </div>
           <div className="vertical-text">
-            <h4 style={{ WebkitTextStroke: "1px #4e8351" }}>SERVICES</h4>
+            <h4 style={{ WebkitTextStroke: "1px var(--green-color)" }}>
+              SERVICES
+            </h4>
           </div>
 
           <div className="img-row">
@@ -245,7 +247,11 @@ export default function OurCore() {
               <li>Documentation qualification</li>
             </ul>
 
-            <a className="book-btn" style={{ background: "#4e8351" }} href="/">
+            <a
+              className="book-btn"
+              style={{ background: "var(--green-color)" }}
+              href="/"
+            >
               Our references
             </a>
           </div>
@@ -295,7 +301,7 @@ export default function OurCore() {
       <div
         ref={sectionRefs[4]}
         className="services"
-        style={{ background: "#fff2ee" }}
+        style={{ background: "var(--lite-orange-color)" }}
       >
         <div style={{ gap: 350 }} className="services-row container-main">
           <div className="img-text">
@@ -354,8 +360,8 @@ export default function OurCore() {
 
         <center>
           <iframe
-            height="500"
-            width="800"
+            className="video-yt"
+            loading="lazy"
             src="https://www.youtube.com/embed/tWflefiRmYw"
             title="HelmchronONE - New Service Concept"
             frameBorder="0"

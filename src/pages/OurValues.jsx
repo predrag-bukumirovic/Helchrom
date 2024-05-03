@@ -72,9 +72,8 @@ export default function OurValues() {
           </p>
         </center>
 
-        <h2 className="title">OUR WAY OF WORK</h2>
-
-        <div>
+        <div style={{ marginTop: 100 }}>
+          <h2 className="title">OUR WAY OF WORK</h2>
           <div className="row-img-text row1">
             <div className="row-img">
               <img src={Integrity} alt="" />

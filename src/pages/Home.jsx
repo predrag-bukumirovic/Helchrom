@@ -357,8 +357,8 @@ export default function Home() {
         <p>We have at least one thing in common...</p>
         <center>
           <iframe
-            height="500"
-            width="800"
+            className="video-yt"
+            loading="lazy"
             src="https://www.youtube.com/embed/KjxWR92Yb4o"
             title="Helmchron - Chemistry Connects Us"
             frameBorder="0"

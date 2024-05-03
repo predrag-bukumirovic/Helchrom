@@ -17,19 +17,9 @@ const data = {
         "Our company was established in 2010. with the goal to deliver valuable solutions that will improve the quality of life for the coming generations. Our mission was always focused on our partners and innovative products and services that bring value to end users and the environment.",
       //Our team page
       title_team: "Our team",
-      team1_text1:
-        "Milos Ivosevic is the founder of the company and creator of the vision. Enthusiastic and entrepreneurial, Milos was always focused on extensive international projects that contribute to improving the quality of life for the coming generations.",
-      team1_text2: `The high point of his university period was the experience he gained at the well-known Paul Scherrer Institut (PSI) in Switzerland. While studying, he was, also, hands-on and involved in multiple engineering projects in Serbia and Croatia.`,
-      team1_text3: `During the last 10 years, Milos worked as part of various multinational teams and did projects for the leading chemical and pharmaceutical innovators (BASF, Novartis, Roche, etc.).`,
-      team1_text4:
-        "He did his Master's and PhD thesis at the University of Belgrade, Faculty of Mechanical Engineering.",
-      team1_text5:
-        "In his leisure time, he enjoys traveling and discovering new cultures, sports, and relaxing by the river.",
+      
       team_contact1: "Connect with Miloš:<br/>",
-      team2_text1:
-        "Anja Andjelković joined the team in 2020. bringing additional focus to our operations and expansion. Her comprehensive skill set, knowledge, and motivation have brought a new perspective and strengthened the outcomes we deliver to our partners. As a projects lead, she coaches our team of projects associates and is in charge of seamless execution.",
-      team2_text2: `Anja used to play volleyball professionally and her discipline is one of the most valuable assets of our team.`,
-      team2_text3: `She holds a Masters degree in Mechanical Engineering from the University of Belgrade. In her free time, Anja likes to do sports and travel with her family..`,
+    
       team_contact2: "Connect with Anja:",
       //Our vision and mission page
       title_vm: "Our vision and mission",
