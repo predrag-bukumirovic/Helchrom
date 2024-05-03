@@ -77,8 +77,8 @@ export default function OurTeam() {
         <div className="text-members padding30">
           <div className="member">
             <div className="bg-member-img" />
-            <div>
-              <div>
+            <div className="team-row">
+              <div className="img-team">
                 <img src={milos} alt="" />
               </div>
               <div>
@@ -115,8 +115,8 @@ export default function OurTeam() {
           </div>
           <div className="member">
             <div className="bg-member-img" />
-            <div>
-              <div>
+            <div className="team-row">
+              <div className="img-team">
                 <img src={anja} alt="" />
               </div>
               <div>
