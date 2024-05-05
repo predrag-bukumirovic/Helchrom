@@ -15,8 +15,11 @@ import Agility from "../assets/images/Values/Agility.png";
 import Diversity from "../assets/images/Values/Diversity.png";
 import Courage from "../assets/images/Values/Courage.png";
 import Oursocial from "../assets/images/Values/Oursocial.png";
+import { useTranslation } from "react-i18next";
 
 export default function OurValues() {
+  const { t } = useTranslation();
+
   return (
     <div>
       <Helmet>
@@ -50,86 +53,67 @@ export default function OurValues() {
       {/* Slider end */}
 
       <div className="container-main padding30">
-        <h1 className="title">Our values</h1>
+        <h1 className="title">
+          {t("navbar.our_values")}
+        </h1>
 
         <center>
-          <p>
-            Our mission and our vision define what we do, and our purpose.
-            However, we deliver in our way of work, implementing our values in
-            every segment of our daily operations and in every interaction we
-            make - within our team, with our partners, with society, and with
-            the environment.
-          </p>
-          <p>We always start with ourselves, with our team.</p>
-          <p>
-            We wish that every employee feels safe to be their true and best
-            self, to come to work happy, and feel respected and appreciated. Our
-            team is a mirror of our culture, our expertise, and our values.
-          </p>
-          <p>
-            We are proud our values live within our company and are embedded in
-            Helmchron's DNA.
-          </p>
+          <p dangerouslySetInnerHTML={{ __html: t("our_values.sub_text") }} />
         </center>
 
         <div style={{ marginTop: 100 }}>
-          <h2 className="title">OUR WAY OF WORK</h2>
+          <h2 className="title">
+            {t("our_way.title")}
+          </h2>
           <div className="row-img-text row1">
             <div className="row-img">
               <img src={Integrity} alt="" />
               <div className="rotatingText">
-                <div className="rotatingText-adjective">Integrity</div>
-                <div className="rotatingText-adjective">Connects us</div>
+                <div className="rotatingText-adjective">
+                  {t("our_way.integrity.title")}
+                </div>
+                <div className="rotatingText-adjective">
+                  {t("connects")}
+                </div>
               </div>
             </div>
-            <div className="row-text">
-              <p>
-                We act with integrity towards each other and our partners. We
-                keep our promises and honor others' opinions and ideas. We
-                demonstrate ethical behavior in every situation.
-              </p>
-              <ul>
-                <li>We show respect</li>
-                <li>We take responsibility</li>
-                <li>We stand up for what is right</li>
-                <li>We express gratitude and give credit</li>
-              </ul>
-            </div>
+            <div
+              className="row-text"
+              dangerouslySetInnerHTML={{ __html: t("our_way.integrity.text") }}
+            />
           </div>
           <div className="row-img-text row2">
             <div className="row-img">
               <img src={Committment} alt="" />
               <div>
-                <div>COMMITMENT</div>
-                <div>Connects us</div>
+                <div>
+                  {t("our_way.commitment.title")}
+                </div>
+                <div>
+                  {t("connects")}
+                </div>
               </div>
             </div>
-            <div className="row-text">
-              <p>
-                We are passionate about every project we commit ourselves to. We
-                are enthusiastic about delivering high-quality results and we
-                feel responsibility towards our partners.
-              </p>
-              <ul>
-                <li>We keep our promises and give promises we can keep</li>
-                <li>We give our best</li>
-                <li>We are loyal</li>
-              </ul>
-            </div>
+            <div
+              className="row-text"
+              dangerouslySetInnerHTML={{ __html: t("our_way.commitment.text") }}
+            />
           </div>
           <div className="row-img-text row3">
             <div className="row-img">
               <img src={Agility} alt="" />
               <div className="rotatingText">
-                <div className="rotatingText-adjective">Agility</div>
-                <div className="rotatingText-adjective">Connects us</div>
+                <div className="rotatingText-adjective">
+                  {t("our_way.agility.title")}
+                </div>
+                <div className="rotatingText-adjective">
+                  {t("connects")}
+                </div>
               </div>
             </div>
             <div className="row-text">
               <p>
-                We act rapidly, but seamlessly and cohesively. We are open to
-                change. We are flexible and efficient in responding to our
-                partners' needs.
+                {t("our_way.agility.text")}
               </p>
             </div>
           </div>
@@ -137,15 +121,17 @@ export default function OurValues() {
             <div className="row-img">
               <img src={Diversity} alt="" />
               <div>
-                <div>Diversity</div>
-                <div>Connects us</div>
+                <div>
+                  {t("our_way.diversity.title")}
+                </div>
+                <div>
+                  {t("connects")}
+                </div>
               </div>
             </div>
             <div className="row-text">
               <p>
-                We empower each other and value our differences to enable
-                growth, empathy, and stronger partnerships. We act with respect
-                and we feel respected.
+                {t("our_way.diversity.text")}
               </p>
             </div>
           </div>
@@ -153,51 +139,35 @@ export default function OurValues() {
             <div className="row-img">
               <img src={Courage} alt="" />
               <div className="rotatingText">
-                <div className="rotatingText-adjective">Courage</div>
-                <div className="rotatingText-adjective">Connects us</div>
+                <div className="rotatingText-adjective">
+                  {t("our_way.courage.title")}
+                </div>
+                <div className="rotatingText-adjective">
+                  {t("connects")}
+                </div>
               </div>
             </div>
             <div className="row-text">
               <p>
-                We are honest and transparent about everything we do. We take
-                initiative and step out of our comfort zone. We act and learn in
-                innovative ways. We are not afraid of making mistakes.
+                {t("our_way.courage.text")}
               </p>
             </div>
           </div>
 
           <div style={{ marginBottom: 100 }}>
-            <h3 className="title">SOCIAL RESPONSIBILITY</h3>
+            <h3 className="title">
+              {t("social_respo.title")}
+            </h3>
 
-            <p>
-              Our commitment to our vision extends beyond our engineering
-              expertise. Guided by our values, we have launched `For the
-              Generations in Motion`, an initiative that aims to support
-              healthier life style for children and teenagers.
-            </p>
-            <p>
-              We firmly believe we can make more extensive impact by
-              passionately endorsing initiatives for youth`s well-being and
-              physical activity, knowing that a healthy childhood forms a
-              foundation for a high-quality life, a safe society, and a healthy
-              environment.
-            </p>
-            <p>
-              To create a vibrant and sustainable future, our values, progress,
-              innovation, and social responsibility are focused on the health
-              and prosperity of the coming generations.
-            </p>
-            <p>
-              Commencing from our athletic backgrounds, we understand how
-              discipline, teamwork, agility, empathy, and inclusion are
-              instilled from an early age within sports teams.
-            </p>
+            <p dangerouslySetInnerHTML={{ __html: t("social_respo.text") }} />
           </div>
 
           <img className="our-social" src={Oursocial} alt="" />
 
           <center>
-            <h2 className="title">WHAT DO WE HAVE IN COMMON?</h2>
+            <h2 className="title">
+              {t("video_common_values")}
+            </h2>
             <iframe
               className="video-yt"
               loading="lazy"

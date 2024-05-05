@@ -247,14 +247,136 @@ const data = {
       lets: `<b>Let's</b> interact`,
       quick_links: "<b>Quick</b> links",
       contact_us: "<b>Contact</b> us",
+      download_brochure: `  Download our 
+          <a href="../HelmchronBrochure.pdf" download>
+            new corporate brochure
+          </a>`,
+      connects: "Connects us",
+      video_common_values: 'what do we have in common?',
 
-      //Our vision and mission page
-      title_vm: "Our vision and mission",
-      vm_text1:
-        "In an era when the health of our planet and humankind has never been more fragile, diverse and long-lasting partnerships will lead the change toward a better future for the coming generations.",
-      vm_text2: `With our vision and mission as the priority, we put our clients at the center of everything we do. Our team proactively partners with international and local leaders who share our values and passion for innovative products that will improve the quality of life today and tomorrow.`,
-      vm_text3: `We believe that bringing value to our clients brings value to our team, end users, and the planet. Together, we build a future that's brighter, fairer, and better for everyone.`,
-      //Privacy policy page
+      vision: {
+        title: "Our vision and mission",
+        sub_text: `In an era when the health of our planet and humankind has never been more fragile, diverse and long-lasting partnerships will lead the change toward a better future for the coming generations. <br/><br/> With our vision and mission as the priority, we put our clients at the center of everything we do. Our team proactively partners with international and local leaders who share our values and passion for innovative products that will improve the quality of life today and tomorrow. <br/><br/> We believe that bringing value to our clients brings value to our team, end users, and the planet. Together, we build a future that's brighter, fairer, and better for everyone.`,
+
+        our_strategic: {
+          title: "our strategic focus areas",
+          text:
+            " Click on the icon to read more about each of our strategic focus areas."
+        },
+
+        our_mission_vision: {
+          title: "our mission and our vision",
+          mission: {
+            title: "OUR MISSION",
+            text: `We are a reliable partner of choice for leading global
+                    manufacturers in achieving more effective, innovative, and
+                    sustainable ways of producing safe, qualitative, and novel
+                    products for everyone. <br /> Learn about our references.`
+          },
+          vision_: {
+            title: "OUR VISION",
+            text: ` We deliver high-quality process and chemical engineering
+                    solutions that are meant to enhance the quality of life and
+                    keep our environment healthy for the coming generations.
+                    <br /> Learn about our services and competencies.`
+          }
+        }
+      },
+
+      our_values: {
+        sub_text: `<p>
+            Our mission and our vision define what we do, and our purpose.
+            However, we deliver in our way of work, implementing our values in
+            every segment of our daily operations and in every interaction we
+            make - within our team, with our partners, with society, and with
+            the environment.
+          </p>
+          <p>We always start with ourselves, with our team.</p>
+          <p>
+            We wish that every employee feels safe to be their true and best
+            self, to come to work happy, and feel respected and appreciated. Our
+            team is a mirror of our culture, our expertise, and our values.
+          </p>
+          <p>
+            We are proud our values live within our company and are embedded in
+            Helmchron's DNA.
+          </p>`
+      },
+
+      our_way: {
+        title: "our way of work",
+
+        integrity: {
+          title: "integrity",
+          text: `<p>
+                We act with integrity towards each other and our partners. We
+                keep our promises and honor others' opinions and ideas. We
+                demonstrate ethical behavior in every situation.
+              </p>
+              <ul>
+                <li>We show respect</li>
+                <li>We take responsibility</li>
+                <li>We stand up for what is right</li>
+                <li>We express gratitude and give credit</li>
+              </ul>`
+        },
+        commitment: {
+          title: "Commitment",
+          text: `<p>
+                We are passionate about every project we commit ourselves to. We
+                are enthusiastic about delivering high-quality results and we
+                feel responsibility towards our partners.
+              </p>
+              <ul>
+                <li>We keep our promises and give promises we can keep</li>
+                <li>We give our best</li>
+                <li>We are loyal</li>
+              </ul>`
+        },
+        agility: {
+          title: "Agility",
+          text:
+            "We act rapidly, but seamlessly and cohesively. We are open to change. We are flexible and efficient in responding to our partners' needs."
+        },
+        diversity: {
+          title: "Diversity",
+          text:
+            "We empower each other and value our differences to enable growth, empathy, and stronger partnerships. We act with respect and we feel respected."
+        },
+        courage: {
+          title: "Courage",
+          text:
+            " We are honest and transparent about everything we do. We take initiative and step out of our comfort zone. We act and learn in innovative ways. We are not afraid of making mistakes."
+        }
+      },
+
+      social_respo: {
+        title: 'social responsibility',
+        text: `  <p>
+              Our commitment to our vision extends beyond our engineering
+              expertise. Guided by our values, we have launched 'For the
+              Generations in Motion', an initiative that aims to support
+              healthier life style for children and teenagers.
+            </p>
+            <p>
+              We firmly believe we can make more extensive impact by
+              passionately endorsing initiatives for youth's well-being and
+              physical activity, knowing that a healthy childhood forms a
+              foundation for a high-quality life, a safe society, and a healthy
+              environment.
+            </p>
+            <p>
+              To create a vibrant and sustainable future, our values, progress,
+              innovation, and social responsibility are focused on the health
+              and prosperity of the coming generations.
+            </p>
+            <p>
+              Commencing from our athletic backgrounds, we understand how
+              discipline, teamwork, agility, empathy, and inclusion are
+              instilled from an early age within sports teams.
+            </p>`
+      },
+
       policy: {
         title: "Privacy Policy",
         sub1:

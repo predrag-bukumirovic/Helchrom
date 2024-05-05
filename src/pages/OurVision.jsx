@@ -66,22 +66,21 @@ export default function OurVision() {
           )}
         </div>
       </div>
+
       <div className="container-main">
         <h1 className="title">
-          {t("title_vm")}
+          {t("vision.title")}
         </h1>
         <center>
-          {[t("vm_text1"), t("vm_text2"), t("vm_text3")].map((text, index) =>
-            <p key={index}>
-              {text}
-            </p>
-          )}
+          <p dangerouslySetInnerHTML={{ __html: t("vision.sub_text") }} />
         </center>
         <div className={showModal ? "modal-img" : "show"} onClick={closeModal}>
           <img src={showModal} alt="Modal Images" />
         </div>
         <div style={{ marginTop: 100 }} className="padding30">
-          <h2 className="title">OUR STRATEGIC FOCUS AREAS</h2>
+          <h2 className="title">
+            {t("vision.our_strategic.title")}
+          </h2>
           <div className="strategic">
             {strategicFocusAreas.map((item, index) =>
               <div key={index} onClick={() => openModal(item.image)}>
@@ -91,8 +90,7 @@ export default function OurVision() {
           </div>
           <center>
             <p>
-              Click on the icon to read more about each of our strategic focus
-              areas.
+              {t("vision.our_strategic.text")}
             </p>
           </center>
         </div>
@@ -101,7 +99,7 @@ export default function OurVision() {
       <div>
         <div className="mission-vision">
           <h2 style={{ marginTop: 100 }} className="title">
-            OUR MISSION AND OUR VISION
+            {t("vision.our_mission_vision.title")}
           </h2>
 
           <div className="row-m-v">
@@ -111,15 +109,16 @@ export default function OurVision() {
                   <img src={MVLevo} alt="Slika" />
                 </div>
                 <div className="col-text">
-                  <h3>OUR MISSION</h3>
-                  <p>
-                    We are a reliable partner of choice for leading global
-                    manufacturers in achieving more effective, innovative, and
-                    sustainable ways of producing safe, qualitative, and novel
-                    products for everyone. <br /> Learn about our references.
-                  </p>
+                  <h3>
+                    {t("vision.our_mission_vision.mission.title")}
+                  </h3>
+                  <p
+                    dangerouslySetInnerHTML={{
+                      __html: t("vision.our_mission_vision.mission.text")
+                    }}
+                  />
                   <a className="book-btn" href="/">
-                    Read more
+                    {t("read_more")}
                   </a>
                 </div>
               </div>
@@ -129,17 +128,16 @@ export default function OurVision() {
                 </div>
                 <div className="col-text">
                   <h3>OUR VISION</h3>
-                  <p>
-                    We deliver high-quality process and chemical engineering
-                    solutions that are meant to enhance the quality of life and
-                    keep our environment healthy for the coming generations.{" "}
-                    <br /> Learn about our services and competencies.
-                  </p>
+                  <p
+                    dangerouslySetInnerHTML={{
+                      __html: t("vision.our_mission_vision.vision_.text")
+                    }}
+                  />
                   <a
                     className="book-btn"
                     href="/competences&services/our-core-competencies"
                   >
-                    Read more
+                    {t("read_more")}
                   </a>
                 </div>
               </div>
@@ -152,12 +150,10 @@ export default function OurVision() {
           <img src={imgTesti} alt="imgTesti" />
           <img src={Kawasaki} alt="Kawasaki" />
         </div>
-        <p style={{ margin: 0 }}>
-          Download our{" "}
-          <a href="../HelmchronBrochure.pdf" download>
-            new corporate brochure
-          </a>
-        </p>
+        <p
+          style={{ margin: 0 }}
+          dangerouslySetInnerHTML={{ __html: t("download_brochure") }}
+        />
       </div>
     </div>
   );
