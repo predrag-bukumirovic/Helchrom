@@ -23,11 +23,16 @@ import icon3 from "../assets/images/Home/3.png";
 import icon4 from "../assets/images/Home/4.png";
 import icon5 from "../assets/images/Home/5.png";
 import quotation from "../assets/images/quotation.png";
+
+import { AiOutlineSound } from "react-icons/ai";
+import { IoPauseOutline } from "react-icons/io5";
+
 import "../assets/scss/home.scss";
 import "../assets/scss/slider.scss";
 import "@coreui/coreui/dist/css/coreui.min.css";
 import "react-multi-carousel/lib/styles.css";
 import Storyline from "../components/Storyline";
+import { useTranslation } from "react-i18next";
 
 const responsive = {
   superLargeDesktop: { breakpoint: { max: 4000, min: 3000 }, items: 1 },
@@ -41,6 +46,7 @@ export default function Home() {
   const finalNumbers = [2010, 6, 7, 180, 50, 5];
   const animationStarted = useRef(false);
   const factsRef = useRef(null);
+  const { t } = useTranslation();
 
   useEffect(() => {
     const options = { root: null, rootMargin: "0px", threshold: 0.5 };
@@ -74,6 +80,55 @@ export default function Home() {
     }, stepTime);
   };
 
+  const [text] = useState(
+    "Helmchron is a family-owned company dedicated to providing comprehensive and full-service engineering solutions for the manufacturing facilities of pharmaceuticals, chemicals, food and bio products, electronics, energy, and oil and gas. We take pride in contributing to the manufacturing of globally available, safe, and high-quality products since 2010. Our mission has remained the same since our beginnings - we improve the quality of life for everyone everywhere whilst keeping our environment healthy for the coming generations. Today, our scope is broader and our team more diverse providing unique perspectives, agility, and efficacy. Our engineering solutions are now delivered to leaders and innovators across different industries with a focus on global impact, sustainable outcomes, and long-lasting partnerships."
+  );
+  const [isSpeaking, setIsSpeaking] = useState(false);
+  const [startIndex, setStartIndex] = useState(0); // Dodajemo useState za početnu poziciju čitanja
+  const synth = window.speechSynthesis;
+  const utterance = new SpeechSynthesisUtterance();
+
+  useEffect(
+    () => {
+      const cleanup = () => {
+        synth.cancel();
+        setIsSpeaking(false);
+      };
+
+      return cleanup;
+    },
+    [synth]
+  );
+
+  useEffect(
+    () => {
+      if (!synth) return;
+
+      const onEndHandler = () => {
+        setIsSpeaking(false);
+      };
+
+      synth.addEventListener("end", onEndHandler);
+
+      return () => {
+        synth.removeEventListener("end", onEndHandler);
+      };
+    },
+    [synth]
+  );
+
+  const handleSpeak = () => {
+    if (!isSpeaking && text) {
+      utterance.text = text.substring(startIndex);
+      synth.speak(utterance);
+      setIsSpeaking(true);
+    } else {
+      synth.cancel();
+      setIsSpeaking(false);
+      setStartIndex(startIndex + utterance.text.length);
+    }
+  };
+
   return (
     <div>
       {/* Slider */}
@@ -91,10 +146,10 @@ export default function Home() {
                   <div>
                     <p>
                       {index === 0
-                        ? "Who are we?"
+                        ? t("navbar.who_are_we")
                         : index === 1
-                          ? "Our Services: Process Engineering"
-                          : "How do we work?"}
+                          ? t("navbar.services")
+                          : t("navbar.how_do_we_work")}
                     </p>
                   </div>
                 </CCarouselCaption>
@@ -112,10 +167,10 @@ export default function Home() {
                   <div>
                     <p>
                       {index === 0
-                        ? "Who are we?"
+                        ? t("navbar.who_are_we")
                         : index === 1
-                          ? "Our Services: Process Engineering"
-                          : "How do we work?"}
+                          ? t("navbar.services")
+                          : t("navbar.how_do_we_work")}
                     </p>
                   </div>
                 </div>
@@ -127,88 +182,54 @@ export default function Home() {
 
       {/* Welcome */}
       <div className="welcome container-main padding30">
-        <h1>
-          <p data-aos="fade-up" data-aos-duration="500">
-            W
-          </p>
-          <p data-aos="fade-down" data-aos-duration="800">
-            E
-          </p>
-          <p data-aos="fade-up" data-aos-duration="1100">
-            L
-          </p>
-          <p data-aos="fade-down" data-aos-duration="1400">
-            C
-          </p>
-          <p data-aos="fade-up" data-aos-duration="1700">
-            O
-          </p>
-          <p data-aos="fade-down" data-aos-duration="2000">
-            M
-          </p>
-          <p data-aos="fade-up" data-aos-duration="2300">
-            E
-          </p>{" "}
-          <b>to Helmchron official website.</b>
-        </h1>
+        <h1 dangerouslySetInnerHTML={{ __html: t("home.welcome") }} />
         <p>
-          Helmchron is a family-owned company dedicated to providing
-          comprehensive and full-service engineering solutions for the
-          manufacturing facilities of pharmaceuticals, chemicals, food and bio
-          products, electronics, energy, and oil and gas. We take pride in
-          contributing to the manufacturing of globally available, safe, and
-          high-quality products since 2010.<br /> Our mission has remained the
-          same since our beginnings - we improve the quality of life for
-          everyone everywhere whilst keeping our environment healthy for the
-          coming generations. <br /> Today, our scope is broader and our team
-          more diverse providing unique perspectives, agility, and efficacy.<br />{" "}
-          Our engineering solutions are now delivered to leaders and innovators
-          across different industries with a focus on global impact, sustainable
-          outcomes, and long-lasting partnerships.
+          <span className="sound-icon" onClick={handleSpeak}>
+            {isSpeaking ? <IoPauseOutline /> : <AiOutlineSound />}
+          </span>
+          <span dangerouslySetInnerHTML={{ __html: t("home.wel_text") }} />
         </p>
 
-        <a href="/about-us/our-vision-and-mission">Read More</a>
+        <a href="/about-us/our-vision-and-mission">
+          {t("read_more")}
+        </a>
       </div>
 
       {/* Our Services */}
       <div className="our-home container-main padding30">
-        <h2 className="title">OUR SERVICES</h2>
+        <h2 className="title">
+          {t("services.title")}
+        </h2>
         <p style={{ textAlign: "center" }}>
-          We provide end-to-end engineering services for manufacturing facility
-          design and operations management.
+          {t("services.sub_text")}
         </p>
 
         <div className="services-icon">
           {[
             {
               icon: icon1,
-              title: "Consulting & Master Planning",
-              text:
-                "Our master plan is designed to be flexible to address potential changes in technology, market demands, or trends."
+              title: t("services.icon.title1"),
+              text: t("services.icon.text1")
             },
             {
               icon: icon2,
-              title: "Engineering & Design",
-              text:
-                "We deliver sustainable solutions for facilities, equipment, and process design including process simulation and upgrade"
+              title: t("services.icon.title2"),
+              text: t("services.icon.text2")
             },
             {
               icon: icon3,
-              title: "Project Management",
-              text:
-                "We ensure efficient and seamless project execution, including timely delivery, resources management, and targeted outcomes."
+              title: t("services.icon.title3"),
+              text: t("services.icon.text3")
             },
             {
               icon: icon4,
-              title: "Equipment & Services",
-              text:
-                "We design, develop, select, install and integrate facility equipment to ensure performance optimization and efficiency."
+              title: t("services.icon.title4"),
+              text: t("services.icon.text4")
             },
             {
               icon: icon5,
-              title: "Commissioning",
-              text:
-                "We provide verification that all components and systems of the facility are installed, tested, and operate according to the predefined specifications and regulatory requirements."
+              title: t("services.icon.title5"),
+              text: t("services.icon.text5")
             }
           ].map((item, index) =>
             <div key={index}>
@@ -225,7 +246,7 @@ export default function Home() {
 
         <center>
           <a className="book-btn" href="/contact">
-            Book a meeting
+            {t("book_btn")}
           </a>
         </center>
       </div>
@@ -233,47 +254,19 @@ export default function Home() {
       {/* Unique Service Concept */}
       <div className="unique">
         <div className="container-main padding30">
-          <h2>Unique service concept</h2>
+          <h2>
+            {t("unique.title")}
+          </h2>
           <h3>
             HELMCHR<span>ONe</span>
           </h3>
 
           <div className="unique-row">
             <div className="text">
-              <p>
-                In a constant pursuit to upgrade our services and expertise, we
-                noticed a significant gap in focus on one project`s outcomes
-                that led to prolonged delivery time and budget overrun. <br />{" "}
-                To overcome this gap and meet the unique requirements of each of
-                our clients, we have implemented an innovative service concept -
-                Helmchron ONE. <br /> Helmchron ONE enables the complete focus
-                of ONE team on ONE client and ONE project only.
-              </p>
-
-              <p>
-                <b>One Team:</b> Each of our projects is assigned to one of our
-                teams. The team is fully dedicated and accountable for the
-                outcomes, ensuring that every aspect is meticulously considered
-                and executed.
-              </p>
-              <p>
-                <b>One Client:</b> We believe in forging strong, long-lasting
-                partnerships, and that starts with putting the client first -
-                each team delivers to one client only.
-              </p>
-
-              <p>
-                <b>One Project:</b> By channeling our expertise, resources, and
-                creativity into delivering the best results for one project, we
-                ensure unmatched quality, efficiency, and effectiveness.
-              </p>
-
-              <p style={{ marginBottom: 50 }}>
-                Ready to focus on success and experience Helmchron ONE?
-              </p>
+              <p dangerouslySetInnerHTML={{ __html: t("unique.text") }} />
 
               <a className="book-btn" href="/contact">
-                Book a meeting
+                {t("book_btn")}
               </a>
             </div>
             <div className="img">
@@ -289,9 +282,7 @@ export default function Home() {
           <h2 className="title">OUR BUSINESS AREAS</h2>
 
           <p style={{ textAlign: "center" }}>
-            Our areas of operations are aligned with our mission - to deliver
-            impact globally. We are non-exclusively working in the following
-            business sectors:
+            {t("areas.sub_text")}
           </p>
         </div>
         <WhoIcons />
@@ -300,17 +291,11 @@ export default function Home() {
       {/* Facts About Us */}
       <div className="facts-box">
         <div className="facts container-main padding30">
-          <h2 className="title">FACTS ABOUT US</h2>
+          <h2 className="title">
+            {t("facts.title")}
+          </h2>
           <div className="facts-row">
-            <p>
-              We are a team of highly skilled, focused and self-motivated
-              enthusiasts passionate about outcomes, competencies, and
-              partnerships. <br /> Our team is located in Belgrade, Serbia,
-              however, we are driven by international projects and
-              collaborations. <br /> We prioritize delivering high-quality
-              solutions in process and chemical engineering, while upholding the
-              utmost standards of integrity, agility, and accountability.
-            </p>
+            <p dangerouslySetInnerHTML={{ __html: t("facts.sub_text") }} />
           </div>
 
           <div ref={factsRef} className="facts-icon">
@@ -327,16 +312,16 @@ export default function Home() {
                 <div className="text">
                   <span className="word">
                     {index === 0
-                      ? "founder in"
+                      ? t("facts.icon_title1")
                       : index === 1
-                        ? "operations areas"
+                        ? t("facts.icon_title2")
                         : index === 2
-                          ? "number of week days we provide support to our clients"
+                          ? t("facts.icon_title3")
                           : index === 3
-                            ? "minute average feedback time"
+                            ? t("facts.icon_title4")
                             : index === 4
-                              ? "happy clients and partners"
-                              : "published papers as a result of our inno lab"}
+                              ? t("facts.icon_title5")
+                              : t("facts.icon_title6")}
                   </span>
                   <span className="number">{`>${numbers[index]}`}</span>
                 </div>
@@ -345,7 +330,9 @@ export default function Home() {
           </div>
 
           <center>
-            <a href="/about-us/who-are-we">Read more</a>
+            <a href="/about-us/who-are-we">
+              {t("read_more")}
+            </a>
           </center>
         </div>
       </div>
@@ -354,7 +341,9 @@ export default function Home() {
 
       {/* Video */}
       <div className="video">
-        <p>We have at least one thing in common...</p>
+        <p>
+          {t("video_common")}
+        </p>
         <center>
           <iframe
             className="video-yt"
@@ -371,7 +360,9 @@ export default function Home() {
       {/* Testimonials */}
       <div className="testimonials container-main">
         <div className="slider-testi padding30">
-          <h2 className="title">WE VALUE OUR PARTNERS' FEEDBACK</h2>
+          <h2 className="title">
+            {t("feedback.title")}
+          </h2>
           <Carousel
             responsive={responsive}
             showDots={true}
@@ -388,46 +379,21 @@ export default function Home() {
               <img src={quotation} alt="quotation" />
 
               <div>
-                <p>
-                  Helmchron team demonstrated extensive expertise and all-time
-                  availability that enabled solving the most challenging tasks
-                  efficiently and successfully. {" "}
-                </p>
-                <p>
-                  They managed well with an increased workload and adjusted
-                  timeline. Their comprehensive experience, reliability, and
-                  systematic approach resulted in great quality of delivered
-                  work and our overall collaboration.{" "}
-                </p>
+                <p dangerouslySetInnerHTML={{ __html: t("feedback.text1") }} />
               </div>
             </div>
             <div className="testi-item">
               <img src={quotation} alt="quotation" />
 
               <div>
-                <p>
-                  Due to their deep engineering expertise and experience,
-                  Helmchron team was able to understand the project`s tasks
-                  quickly and deliver results on time and within budget.{" "}
-                </p>
-                <p>
-                  The team showed high motivation and an enthusiastic approach
-                  to all the challenges and has overcome these with outstanding
-                  initiative. They work precisely and with care for outcomes and
-                  the rest of the team. These qualities enabled successful
-                  delivery and our satisfaction.{" "}
-                </p>
+                <p dangerouslySetInnerHTML={{ __html: t("feedback.text2") }} />
               </div>
             </div>
             <div className="testi-item">
               <img src={quotation} alt="quotation" />
               <div>
                 <p>
-                  Due to the wide scope of their expertise and interest, the
-                  project`s outcomes were accomplished independently, precisely,
-                  and concisely with great dedication and enthusiasm. We have
-                  come to know Helmchron team as open-minded, pleasant to work
-                  with, and strongly motivated.{" "}
+                  {t("feedback.text3")}
                 </p>
               </div>
             </div>

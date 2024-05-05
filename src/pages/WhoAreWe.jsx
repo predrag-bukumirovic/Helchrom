@@ -74,12 +74,10 @@ const WhoAreWe = () => {
       </div>
       <div className="container-main padding30">
         <h1 className="title">
-          {t("title_who")}
+          {t("who_are_we.title")}
         </h1>
         <center>
-          {[t("who_text1"), t("who_text2")].map((text, index) =>
-            <p key={index} dangerouslySetInnerHTML={{ __html: text }} />
-          )}
+          <p dangerouslySetInnerHTML={{ __html: t("who_are_we.text_sub") }} />
         </center>
 
         <WhoIcons />
@@ -88,32 +86,16 @@ const WhoAreWe = () => {
       <div className="history">
         <div>
           <div className="container-main padding30">
-            <h2 className="title">OUR HISTORY</h2>
+            <h2 className="title">
+              {t("who_are_we.history")}
+            </h2>
             <div className="our-history">
-              <div className="text">
-                <p>
-                  Our journey of innovation and commitment to a sustainable
-                  future started in 2010 in Belgrade, Serbia. We have embarked
-                  on a mission to revolutionize the quality of life for the
-                  coming generations with our process and chemical engineering
-                  solutions.
-                </p>
-                <p>
-                  From the early beginnings, we steadily expanded our reach,
-                  initially serving local projects. In 2013, we set our sights
-                  on the EU market, amplifying our impact on a global scale by
-                  partnering with industry leaders in the pharmaceuticals and
-                  chemicals sectors. In 2020, the pandemic only fueled our
-                  determination to contribute to global health and well-being.
-                </p>
-                <p>
-                  Helmchron path is one of continuous growth and evolution,
-                  where every project is a testament to our unwavering
-                  commitment to excellence and sustainability. As we look ahead,
-                  our aspiration remains steadfast—to make an even greater
-                  impact globally, ultimately benefiting everyone everywhere.
-                </p>
-              </div>
+              <div
+                className="text"
+                dangerouslySetInnerHTML={{
+                  __html: t("who_are_we.history_text")
+                }}
+              />
 
               <img src={OurImg} alt="Our history" />
             </div>
@@ -122,19 +104,10 @@ const WhoAreWe = () => {
       </div>
 
       <div className="credo container-main padding30">
-        <h2 className="title">Our credo</h2>
-        <p>
-          Our expertise and our impact are led by our vision and purpose to
-          upgrade the quality of life, maintain strong, long-lasting <br />
-          partnerships, and empower our team with living by our values. Our
-          accountability lies in providing process and chemical <br />{" "}
-          engineering solutions that enable manufacturing of efficient and safe
-          products globally, guided by the belief in equal <br /> access to
-          pharmaceuticals, chemicals, fuels, energy, and food. We prioritize our
-          partners` needs and outcomes, our core <br /> values, environmental
-          sustainability and stability of our business operations, envisioning a
-          high quality of life for everyone.
-        </p>
+        <h2 className="title">
+          {t("who_are_we.credo_title")}
+        </h2>
+        <p dangerouslySetInnerHTML={{ __html: t("who_are_we.credo_text") }} />
       </div>
 
       <div style={{ background: "var(--lite-orange-color)" }}>
@@ -145,14 +118,10 @@ const WhoAreWe = () => {
           <div>
             <p>
               <img src={quotation} alt="" />
-              We believe that expertise, innovation, and values create long-term
-              impact. Our purpose is to deliver outcomes that positively change
-              the world around us, maintain strong partnerships, and empower our
-              team to thrive in an environment built on our core values. <br
-              />{" "}
-              Our main responsibility lies within our vision - to support the
-              manufacturing of products that will be efficient and safe and
-              serve the global society and environment.
+
+              <span
+                dangerouslySetInnerHTML={{ __html: t("who_are_we.quotation") }}
+              />
             </p>
             <span
               style={{ float: "right", cursor: "pointer" }}
@@ -188,29 +157,42 @@ const WhoAreWe = () => {
       <div className="container-main">
         <div className="basic padding30">
           <div className="padding30">
-            <h2>
-              <b>BASIC COMPANY INFORMATION</b>
+            <h2 className="title">
+              <b>
+                {t("info.title")}
+              </b>
             </h2>
             <ul>
-              <li>Registered activity: Engineering Services</li>
-              <li>Year of establishment: 2010.</li>
-              <li>Seat location: Belgrade, Serbia</li>
-              <li>TIN: 112690991</li>
-              <li>Registration number: 66287432</li>
-            </ul>
-            <ul>
-              <li>Contact person: Milos Ivosevic, PhD, Process Engineer</li>
               <li>
-                Phone number: <a href="tel:+381642938533">+381 64 293 85 33</a>
+                {t("info.reg")}
               </li>
               <li>
-                Email address:{" "}
+                {t("info.year")}
+              </li>
+              <li>
+                {t("info.loc")}
+              </li>
+              <li>TIN: 112690991</li>
+              <li>
+                {t("info.reg_num")}
+              </li>
+            </ul>
+            <ul>
+              <li>
+                {t("info.contact")}
+              </li>
+              <li>
+                {t("info.phone")}{" "}
+                <a href="tel:+381642938533">+381 64 293 85 33</a>
+              </li>
+              <li>
+                {t('info.email')}{" "}
                 <a href="mailto:milos.ivosevic@helmchron.com">
                   milos.ivosevic@helmchron.com
                 </a>
               </li>
               <li>
-                Linkedin profile:{" "}
+                {t('info.linkedin')}{" "}
                 <a
                   href="https://www.linkedin.com/in/dr-milos-ivosevic-300263166"
                   target="_blank"

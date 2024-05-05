@@ -15,6 +15,7 @@ import ProjectM from "../assets/images/OurServices/ProjectM.jpeg";
 import EconomicA from "../assets/images/OurServices/EconomicA.jpeg";
 import SofrwareE from "../assets/images/OurServices/SofrwareE.jpeg";
 import InnovationL from "../assets/images/OurServices/InnovationL.jpeg";
+import { useTranslation } from "react-i18next";
 
 const mainImages = [mainImg, mainImg1, mainImg2];
 

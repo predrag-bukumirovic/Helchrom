@@ -46,51 +46,51 @@ export default function PrivacyPolicy() {
 
       <div className="container-main padding30 privacy-policy">
         <h1 className="title">
-          {t("plicy.title")}
+          {t("policy.title")}
         </h1>
 
-        <h2 dangerouslySetInnerHTML={{ __html: t("plicy.sub1") }} />
-        <p dangerouslySetInnerHTML={{ __html: t("plicy.text1") }} />
-        <p dangerouslySetInnerHTML={{ __html: t("plicy.text2") }} />
-        <p dangerouslySetInnerHTML={{ __html: t("plicy.text3.text") }} />
-        <i dangerouslySetInnerHTML={{ __html: t("plicy.text3.textI") }} />
-        <p dangerouslySetInnerHTML={{ __html: t("plicy.text4") }} />
+        <h2 dangerouslySetInnerHTML={{ __html: t("policy.sub1") }} />
+        <p dangerouslySetInnerHTML={{ __html: t("policy.text1") }} />
+        <p dangerouslySetInnerHTML={{ __html: t("policy.text2") }} />
+        <p dangerouslySetInnerHTML={{ __html: t("policy.text3.text") }} />
+        <i dangerouslySetInnerHTML={{ __html: t("policy.text3.textI") }} />
+        <p dangerouslySetInnerHTML={{ __html: t("policy.text4") }} />
         <h3
           className="sub-title"
-          dangerouslySetInnerHTML={{ __html: t("plicy.sub2") }}
+          dangerouslySetInnerHTML={{ __html: t("policy.sub2") }}
         />
-        <p dangerouslySetInnerHTML={{ __html: t("plicy.text5") }} />
+        <p dangerouslySetInnerHTML={{ __html: t("policy.text5") }} />
         <h3
           className="sub-title"
-          dangerouslySetInnerHTML={{ __html: t("plicy.sub3") }}
+          dangerouslySetInnerHTML={{ __html: t("policy.sub3") }}
         />
-        <p dangerouslySetInnerHTML={{ __html: t("plicy.text6") }} />
+        <p dangerouslySetInnerHTML={{ __html: t("policy.text6") }} />
         <ul>
-          <li dangerouslySetInnerHTML={{ __html: t("plicy.text6ul.li1") }} />
-          <li dangerouslySetInnerHTML={{ __html: t("plicy.text6ul.li2") }} />
-          <li dangerouslySetInnerHTML={{ __html: t("plicy.text6ul.li3") }} />
-          <li dangerouslySetInnerHTML={{ __html: t("plicy.text6ul.li4") }} />
+          <li dangerouslySetInnerHTML={{ __html: t("policy.text6ul.li1") }} />
+          <li dangerouslySetInnerHTML={{ __html: t("policy.text6ul.li2") }} />
+          <li dangerouslySetInnerHTML={{ __html: t("policy.text6ul.li3") }} />
+          <li dangerouslySetInnerHTML={{ __html: t("policy.text6ul.li4") }} />
         </ul>
-        <p dangerouslySetInnerHTML={{ __html: t("plicy.text7") }} />
-        <p dangerouslySetInnerHTML={{ __html: t("plicy.text8") }} />
-        <p dangerouslySetInnerHTML={{ __html: t("plicy.text9") }} />
+        <p dangerouslySetInnerHTML={{ __html: t("policy.text7") }} />
+        <p dangerouslySetInnerHTML={{ __html: t("policy.text8") }} />
+        <p dangerouslySetInnerHTML={{ __html: t("policy.text9") }} />
 
         <ul>
-          <li dangerouslySetInnerHTML={{ __html: t("plicy.text9ul.li1") }} />
-          <li dangerouslySetInnerHTML={{ __html: t("plicy.text9ul.li2") }} />
-          <li dangerouslySetInnerHTML={{ __html: t("plicy.text9ul.li3") }} />
+          <li dangerouslySetInnerHTML={{ __html: t("policy.text9ul.li1") }} />
+          <li dangerouslySetInnerHTML={{ __html: t("policy.text9ul.li2") }} />
+          <li dangerouslySetInnerHTML={{ __html: t("policy.text9ul.li3") }} />
         </ul>
         <h3
           className="sub-title"
-          dangerouslySetInnerHTML={{ __html: t("plicy.purposes.sub") }}
+          dangerouslySetInnerHTML={{ __html: t("policy.purposes.sub") }}
         />
 
-        <p dangerouslySetInnerHTML={{ __html: t("plicy.purposes.text1") }} />
+        <p dangerouslySetInnerHTML={{ __html: t("policy.purposes.text1") }} />
 
         <ol>
-          <li dangerouslySetInnerHTML={{ __html: t("plicy.purposes.li1") }} />
-          <li dangerouslySetInnerHTML={{ __html: t("plicy.purposes.li2") }} />
-          <li dangerouslySetInnerHTML={{ __html: t("plicy.purposes.li3") }} />
+          <li dangerouslySetInnerHTML={{ __html: t("policy.purposes.li1") }} />
+          <li dangerouslySetInnerHTML={{ __html: t("policy.purposes.li2") }} />
+          <li dangerouslySetInnerHTML={{ __html: t("policy.purposes.li3") }} />
         </ol>
 
         <h3 className="sub-title">Your rights regarding your personal data</h3>

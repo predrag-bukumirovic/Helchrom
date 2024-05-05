@@ -3,17 +3,19 @@ import logo from "../assets/images/logo.webp";
 import ChemistryConnects from "../assets/images/ChemistryConnects.png";
 import "../assets/scss/navbar.css";
 import { BiChevronDown } from "react-icons/bi";
-import { TfiClose, TfiEmail } from "react-icons/tfi";
+import { TfiClose } from "react-icons/tfi";
 import { AiOutlineCaretDown } from "react-icons/ai";
 import TikTok from "../assets/images/tiktok.webp";
 import Instagram from "../assets/images/instagram.webp";
 import Linkedine from "../assets/images/linkedine.webp";
 import Twitter from "../assets/images/twitter.webp";
+import { useTranslation } from "react-i18next";
 
 export default function Navbar() {
   const [openMenu, setOpenMenu] = useState(false);
   const [downMenuAbout, setDownMenuAbout] = useState(false);
   const [downMenu, setDownMenu] = useState(false);
+  const { t } = useTranslation();
 
   function CustomLink({ href, children, ...props }) {
     const path = window.location.pathname;
@@ -57,14 +59,16 @@ export default function Navbar() {
                 />
               </div>
               <li>
-                <a href="/">Home</a>
+                <a href="/">
+                  {t("navbar.home")}
+                </a>
               </li>
               <li>
                 <span
                   className="about-us"
                   onClick={() => setDownMenuAbout(!downMenuAbout)}
                 >
-                  about us <BiChevronDown />
+                  {t("navbar.about_us")} <BiChevronDown />
                 </span>
                 <ol
                   style={{ display: "none" }}
@@ -72,20 +76,22 @@ export default function Navbar() {
                 >
                   <li>
                     <CustomLink href="/about-us/who-are-we">
-                      Who are we?
+                      {t("navbar.who_are_we")}
                     </CustomLink>
                   </li>
                   <li>
-                    <CustomLink href="/about-us/our-team">Our team</CustomLink>
+                    <CustomLink href="/about-us/our-team">
+                      {t("navbar.our_team")}
+                    </CustomLink>
                   </li>
                   <li>
                     <CustomLink href="/about-us/our-vision-and-mission">
-                      Our vision and mission
+                      {t("navbar.vision_mission")}
                     </CustomLink>
                   </li>
                   <li>
                     <CustomLink href="/about-us/our-values">
-                      Our values
+                      {t("navbar.our_values")}
                     </CustomLink>
                   </li>
                 </ol>
@@ -95,7 +101,7 @@ export default function Navbar() {
                   onClick={() => setDownMenu(!downMenu)}
                   className="com-ser"
                 >
-                  competences & services <BiChevronDown />
+                  {t("navbar.competences_services")} <BiChevronDown />
                 </span>
                 <ol
                   style={{ display: "none" }}
@@ -103,30 +109,36 @@ export default function Navbar() {
                 >
                   <li>
                     <CustomLink href="/competences&services/our-core-competencies">
-                      Our core competencies
+                      {t("navbar.our_core")}
                     </CustomLink>
                   </li>
                   <li>
                     <CustomLink href="/competences&services/our-services">
-                      Our services
+                      {t("navbar.our_services")}
                     </CustomLink>
                   </li>
                 </ol>
               </li>
 
-              <CustomLink href="/career">career</CustomLink>
+              <CustomLink href="/career">
+                {t("navbar.career")}
+              </CustomLink>
 
-              <CustomLink href="/news">news</CustomLink>
+              <CustomLink href="/news">
+                {t("navbar.news")}
+              </CustomLink>
 
-              <CustomLink href="/blog">blog</CustomLink>
+              <CustomLink href="/blog">
+                {t("navbar.blog")}
+              </CustomLink>
 
-              <CustomLink href="/contact">contact</CustomLink>
+              <CustomLink href="/contact">
+                {t("navbar.contact")}
+              </CustomLink>
 
               {/* Mreze */}
               <div className="internet-mob">
-                <p>
-                  <b>Let`s</b> interact
-                </p>
+                <p dangerouslySetInnerHTML={{ __html: t("lets") }} />
                 <div>
                   <a
                     href="https://www.linkedin.com/company/helmchron/"
@@ -193,13 +205,6 @@ export default function Navbar() {
               </li>
             </ol>
           </li>
-          {/* <li>
-            <div className="email-mobile">
-              <a href="/contact">
-                <TfiEmail className="email-icon" />
-              </a>
-            </div>
-          </li> */}
 
           <div className="burger-icon" onClick={() => setOpenMenu(!openMenu)}>
             <div className="line1" />

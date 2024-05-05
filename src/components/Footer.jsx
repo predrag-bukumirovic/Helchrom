@@ -5,8 +5,11 @@ import Instagram from "../assets/images/instagram.webp";
 import Linkedine from "../assets/images/linkedine.webp";
 import Twitter from "../assets/images/twitter.webp";
 import Logo from "../assets/images/logowhite.webp";
+import { useTranslation } from "react-i18next";
 
 export default function Footer() {
+  const { t } = useTranslation();
+
   return (
     <footer>
       <div className="w-100">
@@ -17,21 +20,27 @@ export default function Footer() {
                 <img src={Logo} alt="Logo" />
               </div>
               <div className="map-links">
-                <p>
-                  <b>Quick</b> links
-                </p>
-                <a href="/about-us/who-are-we">Who are we?</a>
-                <a href="/competences&services/our-services">Services</a>
-                <a href="/about-us/our-values">How do we work?</a>
+                <p dangerouslySetInnerHTML={{ __html: t("quick_links") }} />
+                <a href="/about-us/who-are-we">
+                  {t("navbar.who_are_we")}
+                </a>
+                <a href="/competences&services/our-services">
+                  {t("navbar.our_services")}
+                </a>
+                <a href="/about-us/our-values">
+                  {t("navbar.how_do_we_work")}
+                </a>
               </div>
               <div>
-                <a href="/privacy-policy">Privacy policy</a>
-                <a href="/legal-statement">Legal statement</a>
+                <a href="/privacy-policy">
+                  {t("policy.title")}
+                </a>
+                <a href="/legal-statement">
+                  {t("navbar.legal")}
+                </a>
               </div>
               <div className="internet">
-                <p>
-                  <b>Let`s</b> interact
-                </p>
+                <p dangerouslySetInnerHTML={{ __html: t("lets") }} />
                 <div>
                   <a
                     href="https://www.linkedin.com/company/helmchron/"
@@ -68,16 +77,14 @@ export default function Footer() {
                 </div>
               </div>
               <div className="footer-contact">
-                <p>
-                  <b>Contact</b> us
-                </p>
+                <p dangerouslySetInnerHTML={{ __html: t("contact_us") }} />
                 <a href="mailto:office@helmchron.com">office@helmchron.com</a>
               </div>
             </div>
             <div className="copyright container-main">
               <div>
                 Helmchron © 2023 {/*{new Date().getFullYear()} {""} */}
-                <a href="/privacy-policy">Privacy policy</a> | by{" "}
+                <a href="/privacy-policy">{t("policy.title")}</a> | by{" "}
                 <a
                   href="http://www.gold-digital.rs"
                   target="_blank"

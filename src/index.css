@@ -165,3 +165,21 @@ footer {
   transform: scale(1.1);
   float: left;
 }
+
+.sound-icon {
+  background: var(--brend-color);
+  color: #fff;
+  font-size: 30px;
+  border-radius: 50%;
+  padding: 7px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.sound-icon svg {
+  color: #fff;
+}
+
+.sound-icon:active {
+  background: transparent;
+}

@@ -4,7 +4,9 @@ import texts from './texts'
 
 i18next.use(initReactI18next).init({
   resources: {
-    en: texts.en
+    en: texts.en,
+    ge: texts.ge,
+    ru: texts.ru
   },
   lng: localStorage.getItem("lng") || "en"
 });

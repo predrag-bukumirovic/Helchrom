@@ -60,17 +60,12 @@ export default function OurTeam() {
 
       <div className="container-main">
         <h1 className="title">
-          {t("title_team")}
+          {t("team.title")}
         </h1>
 
         <center>
           <p>
-            We are a unified team of professionals coming from diverse
-            educational backgrounds and experiences, all deeply committed to our
-            shared vision and passionate about what we do. Embracing diversity
-            as a core value, we recognize and celebrate the richness of our
-            backgrounds, knowledge, and experiences that collectively drive our
-            results.
+            {t("team.sub_text")}
           </p>
         </center>
 
@@ -82,8 +77,12 @@ export default function OurTeam() {
                 <img src={milos} alt="" />
               </div>
               <div>
-                <h5 className="name-team">Milos Ivosevic, Ph.D.</h5>
-                <h6 className="position-team">CEO, Mechanical Engineer</h6>
+                <h5 className="name-team">
+                  {" "}{t("team.team1.name")}
+                </h5>
+                <h6 className="position-team">
+                  {t("team.team1.position")}
+                </h6>
                 <div className="member-links">
                   <a
                     href="https://www.linkedin.com/in/dr-milos-ivosevic-300263166/"
@@ -94,21 +93,7 @@ export default function OurTeam() {
                   </a>
                 </div>
                 <p>
-                  Milos Ivosevic is the founder of the company and creator of
-                  the vision. Enthusiastic and entrepreneurial, Milos was always
-                  focused on extensive international projects that contribute to
-                  improving the quality of life for the coming generations. The
-                  turning point of his university period was the experience he
-                  gained at the well-known Paul Scherrer Institut (PSI) in
-                  Switzerland. While studying, he was, also, hands-on and
-                  involved in multiple engineering projects in Serbia and
-                  Croatia. During the last 10 years, Milos worked as part of
-                  various multinational teams and did projects for the leading
-                  chemical and pharmaceutical innovators (BASF, Novartis, Roche,
-                  etc.). He did his Master's and PhD thesis at the University of
-                  Belgrade, Faculty of Mechanical Engineering. In his leisure
-                  time, he enjoys traveling and discovering new cultures,
-                  sports, and relaxing by the river.
+                  {t("team.team1.text")}
                 </p>
               </div>
             </div>
@@ -120,8 +105,12 @@ export default function OurTeam() {
                 <img src={anja} alt="" />
               </div>
               <div>
-                <h5 className="name-team">Anja Andjelkovic, M.Sc.</h5>
-                <h6 className="position-team">CTO, Mechanical Engineer</h6>
+                <h5 className="name-team">
+                  {t("team.team2.name")}
+                </h5>
+                <h6 className="position-team">
+                  {t("team.team2.position")}
+                </h6>
                 <div className="member-links">
                   <a
                     href="https://www.linkedin.com/in/anja-andjelkovic-866b30182"
@@ -132,18 +121,7 @@ export default function OurTeam() {
                   </a>
                 </div>
                 <p>
-                  Anja Andjelkovic joined the team in 2020. bringing additional
-                  focus to our operations and expansion. Her comprehensive skill
-                  set, knowledge, and motivation have brought a new perspective
-                  and strengthened the outcomes we deliver to our partners. As a
-                  CTO, Anja is responsible for projects` leadership, seamless
-                  and agile project execution and coaching our team of projects
-                  associates and engineering experts. She holds a Masters degree
-                  in Mechanical Engineering from the University of Belgrade.
-                  Anja used to play volleyball professionally and her discipline
-                  and result orientation are considered to be the qualities that
-                  greatly enrich our team. In her spare time, Anja likes to do
-                  sports and travel with her family.
+                  {t("team.team2.text")}
                 </p>
               </div>
             </div>
@@ -151,10 +129,10 @@ export default function OurTeam() {
         </div>
 
         <div className="talk-video" style={{ marginTop: 100 }}>
-          <h2 className="title">WHAT DO YOU VALUE THE MOST?</h2>
-          <h3>
-            Helmchron <span>TeamTalk</span>
-          </h3>
+          <h2 className="title">
+            {t("team.talk.title")}
+          </h2>
+          <h3 dangerouslySetInnerHTML={{ __html: t("team.talk.sub") }} />
 
           <center>
             <iframe
@@ -172,14 +150,12 @@ export default function OurTeam() {
         </div>
 
         <div className="our-home padding30">
-          <h1 className="title">Our values</h1>
+          <h1 className="title">
+            {t("team.values_icon.title")}
+          </h1>
           <center>
             <p>
-              Our core values serve as the foundation of everything we do,
-              inspiring us to strive for operational excellence and innovation
-              in all our projects. Our values enable cohesive and supportive
-              environment shaping the quality of our results and strengthening
-              of our partnerships.
+              {t("team.values_icon.sub_text")}
             </p>
           </center>
 
@@ -187,73 +163,79 @@ export default function OurTeam() {
             <div>
               <img src={icon1} alt="icon1" />
               <p>
-                <b>Integrity</b>
+                <b>
+                  {t("team.values_icon.icon1.title")}
+                </b>
               </p>
               <p>
-                We act with integrity and demonstrate ethical behavior in every
-                situation.
+                {t("team.values_icon.icon1.text")}
               </p>
             </div>
             <div>
               <img src={icon2} alt="icon2" />
               <p>
-                <b>Commitment</b>
+                <b>
+                  {t("team.values_icon.icon2.title")}
+                </b>
               </p>
               <p>
-                We feel the responsibility towards our partners and the promises
-                given.
+                {t("team.values_icon.icon2.text")}
               </p>
             </div>
             <div>
               <img src={icon4} alt="icon4" />
               <p>
-                <b>Agility</b>
+                <b>
+                  {t("team.values_icon.icon3.title")}
+                </b>
               </p>
-              <p>We act seamlessly and cohesively as one team.</p>
+              <p>
+                {t("team.values_icon.icon3.text")}
+              </p>
             </div>
             <div style={{ background: "var(--lite-orange-color)" }}>
               <img src={icon3} alt="icon3" />
               <p>
-                <b>Diversity</b>
+                <b>
+                  {t("team.values_icon.icon4.title")}
+                </b>
               </p>
               <p>
-                We value our differences and act with respect toward one
-                another.
+                {t("team.values_icon.icon4.text")}
               </p>
             </div>
             <div>
               <img src={icon5} alt="icon5" />
               <p>
-                <b>Courage</b>
+                <b>
+                  {t("team.values_icon.icon5.title")}
+                </b>
               </p>
-              <p>We take initiative and step out of our comfort zone.</p>
+              <p>
+                {t("team.values_icon.icon5.text")}.
+              </p>
             </div>
           </div>
         </div>
 
         <center>
           <p>
-            Do we share the same values? Are you interested in joining our team?
-            Visit our career page.
+            {t("team.text_bottom")}.
           </p>
 
           <a className="book-btn" href="/career">
-            Career page
+            {t("team.btn_career")}.
           </a>
         </center>
 
         <div className="transparency">
-          <h2 className="title">TRANSPARENCY AND ACCOUNTABILITY</h2>
+          <h2 className="title">
+            {t("team.transparency.title")}
+          </h2>
 
           <center>
             <p>
-              We are dedicated to realizing our vision and exceeding the
-              expectations of our clients by adhering to the highest ethical
-              standards of conduct and fostering a culture of transparency and
-              accountability. Explore our Anti-Bribery and Anti-Corruption
-              Policy, Code of Conduct, and Communication Policy to learn how we
-              maintain the integrity of our business practices and prioritize
-              the satisfaction and trust of our stakeholders.
+              {t("team.transparency.sub_text")}
             </p>
           </center>
 
@@ -266,7 +248,7 @@ export default function OurTeam() {
                   className="book-btn"
                   href="/"
                 >
-                  Anti-Corruption Policy
+                  {t("team.transparency.btn_blue")}
                 </a>
               </div>
             </div>
@@ -274,7 +256,7 @@ export default function OurTeam() {
               <img src={Code} alt="" />
               <div>
                 <a className="book-btn" href="/">
-                  Code of Conduct
+                  {t("team.transparency.btn_orange")}
                 </a>
               </div>
             </div>
@@ -286,7 +268,7 @@ export default function OurTeam() {
                   className="book-btn"
                   href="/"
                 >
-                  Communication Policy
+                  {t("team.transparency.btn_green")}
                 </a>
               </div>
             </div>

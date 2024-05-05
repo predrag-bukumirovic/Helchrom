@@ -5,26 +5,27 @@ import Story2015 from "../assets/images/Home/Story2015.webp";
 import Story2016 from "../assets/images/Home/Story2016.webp";
 import Story2020 from "../assets/images/Home/Story2020.webp";
 import Story2023 from "../assets/images/Home/Story2023.webp";
+import { useTranslation } from "react-i18next";
 
 export default function Storyline() {
+  const { t } = useTranslation();
+
   return (
     <div>
       <div className="storyline container-main padding30">
-        <h2 className="title">OUR STORYLINE</h2>
+        <h2 className="title">
+          {t("our_line.title")}
+        </h2>
 
         <p style={{ textAlign: "center" }}>
-          Our story began in 2010. and since then we have been providing
-          services to international and local leaders.{" "}
+          {t("our_line.sub_text")}
         </p>
 
         <section className="storyline-box">
           <div className="box box1">
             <div className="text text1-1">
               <p>
-                Our initial projects were community-focused, yet our vision was
-                always global - to deliver solutions for international
-                initiatives that enhance the quality of life for everyone
-                everywhere.
+                {t("our_line.img_text1")}
               </p>
             </div>
             <div className="img-date img1-1">
@@ -33,9 +34,7 @@ export default function Storyline() {
             </div>
             <div className="text text1-2">
               <p>
-                We were proud and enthusiastic to witness our outcomes
-                materializing and our mission taking shape as we actively
-                engaged in projects within the global market...
+                {t("our_line.img_text3")}
               </p>
             </div>
             <div className="img-date img1-2">
@@ -44,9 +43,7 @@ export default function Storyline() {
             </div>
             <div className="text text1-3">
               <p>
-                Throughout the pandemic, our strong focus has been on projects
-                within the pharmaceutical sector, aiming to achieve and sustain
-                global health.
+                {t("our_line.img_text5")}
               </p>
             </div>
             <div className="img-date img1-3">
@@ -99,9 +96,7 @@ export default function Storyline() {
             </div>
             <div className="text text2-1">
               <p>
-                We are making the first steps towards our vision, gaining
-                valuable perspective from contributing to big, complex teams and
-                projects.
+                {t("our_line.img_text2")}
               </p>
             </div>
 
@@ -111,9 +106,7 @@ export default function Storyline() {
             </div>
             <div className="text text2-2">
               <p>
-                As we continue our growth and development with additional
-                worldwide projects, we fine-tune our strategy towards new
-                business areas to elevate our impact.
+                {t("our_line.img_text4")}
               </p>
             </div>
 
@@ -123,9 +116,7 @@ export default function Storyline() {
             </div>
             <div className="text text2-3">
               <p>
-                We are committed to development and innovation, aiming to master
-                the challenges of manufacturing and sustainability. Enduring
-                value for the coming generations is our goal.
+                {t("our_line.img_text6")}
               </p>
             </div>
           </div>
