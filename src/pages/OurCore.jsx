@@ -15,6 +15,7 @@ import logo from "../assets/images/logo.png";
 import { CCarousel, CCarouselItem, CImage } from "@coreui/react";
 import "@coreui/coreui/dist/css/coreui.min.css";
 import { Helmet } from "react-helmet";
+import { useTranslation } from "react-i18next";
 
 const mainImages = [mainImg, mainImg1, mainImg2];
 
@@ -30,6 +31,7 @@ export default function OurCore() {
   const handleClick = index => {
     sectionRefs[index].current.scrollIntoView({ behavior: "smooth" });
   };
+  const { t } = useTranslation();
 
   return (
     <div>
@@ -59,30 +61,28 @@ export default function OurCore() {
       </div>
 
       <div className="container-main padding30">
-        <h1 className="title">our services & competencies</h1>
+        <h1 className="title">
+          {t("our_core.title")}
+        </h1>
 
-        <p>
-          Our unwavering commitment to understanding and fulfilling the unique
-          requirements of each of our clients drives our mission and vision. We
-          measure our success by the satisfaction of our partners, and we are
-          dedicated to continuously sharpening and upgrading our competencies
-          and improving and refining our services to ensure their continued
-          success. <br /> At the heart of our operational philosophy lies a
-          profound understanding that our achievements are intricately connected
-          with the outcomes of our partners and their impact on the users and
-          the environment. By placing the benefit of end users at the forefront
-          of everything we do, we foster loyal partnerships and meaningful
-          impact for all stakeholders. <br /> Our proactive approach and ongoing
-          commitment to expertise and service development reflect our dedication
-          to delivering results for our clients and partners.
-        </p>
+        <p dangerouslySetInnerHTML={{ __html: t("our_core.sub_text") }} />
 
         <div className="icon-core">
-          <div onClick={() => handleClick(0)}>Pre-planning & Consulting </div>
-          <div onClick={() => handleClick(1)}>Engineering & Design</div>
-          <div onClick={() => handleClick(2)}>Project Management</div>
-          <div onClick={() => handleClick(3)}>Equipment & Services</div>
-          <div onClick={() => handleClick(4)}>Commissioning</div>
+          <div onClick={() => handleClick(0)}>
+            {t("our_core.icon_core.icon1")}
+          </div>
+          <div onClick={() => handleClick(1)}>
+            {t("our_core.icon_core.icon2")}
+          </div>
+          <div onClick={() => handleClick(2)}>
+            {t("our_core.icon_core.icon3")}
+          </div>
+          <div onClick={() => handleClick(3)}>
+            {t("our_core.icon_core.icon4")}
+          </div>
+          <div onClick={() => handleClick(4)}>
+            {t("our_core.icon_core.icon5")}
+          </div>
         </div>
       </div>
 
@@ -96,40 +96,24 @@ export default function OurCore() {
             <img src={logo} alt="Slika" /> <span>HELMCHRON</span>
           </div>
           <div className="vertical-text">
-            <h4>SERVICES</h4>
+            <h4>
+              {t("services_vertical")}
+            </h4>
           </div>
 
           <div className="img-row">
             <img src={Consulting} alt="Consulting" />
           </div>
           <div>
-            <h3>pre-planning & consulting</h3>
-            <ul>
-              <li>Assessment of investment</li>
-              <li>Capacity planning</li>
-              <li>Assessment of current infrastructure</li>
-              <li>Concept planning and feasibility studies</li>
-              <li>
-                Sustainability considerations and environment impact assessment
-              </li>
-              <li>Process selection and optimization</li>
-              <li>
-                Technology integration - incorporate advanced technology and
-                automation
-              </li>
-              <li>Risk analysis</li>
-              <li>Cost-benefit analysis / engineering-economic analysis</li>
-              <li>Cost estimation</li>
-              <li>Process simulation and sizing of equipment, HAZOP</li>
-              <li>Workforce needs assessment</li>
-              <li>
-                Life-cycle management - equipment and facilities lifecycle plan,
-                maintenance schedules, upgrades and replacements.
-              </li>
-            </ul>
+            <h3>
+              {t("our_core.icon_core.icon1")}
+            </h3>
+            <ul
+              dangerouslySetInnerHTML={{ __html: t("our_core.planning_text") }}
+            />
 
             <a className="book-btn" href="/">
-              Our references
+              {t("btn_references")}
             </a>
           </div>
         </div>
@@ -137,7 +121,7 @@ export default function OurCore() {
 
       <div ref={sectionRefs[1]} className="services">
         <h3 style={{ width: "1440px" }} className="container-main">
-          engineering & design
+          {t("our_core.icon_core.icon2")}
         </h3>
         <div className="services-row row-duble container-main">
           <div className="img-text" style={{ top: -100 }}>
@@ -146,67 +130,23 @@ export default function OurCore() {
           </div>
           <div className="vertical-text">
             <h4 style={{ WebkitTextStroke: "1px var(--dark-blue-color)" }}>
-              SERVICES
+              {t("services_vertical")}
             </h4>
           </div>
           <div className="text">
+            <div
+              dangerouslySetInnerHTML={{ __html: t("our_core.design_text1") }}
+            />
             <div>
-              <span>Basic Engineering:</span>
-
-              <ul>
-                <li>Feasibility studies and data analysis</li>
-                <li>Process description and design</li>
-                <li>Development of process flow diagrams (PFDs)</li>
-                <li>Heat and material balances</li>
-                <li>
-                  Creation of preliminary piping and instrumentation diagrams
-                  (P&IDs)
-                </li>
-                <li> Layout planning</li>
-                <li>Equipment specification and selection</li>
-                <li>Thorough risk assessment</li>
-                <li>Process simulation</li>
-                <li>
-                  Project execution plan, with cost estimation and project
-                  schedule
-                </li>
-              </ul>
-            </div>
-            <div>
-              <span>Detailed Engineering:</span>
-
-              <ul>
-                <li>Development of detailed design</li>
-                <li>
-                  Process engineering design of equipment and piping, including
-                  strength calculations
-                </li>
-                <li>
-                  Technical specification of materials, measurement systems, and
-                  plant components
-                </li>
-                <li>2D/3D planning of piping systems</li>
-                <li>
-                  Integration of various systems and subsystems within the
-                  overall project
-                </li>
-                <li>Installation planning</li>
-                <li>Documentation</li>
-              </ul>
-
-              <span>As-Built</span>
-
-              <ul>
-                <li>Tracking of changes and implementation</li>
-                <li>Documentation</li>
-              </ul>
-
+              <div
+                dangerouslySetInnerHTML={{ __html: t("our_core.design_text2") }}
+              />
               <a
                 style={{ background: "var(--dark-blue-color)" }}
                 className="book-btn"
                 href="/"
               >
-                Our references
+                {t("btn_references")}
               </a>
             </div>
           </div>
@@ -228,7 +168,7 @@ export default function OurCore() {
           </div>
           <div className="vertical-text">
             <h4 style={{ WebkitTextStroke: "1px var(--green-color)" }}>
-              SERVICES
+              {t("services_vertical")}
             </h4>
           </div>
 
@@ -236,23 +176,20 @@ export default function OurCore() {
             <img src={management} alt="management" />
           </div>
           <div>
-            <h3>project management</h3>
+            <h3>
+              {t("our_core.icon_core.icon3")}
+            </h3>
 
-            <ul>
-              <li>Resources planning and control</li>
-              <li>Schedule planning and control</li>
-              <li>Creation of working packages</li>
-              <li>Coordination of deliveries and services</li>
-              <li>Cost monitoring and management</li>
-              <li>Documentation qualification</li>
-            </ul>
+            <ul
+              dangerouslySetInnerHTML={{ __html: t("our_core.project_text") }}
+            />
 
             <a
               className="book-btn"
               style={{ background: "var(--green-color)" }}
               href="/"
             >
-              Our references
+              {t("btn_references")}
             </a>
           </div>
         </div>
@@ -266,30 +203,23 @@ export default function OurCore() {
           </div>
           <div className="vertical-text">
             <h4 style={{ WebkitTextStroke: "1px var(--dark-blue-color)" }}>
-              SERVICES
+              {t("services_vertical")}
             </h4>
           </div>
           <div>
-            <h3>equipment & services</h3>
+            <h3>
+              {t("our_core.icon_core.icon4")}
+            </h3>
 
-            <ul>
-              <li>Design, documentation, and selection</li>
-              <li>Procurement</li>
-              <li>FAT/SAT support and management</li>
-              <li>Installation and integration</li>
-              <li>Maintenance and repairs</li>
-              <li>Revamp of existing equipment</li>
-              <li>Testing and optimization</li>
-              <li>
-                Lifecycle management - from procurement to decommissioning
-              </li>
-            </ul>
+            <ul
+              dangerouslySetInnerHTML={{ __html: t("our_core.equipment_text") }}
+            />
             <a
               className="book-btn"
               href="/"
               style={{ background: "var(--dark-blue-color)" }}
             >
-              Our references
+              {t("btn_references")}
             </a>
           </div>
           <div className="img-row">
@@ -308,28 +238,26 @@ export default function OurCore() {
             <img src={logo} alt="Slika" /> <span>HELMCHRON</span>
           </div>
           <div className="vertical-text">
-            <h4>SERVICES</h4>
+            <h4>
+              {t("services_vertical")}
+            </h4>
           </div>
 
           <div className="img-row">
             <img src={Commissioning} alt="" />
           </div>
           <div>
-            <h3>commissioning</h3>
-            <ul>
-              <li>Development of commissioning plan</li>
-              <li> Systems and equipment inspections</li>
-              <li>Functional testing on systems and equipment</li>
-              <li>Integration testing</li>
-              <li>Performance testing</li>
-              <li>
-                Client acceptance and handover, including personnel training
-              </li>
-              <li>Post-commissioning review to assess the overall process</li>
-            </ul>
+            <h3>
+              {t("our_core.icon_core.icon5")}
+            </h3>
+            <ul
+              dangerouslySetInnerHTML={{
+                __html: t("our_core.commissioning_text")
+              }}
+            />
 
             <a className="book-btn" href="/">
-              Our references
+              {t("btn_references")}
             </a>
           </div>
         </div>
@@ -337,21 +265,20 @@ export default function OurCore() {
 
       <center style={{ marginTop: 50 }}>
         <p>
-          If you wish to learn more about our services and references, book a
-          meeting with our team.
+          {t("our_core.text_book")}
         </p>
         <a
           style={{ background: "var(--dark-blue-color)" }}
           className="book-btn"
           href="/contact"
         >
-          Book a meeting
+          {t("book_btn")}
         </a>
       </center>
 
       <div className="unique" style={{ marginTop: 100 }}>
         <h2 style={{ marginBottom: 0 }} className="title">
-          unique service concept
+          {t("our_core.unique")}
         </h2>
 
         <h3>
