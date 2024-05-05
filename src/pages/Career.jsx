@@ -13,9 +13,11 @@ import "../assets/scss/career.scss";
 import "@coreui/coreui/dist/css/coreui.min.css";
 import { Helmet } from "react-helmet";
 import { IoIosArrowDropup } from "react-icons/io";
+import { useTranslation } from "react-i18next";
 
 export default function Career(i) {
   const [accordion, setAccordion] = useState([0, 3]);
+  const { t } = useTranslation();
 
   const toggle = index => {
     if (accordion.includes(index)) {
@@ -63,18 +65,13 @@ export default function Career(i) {
         {/* Slider end */}
 
         <div className="container-main padding30">
-          <h1 className="title">Join the helmchron team</h1>
-          <p style={{ textAlign: "justify" }}>
-            At Helmchron, we foster a culture of teamwork and agility, where
-            diverse perspectives are respected and encouraged. We prioritize
-            working in an environment where every team member feels empowered to
-            express their opinions and is valued for their contribution. Working
-            on projects across variety of business areas and industries, we
-            welcome Process and Thermotechnics Engineers who embody an
-            entrepreneurial mindset and share our values. <br /> Whether you're
-            a seasoned professional or just starting your career, we honor your
-            potential and your unique perspective to inspire us to new heights.
-          </p>
+          <h1 className="title">
+            {t("career.title")}
+          </h1>
+          <p
+            style={{ textAlign: "justify" }}
+            dangerouslySetInnerHTML={{ __html: t("career.sub_text") }}
+          />
         </div>
       </div>
 
@@ -82,13 +79,16 @@ export default function Career(i) {
         style={{ margin: "100px auto" }}
         className="container-main padding30"
       >
-        <h2 className="title">CAREER OPPORTUNITIES</h2>
+        <h2 className="title">
+          {t("career.opportunities.title")}
+        </h2>
 
-        <p className="text-width">
-          Seeking an impactful professional connection? Wish to have a team
-          chemistry? Share you CV with us. <br /> Please note that only
-          shortlisted candidates will be contacted.
-        </p>
+        <p
+          className="text-width"
+          dangerouslySetInnerHTML={{
+            __html: t("career.opportunities.sub_text")
+          }}
+        />
 
         <div className="accordion-row">
           <div className="accordion">
@@ -97,7 +97,9 @@ export default function Career(i) {
               className="item"
             >
               <div className="item-title" onClick={() => toggle(0)}>
-                <span>For engineering students</span>
+                <span>
+                  {t("career.opportunities.accordion.title1")}
+                </span>
                 <span>
                   <IoIosArrowDropup
                     className={accordion.includes(0) ? "arrow" : ""}
@@ -110,17 +112,11 @@ export default function Career(i) {
                   accordion.includes(0) ? "content show-accor " : "content"
                 }
               >
-                <p>
-                  {" "}Are you enrolled in master studies in mechanical,
-                  process, or thermotechnics engineering and eager to gain
-                  hands-on experience? We offer paid practice opportunities to
-                  enthusiastic future engineers. If you're ready to jumpstart
-                  your career and apply your knowledge in a real-world setting,
-                  we invite you to share your CV with us at{" "}
-                  <a href="mailto:student.practice@helmchron.com">
-                    student.practice@helmchron.com
-                  </a>
-                </p>
+                <p
+                  dangerouslySetInnerHTML={{
+                    __html: t("career.opportunities.accordion.text1")
+                  }}
+                />
               </div>
             </div>
             <div
@@ -128,7 +124,9 @@ export default function Career(i) {
               style={{ background: "var(--lite-orange-color)" }}
             >
               <div onClick={() => toggle(1)} className="item-title">
-                <span>For engineers</span>
+                <span>
+                  {t("career.opportunities.accordion.title2")}
+                </span>
                 <span>
                   <IoIosArrowDropup
                     className={accordion.includes(1) ? "arrow" : ""}
@@ -140,15 +138,11 @@ export default function Career(i) {
                   accordion.includes(1) ? "content show-accor " : "content"
                 }
               >
-                <p>
-                  Are you a mechanical, process, or thermotechnics engineer
-                  looking to take the next step in your career? At Helmchron, we
-                  value experience and expertise at all levels. <br /> Whether
-                  you're a recent graduate or a seasoned professional, we offer
-                  opportunities to apply and develop your skills. Share your CV
-                  at <a href="mailto:jobs@helmchron.com">jobs@helmchron.com</a>
-                  and be part of team and projects that make an impact.
-                </p>
+                <p
+                  dangerouslySetInnerHTML={{
+                    __html: t("career.opportunities.accordion.text2")
+                  }}
+                />
               </div>
             </div>
           </div>
@@ -160,7 +154,9 @@ export default function Career(i) {
       </div>
 
       <div className="box-career container-main padding30">
-        <h2 className="title">CONNECT WITH OUR TEAM</h2>
+        <h2 className="title">
+          {t("career.connect.title")}
+        </h2>
 
         <div className="connect-team">
           <div>
@@ -169,8 +165,12 @@ export default function Career(i) {
               alt="Miloš Ivošević, PhD - CEO, Mechanical engineer"
             />
             <div>
-              <span>Miloš Ivošević, PhD</span>
-              <p>CEO, Mechanical engineer </p>
+              <span>
+                {t("team.team1.name")}
+              </span>
+              <p>
+                {t("team.team1.position")}
+              </p>
               <a
                 href="https://www.linkedin.com/in/dr-milos-ivosevic-300263166/"
                 target="_blank"
@@ -186,8 +186,12 @@ export default function Career(i) {
               alt="Anja Anđelković, MSc - Projects Lead, Mechanical engineer"
             />
             <div>
-              <span>Anja Anđelković, MSc</span>
-              <p>COO, Mechanical engineer </p>
+              <span>
+                {t("team.team2.name")}
+              </span>
+              <p>
+                {t("team.team2.position")}
+              </p>
               <a
                 href="https://www.linkedin.com/in/anja-andjelkovic-866b30182"
                 target="_blank"
@@ -202,11 +206,13 @@ export default function Career(i) {
 
       <div className="faqs-container padding30">
         <h2 style={{ marginBottom: 20 }} className="title">
-          RECRUITMENT FAQs
+          {t("career.faqs.title")}
         </h2>
 
         <center>
-          <p>Find answers to common questions about joining our team.</p>
+          <p>
+            {t("career.faqs.sub_text")}
+          </p>
         </center>
 
         <div
@@ -215,7 +221,9 @@ export default function Career(i) {
         >
           <div className="item">
             <div className="item-title blue" onClick={() => toggle(3)}>
-              <span>How can I enroll in the recruitment process?</span>
+              <span>
+                {t("career.faqs.accor.title1")}
+              </span>
               <span>
                 <IoIosArrowDropup
                   className={accordion.includes(3) ? "arrow" : ""}
@@ -228,23 +236,18 @@ export default function Career(i) {
                 accordion.includes(3) ? "content show-accor " : "content"
               }
             >
-              <p>
-                To enroll in our recruitment process, simply submit your CV to{" "}
-                <a href="mailto:student.practice@helmchron.com">
-                  student.practice@helmchron.com
-                </a>{" "}
-                or <a href="mailto:jobs@helmchron.com">jobs@helmchron.com</a>.
-                We welcome applications from candidates with suitable education
-                and qualifications. Our recruitment team carefully reviews all
-                applications, and only shortlisted candidates will be contacted
-                for further consideration. Thank you for your interest in
-                joining our team.
-              </p>
+              <p
+                dangerouslySetInnerHTML={{
+                  __html: t("career.faqs.accor.text1")
+                }}
+              />
             </div>
           </div>
           <div className="item">
             <div className="item-title blue" onClick={() => toggle(4)}>
-              <span>What is a paid student practice?</span>
+              <span>
+                {t("career.faqs.accor.title2")}
+              </span>
               <span>
                 <IoIosArrowDropup
                   className={accordion.includes(4) ? "arrow" : ""}
@@ -258,24 +261,15 @@ export default function Career(i) {
               }
             >
               <p>
-                A paid student practice is a valuable opportunity for master's
-                students of mechanical, process, or thermotechnics engineering
-                to gain hands-on experience. It provides students with the
-                chance to apply their academic knowledge in a professional
-                setting, working alongside experienced engineers and
-                contributing to meaningful projects. Through this program,
-                students can enhance their practical skills, expand their
-                industry knowledge, and prepare themselves for future career
-                opportunities. The duration of the practice can range from 3
-                months until the completion of a particular project, offering
-                flexibility to accommodate varying schedules and project
-                timelines.
+                {t("career.faqs.accor.text2")}
               </p>
             </div>
           </div>
           <div className="item">
             <div className="item-title blue" onClick={() => toggle(5)}>
-              <span>What is the recruitment process like?</span>
+              <span>
+                {t("career.faqs.accor.title3")}
+              </span>
               <span>
                 <IoIosArrowDropup
                   className={accordion.includes(5) ? "arrow" : ""}
@@ -289,20 +283,15 @@ export default function Career(i) {
               }
             >
               <p>
-                Our recruitment process begins with a thorough review of all
-                applications received. Only candidates who meet the
-                qualifications will be shortlisted for further consideration.
-                Shortlisted candidates will be invited to participate in
-                interviews, typically consisting of 2 to 3 rounds. During these
-                interviews, our team assesses candidates' skills, experience,
-                and fit for the role. We strive to ensure a comprehensive and
-                fair evaluation process for all applicants.
+                {t("career.faqs.accor.text3")}
               </p>
             </div>
           </div>
           <div className="item">
             <div className="item-title blue" onClick={() => toggle(6)}>
-              <span>Can I work part-time?</span>
+              <span>
+                {t("career.faqs.accor.title4")}
+              </span>
               <span>
                 <IoIosArrowDropup
                   className={accordion.includes(6) ? "arrow" : ""}
@@ -316,17 +305,15 @@ export default function Career(i) {
               }
             >
               <p>
-                While we do consider part-time arrangements, the feasibility
-                largely depends on the project's scope and specific
-                requirements. We strive to accommodate part-time work where
-                possible, but we cannot guarantee it for all our projects due to
-                varying project dynamics and client needs.
+                {t("career.faqs.accor.text4")}
               </p>
             </div>
           </div>
           <div className="item">
             <div className="item-title blue" onClick={() => toggle(7)}>
-              <span>Are working hours flexible?</span>
+              <span>
+                {t("career.faqs.accor.title5")}
+              </span>
               <span>
                 <IoIosArrowDropup
                   className={accordion.includes(7) ? "arrow" : ""}
@@ -340,17 +327,15 @@ export default function Career(i) {
               }
             >
               <p>
-                We offer flexibility in working hours, however, please note that
-                the degree of flexibility can vary based on the requirements of
-                each project and the needs of our clients. While we prioritize
-                accommodating our team members, our focus is on meeting our
-                clients' needs and project deadlines.
+                {t("career.faqs.accor.text5")}
               </p>
             </div>
           </div>
           <div className="item">
             <div className="item-title blue" onClick={() => toggle(8)}>
-              <span>Can I work from home?</span>
+              <span>
+                {t("career.faqs.accor.title6")}
+              </span>
               <span>
                 <IoIosArrowDropup
                   className={accordion.includes(8) ? "arrow" : ""}
@@ -364,13 +349,7 @@ export default function Career(i) {
               }
             >
               <p>
-                Work from home and hybrid work arrangements are a possibility.
-                It is important to recognize that many of our projects involve
-                intricate operations that necessitate ongoing collaboration
-                among our team members. Our commitment to delivering timely
-                results to our partners often requires close coordination within
-                our team, which is why on-site presence may be necessary for
-                certain projects.
+                {t("career.faqs.accor.text6")}
               </p>
             </div>
           </div>
@@ -378,7 +357,9 @@ export default function Career(i) {
       </div>
 
       <div className="video-envi box-career padding30">
-        <h2 className="title">FIND OUT MORE ABOUT WORKING IN OUR TEAM</h2>
+        <h2 className="title">
+          {t("career.video_title")}
+        </h2>
 
         <iframe
           className="video-yt"

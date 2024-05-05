@@ -357,6 +357,92 @@ const data = {
           "If you wish to learn more about our services and references, book a meeting with our team.",
         unique: "unique service concept"
       },
+      career: {
+        title: "Join the helmchron team",
+        sub_text: `  At Helmchron, we foster a culture of teamwork and agility, where
+            diverse perspectives are respected and encouraged. We prioritize
+            working in an environment where every team member feels empowered to
+            express their opinions and is valued for their contribution. Working
+            on projects across variety of business areas and industries, we
+            welcome Process and Thermotechnics Engineers who embody an
+            entrepreneurial mindset and share our values. <br /> Whether you're
+            a seasoned professional or just starting your career, we honor your
+            potential and your unique perspective to inspire us to new heights.`,
+        opportunities: {
+          title: "CAREER OPPORTUNITIES",
+          sub_text: `Seeking an impactful professional connection? Wish to have a team chemistry? Share you CV with us. <br /> Please note that only shortlisted candidates will be contacted.`,
+          accordion: {
+            title1: "For engineering students",
+            text1: `   Are you enrolled in master studies in mechanical, process, or
+                  thermotechnics engineering and eager to gain hands-on
+                  experience? We offer paid practice opportunities to
+                  enthusiastic future engineers. If you're ready to jumpstart
+                  your career and apply your knowledge in a real-world setting,
+                  we invite you to share your CV with us at
+                  <a href="mailto:student.practice@helmchron.com">
+                    student.practice@helmchron.com
+                  </a>`,
+            title2: "For engineers",
+            text2: ` Are you a mechanical, process, or thermotechnics engineer
+                  looking to take the next step in your career? At Helmchron, we
+                  value experience and expertise at all levels. <br /> Whether
+                  you're a recent graduate or a seasoned professional, we offer
+                  opportunities to apply and develop your skills. Share your CV
+                  at <a href="mailto:jobs@helmchron.com">jobs@helmchron.com</a>
+                  and be part of team and projects that make an impact.`
+          }
+        },
+        connect: {
+          title: "connect with our team"
+        },
+        faqs: {
+          title: "recruitment faqs",
+          sub_text: "Find answers to common questions about joining our team.",
+          accor: {
+            title1: "How can I enroll in the recruitment process?",
+            text1: `  To enroll in our recruitment process, simply submit your CV to
+                <a href="mailto:student.practice@helmchron.com">
+                  student.practice@helmchron.com</a> or <a href="mailto:jobs@helmchron.com">jobs@helmchron.com</a>.
+                We welcome applications from candidates with suitable education
+                and qualifications. Our recruitment team carefully reviews all
+                applications, and only shortlisted candidates will be contacted
+                for further consideration. Thank you for your interest in
+                joining our team.`,
+            title2: "What is a paid student practice?",
+            text2: `  A paid student practice is a valuable opportunity for master's students of mechanical, process, or thermotechnics engineering to gain hands-on experience. It provides students with the chance to apply their academic knowledge in a professional setting, working alongside experienced engineers and contributing to meaningful projects. Through this program,students can enhance their practical skills, expand their industry knowledge, and prepare themselves for future career opportunities. The duration of the practice can range from 3
+            months until the completion of a particular project, offering
+            flexibility to accommodate varying schedules and project timelines.`,
+            title3: "What is the recruitment process like?",
+            text3: ` Our recruitment process begins with a thorough review of all applications received. Only candidates who meet the
+                qualifications will be shortlisted for further consideration.
+                Shortlisted candidates will be invited to participate in
+                interviews, typically consisting of 2 to 3 rounds. During these
+                interviews, our team assesses candidates' skills, experience,
+                and fit for the role. We strive to ensure a comprehensive and fair evaluation process for all applicants.`,
+            title4: "Can I work part-time?",
+            text4: ` While we do consider part-time arrangements, the feasibility
+                largely depends on the project's scope and specific
+                requirements. We strive to accommodate part-time work where
+                possible, but we cannot guarantee it for all our projects due to
+                varying project dynamics and client needs.`,
+            title5: "Are working hours flexible?",
+            text5: `We offer flexibility in working hours, however, please note that
+                the degree of flexibility can vary based on the requirements of
+                each project and the needs of our clients. While we prioritize
+                accommodating our team members, our focus is on meeting our
+                clients' needs and project deadlines.`,
+            title6: "Can I work from home?",
+            text6: `Work from home and hybrid work arrangements are a possibility.
+                It is important to recognize that many of our projects involve
+                intricate operations that necessitate ongoing collaboration
+                among our team members. Our commitment to delivering timely
+                results to our partners often requires close coordination within
+                our team, which is why on-site presence may be necessary for
+                certain projects.`
+          }
+        },
+        video_title: 'find out more about working in our team'
+      },
 
       book_btn: "Book a meeting",
       send: "Send",
