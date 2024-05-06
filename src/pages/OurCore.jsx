@@ -124,7 +124,7 @@ export default function OurCore() {
           {t("our_core.icon_core.icon2")}
         </h3>
         <div className="services-row row-duble container-main">
-          <div className="img-text" style={{ top: -100 }}>
+          <div className="img-text" style={{ top: -120 }}>
             <img src={logo} alt="Slika" />{" "}
             <span className="blue">HELMCHRON</span>
           </div>
