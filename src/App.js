@@ -1,4 +1,4 @@
-import React, {lazy, Suspense } from "react";
+import React, {lazy, Suspense, useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Cookies from "./components/Cookies";
 import Thanks from "./pages/Thanks";
@@ -30,15 +30,18 @@ const K2022 = lazy(() => import("./pages/K2022"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 
 function App() {
-
+  const [isVisible, setIsVisible] = useState(false);
   const renderLoader = () => <p>Loading</p>;
 
+    useEffect(() => {
+      setIsVisible(true);
+    }, []);
 
-  return <div id="App">
+
+  return <div className={`App ${isVisible ? "visible" : ""}`}>
       <Router>
         <Suspense fallback={renderLoader()}>
           <Header />
-          {/* <Navbar /> */}
         </Suspense>
         <Routes>
           <Route path="/" element={<Home />} />

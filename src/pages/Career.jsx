@@ -1,8 +1,8 @@
 import { CCarousel, CCarouselItem, CImage } from "@coreui/react";
 import React, { useState } from "react";
-import mainImg from "../assets/images/Career/Slika1.png";
-import mainImg1 from "../assets/images/Career/Slika2.png";
-import mainImg2 from "../assets/images/Career/Slika3.png";
+import mainImg from "../assets/images/Career/Slika1.jpg";
+import mainImg1 from "../assets/images/Career/Slika2.jpg";
+import mainImg2 from "../assets/images/Career/Slika3.jpg";
 import icon1 from "../assets/images/Career/Milos.png";
 import icon2 from "../assets/images/Career/Anja.png";
 import iconLinkedine from "../assets/images/linkedine.webp";

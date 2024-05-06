@@ -4,9 +4,9 @@ import { useTranslation } from "react-i18next";
 import { Helmet } from "react-helmet";
 import Modal from "react-modal";
 
-import mainImg from "../assets/images/Who/who3.png";
-import mainImg2 from "../assets/images/Who/who1.png";
-import mainImg1 from "../assets/images/Who/who2.png";
+import mainImg from "../assets/images/Who/who3.jpg";
+import mainImg2 from "../assets/images/Who/who1.jpg";
+import mainImg1 from "../assets/images/Who/who2.jpg";
 import basicImg from "../assets/images/Who/basicImg.png";
 import OurImg from "../assets/images/Who/our-history.png";
 import OUR_CREDO from "../assets/images/Who/OUR_CREDO.png";
@@ -186,13 +186,13 @@ const WhoAreWe = () => {
                 <a href="tel:+381642938533">+381 64 293 85 33</a>
               </li>
               <li>
-                {t('info.email')}{" "}
+                {t("info.email")}{" "}
                 <a href="mailto:milos.ivosevic@helmchron.com">
                   milos.ivosevic@helmchron.com
                 </a>
               </li>
               <li>
-                {t('info.linkedin')}{" "}
+                {t("info.linkedin")}{" "}
                 <a
                   href="https://www.linkedin.com/in/dr-milos-ivosevic-300263166"
                   target="_blank"

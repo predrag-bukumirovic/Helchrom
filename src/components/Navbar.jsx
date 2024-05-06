@@ -44,7 +44,7 @@ export default function Navbar() {
         />
         <div className="logo">
           <a href="/">
-            <img src={logo} alt="Helmchron Logo" />
+            <img style={{ marginRight: 5 }} src={logo} alt="Helmchron Logo" />
             <img className="logo-connects" src={ChemistryConnects} alt="" />
           </a>
         </div>

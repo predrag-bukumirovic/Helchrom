@@ -22,6 +22,22 @@ body,
   overflow-x: hidden;
   height: 100%;
 }
+.App {
+  opacity: 0;
+}
+
+.App.visible {
+  animation: transitionIn 1s forwards;
+}
+
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
 * {
   box-sizing: border-box;

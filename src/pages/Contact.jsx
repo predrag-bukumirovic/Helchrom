@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import "../assets/scss/contact.scss";
 import "../assets/scss/slider.scss";
-import mainImg from "../assets/images/Contact/contact1.png";
-import mainImg1 from "../assets/images/Contact/contact2.png";
-import mainImg2 from "../assets/images/Contact/contact3.png";
+import mainImg from "../assets/images/Contact/contact1.jpg";
+import mainImg1 from "../assets/images/Contact/contact2.jpg";
+import mainImg2 from "../assets/images/Contact/contact3.jpg";
 import icon1 from "../assets/images/Contact/1.png";
 import icon2 from "../assets/images/Contact/2.png";
 import icon3 from "../assets/images/Contact/3.png";

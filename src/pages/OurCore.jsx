@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import "../assets/scss/slider.scss";
 import "../assets/scss/services.scss";
 import "../assets/scss/home.scss";
-import mainImg from "../assets/images/OurCore/c-s1.png";
+import mainImg from "../assets/images/OurCore/c-s1.jpg";
 import mainImg1 from "../assets/images/OurCore/c-s2.webp";
 import mainImg2 from "../assets/images/OurCore/c-s3.webp";
 import Consulting from "../assets/images/OurCore/Consulting.png";

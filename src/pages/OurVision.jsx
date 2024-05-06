@@ -102,7 +102,10 @@ export default function OurVision() {
             {t("vision.our_mission_vision.title")}
           </h2>
 
-          <div className="row-m-v">
+          <div
+            className="row-m-v"
+            style={{ background: "var(--lite-orange-color)" }}
+          >
             <div className="container-main padding30">
               <div className="col">
                 <div className="col-img">
