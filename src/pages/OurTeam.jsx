@@ -193,7 +193,7 @@ export default function OurTeam() {
                 {t("team.values_icon.icon3.text")}
               </p>
             </div>
-            <div style={{ background: "var(--lite-orange-color)" }}>
+            <div style={{ background: "var(--light-orange-color)" }}>
               <img src={icon3} alt="icon3" />
               <p>
                 <b>

@@ -104,7 +104,7 @@ export default function OurVision() {
 
           <div
             className="row-m-v"
-            style={{ background: "var(--lite-orange-color)" }}
+            style={{ background: "var(--light-orange-color)" }}
           >
             <div className="container-main padding30">
               <div className="col">

@@ -2,11 +2,11 @@
 
 :root {
   --brend-color: #ffa500;
-  --light-blue-color: #f2f3fa;
+  --light-blue-color: #f4f6fc;
   --dark-blue-color: #0b41cd;
   --green-color: #4e8351;
-  --lite-green-color: #f3fadc;
-  --lite-orange-color: #fff2ee;
+  --light-green-color: #f3fadc;
+  --light-orange-color: #fff2ee;
   --gray-text-color: #000;
   --font-family: 'Neue Einstellung', sans-serif;
 }
@@ -57,8 +57,9 @@ body {
 }
 
 .container-main {
-  width: 1500px;
+  width: 1400px;
   margin: 0 auto;
+  position: relative;
 }
 
 .slider {

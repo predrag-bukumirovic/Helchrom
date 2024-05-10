@@ -14,6 +14,7 @@ const News = lazy(() => import("./pages/News"));
 const Contact = lazy(() => import("./pages/Contact"));
 const WhoAreWe = lazy(() => import("./pages/WhoAreWe"));
 const OurTeam = lazy(() => import("./pages/OurTeam"));
+const References = lazy(() => import("./pages/References"));
 const OurVision = lazy(() => import("./pages/OurVision"));
 const OurValues = lazy(() => import("./pages/OurValues"));
 const OurCore = lazy(() => import("./pages/OurCore"));
@@ -66,6 +67,7 @@ function App() {
           <Route path="/vehicles" element={<Vehicles />} />
           <Route path="/news/achema" element={<Achema />} />
           <Route path="/news/k2022" element={<K2022 />} />
+          <Route path="/references" element={<References />} />
           <Route path="/thanks" element={<Thanks />} />
           <Route path="/*" element={<NotFound />} />
         </Routes>

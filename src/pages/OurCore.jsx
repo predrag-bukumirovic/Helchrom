@@ -89,7 +89,7 @@ export default function OurCore() {
       <div
         ref={sectionRefs[0]}
         className="services"
-        style={{ background: "var(--lite-orange-color)", marginTop: 100 }}
+        style={{ background: "var(--light-orange-color)", marginTop: 100 }}
       >
         <div style={{ gap: 100 }} className="services-row container-main">
           <div className="img-text">
@@ -159,7 +159,7 @@ export default function OurCore() {
       <div
         ref={sectionRefs[2]}
         className="services"
-        style={{ background: "var(--lite-green-color)" }}
+        style={{ background: "var(--light-green-color)" }}
       >
         <div style={{ gap: 500 }} className="services-row container-main">
           <div className="img-text">
@@ -231,7 +231,7 @@ export default function OurCore() {
       <div
         ref={sectionRefs[4]}
         className="services"
-        style={{ background: "var(--lite-orange-color)" }}
+        style={{ background: "var(--light-orange-color)" }}
       >
         <div style={{ gap: 350 }} className="services-row container-main">
           <div className="img-text">

@@ -93,7 +93,7 @@ export default function Career(i) {
         <div className="accordion-row">
           <div className="accordion">
             <div
-              style={{ background: "var(--lite-orange-color)" }}
+              style={{ background: "var(--light-orange-color)" }}
               className="item"
             >
               <div className="item-title" onClick={() => toggle(0)}>
@@ -121,7 +121,7 @@ export default function Career(i) {
             </div>
             <div
               className="item"
-              style={{ background: "var(--lite-orange-color)" }}
+              style={{ background: "var(--light-orange-color)" }}
             >
               <div onClick={() => toggle(1)} className="item-title">
                 <span>

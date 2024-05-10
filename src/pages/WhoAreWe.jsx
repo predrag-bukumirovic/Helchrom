@@ -110,7 +110,7 @@ const WhoAreWe = () => {
         <p dangerouslySetInnerHTML={{ __html: t("who_are_we.credo_text") }} />
       </div>
 
-      <div style={{ background: "var(--lite-orange-color)" }}>
+      <div style={{ background: "var(--light-orange-color)" }}>
         <div className="container-main credo-testimonial">
           <div>
             <img src={OurcredoImg} alt="OurcredoImg" />
