@@ -308,7 +308,7 @@ export default function Home() {
               Facts5
             ].map((img, index) =>
               <div key={index} className="icon-item">
-                <img src={img} alt="" />
+                <img src={img} alt="Facts img" />
                 <div className="text">
                   <span className="word">
                     {index === 0

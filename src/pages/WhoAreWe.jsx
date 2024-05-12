@@ -18,18 +18,18 @@ import WhoIcons from "../components/WhoIcons";
 
 const customStyles = {
   content: {
-    top: "50%",
+    top: "40%",
     left: "50%",
     right: "auto",
     bottom: "auto",
     zIndex: 999999,
     marginRight: "-50%",
     transform: "translate(-50%, -50%)",
-    maxWidth: "80%",
-    maxHeight: "80%",
+    maxWidth: "100%",
+    maxHeight: "100%",
     overflow: "auto",
     padding: "20px",
-    marginTop: 50
+    marginTop: 100
   }
 };
 
@@ -139,14 +139,14 @@ const WhoAreWe = () => {
               <button
                 style={{
                   border: "none",
-                  padding: 10,
+                  padding: "10px 20px",
                   background: "var(--brend-color)",
                   marginBottom: 10,
                   color: "#fff"
                 }}
                 onClick={closeModal}
               >
-                Close Modal
+                X
               </button>
               <img style={{ width: "100%" }} src={OUR_CREDO} alt="Our Credo" />
             </Modal>

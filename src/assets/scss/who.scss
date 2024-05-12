@@ -50,25 +50,13 @@
     img {
       width: 400px;
 
-      img {
-        width: 70%;
-
-        @media (max-width: 1200px) {
-          width: 100%;
-        }
-
-        @media (max-width: 600px) {
-          width: 100%;
-        }
+      @media (max-width: 600px) {
+        width: 100%;
       }
     }
 
-    @media (max-width: 1200px) {
+    @media (max-width: 800px) {
       display: block;
-
-      .img {
-        width: 100%;
-      }
     }
   }
 }
@@ -143,7 +131,7 @@
 
   div {
     p {
-      font-size: 25px;
+      font-size: 22px;
       position: relative;
       margin-bottom: 40px;
 
@@ -175,6 +163,7 @@
   @media (max-width: 750px) {
     grid-template-columns: auto;
     padding-bottom: 50px;
+    gap: 20px;
 
     div {
       p {
@@ -185,4 +174,8 @@
       }
     }
   }
+}
+
+.ReactModal__Overlay {
+  background: rgba(0, 0, 0, 0.5) !important;
 }

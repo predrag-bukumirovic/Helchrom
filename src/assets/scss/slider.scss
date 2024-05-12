@@ -246,6 +246,11 @@
         left: 0px;
         bottom: 80px;
 
+        @media (max-width: 567px) {
+          left: 100px;
+          bottom: -42px;
+        }
+
         &:nth-of-type(1) {
           z-index: 9999;
         }
@@ -268,6 +273,11 @@
   position: absolute;
   right: 0;
   bottom: 80px;
+
+  @media (max-width: 567px) {
+    right: 100px;
+    bottom: -42px;
+  }
 }
 
 .rotatingText-adjective:nth-of-type(1) {

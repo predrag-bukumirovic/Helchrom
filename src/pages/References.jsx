@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "../assets/scss/slider.scss";
 import "../assets/scss/home.scss";
 import "../assets/scss/services.scss";
@@ -6,8 +6,8 @@ import "../assets/scss/references.scss";
 
 import { CCarousel, CCarouselItem, CImage } from "@coreui/react";
 
-import mainImg from "../assets/images/OurCore/c-s1.jpg";
-import mainImg1 from "../assets/images/OurCore/c-s2.webp";
+import mainImg from "../assets/images/References/Slika1.jpg";
+import mainImg1 from "../assets/images/References/Slika2.jpg";
 import mainImg2 from "../assets/images/OurCore/c-s3.webp";
 
 // images references
@@ -31,6 +31,25 @@ import OMV from "../assets/images/References/OMV.png";
 import Projectsperyear from "../assets/images/References/Projectsperyear.png";
 import Servicesdistribution from "../assets/images/References/Servicesdistribution.png";
 
+// card
+import card1 from "../assets/images/References/cards/1.png";
+import card2 from "../assets/images/References/cards/2.png";
+import card3 from "../assets/images/References/cards/3.png";
+import card4 from "../assets/images/References/cards/4.png";
+import card5 from "../assets/images/References/cards/5.png";
+import card6 from "../assets/images/References/cards/6.png";
+import card7 from "../assets/images/References/cards/7.png";
+import card8 from "../assets/images/References/cards/8.png";
+import card9 from "../assets/images/References/cards/9.png";
+import card10 from "../assets/images/References/cards/10.png";
+import card11 from "../assets/images/References/cards/11.png";
+import card12 from "../assets/images/References/cards/12.png";
+import card13 from "../assets/images/References/cards/13.png";
+import card14 from "../assets/images/References/cards/14.png";
+import card15 from "../assets/images/References/cards/15.png";
+import card16 from "../assets/images/References/cards/16.png";
+import card17 from "../assets/images/References/cards/17.png";
+
 // icon %
 import Chemicals from "../assets/images/References/Chemicals.png";
 import Electronics from "../assets/images/References/Electronics.png";
@@ -41,7 +60,50 @@ import Pharmaceuticals from "../assets/images/References/Pharmaceuticals&Lifesci
 
 const mainImages = [mainImg, mainImg1, mainImg2];
 
+const Modal = ({ isOpen, toggleModal, imageSrc }) => {
+  const [modalState, setModalState] = useState(isOpen);
+
+  useEffect(
+    () => {
+      setModalState(isOpen);
+
+      if (isOpen) {
+        document.body.style.overflow = "hidden";
+      } else {
+        document.body.style.overflow = "unset";
+      }
+    },
+    [isOpen]
+  );
+
+  const handleClose = () => {
+    toggleModal();
+  };
+
+  return (
+    <div
+      className={`modal ${modalState ? "open" : "closed"}`}
+      onClick={handleClose}
+    >
+      <div className="modal-content" onClick={e => e.stopPropagation()}>
+        <img onClick={handleClose} src={imageSrc} alt="Slika" />
+      </div>
+    </div>
+  );
+};
+
 export default function References() {
+  const [modalOpen, setModalOpen] = useState(false);
+  const [currentImage, setCurrentImage] = useState("");
+
+  const toggleModal = () => {
+    setModalOpen(!modalOpen);
+  };
+
+  const handleButtonClick = imageSrc => {
+    setCurrentImage(imageSrc);
+    toggleModal();
+  };
   return (
     <div>
       <div className="slider">
@@ -94,26 +156,34 @@ export default function References() {
           className="reference"
         >
           <div className="container-main">
-            <div className="vertical-text">
+            <div className="vertical-text reference-vertical">
               <h4 style={{ WebkitTextStroke: "1px var(--dark-blue-color)" }}>
                 PHARMA
               </h4>
             </div>
             <div className="text">
-              <h3 className="title">vetter pharma</h3>
+              <h3 className="title">
+                vetter pharma <br /> <span className="text-stroke">2022</span>
+              </h3>
               <p>
                 Detailed engineering and construction planning of clean mediums
                 for the new production plant.
               </p>
 
               <span
+                onClick={() => handleButtonClick(card1)}
                 style={{ background: "var(--dark-blue-color)" }}
                 className="book-btn"
               >
                 Read more
               </span>
+              <Modal
+                isOpen={modalOpen}
+                toggleModal={toggleModal}
+                imageSrc={currentImage}
+              />
             </div>
-            <div>
+            <div className="ref-img">
               <img src={Vetter} alt="Vetter" />
             </div>
           </div>
@@ -122,13 +192,15 @@ export default function References() {
         {/* row 2 */}
         <div className="reference">
           <div className="container-main reverse">
-            <div className="vertical-text">
+            <div className="vertical-text reference-vertical">
               <h4 style={{ WebkitTextStroke: "1px var(--dark-blue-color)" }}>
                 PHARMA
               </h4>
             </div>
             <div className="text">
-              <h3 className="title">novartis</h3>
+              <h3 className="title">
+                novartis <br /> <span className="text-stroke">2019</span>
+              </h3>
 
               <p>
                 Detailed engineering for the new production plant of innovative
@@ -136,13 +208,14 @@ export default function References() {
               </p>
 
               <span
+                onClick={() => handleButtonClick(card2)}
                 style={{ background: "var(--dark-blue-color)" }}
                 className="book-btn"
               >
                 Read more
               </span>
             </div>
-            <div>
+            <div className="ref-img">
               <img src={Novartis} alt="Novartis" />
             </div>
           </div>
@@ -154,13 +227,16 @@ export default function References() {
           className="reference"
         >
           <div className="container-main">
-            <div className="vertical-text">
+            <div className="vertical-text reference-vertical">
               <h4 style={{ WebkitTextStroke: "1px var(--dark-blue-color)" }}>
                 PHARMA
               </h4>
             </div>
             <div className="text">
-              <h3 className="title">roche diagnostics</h3>
+              <h3 className="title">
+                roche diagnostics <br />
+                <span className="text-stroke">2020</span>
+              </h3>
 
               <p>
                 Detailed engineering for the new production plant of medical
@@ -168,6 +244,7 @@ export default function References() {
               </p>
 
               <span
+                onClick={() => handleButtonClick(card3)}
                 style={{ background: "var(--dark-blue-color)" }}
                 className="book-btn"
               >
@@ -175,7 +252,7 @@ export default function References() {
               </span>
             </div>
 
-            <div>
+            <div className="ref-img">
               <img src={RocheDiagnostics} alt="RocheDiagnostics" />
             </div>
           </div>
@@ -184,24 +261,27 @@ export default function References() {
         {/* row 4 */}
         <div className="reference">
           <div className="container-main reverse">
-            <div className="vertical-text">
+            <div className="vertical-text reference-vertical">
               <h4 style={{ WebkitTextStroke: "1px var(--dark-blue-color)" }}>
                 PHARMA
               </h4>
             </div>
             <div className="text">
-              <h3 className="title">bachem</h3>
+              <h3 className="title">
+                bachem <br /> <span className="text-stroke">2023</span>
+              </h3>
 
               <p>Piping and support design for the new production plant.</p>
 
               <span
+                onClick={() => handleButtonClick(card4)}
                 style={{ background: "var(--dark-blue-color)" }}
                 className="book-btn"
               >
                 Read more
               </span>
             </div>
-            <div>
+            <div className="ref-img">
               <img src={Bachem} alt="Bachem" />
             </div>
           </div>
@@ -213,13 +293,15 @@ export default function References() {
           style={{ background: "var(--light-green-color)" }}
         >
           <div className="container-main">
-            <div className="vertical-text">
+            <div className="vertical-text reference-vertical">
               <h4 style={{ WebkitTextStroke: "1px var(--green-color)" }}>
                 FOOD
               </h4>
             </div>
             <div className="text">
-              <h3 className="title">dsm</h3>
+              <h3 className="title">
+                dsm <br /> <span className="text-stroke green">2021</span>
+              </h3>
 
               <p>
                 Pre-planning for the new production plant of cattle feed
@@ -227,13 +309,14 @@ export default function References() {
               </p>
 
               <span
+                onClick={() => handleButtonClick(card5)}
                 style={{ background: "var(--green-color)" }}
                 className="book-btn"
               >
                 Read more
               </span>
             </div>
-            <div>
+            <div className="ref-img">
               <img src={DSM} alt="DSM" />
             </div>
           </div>
@@ -241,19 +324,22 @@ export default function References() {
 
         <div className="reference">
           <div className="container-main reverse">
-            <div className="vertical-text">
+            <div className="vertical-text reference-vertical">
               <h4 style={{ WebkitTextStroke: "1px var(--green-color)" }}>
                 FOOD
               </h4>
             </div>
             <div className="text">
-              <h3 className="title">destilla</h3>
+              <h3 className="title">
+                destilla <br /> <span className="text-stroke green">2023</span>
+              </h3>
 
               <p>
                 Basic engineering and consulting for a new extraction plant.
               </p>
 
               <span
+                onClick={() => handleButtonClick(card6)}
                 style={{ background: "var(--green-color)" }}
                 className="book-btn"
               >
@@ -261,7 +347,7 @@ export default function References() {
               </span>
             </div>
 
-            <div>
+            <div className="ref-img">
               <img src={Destilla} alt="Destilla" />
             </div>
           </div>
@@ -272,17 +358,20 @@ export default function References() {
           style={{ background: "var(--light-green-color)" }}
         >
           <div className="container-main">
-            <div className="vertical-text">
+            <div className="vertical-text reference-vertical">
               <h4 style={{ WebkitTextStroke: "1px var(--green-color)" }}>
                 FOOD
               </h4>
             </div>
             <div className="text">
-              <h3 className="title">primopus</h3>
+              <h3 className="title">
+                primopus <br /> <span className="text-stroke green">2023</span>
+              </h3>
 
               <p>Detailed engineering for the new production segment.</p>
 
               <span
+                onClick={() => handleButtonClick(card7)}
                 style={{ background: "var(--green-color)" }}
                 className="book-btn"
               >
@@ -290,7 +379,7 @@ export default function References() {
               </span>
             </div>
 
-            <div>
+            <div className="ref-img">
               <img src={primopus} alt="primopus" />
             </div>
           </div>
@@ -298,13 +387,16 @@ export default function References() {
 
         <div className="reference">
           <div className="container-main reverse">
-            <div className="vertical-text">
+            <div className="vertical-text reference-vertical">
               <h4 style={{ WebkitTextStroke: "1px var(--green-color)" }}>
                 FOOD
               </h4>
             </div>
             <div className="text">
-              <h3 className="title">jungbunzlauer</h3>
+              <h3 className="title">
+                jungbunzlauer <br />{" "}
+                <span className="text-stroke green">2022</span>
+              </h3>
 
               <p>
                 Pre-planning and basic engineering of the new production plant
@@ -312,13 +404,14 @@ export default function References() {
               </p>
 
               <span
+                onClick={() => handleButtonClick(card8)}
                 style={{ background: "var(--green-color)" }}
                 className="book-btn"
               >
                 Read more
               </span>
             </div>
-            <div>
+            <div className="ref-img">
               <img src={Jungbunzlauer} alt="Jungbunzlauer" />
             </div>
           </div>
@@ -329,13 +422,15 @@ export default function References() {
           style={{ background: "var(--light-green-color)" }}
         >
           <div className="container-main">
-            <div className="vertical-text">
+            <div className="vertical-text reference-vertical">
               <h4 style={{ WebkitTextStroke: "1px var(--green-color)" }}>
                 FOOD
               </h4>
             </div>
             <div className="text">
-              <h3 className="title">exyte</h3>
+              <h3 className="title">
+                exyte <br /> <span className="text-stroke green">2023</span>
+              </h3>
 
               <p>
                 Basic engineering of the new production plant for nutrition
@@ -343,13 +438,14 @@ export default function References() {
               </p>
 
               <span
+                onClick={() => handleButtonClick(card9)}
                 style={{ background: "var(--green-color)" }}
                 className="book-btn"
               >
                 Read more
               </span>
             </div>
-            <div>
+            <div className="ref-img">
               <img src={Exyte} alt="Exyte" />
             </div>
           </div>
@@ -357,26 +453,29 @@ export default function References() {
 
         <div className="reference">
           <div className="container-main reverse">
-            <div className="vertical-text">
+            <div className="vertical-text reference-vertical">
               <h4 style={{ WebkitTextStroke: "1px var(--brend-color)" }}>
                 CHEMICALS
               </h4>
             </div>
             <div className="text">
-              <h3 className="title">basf</h3>
+              <h3 className="title">
+                basf <br /> <span className="text-stroke orange">2022</span>
+              </h3>
 
               <p>
                 Detailed engineering for the new production plant of vitamin A.
               </p>
 
               <span
+                onClick={() => handleButtonClick(card10)}
                 style={{ background: "var(--brend-color)" }}
                 className="book-btn"
               >
                 Read more
               </span>
             </div>
-            <div>
+            <div className="ref-img">
               <img src={BASF} alt="Basf" />
             </div>
           </div>
@@ -387,13 +486,15 @@ export default function References() {
           style={{ background: "var(--light-orange-color)" }}
         >
           <div className="container-main">
-            <div className="vertical-text">
+            <div className="vertical-text reference-vertical">
               <h4 style={{ WebkitTextStroke: "1px var(--brend-color)" }}>
                 CHEMICALS
               </h4>
             </div>
             <div className="text">
-              <h3 className="title">bayer</h3>
+              <h3 className="title">
+                bayer <br /> <span className="text-stroke orange">2023</span>
+              </h3>
 
               <p>
                 Detailed engineering of the vacuum system in an existing
@@ -401,13 +502,14 @@ export default function References() {
               </p>
 
               <span
+                onClick={() => handleButtonClick(card11)}
                 style={{ background: "var(--brend-color)" }}
                 className="book-btn"
               >
                 Read more
               </span>
             </div>
-            <div>
+            <div className="ref-img">
               <img src={Bayer} alt="Bayer" />
             </div>
           </div>
@@ -415,26 +517,29 @@ export default function References() {
 
         <div className="reference">
           <div className="container-main reverse">
-            <div className="vertical-text">
+            <div className="vertical-text reference-vertical">
               <h4 style={{ WebkitTextStroke: "1px var(--brend-color)" }}>
                 CHEMICALS
               </h4>
             </div>
             <div className="text">
-              <h3 className="title">vinex</h3>
+              <h3 className="title">
+                vinex <br /> <span className="text-stroke orange">2018</span>
+              </h3>
 
               <p>
                 All engineering phases for the new ethanol production plant.
               </p>
 
               <span
+                onClick={() => handleButtonClick(card12)}
                 style={{ background: "var(--brend-color)" }}
                 className="book-btn"
               >
                 Read more
               </span>
             </div>
-            <div>
+            <div className="ref-img">
               <img src={Vinex} alt="Vinex" />
             </div>
           </div>
@@ -445,24 +550,27 @@ export default function References() {
           style={{ background: "var(--light-orange-color)" }}
         >
           <div className="container-main">
-            <div className="vertical-text">
+            <div className="vertical-text reference-vertical">
               <h4 style={{ WebkitTextStroke: "1px var(--dark-blue-color)" }}>
                 ELECTRONICS
               </h4>
             </div>
             <div className="text">
-              <h3 className="title">tesla</h3>
+              <h3 className="title">
+                tesla <br /> <span className="text-stroke blue">2023</span>
+              </h3>
 
               <p>Pre-planning for the new production plant for batteries.</p>
 
               <span
+                onClick={() => handleButtonClick(card13)}
                 style={{ background: "var(--dark-blue-color)" }}
                 className="book-btn"
               >
                 Read more
               </span>
             </div>
-            <div>
+            <div className="ref-img">
               <img src={Tesla} alt="Tesla" />
             </div>
           </div>
@@ -470,24 +578,28 @@ export default function References() {
 
         <div className="reference">
           <div className="container-main reverse">
-            <div className="vertical-text">
+            <div className="vertical-text reference-vertical">
               <h4 style={{ WebkitTextStroke: "1px var(--green-color)" }}>
                 ENETRGY
               </h4>
             </div>
             <div className="text">
-              <h3 className="title">jaenschwalde</h3>
+              <h3 className="title">
+                jaenschwalde <br />{" "}
+                <span className="text-stroke green">2022</span>
+              </h3>
 
               <p>Detailed engineering of district heating system.</p>
 
               <span
+                onClick={() => handleButtonClick(card14)}
                 style={{ background: "var(--green-color)" }}
                 className="book-btn"
               >
                 Read more
               </span>
             </div>
-            <div>
+            <div className="ref-img">
               <img src={Jaenschwalde} alt="Jaenschwalde" />
             </div>
           </div>
@@ -498,24 +610,27 @@ export default function References() {
           style={{ background: "var(--light-green-color)" }}
         >
           <div className="container-main">
-            <div className="vertical-text">
+            <div className="vertical-text reference-vertical">
               <h4 style={{ WebkitTextStroke: "1px var(--green-color)" }}>
                 ENETRGY
               </h4>
             </div>
             <div className="text">
-              <h3 className="title">udarnaya</h3>
+              <h3 className="title">
+                udarnaya <br /> <span className="text-stroke green">2017</span>
+              </h3>
 
               <p>Detailed engineering for the new steam plant.</p>
 
               <span
+                onClick={() => handleButtonClick(card15)}
                 style={{ background: "var(--green-color)" }}
                 className="book-btn"
               >
                 Read more
               </span>
             </div>
-            <div>
+            <div className="ref-img">
               <img src={Udarnaya} alt="Udarnaya" />
             </div>
           </div>
@@ -523,24 +638,27 @@ export default function References() {
 
         <div className="reference">
           <div className="container-main reverse">
-            <div className="vertical-text">
+            <div className="vertical-text reference-vertical">
               <h4 style={{ WebkitTextStroke: "1px var(--green-color)" }}>
                 ENETRGY
               </h4>
             </div>
             <div className="text">
-              <h3 className="title">mvv</h3>
+              <h3 className="title">
+                mvv <br /> <span className="text-stroke green">2020</span>
+              </h3>
 
               <p>Detailed engineering for the new steam duct.</p>
 
               <span
+                onClick={() => handleButtonClick(card16)}
                 style={{ background: "var(--green-color)" }}
                 className="book-btn"
               >
                 Read more
               </span>
             </div>
-            <div>
+            <div className="ref-img">
               <img src={MVV} alt="MVV" />
             </div>
           </div>
@@ -551,24 +669,27 @@ export default function References() {
           style={{ background: "var(--light-orange-color)" }}
         >
           <div className="container-main">
-            <div className="vertical-text">
+            <div className="vertical-text reference-vertical">
               <h4 style={{ WebkitTextStroke: "1px var(--brend-color)" }}>
                 OIL & GAS
               </h4>
             </div>
             <div className="text">
-              <h3 className="title">omv</h3>
+              <h3 className="title">
+                omv <br /> <span className="text-stroke orange">2016</span>
+              </h3>
 
               <p>Pipe design for the plant revamp.</p>
 
               <span
+                onClick={() => handleButtonClick(card17)}
                 style={{ background: "var(--brend-color)" }}
                 className="book-btn"
               >
                 Read more
               </span>
             </div>
-            <div>
+            <div className="ref-img">
               <img src={OMV} alt="OMV" />
             </div>
           </div>

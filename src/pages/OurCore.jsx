@@ -92,7 +92,7 @@ export default function OurCore() {
         style={{ background: "var(--light-orange-color)", marginTop: 100 }}
       >
         <div style={{ gap: 100 }} className="services-row container-main">
-          <div className="img-text">
+          <div className="img-text" style={{ left: -50 }}>
             <img src={logo} alt="Slika" /> <span>HELMCHRON</span>
           </div>
           <div className="vertical-text">
@@ -124,7 +124,7 @@ export default function OurCore() {
           {t("our_core.icon_core.icon2")}
         </h3>
         <div className="services-row row-duble container-main">
-          <div className="img-text" style={{ top: -120 }}>
+          <div className="img-text" style={{ top: -120, left: -50 }}>
             <img src={logo} alt="Slika" />{" "}
             <span className="blue">HELMCHRON</span>
           </div>
@@ -162,7 +162,7 @@ export default function OurCore() {
         style={{ background: "var(--light-green-color)" }}
       >
         <div style={{ gap: 500 }} className="services-row container-main">
-          <div className="img-text">
+          <div className="img-text" style={{ left: -50 }}>
             <img src={logo} alt="Slika" />{" "}
             <span className="green">HELMCHRON</span>
           </div>
@@ -197,7 +197,7 @@ export default function OurCore() {
 
       <div ref={sectionRefs[3]} className="services">
         <div style={{ gap: 350 }} className="services-row container-main">
-          <div className="img-text">
+          <div className="img-text" style={{ left: -50 }}>
             <img src={logo} alt="Slika" />{" "}
             <span className="blue">HELMCHRON</span>
           </div>
@@ -234,7 +234,7 @@ export default function OurCore() {
         style={{ background: "var(--light-orange-color)" }}
       >
         <div style={{ gap: 350 }} className="services-row container-main">
-          <div className="img-text">
+          <div className="img-text" style={{ left: -50 }}>
             <img src={logo} alt="Slika" /> <span>HELMCHRON</span>
           </div>
           <div className="vertical-text">

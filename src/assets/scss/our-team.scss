@@ -26,7 +26,6 @@
     div {
       img {
         width: 200px;
-        float: left;
         margin-right: 35px;
       }
     }
@@ -107,6 +106,10 @@
     }
     @media (max-width: 405px) {
       grid-template-columns: auto;
+
+      img {
+        width: 100%;
+      }
     }
   }
 }
