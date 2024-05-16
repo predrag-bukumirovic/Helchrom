@@ -8,6 +8,7 @@ import mainImg1 from "../assets/images/News/2.webp";
 import mainImg2 from "../assets/images/News/3.webp";
 import Dusseldorf from "../assets/images/News/Dusseldorf.webp";
 import Frankfurt from "../assets/images/News/Frankfurt.webp";
+import Talk from "../assets/images/News/Talk.png";
 
 import "../assets/scss/slider.scss";
 import "../assets/scss/news.scss";
@@ -54,6 +55,27 @@ export default function News() {
             fairs we attend.
           </p>
         </center>
+
+        <div className="news-box padding30">
+          <div>
+            <div>
+              <h2>HELMCHRON TeamTalk</h2>
+              <span>April, 2024 I Belgrade, Serbia</span>
+              <p>
+                TeamTalk is our short video format concept designed for
+                discussing industry trends, insights, and future perspectives,
+                our expertise and lessons learned, the impact of our values on
+                our and our partners` outcomes, inspirational career path
+                stories and milestones, and more.
+              </p>
+              <a href="/news/team-talk">Read more</a>
+            </div>
+            <div>
+              <img src={Talk} alt="News" />
+            </div>
+          </div>
+          <div className="line" />
+        </div>
 
         <div className="news-box padding30">
           <div>

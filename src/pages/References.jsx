@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "../assets/scss/slider.scss";
 import "../assets/scss/home.scss";
 import "../assets/scss/services.scss";
@@ -104,6 +104,19 @@ export default function References() {
     setCurrentImage(imageSrc);
     toggleModal();
   };
+
+  const sectionRefs = [
+    useRef(null),
+    useRef(null),
+    useRef(null),
+    useRef(null),
+    useRef(null),
+    useRef(null)
+  ];
+
+  const handleClick = index => {
+    sectionRefs[index].current.scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <div>
       <div className="slider">
@@ -140,18 +153,21 @@ export default function References() {
 
       <div className="container-main padding30">
         <div className="icon-core references">
-          <div>Pharmaceuticals & Life sciences</div>
-          <div>Food & Bio</div>
-          <div>Chemicals</div>
-          <div>Electronics</div>
-          <div>Energy</div>
-          <div>Oil & Gas</div>
+          <div onClick={() => handleClick(0)}>
+            Pharmaceuticals & Life sciences
+          </div>
+          <div onClick={() => handleClick(1)}>Food & Bio</div>
+          <div onClick={() => handleClick(2)}>Chemicals</div>
+          <div onClick={() => handleClick(3)}>Electronics</div>
+          <div onClick={() => handleClick(4)}>Energy</div>
+          <div onClick={() => handleClick(5)}>Oil & Gas</div>
         </div>
       </div>
 
       <div className="references-container">
         {/* row 1 */}
         <div
+          ref={sectionRefs[0]}
           style={{ background: "var(--light-blue-color)" }}
           className="reference"
         >
@@ -289,6 +305,7 @@ export default function References() {
 
         {/* row 5 */}
         <div
+          ref={sectionRefs[1]}
           className="reference"
           style={{ background: "var(--light-green-color)" }}
         >
@@ -451,7 +468,7 @@ export default function References() {
           </div>
         </div>
 
-        <div className="reference">
+        <div className="reference" ref={sectionRefs[2]}>
           <div className="container-main reverse">
             <div className="vertical-text reference-vertical">
               <h4 style={{ WebkitTextStroke: "1px var(--brend-color)" }}>
@@ -546,6 +563,7 @@ export default function References() {
         </div>
 
         <div
+          ref={sectionRefs[3]}
           className="reference"
           style={{ background: "var(--light-orange-color)" }}
         >
@@ -576,7 +594,7 @@ export default function References() {
           </div>
         </div>
 
-        <div className="reference">
+        <div className="reference" ref={sectionRefs[4]}>
           <div className="container-main reverse">
             <div className="vertical-text reference-vertical">
               <h4 style={{ WebkitTextStroke: "1px var(--green-color)" }}>
@@ -665,6 +683,7 @@ export default function References() {
         </div>
 
         <div
+          ref={sectionRefs[5]}
           className="reference"
           style={{ background: "var(--light-orange-color)" }}
         >

@@ -29,3 +29,22 @@
     }
   }
 }
+
+.episodes {
+  margin-top: 100px;
+  display: grid;
+  gap: 100px;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+
+  div {
+    width: 650px;
+
+    @media (max-width: 700px) {
+      width: 100%;
+
+      iframe {
+        height: 300px;
+      }
+    }
+  }
+}

@@ -120,7 +120,7 @@ export default function Navbar() {
                 </ol>
               </li>
 
-              <CustomLink href="/references">References</CustomLink>
+              <CustomLink href="/our-references">References</CustomLink>
 
               <CustomLink href="/career">
                 {t("navbar.career")}

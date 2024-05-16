@@ -112,7 +112,7 @@ export default function OurCore() {
               dangerouslySetInnerHTML={{ __html: t("our_core.planning_text") }}
             />
 
-            <a className="book-btn" href="/">
+            <a className="book-btn" href="/our-references">
               {t("btn_references")}
             </a>
           </div>
@@ -144,7 +144,7 @@ export default function OurCore() {
               <a
                 style={{ background: "var(--dark-blue-color)" }}
                 className="book-btn"
-                href="/"
+                href="/our-references"
               >
                 {t("btn_references")}
               </a>
@@ -187,7 +187,7 @@ export default function OurCore() {
             <a
               className="book-btn"
               style={{ background: "var(--green-color)" }}
-              href="/"
+              href="/our-references"
             >
               {t("btn_references")}
             </a>
@@ -216,7 +216,7 @@ export default function OurCore() {
             />
             <a
               className="book-btn"
-              href="/"
+              href="/our-references"
               style={{ background: "var(--dark-blue-color)" }}
             >
               {t("btn_references")}
@@ -256,7 +256,7 @@ export default function OurCore() {
               }}
             />
 
-            <a className="book-btn" href="/">
+            <a className="book-btn" href="/our-references">
               {t("btn_references")}
             </a>
           </div>

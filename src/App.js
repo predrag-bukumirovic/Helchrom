@@ -6,6 +6,7 @@ import Thanks from "./pages/Thanks";
 const Blog = lazy(() => import("./pages/Blog"));
 const Volleyball = lazy(() => import("./pages/Volleyball"));
 const Diversity = lazy(() => import("./pages/Diversity"));
+const TeamTalk = lazy(() => import("./pages/TeamTalk"));
 const Sustainability = lazy(() => import("./pages/Sustainability"));
 const Header = lazy(() => import("./components/Header"));
 const Home = lazy(() => import('./pages/Home'))
@@ -67,7 +68,8 @@ function App() {
           <Route path="/vehicles" element={<Vehicles />} />
           <Route path="/news/achema" element={<Achema />} />
           <Route path="/news/k2022" element={<K2022 />} />
-          <Route path="/references" element={<References />} />
+          <Route path="/news/team-talk" element={<TeamTalk />} />
+          <Route path="/our-references" element={<References />} />
           <Route path="/thanks" element={<Thanks />} />
           <Route path="/*" element={<NotFound />} />
         </Routes>
