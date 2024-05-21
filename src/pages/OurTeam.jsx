@@ -13,6 +13,10 @@ import Anti from "../assets/images/Team/Anti.png";
 import Code from "../assets/images/Team/Code.png";
 import Communication from "../assets/images/Team/Communication.png";
 
+import CommunicationPolicy from "../assets/pdf/CommunicationPolicy.pdf";
+import AntiCorruptionPolicy from "../assets/pdf/Anti-CorruptionPolicy.pdf";
+import Codeofconductprez from "../assets/pdf/Codeofconductprez.pdf";
+
 import icon1 from "../assets/images/Team/Integrity.png";
 import icon2 from "../assets/images/Team/Commitment.png";
 import icon4 from "../assets/images/Team/Agility.png";
@@ -241,32 +245,47 @@ export default function OurTeam() {
 
           <div className="transparency-img">
             <div>
-              <img src={Anti} alt="" />
+              <a href={AntiCorruptionPolicy} target="_blank" rel="noreferrer">
+                <img src={Anti} alt="" />
+              </a>
               <div>
                 <a
                   style={{ background: "var(--dark-blue-color)" }}
                   className="book-btn"
-                  href="/"
+                  href={AntiCorruptionPolicy}
+                  target="_blank"
+                  rel="noreferrer"
                 >
                   {t("team.transparency.btn_blue")}
                 </a>
               </div>
             </div>
             <div>
-              <img src={Code} alt="" />
+              <a href={Codeofconductprez} target="_blank" rel="noreferrer">
+                <img src={Code} alt="" />
+              </a>
               <div>
-                <a className="book-btn" href="/">
+                <a
+                  className="book-btn"
+                  href={Codeofconductprez}
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   {t("team.transparency.btn_orange")}
                 </a>
               </div>
             </div>
             <div>
-              <img src={Communication} alt="" />
+              <a href={CommunicationPolicy} target="_blank" rel="noreferrer">
+                <img src={Communication} alt="" />
+              </a>
               <div>
                 <a
                   style={{ background: "var(--green-color)" }}
                   className="book-btn"
-                  href="/"
+                  href={CommunicationPolicy}
+                  target="_blank"
+                  rel="noreferrer"
                 >
                   {t("team.transparency.btn_green")}
                 </a>

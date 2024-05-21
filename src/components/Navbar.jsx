@@ -96,7 +96,7 @@ export default function Navbar() {
                   </li>
                 </ol>
               </li>
-              <li>
+              {/* <li>
                 <span
                   onClick={() => setDownMenu(!downMenu)}
                   className="com-ser"
@@ -118,9 +118,13 @@ export default function Navbar() {
                     </CustomLink>
                   </li>
                 </ol>
-              </li>
+              </li> */}
 
-              <CustomLink href="/our-references">References</CustomLink>
+              <CustomLink href="/competences&services/our-core-competencies">
+                {t("navbar.our_services")}
+              </CustomLink>
+
+              <CustomLink href="/our-references">our References</CustomLink>
 
               <CustomLink href="/career">
                 {t("navbar.career")}
