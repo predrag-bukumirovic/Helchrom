@@ -101,15 +101,11 @@
       }
     }
 
-    @media (max-width: 600px) {
+    @media (max-width: 800px) {
       grid-template-columns: auto auto;
     }
-    @media (max-width: 405px) {
+    @media (max-width: 490px) {
       grid-template-columns: auto;
-
-      img {
-        width: 100%;
-      }
     }
   }
 }

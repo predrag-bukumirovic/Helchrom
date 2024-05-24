@@ -718,7 +718,7 @@ export default function References() {
       <div className="insights container-main padding30">
         <h2 className="title">our projects insights</h2>
         <center>
-          <p>Share od projects per business area</p>
+          <p>Share of projects per business area</p>
         </center>
 
         <div className="icon-since container-main">

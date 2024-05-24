@@ -58,7 +58,7 @@
     position: relative;
 
     @media (max-width: 750px) {
-      padding-left: 70px;
+      padding-left: 50px;
       padding-right: 5px;
     }
 
@@ -139,7 +139,7 @@
 }
 
 .reference-vertical {
-  left: -160px;
+  left: -150px;
 
   h4 {
     font-size: 70px;
@@ -150,7 +150,7 @@
     }
   }
   @media (max-width: 750px) {
-    left: -120px;
+    left: -100px;
   }
 }
 

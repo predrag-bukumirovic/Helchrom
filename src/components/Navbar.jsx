@@ -63,7 +63,7 @@ export default function Navbar() {
                   {t("navbar.home")}
                 </a>
               </li>
-              <li>
+              <li style={{ marginTop: 2 }}>
                 <span
                   className="about-us"
                   onClick={() => setDownMenuAbout(!downMenuAbout)}

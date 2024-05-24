@@ -227,7 +227,7 @@ const data = {
           }
         },
         text_bottom:
-          " Do we share the same values? Are you interested in joining our team? Visit our career page.",
+          " Do we share the same values? Are you interested in joining our team? Visit our career page",
         btn_career: "Career page",
 
         transparency: {
