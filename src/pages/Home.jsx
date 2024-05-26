@@ -24,15 +24,14 @@ import icon4 from "../assets/images/Home/4.png";
 import icon5 from "../assets/images/Home/5.png";
 import quotation from "../assets/images/quotation.png";
 
-import { AiOutlineSound } from "react-icons/ai";
-import { IoPauseOutline } from "react-icons/io5";
-
 import "../assets/scss/home.scss";
 import "../assets/scss/slider.scss";
 import "@coreui/coreui/dist/css/coreui.min.css";
 import "react-multi-carousel/lib/styles.css";
 import Storyline from "../components/Storyline";
 import { useTranslation } from "react-i18next";
+
+import TextReader from "../components/TextRender";
 
 const responsive = {
   superLargeDesktop: { breakpoint: { max: 4000, min: 3000 }, items: 1 },
@@ -78,55 +77,6 @@ export default function Home() {
       });
       if (currentNumber === finalNumber) clearInterval(interval);
     }, stepTime);
-  };
-
-  const [text] = useState(
-    "Helmchron is a family-owned company dedicated to providing comprehensive and full-service engineering solutions for the manufacturing facilities of pharmaceuticals, chemicals, food and bio products, electronics, energy, and oil and gas. We take pride in contributing to the manufacturing of globally available, safe, and high-quality products since 2010. Our mission has remained the same since our beginnings - we improve the quality of life for everyone everywhere whilst keeping our environment healthy for the coming generations. Today, our scope is broader and our team more diverse providing unique perspectives, agility, and efficacy. Our engineering solutions are now delivered to leaders and innovators across different industries with a focus on global impact, sustainable outcomes, and long-lasting partnerships."
-  );
-  const [isSpeaking, setIsSpeaking] = useState(false);
-  const [startIndex, setStartIndex] = useState(0); // Dodajemo useState za početnu poziciju čitanja
-  const synth = window.speechSynthesis;
-  const utterance = new SpeechSynthesisUtterance();
-
-  useEffect(
-    () => {
-      const cleanup = () => {
-        synth.cancel();
-        setIsSpeaking(false);
-      };
-
-      return cleanup;
-    },
-    [synth]
-  );
-
-  useEffect(
-    () => {
-      if (!synth) return;
-
-      const onEndHandler = () => {
-        setIsSpeaking(false);
-      };
-
-      synth.addEventListener("end", onEndHandler);
-
-      return () => {
-        synth.removeEventListener("end", onEndHandler);
-      };
-    },
-    [synth]
-  );
-
-  const handleSpeak = () => {
-    if (!isSpeaking && text) {
-      utterance.text = text.substring(startIndex);
-      synth.speak(utterance);
-      setIsSpeaking(true);
-    } else {
-      synth.cancel();
-      setIsSpeaking(false);
-      setStartIndex(startIndex + utterance.text.length);
-    }
   };
 
   return (
@@ -184,9 +134,7 @@ export default function Home() {
       <div className="welcome container-main padding30">
         <h1 dangerouslySetInnerHTML={{ __html: t("home.welcome") }} />
         <p>
-          <span className="sound-icon" onClick={handleSpeak}>
-            {isSpeaking ? <IoPauseOutline /> : <AiOutlineSound />}
-          </span>
+          <TextReader textKey="home.wel_text" />
           <span dangerouslySetInnerHTML={{ __html: t("home.wel_text") }} />
         </p>
 
@@ -201,6 +149,7 @@ export default function Home() {
           {t("services.title")}
         </h2>
         <p style={{ textAlign: "center" }}>
+          <TextReader textKey="services.sub_text" />
           {t("services.sub_text")}
         </p>
 
@@ -263,6 +212,7 @@ export default function Home() {
 
           <div className="unique-row">
             <div className="text">
+              <TextReader textKey="unique.text" />
               <p dangerouslySetInnerHTML={{ __html: t("unique.text") }} />
 
               <a className="book-btn" href="/contact">
@@ -281,7 +231,8 @@ export default function Home() {
         <div className="areas-text">
           <h2 className="title">OUR BUSINESS AREAS</h2>
 
-          <p style={{ textAlign: "center" }}>
+          <p style={{ display: "flex", justifyContent: "center" }}>
+            <TextReader textKey="areas.sub_text" />
             {t("areas.sub_text")}
           </p>
         </div>
@@ -295,6 +246,7 @@ export default function Home() {
             {t("facts.title")}
           </h2>
           <div className="facts-row">
+            <TextReader textKey="facts.sub_text" />
             <p dangerouslySetInnerHTML={{ __html: t("facts.sub_text") }} />
           </div>
 
@@ -379,6 +331,7 @@ export default function Home() {
               <img src={quotation} alt="quotation" />
 
               <div>
+                <TextReader textKey="feedback.text1" />
                 <p dangerouslySetInnerHTML={{ __html: t("feedback.text1") }} />
               </div>
             </div>
@@ -386,12 +339,14 @@ export default function Home() {
               <img src={quotation} alt="quotation" />
 
               <div>
+                <TextReader textKey="feedback.text2" />
                 <p dangerouslySetInnerHTML={{ __html: t("feedback.text2") }} />
               </div>
             </div>
             <div className="testi-item">
               <img src={quotation} alt="quotation" />
               <div>
+                <TextReader textKey="feedback.text3" />
                 <p>
                   {t("feedback.text3")}
                 </p>

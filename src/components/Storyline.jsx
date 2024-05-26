@@ -7,6 +7,8 @@ import Story2020 from "../assets/images/Home/Story2020.webp";
 import Story2023 from "../assets/images/Home/Story2023.webp";
 import { useTranslation } from "react-i18next";
 
+import TextReader from "../components/TextRender";
+
 export default function Storyline() {
   const { t } = useTranslation();
 
@@ -17,7 +19,14 @@ export default function Storyline() {
           {t("our_line.title")}
         </h2>
 
-        <p style={{ textAlign: "center" }}>
+        <p
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center"
+          }}
+        >
+          <TextReader textKey="our_line.sub_text" />
           {t("our_line.sub_text")}
         </p>
 
@@ -25,6 +34,7 @@ export default function Storyline() {
           <div className="box box1">
             <div className="text text1-1">
               <p>
+                <TextReader textKey="our_line.img_text1" />
                 {t("our_line.img_text1")}
               </p>
             </div>
@@ -34,6 +44,7 @@ export default function Storyline() {
             </div>
             <div className="text text1-2">
               <p>
+                <TextReader textKey="our_line.img_text3" />
                 {t("our_line.img_text3")}
               </p>
             </div>
@@ -43,6 +54,7 @@ export default function Storyline() {
             </div>
             <div className="text text1-3">
               <p>
+                <TextReader textKey="our_line.img_text5" />
                 {t("our_line.img_text5")}
               </p>
             </div>
@@ -96,6 +108,7 @@ export default function Storyline() {
             </div>
             <div className="text text2-1">
               <p>
+                <TextReader textKey="our_line.img_text2" />
                 {t("our_line.img_text2")}
               </p>
             </div>
@@ -106,6 +119,7 @@ export default function Storyline() {
             </div>
             <div className="text text2-2">
               <p>
+                <TextReader textKey="our_line.img_text4" />
                 {t("our_line.img_text4")}
               </p>
             </div>
@@ -116,6 +130,7 @@ export default function Storyline() {
             </div>
             <div className="text text2-3">
               <p>
+                <TextReader textKey="our_line.img_text6" />
                 {t("our_line.img_text6")}
               </p>
             </div>
