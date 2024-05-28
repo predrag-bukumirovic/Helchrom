@@ -79,6 +79,30 @@ export default function Home() {
     }, stepTime);
   };
 
+  // Texts for spekers
+  const welcomeText = [t("home.welcome"), t("home.wel_text")];
+  const ourServicesText = [
+    t("services.title"),
+    t("services.sub_text"),
+    t("services.icon.title1"),
+    t("services.icon.text1"),
+    t("services.icon.title2"),
+    t("services.icon.text2"),
+    t("services.icon.title3"),
+    t("services.icon.text3"),
+    t("services.icon.title4"),
+    t("services.icon.text4"),
+    t("services.icon.title5"),
+    t("services.icon.text5"),
+    t("book_btn")
+  ];
+  const uniqueText = [t("unique.title"), t("unique.text"), t("book_btn")];
+  const areasText = [t("areas.title"), t("areas.sub_text")];
+  const factsText = [t("facts.title"), t("facts.sub_text")];
+  const feedbackText1 = [t("feedback.title"), t("feedback.text1")];
+  const feedbackText2 = [t("feedback.title"), t("feedback.text2")];
+  const feedbackText3 = [t("feedback.title"), t("feedback.text3")];
+
   return (
     <div>
       {/* Slider */}
@@ -134,8 +158,8 @@ export default function Home() {
       <div className="welcome container-main padding30">
         <h1 dangerouslySetInnerHTML={{ __html: t("home.welcome") }} />
         <p>
-          <TextReader textKey="home.wel_text" />
           <span dangerouslySetInnerHTML={{ __html: t("home.wel_text") }} />
+          <TextReader texts={welcomeText} />
         </p>
 
         <a href="/about-us/our-vision-and-mission">
@@ -149,8 +173,8 @@ export default function Home() {
           {t("services.title")}
         </h2>
         <p style={{ textAlign: "center" }}>
-          <TextReader textKey="services.sub_text" />
           {t("services.sub_text")}
+          <TextReader texts={ourServicesText} />
         </p>
 
         <div className="services-icon">
@@ -212,8 +236,10 @@ export default function Home() {
 
           <div className="unique-row">
             <div className="text">
-              <TextReader textKey="unique.text" />
               <p dangerouslySetInnerHTML={{ __html: t("unique.text") }} />
+              <TextReader texts={uniqueText} />
+              <br />
+              <br />
 
               <a className="book-btn" href="/contact">
                 {t("book_btn")}
@@ -229,11 +255,13 @@ export default function Home() {
       {/* Our Business Areas */}
       <div className="areas padding30 container-main">
         <div className="areas-text">
-          <h2 className="title">OUR BUSINESS AREAS</h2>
+          <h2 className="title">
+            {t("areas.title")}
+          </h2>
 
-          <p style={{ display: "flex", justifyContent: "center" }}>
-            <TextReader textKey="areas.sub_text" />
+          <p style={{ textAlign: "center" }}>
             {t("areas.sub_text")}
+            <TextReader texts={areasText} />
           </p>
         </div>
         <WhoIcons />
@@ -246,8 +274,8 @@ export default function Home() {
             {t("facts.title")}
           </h2>
           <div className="facts-row">
-            <TextReader textKey="facts.sub_text" />
             <p dangerouslySetInnerHTML={{ __html: t("facts.sub_text") }} />
+            <TextReader texts={factsText} />
           </div>
 
           <div ref={factsRef} className="facts-icon">
@@ -331,7 +359,7 @@ export default function Home() {
               <img src={quotation} alt="quotation" />
 
               <div>
-                <TextReader textKey="feedback.text1" />
+                <TextReader texts={feedbackText1} />
                 <p dangerouslySetInnerHTML={{ __html: t("feedback.text1") }} />
               </div>
             </div>
@@ -339,14 +367,14 @@ export default function Home() {
               <img src={quotation} alt="quotation" />
 
               <div>
-                <TextReader textKey="feedback.text2" />
+                <TextReader texts={feedbackText2} />
                 <p dangerouslySetInnerHTML={{ __html: t("feedback.text2") }} />
               </div>
             </div>
             <div className="testi-item">
               <img src={quotation} alt="quotation" />
               <div>
-                <TextReader textKey="feedback.text3" />
+                <TextReader texts={feedbackText3} />
                 <p>
                   {t("feedback.text3")}
                 </p>

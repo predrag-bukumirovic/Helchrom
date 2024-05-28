@@ -1,22 +1,22 @@
-import React, { useState, useEffect } from "react";
-import { useTranslation } from "react-i18next";
-import { AiOutlineSound } from "react-icons/ai";
-import { IoPauseOutline } from "react-icons/io5";
+import React, { useState, useEffect, useRef } from "react";
+import { AiOutlinePause } from "react-icons/ai";
+import userSound from "../assets/images/usersound.png";
 
-const TextReader = ({ textKey }) => {
+import { useTranslation } from "react-i18next";
+
+const TextReader = ({ texts }) => {
   const [isSpeaking, setIsSpeaking] = useState(false);
-  const { t, i18n } = useTranslation();
-  const [startIndex, setStartIndex] = useState(0);
-  const [synth, setSynth] = useState(null);
-  let utterance = null;
+  const { i18n } = useTranslation();
+  const synth = useRef(null);
+  const utterance = useRef(null);
+  const currentIndex = useRef(0);
 
   useEffect(() => {
-    const synth = window.speechSynthesis;
-    setSynth(synth);
+    synth.current = window.speechSynthesis;
 
     const handleUnload = () => {
-      if (synth) {
-        synth.cancel();
+      if (synth.current && synth.current.speaking) {
+        synth.current.cancel();
         setIsSpeaking(false);
       }
     };
@@ -24,10 +24,10 @@ const TextReader = ({ textKey }) => {
     window.addEventListener("beforeunload", handleUnload);
 
     return () => {
-      if (synth) {
-        synth.cancel();
+      window.removeEventListener("beforeunload", handleUnload);
+      if (synth.current && synth.current.speaking) {
+        synth.current.cancel();
         setIsSpeaking(false);
-        window.removeEventListener("beforeunload", handleUnload);
       }
     };
   }, []);
@@ -38,50 +38,77 @@ const TextReader = ({ textKey }) => {
   };
 
   const handleSpeak = () => {
-    if (!synth || !t(textKey)) return;
+    if (!synth.current) return;
 
-    if (synth.speaking) {
-      synth.cancel();
+    if (synth.current.speaking) {
+      synth.current.pause(); // Pauzira trenutni govor
       setIsSpeaking(false);
-      setStartIndex(0);
     } else {
-      const plainText = stripHTMLTags(t(textKey));
-      if (!plainText.trim()) return;
+      speakNext();
+    }
+  };
 
-      utterance = new SpeechSynthesisUtterance(plainText);
-      const voices = synth.getVoices();
+  const speakNext = () => {
+    if (currentIndex.current >= texts.length) {
+      currentIndex.current = 0;
+      setIsSpeaking(false);
+      return;
+    }
 
-      utterance.text = plainText.substring(startIndex);
+    let textToSpeak = texts[currentIndex.current];
+    textToSpeak = stripHTMLTags(textToSpeak);
 
-      switch (i18n.language) {
-        case "ge":
-          utterance.voice = voices.find(voice => voice.lang === "ka-GE");
-          break;
-        case "ru":
-          utterance.voice = voices.find(voice => voice.lang === "ru-RU");
-          break;
-        case "en":
-        default:
-          utterance.voice = voices.find(voice => voice.lang === "en-US");
-          break;
-      }
+    if (!textToSpeak.trim()) {
+      currentIndex.current++;
+      speakNext();
+      return;
+    }
 
-      synth.speak(utterance);
-      setIsSpeaking(true);
+    utterance.current = new SpeechSynthesisUtterance(textToSpeak);
+    const voices = synth.current.getVoices();
 
-      utterance.onend = () => {
-        setIsSpeaking(false);
-        setStartIndex(0);
-      };
+    switch (i18n.language) {
+      case "ge":
+        utterance.current.voice = voices.find(voice => voice.lang === "ka-GE");
+        break;
+      case "ru":
+        utterance.current.voice = voices.find(voice => voice.lang === "ru-RU");
+        break;
+      case "en":
+      default:
+        utterance.current.voice = voices.find(voice => voice.lang === "en-US");
+        break;
+    }
+
+    synth.current.speak(utterance.current);
+    setIsSpeaking(true);
+
+    utterance.current.onend = () => {
+      currentIndex.current++;
+      speakNext();
+    };
+  };
+
+  const stopSpeaking = () => {
+    if (synth.current) {
+      synth.current.cancel();
+      setIsSpeaking(false);
     }
   };
 
   return (
-    <div>
-      <span className="sound-icon" onClick={handleSpeak}>
-        {isSpeaking ? <IoPauseOutline /> : <AiOutlineSound />}
-      </span>
-    </div>
+    <span
+      className="sound-icon"
+      onClick={isSpeaking ? stopSpeaking : handleSpeak}
+    >
+      {isSpeaking
+        ? <AiOutlinePause />
+        : <img
+            src={userSound}
+            style={{ width: 25, marginLeft: 10 }}
+            alt="Sound user"
+          />}
+    </span>
   );
 };
 

@@ -2,13 +2,7 @@ const data = {
   en: {
     translation: {
       home: {
-        welcome: ` <p data-aos="fade-up" data-aos-duration="500">W</p>
-          <p data-aos="fade-down" data-aos-duration="800">E</p>
-          <p data-aos="fade-up" data-aos-duration="1100">L
-          </p><p data-aos="fade-down" data-aos-duration="1400">C</p>
-          <p data-aos="fade-up" data-aos-duration="1700">O</p>
-          <p data-aos="fade-down" data-aos-duration="2000">M</p>
-          <p data-aos="fade-up" data-aos-duration="2300">E</p> <b>to Helmchron official website.</b>`,
+        welcome: `<p>WELCOME</p> <b>to Helmchron official website.</b>`,
         wel_text: ` Helmchron is a family-owned company dedicated to providing comprehensive and full-service engineering solutions for the manufacturing facilities of pharmaceuticals, chemicals, food and bio products, electronics, energy, and oil and gas. We take pride in contributing to the manufacturing of globally available, safe, and high-quality products since 2010.<br /> Our mission has remained the same since our beginnings - we improve the quality of life for everyone everywhere whilst keeping our environment healthy for the coming generations. <br /> Today, our scope is broader and our team more diverse providing unique perspectives, agility, and efficacy.<br /> Our engineering solutions are now delivered to leaders and innovators across different industries with a focus on global impact, sustainable outcomes, and long-lasting partnerships.`
       },
       who_are_we: {
@@ -43,7 +37,7 @@ const data = {
           text4:
             "We design, develop, select, install and integrate facility equipment to ensure performance optimization and efficiency.",
           text5:
-            "We provide verification that all components and systems of the facility are installed, tested, and operate according to the predefined specifications and regulatory requirements."
+            "We provide verification that all components and systems of the facility are installed, tested, and operate according to the predefined specifications and regulatory requirements. "
         }
       },
       info: {
