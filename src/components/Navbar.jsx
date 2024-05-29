@@ -8,7 +8,7 @@ import { AiOutlineCaretDown } from "react-icons/ai";
 import TikTok from "../assets/images/tiktok.webp";
 import Instagram from "../assets/images/instagram.webp";
 import Linkedine from "../assets/images/linkedine.webp";
-import Twitter from "../assets/images/twitter.webp";
+import Twitter from "../assets/images/twitter.png";
 import { useTranslation } from "react-i18next";
 
 export default function Navbar() {
@@ -120,7 +120,7 @@ export default function Navbar() {
                 </ol>
               </li> */}
 
-              <CustomLink href="/competences&services/our-core-competencies">
+              <CustomLink href="/our-services">
                 {t("navbar.our_services")}
               </CustomLink>
 

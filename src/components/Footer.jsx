@@ -3,7 +3,7 @@ import "../assets/scss/footer.scss";
 import TikTok from "../assets/images/tiktok.webp";
 import Instagram from "../assets/images/instagram.webp";
 import Linkedine from "../assets/images/linkedine.webp";
-import Twitter from "../assets/images/twitter.webp";
+import Twitter from "../assets/images/twitter.png";
 import Logo from "../assets/images/logowhite.webp";
 import { useTranslation } from "react-i18next";
 

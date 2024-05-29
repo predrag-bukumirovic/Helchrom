@@ -1,25 +1,38 @@
-import React from "react";
+import React, { useRef } from "react";
 import "../assets/scss/slider.scss";
 import "../assets/scss/services.scss";
+import "../assets/scss/home.scss";
+import mainImg from "../assets/images/OurCore/c-s1.jpg";
+import mainImg1 from "../assets/images/OurCore/c-s2.webp";
+import mainImg2 from "../assets/images/OurCore/c-s3.webp";
+import Consulting from "../assets/images/OurCore/Consulting.png";
+import Design from "../assets/images/OurCore/Design.png";
+import management from "../assets/images/OurCore/management.png";
+import Equipment from "../assets/images/OurCore/Equipment.png";
+import Commissioning from "../assets/images/OurCore/Commissioning.png";
+import logo from "../assets/images/logo.png";
 
-import mainImg from "../assets/images/OurServices/services1.webp";
-import mainImg1 from "../assets/images/OurServices/services2.webp";
-import mainImg2 from "../assets/images/OurServices/services3.webp";
 import { CCarousel, CCarouselItem, CImage } from "@coreui/react";
 import "@coreui/coreui/dist/css/coreui.min.css";
 import { Helmet } from "react-helmet";
-
-import PlantC from "../assets/images/OurServices/PlantC.jpeg";
-import WaterT from "../assets/images/OurServices/WaterT.png";
-import ProjectM from "../assets/images/OurServices/ProjectM.jpeg";
-import EconomicA from "../assets/images/OurServices/EconomicA.jpeg";
-import SofrwareE from "../assets/images/OurServices/SofrwareE.jpeg";
-import InnovationL from "../assets/images/OurServices/InnovationL.jpeg";
 import { useTranslation } from "react-i18next";
 
 const mainImages = [mainImg, mainImg1, mainImg2];
 
-export default function OurServices() {
+export default function OurCore() {
+  const sectionRefs = [
+    useRef(null),
+    useRef(null),
+    useRef(null),
+    useRef(null),
+    useRef(null)
+  ];
+
+  const handleClick = index => {
+    sectionRefs[index].current.scrollIntoView({ behavior: "smooth" });
+  };
+  const { t } = useTranslation();
+
   return (
     <div>
       <Helmet>
@@ -47,135 +60,243 @@ export default function OurServices() {
         </div>
       </div>
 
-      <div className="container-main">
-        <h1 className="title">OUR SERVICES & COMPETENCIES</h1>
-        <center>
-          <p>
-            At Helmchron, we pride ourselves on delivering exceptional process
-            and chemical engineering solutions that are driven by our partners'
-            needs and satisfaction. Our unwavering commitment to understanding
-            and fulfilling the unique requirements of each of our clients<br />{" "}
-            drives our mission and vision.<br />
-            At the core of our operational philosophy is a deep understanding
-            that our success is extensively linked to the success of our
-            partners<br /> and outcomes for the individuals and environment. We
-            believe that by placing end users at the forefront of everything we
-            do,<br /> we can create loyal partnerships and meaningful impact for
-            everyone.
-          </p>
+      <div className="container-main padding30">
+        <h1 className="title">
+          {t("our_core.title")}
+        </h1>
 
-          <p>
-            For detailed information on our services, projects, and references,
-            please contact{" "}
-            <a href="mailto:milos.ivosevic@helmchron.com">
-              milos.ivosevic@helmchron.com.
+        <p dangerouslySetInnerHTML={{ __html: t("our_core.sub_text") }} />
+
+        <div className="icon-core">
+          <div onClick={() => handleClick(0)}>
+            {t("our_core.icon_core.icon1")}
+          </div>
+          <div onClick={() => handleClick(1)}>
+            {t("our_core.icon_core.icon2")}
+          </div>
+          <div onClick={() => handleClick(2)}>
+            {t("our_core.icon_core.icon3")}
+          </div>
+          <div onClick={() => handleClick(3)}>
+            {t("our_core.icon_core.icon4")}
+          </div>
+          <div onClick={() => handleClick(4)}>
+            {t("our_core.icon_core.icon5")}
+          </div>
+        </div>
+      </div>
+
+      <div
+        ref={sectionRefs[0]}
+        className="services"
+        style={{ background: "var(--light-orange-color)", marginTop: 100 }}
+      >
+        <div style={{ gap: 100 }} className="services-row container-main">
+          <div className="img-text" style={{ left: -50 }}>
+            <img src={logo} alt="Slika" /> <span>HELMCHRON</span>
+          </div>
+          <div className="vertical-text">
+            <h4>
+              {t("services_vertical")}
+            </h4>
+          </div>
+
+          <div className="img-row">
+            <img src={Consulting} alt="Consulting" />
+          </div>
+          <div>
+            <h3>
+              {t("our_core.icon_core.icon1")}
+            </h3>
+            <ul
+              dangerouslySetInnerHTML={{ __html: t("our_core.planning_text") }}
+            />
+
+            <a className="book-btn" href="/our-references">
+              {t("btn_references")}
             </a>
-          </p>
+          </div>
+        </div>
+      </div>
+
+      <div ref={sectionRefs[1]} className="services">
+        <h3 style={{ width: "1440px" }} className="container-main">
+          {t("our_core.icon_core.icon2")}
+        </h3>
+        <div className="services-row row-duble container-main">
+          <div className="img-text" style={{ top: -120, left: -50 }}>
+            <img src={logo} alt="Slika" />{" "}
+            <span className="blue">HELMCHRON</span>
+          </div>
+          <div className="vertical-text">
+            <h4 style={{ WebkitTextStroke: "1px var(--dark-blue-color)" }}>
+              {t("services_vertical")}
+            </h4>
+          </div>
+          <div className="text">
+            <div
+              dangerouslySetInnerHTML={{ __html: t("our_core.design_text1") }}
+            />
+            <div>
+              <div
+                dangerouslySetInnerHTML={{ __html: t("our_core.design_text2") }}
+              />
+              <a
+                style={{ background: "var(--dark-blue-color)" }}
+                className="book-btn"
+                href="/our-references"
+              >
+                {t("btn_references")}
+              </a>
+            </div>
+          </div>
+          <div className="img-design img-row">
+            <img src={Design} alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div
+        ref={sectionRefs[2]}
+        className="services"
+        style={{ background: "var(--light-green-color)" }}
+      >
+        <div style={{ gap: 500 }} className="services-row container-main">
+          <div className="img-text" style={{ left: -50 }}>
+            <img src={logo} alt="Slika" />{" "}
+            <span className="green">HELMCHRON</span>
+          </div>
+          <div className="vertical-text">
+            <h4 style={{ WebkitTextStroke: "1px var(--green-color)" }}>
+              {t("services_vertical")}
+            </h4>
+          </div>
+
+          <div className="img-row">
+            <img src={management} alt="management" />
+          </div>
+          <div>
+            <h3>
+              {t("our_core.icon_core.icon3")}
+            </h3>
+
+            <ul
+              dangerouslySetInnerHTML={{ __html: t("our_core.project_text") }}
+            />
+
+            <a
+              className="book-btn"
+              style={{ background: "var(--green-color)" }}
+              href="/our-references"
+            >
+              {t("btn_references")}
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div ref={sectionRefs[3]} className="services">
+        <div style={{ gap: 350 }} className="services-row container-main">
+          <div className="img-text" style={{ left: -50 }}>
+            <img src={logo} alt="Slika" />{" "}
+            <span className="blue">HELMCHRON</span>
+          </div>
+          <div className="vertical-text">
+            <h4 style={{ WebkitTextStroke: "1px var(--dark-blue-color)" }}>
+              {t("services_vertical")}
+            </h4>
+          </div>
+          <div>
+            <h3>
+              {t("our_core.icon_core.icon4")}
+            </h3>
+
+            <ul
+              dangerouslySetInnerHTML={{ __html: t("our_core.equipment_text") }}
+            />
+            <a
+              className="book-btn"
+              href="/our-references"
+              style={{ background: "var(--dark-blue-color)" }}
+            >
+              {t("btn_references")}
+            </a>
+          </div>
+          <div className="img-row">
+            <img src={Equipment} alt="Equipment" />
+          </div>
+        </div>
+      </div>
+
+      <div
+        ref={sectionRefs[4]}
+        className="services"
+        style={{ background: "var(--light-orange-color)" }}
+      >
+        <div style={{ gap: 350 }} className="services-row container-main">
+          <div className="img-text" style={{ left: -50 }}>
+            <img src={logo} alt="Slika" /> <span>HELMCHRON</span>
+          </div>
+          <div className="vertical-text">
+            <h4>
+              {t("services_vertical")}
+            </h4>
+          </div>
+
+          <div className="img-row">
+            <img src={Commissioning} alt="" />
+          </div>
+          <div>
+            <h3>
+              {t("our_core.icon_core.icon5")}
+            </h3>
+            <ul
+              dangerouslySetInnerHTML={{
+                __html: t("our_core.commissioning_text")
+              }}
+            />
+
+            <a className="book-btn" href="/our-references">
+              {t("btn_references")}
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <center style={{ marginTop: 50 }}>
+        <p>
+          {t("our_core.text_book")}
+        </p>
+        <a
+          style={{ background: "var(--dark-blue-color)" }}
+          className="book-btn"
+          href="/contact"
+        >
+          {t("book_btn")}
+        </a>
+      </center>
+
+      <div className="unique" style={{ marginTop: 100 }}>
+        <h2 style={{ marginBottom: 0 }} className="title">
+          {t("our_core.unique")}
+        </h2>
+
+        <h3>
+          HELMCHR<span>ONe</span>
+        </h3>
+
+        <center>
+          <iframe
+            className="video-yt"
+            loading="lazy"
+            src="https://www.youtube.com/embed/tWflefiRmYw"
+            title="HelmchronONE - New Service Concept"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowFullScreen
+          />
         </center>
-
-        <section className="core-wrapper padding30">
-          <div className="core-row">
-            <div className="core-text">
-              <h2>Plant construction</h2>
-              <div className="line" />
-
-              <ul>
-                <li>Plant, equipment, and process design</li>
-                <li>Plant engineering</li>
-                <li>Process simulation and upgrade</li>
-                <li>Production process sustainability</li>
-              </ul>
-            </div>
-            <div>
-              <img src={PlantC} alt="Plant construction" />
-            </div>
-          </div>
-          <div className="core-row">
-            <div>
-              <img src={WaterT} alt="Water treatment" />
-            </div>
-            <div className="core-text">
-              <h2>Water treatment</h2>
-              <div className="line" />
-
-              <ul>
-                <li>
-                  Development of innovative technical concepts, products, and
-                  services
-                </li>
-                <li>Technology and process upgrade</li>
-                <li>Plant`s modernization engineering</li>
-              </ul>
-            </div>
-          </div>
-          <div className="core-row">
-            <div className="core-text">
-              <h2>Project management</h2>
-              <div className="line" />
-
-              <ul>
-                <li>Scope and milestones management</li>
-                <li>Time and cost management</li>
-                <li>Quality management</li>
-                <li>Human Resources planning</li>
-                <li>Risk assessment</li>
-              </ul>
-            </div>
-            <div>
-              <img src={ProjectM} alt="Project management" />
-            </div>
-          </div>
-          <div className="core-row">
-            <div>
-              <img src={EconomicA} alt="Engineering – economic analysis" />
-            </div>
-            <div className="core-text">
-              <h2>Engineering – economic analysis</h2>
-              <div className="line" />
-
-              <ul>
-                <li>Cost evaluation</li>
-                <li>Budgeting</li>
-                <li>Plant optimization</li>
-              </ul>
-            </div>
-          </div>
-          <div className="core-row">
-            <div className="core-text">
-              <h2>Software for engineering purposes</h2>
-              <div className="line" />
-
-              <ul>
-                <li>
-                  Design and development of custom-made software solutions
-                </li>
-                <li>Testing</li>
-                <li>Maintenance</li>
-              </ul>
-            </div>
-            <div>
-              <img src={SofrwareE} alt="Software for engineering purposes" />
-            </div>
-          </div>
-          <div className="core-row">
-            <div>
-              <img src={InnovationL} alt="Innovation Lab" />
-            </div>
-            <div className="core-text">
-              <h2>Innovation Lab</h2>
-              <div className="line" />
-
-              <ul>
-                <li>
-                  Development of innovative technical concepts, products and
-                  services
-                </li>
-                <li>Technology and process upgrade</li>
-                <li>Plant`s modernization engineering</li>
-              </ul>
-            </div>
-          </div>
-        </section>
       </div>
     </div>
   );

@@ -18,7 +18,6 @@ const OurTeam = lazy(() => import("./pages/OurTeam"));
 const References = lazy(() => import("./pages/References"));
 const OurVision = lazy(() => import("./pages/OurVision"));
 const OurValues = lazy(() => import("./pages/OurValues"));
-const OurCore = lazy(() => import("./pages/OurCore"));
 const OurServices = lazy(() => import("./pages/OurServices"));
 const Footer = lazy(() => import("./components/Footer"));
 const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy"));
@@ -58,8 +57,7 @@ function App() {
           <Route path="/about-us/our-team" element={<OurTeam />} />
           <Route path="/about-us/our-vision-and-mission" element={<OurVision />} />
           <Route path="/about-us/our-values" element={<OurValues />} />
-          <Route path="/competences&services/our-core-competencies" element={<OurCore />} />
-          <Route path="/competences&services/our-services" element={<OurServices />} />
+          <Route path="/our-services" element={<OurServices />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/legal-statement" element={<LegalStatement />} />
           <Route path="/chemicals" element={<Chemicals />} />

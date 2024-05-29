@@ -8,7 +8,7 @@ import { CCarousel, CCarouselItem, CImage } from "@coreui/react";
 
 import mainImg from "../assets/images/References/Slika1.jpg";
 import mainImg1 from "../assets/images/References/Slika2.jpg";
-import mainImg2 from "../assets/images/OurCore/c-s3.webp";
+import mainImg2 from "../assets/images/References/Slika3.png";
 
 // images references
 import Vetter from "../assets/images/References/VetterPharma.png";

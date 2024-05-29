@@ -71,6 +71,7 @@ nav ul li a.active {
 .about-us,
 .com-ser {
   display: flex;
+  align-items: center;
 }
 
 ul li ol.menu-down {
