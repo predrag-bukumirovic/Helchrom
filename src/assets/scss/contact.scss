@@ -79,7 +79,7 @@ label .star {
   gap: 150px;
 }
 .icon-contact img {
-  width: 180px;
+  width: 90px;
   transition: .6s;
 }
 .icon-contact img:hover {
@@ -87,7 +87,8 @@ label .star {
 }
 .icon-contact p {
   margin-top: 25px;
-  font-size: 20px;
+  font-size: 16px;
+  font-weight: bold;
 }
 .info-send {
   color: var(--brend-color) !important;
@@ -96,9 +97,6 @@ label .star {
   .icon-contact {
     flex-direction: column;
     gap: 30px;
-  }
-  .icon-contact img {
-    width: 130px !important;
   }
 }
 @media (max-width: 670px) {
@@ -168,7 +166,6 @@ button[disabled] {
 .book-form {
   display: flex;
   gap: 50px;
-  margin: 30px 0;
 
   @media (max-width: 650px) {
     flex-direction: column;

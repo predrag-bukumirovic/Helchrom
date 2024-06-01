@@ -153,9 +153,7 @@ export default function References() {
 
       <div className="container-main padding30">
         <div className="icon-core references">
-          <div onClick={() => handleClick(0)}>
-            Pharmaceuticals & Life sciences
-          </div>
+          <div onClick={() => handleClick(0)}>Pharma</div>
           <div onClick={() => handleClick(1)}>Food & Bio</div>
           <div onClick={() => handleClick(2)}>Chemicals</div>
           <div onClick={() => handleClick(3)}>Electronics</div>

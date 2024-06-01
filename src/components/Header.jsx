@@ -24,8 +24,8 @@ export default function Header() {
     [prevScrollPos, visible]
   );
   return (
-    <div className={visible ? "header-box" : "header-box hidden"}>
-      <div className="header">
+    <div className="header-box">
+      <div className={visible ? "header" : "header-box hidden"}>
         <div className="header-links container-main">
           <div />
           <div>

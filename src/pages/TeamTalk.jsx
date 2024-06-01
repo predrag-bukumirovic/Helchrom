@@ -25,7 +25,7 @@ export default function TeamTalk() {
         <div className="box-img">
           {[mainImg, mainImg1, mainImg2].map((img, index) =>
             <div key={index}>
-              <img src={img} alt="Main" />
+              <img style={{ objectFit: "fill" }} src={img} alt="Main" />
             </div>
           )}
         </div>

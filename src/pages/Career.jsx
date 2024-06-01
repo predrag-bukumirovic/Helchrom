@@ -160,10 +160,18 @@ export default function Career(i) {
 
         <div className="connect-team">
           <div>
-            <img
-              src={icon1}
-              alt="Miloš Ivošević, PhD - CEO, Mechanical engineer"
-            />
+            <a
+              href="https://www.linkedin.com/in/dr-milos-ivosevic-300263166/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                className="img-team"
+                src={icon1}
+                alt="Miloš Ivošević, PhD - CEO, Mechanical engineer"
+              />
+            </a>
+
             <div>
               <span>
                 {t("team.team1.name")}
@@ -181,10 +189,18 @@ export default function Career(i) {
             </div>
           </div>
           <div>
-            <img
-              src={icon2}
-              alt="Anja Anđelković, MSc - Projects Lead, Mechanical engineer"
-            />
+            <a
+              href="https://www.linkedin.com/in/anja-andjelkovic-866b30182"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                className="img-team"
+                src={icon2}
+                alt="Anja Anđelković, MSc - Projects Lead, Mechanical engineer"
+              />
+            </a>
+
             <div>
               <span>
                 {t("team.team2.name")}

@@ -101,7 +101,7 @@
     grid-template-columns: auto auto;
     align-items: center;
     position: relative;
-    padding: 50px;
+    padding: 50px 10px;
 
     @media (max-width: 500px) {
       padding: 15px;
@@ -156,6 +156,7 @@
 
     .img-design {
       width: 100% !important;
+      padding-left: 20px;
     }
   }
 }

@@ -110,7 +110,13 @@ export default function Home() {
         <CCarousel className="slider-main" controls transition="crossfade">
           {[mainImg, mainImg1, mainImg2].map((img, index) =>
             <CCarouselItem key={index}>
-              <a href={`/about-us/who-are-we`}>
+              <a
+                href={
+                  index === 0
+                    ? "/about-us/who-are-we"
+                    : index === 1 ? "/our-services" : "/about-us/our-values"
+                }
+              >
                 <CImage
                   className="d-block w-100"
                   src={img}
@@ -135,7 +141,13 @@ export default function Home() {
         <div className="box-img">
           {[mainImg, mainImg1, mainImg2].map((img, index) =>
             <div key={index}>
-              <a href={`/about-us/who-are-we`}>
+              <a
+                href={
+                  index === 0
+                    ? "/about-us/who-are-we"
+                    : index === 1 ? "/our-services" : "/about-us/our-values"
+                }
+              >
                 <img src={img} alt="Main" />
                 <div className="img-text">
                   <div>
@@ -157,10 +169,12 @@ export default function Home() {
       {/* Welcome */}
       <div className="welcome container-main padding30">
         <h1 dangerouslySetInnerHTML={{ __html: t("home.welcome") }} />
-        <p>
-          <span dangerouslySetInnerHTML={{ __html: t("home.wel_text") }} />
-          <TextReader texts={welcomeText} />
-        </p>
+        <center>
+          <p>
+            <span dangerouslySetInnerHTML={{ __html: t("home.wel_text") }} />
+            <TextReader texts={welcomeText} />
+          </p>
+        </center>
 
         <a href="/about-us/our-vision-and-mission">
           {t("read_more")}
@@ -273,10 +287,10 @@ export default function Home() {
           <h2 className="title">
             {t("facts.title")}
           </h2>
-          <div className="facts-row">
+          <center>
             <p dangerouslySetInnerHTML={{ __html: t("facts.sub_text") }} />
             <TextReader texts={factsText} />
-          </div>
+          </center>
 
           <div ref={factsRef} className="facts-icon">
             {[

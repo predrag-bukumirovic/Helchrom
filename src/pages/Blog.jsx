@@ -5,8 +5,8 @@ import mainImg from "../assets/images/Blog/Baner1.jpg";
 import mainImg1 from "../assets/images/Blog/Baner2.jpg";
 import mainImg2 from "../assets/images/Blog/Baner3.jpg";
 
-import Diversity from "../assets/images/Blog/Diversity.jpeg";
-import Odbojka from "../assets/images/Blog/Odbojka.jpeg";
+import Diversity from "../assets/images/Blog/Diversity.png";
+import Odbojka from "../assets/images/Blog/Odbojka.png";
 import Sustainability from "../assets/images/Blog/Sustainability.png";
 
 import { useTranslation } from "react-i18next";

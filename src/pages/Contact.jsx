@@ -25,6 +25,11 @@ export default function Contact() {
     "The user has aligned their consent with the privacy policy."
   );
 
+  const [nameBook, setNameBook] = useState("");
+  const [companyBook, setCompanyBook] = useState("");
+  const [emailBook, setEmailBook] = useState("");
+  const [subjectBook] = useState("Meeting scheduling");
+
   const [selectedDate, setSelectedDate] = useState(null);
   const [dateSelected, setDateSelected] = useState(false);
   const [busyDates] = useState([
@@ -45,6 +50,7 @@ export default function Contact() {
   };
 
   const [loading, setLoading] = useState(false);
+  const [loadingBook, setLoadingBook] = useState(false);
 
   const submitForm = async e => {
     e.preventDefault();
@@ -200,7 +206,7 @@ export default function Contact() {
       return;
     }
 
-    const emailTemplate = `
+    const emailTemplateBook = `
       <html>
         <head>
           <style>
@@ -300,7 +306,6 @@ export default function Contact() {
               <img src='https://www.helmchron.gold-digital.rs/static/media/policy.346a6f0b269c86290ae3.png' alt="Logo" class="logo">
             </div>
             <div class="section">
-              <b>Subject:</b> <p>Meeting scheduling</p>
               <b>Name:</b> <p>${name}</p>
               <b>Company:</b> <p>${company}</p>
               <b>Email:</b> <p>${email}</p>
@@ -322,23 +327,24 @@ export default function Contact() {
           "Content-Type": "application/json"
         },
         body: JSON.stringify({
-          name: name,
-          email: email,
-          subject: subject,
+          name: nameBook,
+          email: emailBook,
+          subject: subjectBook,
+          company: companyBook,
           date: selectedDate,
-          message: emailTemplate
+          message: emailTemplateBook
         })
       });
 
-      setLoading(true);
+      setLoadingBook(true);
       setTimeout(() => {
-        setLoading(false);
+        setLoadingBook(false);
         window.open("/thanks", "_self");
         document.getElementById("form").reset();
       }, 3000);
     } catch (e) {
       console.error(e);
-      setLoading(false);
+      setLoadingBook(false);
     }
   };
 
@@ -386,32 +392,6 @@ export default function Contact() {
             our team will reply as soon as possible.{" "}
           </p>
         </center>
-
-        <div className="icon-contact container-main padding30">
-          <div>
-            <a
-              href="https://www.google.com/maps/place/Helmchron/@44.8191938,20.4047006,17z/data=!4m14!1m7!3m6!1s0x475a65428c286c47:0x23ade1e32fe70968!2sHelmchron!8m2!3d44.8191938!4d20.4072755!16s%2Fg%2F11qby527tz!3m5!1s0x475a65428c286c47:0x23ade1e32fe70968!8m2!3d44.8191938!4d20.4072755!16s%2Fg%2F11qby527tz"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img src={icon1} alt="icon1" />
-            </a>
-            <p>Belgrade, Serbia</p>
-          </div>
-          <div>
-            <a href="tel:+381642938533">
-              <img src={icon2} alt="icon2" />
-            </a>
-            <p>+381642938533</p>
-          </div>
-          <div>
-            <a href="mailto:office@helmchron.com">
-              <img src={icon3} alt="icon3" />
-            </a>
-
-            <p>office@helmchron.com</p>
-          </div>
-        </div>
 
         <center>
           <p>
@@ -544,7 +524,7 @@ export default function Contact() {
                       placeholder="Please enter your full name"
                       name="name"
                       required
-                      onChange={event => setName(event.target.value)}
+                      onChange={event => setNameBook(event.target.value)}
                     />
                   </label>
 
@@ -554,7 +534,7 @@ export default function Contact() {
                       type="text"
                       placeholder="Please enter your company"
                       name="company"
-                      onChange={event => setCompany(event.target.value)}
+                      onChange={event => setCompanyBook(event.target.value)}
                     />
                   </label>
 
@@ -565,7 +545,7 @@ export default function Contact() {
                       placeholder="Please enter your email"
                       required
                       name="email"
-                      onChange={event => setEmail(event.target.value)}
+                      onChange={event => setEmailBook(event.target.value)}
                     />
                   </label>
                 </div>
@@ -596,9 +576,9 @@ export default function Contact() {
                 />
               </label>
 
-              <button type="submit" className="btn" disabled={loading}>
-                {loading ? "Sending... " : "Send "}
-                {loading &&
+              <button type="submit" className="btn" disabled={loadingBook}>
+                {loadingBook ? "Sending... " : "Send "}
+                {loadingBook &&
                   <div class="lds-ring">
                     <div />
                     <div />
@@ -607,6 +587,32 @@ export default function Contact() {
                   </div>}
               </button>
             </form>
+          </div>
+
+          <div className="icon-contact container-main padding30">
+            <div>
+              <a
+                href="https://www.google.com/maps/place/Helmchron/@44.8191938,20.4047006,17z/data=!4m14!1m7!3m6!1s0x475a65428c286c47:0x23ade1e32fe70968!2sHelmchron!8m2!3d44.8191938!4d20.4072755!16s%2Fg%2F11qby527tz!3m5!1s0x475a65428c286c47:0x23ade1e32fe70968!8m2!3d44.8191938!4d20.4072755!16s%2Fg%2F11qby527tz"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src={icon1} alt="icon1" />
+              </a>
+              <p>Belgrade, Serbia</p>
+            </div>
+            <div>
+              <a href="tel:+381642938533">
+                <img src={icon2} alt="icon2" />
+              </a>
+              <p>+381642938533</p>
+            </div>
+            <div>
+              <a href="mailto:office@helmchron.com">
+                <img src={icon3} alt="icon3" />
+              </a>
+
+              <p>office@helmchron.com</p>
+            </div>
           </div>
         </div>
       </div>
