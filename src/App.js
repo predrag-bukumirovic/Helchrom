@@ -30,6 +30,10 @@ const Achema = lazy(() => import("./pages/Achema"));
 const K2022 = lazy(() => import("./pages/K2022"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 
+const Electronics = lazy(() => import("./pages/Electronics"));
+const Food = lazy(() => import("./pages/Food"));
+const Energy = lazy(() => import("./pages/Energy"));
+
 function App() {
   const [isVisible, setIsVisible] = useState(false);
   const renderLoader = () => <p>Loading</p>;
@@ -68,6 +72,9 @@ function App() {
           <Route path="/news/k2022" element={<K2022 />} />
           <Route path="/news/team-talk" element={<TeamTalk />} />
           <Route path="/our-references" element={<References />} />
+          <Route path="/electronics" element={<Electronics />} />
+          <Route path="/food-and-bioproducts" element={<Food />} />
+          <Route path="/energy" element={<Energy />} />
           <Route path="/thanks" element={<Thanks />} />
           <Route path="/*" element={<NotFound />} />
         </Routes>

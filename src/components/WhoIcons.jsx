@@ -26,12 +26,42 @@ export default function WhoIcons() {
   };
 
   const images = [
-    { default: pharma, color: pharmaColor, alt: "Icon Pharma" },
-    { default: foodandbio, color: foodandbioColor, alt: "Icon foodandbio" },
-    { default: chemicals, color: chemicalsColor, alt: "Icon chemicals" },
-    { default: electronics, color: electronicsColor, alt: "Icon electronics" },
-    { default: energy, color: energyColor, alt: "Icon energy" },
-    { default: oilandgas, color: oilandgasColor, alt: "Icon oilandgas" }
+    {
+      default: pharma,
+      color: pharmaColor,
+      alt: "Icon Pharma",
+      link: "/pharma"
+    },
+    {
+      default: foodandbio,
+      color: foodandbioColor,
+      alt: "Icon foodandbio",
+      link: "/food-and-bioproducts"
+    },
+    {
+      default: chemicals,
+      color: chemicalsColor,
+      alt: "Icon chemicals",
+      link: "/chemicals"
+    },
+    {
+      default: electronics,
+      color: electronicsColor,
+      alt: "Icon electronics",
+      link: "/electronics"
+    },
+    {
+      default: energy,
+      color: energyColor,
+      alt: "Icon energy",
+      link: "/energy"
+    },
+    {
+      default: oilandgas,
+      color: oilandgasColor,
+      alt: "Icon oilandgas",
+      link: "oil&gas"
+    }
   ];
 
   return (
@@ -43,10 +73,12 @@ export default function WhoIcons() {
             onMouseEnter={() => handleMouseEnter(image.color)}
             onMouseLeave={handleMouseLeave}
           >
-            <img
-              src={hoveredImage === image.color ? image.color : image.default}
-              alt={image.alt}
-            />
+            <a href={image.link}>
+              <img
+                src={hoveredImage === image.color ? image.color : image.default}
+                alt={image.alt}
+              />
+            </a>
           </div>
         )}
       </div>
