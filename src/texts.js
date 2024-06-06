@@ -125,36 +125,18 @@ const data = {
       },
       feedback: {
         title: "we value our partners' feedback",
-        text1: `<p>
-                  Helmchron team demonstrated extensive expertise and all-time
-                  availability that enabled solving the most challenging tasks
-                  efficiently and successfully.
-                </p>
-                <p>
-                  They managed well with an increased workload and adjusted
-                  timeline. Their comprehensive experience, reliability, and
-                  systematic approach resulted in great quality of delivered
-                  work and our overall collaboration.
-                </p>`,
-        text2: `<p>
-                  Due to their deep engineering expertise and experience,
-                  Helmchron team was able to understand the project's tasks
-                  quickly and deliver results on time and within budget.
-                </p>
-                <p>
-                  The team showed high motivation and an enthusiastic approach
-                  to all the challenges and has overcome these with outstanding
-                  initiative. They work precisely and with care for outcomes and
-                  the rest of the team. These qualities enabled successful
-                  delivery and our satisfaction.
-                </p>`,
+        text1: `Extensive, readily available expertise enabled the successful tackling of even the most challenging issues. Increased workloads and tight deadlines were effectively handled.
+                A high level of initiative, independence, and dedication was consistently demonstrated, along with a willingness to take on responsibility.<br/>
+                The approach to operations was characterized by reliability, systematic organization, a strong sense of responsibility, and cost-awareness. The quality of work was excellent, and high level of expertise was evident.`,
+        text2: `Due to a quick understanding of tasks and deep expertise, integration into new projects was achieved within a short period. High motivation and enthusiasm for various new.   challenges, along with outstanding initiative, were consistently demonstrated.
+                The work delivered was characterized by precision and thoroughness, consistently meeting deadlines and inspiring colleagues. These qualities enabled successful completion of assignments under significant pressure, fully meeting our expectations.`,
         text3:
-          " Due to the wide scope of their expertise and interest, the project`s outcomes were accomplished independently, precisely, and concisely with great dedication and enthusiasm. We have come to know Helmchron team as open-minded, pleasant to work with, and strongly motivated."
+          "It's inspiring to see the commitment to streamlining project processes for optimal results. A dedicated team and singular focus [of <span class='ofHc'>HELMCHR<span class='one'>ONe</span></span>] are indeed game-changers in achieving project success. Looking forward to seeing how Helmchron ONE revolutionizes project management"
       },
 
       navbar: {
         who_are_we: "Who are we?",
-        services: "Our Services: Process Engineering",
+        services: "Plant engineering design for the coming generations",
         how_do_we_work: "How do we work?",
         home: "Home",
         about_us: "About us",

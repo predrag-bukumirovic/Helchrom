@@ -124,7 +124,7 @@ export default function Energy() {
           </div>
 
           <center>
-            <p style={{ marginBottom: 0 }}>Check out our reference list</p>
+            <p style={{ marginBottom: 0 }}>Check out our reference in energy</p>
             <br />
             <a
               style={{ background: "var(--dark-blue-color)" }}

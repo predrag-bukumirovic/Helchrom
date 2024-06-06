@@ -22,9 +22,7 @@ const OurServices = lazy(() => import("./pages/OurServices"));
 const Footer = lazy(() => import("./components/Footer"));
 const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy"));
 const LegalStatement = lazy(() => import("./pages/LegalStatement"));
-const Environment = lazy(() => import("./pages/Environment"));
-const Vehicles = lazy(() => import("./pages/Vehicles"));
-const Pharma = lazy(() => import("./pages/Pharma"));
+
 const Chemicals = lazy(() => import("./pages/Chemicals"));
 const Achema = lazy(() => import("./pages/Achema"));
 const K2022 = lazy(() => import("./pages/K2022"));
@@ -33,6 +31,8 @@ const NotFound = lazy(() => import("./pages/NotFound"));
 const Electronics = lazy(() => import("./pages/Electronics"));
 const Food = lazy(() => import("./pages/Food"));
 const Energy = lazy(() => import("./pages/Energy"));
+const Pharma = lazy(() => import("./pages/Pharma"));
+const Oil = lazy(() => import("./pages/Oil"));
 
 function App() {
   const [isVisible, setIsVisible] = useState(false);
@@ -66,8 +66,6 @@ function App() {
           <Route path="/legal-statement" element={<LegalStatement />} />
           <Route path="/chemicals" element={<Chemicals />} />
           <Route path="/pharma" element={<Pharma />} />
-          <Route path="/environment" element={<Environment />} />
-          <Route path="/vehicles" element={<Vehicles />} />
           <Route path="/news/achema" element={<Achema />} />
           <Route path="/news/k2022" element={<K2022 />} />
           <Route path="/news/team-talk" element={<TeamTalk />} />
@@ -75,6 +73,7 @@ function App() {
           <Route path="/electronics" element={<Electronics />} />
           <Route path="/food-and-bioproducts" element={<Food />} />
           <Route path="/energy" element={<Energy />} />
+          <Route path="/oil&gas" element={<Oil />} />
           <Route path="/thanks" element={<Thanks />} />
           <Route path="/*" element={<NotFound />} />
         </Routes>

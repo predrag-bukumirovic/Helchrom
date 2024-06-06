@@ -99,9 +99,9 @@ export default function Home() {
   const uniqueText = [t("unique.title"), t("unique.text"), t("book_btn")];
   const areasText = [t("areas.title"), t("areas.sub_text")];
   const factsText = [t("facts.title"), t("facts.sub_text")];
-  const feedbackText1 = [t("feedback.title"), t("feedback.text1")];
-  const feedbackText2 = [t("feedback.title"), t("feedback.text2")];
-  const feedbackText3 = [t("feedback.title"), t("feedback.text3")];
+  // const feedbackText1 = [t("feedback.title"), t("feedback.text1")];
+  // const feedbackText2 = [t("feedback.title"), t("feedback.text2")];
+  // const feedbackText3 = [t("feedback.title"), t("feedback.text3")];
 
   return (
     <div>
@@ -373,25 +373,39 @@ export default function Home() {
               <img src={quotation} alt="quotation" />
 
               <div>
-                <TextReader texts={feedbackText1} />
+                {/* <TextReader texts={feedbackText1} /> */}
                 <p dangerouslySetInnerHTML={{ __html: t("feedback.text1") }} />
+
+                <div style={{ float: "right" }}>
+                  <span>Engineering Dobersek GmbH</span>
+                </div>
               </div>
             </div>
             <div className="testi-item">
               <img src={quotation} alt="quotation" />
 
               <div>
-                <TextReader texts={feedbackText2} />
+                {/* <TextReader texts={feedbackText2} /> */}
+
                 <p dangerouslySetInnerHTML={{ __html: t("feedback.text2") }} />
+
+                <div style={{ float: "right" }}>
+                  <span>Numikon Ltd.</span>
+                </div>
               </div>
             </div>
             <div className="testi-item">
               <img src={quotation} alt="quotation" />
               <div>
-                <TextReader texts={feedbackText3} />
-                <p>
-                  {t("feedback.text3")}
-                </p>
+                <p dangerouslySetInnerHTML={{ __html: t("feedback.text3") }} />
+
+                {/* <TextReader texts={feedbackText3} /> */}
+
+                <div style={{ float: "right" }}>
+                  <span>PowerPatent Inc.</span>
+                  <br />
+                  <span>on Linkedin</span>
+                </div>
               </div>
             </div>
           </Carousel>

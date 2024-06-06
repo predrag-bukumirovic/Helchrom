@@ -503,9 +503,14 @@
   .testi-item {
     display: flex;
     align-items: flex-start;
+    text-align: justify;
+    padding-left: 50px;
 
     img {
-      width: 50px;
+      width: 150px;
+      position: absolute;
+      left: 20px;
+      top: -5px;
     }
     p {
       font-size: 20px;
@@ -514,6 +519,11 @@
       @media (max-width: 600px) {
         font-size: 14px;
       }
+    }
+
+    span {
+      font-size: 18px;
+      font-weight: 600;
     }
   }
   .slider-testi {
@@ -621,4 +631,12 @@
       display: block;
     }
   }
+}
+
+.ofHc {
+  color: var(--brend-color) !important;
+}
+
+.one {
+  color: var(--dark-blue-color) !important;
 }
