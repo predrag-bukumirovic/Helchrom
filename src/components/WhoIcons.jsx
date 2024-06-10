@@ -60,7 +60,7 @@ export default function WhoIcons() {
       default: oilandgas,
       color: oilandgasColor,
       alt: "Icon oilandgas",
-      link: "oil&gas"
+      link: "/oil&gas"
     }
   ];
 

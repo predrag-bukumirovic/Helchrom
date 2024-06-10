@@ -1,15 +1,16 @@
 import React from "react";
+import "../assets/scss/storyLine.scss";
+import { useTranslation } from "react-i18next";
 import Story2013 from "../assets/images/Home/Story2013.webp";
 import Story2010 from "../assets/images/Home/Story2010.webp";
 import Story2015 from "../assets/images/Home/Story2015.webp";
 import Story2016 from "../assets/images/Home/Story2016.webp";
 import Story2020 from "../assets/images/Home/Story2020.webp";
 import Story2023 from "../assets/images/Home/Story2023.webp";
-import { useTranslation } from "react-i18next";
 
 import TextReader from "../components/TextRender";
 
-export default function Storyline() {
+export default function StoryLineProbe() {
   const { t } = useTranslation();
 
   const storyText = [
@@ -24,123 +25,101 @@ export default function Storyline() {
   ];
 
   return (
-    <div>
-      <div className="storyline container-main padding30">
-        <h2 className="title">
-          {t("our_line.title")}
-        </h2>
+    <div className="story-line container-main">
+      <h2 className="title">
+        {t("our_line.title")}
+      </h2>
 
-        <p
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center"
-          }}
-        >
-          {t("our_line.sub_text")}
-          <TextReader texts={storyText} />
-        </p>
-
-        <section className="storyline-box">
-          <div className="box box1">
-            <div className="text text1-1">
-              <p>
-                {t("our_line.img_text1")}
-              </p>
-            </div>
-            <div className="img-date img1-1">
-              <img src={Story2013} alt="" />
-              <span>2013</span>
-            </div>
-            <div className="text text1-2">
-              <p>
-                {t("our_line.img_text3")}
-              </p>
-            </div>
-            <div className="img-date img1-2">
-              <img src={Story2016} alt="" />
-              <span>2016</span>
-            </div>
-            <div className="text text1-3">
-              <p>
-                {t("our_line.img_text5")}
-              </p>
-            </div>
-            <div className="img-date img1-3">
-              <img src={Story2023} alt="" />
-              <span>2023</span>
-            </div>
+      <p style={{ textAlign: "center" }}>
+        {t("our_line.sub_text")}
+        <TextReader texts={storyText} />
+      </p>
+      <div className="item">
+        <div className="line" />
+        <div className="story-line-item">
+          <div className="text bottom-line">
+            <p>
+              {t("our_line.img_text1")}
+            </p>
           </div>
-          <div className="story-line">
-            <div className="item-round-line">
-              <div className="round-line">
-                <div className="line" />
-                <div className="round" />
-                <div className="line" />
-              </div>
-              <div className="round-line">
-                <div className="line" />
-                <div className="round" />
-                <div className="line" />
-              </div>
-
-              <div className="round-line">
-                <div className="line" />
-                <div className="round" />
-                <div className="line" />
-              </div>
-
-              <div className="round-line">
-                <div className="line" />
-                <div className="round" />
-                <div className="line" />
-              </div>
-
-              <div className="round-line">
-                <div className="line" />
-                <div className="round" />
-                <div className="line" />
-              </div>
-
-              <div className="round-line">
-                <div className="line" />
-                <div className="round" />
-                <div className="line" />
-              </div>
-            </div>
+          <div className="line-ver" />
+          <div className="round" />
+          <div className="line-ver" />
+          <div className="img">
+            <span>2010</span>
+            <img src={Story2010} alt="" />
           </div>
-          <div className="box box2" style={{ alignItems: "start" }}>
-            <div className="img-date img2-1">
-              <span>2010</span>
-              <img src={Story2010} alt="" />
-            </div>
-            <div className="text text2-1">
-              <p>
-                {t("our_line.img_text2")}
-              </p>
-            </div>
-
-            <div className="img-date img2-2">
-              <span>2015</span>
-              <img src={Story2015} alt="" />
-            </div>
-            <div className="text text2-2">
-              <p>
-                {t("our_line.img_text4")}
-              </p>
-            </div>
-
-            <div className="img-date img2-3">
-              <span>2020</span>
-              <img src={Story2020} alt="" />
-            </div>
-            <div className="text text2-3">
-              <p>
-                {t("our_line.img_text6")}
-              </p>
-            </div>
+        </div>
+        <div className="story-line-item">
+          <div className="img">
+            <img src={Story2013} alt="" />
+            <span>2013</span>
           </div>
-        </section>
+          <div className="line-ver" />
+          <div className="round" />
+          <div className="line-ver" />
+          <div className="text up-line">
+            <p>
+              {t("our_line.img_text2")}
+            </p>
+          </div>
+        </div>
+        <div className="story-line-item">
+          <div className="text bottom-line">
+            <p>
+              {t("our_line.img_text3")}
+            </p>
+          </div>
+          <div className="line-ver" />
+          <div className="round" />
+          <div className="line-ver" />
+          <div className="img">
+            <span>2015</span>
+            <img src={Story2015} alt="" />
+          </div>
+        </div>
+        <div className="story-line-item">
+          <div className="img">
+            <img src={Story2016} alt="" />
+            <span>2016</span>
+          </div>
+          <div className="line-ver" />
+          <div className="round" />
+          <div className="line-ver" />
+          <div className="text up-line">
+            <p>
+              {t("our_line.img_text4")}
+            </p>
+          </div>
+        </div>
+        <div className="story-line-item">
+          <div className="text bottom-line">
+            <p>
+              {t("our_line.img_text5")}
+            </p>
+          </div>
+          <div className="line-ver" />
+          <div className="round" />
+          <div className="line-ver" />
+          <div className="img">
+            <span>2020</span>
+            <img src={Story2020} alt="" />
+          </div>
+        </div>
+        <div className="story-line-item">
+          <div className="img">
+            <img src={Story2023} alt="" />
+            <span>2023</span>
+          </div>
+          <div className="line-ver" />
+          <div className="round" />
+          <div className="line-ver" />
+          <div className="text up-line">
+            <p>
+              {t("our_line.img_text6")}
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   );

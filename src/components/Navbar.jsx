@@ -3,6 +3,7 @@ import logo from "../assets/images/logo.webp";
 import ChemistryConnects from "../assets/images/ChemistryConnects.png";
 import "../assets/scss/navbar.css";
 import { BiChevronDown } from "react-icons/bi";
+import { MdKeyboardArrowRight } from "react-icons/md";
 import { TfiClose } from "react-icons/tfi";
 import { AiOutlineCaretDown } from "react-icons/ai";
 import TikTok from "../assets/images/tiktok.webp";
@@ -16,6 +17,7 @@ export default function Navbar() {
   const [downMenuAbout, setDownMenuAbout] = useState(false);
   const [downMenu, setDownMenu] = useState(false);
   const { t } = useTranslation();
+  const [isSubmenuOpen, setIsSubmenuOpen] = useState(false);
 
   function CustomLink({ href, children, ...props }) {
     const path = window.location.pathname;
@@ -78,6 +80,40 @@ export default function Navbar() {
                     <CustomLink href="/about-us/who-are-we">
                       {t("navbar.who_are_we")}
                     </CustomLink>
+                  </li>
+                  <li
+                    className="menu-item"
+                    onMouseEnter={() => setIsSubmenuOpen(true)}
+                    onMouseLeave={() => setIsSubmenuOpen(false)}
+                    style={{ position: "relative" }}
+                  >
+                    <span
+                      style={{
+                        textTransform: "capitalize",
+                        paddingLeft: 20,
+                        display: "flex",
+                        justifyContent: "space-between",
+                        alignItems: "center"
+                      }}
+                    >
+                      Our business areas <MdKeyboardArrowRight />
+                    </span>
+
+                    {isSubmenuOpen &&
+                      <div
+                        className={`menu-areas ${downMenuAbout
+                          ? "active"
+                          : "menu-down"}`}
+                      >
+                        <CustomLink href="/pharma">Pharma</CustomLink>
+                        <CustomLink href="/food-and-bioproducts">
+                          Food & Bio
+                        </CustomLink>
+                        <CustomLink href="/chemicals">Chemicals</CustomLink>
+                        <CustomLink href="/electronics">Electronics</CustomLink>
+                        <CustomLink href="/energy">Energy</CustomLink>
+                        <CustomLink href="/oil&gas">Oil & Gas</CustomLink>
+                      </div>}
                   </li>
                   <li>
                     <CustomLink href="/about-us/our-team">

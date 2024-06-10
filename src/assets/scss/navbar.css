@@ -85,6 +85,14 @@ ul li ol.menu-down {
   padding-left: 0;
 }
 
+.menu-areas {
+  position: absolute;
+  background: var(--light-blue-color);
+  width: 100%;
+  right: -190px;
+  top: 0;
+}
+
 @keyframes menu_down {
   from {
     opacity: 0;
@@ -94,7 +102,8 @@ ul li ol.menu-down {
   }
 }
 
-ul li ol.menu-down li a {
+ul li ol.menu-down li a,
+ul li ol.menu-down li span {
   color: var(--gray-text-color);
   margin: 0;
   padding: 15px 20px;
@@ -202,6 +211,13 @@ ul li ol.menu-down li a:hover {
 
   .logo img {
     width: 150px;
+  }
+
+  .menu-areas {
+    position: relative;
+    line-height: 30px;
+    background: #fff;
+    right: -20px;
   }
 
   ul li ol.active {

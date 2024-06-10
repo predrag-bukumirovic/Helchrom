@@ -6,7 +6,11 @@ import {
   CImage
 } from "@coreui/react";
 import Carousel from "react-multi-carousel";
+
 import WhoIcons from "../components/WhoIcons";
+import Storyline from "../components/Storyline";
+import TextReader from "../components/TextRender";
+
 import mainImg from "../assets/images/Home/main-img1.webp";
 import mainImg1 from "../assets/images/Home/main-img2.webp";
 import mainImg2 from "../assets/images/Home/main-img3.webp";
@@ -22,16 +26,14 @@ import icon2 from "../assets/images/Home/2.png";
 import icon3 from "../assets/images/Home/3.png";
 import icon4 from "../assets/images/Home/4.png";
 import icon5 from "../assets/images/Home/5.png";
-import quotation from "../assets/images/quotation.png";
+import quotation from "../assets/images/quotationLine.png";
 
 import "../assets/scss/home.scss";
 import "../assets/scss/slider.scss";
 import "@coreui/coreui/dist/css/coreui.min.css";
 import "react-multi-carousel/lib/styles.css";
-import Storyline from "../components/Storyline";
-import { useTranslation } from "react-i18next";
 
-import TextReader from "../components/TextRender";
+import { useTranslation } from "react-i18next";
 
 const responsive = {
   superLargeDesktop: { breakpoint: { max: 4000, min: 3000 }, items: 1 },
@@ -41,7 +43,7 @@ const responsive = {
 };
 
 export default function Home() {
-  const [numbers, setNumbers] = useState([0, 0, 0, 0, 0, 0]);
+  const [numbers, setNumbers] = useState([1990, 0, 0, 0, 0, 0]);
   const finalNumbers = [2010, 6, 7, 180, 50, 5];
   const animationStarted = useRef(false);
   const factsRef = useRef(null);
@@ -65,9 +67,9 @@ export default function Home() {
   };
 
   const animateNumber = (index, finalNumber) => {
-    const duration = 5000; // 5 seconds
-    const stepTime = duration / finalNumber;
-    let currentNumber = 0;
+    const duration = 2000; // 5 seconds
+    const stepTime = duration / (finalNumber - (index === 0 ? 1990 : 0));
+    let currentNumber = index === 0 ? 1990 : 0;
     const interval = setInterval(() => {
       currentNumber++;
       setNumbers(prevNumbers => {

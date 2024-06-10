@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { CCarousel, CCarouselItem, CImage } from "@coreui/react";
 import "@coreui/coreui/dist/css/coreui.min.css";
 import { Helmet } from "react-helmet";
@@ -19,6 +19,32 @@ import { useTranslation } from "react-i18next";
 
 export default function OurValues() {
   const { t } = useTranslation();
+
+  const [showFirstText, setShowFirstText] = useState(false);
+  const [showSecondText, setShowSecondText] = useState(false);
+
+  useEffect(() => {
+    const showText = () => {
+      setShowFirstText(true);
+      setTimeout(() => {
+        setShowFirstText(false);
+      }, 5000);
+
+      setTimeout(() => {
+        setShowSecondText(true);
+        setTimeout(() => {
+          setShowSecondText(false);
+        }, 5000);
+      }, 5000);
+    };
+
+    showText();
+    const interval = setInterval(showText, 10000);
+
+    return () => {
+      clearInterval(interval);
+    };
+  }, []);
 
   return (
     <div>
@@ -72,7 +98,11 @@ export default function OurValues() {
                 <div className="rotatingText-adjective">
                   {t("our_way.integrity.title")}
                 </div>
-                <div className="rotatingText-adjective">
+                <div
+                  className={`rotatingText-adjective ${showSecondText
+                    ? "show"
+                    : ""}`}
+                >
                   {t("connects")}
                 </div>
               </div>
@@ -85,11 +115,15 @@ export default function OurValues() {
           <div className="row-img-text row2">
             <div className="row-img">
               <img src={Committment} alt="" />
-              <div>
-                <div>
+              <div className="rotatingText">
+                <div className="rotatingText-adjective">
                   {t("our_way.commitment.title")}
                 </div>
-                <div>
+                <div
+                  className={`rotatingText-adjective ${showSecondText
+                    ? "show"
+                    : ""}`}
+                >
                   {t("connects")}
                 </div>
               </div>
@@ -106,7 +140,11 @@ export default function OurValues() {
                 <div className="rotatingText-adjective">
                   {t("our_way.agility.title")}
                 </div>
-                <div className="rotatingText-adjective">
+                <div
+                  className={`rotatingText-adjective ${showSecondText
+                    ? "show"
+                    : ""}`}
+                >
                   {t("connects")}
                 </div>
               </div>
@@ -121,10 +159,14 @@ export default function OurValues() {
             <div className="row-img">
               <img src={Diversity} alt="" />
               <div>
-                <div>
+                <div className="rotatingText-adjective">
                   {t("our_way.diversity.title")}
                 </div>
-                <div>
+                <div
+                  className={`rotatingText-adjective ${showSecondText
+                    ? "show"
+                    : ""}`}
+                >
                   {t("connects")}
                 </div>
               </div>
@@ -142,7 +184,11 @@ export default function OurValues() {
                 <div className="rotatingText-adjective">
                   {t("our_way.courage.title")}
                 </div>
-                <div className="rotatingText-adjective">
+                <div
+                  className={`rotatingText-adjective ${showSecondText
+                    ? "show"
+                    : ""}`}
+                >
                   {t("connects")}
                 </div>
               </div>
