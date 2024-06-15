@@ -132,29 +132,6 @@ export default function Navbar() {
                   </li>
                 </ol>
               </li>
-              {/* <li>
-                <span
-                  onClick={() => setDownMenu(!downMenu)}
-                  className="com-ser"
-                >
-                  {t("navbar.competences_services")} <BiChevronDown />
-                </span>
-                <ol
-                  style={{ display: "none" }}
-                  className={`${downMenu ? "active" : "menu-down"}`}
-                >
-                  <li>
-                    <CustomLink href="/competences&services/our-core-competencies">
-                      {t("navbar.our_core")}
-                    </CustomLink>
-                  </li>
-                  <li>
-                    <CustomLink href="/competences&services/our-services">
-                      {t("navbar.our_services")}
-                    </CustomLink>
-                  </li>
-                </ol>
-              </li> */}
 
               <CustomLink href="/our-services">
                 {t("navbar.our_services")}

@@ -206,12 +206,10 @@
 
     .facts-icon {
       display: grid;
-      grid-template-columns: auto auto auto;
+      grid-template-columns: repeat(auto-fit, minmax(430px, 1fr));
       margin-bottom: 50px;
-
-      @media (max-width: 1150px) {
-        grid-template-columns: auto auto;
-      }
+      margin-top: 10px;
+      gap: 10px;
 
       @media (max-width: 850px) {
         grid-template-columns: auto auto;
@@ -230,7 +228,7 @@
           width: 180px;
 
           @media (max-width: 600px) {
-            width: 80px;
+            width: 100px;
           }
         }
 
@@ -240,6 +238,8 @@
 
           .word {
             font-size: 18px;
+            padding-left: 5px;
+
             text-transform: uppercase;
 
             @media (max-width: 600px) {
@@ -256,16 +256,6 @@
 
             @media (max-width: 600px) {
               font-size: 20px;
-            }
-
-            .word-180 {
-              font-weight: 100;
-              font-size: 20px;
-              text-transform: uppercase;
-
-              @media (max-width: 600px) {
-                font-size: 16px;
-              }
             }
           }
         }
@@ -395,13 +385,13 @@
     display: flex;
     align-items: flex-start;
     text-align: justify;
-    padding-left: 50px;
+    padding-left: 40px;
 
     img {
       width: 150px;
       position: absolute;
-      left: 20px;
-      top: -5px;
+      left: 0;
+      top: -6px;
     }
     p {
       font-size: 20px;
@@ -464,7 +454,7 @@
 
   @media (max-width: 700px) {
     p {
-      font-size: 20px;
+      font-size: 16px;
       text-align: start;
     }
     .text-icon {

@@ -73,11 +73,14 @@ const WhoAreWe = () => {
         </div>
       </div>
       <div className="container-main padding30">
-        <h1 className="title">
+        <h1 className="title" data-aos="fade-up">
           {t("who_are_we.title")}
         </h1>
         <center>
-          <p dangerouslySetInnerHTML={{ __html: t("who_are_we.text_sub") }} />
+          <p
+            data-aos="fade-up"
+            dangerouslySetInnerHTML={{ __html: t("who_are_we.text_sub") }}
+          />
         </center>
 
         <WhoIcons />
@@ -91,13 +94,14 @@ const WhoAreWe = () => {
             </h2>
             <div className="our-history">
               <div
+                data-aos="fade-right"
                 className="text"
                 dangerouslySetInnerHTML={{
                   __html: t("who_are_we.history_text")
                 }}
               />
 
-              <img src={OurImg} alt="Our history" />
+              <img data-aos="fade-left" src={OurImg} alt="Our history" />
             </div>
           </div>
         </div>
@@ -107,16 +111,19 @@ const WhoAreWe = () => {
         <h2 className="title">
           {t("who_are_we.credo_title")}
         </h2>
-        <p dangerouslySetInnerHTML={{ __html: t("who_are_we.credo_text") }} />
+        <p
+          data-aos="fade-up"
+          dangerouslySetInnerHTML={{ __html: t("who_are_we.credo_text") }}
+        />
       </div>
 
-      <div style={{ background: "var(--light-orange-color)" }}>
+      <div>
         <div className="container-main credo-testimonial">
-          <div>
+          <div data-aos="fade-right">
             <img src={OurcredoImg} alt="OurcredoImg" />
           </div>
           <div>
-            <p>
+            <p data-aos="fade-left">
               <img src={quotation} alt="" />
 
               <span
@@ -124,6 +131,7 @@ const WhoAreWe = () => {
               />
             </p>
             <span
+              data-aos="fade-left"
               style={{ float: "right", cursor: "pointer" }}
               className="book-btn"
               onClick={openModal}
@@ -157,12 +165,12 @@ const WhoAreWe = () => {
       <div className="container-main">
         <div className="basic padding30">
           <div className="padding30">
-            <h2 className="title">
+            <h2 className="title" data-aos="fade-right">
               <b>
                 {t("info.title")}
               </b>
             </h2>
-            <ul>
+            <ul data-aos="fade-right">
               <li>
                 {t("info.reg")}
               </li>
@@ -177,7 +185,7 @@ const WhoAreWe = () => {
                 {t("info.reg_num")}
               </li>
             </ul>
-            <ul>
+            <ul data-aos="fade-right">
               <li>
                 {t("info.contact")}
               </li>
@@ -203,7 +211,7 @@ const WhoAreWe = () => {
               </li>
             </ul>
           </div>
-          <img src={basicImg} alt="Basic" />
+          <img data-aos="fade-left" src={basicImg} alt="Basic" />
         </div>
       </div>
     </div>

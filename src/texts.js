@@ -16,7 +16,7 @@ const data = {
         credo_text:
           "  Our expertise and our impact are led by our vision and purpose to upgrade the quality of life, maintain strong, long-lasting <br /> partnerships, and empower our team with living by our values. Our accountability lies in providing process and chemical <br /> engineering solutions that enable manufacturing of efficient and safe products globally, guided by the belief in equal <br /> access to pharmaceuticals, chemicals, fuels, energy, and food. We prioritize our partners` needs and outcomes, our core <br /> values, environmental sustainability and stability of our business operations, envisioning a high quality of life for everyone.",
         quotation:
-          " We believe that expertise, innovation, and values create long-term impact. Our purpose is to deliver outcomes that positively change the world around us, maintain strong partnerships, and empower our team to thrive in an environment built on our core values. <br/> Our main responsibility lies within our vision - to support the manufacturing of products that will be efficient and safe and serve the global society and environment."
+          " We believe that expertise, innovation, and values create long-term <br/> impact. Our purpose is to deliver outcomes that positively change <br/> the world around us, maintain strong partnerships, and empower <br/> our team to thrive in an environment built on our core values. <br/> Our main responsibility lies within our vision - to support the manufacturing of products that will be efficient and safe and serve the global society and environment."
       },
       services: {
         title: "our services",
@@ -99,7 +99,7 @@ const data = {
               collaborations. <br /> We prioritize delivering high-quality
               solutions in process and chemical engineering, while upholding the
               utmost standards of integrity, agility, and accountability.`,
-        icon_title1: "founder in",
+        icon_title1: "Founded in",
         icon_title2: "operations areas",
         icon_title3: "number of week days we provide support to our clients",
         icon_title4: "minute average feedback time",
@@ -131,7 +131,7 @@ const data = {
         text2: `Due to a quick understanding of tasks and deep expertise, integration into new projects was achieved within a short period. High motivation and enthusiasm for various new.   challenges, along with outstanding initiative, were consistently demonstrated.
                 The work delivered was characterized by precision and thoroughness, consistently meeting deadlines and inspiring colleagues. These qualities enabled successful completion of assignments under significant pressure, fully meeting our expectations.`,
         text3:
-          "It's inspiring to see the commitment to streamlining project processes for optimal results. A dedicated team and singular focus [of <span class='ofHc'>HELMCHR<span class='one'>ONe</span></span>] are indeed game-changers in achieving project success. Looking forward to seeing how Helmchron ONE revolutionizes project management"
+          "It's inspiring to see the commitment to streamlining project processes for optimal results. A dedicated team and singular focus [of <span class='ofHc'>HELMCHR<span class='one'>ONe</span></span>] are indeed game-changers in achieving project success. Looking forward to seeing how Helmchron ONE revolutionizes project management dynamics."
       },
 
       navbar: {
@@ -258,7 +258,12 @@ const data = {
                 Life-cycle management - equipment and facilities lifecycle plan,
                 maintenance schedules, upgrades and replacements.
               </li>`,
-        design_text1: `<span>Basic Engineering:</span>
+        design_text1: `
+        
+            <h3>
+              Engineering & Design
+            </h3>
+        <span><b>Basic Engineering:</b></span>
 
               <ul>
                 <li>Feasibility studies and data analysis</li>
@@ -278,7 +283,7 @@ const data = {
                   schedule
                 </li>
               </ul>`,
-        design_text2: `<span>Detailed Engineering:</span>
+        design_text2: `<span><b>Detailed Engineering:</b></span>
               <ul>
                 <li>Development of detailed design</li>
                 <li>
@@ -298,7 +303,7 @@ const data = {
                 <li>Documentation</li>
               </ul>
 
-              <span>As-Built</span>
+              <span><b>As-Built</b></span>
 
               <ul>
                 <li>Tracking of changes and implementation</li>

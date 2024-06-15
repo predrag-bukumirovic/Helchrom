@@ -5,17 +5,26 @@
   .line {
     width: 100%;
     height: 20px;
-    border-radius: 20px;
     background: var(--light-blue-color);
     position: absolute;
-    top: 382px;
+    top: 250px;
     z-index: -1;
-    transition: width 0.3s ease-in-out, background-color 0.3s ease-in-out;
+
+    @media (max-width: 1000px) {
+      transform: translateX(-50%) rotate(90deg);
+      top: 730px;
+      bottom: 0;
+      width: 2000px;
+      left: 50%;
+      margin: 0 auto;
+    }
   }
 
   .item {
     display: flex;
     justify-content: space-around;
+    position: relative;
+    overflow: hidden;
 
     .story-line-item {
       display: flex;
@@ -90,6 +99,30 @@
         width: 2px;
         height: 40px;
         background: var(--brend-color);
+      }
+    }
+
+    @media (max-width: 1000px) {
+      display: block;
+
+      .story-line-item {
+        flex-direction: row;
+        width: 100% !important;
+        justify-content: space-around;
+
+        .img {
+          width: 38%;
+          height: 100%;
+        }
+        .text {
+          width: 38%;
+          height: 100%;
+        }
+
+        .line-ver {
+          transform: rotate(90deg);
+          height: 35px;
+        }
       }
     }
   }

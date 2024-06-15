@@ -67,7 +67,7 @@ export default function Home() {
   };
 
   const animateNumber = (index, finalNumber) => {
-    const duration = 2000; // 5 seconds
+    const duration = 2000;
     const stepTime = duration / (finalNumber - (index === 0 ? 1990 : 0));
     let currentNumber = index === 0 ? 1990 : 0;
     const interval = setInterval(() => {
@@ -172,7 +172,7 @@ export default function Home() {
       <div className="welcome container-main padding30">
         <h1 dangerouslySetInnerHTML={{ __html: t("home.welcome") }} />
         <center>
-          <p>
+          <p data-aos="fade-up">
             <span dangerouslySetInnerHTML={{ __html: t("home.wel_text") }} />
             <TextReader texts={welcomeText} />
           </p>
@@ -188,7 +188,7 @@ export default function Home() {
         <h2 className="title">
           {t("services.title")}
         </h2>
-        <p style={{ textAlign: "center" }}>
+        <p data-aos="fade-up" style={{ textAlign: "center" }}>
           {t("services.sub_text")}
           <TextReader texts={ourServicesText} />
         </p>
@@ -221,7 +221,7 @@ export default function Home() {
               text: t("services.icon.text5")
             }
           ].map((item, index) =>
-            <div key={index}>
+            <div key={index} data-aos="zoom-in">
               <img src={item.icon} alt="" />
               <h3>
                 {item.title}
@@ -252,7 +252,10 @@ export default function Home() {
 
           <div className="unique-row">
             <div className="text">
-              <p dangerouslySetInnerHTML={{ __html: t("unique.text") }} />
+              <p
+                data-aos="fade-right"
+                dangerouslySetInnerHTML={{ __html: t("unique.text") }}
+              />
               <TextReader texts={uniqueText} />
               <br />
               <br />
@@ -261,7 +264,7 @@ export default function Home() {
                 {t("book_btn")}
               </a>
             </div>
-            <div className="img">
+            <div data-aos="fade-left" className="img">
               <img src={HCOne} alt="HC One" />
             </div>
           </div>
@@ -290,7 +293,10 @@ export default function Home() {
             {t("facts.title")}
           </h2>
           <center>
-            <p dangerouslySetInnerHTML={{ __html: t("facts.sub_text") }} />
+            <p
+              data-aos="fade-up"
+              dangerouslySetInnerHTML={{ __html: t("facts.sub_text") }}
+            />
             <TextReader texts={factsText} />
           </center>
 
@@ -303,7 +309,7 @@ export default function Home() {
               Factshappy,
               Facts5
             ].map((img, index) =>
-              <div key={index} className="icon-item">
+              <div key={index} className="icon-item" data-aos="zoom-in">
                 <img src={img} alt="Facts img" />
                 <div className="text">
                   <span className="word">
@@ -319,7 +325,10 @@ export default function Home() {
                               ? t("facts.icon_title5")
                               : t("facts.icon_title6")}
                   </span>
-                  <span className="number">{`>${numbers[index]}`}</span>
+                  <span className="number">{`${finalNumbers[index] === 50 ||
+                  finalNumbers[index] === 5
+                    ? ">"
+                    : ""}${numbers[index]}`}</span>
                 </div>
               </div>
             )}
@@ -336,7 +345,7 @@ export default function Home() {
       <Storyline />
 
       {/* Video */}
-      <div className="video">
+      <div className="video" data-aos="fade-up">
         <p>
           {t("video_common")}
         </p>
@@ -356,7 +365,7 @@ export default function Home() {
       {/* Testimonials */}
       <div className="testimonials container-main">
         <div className="slider-testi padding30">
-          <h2 className="title">
+          <h2 className="title" data-aos="fade-up">
             {t("feedback.title")}
           </h2>
           <Carousel
@@ -371,7 +380,7 @@ export default function Home() {
               "superLargeDesktop"
             ]}
           >
-            <div className="testi-item">
+            <div className="testi-item" data-aos="fade-up">
               <img src={quotation} alt="quotation" />
 
               <div>
@@ -405,8 +414,6 @@ export default function Home() {
 
                 <div style={{ float: "right" }}>
                   <span>PowerPatent Inc.</span>
-                  <br />
-                  <span>on Linkedin</span>
                 </div>
               </div>
             </div>

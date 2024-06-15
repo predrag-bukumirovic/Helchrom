@@ -77,22 +77,26 @@ export default function OurVision() {
       </div>
 
       <div className="container-main">
-        <h1 className="title">
+        <h1 className="title" data-aos="fade-up">
           {t("vision.title")}
         </h1>
         <center>
-          <p dangerouslySetInnerHTML={{ __html: t("vision.sub_text") }} />
+          <p
+            data-aos="fade-up"
+            dangerouslySetInnerHTML={{ __html: t("vision.sub_text") }}
+          />
         </center>
         <div className={showModal ? "modal-img" : "show"} onClick={closeModal}>
           <img src={showModal} alt="Modal Images" />
         </div>
         <div style={{ marginTop: 100 }} className="padding30">
-          <h2 className="title">
+          <h2 className="title" data-aos="fade-up">
             {t("vision.our_strategic.title")}
           </h2>
           <div className="strategic">
             {strategicFocusAreas.map((item, index) =>
               <div
+                data-aos="zoom-in"
                 key={index}
                 onClick={() => openModal(item.image)}
                 onMouseEnter={() => setHoveredIndex(index)}
@@ -116,7 +120,7 @@ export default function OurVision() {
       {/* Our mision */}
       <div>
         <div className="mission-vision">
-          <h2 style={{ marginTop: 100 }} className="title">
+          <h2 style={{ marginTop: 100 }} className="title" data-aos="fade-up">
             {t("vision.our_mission_vision.title")}
           </h2>
 
@@ -126,10 +130,10 @@ export default function OurVision() {
           >
             <div className="container-main">
               <div className="col">
-                <div className="col-img">
+                <div className="col-img" data-aos="fade-right">
                   <img src={MVLevo} alt="Slika" />
                 </div>
-                <div className="col-text">
+                <div className="col-text" data-aos="fade-left">
                   <h3>
                     {t("vision.our_mission_vision.mission.title")}
                   </h3>
@@ -144,10 +148,10 @@ export default function OurVision() {
                 </div>
               </div>
               <div className="col">
-                <div className="col-img">
+                <div className="col-img" data-aos="fade-left">
                   <img src={MVDesno} alt="Slika" />
                 </div>
-                <div className="col-text">
+                <div className="col-text" data-aos="fade-right">
                   <h3>OUR VISION</h3>
                   <p
                     dangerouslySetInnerHTML={{
@@ -165,8 +169,8 @@ export default function OurVision() {
       </div>
       <div className="kawasaki container-main padding30">
         <div>
-          <img src={imgTesti} alt="imgTesti" />
-          <img src={Kawasaki} alt="Kawasaki" />
+          <img data-aos="fade-right" src={imgTesti} alt="imgTesti" />
+          <img data-aos="fade-left" src={Kawasaki} alt="Kawasaki" />
         </div>
         <p
           style={{ margin: 0 }}

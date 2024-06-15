@@ -3,6 +3,9 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Cookies from "./components/Cookies";
 import Thanks from "./pages/Thanks";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 const Blog = lazy(() => import("./pages/Blog"));
 const Volleyball = lazy(() => import("./pages/Volleyball"));
 const Diversity = lazy(() => import("./pages/Diversity"));
@@ -40,6 +43,10 @@ function App() {
 
     useEffect(() => {
       setIsVisible(true);
+    }, []);
+
+    useEffect(() => {
+      AOS.init({ duration: 1000 });
     }, []);
 
 

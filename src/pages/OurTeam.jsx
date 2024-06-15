@@ -59,12 +59,12 @@ export default function OurTeam() {
       {/* Slider end */}
 
       <div className="container-main">
-        <h1 className="title">
+        <h1 className="title" data-aos="fade-up">
           {t("team.title")}
         </h1>
 
         <center>
-          <p>
+          <p data-aos="fade-up">
             {t("team.sub_text")}
           </p>
         </center>
@@ -73,10 +73,10 @@ export default function OurTeam() {
           <div className="member">
             <div className="bg-member-img" />
             <div className="team-row">
-              <div className="img-team">
+              <div className="img-team" data-aos="zoom-in">
                 <img src={milos} alt="" />
               </div>
-              <div>
+              <div data-aos="fade-left">
                 <h5 className="name-team">
                   {" "}{t("team.team1.name")}
                 </h5>
@@ -101,10 +101,10 @@ export default function OurTeam() {
           <div className="member">
             <div className="bg-member-img" />
             <div className="team-row">
-              <div className="img-team">
+              <div className="img-team" data-aos="zoom-in">
                 <img src={anja} alt="" />
               </div>
-              <div>
+              <div data-aos="fade-left">
                 <h5 className="name-team">
                   {t("team.team2.name")}
                 </h5>
@@ -129,13 +129,17 @@ export default function OurTeam() {
         </div>
 
         <div className="talk-video" style={{ marginTop: 100 }}>
-          <h2 className="title">
+          <h2 className="title" data-aos="fade-up">
             {t("team.talk.title")}
           </h2>
-          <h3 dangerouslySetInnerHTML={{ __html: t("team.talk.sub") }} />
+          <h3
+            data-aos="fade-up"
+            dangerouslySetInnerHTML={{ __html: t("team.talk.sub") }}
+          />
 
           <center>
             <iframe
+              data-aos="fade-up"
               className="video-yt"
               loading="lazy"
               style={{ marginTop: 50 }}
@@ -150,17 +154,17 @@ export default function OurTeam() {
         </div>
 
         <div className="our-home padding30">
-          <h1 className="title">
+          <h1 className="title" data-aos="fade-up">
             {t("team.values_icon.title")}
           </h1>
           <center>
-            <p>
+            <p data-aos="fade-up">
               {t("team.values_icon.sub_text")}
             </p>
           </center>
 
           <div className="icon-values">
-            <div>
+            <div data-aos="zoom-in">
               <img src={icon1} alt="icon1" />
               <p>
                 <b>
@@ -171,7 +175,7 @@ export default function OurTeam() {
                 {t("team.values_icon.icon1.text")}
               </p>
             </div>
-            <div>
+            <div data-aos="zoom-in">
               <img src={icon2} alt="icon2" />
               <p>
                 <b>
@@ -182,7 +186,7 @@ export default function OurTeam() {
                 {t("team.values_icon.icon2.text")}
               </p>
             </div>
-            <div>
+            <div data-aos="zoom-in">
               <img src={icon4} alt="icon4" />
               <p>
                 <b>
@@ -193,7 +197,10 @@ export default function OurTeam() {
                 {t("team.values_icon.icon3.text")}
               </p>
             </div>
-            <div style={{ background: "var(--light-orange-color)" }}>
+            <div
+              data-aos="zoom-in"
+              style={{ background: "var(--light-orange-color)" }}
+            >
               <img src={icon3} alt="icon3" />
               <p>
                 <b>
@@ -204,7 +211,7 @@ export default function OurTeam() {
                 {t("team.values_icon.icon4.text")}
               </p>
             </div>
-            <div>
+            <div data-aos="zoom-in">
               <img src={icon5} alt="icon5" />
               <p>
                 <b>
@@ -229,18 +236,18 @@ export default function OurTeam() {
         </center>
 
         <div className="transparency">
-          <h2 className="title">
+          <h2 className="title" data-aos="fade-up">
             {t("team.transparency.title")}
           </h2>
 
           <center>
-            <p>
+            <p data-aos="fade-up">
               {t("team.transparency.sub_text")}
             </p>
           </center>
 
           <div className="transparency-img">
-            <div>
+            <div data-aos="zoom-in">
               <a
                 href="../Anti-CorruptionPolicy.pdf"
                 target="_blank"
@@ -260,7 +267,7 @@ export default function OurTeam() {
                 </a>
               </div>
             </div>
-            <div>
+            <div data-aos="zoom-in">
               <a
                 href="../Anti-CorruptionPolicy.pdf"
                 target="_blank"
@@ -279,7 +286,7 @@ export default function OurTeam() {
                 </a>
               </div>
             </div>
-            <div>
+            <div data-aos="zoom-in">
               <a
                 href="../CommunicationPolicy.pdf"
                 target="_blank"

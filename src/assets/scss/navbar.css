@@ -217,7 +217,8 @@ ul li ol.menu-down li a:hover {
     position: relative;
     line-height: 30px;
     background: #fff;
-    right: -20px;
+    right: 0;
+    margin-top: 10px;
   }
 
   ul li ol.active {

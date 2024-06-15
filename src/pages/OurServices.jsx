@@ -9,6 +9,7 @@ import Consulting from "../assets/images/OurCore/Consulting.png";
 import Design from "../assets/images/OurCore/Design.png";
 import management from "../assets/images/OurCore/management.png";
 import Equipment from "../assets/images/OurCore/Equipment.png";
+import Detailed from "../assets/images/OurCore/detailed.png";
 import Commissioning from "../assets/images/OurCore/Commissioning.png";
 import logo from "../assets/images/logo.png";
 
@@ -91,7 +92,7 @@ export default function OurCore() {
         className="services"
         style={{ background: "var(--light-orange-color)", marginTop: 100 }}
       >
-        <div style={{ gap: 100 }} className="services-row container-main">
+        <div className="services-row container-main">
           <div className="img-text" style={{ left: -50 }}>
             <img src={logo} alt="Slika" /> <span>HELMCHRON</span>
           </div>
@@ -120,11 +121,8 @@ export default function OurCore() {
       </div>
 
       <div ref={sectionRefs[1]} className="services">
-        <h3 style={{ width: "1440px" }} className="container-main">
-          {t("our_core.icon_core.icon2")}
-        </h3>
-        <div className="services-row row-duble container-main">
-          <div className="img-text" style={{ top: -120, left: -50 }}>
+        <div className="services-row container-main">
+          <div className="img-text" style={{ left: -50 }}>
             <img src={logo} alt="Slika" />{" "}
             <span className="blue">HELMCHRON</span>
           </div>
@@ -137,21 +135,28 @@ export default function OurCore() {
             <div
               dangerouslySetInnerHTML={{ __html: t("our_core.design_text1") }}
             />
-            <div>
-              <div
-                dangerouslySetInnerHTML={{ __html: t("our_core.design_text2") }}
-              />
-              <a
-                style={{ background: "var(--dark-blue-color)" }}
-                className="book-btn"
-                href="/our-references"
-              >
-                {t("btn_references")}
-              </a>
-            </div>
           </div>
           <div className="img-design img-row">
             <img src={Design} alt="" />
+          </div>
+        </div>
+
+        <div className="container-main services-row">
+          <div className="img-design img-row">
+            <img src={Detailed} alt="" />
+          </div>
+
+          <div className="text">
+            <div
+              dangerouslySetInnerHTML={{ __html: t("our_core.design_text2") }}
+            />
+            <a
+              className="book-btn"
+              style={{ background: "var(--dark-blue-color)" }}
+              href="/our-references"
+            >
+              {t("btn_references")}
+            </a>
           </div>
         </div>
       </div>
@@ -161,7 +166,7 @@ export default function OurCore() {
         className="services"
         style={{ background: "var(--light-green-color)" }}
       >
-        <div style={{ gap: 500 }} className="services-row container-main">
+        <div className="services-row container-main">
           <div className="img-text" style={{ left: -50 }}>
             <img src={logo} alt="Slika" />{" "}
             <span className="green">HELMCHRON</span>
@@ -172,9 +177,6 @@ export default function OurCore() {
             </h4>
           </div>
 
-          <div className="img-row">
-            <img src={management} alt="management" />
-          </div>
           <div>
             <h3>
               {t("our_core.icon_core.icon3")}
@@ -192,11 +194,15 @@ export default function OurCore() {
               {t("btn_references")}
             </a>
           </div>
+
+          <div className="img-row">
+            <img src={management} alt="management" />
+          </div>
         </div>
       </div>
 
       <div ref={sectionRefs[3]} className="services">
-        <div style={{ gap: 350 }} className="services-row container-main">
+        <div className="services-row container-main">
           <div className="img-text" style={{ left: -50 }}>
             <img src={logo} alt="Slika" />{" "}
             <span className="blue">HELMCHRON</span>
@@ -205,6 +211,9 @@ export default function OurCore() {
             <h4 style={{ WebkitTextStroke: "1px var(--dark-blue-color)" }}>
               {t("services_vertical")}
             </h4>
+          </div>
+          <div className="img-row">
+            <img src={Equipment} alt="Equipment" />
           </div>
           <div>
             <h3>
@@ -222,9 +231,6 @@ export default function OurCore() {
               {t("btn_references")}
             </a>
           </div>
-          <div className="img-row">
-            <img src={Equipment} alt="Equipment" />
-          </div>
         </div>
       </div>
 
@@ -233,7 +239,7 @@ export default function OurCore() {
         className="services"
         style={{ background: "var(--light-orange-color)" }}
       >
-        <div style={{ gap: 350 }} className="services-row container-main">
+        <div className="services-row container-main">
           <div className="img-text" style={{ left: -50 }}>
             <img src={logo} alt="Slika" /> <span>HELMCHRON</span>
           </div>
@@ -243,9 +249,6 @@ export default function OurCore() {
             </h4>
           </div>
 
-          <div className="img-row">
-            <img src={Commissioning} alt="" />
-          </div>
           <div>
             <h3>
               {t("our_core.icon_core.icon5")}
@@ -259,6 +262,10 @@ export default function OurCore() {
             <a className="book-btn" href="/our-references">
               {t("btn_references")}
             </a>
+          </div>
+
+          <div className="img-row">
+            <img src={Commissioning} alt="" />
           </div>
         </div>
       </div>

@@ -52,6 +52,7 @@ export default function OurValues() {
         <title>Out Values | Helmchron</title>
       </Helmet>
       {/* Slider start */}
+      {showFirstText}
       <div className="slider">
         <CCarousel className="slider-main" controls transition="crossfade">
           <CCarouselItem>
@@ -78,42 +79,51 @@ export default function OurValues() {
       </div>
       {/* Slider end */}
 
-      <div className="container-main padding30">
-        <h1 className="title">
+      <div>
+        <h1 className="title" data-aos="fade-up">
           {t("navbar.our_values")}
         </h1>
 
-        <center>
-          <p dangerouslySetInnerHTML={{ __html: t("our_values.sub_text") }} />
+        <center className="container-main">
+          <p
+            data-aos="fade-up"
+            dangerouslySetInnerHTML={{ __html: t("our_values.sub_text") }}
+          />
         </center>
 
         <div style={{ marginTop: 100 }}>
-          <h2 className="title">
+          <h2 className="title" data-aos="fade-up">
             {t("our_way.title")}
           </h2>
-          <div className="row-img-text row1">
-            <div className="row-img">
-              <img src={Integrity} alt="" />
-              <div className="rotatingText">
-                <div className="rotatingText-adjective">
-                  {t("our_way.integrity.title")}
-                </div>
-                <div
-                  className={`rotatingText-adjective ${showSecondText
-                    ? "show"
-                    : ""}`}
-                >
-                  {t("connects")}
+          <div style={{ background: "var(--light-blue-color)" }}>
+            <div className="row-img-text row1 container-main">
+              <div className="row-img" data-aos="fade-right">
+                <img src={Integrity} alt="" />
+                <div className="rotatingText">
+                  <div className="rotatingText-adjective">
+                    {t("our_way.integrity.title")}
+                  </div>
+                  <div
+                    className={`rotatingText-adjective ${showSecondText
+                      ? "show"
+                      : ""}`}
+                  >
+                    {t("connects")}
+                  </div>
                 </div>
               </div>
+              <div
+                data-aos="fade-left"
+                className="row-text"
+                dangerouslySetInnerHTML={{
+                  __html: t("our_way.integrity.text")
+                }}
+              />
             </div>
-            <div
-              className="row-text"
-              dangerouslySetInnerHTML={{ __html: t("our_way.integrity.text") }}
-            />
           </div>
-          <div className="row-img-text row2">
-            <div className="row-img">
+
+          <div className="row-img-text container-main row2">
+            <div className="row-img" data-aos="fade-left">
               <img src={Committment} alt="" />
               <div className="rotatingText">
                 <div className="rotatingText-adjective">
@@ -129,34 +139,38 @@ export default function OurValues() {
               </div>
             </div>
             <div
+              data-aos="fade-right"
               className="row-text"
               dangerouslySetInnerHTML={{ __html: t("our_way.commitment.text") }}
             />
           </div>
-          <div className="row-img-text row3">
-            <div className="row-img">
-              <img src={Agility} alt="" />
-              <div className="rotatingText">
-                <div className="rotatingText-adjective">
-                  {t("our_way.agility.title")}
-                </div>
-                <div
-                  className={`rotatingText-adjective ${showSecondText
-                    ? "show"
-                    : ""}`}
-                >
-                  {t("connects")}
+          <div style={{ background: "var(--light-blue-color)" }}>
+            <div className="row-img-text row3 container-main">
+              <div className="row-img" data-aos="fade-right">
+                <img src={Agility} alt="" />
+                <div className="rotatingText">
+                  <div className="rotatingText-adjective">
+                    {t("our_way.agility.title")}
+                  </div>
+                  <div
+                    className={`rotatingText-adjective ${showSecondText
+                      ? "show"
+                      : ""}`}
+                  >
+                    {t("connects")}
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="row-text">
-              <p>
-                {t("our_way.agility.text")}
-              </p>
+              <div className="row-text" data-aos="fade-left">
+                <p>
+                  {t("our_way.agility.text")}
+                </p>
+              </div>
             </div>
           </div>
-          <div className="row-img-text row4">
-            <div className="row-img">
+
+          <div className="row-img-text container-main row4">
+            <div className="row-img" data-aos="fade-left">
               <img src={Diversity} alt="" />
               <div>
                 <div className="rotatingText-adjective">
@@ -171,50 +185,67 @@ export default function OurValues() {
                 </div>
               </div>
             </div>
-            <div className="row-text">
+            <div className="row-text" data-aos="fade-right">
               <p>
                 {t("our_way.diversity.text")}
               </p>
             </div>
           </div>
-          <div className="row-img-text row5">
-            <div className="row-img">
-              <img src={Courage} alt="" />
-              <div className="rotatingText">
-                <div className="rotatingText-adjective">
-                  {t("our_way.courage.title")}
-                </div>
-                <div
-                  className={`rotatingText-adjective ${showSecondText
-                    ? "show"
-                    : ""}`}
-                >
-                  {t("connects")}
+
+          <div style={{ background: "var(--light-blue-color)" }}>
+            <div className="row-img-text row5 container-main">
+              <div className="row-img" data-aos="fade-right">
+                <img src={Courage} alt="" />
+                <div className="rotatingText">
+                  <div className="rotatingText-adjective">
+                    {t("our_way.courage.title")}
+                  </div>
+                  <div
+                    className={`rotatingText-adjective ${showSecondText
+                      ? "show"
+                      : ""}`}
+                  >
+                    {t("connects")}
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="row-text">
-              <p>
-                {t("our_way.courage.text")}
-              </p>
+              <div className="row-text" data-aos="fade-left">
+                <p>
+                  {t("our_way.courage.text")}
+                </p>
+              </div>
             </div>
           </div>
 
-          <div style={{ marginBottom: 100 }}>
-            <h3 className="title">
+          <div
+            className="container-main padding30"
+            style={{ marginBottom: 100 }}
+          >
+            <h3 className="title" data-aos="fade-up">
               {t("social_respo.title")}
             </h3>
 
-            <p dangerouslySetInnerHTML={{ __html: t("social_respo.text") }} />
+            <p
+              data-aos="fade-up"
+              dangerouslySetInnerHTML={{ __html: t("social_respo.text") }}
+            />
           </div>
 
-          <img className="our-social" src={Oursocial} alt="" />
+          <div className="container-main padding30">
+            <img
+              data-aos="zoom-in"
+              className="our-social"
+              src={Oursocial}
+              alt="in motion"
+            />
+          </div>
 
           <center>
-            <h2 className="title">
+            <h2 className="title" data-aos="fade-up">
               {t("video_common_values")}
             </h2>
             <iframe
+              data-aos="fade-up"
               className="video-yt"
               loading="lazy"
               src="https://www.youtube.com/embed/ggIoQMjqkVM"

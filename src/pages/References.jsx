@@ -664,7 +664,7 @@ export default function References() {
                 mvv <br /> <span className="text-stroke green">2020</span>
               </h3>
 
-              <p>Detailed engineering for the new steam duct.</p>
+              <p>Detailed engineering for the new steam boiler plant.</p>
 
               <span
                 onClick={() => handleButtonClick(card16)}

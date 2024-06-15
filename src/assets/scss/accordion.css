@@ -31,7 +31,7 @@ span {
   font-size: 20px;
 }
 
-span svg {
+.item-title span svg {
   font-size: 30px;
   transition: .5s;
   transform: rotate(180deg);
