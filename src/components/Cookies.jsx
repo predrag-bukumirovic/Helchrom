@@ -1,12 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../assets/scss/cookies.scss";
 
 export default function Cookies() {
-  setTimeout(() => {
-    if (!localStorage.getItem("cookies")) {
-      document.querySelector(".cookies").classList.add("active");
-    }
-  }, 4000);
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      if (!localStorage.getItem("cookies")) {
+        document.querySelector(".cookies").classList.add("active");
+      }
+    }, 4000);
+
+    return () => clearTimeout(timer);
+  }, []);
 
   const btnCookies = () => {
     localStorage.setItem("cookies", "true");
@@ -29,8 +33,8 @@ export default function Cookies() {
         </p>
 
         <div>
-          <button onClick={() => btnCookies()}>allow</button>
-          <button onClick={() => closeCookies()}>decline</button>
+          <button onClick={btnCookies}>allow</button>
+          <button onClick={closeCookies}>decline</button>
         </div>
       </div>
     </div>

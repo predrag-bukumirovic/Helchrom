@@ -56,7 +56,7 @@ export default function Contact() {
     e.preventDefault();
 
     const emailTemplate = `
-      <html>
+       <html>
         <head>
           <style>
             body {
@@ -73,12 +73,16 @@ export default function Contact() {
               max-width: 600px;
               margin: 0 auto;
               padding: 20px;
-              background-color: #f5f5f5;
+              background-color:#f4f6fc;
             }
 
             p {
-              font-size: 16px;
-              margin: 0 0 10px;
+              font-size: 18px;
+              margin-top: 0;
+
+            }
+            b {
+              font-size: 22px;
             }
 
             a {
@@ -89,6 +93,7 @@ export default function Contact() {
     
             .section {
               margin-bottom: 40px;
+              margin-top: 20px;
             }
 
             .section-heading {
@@ -102,20 +107,6 @@ export default function Contact() {
               margin: 0;
             }
 
-            /* Stilovi za dugme */
-            .button {
-              display: inline-block;
-              padding: 10px 20px;
-              background-color: #0066cc;
-              color: #ffffff;
-              text-decoration: none;
-              border-radius: 5px;
-            }
-
-            .button:hover {
-              background-color: #004f9f;
-            }
-
             .header {
               background-color: #ffffff;
               padding: 20px;
@@ -123,7 +114,8 @@ export default function Contact() {
             }
 
             .footer {
-              background-color: #f5f5f5;
+            
+              background: #fff;
               padding: 20px;
               text-align: center;
             }
@@ -136,23 +128,27 @@ export default function Contact() {
             @media only screen and (max-width: 600px) {
               .container {
                 padding: 10px;
+                width: 100%;
               }
             }
-
             .message-box {
-              padding: 30px;
+              background: #fff;
+              padding: 15px;
+              margin-top: 10px;
             }
 
+
             .policy {
-              color: #ffa500 !important;
+              color: #000 !important;
             }
           </style>
         </head>
+        
 
         <body>
           <div class="container">
             <div class="header">
-              <img src='https://www.helmchron.gold-digital.rs/static/media/policy.346a6f0b269c86290ae3.png' alt="Logo" class="logo">
+              <img src='https://www.hc.gold-digital.rs/static/media/logo.f4a159523299808f9b18.webp' alt="Logo" class="logo">
             </div>
             <div class="section">
               <b>Subject:</b> <p>${subject}</p>
@@ -162,10 +158,10 @@ export default function Contact() {
               <b>Position:</b> <p>${position}</p>
               <b>Phone Number:</b> <p>${phone}</p>
               <b>Privacy policy:</b> <p class="policy">${policy}</p>
-              <p class="message-box"><b><Message:></b> ${message}</p>
+              <b>Message:</b><p class="message-box">${message}</p>
             </div>
             <div class="footer">
-              <p>© 2023 Helmchron | Sva prava zadržana. <a href="https://www.helmchron.gold-digital.rs/privacy-policy">Privacy policy</a></p>
+              <p style="margin-bottom: 0;">© 2023 Helmchron | Sva prava zadržana. <a href="https://www.helmchron.gold-digital.rs/privacy-policy">Privacy policy</a></p>
             </div>
           </div>
         </body>
@@ -207,7 +203,7 @@ export default function Contact() {
     }
 
     const emailTemplateBook = `
-      <html>
+          <html>
         <head>
           <style>
             body {
@@ -224,12 +220,16 @@ export default function Contact() {
               max-width: 600px;
               margin: 0 auto;
               padding: 20px;
-              background-color: #f5f5f5;
+              background-color:#f4f6fc;
             }
 
             p {
-              font-size: 16px;
-              margin: 0 0 10px;
+              font-size: 18px;
+              margin-top: 0;
+
+            }
+            b {
+              font-size: 22px;
             }
 
             a {
@@ -240,6 +240,7 @@ export default function Contact() {
     
             .section {
               margin-bottom: 40px;
+              margin-top: 20px;
             }
 
             .section-heading {
@@ -253,20 +254,6 @@ export default function Contact() {
               margin: 0;
             }
 
-            /* Stilovi za dugme */
-            .button {
-              display: inline-block;
-              padding: 10px 20px;
-              background-color: #0066cc;
-              color: #ffffff;
-              text-decoration: none;
-              border-radius: 5px;
-            }
-
-            .button:hover {
-              background-color: #004f9f;
-            }
-
             .header {
               background-color: #ffffff;
               padding: 20px;
@@ -274,7 +261,8 @@ export default function Contact() {
             }
 
             .footer {
-              background-color: #f5f5f5;
+            
+              background: #fff;
               padding: 20px;
               text-align: center;
             }
@@ -287,33 +275,37 @@ export default function Contact() {
             @media only screen and (max-width: 600px) {
               .container {
                 padding: 10px;
+                width: 100%;
               }
             }
-
             .message-box {
-              padding: 30px;
+              background: #fff;
+              padding: 15px;
+              margin-top: 10px;
             }
 
+
             .policy {
-              color: #ffa500 !important;
+              color: #000 !important;
             }
           </style>
         </head>
+        
 
         <body>
           <div class="container">
             <div class="header">
-              <img src='https://www.helmchron.gold-digital.rs/static/media/policy.346a6f0b269c86290ae3.png' alt="Logo" class="logo">
+              <img src='https://www.hc.gold-digital.rs/static/media/logo.f4a159523299808f9b18.webp' alt="Logo" class="logo">
             </div>
             <div class="section">
-              <b>Name:</b> <p>${name}</p>
-              <b>Company:</b> <p>${company}</p>
-              <b>Email:</b> <p>${email}</p>
+              <b>Name:</b> <p>${nameBook}</p>
+              <b>Company:</b> <p>${companyBook}</p>
+              <b>Email:</b> <p>${emailBook}</p>
               <b>Meeting date:</b> <p>${selectedDate}</p>
               <b>Privacy policy:</b> <p class="policy">${policy}</p>
             </div>
             <div class="footer">
-              <p>© 2023 Helmchron | Sva prava zadržana.  <a href="https://www.helmchron.gold-digital.rs/privacy-policy">Privacy policy</a></p>
+              <p style="margin-bottom: 0;">© 2023 Helmchron | Sva prava zadržana. <a href="https://www.helmchron.gold-digital.rs/privacy-policy">Privacy policy</a></p>
             </div>
           </div>
         </body>
