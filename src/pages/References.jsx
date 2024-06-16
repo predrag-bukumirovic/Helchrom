@@ -141,9 +141,11 @@ export default function References() {
       </div>
 
       <div className="container-main padding30">
-        <h2 className="title">our references</h2>
+        <h2 className="title" data-aos="fade-up">
+          our references
+        </h2>
 
-        <p>
+        <p data-aos="fade-up">
           Our reference page contains our most relevant projects per each of our
           business areas. Explore our milestones and collaborations and learn
           how we contribute to different industries worldwide. For a
@@ -153,12 +155,24 @@ export default function References() {
 
       <div className="container-main padding30">
         <div className="icon-core references">
-          <div onClick={() => handleClick(0)}>Pharma</div>
-          <div onClick={() => handleClick(1)}>Food & Bio</div>
-          <div onClick={() => handleClick(2)}>Chemicals</div>
-          <div onClick={() => handleClick(3)}>Electronics</div>
-          <div onClick={() => handleClick(4)}>Energy</div>
-          <div onClick={() => handleClick(5)}>Oil & Gas</div>
+          <div data-aos="zoom-in" onClick={() => handleClick(0)}>
+            Pharma
+          </div>
+          <div data-aos="zoom-in" onClick={() => handleClick(1)}>
+            Food & Bio
+          </div>
+          <div data-aos="zoom-in" onClick={() => handleClick(2)}>
+            Chemicals
+          </div>
+          <div data-aos="zoom-in" onClick={() => handleClick(3)}>
+            Electronics
+          </div>
+          <div data-aos="zoom-in" onClick={() => handleClick(4)}>
+            Energy
+          </div>
+          <div data-aos="zoom-in" onClick={() => handleClick(5)}>
+            Oil & Gas
+          </div>
         </div>
       </div>
 
@@ -175,7 +189,7 @@ export default function References() {
                 PHARMA
               </h4>
             </div>
-            <div className="text">
+            <div className="text" data-aos="fade-right">
               <h3 className="title">
                 vetter pharma <br /> <span className="text-stroke">2022</span>
               </h3>
@@ -197,7 +211,7 @@ export default function References() {
                 imageSrc={currentImage}
               />
             </div>
-            <div className="ref-img">
+            <div className="ref-img" data-aos="fade-left">
               <img src={Vetter} alt="Vetter" />
             </div>
           </div>
@@ -211,7 +225,7 @@ export default function References() {
                 PHARMA
               </h4>
             </div>
-            <div className="text">
+            <div className="text" data-aos="fade-left">
               <h3 className="title">
                 novartis <br /> <span className="text-stroke">2019</span>
               </h3>
@@ -229,7 +243,7 @@ export default function References() {
                 Read more
               </span>
             </div>
-            <div className="ref-img">
+            <div className="ref-img" data-aos="fade-right">
               <img src={Novartis} alt="Novartis" />
             </div>
           </div>
@@ -246,7 +260,7 @@ export default function References() {
                 PHARMA
               </h4>
             </div>
-            <div className="text">
+            <div className="text" data-aos="fade-right">
               <h3 className="title">
                 roche diagnostics <br />
                 <span className="text-stroke">2020</span>
@@ -266,7 +280,7 @@ export default function References() {
               </span>
             </div>
 
-            <div className="ref-img">
+            <div className="ref-img" data-aos="fade-left">
               <img src={RocheDiagnostics} alt="RocheDiagnostics" />
             </div>
           </div>
@@ -280,7 +294,7 @@ export default function References() {
                 PHARMA
               </h4>
             </div>
-            <div className="text">
+            <div className="text" data-aos="fade-left">
               <h3 className="title">
                 bachem <br /> <span className="text-stroke">2023</span>
               </h3>
@@ -295,7 +309,7 @@ export default function References() {
                 Read more
               </span>
             </div>
-            <div className="ref-img">
+            <div className="ref-img" data-aos="fade-right">
               <img src={Bachem} alt="Bachem" />
             </div>
           </div>
@@ -313,7 +327,7 @@ export default function References() {
                 FOOD
               </h4>
             </div>
-            <div className="text">
+            <div className="text" data-aos="fade-right">
               <h3 className="title">
                 dsm <br /> <span className="text-stroke green">2021</span>
               </h3>
@@ -331,7 +345,7 @@ export default function References() {
                 Read more
               </span>
             </div>
-            <div className="ref-img">
+            <div className="ref-img" data-aos="fade-left">
               <img src={DSM} alt="DSM" />
             </div>
           </div>
@@ -344,7 +358,7 @@ export default function References() {
                 FOOD
               </h4>
             </div>
-            <div className="text">
+            <div className="text" data-aos="fade-left">
               <h3 className="title">
                 destilla <br /> <span className="text-stroke green">2023</span>
               </h3>
@@ -362,7 +376,7 @@ export default function References() {
               </span>
             </div>
 
-            <div className="ref-img">
+            <div className="ref-img" data-aos="fade-right">
               <img src={Destilla} alt="Destilla" />
             </div>
           </div>
@@ -378,7 +392,7 @@ export default function References() {
                 FOOD
               </h4>
             </div>
-            <div className="text">
+            <div className="text" data-aos="fade-right">
               <h3 className="title">
                 primopus <br /> <span className="text-stroke green">2023</span>
               </h3>
@@ -394,7 +408,7 @@ export default function References() {
               </span>
             </div>
 
-            <div className="ref-img">
+            <div className="ref-img" data-aos="fade-left">
               <img src={primopus} alt="primopus" />
             </div>
           </div>
@@ -407,7 +421,7 @@ export default function References() {
                 FOOD
               </h4>
             </div>
-            <div className="text">
+            <div className="text" data-aos="fade-left">
               <h3 className="title">
                 jungbunzlauer <br />{" "}
                 <span className="text-stroke green">2022</span>
@@ -426,7 +440,7 @@ export default function References() {
                 Read more
               </span>
             </div>
-            <div className="ref-img">
+            <div className="ref-img" data-aos="fade-right">
               <img src={Jungbunzlauer} alt="Jungbunzlauer" />
             </div>
           </div>
@@ -442,7 +456,7 @@ export default function References() {
                 FOOD
               </h4>
             </div>
-            <div className="text">
+            <div className="text" data-aos="fade-right">
               <h3 className="title">
                 exyte <br /> <span className="text-stroke green">2023</span>
               </h3>
@@ -460,7 +474,7 @@ export default function References() {
                 Read more
               </span>
             </div>
-            <div className="ref-img">
+            <div className="ref-img" data-aos="fade-left">
               <img src={Exyte} alt="Exyte" />
             </div>
           </div>
@@ -473,7 +487,7 @@ export default function References() {
                 CHEMICALS
               </h4>
             </div>
-            <div className="text">
+            <div className="text" data-aos="fade-left">
               <h3 className="title">
                 basf <br /> <span className="text-stroke orange">2022</span>
               </h3>
@@ -490,7 +504,7 @@ export default function References() {
                 Read more
               </span>
             </div>
-            <div className="ref-img">
+            <div className="ref-img" data-aos="fade-right">
               <img src={BASF} alt="Basf" />
             </div>
           </div>
@@ -506,7 +520,7 @@ export default function References() {
                 CHEMICALS
               </h4>
             </div>
-            <div className="text">
+            <div className="text" data-aos="fade-right">
               <h3 className="title">
                 bayer <br /> <span className="text-stroke orange">2023</span>
               </h3>
@@ -524,7 +538,7 @@ export default function References() {
                 Read more
               </span>
             </div>
-            <div className="ref-img">
+            <div className="ref-img" data-aos="fade-left">
               <img src={Bayer} alt="Bayer" />
             </div>
           </div>
@@ -537,7 +551,7 @@ export default function References() {
                 CHEMICALS
               </h4>
             </div>
-            <div className="text">
+            <div className="text" data-aos="fade-left">
               <h3 className="title">
                 vinex <br /> <span className="text-stroke orange">2018</span>
               </h3>
@@ -554,7 +568,7 @@ export default function References() {
                 Read more
               </span>
             </div>
-            <div className="ref-img">
+            <div className="ref-img" data-aos="fade-right">
               <img src={Vinex} alt="Vinex" />
             </div>
           </div>
@@ -571,7 +585,7 @@ export default function References() {
                 ELECTRONICS
               </h4>
             </div>
-            <div className="text">
+            <div className="text" data-aos="fade-right">
               <h3 className="title">
                 tesla <br /> <span className="text-stroke blue">2023</span>
               </h3>
@@ -586,7 +600,7 @@ export default function References() {
                 Read more
               </span>
             </div>
-            <div className="ref-img">
+            <div className="ref-img" data-aos="fade-left">
               <img src={Tesla} alt="Tesla" />
             </div>
           </div>
@@ -599,7 +613,7 @@ export default function References() {
                 ENETRGY
               </h4>
             </div>
-            <div className="text">
+            <div className="text" data-aos="fade-left">
               <h3 className="title">
                 jaenschwalde <br />{" "}
                 <span className="text-stroke green">2022</span>
@@ -615,7 +629,7 @@ export default function References() {
                 Read more
               </span>
             </div>
-            <div className="ref-img">
+            <div className="ref-img" data-aos="fade-right">
               <img src={Jaenschwalde} alt="Jaenschwalde" />
             </div>
           </div>
@@ -631,7 +645,7 @@ export default function References() {
                 ENETRGY
               </h4>
             </div>
-            <div className="text">
+            <div className="text" data-aos="fade-right">
               <h3 className="title">
                 udarnaya <br /> <span className="text-stroke green">2017</span>
               </h3>
@@ -646,7 +660,7 @@ export default function References() {
                 Read more
               </span>
             </div>
-            <div className="ref-img">
+            <div className="ref-img" data-aos="fade-left">
               <img src={Udarnaya} alt="Udarnaya" />
             </div>
           </div>
@@ -659,7 +673,7 @@ export default function References() {
                 ENETRGY
               </h4>
             </div>
-            <div className="text">
+            <div className="text" data-aos="fade-left">
               <h3 className="title">
                 mvv <br /> <span className="text-stroke green">2020</span>
               </h3>
@@ -674,7 +688,7 @@ export default function References() {
                 Read more
               </span>
             </div>
-            <div className="ref-img">
+            <div className="ref-img" data-aos="fade-right">
               <img src={MVV} alt="MVV" />
             </div>
           </div>
@@ -691,7 +705,7 @@ export default function References() {
                 OIL & GAS
               </h4>
             </div>
-            <div className="text">
+            <div className="text" data-aos="fade-right">
               <h3 className="title">
                 omv <br /> <span className="text-stroke orange">2016</span>
               </h3>
@@ -706,7 +720,7 @@ export default function References() {
                 Read more
               </span>
             </div>
-            <div className="ref-img">
+            <div className="ref-img" data-aos="fade-left">
               <img src={OMV} alt="OMV" />
             </div>
           </div>
@@ -714,21 +728,15 @@ export default function References() {
       </div>
 
       <div className="insights container-main padding30">
-        <h2 className="title">our projects insights</h2>
+        <h2 className="title" data-aos="fade-up">
+          our projects insights
+        </h2>
         <center>
-          <p>Share of projects per business area</p>
+          <p data-aos="fade-up">Share of projects per business area</p>
         </center>
 
         <div className="icon-since container-main">
-          <div>
-            <img src={FoodBioproducts} alt="FoodBioproducts" />
-            <div>
-              <span>
-                Food & <br /> Bioproducts
-              </span>
-            </div>
-          </div>
-          <div>
+          <div data-aos="zoom-in">
             <img src={Pharmaceuticals} alt="Pharmaceuticals" />
             <div>
               <span>
@@ -736,25 +744,34 @@ export default function References() {
               </span>
             </div>
           </div>
-          <div>
+          <div data-aos="zoom-in">
+            <img src={FoodBioproducts} alt="FoodBioproducts" />
+            <div>
+              <span>
+                Food & <br /> Bioproducts
+              </span>
+            </div>
+          </div>
+
+          <div data-aos="zoom-in">
             <img src={Chemicals} alt="Chemicals" />
             <div>
               <span>Chemicals</span>
             </div>
           </div>
-          <div>
+          <div data-aos="zoom-in">
             <img src={Energy} alt="Energy" />
             <div>
               <span>Energy</span>
             </div>
           </div>
-          <div>
+          <div data-aos="zoom-in">
             <img src={Electronics} alt="Electronics" />
             <div>
               <span>Electronics</span>
             </div>
           </div>
-          <div>
+          <div data-aos="zoom-in">
             <img src={Oli} alt="Oli" />
             <div>
               <span>Oil & Gas</span>
@@ -763,7 +780,7 @@ export default function References() {
         </div>
 
         <div className="statistics container-main">
-          <div>
+          <div data-aos="fade-right">
             <span style={{ margin: "0 0 30px 12px" }}>Projects per year</span>
             <img
               className="per-year"
@@ -771,7 +788,7 @@ export default function References() {
               alt="Projectsperyear"
             />
           </div>
-          <div className="months">
+          <div className="months" data-aos="zoom-in">
             <span>Average project duration</span>
             <div>
               <p>
@@ -779,7 +796,7 @@ export default function References() {
               </p>
             </div>
           </div>
-          <div>
+          <div data-aos="fade-left">
             <span style={{ margin: "0 0 30px 20px" }}>
               Services distribution
             </span>
@@ -791,7 +808,11 @@ export default function References() {
           </div>
         </div>
 
-        <div className="container-main" style={{ marginTop: 100 }}>
+        <div
+          data-aos="fade-up"
+          className="container-main"
+          style={{ marginTop: 100 }}
+        >
           <center>
             <p style={{ fontSize: 11 }}>
               Please note that our portfolio of projects showcases the extensive

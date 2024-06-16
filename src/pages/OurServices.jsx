@@ -62,26 +62,29 @@ export default function OurCore() {
       </div>
 
       <div className="container-main padding30">
-        <h1 className="title">
+        <h1 className="title" data-aos="fade-up">
           {t("our_core.title")}
         </h1>
 
-        <p dangerouslySetInnerHTML={{ __html: t("our_core.sub_text") }} />
+        <p
+          data-aos="fade-up"
+          dangerouslySetInnerHTML={{ __html: t("our_core.sub_text") }}
+        />
 
         <div className="icon-core">
-          <div onClick={() => handleClick(0)}>
+          <div data-aos="zoom-in" onClick={() => handleClick(0)}>
             {t("our_core.icon_core.icon1")}
           </div>
-          <div onClick={() => handleClick(1)}>
+          <div data-aos="zoom-in" onClick={() => handleClick(1)}>
             {t("our_core.icon_core.icon2")}
           </div>
-          <div onClick={() => handleClick(2)}>
+          <div data-aos="zoom-in" onClick={() => handleClick(2)}>
             {t("our_core.icon_core.icon3")}
           </div>
-          <div onClick={() => handleClick(3)}>
+          <div data-aos="zoom-in" onClick={() => handleClick(3)}>
             {t("our_core.icon_core.icon4")}
           </div>
-          <div onClick={() => handleClick(4)}>
+          <div data-aos="zoom-in" onClick={() => handleClick(4)}>
             {t("our_core.icon_core.icon5")}
           </div>
         </div>
@@ -102,10 +105,10 @@ export default function OurCore() {
             </h4>
           </div>
 
-          <div className="img-row">
+          <div className="img-row" data-aos="fade-right">
             <img src={Consulting} alt="Consulting" />
           </div>
-          <div>
+          <div data-aos="fade-left">
             <h3>
               {t("our_core.icon_core.icon1")}
             </h3>
@@ -131,22 +134,22 @@ export default function OurCore() {
               {t("services_vertical")}
             </h4>
           </div>
-          <div className="text">
+          <div className="text" data-aos="fade-right">
             <div
               dangerouslySetInnerHTML={{ __html: t("our_core.design_text1") }}
             />
           </div>
-          <div className="img-design img-row">
+          <div data-aos="fade-left" className="img-design img-row">
             <img src={Design} alt="" />
           </div>
         </div>
 
         <div className="container-main services-row">
-          <div className="img-design img-row">
+          <div data-aos="fade-right" className="img-design img-row">
             <img src={Detailed} alt="" />
           </div>
 
-          <div className="text">
+          <div className="text" data-aos="fade-left">
             <div
               dangerouslySetInnerHTML={{ __html: t("our_core.design_text2") }}
             />
@@ -177,7 +180,7 @@ export default function OurCore() {
             </h4>
           </div>
 
-          <div>
+          <div data-aos="fade-right">
             <h3>
               {t("our_core.icon_core.icon3")}
             </h3>
@@ -195,7 +198,7 @@ export default function OurCore() {
             </a>
           </div>
 
-          <div className="img-row">
+          <div data-aos="fade-left" className="img-row">
             <img src={management} alt="management" />
           </div>
         </div>
@@ -212,10 +215,10 @@ export default function OurCore() {
               {t("services_vertical")}
             </h4>
           </div>
-          <div className="img-row">
+          <div data-aos="fade-right" className="img-row">
             <img src={Equipment} alt="Equipment" />
           </div>
-          <div>
+          <div data-aos="fade-left">
             <h3>
               {t("our_core.icon_core.icon4")}
             </h3>
@@ -249,7 +252,7 @@ export default function OurCore() {
             </h4>
           </div>
 
-          <div>
+          <div data-aos="fade-right">
             <h3>
               {t("our_core.icon_core.icon5")}
             </h3>
@@ -264,7 +267,7 @@ export default function OurCore() {
             </a>
           </div>
 
-          <div className="img-row">
+          <div data-aos="fade-left" className="img-row">
             <img src={Commissioning} alt="" />
           </div>
         </div>
