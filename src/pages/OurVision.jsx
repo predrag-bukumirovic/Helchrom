@@ -172,10 +172,6 @@ export default function OurVision() {
           <img data-aos="fade-right" src={imgTesti} alt="imgTesti" />
           <img data-aos="fade-left" src={Kawasaki} alt="Kawasaki" />
         </div>
-        <p
-          style={{ margin: 0 }}
-          dangerouslySetInnerHTML={{ __html: t("download_brochure") }}
-        />
       </div>
     </div>
   );

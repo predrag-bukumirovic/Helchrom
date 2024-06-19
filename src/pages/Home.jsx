@@ -362,6 +362,17 @@ export default function Home() {
         </center>
       </div>
 
+      <center>
+        <p
+          style={{
+            margin: 0,
+            fontWeight: "bold",
+            fontSize: 23
+          }}
+          dangerouslySetInnerHTML={{ __html: t("download_brochure") }}
+        />
+      </center>
+
       {/* Testimonials */}
       <div className="testimonials container-main">
         <div className="slider-testi padding30">

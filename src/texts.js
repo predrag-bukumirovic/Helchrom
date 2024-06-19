@@ -432,8 +432,8 @@ const data = {
       lets: `<b>Let's</b> interact`,
       quick_links: "<b>Quick</b> links",
       contact_us: "<b>Contact</b> us",
-      download_brochure: `  Download our 
-          <a href="../HelmchronBrochure.pdf" download>
+      download_brochure: `Download our 
+          <a href="../HelmchronBrochure.pdf" target="_blank">
             new corporate brochure
           </a>`,
       connects: "Connects us",
