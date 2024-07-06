@@ -5,6 +5,7 @@ import Thanks from "./pages/Thanks";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
+import ScrollTop from "./components/ScrollTop";
 
 const Blog = lazy(() => import("./pages/Blog"));
 const Volleyball = lazy(() => import("./pages/Volleyball"));
@@ -87,6 +88,7 @@ function App() {
 
         <Cookies />
         <Footer />
+        <ScrollTop/>
       </Router>
     </div>;
 }

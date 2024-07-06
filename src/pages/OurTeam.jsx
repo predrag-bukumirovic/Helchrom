@@ -23,9 +23,45 @@ import { CCarousel, CCarouselItem, CImage } from "@coreui/react";
 import "@coreui/coreui/dist/css/coreui.min.css";
 import { useTranslation } from "react-i18next";
 import { Helmet } from "react-helmet";
+import TextReader from "../components/TextRender";
 
 export default function OurTeam() {
   const { t } = useTranslation();
+
+  const valuesSub = [t("team.title"), t("team.sub_text")];
+  const milosText = [
+    t("team.team1.name"),
+    t("team.team1.position"),
+    t("team.team1.text")
+  ];
+  const anjaText = [
+    t("team.team2.name"),
+    t("team.team2.position"),
+    t("team.team2.text")
+  ];
+
+  const ourValuesText = [
+    t("team.values_icon.title"),
+    t("team.values_icon.sub_text"),
+    t("team.values_icon.icon1.title"),
+    t("team.values_icon.icon1.text"),
+    t("team.values_icon.icon2.title"),
+    t("team.values_icon.icon2.text"),
+    t("team.values_icon.icon3.title"),
+    t("team.values_icon.icon3.text"),
+    t("team.values_icon.icon4.title"),
+    t("team.values_icon.icon4.text"),
+    t("team.values_icon.icon5.title"),
+    t("team.values_icon.icon5.text"),
+    t("team.text_bottom")
+  ];
+  const transparency = [
+    t("team.transparency.title"),
+    t("team.transparency.sub_text"),
+    t("team.transparency.btn_blue"),
+    t("team.transparency.btn_orange"),
+    t("team.transparency.btn_green")
+  ];
   return (
     <div>
       <Helmet>
@@ -67,6 +103,7 @@ export default function OurTeam() {
           <p data-aos="fade-up">
             {t("team.sub_text")}
           </p>
+          <TextReader texts={valuesSub} />
         </center>
 
         <div className="text-members padding30">
@@ -89,12 +126,13 @@ export default function OurTeam() {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    {" "}<img src={linkedine} alt="linkedine" />
+                    <img src={linkedine} alt="linkedine" />
                   </a>
                 </div>
                 <p>
                   {t("team.team1.text")}
                 </p>
+                <TextReader texts={milosText} />
               </div>
             </div>
           </div>
@@ -123,6 +161,7 @@ export default function OurTeam() {
                 <p>
                   {t("team.team2.text")}
                 </p>
+                <TextReader texts={anjaText} />
               </div>
             </div>
           </div>
@@ -161,6 +200,7 @@ export default function OurTeam() {
             <p data-aos="fade-up">
               {t("team.values_icon.sub_text")}
             </p>
+            <TextReader texts={ourValuesText} />
           </center>
 
           <div className="icon-values">
@@ -244,6 +284,7 @@ export default function OurTeam() {
             <p data-aos="fade-up">
               {t("team.transparency.sub_text")}
             </p>
+            <TextReader texts={transparency} />
           </center>
 
           <div className="transparency-img">

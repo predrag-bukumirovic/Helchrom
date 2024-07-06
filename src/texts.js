@@ -14,22 +14,22 @@ const data = {
           "Our journey of innovation and commitment to a sustainable future started in 2010 in Belgrade, Serbia. We have embarked on a mission to revolutionize the quality of life for the coming generations with our process and chemical engineering solutions. <br/><br/> From the early beginnings, we steadily expanded our reach, initially serving local projects. In 2013, we set our sights on the EU market, amplifying our impact on a global scale by partnering with industry leaders in the pharmaceuticals and chemicals sectors. In 2020, the pandemic only fueled our determination to contribute to global health and well-being. <br/><br/> Helmchron path is one of continuous growth and evolution, where every project is a testament to our unwavering commitment to excellence and sustainability. As we look ahead, our aspiration remains steadfast—to make an even greater impact globally, ultimately benefiting everyone everywhere.",
         credo_title: "our credo",
         credo_text:
-          "  Our expertise and our impact are led by our vision and purpose to upgrade the quality of life, maintain strong, long-lasting <br /> partnerships, and empower our team with living by our values. Our accountability lies in providing process and chemical <br /> engineering solutions that enable manufacturing of efficient and safe products globally, guided by the belief in equal <br /> access to pharmaceuticals, chemicals, fuels, energy, and food. We prioritize our partners` needs and outcomes, our core <br /> values, environmental sustainability and stability of our business operations, envisioning a high quality of life for everyone.",
+          "Our expertise and our impact are led by our vision and purpose to upgrade the quality of life, maintain strong, long-lasting <br /> partnerships, and empower our team with living by our values. Our accountability lies in providing process and chemical <br /> engineering solutions that enable manufacturing of efficient and safe products globally, guided by the belief in equal <br /> access to pharmaceuticals, chemicals, fuels, energy, and food. We prioritize our partners` needs and outcomes, our core <br /> values, environmental sustainability and stability of our business operations, envisioning a high quality of life for everyone.",
         quotation:
-          " We believe that expertise, innovation, and values create long-term <br/> impact. Our purpose is to deliver outcomes that positively change <br/> the world around us, maintain strong partnerships, and empower <br/> our team to thrive in an environment built on our core values. <br/> Our main responsibility lies within our vision - to support the manufacturing of products that will be efficient and safe and serve the global society and environment."
+          "We believe that expertise, innovation, and values create long-term <br/> impact. Our purpose is to deliver outcomes that positively change <br/> the world around us, maintain strong partnerships, and empower <br/> our team to thrive in an environment built on our core values. <br/> Our main responsibility lies within our vision - to support the manufacturing of products that will be efficient and safe and serve the global society and environment."
       },
       services: {
         title: "our services",
         sub_text:
           "We provide end-to-end engineering services for manufacturing facility design and operations management.",
         icon: {
-          title1: "Consulting & Master Planning",
+          title1: "Pre-planning & Consulting",
           title2: "Engineering & Design",
           title3: "Project Management",
           title4: "Equipment & Services",
           title5: "Commissioning",
           text1:
-            "Our master plan is designed to be flexible to address potential changes in technology, market demands, or trends.",
+            "Conceptual and feasibility studies; early design planning; investment assessment and guidance.",
           text2:
             "We deliver sustainable solutions for facilities, equipment, and process design including process simulation and upgrade",
           text3:
@@ -177,7 +177,7 @@ const data = {
         values_icon: {
           title: "our values",
           sub_text:
-            " Our core values serve as the foundation of everything we do, inspiring us to strive for operational excellence and innovation in all our projects. Our values enable cohesive and supportive environment shaping the quality of our results and strengthening of our partnerships.",
+            "Our core values serve as the foundation of everything we do, inspiring us to strive for operational excellence and innovation in all our projects. Our values enable cohesive and supportive environment shaping the quality of our results and strengthening of our partnerships.",
           icon1: {
             title: "Integrity",
             text:
@@ -209,7 +209,7 @@ const data = {
         transparency: {
           title: "transparency and accountability",
           sub_text:
-            " We are dedicated to realizing our vision and exceeding the expectations of our clients by adhering to the highest ethical standards of conduct and fostering a culture of transparency and accountability. Explore our Anti-Bribery and Anti-Corruption Policy, Code of Conduct, and Communication Policy to learn how we maintain the integrity of our business practices and prioritize the satisfaction and trust of our stakeholders.",
+            "We are dedicated to realizing our vision and exceeding the expectations of our clients by adhering to the highest ethical standards of conduct and fostering a culture of transparency and accountability. Explore our Anti-Bribery and Anti-Corruption Policy, Code of Conduct, and Communication Policy to learn how we maintain the integrity of our business practices and prioritize the satisfaction and trust of our stakeholders.",
           btn_blue: "Anti-Corruption Policy",
           btn_orange: "Code of Conduct",
           btn_green: "Communication Policy"
@@ -217,7 +217,7 @@ const data = {
       },
       our_core: {
         title: "our services & competencies",
-        sub_text: ` Our unwavering commitment to understanding and fulfilling the unique
+        sub_text: `Our unwavering commitment to understanding and fulfilling the unique
           requirements of each of our clients drives our mission and vision. We
           measure our success by the satisfaction of our partners, and we are
           dedicated to continuously sharpening and upgrading our competencies

@@ -5,6 +5,14 @@
   padding: 20px;
   width: 100%;
   background: var(--light-blue-color);
+  transition: top 0.3s ease-in-out;
+}
+
+.navbar-box.navbar-fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
 .logo img {
   width: 180px;
@@ -197,10 +205,10 @@ ul li ol.menu-down li a:hover {
   .menu nav ul.active {
     right: 0;
     height: 100%;
+    line-height: 30px;
   }
 
   .menu nav ul ol {
-    margin-top: 20px;
     padding-left: 15px;
     padding-right: 15px;
   }
@@ -218,10 +226,11 @@ ul li ol.menu-down li a:hover {
     line-height: 30px;
     background: #fff;
     right: 0;
-    margin-top: 10px;
+    padding-left: 30px;
   }
 
   ul li ol.active {
+    line-height: 30px;
     display: block !important;
     animation: menu_down 1s;
   }
@@ -260,14 +269,13 @@ ul li ol.menu-down li a:hover {
 
   .menu nav ul a,
   .menu nav ul span {
-    font-size: 20px;
+    font-size: 18px;
     display: flex;
-    margin-right: 10px;
   }
 
   .menu nav ul li {
-    margin-bottom: 20px;
     width: 100%;
+    margin: 5px 0;
   }
 
   .burger-icon {

@@ -73,19 +73,9 @@
   text-align: center;
 
   p {
-    margin-bottom: 50px;
     text-align: justify;
     display: flex;
     justify-content: center;
-  }
-  a,
-  span {
-    background: var(--dark-blue-color);
-    text-decoration: none;
-    color: #fff !important;
-    padding: 15px 50px;
-    cursor: pointer;
-    border-radius: 100px;
   }
 }
 

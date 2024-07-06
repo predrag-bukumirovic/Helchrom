@@ -145,7 +145,7 @@ export default function OurCore() {
         </div>
 
         <div className="container-main services-row">
-          <div data-aos="fade-right" className="img-design img-row">
+          <div data-aos="fade-right" className="img-design detaild img-row">
             <img src={Detailed} alt="" />
           </div>
 

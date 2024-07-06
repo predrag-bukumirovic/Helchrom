@@ -20,7 +20,6 @@ import Facts7 from "../assets/images/Home/7days.png";
 import Facts180 from "../assets/images/Home/180min.png";
 import Factshappy from "../assets/images/Home/Happy.png";
 import Facts5 from "../assets/images/Home/Inno.png";
-import HCOne from "../assets/images/HCOne.png";
 import icon1 from "../assets/images/Home/1.png";
 import icon2 from "../assets/images/Home/2.png";
 import icon3 from "../assets/images/Home/3.png";
@@ -34,6 +33,7 @@ import "@coreui/coreui/dist/css/coreui.min.css";
 import "react-multi-carousel/lib/styles.css";
 
 import { useTranslation } from "react-i18next";
+import BeforeAfterSlider from "../components/BeforeAfterSlider";
 
 const responsive = {
   superLargeDesktop: { breakpoint: { max: 4000, min: 3000 }, items: 1 },
@@ -259,14 +259,8 @@ export default function Home() {
               <TextReader texts={uniqueText} />
               <br />
               <br />
-
-              <a className="book-btn" href="/contact">
-                {t("book_btn")}
-              </a>
             </div>
-            <div data-aos="fade-left" className="img">
-              <img src={HCOne} alt="HC One" />
-            </div>
+            <BeforeAfterSlider />
           </div>
         </div>
       </div>
@@ -364,11 +358,7 @@ export default function Home() {
 
       <center>
         <p
-          style={{
-            margin: 0,
-            fontWeight: "bold",
-            fontSize: 23
-          }}
+          style={{ margin: 0, fontWeight: "bold", fontSize: 23 }}
           dangerouslySetInnerHTML={{ __html: t("download_brochure") }}
         />
       </center>
@@ -396,7 +386,10 @@ export default function Home() {
 
               <div>
                 {/* <TextReader texts={feedbackText1} /> */}
-                <p dangerouslySetInnerHTML={{ __html: t("feedback.text1") }} />
+                <p
+                  style={{ marginTop: 30 }}
+                  dangerouslySetInnerHTML={{ __html: t("feedback.text1") }}
+                />
 
                 <div style={{ float: "right" }}>
                   <span>Engineering Dobersek GmbH</span>

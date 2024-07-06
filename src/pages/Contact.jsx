@@ -56,7 +56,7 @@ export default function Contact() {
     e.preventDefault();
 
     const emailTemplate = `
-       <html>
+      <html>
         <head>
           <style>
             body {

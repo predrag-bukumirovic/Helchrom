@@ -14,7 +14,7 @@ import Committment from "../assets/images/Values/Committment.png";
 import Agility from "../assets/images/Values/Agility.png";
 import Diversity from "../assets/images/Values/Diversity.png";
 import Courage from "../assets/images/Values/Courage.png";
-import Oursocial from "../assets/images/Values/Oursocial.png";
+import Oursocial from "../assets/images/Values/Oursocial.gif";
 import { useTranslation } from "react-i18next";
 
 export default function OurValues() {

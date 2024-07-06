@@ -1,19 +1,26 @@
 .header-box {
-  background: var(--brend-color);
   position: fixed;
   z-index: 999999;
   top: 0;
   right: 0;
-  transition: .5s;
   left: 0;
-
-  &.hidden {
-    top: -100%;
-  }
+  transition: transform 0.3s ease-in-out;
 
   .header {
     width: 100%;
-    background: var(--brend-colors);
+    background: var(--brend-color);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+
+  .header.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .header.hidden {
+    opacity: 0;
+    transform: translateY(-500px);
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Dodatna tranzicija za .hidden */
   }
 
   .header-links {
@@ -61,6 +68,15 @@
 @media (min-width: 1178px) {
   .header-links {
     display: flex !important;
+  }
+
+  .header-box {
+    &.hide {
+      transform: translateY(-50%);
+    }
+    &.show {
+      transform: translateY(0);
+    }
   }
 }
 

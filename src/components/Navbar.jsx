@@ -12,7 +12,7 @@ import Linkedine from "../assets/images/linkedine.webp";
 import Twitter from "../assets/images/twitter.png";
 import { useTranslation } from "react-i18next";
 
-export default function Navbar() {
+export default function Navbar({ className }) {
   const [openMenu, setOpenMenu] = useState(false);
   const [downMenuAbout, setDownMenuAbout] = useState(false);
   const [downMenu, setDownMenu] = useState(false);
@@ -31,7 +31,7 @@ export default function Navbar() {
   }
 
   return (
-    <div className="navbar-box">
+    <div className={`navbar-box ${className}`}>
       <div
         className="container-main"
         style={{
@@ -54,7 +54,9 @@ export default function Navbar() {
           <nav>
             <ul className={`${openMenu ? "active" : "menu"}`}>
               <div className="logo-mobile-menu">
-                <img src={logo} alt="" />
+                <a href="/">
+                  <img src={logo} alt="Logo" />
+                </a>
                 <TfiClose
                   className="close-menu"
                   onClick={() => setOpenMenu(false)}
@@ -96,7 +98,7 @@ export default function Navbar() {
                         alignItems: "center"
                       }}
                     >
-                      Our business areas <MdKeyboardArrowRight />
+                      Our departments <MdKeyboardArrowRight />
                     </span>
 
                     {isSubmenuOpen &&

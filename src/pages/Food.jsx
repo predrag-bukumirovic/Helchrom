@@ -140,7 +140,7 @@ export default function Food() {
 
           <center>
             <p style={{ marginBottom: 0 }}>
-              Check out our reference food and bio products
+              Check out our references in food and bio products
             </p>
             <br />
             <a

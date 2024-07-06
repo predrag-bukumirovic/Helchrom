@@ -189,11 +189,11 @@ export default function References() {
                 PHARMA
               </h4>
             </div>
-            <div className="text" data-aos="fade-right">
-              <h3 className="title">
+            <div className="text">
+              <h3 data-aos="fade-right" className="title">
                 vetter pharma <br /> <span className="text-stroke">2022</span>
               </h3>
-              <p>
+              <p data-aos="fade-right">
                 Detailed engineering and construction planning of clean mediums
                 for the new production plant.
               </p>

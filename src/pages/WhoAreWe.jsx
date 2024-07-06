@@ -15,6 +15,7 @@ import OurcredoImg from "../assets/images/Who/OurcredoImg.png";
 import "../assets/scss/slider.scss";
 import "../assets/scss/who.scss";
 import WhoIcons from "../components/WhoIcons";
+import TextReader from "../components/TextRender";
 
 const customStyles = {
   content: {
@@ -44,6 +45,11 @@ const WhoAreWe = () => {
   const closeModal = useCallback(() => {
     setModalIsOpen(false);
   }, []);
+
+  const whoHeader = [t("who_are_we.title"), t("who_are_we.text_sub")];
+  const historyText = [t("who_are_we.history"), t("who_are_we.history_text")];
+  const credoText = [t("who_are_we.credo_title"), t("who_are_we.credo_text")];
+  const quotationText = [t("who_are_we.quotation")];
 
   return (
     <div>
@@ -81,6 +87,7 @@ const WhoAreWe = () => {
             data-aos="fade-up"
             dangerouslySetInnerHTML={{ __html: t("who_are_we.text_sub") }}
           />
+          <TextReader texts={whoHeader} />
         </center>
 
         <WhoIcons />
@@ -92,6 +99,7 @@ const WhoAreWe = () => {
             <h2 className="title">
               {t("who_are_we.history")}
             </h2>
+            <TextReader texts={historyText} />
             <div className="our-history">
               <div
                 data-aos="fade-right"
@@ -111,10 +119,12 @@ const WhoAreWe = () => {
         <h2 className="title">
           {t("who_are_we.credo_title")}
         </h2>
+
         <p
           data-aos="fade-up"
           dangerouslySetInnerHTML={{ __html: t("who_are_we.credo_text") }}
         />
+        <TextReader texts={credoText} />
       </div>
 
       <div>
@@ -130,6 +140,7 @@ const WhoAreWe = () => {
                 dangerouslySetInnerHTML={{ __html: t("who_are_we.quotation") }}
               />
             </p>
+            <TextReader texts={quotationText} />
             <span
               data-aos="fade-left"
               style={{ float: "right", cursor: "pointer" }}

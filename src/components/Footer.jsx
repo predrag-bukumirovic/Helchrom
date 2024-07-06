@@ -46,33 +46,41 @@ export default function Footer() {
                     href="https://www.linkedin.com/company/helmchron/"
                     target="_blank"
                     rel="noreferrer"
+                    className="tip"
                   >
                     <img
                       style={{ marginLeft: 0 }}
                       src={Linkedine}
                       alt="Instagram"
                     />
+                    <span className="tooltip-text">LinkedIn</span>
                   </a>
                   <a
                     href="https://twitter.com/HelmchronGlobal"
                     target="_blank"
                     rel="noreferrer"
+                    className="tip"
                   >
                     <img src={Twitter} alt="Instagram" />
+                    <span className="tooltip-text">X</span>
                   </a>
                   <a
                     href="https://www.instagram.com/helmchron_global/"
                     target="_blank"
                     rel="noreferrer"
+                    className="tip"
                   >
                     <img src={Instagram} alt="Instagram" />
+                    <span className="tooltip-text">Instagram</span>
                   </a>
                   <a
                     href="https://www.tiktok.com/@helmchron_global"
                     target="_blank"
                     rel="noreferrer"
+                    className="tip"
                   >
                     <img src={TikTok} alt="TikTok" />
+                    <span className="tooltip-text">TikTok</span>
                   </a>
                 </div>
               </div>

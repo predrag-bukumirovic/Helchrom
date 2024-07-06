@@ -32,6 +32,7 @@ import icon2Hover from "../assets/images/Vision/2.2.png";
 import icon3Hover from "../assets/images/Vision/3.3.png";
 import icon4Hover from "../assets/images/Vision/4.4.png";
 import icon5Hover from "../assets/images/Vision/5.5.png";
+import TextReader from "../components/TextRender";
 
 export default function OurVision() {
   const { t } = useTranslation();
@@ -47,6 +48,15 @@ export default function OurVision() {
     { icon: icon3, image: team, iconHover: icon3Hover },
     { icon: icon4, image: Innovation, iconHover: icon4Hover },
     { icon: icon5, image: sustainability, iconHover: icon5Hover }
+  ];
+
+  const visionSubText = [t("vision.title"), t("vision.sub_text")];
+  const ourMission = [
+    t("vision.our_mission_vision.title"),
+    t("vision.our_mission_vision.mission.title"),
+    t("vision.our_mission_vision.mission.text"),
+    t("vision.our_mission_vision.vision_.title"),
+    t("vision.our_mission_vision.vision_.text")
   ];
 
   return (
@@ -85,6 +95,7 @@ export default function OurVision() {
             data-aos="fade-up"
             dangerouslySetInnerHTML={{ __html: t("vision.sub_text") }}
           />
+          <TextReader texts={visionSubText} />
         </center>
         <div className={showModal ? "modal-img" : "show"} onClick={closeModal}>
           <img src={showModal} alt="Modal Images" />
@@ -122,6 +133,7 @@ export default function OurVision() {
         <div className="mission-vision">
           <h2 style={{ marginTop: 100 }} className="title" data-aos="fade-up">
             {t("vision.our_mission_vision.title")}
+            <TextReader texts={ourMission} />
           </h2>
 
           <div
