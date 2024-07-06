@@ -162,11 +162,11 @@
   .unique-row {
     display: flex;
     justify-content: space-between;
-    gap: 100px;
+    gap: 300px;
     align-items: center;
 
     .img {
-      width: 800px;
+      width: 900px;
 
       @media (max-width: 1200px) {
         width: 1500px;

@@ -9,7 +9,9 @@ export default function Header() {
 
   return (
     <div
-      className={`header-box ${scrollDirection === "down" ? "hide" : "show"}`}
+      className={`header-box ${scrollDirection === "down"
+        ? "hideNav"
+        : "showNav"}`}
     >
       <div className="header">
         <div className="header-links container-main">

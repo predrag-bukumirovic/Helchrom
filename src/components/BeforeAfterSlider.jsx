@@ -10,7 +10,7 @@ import {
 
 const BeforeAfterSlider = () => {
   return (
-    <div className="img">
+    <div className="img before-after-slider">
       <ReactCompareSlider
         itemTwo={<ReactCompareSliderImage src={imgBefore} alt="Image one" />}
         itemOne={<ReactCompareSliderImage src={imgAfter} alt="Image two" />}

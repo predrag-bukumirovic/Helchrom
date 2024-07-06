@@ -71,10 +71,10 @@
   }
 
   .header-box {
-    &.hide {
+    &.hideNav {
       transform: translateY(-50%);
     }
-    &.show {
+    &.showNav {
       transform: translateY(0);
     }
   }
