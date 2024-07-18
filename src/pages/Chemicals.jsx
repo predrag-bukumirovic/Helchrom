@@ -123,7 +123,9 @@ export default function Chemicals() {
           </center>
 
           <center>
-            <p style={{ marginBottom: 0 }}>Check out our reference list</p>
+            <p style={{ marginBottom: 0 }}>
+              Check out our references in Chemicals
+            </p>
             <br />
             <a
               style={{ background: "var(--dark-blue-color)" }}

@@ -9,11 +9,32 @@ import mainImg2 from "../assets/images/News/3.webp";
 import Dusseldorf from "../assets/images/News/Dusseldorf.webp";
 import Frankfurt from "../assets/images/News/Frankfurt.webp";
 import Talk from "../assets/images/News/Talk.png";
+import TextRender from "../components/TextRender";
 
 import "../assets/scss/slider.scss";
 import "../assets/scss/news.scss";
 
+import { useTranslation } from "react-i18next";
+
 export default function News() {
+  const { t } = useTranslation();
+  const headerText = [t("news.title"), t("news.text")];
+  const teamTalk = [
+    t("news.posts.post1.title"),
+    t("news.posts.post1.time"),
+    t("news.posts.post1.text")
+  ];
+  const k2022 = [
+    t("news.posts.post2.title"),
+    t("news.posts.post2.time"),
+    t("news.posts.post2.text")
+  ];
+  const achemaText = [
+    t("news.posts.post3.title"),
+    t("news.posts.post3.time"),
+    t("news.posts.post3.text")
+  ];
+
   return (
     <div>
       <Helmet>
@@ -43,22 +64,19 @@ export default function News() {
       </div>
 
       <div className="container-main">
-        <h1 className="title">NEWS AND PROFESSIONAL EVENTS</h1>
+        <h1 className="title" style={{ padding: "0 20px 0 20px" }}>
+          {t("news.title")} <TextRender texts={headerText} />
+        </h1>
         <center>
           <p>
-            We love participating in and attending professional fairs and
-            conferences to expand our knowledge, meet our partners and network,
-            and be up-to-date with the latest trends and innovations.
-          </p>
-          <p>
-            Read our impressions and highlights from conferences, events, and
-            fairs we attend.
+            {t("news.text")}
           </p>
         </center>
 
         <div className="news-box padding30">
           <div>
             <div>
+              <TextRender texts={teamTalk} />
               <h2>HELMCHRON TeamTalk</h2>
               <span>April, 2024 I Belgrade, Serbia</span>
               <p>
@@ -80,6 +98,7 @@ export default function News() {
         <div className="news-box padding30">
           <div>
             <div>
+              <TextRender texts={k2022} />
               <h2>K2022</h2>
               <span>19 - 26 October 2022 I Dusseldorf, Germany</span>
               <p>
@@ -100,6 +119,7 @@ export default function News() {
         <div className="news-box padding30">
           <div>
             <div>
+              <TextRender texts={achemaText} />
               <h2>ACHEMA 2022</h2>
               <span>22 - 26 August 2022 I Frankfurt, Germany</span>
               <p>

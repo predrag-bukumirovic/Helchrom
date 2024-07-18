@@ -171,10 +171,10 @@ export default function Home() {
       {/* Welcome */}
       <div className="welcome container-main padding30">
         <h1 dangerouslySetInnerHTML={{ __html: t("home.welcome") }} />
+        <TextReader texts={welcomeText} />
         <center>
           <p data-aos="fade-up">
             <span dangerouslySetInnerHTML={{ __html: t("home.wel_text") }} />
-            <TextReader texts={welcomeText} />
           </p>
         </center>
 
@@ -187,10 +187,10 @@ export default function Home() {
       <div className="our-home container-main padding30">
         <h2 className="title">
           {t("services.title")}
+          <TextReader texts={ourServicesText} />
         </h2>
         <p data-aos="fade-up" style={{ textAlign: "center" }}>
           {t("services.sub_text")}
-          <TextReader texts={ourServicesText} />
         </p>
 
         <div className="services-icon">

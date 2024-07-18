@@ -62,46 +62,42 @@ export default function Energy() {
               combustion has grown, the need for sustainable solutions and
               focused know-how has become increasingly urgent.
             </p>
-          </div>
-          <img src={EnergyImg1} alt="" />
-        </div>
 
-        <div>
-          <center style={{ marginTop: 40 }}>
             <span>
               <b>Transition to Solar Energy</b>
             </span>
-            <p>
+            <p style={{ marginTop: 15 }}>
               Investing in solar infrastructure, including photovoltaic (PV)
               panels, concentrated solar power (CSP) systems, energy storage,
               and grid integration technologies, is essential for scaling up
               solar energy generation and ensuring reliability and resilience of
               the power grid.
             </p>
-          </center>
+          </div>
+          <img src={EnergyImg1} alt="" />
+        </div>
 
-          <center>
-            <span>
-              <b>Controlled Conditions</b>
-            </span>
-            <p>
-              Many steps in the manufacturing process require a cleanroom
-              environment to prevent contamination of the silicon wafers and
-              solar cells. Cleanrooms are equipped with air filtration systems
-              and strict cleanliness protocols to minimize the presence of dust,
-              particles, and other contaminants. Variations in temperature and
-              humidity can affect the performance and longevity of the panels.
-              Monitoring and controlling systems must be in place to maintain
-              consistent conditions at all times.
-            </p>
-          </center>
-
+        <div>
           <div
             className="row"
             style={{ background: "var(--light-blue-color)" }}
           >
             <img src={EnergyImg2} alt="" />
             <div>
+              <span>
+                <b>Controlled Conditions</b>
+              </span>
+              <p style={{ marginTop: 15 }}>
+                Many steps in the manufacturing process require a cleanroom
+                environment to prevent contamination of the silicon wafers and
+                solar cells. Cleanrooms are equipped with air filtration systems
+                and strict cleanliness protocols to minimize the presence of
+                dust, particles, and other contaminants. Variations in
+                temperature and humidity can affect the performance and
+                longevity of the panels. Monitoring and controlling systems must
+                be in place to maintain consistent conditions at all times.
+              </p>
+
               <span>
                 <b>Innovation and Adaptability</b>
               </span>
@@ -124,7 +120,9 @@ export default function Energy() {
           </div>
 
           <center>
-            <p style={{ marginBottom: 0 }}>Check out our reference in energy</p>
+            <p style={{ marginBottom: 0 }}>
+              Check out our references in Energy
+            </p>
             <br />
             <a
               style={{ background: "var(--dark-blue-color)" }}

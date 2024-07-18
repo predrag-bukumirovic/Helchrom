@@ -105,7 +105,7 @@ export default function Oil() {
 
           <center>
             <p style={{ marginBottom: 0 }}>
-              Check out our reference in oil and gas
+              Check out our references in Oil and Gas
             </p>
             <br />
             <a

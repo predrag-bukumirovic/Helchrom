@@ -133,7 +133,32 @@ const data = {
         text3:
           "It's inspiring to see the commitment to streamlining project processes for optimal results. A dedicated team and singular focus [of <span class='ofHc'>HELMCHR<span class='one'>ONe</span></span>] are indeed game-changers in achieving project success. Looking forward to seeing how Helmchron ONE revolutionizes project management dynamics."
       },
+      news: {
+        title: "NEWS AND PROFESSIONAL EVENTS",
+        text:
+          "We love participating in and attending professional fairs and conferences to expand our knowledge, meet our partners and network, and be up-to-date with the latest trends and innovations. Read our impressions and highlights from conferences, events, and fairs we attend.",
 
+        posts: {
+          post1: {
+            title: "HELMCHRON TeamTalk",
+            time: "April, 2024 I Belgrade, Serbia",
+            text:
+              "TeamTalk is our short video format concept designed for discussing industry trends, insights, and future perspectives, our expertise and lessons learned, the impact of our values on our and our partners` outcomes, inspirational career path stories and milestones, and more."
+          },
+          post2: {
+            title: "K2022",
+            time: "19 - 26 October 2022 I Dusseldorf, Germany",
+            text:
+              "K2022 covered the main challenges and hot topics from the global plastic and rubber industry - circular economy, sustainable materials for the future, and the scope of digitalization in achieving these outcomes."
+          },
+          post3: {
+            title: "ACHEMA 2022",
+            time: "22 - 26 August 2022 I Frankfurt, Germany",
+            text:
+              "ACHEMA 2022 was focused on the latest trends and innovations in process and chemical engineering, including sustainability, digitalization, and industry 4.0. It provided an opportunity to discuss some of the most pressing challenges of today and assess potential solutions for the future."
+          }
+        }
+      },
       navbar: {
         who_are_we: "Who are we?",
         services: "Plant engineering design for the coming generations",
@@ -628,18 +653,23 @@ const data = {
       },
       blog: {
         title: "Blog",
-        text1:
+        text:
           "What we love most about our job is the fact it impacts greatly the everyday lives of people worldwide. Even though engineering, chemicals, pharmaceuticals, and our other business areas might seem complex, in our Blog we wish to share our knowledge and expertise in a captivating manner and make it interesting for everyone.",
 
-        blog1: {
+        blog3: {
+          title: "IMPERATIV OF SUSTAINABILITY",
+          text:
+            "Embracing sustainability from a process and chemical engineering perspective involves adopting green principles, optimizing processes, managing waste efficiently, and utilizing renewable energy sources."
+        },
+        blog2: {
           title: "A WORKPLACE WHERE WE FEEL INCLUDED",
           text:
             "The concept of diversity in the workplace has gained significant traction over the past few decades as organizations recognize the immense value it brings. Read a short overview of the various benefits Diversity and Inclusion bring to organizations and society."
         },
-        blog2: {
-          title: "IMPERATIV OF SUSTAINABILITY",
+        blog1: {
+          title: "SUPPORTING JUNIOR FEMALE VOLLEYBALL TEAM",
           text:
-            "Embracing sustainability from a process and chemical engineering perspective involves adopting green principles, optimizing processes, managing waste efficiently, and utilizing renewable energy sources."
+            "We supported an amazing junior female volleyball team that participated in National Championship held in Belgrade, Serbia, in May 2023. We are so proud of their team spirit, discipline, and results and we are sure there are many great things ahead of them. Find out similarities between volleyball and engineering."
         }
       },
       chemicals: {

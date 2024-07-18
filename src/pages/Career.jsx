@@ -14,6 +14,7 @@ import "@coreui/coreui/dist/css/coreui.min.css";
 import { Helmet } from "react-helmet";
 import { IoIosArrowDropup } from "react-icons/io";
 import { useTranslation } from "react-i18next";
+import TextReader from "../components/TextRender";
 
 export default function Career(i) {
   const [accordion, setAccordion] = useState([0, 3]);
@@ -26,6 +27,32 @@ export default function Career(i) {
       setAccordion([index]);
     }
   };
+
+  const headerText = [t("career.title"), t("career.sub_text")];
+  const careerText = [
+    t("career.opportunities.title"),
+    t("career.opportunities.sub_text"),
+    t("career.opportunities.accordion.title1"),
+    t("career.opportunities.accordion.text1"),
+    t("career.opportunities.accordion.title2"),
+    t("career.opportunities.accordion.text2")
+  ];
+  const faqs = [
+    t("career.faqs.title"),
+    t("career.faqs.sub_text"),
+    t("career.faqs.accor.title1"),
+    t("career.faqs.accor.text1"),
+    t("career.faqs.accor.title2"),
+    t("career.faqs.accor.text2"),
+    t("career.faqs.accor.title3"),
+    t("career.faqs.accor.text3"),
+    t("career.faqs.accor.title4"),
+    t("career.faqs.accor.text4"),
+    t("career.faqs.accor.title5"),
+    t("career.faqs.accor.text5"),
+    t("career.faqs.accor.title6"),
+    t("career.faqs.accor.text6")
+  ];
 
   return (
     <div>
@@ -67,6 +94,7 @@ export default function Career(i) {
         <div className="container-main padding30">
           <h1 className="title">
             {t("career.title")}
+            <TextReader texts={headerText} />
           </h1>
           <p
             style={{ textAlign: "justify" }}
@@ -81,6 +109,7 @@ export default function Career(i) {
       >
         <h2 className="title">
           {t("career.opportunities.title")}
+          <TextReader texts={careerText} />
         </h2>
 
         <p
@@ -220,9 +249,13 @@ export default function Career(i) {
         </div>
       </div>
 
-      <div className="faqs-container padding30">
+      <div
+        style={{ position: "relative" }}
+        className="container-main padding30"
+      >
         <h2 style={{ marginBottom: 20 }} className="title">
           {t("career.faqs.title")}
+          <TextReader texts={faqs} />
         </h2>
 
         <center>

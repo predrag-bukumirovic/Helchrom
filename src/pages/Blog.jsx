@@ -10,9 +10,27 @@ import Odbojka from "../assets/images/Blog/Odbojka.png";
 import Sustainability from "../assets/images/Blog/Sustainability.png";
 
 import { useTranslation } from "react-i18next";
+import TextReader from "../components/TextRender";
 
 export default function Blog() {
   const { t } = useTranslation();
+
+  const headerText = [t("blog.title"), t("blog.text")];
+  const blog3Text = [
+    t("blog.blog3.title"),
+    t("blog.blog3.text"),
+    t("read_more")
+  ];
+  const blog2Text = [
+    t("blog.blog2.title"),
+    t("blog.blog2.text"),
+    t("read_more")
+  ];
+  const blog1Text = [
+    t("blog.blog1.title"),
+    t("blog.blog1.text"),
+    t("read_more")
+  ];
 
   return (
     <div>
@@ -46,24 +64,28 @@ export default function Blog() {
       <div className="container-main padding30">
         <h1 className="title">
           {t("blog.title")}
+          <TextReader texts={headerText} />
         </h1>
 
         <center>
           <p>
-            {t("blog.text1")}
+            {t("blog.text")}
           </p>
         </center>
 
         <div className="news-box padding30">
+          <TextReader texts={blog3Text} />
           <div>
             <div>
               <h2>
-                {t("blog.blog2.title")}
+                {t("blog.blog3.title")}
               </h2>
               <p>
-                {t("blog.blog2.text")}
+                {t("blog.blog3.text")}
               </p>
-              <a href="/blog/sustainability">Read more</a>
+              <a href="/blog/sustainability">
+                {t("read_more")}
+              </a>
             </div>
             <div>
               <img
@@ -76,15 +98,18 @@ export default function Blog() {
         </div>
 
         <div className="news-box padding30">
+          <TextReader texts={blog2Text} />
           <div>
             <div>
               <h2>
-                {t("blog.blog1.title")}
+                {t("blog.blog2.title")}
               </h2>
               <p>
-                {t("blog.blog1.text")}
+                {t("blog.blog2.text")}
               </p>
-              <a href="/blog/diversity">Read more</a>
+              <a href="/blog/diversity">
+                {t("read_more")}
+              </a>
             </div>
             <div>
               <img src={Diversity} alt="A WORKPLACE WHERE WE FEEL INCLUDED" />
@@ -94,17 +119,18 @@ export default function Blog() {
         </div>
 
         <div className="news-box padding30">
+          <TextReader texts={blog1Text} />
           <div>
             <div>
-              <h2>SUPPORTING JUNIOR FEMALE VOLLEYBALL TEAM</h2>
+              <h2>
+                {t("blog.blog1.title")}
+              </h2>
               <p>
-                We supported an amazing junior female volleyball team that
-                participated in National Championship held in Belgrade, Serbia,
-                in May 2023. We are so proud of their team spirit, discipline,
-                and results and we are sure there are many great things ahead of
-                them. Find out similarities between volleyball and engineering.
+                {t("blog.blog1.text")}
               </p>
-              <a href="/blog/volleyball">Read more</a>
+              <a href="/blog/volleyball">
+                {t("read_more")}
+              </a>
             </div>
             <div>
               <img

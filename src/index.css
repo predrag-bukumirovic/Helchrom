@@ -111,7 +111,7 @@ footer {
 }
 @media (max-width: 1000px) {
   .title {
-    font-size: 30px;
+    font-size: 25px;
   }
 }
 @keyframes transitionIn {
@@ -190,6 +190,9 @@ footer {
 }
 
 .sound-icon {
+  position: absolute;
+  left: 0px;
+  top: 0;
   cursor: pointer;
 }
 

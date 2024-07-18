@@ -136,7 +136,7 @@ export default function Pharma() {
 
           <center>
             <p style={{ marginBottom: 0 }}>
-              Check out our reference in pharma and life sciences
+              Check out our references in Pharma and Lifesciences
             </p>
             <br />
             <a

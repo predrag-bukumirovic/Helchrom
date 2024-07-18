@@ -1,6 +1,7 @@
 import { CCarousel, CCarouselItem, CImage } from "@coreui/react";
 import React from "react";
 import "../assets/scss/electronics.scss";
+import "../assets/scss/home.scss";
 
 import mainIm1 from "../assets/images/Electronics/img1.png";
 import mainImg2 from "../assets/images/Electronics/img2.png";
@@ -81,7 +82,7 @@ export default function Electronics() {
         <span style={{ paddingTop: 20 }}>
           <b>Future of Electronics Manufacturing</b>
           <br />
-          Ovde treba da ide neki tekst sa dizajna nisam moga da vidim
+          Graph 1. Estimated electronics market size (2024-2030)
         </span>
         <div className="future">
           <div style={{ flex: 2 }}>
@@ -123,6 +124,20 @@ export default function Electronics() {
             </a>
           </p>
         </div>
+
+        <center>
+          <p style={{ marginBottom: 0 }}>
+            Check out our references in Electronics
+          </p>
+          <br />
+          <a
+            style={{ background: "var(--dark-blue-color)" }}
+            className="book-btn"
+            href="/our-references"
+          >
+            Read more
+          </a>
+        </center>
       </div>
     </div>
   );

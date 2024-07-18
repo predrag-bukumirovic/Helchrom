@@ -15,6 +15,7 @@ import Agility from "../assets/images/Values/Agility.png";
 import Diversity from "../assets/images/Values/Diversity.png";
 import Courage from "../assets/images/Values/Courage.png";
 import Oursocial from "../assets/images/Values/Oursocial.gif";
+import TextRender from "../components/TextRender";
 import { useTranslation } from "react-i18next";
 
 export default function OurValues() {
@@ -45,6 +46,22 @@ export default function OurValues() {
       clearInterval(interval);
     };
   }, []);
+
+  const ourValuesTexts = [t("navbar.our_values"), t("our_values.sub_text")];
+  const IntegrityTexts = [
+    t("our_way.title"),
+    t("our_way.integrity.title"),
+    t("our_way.integrity.text"),
+    t("our_way.commitment.title"),
+    t("our_way.commitment.text"),
+    t("our_way.agility.title"),
+    t("our_way.agility.text"),
+    t("our_way.diversity.title"),
+    t("our_way.diversity.text"),
+    t("our_way.courage.title"),
+    t("our_way.courage.text")
+  ];
+  const socialRespo = [t("social_respo.title"), t("social_respo.text")];
 
   return (
     <div>
@@ -82,6 +99,7 @@ export default function OurValues() {
       <div>
         <h1 className="title" data-aos="fade-up">
           {t("navbar.our_values")}
+          <TextRender texts={ourValuesTexts} />
         </h1>
 
         <center className="container-main">
@@ -94,7 +112,9 @@ export default function OurValues() {
         <div style={{ marginTop: 100 }}>
           <h2 className="title" data-aos="fade-up">
             {t("our_way.title")}
+            <TextRender texts={IntegrityTexts} />
           </h2>
+
           <div style={{ background: "var(--light-blue-color)" }}>
             <div className="row-img-text row1 container-main">
               <div className="row-img" data-aos="fade-right">
@@ -223,6 +243,7 @@ export default function OurValues() {
           >
             <h3 className="title" data-aos="fade-up">
               {t("social_respo.title")}
+              <TextRender texts={socialRespo} />
             </h3>
 
             <p
