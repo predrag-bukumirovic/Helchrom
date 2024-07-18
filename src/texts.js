@@ -659,17 +659,310 @@ const data = {
         blog3: {
           title: "IMPERATIV OF SUSTAINABILITY",
           text:
-            "Embracing sustainability from a process and chemical engineering perspective involves adopting green principles, optimizing processes, managing waste efficiently, and utilizing renewable energy sources."
+            "Embracing sustainability from a process and chemical engineering perspective involves adopting green principles, optimizing processes, managing waste efficiently, and utilizing renewable energy sources.",
+          content: {
+            title: `SUSTAINABILITY <br /> in Chemical and Pharmaceutical Industries`,
+            sub_text:
+              " Sustainability has become an essential driver for progress and competitiveness in the chemical and pharmaceutical industries.",
+            text1: `
+            <p>
+              Historically, both industries have been pivotal in enhancing human
+              well-being through the development of life-saving medicines,
+              diagnostics, hygiene products, innovative materials and daily
+              consumables. However, rapid industrialization and growth came at a
+              cost, often leading to resource depletion and adverse
+              environmental impacts. <br /> The increasing environmental
+              consciousness and global movements, particularly in the 1980s,
+              spearheaded the sustainability agenda. Since then, the chemical
+              and pharmaceutical industries have been reevaluating their
+              operations, focusing on reducing their ecological footprint and
+              promoting sustainable development.
+            </p>
+
+            <p>
+              <b>Plastics</b>
+            </p>
+            <p>
+              The impact of synthetic polymers on our lives is indisputable.
+              Plastic materials have revolutionized the manufacturing of medical
+              devices, implants and consumables, production of vehicles, and
+              even food packaging. However, their overuse has significant
+              effects on the health of our environment and even our lives due to
+              low degradability. <br /> Synthetic polymers are polluting water
+              bodies and cropland and affect wildlife. Micro plastics are even
+              found in human blood samples. Particular compounds, such as BPA
+              and phthalates, are considered to be endocrine disruptors that
+              interfere with the natural function of our endocrine system and
+              can cause many chronic diseases.
+            </p>
+
+            <p>
+              <b>Engineering Solutions for Sustainability</b>
+            </p>
+            <p>
+              Our mission and vision are strongly linked to saving our planet
+              for the coming generations and improving the health of the global
+              population. We are focused on partnering with global leaders and
+              contributing to projects related to manufacturing the highest
+              quality biodegradable and compostable polymers from natural
+              resources.
+            </p>
+
+            <ol>
+              <li>Green Chemistry Principles</li>
+              <p>
+                Designing products and processes that minimize hazardous
+                substances, waste, and energy use will emphasizes efficiency and
+                safety and focus on renewable resources.
+              </p>
+              <li>Process Optimization</li>
+              <p>
+                Process engineering plays a crucial role in optimizing
+                operations to reduce waste generation, improve energy
+                efficiency, and maximize raw material utilization. Advanced
+                process control technologies and data analytics aid in real-time
+                monitoring and control for sustainable outcomes.
+              </p>
+              <li>Waste Management and Recycling</li>
+              <p>
+                Innovative waste treatment processes and recycling enable the
+                reutilization of by-products, minimizing environmental impact
+                and resource wastage.
+              </p>
+              <li>Alternative Energy Sources</li>
+              <p>
+                Transitioning to renewable energy sources such as solar, wind,
+                or bioenergy for powering manufacturing facilities reduces the
+                reliance on fossil fuels and decreases the carbon footprint.
+              </p>
+              <p>
+                By integrating these engineering solutions, chemical and
+                pharmaceutical industries can drive a paradigm shift towards a
+                more sustainable and responsible future.
+              </p>
+            </ol>
+            `,
+            references: `
+        <h4>References:</h4>
+
+          <p>
+            T.E. Graedel, B. Allenby, Industrial Ecology and Sustainable
+            Engineering, P.H, 2009.
+          </p>
+          <p>
+            K. Kuemmerer, Pharmaceuticals in the Environment, Springer, 2008.
+          </p>
+          <p>
+            FC. Mihai, et al. Plastic pollution in marine and freshwater
+            environments: abundance, sources, and mitigation, Elsevier, 2022,
+            241-274.
+          </p>
+          <p>
+            A. Kulkarni, S.E. Miller, Analysis of pharmaceuticals in the
+            environment, Contemporary Chemical Approaches for Green and
+            Sustainable Drugs, Elsevier, 2022, 27-45.
+          </p>
+            `
+          }
         },
         blog2: {
           title: "A WORKPLACE WHERE WE FEEL INCLUDED",
           text:
-            "The concept of diversity in the workplace has gained significant traction over the past few decades as organizations recognize the immense value it brings. Read a short overview of the various benefits Diversity and Inclusion bring to organizations and society."
+            "The concept of diversity in the workplace has gained significant traction over the past few decades as organizations recognize the immense value it brings. Read a short overview of the various benefits Diversity and Inclusion bring to organizations and society.",
+          content: {
+            title: "A workplace where we feel included and heard",
+            sub_text:
+              "At Helmchron, we celebrate diversity as one of our core values and live by it each day.",
+            text1: `
+              The concept of diversity in the workplace has gained significant
+              traction over the past few decades as organizations recognize the
+              immense value it brings. <br />
+              The dawn of the civil rights movement in the 1960s marked a
+              pivotal moment in history, sparking conversations around equality,
+              justice, and social change. <br /> Organizations realized there is
+              a huge need in embracing individuals from different backgrounds,
+              perspectives, and experiences not only as a reflection of societal
+              progress but also as their own contribution in creating a higher
+              quality of life for the coming generations.
+            `,
+            text2: `
+            <p>
+          Today, we deeply understand the importance of Diversity and Inclusion.
+        </p>
+
+        <ul>
+          <li>
+            <p>
+              <b>Innovation and Creativity:</b> Diversity encourages the
+              collision of unique ideas, experiences, and mindsets, fostering
+              innovation and creative problem-solving. Diverse teams bring
+              together a wide range of skills and knowledge, leading to fresh
+              insights and breakthrough solutions that homogenous groups may
+              overlook.
+            </p>
+          </li>
+          <li>
+            <p>
+              <b>Enhanced Decision-Making:</b> Different perspectives challenge
+              assumptions, mitigate bias, and promote thorough analysis,
+              resulting in better-informed choices that consider multiple
+              angles.
+            </p>
+          </li>
+          <li>
+            <p>
+              <b>Improved Customer Relations:</b> Embracing diversity enables
+              organizations to connect with an increasingly diverse customer
+              base effectively, gain valuable insights, build trust, and tailor
+              their products or services to meet evolving needs.
+            </p>
+          </li>
+          <li>
+            <p>
+              <b>Increased Employee Engagement and Retention:</b> Inclusive
+              workplaces foster a sense of belonging and pride. When individuals
+              can bring their whole selves to work without fear of
+              discrimination or prejudice, they are more likely to be engaged,
+              motivated, and committed to their organization's success.
+            </p>
+          </li>
+          <li>
+            <p>
+              <b>Attracting Top Talent:</b> Cultures that live by diversity and
+              inclusion send a powerful message to potential employees. The team
+              that feels valued and appreciated will always spread the great
+              word contributing to the company's positive reputation.
+            </p>
+          </li>
+        </ul>
+            `,
+            text3: `
+              <p>
+              Embracing diversity is no longer just a moral imperative. It is a
+              strategic advantage in a complex and ever-evolving business
+              landscape.
+            </p>
+            <p>
+              By celebrating the unique contributions of every of our team
+              members, we believe we can realize our full potential, be
+              innovative and supportive of our clients.
+            </p>
+            `,
+            references: `
+            <h4>References:</h4>
+
+          <p>
+            <b>1.</b> Cox, T.H., Jr., & Blake, S. (1991). Managing Cultural
+            Diversity: Implications for Organizational Competitiveness. The
+            Executive, 5(3), 45-56.
+          </p>
+          <p>
+            <b>2.</b> Ely, R.J., & Thomas, D.A. (2001). Cultural Diversity at
+            Work: The Effects of Diversity Perspectives on Work Group Processes
+            and Outcomes. Administrative Science Quarterly, 46(2), 229-273.
+          </p>
+          <p>
+            <b>3.</b> Green, K.A., López, M., Wysocki, A., & Kepner, K. (2002).
+            Diversity in the Workplace: Benefits, Challenges, and the Required
+            Managerial Tools. University of Florida, Institute of Food and
+            Agricultural Sciences.
+          </p>
+          <p>
+            <b>4.</b> Thomas, D.A. (2004). Diversity as Strategy. Harvard
+            Business Review, 82(9), 98-108.
+          </p>
+          <p>
+            <b>5.</b> Hewlett, S.A., Marshall, M., & Sherbin, L. (2013). How
+            Diversity Can Drive Innovation. Harvard Business Review, 91(12),
+            30-31.
+          </p>
+            `
+          }
         },
         blog1: {
           title: "SUPPORTING JUNIOR FEMALE VOLLEYBALL TEAM",
           text:
-            "We supported an amazing junior female volleyball team that participated in National Championship held in Belgrade, Serbia, in May 2023. We are so proud of their team spirit, discipline, and results and we are sure there are many great things ahead of them. Find out similarities between volleyball and engineering."
+            "We supported an amazing junior female volleyball team that participated in National Championship held in Belgrade, Serbia, in May 2023. We are so proud of their team spirit, discipline, and results and we are sure there are many great things ahead of them. Find out similarities between volleyball and engineering.",
+          content: {
+            title: "WE SUPPORTED JUNIOR FEMALE VOLLEYBALL TEAM",
+            sub_text: `
+            As part of our vision, we strive to upgrade the quality of <br />life
+            for the coming generations.
+            `,
+            text1: `
+                <p>
+              This includes not only outcomes achieved from the core business
+              point of view but also the responsibility toward kids and young
+              people.
+            </p>
+            <p>
+              This year we decided to support one amazing junior female
+              volleyball team that participated in National Championship held in
+              Belgrade, Serbia, in May. We are so proud of their team spirit,
+              discipline, and results and we are sure there are many great
+              things ahead of them.
+            </p>
+            `,
+            text2: `
+            <p style={{ marginTop: 30 }}>
+          <b>
+            Volleyball and engineering have many things in common, even though
+            they might seem disparate.
+          </b>
+        </p>
+
+        <p>
+          Volleyball and engineering have many things in common, even though
+          they might seem disparate.
+        </p>
+        <p>
+          While one revolves around teamwork and precision on the court, the
+          other focuses on innovation, customer support, and problem-solving.
+        </p>
+        <p>
+          However, both volleyball and engineering demand a strong foundation
+          built upon <b>collaboration and teamwork.</b> Each team member has a
+          crucial role in achieving seamless coordination, effective
+          communication, and an unwavering commitment to shared outcomes.
+        </p>`,
+            text3: `
+                <p>
+              Furthermore, both volleyball and engineering require meticulous
+              <b>attention to detail.</b> They demand a dedication to precision
+              and a comprehensive understanding of the field, in order not to
+              oversee the slightest detail.
+            </p>
+            <p>
+              <b>Adaptability and agility</b> represent other crucial common
+              grounds between volleyball and engineering. In the dynamic
+              environment of a volleyball game, players must constantly adjust
+              their strategies to counter their opponents and overcome
+              unforeseen obstacles. This ability to adapt under pressure
+              resonates strongly with engineers, who must think fast and
+              creatively to develop innovative solutions.
+            </p>
+            `,
+            text4: `
+                <p>
+          Also, both volleyball and engineering celebrate the pursuit of
+          excellence through <b>discipline and continuous improvement</b>. In
+          volleyball, athletes tirelessly train to enhance their skills,
+          technique, and physical abilities to perform at the highest level.
+          Similarly, engineers constantly seek to push the boundaries of
+          innovation, refining existing technologies and exploring new frontiers
+          to improve the world for the coming generations.
+        </p>
+        <p>
+          The similarities between volleyball and engineering highlight the
+          shared core values and limitless capacity for collaboration,
+          creativity, and innovation.
+        </p>
+        <p>
+          We, at Helmchron, will continue to nurture talents and provide them
+          with opportunities to thrive.
+        </p>
+            `
+          }
         }
       },
       chemicals: {

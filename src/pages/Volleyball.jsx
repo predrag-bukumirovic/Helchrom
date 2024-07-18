@@ -8,7 +8,21 @@ import "../assets/scss/news-post.scss";
 import OdbojkaSlikaG from "../assets/images/Blog/Odbojkagore.jpg";
 import OdbojkaSlikaD from "../assets/images/Blog/Odbojkadole.png";
 
+import TextRender from "../components/TextRender";
+
+import { useTranslation } from "react-i18next";
+
 export default function Volleyball() {
+  const { t } = useTranslation();
+  const blogSound = [
+    t("blog.blog1.content.title"),
+    t("blog.blog1.content.sub_text"),
+    t("blog.blog1.content.text1"),
+    t("blog.blog1.content.text2"),
+    t("blog.blog1.content.text3"),
+    t("blog.blog1.content.text4")
+  ];
+
   return (
     <div>
       {/* Slider start */}
@@ -40,95 +54,45 @@ export default function Volleyball() {
 
       <div className="container-main padding30">
         <center>
-          <h1 className="title">WE SUPPORTED JUNIOR FEMALE VOLLEYBALL TEAM</h1>
-          <p style={{ fontWeight: "bold", fontSize: 18 }}>
-            As part of our vision, we strive to upgrade the quality of <br />life
-            for the coming generations.
-          </p>
+          <h1 className="title">
+            {t("blog.blog1.content.title")}
+          </h1>
+          <TextRender texts={blogSound} />
+          <p
+            style={{ fontWeight: "bold", fontSize: 18 }}
+            dangerouslySetInnerHTML={{
+              __html: t("blog.blog1.content.sub_text")
+            }}
+          />
         </center>
 
         <div className="post">
-          <div>
-            <p>
-              This includes not only outcomes achieved from the core business
-              point of view but also the responsibility toward kids and young
-              people.
-            </p>
-            <p>
-              This year we decided to support one amazing junior female
-              volleyball team that participated in National Championship held in
-              Belgrade, Serbia, in May. We are so proud of their team spirit,
-              discipline, and results and we are sure there are many great
-              things ahead of them.
-            </p>
-          </div>
+          <div
+            dangerouslySetInnerHTML={{ __html: t("blog.blog1.content.text1") }}
+          />
+
           <div style={{ width: "60%" }} className="post-img">
             <img src={OdbojkaSlikaG} alt="Odbojka" />
           </div>
         </div>
 
-        <p style={{ marginTop: 30 }}>
-          <b>
-            Volleyball and engineering have many things in common, even though
-            they might seem disparate.
-          </b>
-        </p>
+        <div
+          dangerouslySetInnerHTML={{ __html: t("blog.blog1.content.text2") }}
+        />
 
-        <p>
-          Volleyball and engineering have many things in common, even though
-          they might seem disparate.
-        </p>
-        <p>
-          While one revolves around teamwork and precision on the court, the
-          other focuses on innovation, customer support, and problem-solving.
-        </p>
-        <p>
-          However, both volleyball and engineering demand a strong foundation
-          built upon <b>collaboration and teamwork.</b> Each team member has a
-          crucial role in achieving seamless coordination, effective
-          communication, and an unwavering commitment to shared outcomes.
-        </p>
         <div className="post">
           <div className="post-img">
             <img src={OdbojkaSlikaD} alt="Odbojka" />
           </div>
-          <div>
-            <p>
-              Furthermore, both volleyball and engineering require meticulous{" "}
-              <b>attention to detail.</b> They demand a dedication to precision
-              and a comprehensive understanding of the field, in order not to
-              oversee the slightest detail.
-            </p>
-            <p>
-              <b>Adaptability and agility</b> represent other crucial common
-              grounds between volleyball and engineering. In the dynamic
-              environment of a volleyball game, players must constantly adjust
-              their strategies to counter their opponents and overcome
-              unforeseen obstacles. This ability to adapt under pressure
-              resonates strongly with engineers, who must think fast and
-              creatively to develop innovative solutions.
-            </p>
-          </div>
+          <div
+            dangerouslySetInnerHTML={{ __html: t("blog.blog1.content.text3") }}
+          />
         </div>
 
-        <p style={{ marginTop: 50 }}>
-          Also, both volleyball and engineering celebrate the pursuit of
-          excellence through <b>discipline and continuous improvement</b>. In
-          volleyball, athletes tirelessly train to enhance their skills,
-          technique, and physical abilities to perform at the highest level.
-          Similarly, engineers constantly seek to push the boundaries of
-          innovation, refining existing technologies and exploring new frontiers
-          to improve the world for the coming generations.
-        </p>
-        <p>
-          The similarities between volleyball and engineering highlight the
-          shared core values and limitless capacity for collaboration,
-          creativity, and innovation.
-        </p>
-        <p>
-          We, at Helmchron, will continue to nurture talents and provide them
-          with opportunities to thrive.
-        </p>
+        <div
+          style={{ marginTop: 50 }}
+          dangerouslySetInnerHTML={{ __html: t("blog.blog1.content.text4") }}
+        />
       </div>
     </div>
   );
