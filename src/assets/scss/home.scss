@@ -46,7 +46,7 @@
 }
 
 .our-home {
-  margin: 100px auto 50px auto;
+  margin: 50px auto 50px auto;
   position: relative;
 
   > .services-icon {
@@ -56,6 +56,10 @@
     gap: 30px;
     margin-top: 30px;
     margin-bottom: 30px;
+
+    a div {
+      height: 300px;
+    }
 
     @media (max-width: 560px) {
       div {
@@ -94,7 +98,6 @@
         margin-top: 20px;
       }
       p {
-        text-align: justify;
         font-size: 13px;
       }
     }
@@ -229,7 +232,7 @@
           width: 180px;
 
           @media (max-width: 600px) {
-            width: 100px;
+            width: 70px;
           }
         }
 
@@ -244,7 +247,8 @@
             text-transform: uppercase;
 
             @media (max-width: 600px) {
-              font-size: 10px;
+              font-size: 9px;
+              font-weight: 500;
             }
           }
 
@@ -312,6 +316,7 @@
     h1 {
       margin-bottom: 50px;
       font-size: 20px;
+      padding: 0 15px;
     }
   }
 }

@@ -69,6 +69,8 @@
         padding: 10px;
         border: 2px solid var(--light-blue-color);
         transition: .5s;
+        background: #fff;
+        z-index: 9;
       }
 
       img {
@@ -125,5 +127,11 @@
         }
       }
     }
+  }
+}
+
+@media (max-width: 400px) {
+  .line-ver {
+    height: 26px !important;
   }
 }

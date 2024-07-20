@@ -60,7 +60,7 @@ export default function Contact() {
         <head>
           <style>
             body {
-              font-family: Arial, sans-serif;
+              font-family: 'Montserrat', sans-serif;
               color: #333333;
             }
 
@@ -207,7 +207,7 @@ export default function Contact() {
         <head>
           <style>
             body {
-              font-family: Arial, sans-serif;
+              font-family: 'Montserrat', sans-serif;
               color: #333333;
             }
 

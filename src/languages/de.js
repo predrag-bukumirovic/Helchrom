@@ -1,7 +1,9 @@
 const geTranslation = {
   home: {
-    welcome: "",
-    wel_text: "Nemacki jezik"
+    welcome:
+      "<p>WILLKOMMEN</p> <b>auf der offiziellen Website von Helmchron</b>",
+    wel_text:
+      "Helmchron ist ein familiengeführtes Unternehmen, das umfassende und vollständige Ingenieurlösungen für Produktionsstätten in den Bereichen Pharmazie, Chemie, Lebensmittel und Bioprodukte, Elektronik, Energie sowie Öl und Gas anbietet. Seit 2010 sind wir stolz darauf, zur Herstellung von weltweit verfügbaren, sicheren und qualitativ hochwertigen Produkten beizutragen. Unsere Mission ist seit unseren Anfängen die gleiche geblieben - wir verbessern die Lebensqualität für alle überall und halten unsere Umwelt für die kommenden Generationen gesund. Heute ist unser Tätigkeitsbereich breiter und unser Team vielfältiger, was einzigartige Perspektiven, Agilität und Effizienz ermöglicht. Unsere Ingenieurlösungen werden nun an führende Unternehmen und Innovatoren in verschiedenen Branchen geliefert, mit Fokus auf globalen Einfluss, nachhaltige Ergebnisse und langanhaltende Partnerschaften."
   },
   who_are_we: {
     title: "",
@@ -230,7 +232,7 @@ const geTranslation = {
   video_common_values: "",
   services_vertical: "",
   btn_references: "",
-  
+
   vision: {
     title: "",
     sub_text: "",

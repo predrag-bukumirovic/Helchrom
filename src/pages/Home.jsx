@@ -198,38 +198,45 @@ export default function Home() {
             {
               icon: icon1,
               title: t("services.icon.title1"),
-              text: t("services.icon.text1")
+              text: t("services.icon.text1"),
+              link: "/our-services"
             },
             {
               icon: icon2,
               title: t("services.icon.title2"),
-              text: t("services.icon.text2")
+              text: t("services.icon.text2"),
+              link: "/our-services"
             },
             {
               icon: icon3,
               title: t("services.icon.title3"),
-              text: t("services.icon.text3")
+              text: t("services.icon.text3"),
+              link: "/our-services"
             },
             {
               icon: icon4,
               title: t("services.icon.title4"),
-              text: t("services.icon.text4")
+              text: t("services.icon.text4"),
+              link: "/our-services"
             },
             {
               icon: icon5,
               title: t("services.icon.title5"),
-              text: t("services.icon.text5")
+              text: t("services.icon.text5"),
+              link: "/our-services"
             }
           ].map((item, index) =>
-            <div key={index} data-aos="zoom-in">
-              <img src={item.icon} alt="" />
-              <h3>
-                {item.title}
-              </h3>
-              <p>
-                {item.text}
-              </p>
-            </div>
+            <a href={item.link} style={{ textDecoration: "none" }}>
+              <div key={index} data-aos="zoom-in">
+                <img src={item.icon} alt="" />
+                <h3>
+                  {item.title}
+                </h3>
+                <p>
+                  {item.text}
+                </p>
+              </div>
+            </a>
           )}
         </div>
 
@@ -243,7 +250,7 @@ export default function Home() {
       {/* Unique Service Concept */}
       <div className="unique">
         <div className="container-main padding30">
-          <h2>
+          <h2 style={{ padding: "0 15px" }}>
             {t("unique.title")}
           </h2>
           <h3>

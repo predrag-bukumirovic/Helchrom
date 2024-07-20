@@ -113,9 +113,10 @@ export default function OurTeam() {
               <div className="img-team" data-aos="zoom-in">
                 <img src={milos} alt="" />
               </div>
+              <TextReader texts={milosText} />
               <div data-aos="fade-left">
                 <h5 className="name-team">
-                  {" "}{t("team.team1.name")}
+                  {t("team.team1.name")}
                 </h5>
                 <h6 className="position-team">
                   {t("team.team1.position")}
@@ -132,7 +133,6 @@ export default function OurTeam() {
                 <p>
                   {t("team.team1.text")}
                 </p>
-                <TextReader texts={milosText} />
               </div>
             </div>
           </div>
@@ -142,6 +142,7 @@ export default function OurTeam() {
               <div className="img-team" data-aos="zoom-in">
                 <img src={anja} alt="" />
               </div>
+              <TextReader texts={anjaText} />
               <div data-aos="fade-left">
                 <h5 className="name-team">
                   {t("team.team2.name")}
@@ -161,7 +162,6 @@ export default function OurTeam() {
                 <p>
                   {t("team.team2.text")}
                 </p>
-                <TextReader texts={anjaText} />
               </div>
             </div>
           </div>
