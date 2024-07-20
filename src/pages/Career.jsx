@@ -92,7 +92,7 @@ export default function Career(i) {
         {/* Slider end */}
 
         <div className="container-main padding30">
-          <h1 className="title">
+          <h1 className="title" style={{ padding: "0 40px" }}>
             {t("career.title")}
             <TextReader texts={headerText} />
           </h1>
@@ -107,7 +107,7 @@ export default function Career(i) {
         style={{ margin: "100px auto" }}
         className="container-main padding30"
       >
-        <h2 className="title">
+        <h2 className="title" style={{ padding: "0 40px" }}>
           {t("career.opportunities.title")}
           <TextReader texts={careerText} />
         </h2>
@@ -253,7 +253,7 @@ export default function Career(i) {
         style={{ position: "relative" }}
         className="container-main padding30"
       >
-        <h2 style={{ marginBottom: 20 }} className="title">
+        <h2 style={{ marginBottom: 20, padding: "0 40px" }} className="title">
           {t("career.faqs.title")}
           <TextReader texts={faqs} />
         </h2>

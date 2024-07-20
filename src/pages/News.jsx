@@ -64,7 +64,7 @@ export default function News() {
       </div>
 
       <div className="container-main">
-        <h1 className="title" style={{ padding: "0 20px 0 20px" }}>
+        <h1 className="title" style={{ padding: "0 40px" }}>
           {t("news.title")} <TextRender texts={headerText} />
         </h1>
         <center>

@@ -87,7 +87,7 @@ export default function OurVision() {
       </div>
 
       <div className="container-main">
-        <h1 className="title" data-aos="fade-up">
+        <h1 className="title" data-aos="fade-up" style={{ padding: "0 40px" }}>
           {t("vision.title")}
         </h1>
         <center>
@@ -131,7 +131,11 @@ export default function OurVision() {
       {/* Our mision */}
       <div>
         <div className="mission-vision">
-          <h2 style={{ marginTop: 100 }} className="title" data-aos="fade-up">
+          <h2
+            style={{ marginTop: 100, padding: "0 40px" }}
+            className="title"
+            data-aos="fade-up"
+          >
             {t("vision.our_mission_vision.title")}
             <TextReader texts={ourMission} />
           </h2>

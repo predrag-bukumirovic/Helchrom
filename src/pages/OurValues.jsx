@@ -241,7 +241,11 @@ export default function OurValues() {
             className="container-main padding30"
             style={{ marginBottom: 100 }}
           >
-            <h3 className="title" data-aos="fade-up">
+            <h3
+              className="title"
+              data-aos="fade-up"
+              style={{ padding: "0 40px" }}
+            >
               {t("social_respo.title")}
               <TextRender texts={socialRespo} />
             </h3>

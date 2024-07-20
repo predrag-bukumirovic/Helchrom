@@ -84,7 +84,7 @@ export default function OurCore() {
       </div>
 
       <div className="container-main padding30">
-        <h1 className="title" data-aos="fade-up">
+        <h1 className="title" data-aos="fade-up" style={{ padding: "0 40px" }}>
           {t("our_core.title")}
           <TextReader texts={ourCoreText} />
         </h1>

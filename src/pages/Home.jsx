@@ -170,7 +170,10 @@ export default function Home() {
 
       {/* Welcome */}
       <div className="welcome container-main padding30">
-        <h1 dangerouslySetInnerHTML={{ __html: t("home.welcome") }} />
+        <h1
+          dangerouslySetInnerHTML={{ __html: t("home.welcome") }}
+          style={{ padding: "0 40px" }}
+        />
         <TextReader texts={welcomeText} />
         <center>
           <p data-aos="fade-up">
@@ -250,10 +253,10 @@ export default function Home() {
       {/* Unique Service Concept */}
       <div className="unique">
         <div className="container-main padding30">
-          <h2 style={{ padding: "0 15px" }}>
+          <h2 className="title" style={{ padding: "0 40px", marginBottom: 0 }}>
             {t("unique.title")}
           </h2>
-          <h3>
+          <h3 className="title">
             HELMCHR<span>ONe</span>
           </h3>
 
@@ -275,7 +278,7 @@ export default function Home() {
       {/* Our Business Areas */}
       <div className="areas padding30 container-main">
         <div className="areas-text">
-          <h2 className="title">
+          <h2 className="title" style={{ padding: "0 40px" }}>
             {t("areas.title")}
           </h2>
 

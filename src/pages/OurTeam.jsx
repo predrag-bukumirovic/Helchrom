@@ -276,7 +276,11 @@ export default function OurTeam() {
         </center>
 
         <div className="transparency">
-          <h2 className="title" data-aos="fade-up">
+          <h2
+            className="title"
+            data-aos="fade-up"
+            style={{ padding: "0 40px" }}
+          >
             {t("team.transparency.title")}
           </h2>
 

@@ -176,7 +176,7 @@ const WhoAreWe = () => {
       <div className="container-main">
         <div className="basic padding30">
           <div className="padding30">
-            <h2 className="title" data-aos="fade-right">
+            <h2 className="title" style={{ padding: 0 }} data-aos="fade-right">
               <b>
                 {t("info.title")}
               </b>
