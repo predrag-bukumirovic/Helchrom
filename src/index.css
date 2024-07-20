@@ -9,6 +9,12 @@
   --font-family: 'Montserrat', sans-serif;
 }
 
+@font-face {
+  font-family: "Montserrat";
+  src: url('./assets/font/Montserrat.ttf');
+  font-display: swap;
+}
+
 html {
   scroll-behavior: smooth;
 }
