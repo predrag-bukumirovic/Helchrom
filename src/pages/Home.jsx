@@ -176,9 +176,7 @@ export default function Home() {
         />
         <TextReader texts={welcomeText} />
         <center>
-          <p data-aos="fade-up">
-            <span dangerouslySetInnerHTML={{ __html: t("home.wel_text") }} />
-          </p>
+          <p dangerouslySetInnerHTML={{ __html: t("home.wel_text") }} />
         </center>
 
         <a href="/about-us/our-vision-and-mission">
@@ -432,6 +430,8 @@ export default function Home() {
               </div>
             </div>
           </Carousel>
+
+          {/* <div className="test-sound">PUSTI TEKST</div> */}
         </div>
       </div>
     </div>

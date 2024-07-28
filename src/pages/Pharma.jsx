@@ -9,10 +9,13 @@ import mainImg3 from "../assets/images/Pharma/img3.png";
 
 import Pharma1 from "../assets/images/Pharma/rowimg1.png";
 import Pharma2 from "../assets/images/Pharma/rowimg2.png";
+import { useTranslation } from "react-i18next";
 
 const mainImages = [mainIm1, mainImg2, mainImg3];
 
 export default function Pharma() {
+  const { t } = useTranslation();
+
   return (
     <div>
       <div className="slider">
@@ -37,29 +40,24 @@ export default function Pharma() {
       </div>
 
       <div className="container-main padding30">
-        <h1 className="title">LIFE SCIENCES AND PHARMACEUTICALS</h1>
+        <h1 className="title">
+          {t("pharma.title")}
+        </h1>
         <center>
           <p>
-            We specialize in delivering cutting-edge plant design engineering
-            solutions that power the advancements in the pharmaceuticals
-            manufacturing.
+            {t("pharma.sub_text")}
           </p>
         </center>
 
         <center>
           <span>
-            <b>Balance of Science and Engineering</b>
+            <b>
+              {t("pharma.text1.title")}
+            </b>
           </span>
 
           <p style={{ marginTop: 15 }}>
-            Pharmaceuticals and life sciences are dynamic sectors that require a
-            delicate balance between scientific knowledge and engineering
-            expertise. We understand the role that engineering plays in the
-            development and production of life-saving medicines and in
-            delivering medical advancements. Our team merges scientific and
-            engineering principles to develop solutions that optimize processes,
-            enhance safety, maximize productivity and minimize environmental
-            impact.
+            {t("pharma.text1.text")}
           </p>
         </center>
 
@@ -71,36 +69,25 @@ export default function Pharma() {
             <img src={Pharma1} alt="" />
             <div>
               <span>
-                <b>Aseptic Manufacturing in Pharma</b>
+                <b>
+                  {t("pharma.text2.title")}
+                </b>
               </span>
               <p style={{ marginTop: 15 }}>
-                Aseptic conditions are critical in pharmaceutical manufacturing
-                as they ensure the safety and sterility of products. Our
-                commitment to aseptic manufacturing begins with strictly
-                controlled clean rooms. Through the integration of advanced
-                filtration systems and comprehensive environmental monitoring,
-                compliance regarding airborne particle levels and environmental
-                conditions is ensured. With the use of validated sterilization
-                methods such as steam sterilization, gamma irradiation, and
-                chemical sterilants, the highest levels of sterility is
-                accomplished, meeting regulatory requirements and industry
-                standards.
+                {t("pharma.text2.text")}
               </p>
             </div>
           </div>
 
           <center>
             <span>
-              <b>Water and Air Quality</b>
+              <b>
+                {t("pharma.text3.title")}
+              </b>
             </span>
 
             <p style={{ marginTop: 15 }}>
-              Water quality and air quality are closely monitored and controlled
-              to prevent contamination and maintain aseptic conditions
-              throughout the manufacturing process. Water purification systems
-              and high-efficiency particulate air (HEPA) filtration systems
-              ensure that water and air used in production meet the strictest
-              quality standards, safeguarding against contamination.
+              {t("pharma.text3.text")}
             </p>
           </center>
 
@@ -110,25 +97,21 @@ export default function Pharma() {
           >
             <div>
               <span>
-                <b>Optimization for Enhanced Efficiency</b>
+                <b>
+                  {t("pharma.text4.title")}
+                </b>
               </span>
               <p style={{ marginTop: 15 }}>
-                Our process engineering solutions are tailored to optimize
-                manufacturing processes and ensure operational effectiveness. By
-                leveraging technology and deep industry know-how, we support our
-                partners to achieve short and long-term outcomes, including
-                reduced impact on the environment.
+                {t("pharma.text4.text")}
               </p>
 
               <span>
-                <b>Collaborative Partnerships for Success</b>
+                <b>
+                  {t("pharma.text4.title1")}
+                </b>
               </span>
               <p style={{ marginTop: 15 }}>
-                Collaboration is at the heart of our approach. We work closely
-                with our partners, forging relationships based on trust and
-                results achieved. By understanding the specific challenges and
-                goals of our partners, we co-create solutions that will improve
-                the quality of life for patients everywhere.
+                {t("pharma.text4.text1")}
               </p>
             </div>
             <img src={Pharma2} alt="" />
@@ -136,7 +119,7 @@ export default function Pharma() {
 
           <center>
             <p style={{ marginBottom: 0 }}>
-              Check out our references in Pharma and Lifesciences
+              {t("pharma.check")}
             </p>
             <br />
             <a
@@ -144,7 +127,7 @@ export default function Pharma() {
               className="book-btn"
               href="/our-references"
             >
-              Read more
+              {t("read_more")}
             </a>
           </center>
         </div>

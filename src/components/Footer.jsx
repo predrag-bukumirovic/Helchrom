@@ -6,9 +6,14 @@ import Linkedine from "../assets/images/linkedine.webp";
 import Twitter from "../assets/images/twitter.png";
 import Logo from "../assets/images/logowhite.webp";
 import { useTranslation } from "react-i18next";
+import Select from "../components/Select";
 
 export default function Footer() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+
+  const handleLanguageChange = code => {
+    i18n.changeLanguage(code);
+  };
 
   return (
     <footer>
@@ -83,6 +88,10 @@ export default function Footer() {
                     <span className="tooltip-text">TikTok</span>
                   </a>
                 </div>
+                <Select
+                  currentLanguage={i18n.language}
+                  onLanguageChange={handleLanguageChange}
+                />
               </div>
               <div className="footer-contact">
                 <p dangerouslySetInnerHTML={{ __html: t("contact_us") }} />

@@ -8,10 +8,13 @@ import mainImg2 from "../assets/images/Chemicals/img2.png";
 import mainImg3 from "../assets/images/Chemicals/img3.png";
 
 import ChemicalsImg from "../assets/images/Chemicals/Chemicals.png";
+import { useTranslation } from "react-i18next";
 
 const mainImages = [mainIm1, mainImg2, mainImg3];
 
 export default function Chemicals() {
+  const { t } = useTranslation();
+
   return (
     <div>
       <div className="slider">
@@ -36,31 +39,24 @@ export default function Chemicals() {
       </div>
 
       <div className="container-main padding30">
-        <h1 className="title">Chemicals</h1>
+        <h1 className="title">
+          {t("chemicals.title")}
+        </h1>
         <center>
           <p>
-            Our team delivers plant design engineering solutions for the
-            manufacturing of chemicals that are used in everyday lives across
-            the globe - from disinfectants to plastics.
+            {t("chemicals.sub_text")}
           </p>
         </center>
 
         <div>
           <center style={{ marginTop: 40 }}>
             <span>
-              <b>Chemistry in our Lives</b>
+              <b>
+                {t("chemicals.text1.title")}
+              </b>
             </span>
             <p>
-              In a way, the chemical industry is the backbone of our modern day
-              habits. Not only in the sense of products we use daily, but also
-              infrastructure that supports our communities, like roads, bridges,
-              etc. For example, the discovery of polyethylene, a versatile
-              plastic, in the 1930s led to the development of numerous everyday
-              products such as plastic bags, containers, and packaging
-              materials. Polyethylene's low cost, durability, and versatility
-              have made it one of the most widely used plastic materials in the
-              world. However, these benefits and lack of consciousness about
-              environmental impact, has led to overconsumption.
+              {t("chemicals.text1.text")}
             </p>
           </center>
           <div
@@ -70,61 +66,49 @@ export default function Chemicals() {
             <img src={ChemicalsImg} alt="" />
             <div>
               <span>
-                <b>Overcoming Challenges of Chemicals Manufacturing</b>
+                <b>
+                  {t("chemicals.text2.title")}
+                </b>
               </span>
               <p style={{ marginTop: 15 }}>
-                Environmental concerns and rising regulatory requirements
-                present significant challenges in chemical innovation and
-                manufacturing. For this reason, global manufacturers are
-                engaging with small and medium businesses, due to their focused
-                know-how and agile value creation, to deliver innovation.
+                {t("chemicals.text2.text")}
               </p>
 
               <span>
-                <b>Carbon Capture and Utilization</b>
+                <b>
+                  {t("chemicals.text2.title1")}
+                </b>
               </span>
               <p style={{ marginTop: 15 }}>
-                Carbon dioxide emissions from industrial processes can be
-                converted into valuable products such as chemicals, fuels, and
-                materials. By coupling hydrogen with captured carbon dioxide,
-                chemical manufacturers can reduce their carbon footprint and
-                contribute to efforts to mitigate climate change. Overall,
-                hydrogen offers significant opportunities for the chemical
-                industry to enhance sustainability by enabling cleaner
-                production processes, reducing carbon emissions, and promoting
-                the transition to renewable energy sources.
+                {t("chemicals.text2.text1")}
               </p>
             </div>
           </div>
           <center>
             <span>
-              <b>Our Customized Solutions</b>
+              <b>
+                {t("chemicals.text3.title")}
+              </b>
             </span>
             <p>
-              Our solutions are always in line with unique needs of each of our
-              partners, industry best practices and regulatory standards. We
-              craft our solutions in order to optimize manufacturing processes,
-              ensure cost-effectiveness and long-term sustainability. Our
-              dedication to excellence and passion for our partners` outcomes
-              are the main driving forces of the results we deliver.
+              {t("chemicals.text3.text")}
             </p>
           </center>
 
           <center>
             <span>
-              <b>Long Lasting Partnerships</b>
+              <b>
+                {t("chemicals.text3.title1")}
+              </b>
             </span>
             <p>
-              We are proactive in our approach, but led by our partners`
-              feedback and requirements. Through collaboration, we gain insight
-              into our partners' vision, facilitate progress, and foster
-              enduring partnerships built on trust and mutual success.
+              {t("chemicals.text3.text1")}
             </p>
           </center>
 
           <center>
             <p style={{ marginBottom: 0 }}>
-              Check out our references in Chemicals
+              {t("chemicals.text3.check")}
             </p>
             <br />
             <a
@@ -132,7 +116,7 @@ export default function Chemicals() {
               className="book-btn"
               href="/our-references"
             >
-              Read more
+              {t("read_more")}
             </a>
           </center>
         </div>

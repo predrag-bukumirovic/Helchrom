@@ -94,3 +94,16 @@ footer {
   visibility: visible;
   opacity: 1;
 }
+
+#language-select {
+  background: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 5px 10px;
+  cursor: pointer;
+  outline: none;
+  border-radius: 30px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
