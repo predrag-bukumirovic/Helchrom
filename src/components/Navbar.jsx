@@ -98,7 +98,7 @@ export default function Navbar({ className }) {
                         alignItems: "center"
                       }}
                     >
-                      Our departments <MdKeyboardArrowRight />
+                      {t("navbar.departments")} <MdKeyboardArrowRight />
                     </span>
 
                     {isSubmenuOpen &&
@@ -107,14 +107,24 @@ export default function Navbar({ className }) {
                           ? "active"
                           : "menu-down"}`}
                       >
-                        <CustomLink href="/pharma">Pharma</CustomLink>
-                        <CustomLink href="/food-and-bioproducts">
-                          Food & Bio
+                        <CustomLink href="/pharma">
+                          {t("navbar.pharma")}
                         </CustomLink>
-                        <CustomLink href="/chemicals">Chemicals</CustomLink>
-                        <CustomLink href="/electronics">Electronics</CustomLink>
-                        <CustomLink href="/energy">Energy</CustomLink>
-                        <CustomLink href="/oil&gas">Oil & Gas</CustomLink>
+                        <CustomLink href="/food-and-bioproducts">
+                          {t("navbar.food")}
+                        </CustomLink>
+                        <CustomLink href="/chemicals">
+                          {t("navbar.chemicals")}
+                        </CustomLink>
+                        <CustomLink href="/electronics">
+                          {t("navbar.electronics")}
+                        </CustomLink>
+                        <CustomLink href="/energy">
+                          {t("navbar.energy")}
+                        </CustomLink>
+                        <CustomLink href="/oil&gas">
+                          {t("navbar.oil")}
+                        </CustomLink>
                       </div>}
                   </li>
                   <li>
@@ -139,7 +149,9 @@ export default function Navbar({ className }) {
                 {t("navbar.our_services")}
               </CustomLink>
 
-              <CustomLink href="/our-references">our References</CustomLink>
+              <CustomLink href="/our-references">
+                {t("navbar.our_reference")}
+              </CustomLink>
 
               <CustomLink href="/career">
                 {t("navbar.career")}

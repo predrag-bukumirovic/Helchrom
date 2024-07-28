@@ -167,13 +167,21 @@ const enTranslation = {
     vision_mission: "Our vision and mission",
     our_values: "Our values",
     competences_services: "competences & services",
-    our_core: " Our core competencies",
+    our_core: "Our core competencies",
     our_services: "Our Services",
+    our_reference: "Our References",
     career: "career",
     news: "news",
     blog: "blog",
     contact: "contact",
-    legal: "Legal Statement"
+    legal: "Legal Statement",
+    departments: "Our departments",
+    food: "Food & Bio",
+    pharma: "Pharma",
+    chemicals: "Chemicals",
+    electronics: "Electronics",
+    energy: "Energy",
+    oil: "Oil & Gas"
   },
   team: {
     title: "Our Team",
