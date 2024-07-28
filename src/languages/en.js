@@ -1050,16 +1050,105 @@ const enTranslation = {
     check: "Check out our references in Food and Bioproducts"
   },
   electronics: {
-    title: "",
-    sub_text: ""
+    title: "ELECTRONICS",
+    sub_text:
+      "In manufacturing of electronics, functionality, reliability, and safety are equally important, demanding a high level of collaboration among multidisciplinary teams.",
+    text1: {
+      title: "The Manufacturing Process",
+      text:
+        "The fabrication of individual electronic components such as microchips, resistors, and capacitors is conducted using advanced semiconductor manufacturing techniques in cleanroom environments to prevent contamination. Components are assembled onto printed circuit boards using automated assembly equipment. Cleanroom conditions are maintained throughout the assembly process to minimize the risk of particle contamination, which can affect the functionality and lifespan of electronic devices.",
+      title1: "Aseptic Conditions",
+      text1:
+        "Aseptic conditions minimize the risk of contamination, ensuring that electronic components and devices function reliably and consistently over their lifespan. Additionally, it means complying with regulations and standards guarantee the quality and reliability of the product."
+    },
+    future: "Future of Electronics Manufacturing",
+    graph: "Graph 1. Estimated electronics market size (2024-2030)",
+    source: "Source:",
+    check: "Check out our references in Electronics",
+    text:
+      "The main driver of growth will be adoption of sustainable practices and e-waste reduction. As a global concern, e-waste should be properly recycled or managed to reduce environmental and health impact. Furthermore, electronic devices contain valuable resources such as precious metals and rare earth elements, whose loss contributes to resource depletion. By implementing efficient extraction and purification techniques, recovery of precious metals, rare earth elements, and other resources from discarded electronic devices will be enabled, reducing the need for new materials in manufacturing. Electronic components with modular architectures will facilitate easy disassembly, repair, and upgradeability. Interchangeable parts and standardized interfaces will extend the lifespan of electronic devices and reduce e-waste generation. Breakthroughs in material science will lead to innovative materials with enhanced properties."
   },
   energy: {
-    title: "",
-    sub_text: ""
+    title: "ENERGY",
+    sub_text:
+      "With our plant design engineering solutions, we strive to redefine the energy landscape, embracing sustainable practices and innovative solutions to create a brighter, cleaner, and energy-abundant future for the coming generations.",
+    text1: {
+      title: "Thermal Power Plants as a Starting Point",
+      text:
+        "Thermal power plants fueled by coal have been reliable sources of global electricity generation for decades. Our proficiency in energy manufacturing originated from our experience with thermal power plants, serving as the foundation for the development of our expertise in transitioning towards cleaner and renewable energy sources. As awareness of the environmental impacts of fossil fuel combustion has grown, the need for sustainable solutions and focused know-how has become increasingly urgent.",
+      title1: "Transition to Solar Energy",
+      text1:
+        "Investing in solar infrastructure, including photovoltaic (PV) panels, concentrated solar power (CSP) systems, energy storage, and grid integration technologies, is essential for scaling up solar energy generation and ensuring reliability and resilience of the power grid."
+    },
+    text2: {
+      title: "Controlled Conditions",
+      text:
+        "Many steps in the manufacturing process require a cleanroom environment to prevent contamination of the silicon wafers and solar cells. Cleanrooms are equipped with air filtration systems and strict cleanliness protocols to minimize the presence of dust, particles, and other contaminants. Variations in temperature and humidity can affect the performance and longevity of the panels. Monitoring and controlling systems must be in place to maintain consistent conditions at all times.",
+      title2: "Innovation and Adaptability",
+      text2:
+        "Our engineers design processes that are agile and adaptable to market dynamics, ensuring that energy manufacturing stays competitive and responsive to evolving consumer demands and contemporary needs.",
+      title3: "Cost Efficiency and Optimization",
+      text3:
+        "By identifying cost-efficient strategies and thorough life cycle analysis, we optimize operations and minimize resource wastage, leading to an overall effective energy manufacturing process."
+    },
+    check: "Check out our references in Energy"
   },
   oil: {
-    title: "",
-    sub_text: ""
+    title: "Oil and gas",
+    sub_text:
+      "Helmchron plant design engineering solutions contribute to the overall efficiency, safety, sustainability, and profitability of the oil and gas industry. We firmly believe that the integration of process and chemical engineering solutions holds the key to unlocking operational efficiency, maximizing resource utilization, and minimizing environmental impact.",
+    text1: {
+      title: "Optimized Operations",
+      text:
+        "Our team combines industry expertise and advanced technologies to optimize every aspect of oil and gas operations. We analyze, design, and implement processes that streamline production, reduce costs, and enhance overall operational efficiency.",
+      title1: "Sustainable Solutions",
+      text1:
+        "Sustainability is part of everything we do. Our process and chemical engineering solutions are environmentally responsible and ensure that manufacturing processes align with global environmental goals."
+    },
+    text2: {
+      title: "Safety First",
+      text:
+        "Safety is non-negotiable in the oil and gas industry. We implement advanced safety measures and technologies that mitigate risks and enhance workplace safety.",
+      title1: "Partnership and Collaboration",
+      text1:
+        "Our partners` satisfaction is one of the outcomes we aim for. Collaborating closely and transparently and utilizing cutting-edge technologies, we develop solutions according to unique requirements. Through in-depth analysis, we identify risks, areas for improvement, and opportunities for automation, with the goal of enhancing operational efficiency and profitability."
+    },
+    check: "Check out our references in Oil and Gas"
+  },
+  contact: {
+    title: "GET IN TOUCH",
+    sub_text:
+      "Looking for more information or would like to learn about career opportunities in Helmchron? <br/> Please submit your inquiry and our team will reply as soon as possible.",
+    required: `You can also submit your inquires via the contact form. <br />
+            <span class="info-send">
+              Fields marked with an asterisk (*) are required.
+            </span>`,
+    form: {
+      label: {
+        name: "Full Name",
+        company: "Company",
+        email: "Email",
+        position: "Position",
+        phone: "Phone Number",
+        subject: "Subject",
+        message: "Message"
+      },
+      plac: {
+        name: "Please enter your full name",
+        company: "Please enter your company",
+        email: "Please enter your email",
+        position: "Please enter your position",
+        phone: "Please enter your phone number",
+        subject: "Please enter your subject",
+        message: "Please enter your message here"
+      },
+      policy: `I agree to the <a href="/privacy-policy">Privacy Policy</a>`,
+      send: "Send",
+      sending: "Sending...",
+      book: "Book a meeting",
+      book_text:
+        "Schedule a 30-minute meeting with our team to explore how we can tailor our support to meet the unique needs of your project and work collaboratively to achieve your desired outcomes."
+    }
   }
 };
 export default enTranslation;

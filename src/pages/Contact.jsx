@@ -12,6 +12,7 @@ import "@coreui/coreui/dist/css/coreui.min.css";
 import { Helmet } from "react-helmet";
 import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
+import { useTranslation } from "react-i18next";
 
 export default function Contact() {
   const [name, setName] = useState("");
@@ -340,6 +341,8 @@ export default function Contact() {
     }
   };
 
+  const { t } = useTranslation();
+
   return (
     <div>
       <Helmet>
@@ -377,69 +380,62 @@ export default function Contact() {
 
       <div className="container-main">
         <center>
-          <h1 className="title">GET IN TOUCH</h1>
-          <p>
-            Looking for more information or would like to learn about career
-            opportunities in Helmchron? <br /> Please submit your inquiry and
-            our team will reply as soon as possible.{" "}
-          </p>
+          <h1 className="title">
+            {t("contact.title")}
+          </h1>
+          <p dangerouslySetInnerHTML={{ __html: t("contact.sub_text") }} />
         </center>
 
         <center>
-          <p>
-            You can also submit your inquires via the contact form. <br />{" "}
-            <span className="info-send">
-              Fields marked with an asterisk (*) are required.
-            </span>
-          </p>
+          <p dangerouslySetInnerHTML={{ __html: t("contact.required") }} />
         </center>
 
         <div className="form padding30">
           <form method="post" id="form" onSubmit={submitForm}>
             <div>
               <label htmlFor="">
-                Full Name <span className="star">*</span>
+                {t("contact.form.label.name")} <span className="star">*</span>
                 <input
                   type="text"
-                  placeholder="Please enter your full name"
+                  placeholder={t("contact.form.plac.name")}
                   name="name"
                   required
                   onChange={event => setName(event.target.value)}
                 />
               </label>
               <label htmlFor="company">
-                Company
+                {t("contact.form.label.company")}
                 <input
                   type="text"
-                  placeholder="Please enter your company"
+                  placeholder={t("contact.form.plac.company")}
                   name="company"
                   onChange={event => setCompany(event.target.value)}
                 />
               </label>
               <label htmlFor="email">
-                Email <span className="star">*</span>
+                {t("contact.form.label.email")} <span className="star">*</span>
                 <input
                   type="email"
-                  placeholder="Please enter your email"
+                  placeholder={t("contact.form.plac.email")}
                   required
                   name="email"
                   onChange={event => setEmail(event.target.value)}
                 />
               </label>
               <label htmlFor="position">
-                Position
+                {t("contact.form.label.position")}
                 <input
                   type="text"
-                  placeholder="Please enter your position"
+                  placeholder={t("contact.form.plac.position")}
                   name="position"
                   onChange={event => setPosition(event.target.value)}
                 />
               </label>
               <label htmlFor="number">
-                Phone Number
+                {t("contact.form.label.phone")}
                 <input
                   type="text"
-                  placeholder="Please enter your phone number"
+                  placeholder={t("contact.form.plac.phone")}
                   name="phone"
                   onChange={event => setPhone(event.target.value)}
                 />
@@ -448,19 +444,21 @@ export default function Contact() {
 
             <div>
               <label htmlFor="subject">
-                Subject <span className="star">*</span>
+                {t("contact.form.label.subject")}{" "}
+                <span className="star">*</span>
                 <input
                   type="text"
-                  placeholder="Please enter your subject"
+                  placeholder={t("contact.form.plac.subject")}
                   name="subject"
                   required
                   onChange={event => setSubject(event.target.value)}
                 />
               </label>
               <label htmlFor="message">
-                Message <span className="star">*</span>
+                {t("contact.form.label.message")}{" "}
+                <span className="star">*</span>
                 <textarea
-                  placeholder="Please enter your message here"
+                  placeholder={t("contact.form.plac.message")}
                   cols="30"
                   rows="10"
                   name="message"
@@ -470,9 +468,10 @@ export default function Contact() {
               </label>
 
               <label className="label-policy" htmlFor="policy">
-                <p>
-                  I agree to the <a href="/privacy-policy">Privacy Policy</a>
-                </p>
+                <p
+                  dangerouslySetInnerHTML={{ __html: t("contact.form.policy") }}
+                />
+
                 <input
                   id="policy"
                   type="checkbox"
@@ -486,7 +485,7 @@ export default function Contact() {
               </label>
 
               <button type="submit" className="btn" disabled={loading}>
-                {loading ? "Sending... " : "Send "}
+                {loading ? t("contact.form.sending") : t("contact.form.send")}
                 {loading &&
                   <div class="lds-ring">
                     <div />
@@ -499,21 +498,22 @@ export default function Contact() {
           </form>
 
           <div>
-            <h2 className="title">Book a meeting</h2>
+            <h2 className="title">
+              {t("contact.form.book")}
+            </h2>
             <p>
-              Schedule a 30-minute meeting with our team to explore how we can
-              tailor our support to meet the unique needs of your project and
-              work collaboratively to achieve your desired outcomes.
+              {t("contact.form.book_text")}
             </p>
 
             <form action="" onSubmit={submitFormBook}>
               <div className="book-form">
                 <div>
                   <label htmlFor="">
-                    Full Name <span className="star">*</span>
+                    {t("contact.form.label.name")}
+                    <span className="star">*</span>
                     <input
                       type="text"
-                      placeholder="Please enter your full name"
+                      placeholder={t("contact.form.label.name")}
                       name="name"
                       required
                       onChange={event => setNameBook(event.target.value)}
@@ -521,20 +521,21 @@ export default function Contact() {
                   </label>
 
                   <label htmlFor="company">
-                    Company
+                    {t("contact.form.label.company")}
                     <input
                       type="text"
-                      placeholder="Please enter your company"
+                      placeholder={t("contact.form.plac.company")}
                       name="company"
                       onChange={event => setCompanyBook(event.target.value)}
                     />
                   </label>
 
                   <label htmlFor="email">
-                    Email <span className="star">*</span>
+                    {t("contact.form.label.email")}
+                    <span className="star">*</span>
                     <input
                       type="email"
-                      placeholder="Please enter your email"
+                      placeholder={t("contact.form.plac.email")}
                       required
                       name="email"
                       onChange={event => setEmailBook(event.target.value)}
@@ -553,9 +554,10 @@ export default function Contact() {
               </div>
 
               <label className="label-policy" htmlFor="policy">
-                <p>
-                  I agree to the <a href="/privacy-policy">Privacy Policy</a>
-                </p>
+                <p
+                  dangerouslySetInnerHTML={{ __html: t("contact.form.policy") }}
+                />
+
                 <input
                   id="policy"
                   type="checkbox"
@@ -569,7 +571,9 @@ export default function Contact() {
               </label>
 
               <button type="submit" className="btn" disabled={loadingBook}>
-                {loadingBook ? "Sending... " : "Send "}
+                {loadingBook
+                  ? t("contact.form.sending")
+                  : t("contact.form.send")}
                 {loadingBook &&
                   <div class="lds-ring">
                     <div />

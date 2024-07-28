@@ -9,10 +9,13 @@ import mainImg3 from "../assets/images/Oil/img3.png";
 
 import Oil1 from "../assets/images/Oil/rowImg1.png";
 import Oil2 from "../assets/images/Oil/rowImg2.png";
+import { useTranslation } from "react-i18next";
 
 const mainImages = [mainIm1, mainImg2, mainImg3];
 
 export default function Oil() {
+  const { t } = useTranslation();
+
   return (
     <div>
       <div className="slider">
@@ -37,15 +40,12 @@ export default function Oil() {
       </div>
 
       <div className="container-main padding30">
-        <h1 className="title">Oil and gas</h1>
+        <h1 className="title">
+          {t("oil.title")}
+        </h1>
         <center>
           <p>
-            Helmchron plant design engineering solutions contribute to the
-            overall efficiency, safety, sustainability, and profitability of the
-            oil and gas industry. <br /> We firmly believe that the integration
-            of process and chemical engineering solutions holds the key to
-            unlocking operational efficiency, maximizing resource utilization,
-            and minimizing environmental impact.
+            {t("oil.sub_text")}
           </p>
         </center>
 
@@ -53,23 +53,21 @@ export default function Oil() {
           <div className="row">
             <div>
               <span>
-                <b>Optimized Operations</b>
+                <b>
+                  {t("oil.text1.title")}
+                </b>
               </span>
               <p style={{ marginTop: 15 }}>
-                Our team combines industry expertise and advanced technologies
-                to optimize every aspect of oil and gas operations. We analyze,
-                design, and implement processes that streamline production,
-                reduce costs, and enhance overall operational efficiency.
+                {t("oil.text1.text")}
               </p>
 
               <span>
-                <b>Sustainable Solutions</b>
+                <b>
+                  {t("oil.text1.title1")}
+                </b>
               </span>
               <p style={{ marginTop: 15 }}>
-                Sustainability is part of everything we do. Our process and
-                chemical engineering solutions are environmentally responsible
-                and ensure that manufacturing processes align with global
-                environmental goals.
+                {t("oil.text1.text1")}
               </p>
             </div>
 
@@ -80,32 +78,28 @@ export default function Oil() {
             <img src={Oil2} alt="" />
             <div>
               <span>
-                <b>Safety First</b>
+                <b>
+                  {t("oil.text2.title")}
+                </b>
               </span>
               <p style={{ marginTop: 15 }}>
-                Safety is non-negotiable in the oil and gas industry. We
-                implement advanced safety measures and technologies that
-                mitigate risks and enhance workplace safety.
+                {t("oil.text2.text")}
               </p>
 
               <span>
-                <b>Partnership and Collaboration</b>
+                <b>
+                  {t("oil.text2.title1")}
+                </b>
               </span>
               <p style={{ marginTop: 15 }}>
-                Our partners` satisfaction is one of the outcomes we aim for.
-                Collaborating closely and transparently and utilizing
-                cutting-edge technologies, we develop solutions according to
-                unique requirements. Through in-depth analysis, we identify
-                risks, areas for improvement, and opportunities for automation,
-                with the goal of enhancing operational efficiency and
-                profitability.
+                {t("oil.text2.text1")}
               </p>
             </div>
           </div>
 
           <center>
             <p style={{ marginBottom: 0 }}>
-              Check out our references in Oil and Gas
+              {t("oil.check")}
             </p>
             <br />
             <a
@@ -113,7 +107,7 @@ export default function Oil() {
               className="book-btn"
               href="/our-references"
             >
-              Read more
+              {t("read_more")}
             </a>
           </center>
         </div>

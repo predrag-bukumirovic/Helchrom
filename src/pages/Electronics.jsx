@@ -11,10 +11,13 @@ import imgRow from "../assets/images/Electronics/imgRow.png";
 import graph from "../assets/images/Electronics/Electronicsgraph.png";
 import cagr from "../assets/images/Electronics/CAGRikona.png";
 import market from "../assets/images/Electronics/Market.png";
+import { useTranslation } from "react-i18next";
 
 const mainImages = [mainIm1, mainImg2, mainImg3];
 
 export default function Electronics() {
+  const { t } = useTranslation();
+
   return (
     <div>
       <div className="slider">
@@ -39,38 +42,31 @@ export default function Electronics() {
       </div>
 
       <div className="container-main padding30">
-        <h1 className="title">Electronics</h1>
+        <h1 className="title">
+          {t("electronics.title")}
+        </h1>
         <center>
           <p>
-            In manufacturing of electronics, functionality, reliability, and
-            safety are equally important, demanding a high level of
-            collaboration among multidisciplinary teams.
+            {t("electronics.sub_text")}
           </p>
         </center>
 
         <div className="row" style={{ background: "var(--light-blue-color)" }}>
           <div className="text">
             <div>
-              <span>The Manufacturing Process</span>
+              <span>
+                {t("electronics.text1.title")}
+              </span>
               <p>
-                The fabrication of individual electronic components such as
-                microchips, resistors, and capacitors is conducted using
-                advanced semiconductor manufacturing techniques in cleanroom
-                environments to prevent contamination. Components are assembled
-                onto printed circuit boards using automated assembly equipment.
-                Cleanroom conditions are maintained throughout the assembly
-                process to minimize the risk of particle contamination, which
-                can affect the functionality and lifespan of electronic devices.
+                {t("electronics.text1.text")}
               </p>
             </div>
             <div>
-              <span>Aseptic Conditions</span>
+              <span>
+                {t("electronics.text1.title1")}
+              </span>
               <p>
-                Aseptic conditions minimize the risk of contamination, ensuring
-                that electronic components and devices function reliably and
-                consistently over their lifespan. Additionally, it means
-                complying with regulations and standards guarantee the quality
-                and reliability of the product.
+                {t("electronics.text1.text1")}
               </p>
             </div>
           </div>
@@ -80,9 +76,11 @@ export default function Electronics() {
         </div>
 
         <span style={{ paddingTop: 20 }}>
-          <b>Future of Electronics Manufacturing</b>
+          <b>
+            {t("electronics.future")}
+          </b>
           <br />
-          Graph 1. Estimated electronics market size (2024-2030)
+          {t("electronics.graph")}
         </span>
         <div className="future">
           <div style={{ flex: 2 }}>
@@ -94,28 +92,14 @@ export default function Electronics() {
           </div>
           <div className="text">
             <p>
-              The main driver of growth will be adoption of sustainable
-              practices and e-waste reduction. As a global concern, e-waste
-              should be properly recycled or managed to reduce environmental and
-              health impact. Furthermore, electronic devices contain valuable
-              resources such as precious metals and rare earth elements, whose
-              loss contributes to resource depletion. By implementing efficient
-              extraction and purification techniques, recovery of precious
-              metals, rare earth elements, and other resources from discarded
-              electronic devices will be enabled, reducing the need for new
-              materials in manufacturing. Electronic components with modular
-              architectures will facilitate easy disassembly, repair, and
-              upgradeability. Interchangeable parts and standardized interfaces
-              will extend the lifespan of electronic devices and reduce e-waste
-              generation. Breakthroughs in material science will lead to
-              innovative materials with enhanced properties.
+              {t("electronics.text")}
             </p>
           </div>
         </div>
 
         <div>
           <p style={{ marginTop: 50, fontSize: 16 }}>
-            <b>Source: </b>{" "}
+            <b>{t("electronics.source")} </b>{" "}
             <a
               style={{ textDecoration: "none" }}
               href="https://www.fortunebusinessinsights.com/infographics/electronic-manufacturing-services-ems-market-105519"
@@ -127,7 +111,7 @@ export default function Electronics() {
 
         <center>
           <p style={{ marginBottom: 0 }}>
-            Check out our references in Electronics
+            {t("electronics.check")}
           </p>
           <br />
           <a
@@ -135,7 +119,7 @@ export default function Electronics() {
             className="book-btn"
             href="/our-references"
           >
-            Read more
+            {t("read_more")}
           </a>
         </center>
       </div>
