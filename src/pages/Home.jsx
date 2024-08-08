@@ -1,19 +1,19 @@
 import React, { useEffect, useState, useRef } from "react";
-import {
-  CCarousel,
-  CCarouselCaption,
-  CCarouselItem,
-  CImage
-} from "@coreui/react";
+// import {
+//   CCarousel,
+//   CCarouselCaption,
+//   CCarouselItem,
+//   CImage
+// } from "@coreui/react";
 import Carousel from "react-multi-carousel";
 
 import WhoIcons from "../components/WhoIcons";
 import Storyline from "../components/Storyline";
 import TextReader from "../components/TextRender";
 
-import mainImg from "../assets/images/Home/main-img1.webp";
-import mainImg1 from "../assets/images/Home/main-img2.webp";
-import mainImg2 from "../assets/images/Home/main-img3.webp";
+// import mainImg from "../assets/images/Home/main-img1.webp";
+// import mainImg1 from "../assets/images/Home/main-img2.webp";
+// import mainImg2 from "../assets/images/Home/main-img3.webp";
 import Facts2010 from "../assets/images/Home/Founded.png";
 import Facts6 from "../assets/images/Home/Operations.png";
 import Facts7 from "../assets/images/Home/7days.png";
@@ -26,6 +26,7 @@ import icon3 from "../assets/images/Home/3.png";
 import icon4 from "../assets/images/Home/4.png";
 import icon5 from "../assets/images/Home/5.png";
 import quotation from "../assets/images/quotationLine.png";
+import { FaCircleChevronRight } from "react-icons/fa6";
 
 import "../assets/scss/home.scss";
 import "../assets/scss/slider.scss";
@@ -108,7 +109,7 @@ export default function Home() {
   return (
     <div>
       {/* Slider */}
-      <div className="slider">
+      {/* <div className="slider">
         <CCarousel className="slider-main" controls transition="crossfade">
           {[mainImg, mainImg1, mainImg2].map((img, index) =>
             <CCarouselItem key={index}>
@@ -166,7 +167,162 @@ export default function Home() {
             </div>
           )}
         </div>
-      </div>
+      </div> */}
+
+      <Carousel
+        responsive={responsive}
+        showDots={true}
+        infinite={true}
+        autoPlay={true}
+        autoPlaySpeed={5000}
+        removeArrowOnDeviceType={[
+          "tablet",
+          "mobile",
+          // "desktop",
+          "superLargeDesktop"
+        ]}
+      >
+        <div className="banner-home banner1">
+          <div className="bg" />
+          <div className="text">
+            <h2>Helmchron</h2>
+            <div className="line" />
+            <p>
+              Delivering plant design engineering and project execution
+              solutions across diverse industries since 2010.
+            </p>
+            <a className="book-btn" href="/">
+              Read more
+            </a>
+          </div>
+
+          <div className="links-banner">
+            <a href="/our-services">
+              <FaCircleChevronRight
+                style={{ color: "var(--brend-color)", fontSize: 30 }}
+              />
+              Services
+            </a>
+            <a href="/our-references">
+              <FaCircleChevronRight
+                style={{ color: "var(--brend-color)", fontSize: 30 }}
+              />
+              References
+            </a>
+            <a href="/our-references">
+              <FaCircleChevronRight
+                style={{ color: "var(--brend-color)", fontSize: 30 }}
+              />
+              Departments
+            </a>
+          </div>
+        </div>
+        <div className="banner-home banner2">
+          <div className="bg" />
+          <div className="text">
+            <h2>Services</h2>
+            <div className="line" />
+            <p>
+              Comprehensive plant engineering solutions, from consulting and
+              pre-planning to equipment management and commissioning.
+            </p>
+            <a className="book-btn" href="/our-services">
+              Read more
+            </a>
+          </div>
+
+          <div className="links-banner">
+            <a href="/who-are-we">
+              <FaCircleChevronRight
+                style={{ color: "var(--brend-color)", fontSize: 30 }}
+              />
+              Who are we?
+            </a>
+            <a href="/our-references">
+              <FaCircleChevronRight
+                style={{ color: "var(--brend-color)", fontSize: 30 }}
+              />
+              References
+            </a>
+            <a href="/our-references">
+              <FaCircleChevronRight
+                style={{ color: "var(--brend-color)", fontSize: 30 }}
+              />
+              Departments
+            </a>
+          </div>
+        </div>
+        <div className="banner-home banner3">
+          <div className="bg" />
+          <div className="text">
+            <h2>References</h2>
+            <div className="line" />
+            <p>
+              Our references include state-of-the-art aseptic pharma facilities,
+              leading chemical manufacturers, and diverse food producers.
+            </p>
+            <a className="book-btn" href="/our-references">
+              Read more
+            </a>
+          </div>
+
+          <div className="links-banner">
+            <a href="/who-are-we">
+              <FaCircleChevronRight
+                style={{ color: "var(--brend-color)", fontSize: 30 }}
+              />
+              Who are we?
+            </a>
+            <a href="/our-services">
+              <FaCircleChevronRight
+                style={{ color: "var(--brend-color)", fontSize: 30 }}
+              />
+              Services
+            </a>
+            <a href="/our-references">
+              <FaCircleChevronRight
+                style={{ color: "var(--brend-color)", fontSize: 30 }}
+              />
+              Departments
+            </a>
+          </div>
+        </div>
+        <div className="banner-home banner4">
+          <div className="bg" />
+          <div className="text">
+            <h2>Departments</h2>
+            <div className="line" />
+            <p>
+              We operate across six major business departments, with pharma and
+              food being the largest.
+            </p>
+            <a className="book-btn" href="/">
+              Read more
+            </a>
+          </div>
+
+          <div className="links-banner">
+            <a href="/who-are-we">
+              <FaCircleChevronRight
+                style={{ color: "var(--brend-color)", fontSize: 30 }}
+              />
+              Who are we?
+            </a>
+            <a href="/our-services">
+              <FaCircleChevronRight
+                style={{ color: "var(--brend-color)", fontSize: 30 }}
+              />
+              Services
+            </a>
+            <a href="/our-references">
+              <FaCircleChevronRight
+                style={{ color: "var(--brend-color)", fontSize: 30 }}
+              />
+              References
+            </a>
+          </div>
+        </div>
+      </Carousel>
 
       {/* Welcome */}
       <div className="welcome container-main padding30">
