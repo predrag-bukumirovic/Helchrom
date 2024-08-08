@@ -19,7 +19,7 @@
   height: 100%;
 }
 
-.text {
+.text-banner {
   width: 40%;
   padding-left: 100px;
   line-height: 50px;
@@ -92,7 +92,7 @@
 @media (max-width: 1000px) {
   .banner-home {
     background-position: center;
-    .text {
+    .text-banner {
       width: 100% !important;
       padding: 0 20px;
 
@@ -122,7 +122,7 @@
 
 @media (max-width: 430px) {
   .banner-home {
-    .text {
+    .text-banner {
       h2 {
         font-size: 45px;
       }
@@ -141,7 +141,7 @@
 
 @media (max-width: 1500px) {
   .banner1 {
-    .text {
+    .text-banner {
       width: 60%;
     }
   }

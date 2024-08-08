@@ -184,7 +184,7 @@ export default function Home() {
       >
         <div className="banner-home banner1">
           <div className="bg" />
-          <div className="text">
+          <div className="text-banner">
             <h2>Helmchron</h2>
             <div className="line" />
             <p>
@@ -219,7 +219,7 @@ export default function Home() {
         </div>
         <div className="banner-home banner2">
           <div className="bg" />
-          <div className="text">
+          <div className="text-banner">
             <h2>Services</h2>
             <div className="line" />
             <p>
@@ -254,7 +254,7 @@ export default function Home() {
         </div>
         <div className="banner-home banner3">
           <div className="bg" />
-          <div className="text">
+          <div className="text-banner">
             <h2>References</h2>
             <div className="line" />
             <p>
@@ -289,7 +289,7 @@ export default function Home() {
         </div>
         <div className="banner-home banner4">
           <div className="bg" />
-          <div className="text">
+          <div className="text-banner">
             <h2>Departments</h2>
             <div className="line" />
             <p>

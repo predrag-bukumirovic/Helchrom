@@ -26,6 +26,8 @@ const OurServices = lazy(() => import("./pages/OurServices"));
 const Footer = lazy(() => import("./components/Footer"));
 const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy"));
 const LegalStatement = lazy(() => import("./pages/LegalStatement"));
+const Academy = lazy(() => import("./pages/Academy"));
+const InnoLab = lazy(() => import("./pages/innoLab"));
 
 const Chemicals = lazy(() => import("./pages/Chemicals"));
 const Achema = lazy(() => import("./pages/Achema"));
@@ -78,6 +80,8 @@ function App() {
           <Route path="/news/k2022" element={<K2022 />} />
           <Route path="/news/team-talk" element={<TeamTalk />} />
           <Route path="/our-references" element={<References />} />
+          <Route path="/initiatives/academy" element={<Academy />} />
+          <Route path="/initiatives/innolab" element={<InnoLab />} />
           <Route path="/electronics" element={<Electronics />} />
           <Route path="/food-and-bioproducts" element={<Food />} />
           <Route path="/energy" element={<Energy />} />
@@ -88,7 +92,7 @@ function App() {
 
         <Cookies />
         <Footer />
-        <ScrollTop/>
+        <ScrollTop />
       </Router>
     </div>;
 }

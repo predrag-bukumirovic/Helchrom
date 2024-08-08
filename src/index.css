@@ -15,6 +15,18 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Revive80Phatt";
+  src: url('./assets/font/Revive80Phatt.ttf');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DancingScript";
+  src: url('./assets/font/DancingScript.ttf');
+  font-display: swap;
+}
+
 html {
   scroll-behavior: smooth;
 }

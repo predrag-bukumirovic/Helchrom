@@ -41,10 +41,10 @@ nav ul li {
 nav ul li a,
 nav ul li span {
   margin-left: 5px;
-  font-size: 13px;
+  font-size: 12px;
   text-transform: uppercase;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
   color: var(--gray-text-color) !important;
   cursor: pointer;
   padding: 10px 20px;
@@ -114,7 +114,7 @@ ul li ol.menu-down li a,
 ul li ol.menu-down li span {
   color: var(--gray-text-color);
   margin: 0;
-  padding: 15px 20px;
+  /* padding: 15px 20px; */
   text-transform: capitalize !important;
   display: flex;
   width: 100%;

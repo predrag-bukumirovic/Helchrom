@@ -15,6 +15,7 @@ import { useTranslation } from "react-i18next";
 export default function Navbar({ className }) {
   const [openMenu, setOpenMenu] = useState(false);
   const [downMenuAbout, setDownMenuAbout] = useState(false);
+  const [downMenuInit, setDownMenuInit] = useState(false);
   const [downMenu, setDownMenu] = useState(false);
   const { t } = useTranslation();
   const [isSubmenuOpen, setIsSubmenuOpen] = useState(false);
@@ -152,6 +153,42 @@ export default function Navbar({ className }) {
               <CustomLink href="/our-references">
                 {t("navbar.our_reference")}
               </CustomLink>
+
+              <li style={{ marginTop: 2 }}>
+                <span
+                  className="about-us"
+                  onClick={() => setDownMenuInit(!downMenuInit)}
+                >
+                  initiatives <BiChevronDown />
+                </span>
+                <ol
+                  style={{ display: "none" }}
+                  className={`${downMenuInit ? "active" : "menu-down"}`}
+                >
+                  <li>
+                    <CustomLink href="/about-us/who-are-we">
+                      HELMCHR<b>ONe</b>
+                    </CustomLink>
+                  </li>
+
+                  <li>
+                    <CustomLink href="/about-us/our-team">NAVIGATOR</CustomLink>
+                  </li>
+                  <li>
+                    <CustomLink href="/initiatives/innolab">
+                      Inno<b>LAB</b>
+                    </CustomLink>
+                  </li>
+                  <li>
+                    <CustomLink
+                      href="/initiatives/academy"
+                      style={{ fontFamily: "DancingScript" }}
+                    >
+                      Academy
+                    </CustomLink>
+                  </li>
+                </ol>
+              </li>
 
               <CustomLink href="/career">
                 {t("navbar.career")}
