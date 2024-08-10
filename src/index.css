@@ -66,11 +66,11 @@ body {
   font-display: swap;
   background: #fff !important;
 }
-
+/* 
 ::selection {
   background: var(--brend-color);
   color: #fff;
-}
+} */
 
 .container-main {
   width: 1400px;

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import logo from "../assets/images/logo.webp";
+import logoWhite from "../assets/images/logowhite.webp";
 import ChemistryConnects from "../assets/images/ChemistryConnects.png";
 import "../assets/scss/navbar.css";
 import { BiChevronDown } from "react-icons/bi";
@@ -12,7 +13,7 @@ import Linkedine from "../assets/images/linkedine.webp";
 import Twitter from "../assets/images/twitter.png";
 import { useTranslation } from "react-i18next";
 
-export default function Navbar({ className }) {
+export default function HomeNavbar({ className }) {
   const [openMenu, setOpenMenu] = useState(false);
   const [downMenuAbout, setDownMenuAbout] = useState(false);
   const [downMenuInit, setDownMenuInit] = useState(false);
@@ -32,7 +33,10 @@ export default function Navbar({ className }) {
   }
 
   return (
-    <div className={`navbar-box ${className}`}>
+    <div
+      style={{ background: "transparent" }}
+      className={`navbar-box ${className}`}
+    >
       <div
         className="container-main"
         style={{
@@ -47,7 +51,11 @@ export default function Navbar({ className }) {
         />
         <div className="logo">
           <a href="/">
-            <img style={{ marginRight: 5 }} src={logo} alt="Helmchron Logo" />
+            <img
+              style={{ marginRight: 5 }}
+              src={logoWhite}
+              alt="Helmchron Logo"
+            />
             <img className="logo-connects" src={ChemistryConnects} alt="" />
           </a>
         </div>
@@ -64,13 +72,13 @@ export default function Navbar({ className }) {
                 />
               </div>
               <li>
-                <a className="home" href="/">
+                <a href="/" className="home-links">
                   {t("navbar.home")}
                 </a>
               </li>
               <li style={{ marginTop: 2 }}>
                 <span
-                  className="about-us"
+                  className="about-us home-links"
                   onClick={() => setDownMenuAbout(!downMenuAbout)}
                 >
                   {t("navbar.about_us")} <BiChevronDown />
@@ -146,17 +154,17 @@ export default function Navbar({ className }) {
                 </ol>
               </li>
 
-              <CustomLink href="/our-services">
+              <CustomLink className="home-links" href="/our-services">
                 {t("navbar.our_services")}
               </CustomLink>
 
-              <CustomLink href="/our-references">
+              <CustomLink className="home-links" href="/our-references">
                 {t("navbar.our_reference")}
               </CustomLink>
 
               <li style={{ marginTop: 2 }}>
                 <span
-                  className="about-us"
+                  className="about-us home-links"
                   onClick={() => setDownMenuInit(!downMenuInit)}
                 >
                   initiatives <BiChevronDown />
@@ -190,19 +198,19 @@ export default function Navbar({ className }) {
                 </ol>
               </li>
 
-              <CustomLink href="/career">
+              <CustomLink href="/career" className="home-links">
                 {t("navbar.career")}
               </CustomLink>
 
-              <CustomLink href="/news">
+              <CustomLink href="/news" className="home-links">
                 {t("navbar.news")}
               </CustomLink>
 
-              <CustomLink href="/blog">
+              <CustomLink href="/blog" className="home-links">
                 {t("navbar.blog")}
               </CustomLink>
 
-              <CustomLink href="/contact">
+              <CustomLink href="/contact" className="home-links">
                 {t("navbar.contact")}
               </CustomLink>
 
@@ -252,7 +260,7 @@ export default function Navbar({ className }) {
         <ul className="lng-con">
           <li style={{ width: 55 }}>
             <div
-              className={`lng-change ${downMenu ? "active" : ""}`}
+              className={`lng-change home ${downMenu ? "active" : ""}`}
               onClick={() => setDownMenu(!downMenu)}
             >
               EN <AiOutlineCaretDown className="down-icon" />
@@ -277,9 +285,9 @@ export default function Navbar({ className }) {
           </li>
 
           <div className="burger-icon" onClick={() => setOpenMenu(!openMenu)}>
-            <div className="line1" />
-            <div className="line2" />
-            <div className="line3" />
+            <div className="line1 line home" />
+            <div className="line2 line home" />
+            <div className="line3 line home" />
           </div>
         </ul>
       </div>

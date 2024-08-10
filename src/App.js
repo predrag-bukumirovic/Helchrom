@@ -6,6 +6,7 @@ import Thanks from "./pages/Thanks";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import ScrollTop from "./components/ScrollTop";
+import HomeHeader from "./components/HomeHeader";
 
 const Blog = lazy(() => import("./pages/Blog"));
 const Volleyball = lazy(() => import("./pages/Volleyball"));
@@ -53,13 +54,22 @@ function App() {
     }, []);
 
 
+      const renderHeader = (location) => {
+    if (location.pathname === '/') {
+      return <HomeHeader />;
+    } else {
+      return <Header />;
+    }
+  };
+
+
   return <div className={`App ${isVisible ? "visible" : ""}`}>
       <Router>
         <Suspense fallback={renderLoader()}>
-          <Header />
+          {renderHeader(window.location)}
         </Suspense>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<><Home/> <HomeHeader/></>} />
           <Route path="/career" element={<Career />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/news" element={<News />} />

@@ -2,10 +2,10 @@ import React, { useState, useEffect } from "react";
 import "../assets/scss/header.scss";
 import { GoGlobe } from "react-icons/go";
 import useScrollDirection from "./useScrollDirection";
-import Navbar from "../components/Navbar";
 import LanguageModal from "../components/LanguageModal";
+import HomeNavbar from "./HomeNavbar";
 
-export default function Header() {
+export default function HomeHeader() {
   const scrollDirection = useScrollDirection();
 
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -34,7 +34,10 @@ export default function Header() {
         ? "hideNav"
         : "showNav"}`}
     >
-      <div className="header">
+      <div
+        style={{ background: "transparent", border: "none" }}
+        className="header"
+      >
         <div className="header-links container-main">
           <div />
           <div>
@@ -55,7 +58,7 @@ export default function Header() {
         />
       </div>
 
-      <Navbar />
+      <HomeNavbar />
     </div>
   );
 }
