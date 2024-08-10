@@ -2,29 +2,32 @@ import React, { useState, useEffect } from "react";
 import "../assets/scss/header.scss";
 import { GoGlobe } from "react-icons/go";
 import useScrollDirection from "./useScrollDirection";
-import Navbar from "../components/Navbar";
-import LanguageModal from "../components/LanguageModal";
+import Navbar from "./Navbar";
+import LanguageModal from "./LanguageModal";
+
+const languageMap = {
+  en: "ENGLISH",
+  de: "GERMANY"
+};
 
 export default function Header() {
   const scrollDirection = useScrollDirection();
 
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [selectedLanguage, setSelectedLanguage] = useState("ENGLOSH");
+  const [selectedLanguage, setSelectedLanguage] = useState("ENGLISH");
 
   useEffect(() => {
-    const storedLanguage = localStorage.getItem("selectedLanguage");
-    if (storedLanguage) {
-      setSelectedLanguage(storedLanguage);
-    }
+    const storedLanguage = localStorage.getItem("lng") || "en";
+    setSelectedLanguage(languageMap[storedLanguage] || "ENGLISH");
   }, []);
 
   const openModal = () => {
     setIsModalOpen(true);
-    console.log("Opening modal");
   };
   const closeModal = () => setIsModalOpen(false);
   const handleLanguageSelect = language => {
-    setSelectedLanguage(language);
+    localStorage.setItem("lng", language);
+    setSelectedLanguage(languageMap[language] || "ENGLISH");
     closeModal();
   };
 

@@ -221,3 +221,16 @@ footer {
 .sound-icon:active {
   background: transparent;
 }
+
+.change-lng-desktop {
+  padding-inline-start: 0;
+}
+.change-lng-desktop li {
+  list-style: none;
+  width: max-content;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.change-lng-desktop li:hover {
+  background: var(--light-blue-color);
+}

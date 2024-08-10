@@ -116,7 +116,7 @@
 
 @media (max-width: 2000px) {
   .box-img {
-    margin-top: 110px;
+    margin-top: 115px;
     width: 100%;
 
     > div {
@@ -128,6 +128,12 @@
         width: 100%;
       }
     }
+  }
+}
+
+@media (max-width: 1300px) {
+  .box-img {
+    margin-top: 40px;
   }
 }
 

@@ -1,13 +1,27 @@
-// LanguageModal.jsx
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Modal from "react-modal";
 
-Modal.setAppElement("#root"); // Ovo je važno za pristupačnost
+Modal.setAppElement("#root");
+
+const languageMap = {
+  en: "ENGLISH",
+  de: "GERMANY"
+};
 
 const LanguageModal = ({ isOpen, onRequestClose, onSelectLanguage }) => {
+  const [selectedLanguage, setSelectedLanguage] = useState("ENGLISH");
+
+  useEffect(() => {
+    const storedLanguage = localStorage.getItem("selectedLanguage");
+    if (storedLanguage) {
+      setSelectedLanguage(languageMap[storedLanguage] || "English");
+    }
+  }, []);
   const handleLanguageChange = lang => {
-    localStorage.setItem("selectedLanguage", lang);
+    localStorage.setItem("lng", lang);
+    setSelectedLanguage(languageMap[lang] || "ENGLISH");
     onSelectLanguage(lang);
+    window.location.reload(); // Ponovno učitavanje stranice
   };
 
   return (
@@ -30,13 +44,17 @@ const LanguageModal = ({ isOpen, onRequestClose, onSelectLanguage }) => {
         overlay: { backgroundColor: "rgba(0, 0, 0, 0.75)" }
       }}
     >
-      <h2>Select Language</h2>
-      <ul>
-        <li onClick={() => handleLanguageChange("English")}>English</li>
-        <li onClick={() => handleLanguageChange("Serbian")}>Serbian</li>
-        {/* Dodaj ostale jezike ovde */}
+      <h2 style={{ fontSize: "25px", textAlign: "start" }}>Select Language</h2>
+      <ul className="change-lng-desktop">
+        <li onClick={() => handleLanguageChange("en")}>ENGLISH</li>
+        <li onClick={() => handleLanguageChange("de")}>GERMANY</li>
       </ul>
-      <button onClick={onRequestClose}>Close</button>
+      <button
+        style={{ background: "transparent", border: "none" }}
+        onClick={onRequestClose}
+      >
+        x
+      </button>
     </Modal>
   );
 };

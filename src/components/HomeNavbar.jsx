@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import logo from "../assets/images/logo.webp";
 import logoWhite from "../assets/images/logowhite.webp";
 import ChemistryConnects from "../assets/images/ChemistryConnects.png";
@@ -14,11 +14,26 @@ import Twitter from "../assets/images/twitter.png";
 import { useTranslation } from "react-i18next";
 
 export default function HomeNavbar({ className }) {
+  const { t, i18n } = useTranslation();
+  const [language, setLanguage] = useState("EN");
+
+  const changeLanguage = lng => {
+    i18n.changeLanguage(lng);
+    localStorage.setItem("lng", lng);
+    window.location.reload();
+  };
+
+  useEffect(() => {
+    const storedLng = localStorage.getItem("lng");
+    if (storedLng) {
+      setLanguage(storedLng.toUpperCase()); // Postavi skraćenicu iz `localStorage`
+    }
+  }, []);
+
   const [openMenu, setOpenMenu] = useState(false);
   const [downMenuAbout, setDownMenuAbout] = useState(false);
   const [downMenuInit, setDownMenuInit] = useState(false);
   const [downMenu, setDownMenu] = useState(false);
-  const { t } = useTranslation();
   const [isSubmenuOpen, setIsSubmenuOpen] = useState(false);
 
   function CustomLink({ href, children, ...props }) {
@@ -263,7 +278,7 @@ export default function HomeNavbar({ className }) {
               className={`lng-change home ${downMenu ? "active" : ""}`}
               onClick={() => setDownMenu(!downMenu)}
             >
-              EN <AiOutlineCaretDown className="down-icon" />
+              {language} <AiOutlineCaretDown className="down-icon" />
             </div>
             <ol
               style={{ display: "none", width: 150 }}
@@ -272,14 +287,16 @@ export default function HomeNavbar({ className }) {
               <li
                 style={{
                   fontSize: 11,
-                  color: "red",
                   position: "absolute",
                   width: 100,
                   background: "#fff",
                   padding: 10
                 }}
               >
-                trenutno je dostupan samo engleski jezik
+                <ul className="change-lng-mobile">
+                  <li onClick={() => changeLanguage("en")}>ENGLISH</li>
+                  <li onClick={() => changeLanguage("de")}>GERMANY</li>
+                </ul>
               </li>
             </ol>
           </li>

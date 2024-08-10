@@ -45,7 +45,7 @@ nav ul li {
 nav ul li a,
 nav ul li span {
   margin-left: 5px;
-  font-size: 14px;
+  font-size: 12px;
   text-transform: uppercase;
   text-decoration: none;
   font-weight: 600;
@@ -103,6 +103,14 @@ ul li ol.menu-down {
   width: 100%;
   right: -180px;
   top: 0;
+}
+
+.change-lng-mobile {
+  padding-inline-start: 0;
+}
+
+.change-lng-mobile li {
+  cursor: pointer;
 }
 
 @keyframes menu_down {
@@ -312,14 +320,14 @@ ul li ol.menu-down li a:hover {
     font-size: 20px;
     color: #939393;
     cursor: pointer;
-    width: 55px;
+    width: 60px;
   }
   .lng-change.home {
     color: #fff;
   }
 }
 
-@media (max-width: 1360px) {
+@media (max-width: 1500px) {
   .logo-connects {
     display: none;
   }

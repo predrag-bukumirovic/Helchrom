@@ -5,26 +5,30 @@ import useScrollDirection from "./useScrollDirection";
 import LanguageModal from "../components/LanguageModal";
 import HomeNavbar from "./HomeNavbar";
 
+const languageMap = {
+  en: "ENGLISH",
+  de: "GERMANY"
+};
+
 export default function HomeHeader() {
   const scrollDirection = useScrollDirection();
 
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [selectedLanguage, setSelectedLanguage] = useState("ENGLOSH");
+  const [selectedLanguage, setSelectedLanguage] = useState("ENGLISH");
 
   useEffect(() => {
-    const storedLanguage = localStorage.getItem("selectedLanguage");
-    if (storedLanguage) {
-      setSelectedLanguage(storedLanguage);
-    }
+    const storedLanguage = localStorage.getItem("lng") || "en";
+    setSelectedLanguage(languageMap[storedLanguage] || "ENGLISH");
   }, []);
 
   const openModal = () => {
     setIsModalOpen(true);
-    console.log("Opening modal");
   };
   const closeModal = () => setIsModalOpen(false);
+
   const handleLanguageSelect = language => {
-    setSelectedLanguage(language);
+    localStorage.setItem("lng", language);
+    setSelectedLanguage(languageMap[language] || "ENGLISH");
     closeModal();
   };
 

@@ -264,22 +264,24 @@ export default function Navbar({ className }) {
               <li
                 style={{
                   fontSize: 11,
-                  color: "red",
                   position: "absolute",
                   width: 100,
                   background: "#fff",
                   padding: 10
                 }}
               >
-                trenutno je dostupan samo engleski jezik
+                <ul className="change-lng-mobile">
+                  <li>ENGLISH</li>
+                  <li>GERMANY</li>
+                </ul>
               </li>
             </ol>
           </li>
 
           <div className="burger-icon" onClick={() => setOpenMenu(!openMenu)}>
-            <div className="line1" />
-            <div className="line2" />
-            <div className="line3" />
+            <div className="line1 line" />
+            <div className="line2 line" />
+            <div className="line3 line" />
           </div>
         </ul>
       </div>
