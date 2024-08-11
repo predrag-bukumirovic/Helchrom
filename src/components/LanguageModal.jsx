@@ -11,12 +11,15 @@ const languageMap = {
 const LanguageModal = ({ isOpen, onRequestClose, onSelectLanguage }) => {
   const [selectedLanguage, setSelectedLanguage] = useState("ENGLISH");
 
-  useEffect(() => {
-    const storedLanguage = localStorage.getItem("selectedLanguage");
-    if (storedLanguage) {
-      setSelectedLanguage(languageMap[storedLanguage] || "English");
-    }
-  }, []);
+  useEffect(
+    () => {
+      const storedLanguage = localStorage.getItem("selectedLanguage");
+      if (storedLanguage) {
+        setSelectedLanguage(languageMap[storedLanguage] || "ENGLISH");
+      }
+    },
+    [selectedLanguage]
+  );
   const handleLanguageChange = lang => {
     localStorage.setItem("lng", lang);
     setSelectedLanguage(languageMap[lang] || "ENGLISH");
