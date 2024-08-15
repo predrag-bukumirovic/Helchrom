@@ -1,19 +1,11 @@
 import React, { useEffect, useState, useRef } from "react";
-// import {
-//   CCarousel,
-//   CCarouselCaption,
-//   CCarouselItem,
-//   CImage
-// } from "@coreui/react";
+
 import Carousel from "react-multi-carousel";
 
 import WhoIcons from "../components/WhoIcons";
 import Storyline from "../components/Storyline";
 import TextReader from "../components/TextRender";
 
-// import mainImg from "../assets/images/Home/main-img1.webp";
-// import mainImg1 from "../assets/images/Home/main-img2.webp";
-// import mainImg2 from "../assets/images/Home/main-img3.webp";
 import Facts2010 from "../assets/images/Home/Founded.png";
 import Facts6 from "../assets/images/Home/Operations.png";
 import Facts7 from "../assets/images/Home/7days.png";
@@ -108,79 +100,13 @@ export default function Home() {
 
   return (
     <div>
-      {/* Slider */}
-      {/* <div className="slider">
-        <CCarousel className="slider-main" controls transition="crossfade">
-          {[mainImg, mainImg1, mainImg2].map((img, index) =>
-            <CCarouselItem key={index}>
-              <a
-                href={
-                  index === 0
-                    ? "/about-us/who-are-we"
-                    : index === 1 ? "/our-services" : "/about-us/our-values"
-                }
-              >
-                <CImage
-                  className="d-block w-100"
-                  src={img}
-                  alt={`slide ${index + 1}`}
-                />
-                <CCarouselCaption className="img">
-                  <div>
-                    <p>
-                      {index === 0
-                        ? t("navbar.who_are_we")
-                        : index === 1
-                          ? t("navbar.services")
-                          : t("navbar.how_do_we_work")}
-                    </p>
-                  </div>
-                </CCarouselCaption>
-              </a>
-            </CCarouselItem>
-          )}
-        </CCarousel>
-
-        <div className="box-img">
-          {[mainImg, mainImg1, mainImg2].map((img, index) =>
-            <div key={index}>
-              <a
-                href={
-                  index === 0
-                    ? "/about-us/who-are-we"
-                    : index === 1 ? "/our-services" : "/about-us/our-values"
-                }
-              >
-                <img src={img} alt="Main" />
-                <div className="img-text">
-                  <div>
-                    <p>
-                      {index === 0
-                        ? t("navbar.who_are_we")
-                        : index === 1
-                          ? t("navbar.services")
-                          : t("navbar.how_do_we_work")}
-                    </p>
-                  </div>
-                </div>
-              </a>
-            </div>
-          )}
-        </div>
-      </div> */}
-
       <Carousel
         responsive={responsive}
         showDots={true}
         infinite={true}
         autoPlay={true}
         autoPlaySpeed={5000}
-        removeArrowOnDeviceType={[
-          "tablet",
-          "mobile",
-          // "desktop",
-          "superLargeDesktop"
-        ]}
+        removeArrowOnDeviceType={["tablet", "mobile", "superLargeDesktop"]}
       >
         <div className="banner-home banner1">
           <div className="bg" />
@@ -404,6 +330,19 @@ export default function Home() {
         </center>
       </div>
 
+      <center className="container-main">
+        <p>
+          After the completion of operational activities, we provide guarantees
+          and stand accountable for the quality of our work, offering ongoing
+          support and consultation within the project scope to address our
+          client's questions and concerns, ensuring the continued success of our
+          joined project even after commissioning.
+        </p>
+        <a className="book-btn" href="/our-services">
+          {t("read_more")}
+        </a>
+      </center>
+
       {/* Unique Service Concept */}
       <div className="unique">
         <div className="container-main padding30">
@@ -411,7 +350,7 @@ export default function Home() {
             {t("unique.title")}
           </h2>
           <h3 className="title">
-            HELMCHR<span>ONe</span>
+            HELMCHR<span style={{ textTransform: "capitalize" }}>ONe</span>
           </h3>
 
           <div className="unique-row">
@@ -420,6 +359,10 @@ export default function Home() {
                 data-aos="fade-right"
                 dangerouslySetInnerHTML={{ __html: t("unique.text") }}
               />
+
+              <a className="book-btn" href="/">
+                {t("book_btn")}
+              </a>
               <TextReader texts={uniqueText} />
               <br />
               <br />

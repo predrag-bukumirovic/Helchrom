@@ -1,6 +1,7 @@
 .moving-text {
   position: relative;
   margin-top: 50px;
+  white-space: nowrap;
 
   img {
     width: 50%;
@@ -17,14 +18,15 @@
   overflow: hidden;
   z-index: -1;
   width: max-content;
+  animation: marquee 20s linear infinite;
 }
 
 .marquee p {
   font-size: 80px;
-  padding-right: 100%;
+  padding-right: 50px;
   display: inline-block;
   font-weight: 500;
-  color: #ff0000 !important;
+  color: #000 !important;
 
   span {
     font-family: 'Revive80Phatt';
@@ -34,16 +36,12 @@
   }
 }
 
-.marquee {
-  animation: marquee 10s linear infinite;
-}
-
 @keyframes marquee {
   0% {
-    transform: translateX(100%);
+    transform: translateX(0%);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-50%);
   }
 }
 

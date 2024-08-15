@@ -7,11 +7,12 @@ import HomeNavbar from "./HomeNavbar";
 
 const languageMap = {
   en: "ENGLISH",
-  de: "GERMANY"
+  de: "DEUTSCH"
 };
 
 export default function HomeHeader() {
   const scrollDirection = useScrollDirection();
+  const [scrolled, setScrolled] = useState(false);
 
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedLanguage, setSelectedLanguage] = useState("ENGLISH");
@@ -19,6 +20,19 @@ export default function HomeHeader() {
   useEffect(() => {
     const storedLanguage = localStorage.getItem("lng") || "en";
     setSelectedLanguage(languageMap[storedLanguage] || "ENGLISH");
+
+    const handleScroll = () => {
+      if (window.scrollY > 200) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
 
   const openModal = () => {
@@ -36,7 +50,7 @@ export default function HomeHeader() {
     <div
       className={`header-box ${scrollDirection === "down"
         ? "hideNav"
-        : "showNav"}`}
+        : "showNav"} ${scrolled ? "scrolled" : ""}`}
     >
       <div
         style={{ background: "transparent", border: "none" }}

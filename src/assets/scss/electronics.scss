@@ -6,6 +6,7 @@
   padding: 30px 10px;
   gap: 20px;
   border-radius: 20px;
+  margin: 0 auto;
 
   @media (max-width: 500px) {
     grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));

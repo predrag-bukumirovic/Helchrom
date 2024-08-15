@@ -7,7 +7,7 @@ import LanguageModal from "./LanguageModal";
 
 const languageMap = {
   en: "ENGLISH",
-  de: "GERMANY"
+  de: "DEUTSCH"
 };
 
 export default function Header() {

@@ -19,7 +19,7 @@ const enTranslation = {
   services: {
     title: "our services",
     sub_text:
-      "We provide end-to-end engineering services for manufacturing facility design and operations management.",
+      "At Helmchron, we deliver comprehensive plant design engineering and project management services, partnering with manufacturers worldwide to bring their plant visions to reality with a focus on efficiency and the highest quality.",
     icon: {
       title1: "Pre-planning & Consulting",
       title2: "Engineering & Design",
@@ -52,31 +52,26 @@ const enTranslation = {
   unique: {
     title: "Unique service concept",
     text: `<p>
-                In a constant pursuit to upgrade our services and expertise, we
-                noticed a significant gap in focus on one project's outcomes
-                that led to prolonged delivery time and budget overrun. <br />
-                To overcome this gap and meet the unique requirements of each of
-                our clients, we have implemented an innovative service concept -
-                Helmchron ONE. <br /> Helmchron ONE enables the complete focus
-                of ONE team on ONE client and ONE project only.
+              Helmchron ONE is our service concept that provides dedicated focus to a project by assigning ONE team
+              to ONE client and ONE project only.<br/>
+              This approach addresses common issues of prolonged delivery times and budget overruns by ensuring
+              that every aspect of the project is handled with complete attention and accountability.
+              </p>
+
+              <b><p>How does Helmchron ONE drive efficiency and client satisfaction?</p></b>
+
+              <p>
+                <b>One Team:</b> Each project is assigned to one of our teams. The team is fully dedicated and accountable
+                for the outcomes, ensuring that every aspect is meticulously considered and executed.
+              </p>
+              <p>
+                <b>One Client:</b> We believe in forging strong, long-lasting partnerships, and that starts with putting the client
+                first - each team delivers to one client only.
               </p>
 
               <p>
-                <b>One Team:</b> Each of our projects is assigned to one of our
-                teams. The team is fully dedicated and accountable for the
-                outcomes, ensuring that every aspect is meticulously considered
-                and executed.
-              </p>
-              <p>
-                <b>One Client:</b> We believe in forging strong, long-lasting
-                partnerships, and that starts with putting the client first -
-                each team delivers to one client only.
-              </p>
-
-              <p>
-                <b>One Project:</b> By channeling our expertise, resources, and
-                creativity into delivering the best results for one project, we
-                ensure unmatched quality, efficiency, and effectiveness.
+                <b>One Project:</b> By channeling our expertise, resources, and creativity into delivering the best results for a
+                single project, we ensure quality, efficiency, and effectiveness.
               </p>
 
               <p style={{ marginBottom: 50 }}>
@@ -84,19 +79,17 @@ const enTranslation = {
               </p>`
   },
   areas: {
-    title: "our business areas",
+    title: "OUR DIVISIONS",
     sub_text:
-      "Our areas of operations are aligned with our mission - to deliver impact globally. We are non-exclusively working in the following business sectors:"
+      "Our six business divisions are strategically aligned with our mission and vision, enabling us to make a lasting impact by delivering safe, compliant, and sustainable plant design engineering solutions across key global industries."
   },
   facts: {
     title: "facts about us",
-    sub_text: `    We are a team of highly skilled, focused and self-motivated
-              enthusiasts passionate about outcomes, competencies, and
-              partnerships. <br /> Our team is located in Belgrade, Serbia,
-              however, we are driven by international projects and
-              collaborations. <br /> We prioritize delivering high-quality
-              solutions in process and chemical engineering, while upholding the
-              utmost standards of integrity, agility, and accountability.`,
+    sub_text: `We are a team of experienced process, chemical, and thermodynamics       engineers and entrepreneurs,
+              united by a common purpose and vision. Operating from Belgrade, Serbia, and motivated by international
+              projects, we deliver plant design engineering and project management solutions.
+              With a focus on expertise, execution, and outcomes, we uphold the utmost integrity, accountability, and
+              client satisfaction, ensuring every project is delivered with excellence.`,
     icon_title1: "Founded in",
     icon_title2: "operations areas",
     icon_title3: "number of week days we provide support to our clients",
@@ -107,7 +100,7 @@ const enTranslation = {
   our_line: {
     title: "our storyline",
     sub_text:
-      "Our story began in 2010. and since then we have been providing services to international and local leaders.",
+      "Our journey began in 2010 with a small, dedicated team and a vision to make a meaningful global impact. What began with community-focused projects expanded as we started partnering with international manufacturers, continuously evolving our expertise and services. Each milestone reflects our commitment to contributing to a higher quality of life for everyone everywhere.",
     img_text1:
       "Our initial projects were community-focused, yet our vision was always global - to deliver solutions for international initiatives that enhance the quality of life for everyone everywhere.",
     img_text2:
@@ -175,7 +168,7 @@ const enTranslation = {
     blog: "blog",
     contact: "contact",
     legal: "Legal Statement",
-    departments: "Our departments",
+    departments: "Our Divisions",
     food: "Food & Bio",
     pharma: "Pharma",
     chemicals: "Chemicals",
@@ -465,7 +458,7 @@ const enTranslation = {
   contact_us: "<b>Contact</b> us",
   download_brochure: `Download our 
           <a href="../HelmchronBrochure.pdf" target="_blank">
-            new corporate brochure
+            corporate brochure
           </a>`,
   connects: "Connects us",
   video_common_values: "what do we have in common?",

@@ -5,7 +5,7 @@ Modal.setAppElement("#root");
 
 const languageMap = {
   en: "ENGLISH",
-  de: "GERMANY"
+  de: "DEUTSCH"
 };
 
 const LanguageModal = ({ isOpen, onRequestClose, onSelectLanguage }) => {
@@ -50,7 +50,7 @@ const LanguageModal = ({ isOpen, onRequestClose, onSelectLanguage }) => {
       <h2 style={{ fontSize: "25px", textAlign: "start" }}>Select Language</h2>
       <ul className="change-lng-desktop">
         <li onClick={() => handleLanguageChange("en")}>ENGLISH</li>
-        <li onClick={() => handleLanguageChange("de")}>GERMANY</li>
+        <li onClick={() => handleLanguageChange("de")}>DEUTSCH</li>
       </ul>
       <button
         style={{ background: "transparent", border: "none" }}

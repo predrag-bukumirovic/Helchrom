@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import "../assets/scss/select.scss";
 
 const lng = [
-  { code: "en", label: "English" },
-  { code: "de", label: "Germany" }
+  { code: "en", label: "ENGLISH" },
+  { code: "de", label: "DEUTSCH" }
 ];
 
 const CustomSelect = ({ currentLanguage, onLanguageChange }) => {

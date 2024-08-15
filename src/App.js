@@ -29,6 +29,7 @@ const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy"));
 const LegalStatement = lazy(() => import("./pages/LegalStatement"));
 const Academy = lazy(() => import("./pages/Academy"));
 const InnoLab = lazy(() => import("./pages/innoLab"));
+const Navigator = lazy(() => import("./pages/Navigator"));
 
 const Chemicals = lazy(() => import("./pages/Chemicals"));
 const Achema = lazy(() => import("./pages/Achema"));
@@ -92,6 +93,7 @@ function App() {
           <Route path="/our-references" element={<References />} />
           <Route path="/initiatives/academy" element={<Academy />} />
           <Route path="/initiatives/innolab" element={<InnoLab />} />
+          <Route path="/initiatives/navigator" element={<Navigator />} />
           <Route path="/electronics" element={<Electronics />} />
           <Route path="/food-and-bioproducts" element={<Food />} />
           <Route path="/energy" element={<Energy />} />

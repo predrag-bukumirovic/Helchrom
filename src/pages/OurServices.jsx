@@ -11,7 +11,6 @@ import management from "../assets/images/OurCore/management.png";
 import Equipment from "../assets/images/OurCore/Equipment.png";
 import Detailed from "../assets/images/OurCore/detailed.png";
 import Commissioning from "../assets/images/OurCore/Commissioning.png";
-import logo from "../assets/images/logo.png";
 
 import { CCarousel, CCarouselItem, CImage } from "@coreui/react";
 import "@coreui/coreui/dist/css/coreui.min.css";
@@ -120,9 +119,6 @@ export default function OurCore() {
       >
         <div className="services-row container-main">
           <TextReader texts={ConsultingText} />
-          <div className="img-text" style={{ left: -50 }}>
-            <img src={logo} alt="Slika" /> <span>HELMCHRON</span>
-          </div>
           <div className="vertical-text">
             <h4>
               {t("services_vertical")}
@@ -150,10 +146,6 @@ export default function OurCore() {
       <div ref={sectionRefs[1]} className="services">
         <div className="services-row container-main">
           <TextReader texts={DesignText} />
-          <div className="img-text" style={{ left: -50 }}>
-            <img src={logo} alt="Slika" />{" "}
-            <span className="blue">HELMCHRON</span>
-          </div>
           <div className="vertical-text">
             <h4 style={{ WebkitTextStroke: "1px var(--dark-blue-color)" }}>
               {t("services_vertical")}
@@ -196,10 +188,6 @@ export default function OurCore() {
       >
         <div className="services-row container-main">
           <TextReader texts={ProjectText} />
-          <div className="img-text" style={{ left: -50 }}>
-            <img src={logo} alt="Slika" />{" "}
-            <span className="green">HELMCHRON</span>
-          </div>
           <div className="vertical-text">
             <h4 style={{ WebkitTextStroke: "1px var(--green-color)" }}>
               {t("services_vertical")}
@@ -233,10 +221,6 @@ export default function OurCore() {
       <div ref={sectionRefs[3]} className="services">
         <div className="services-row container-main">
           <TextReader texts={EquipmentText} />
-          <div className="img-text" style={{ left: -50 }}>
-            <img src={logo} alt="Slika" />{" "}
-            <span className="blue">HELMCHRON</span>
-          </div>
           <div className="vertical-text">
             <h4 style={{ WebkitTextStroke: "1px var(--dark-blue-color)" }}>
               {t("services_vertical")}
@@ -271,9 +255,6 @@ export default function OurCore() {
       >
         <div className="services-row container-main">
           <TextReader texts={CommissioningText} />
-          <div className="img-text" style={{ left: -50 }}>
-            <img src={logo} alt="Slika" /> <span>HELMCHRON</span>
-          </div>
           <div className="vertical-text">
             <h4>
               {t("services_vertical")}

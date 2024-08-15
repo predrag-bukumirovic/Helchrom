@@ -16,6 +16,7 @@ import { useTranslation } from "react-i18next";
 export default function HomeNavbar({ className }) {
   const { t, i18n } = useTranslation();
   const [language, setLanguage] = useState("EN");
+  const [scrolled, setScrolled] = useState(false);
 
   const changeLanguage = lng => {
     i18n.changeLanguage(lng);
@@ -26,8 +27,21 @@ export default function HomeNavbar({ className }) {
   useEffect(() => {
     const storedLng = localStorage.getItem("lng");
     if (storedLng) {
-      setLanguage(storedLng.toUpperCase()); // Postavi skraćenicu iz `localStorage`
+      setLanguage(storedLng.toUpperCase());
     }
+
+    const handleScroll = () => {
+      if (window.scrollY > 200) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
 
   const [openMenu, setOpenMenu] = useState(false);
@@ -50,7 +64,7 @@ export default function HomeNavbar({ className }) {
   return (
     <div
       style={{ background: "transparent" }}
-      className={`navbar-box ${className}`}
+      className={`navbar-box ${scrolled ? "scrolled" : ""} ${className}`}
     >
       <div
         className="container-main"
@@ -195,7 +209,9 @@ export default function HomeNavbar({ className }) {
                   </li>
 
                   <li>
-                    <CustomLink href="/about-us/our-team">NAVIGATOR</CustomLink>
+                    <CustomLink href="/initiatives/navigator">
+                      NAVIGATOR
+                    </CustomLink>
                   </li>
                   <li>
                     <CustomLink href="/initiatives/innolab">
@@ -295,7 +311,7 @@ export default function HomeNavbar({ className }) {
               >
                 <ul className="change-lng-mobile">
                   <li onClick={() => changeLanguage("en")}>ENGLISH</li>
-                  <li onClick={() => changeLanguage("de")}>GERMANY</li>
+                  <li onClick={() => changeLanguage("de")}>DEUTSCH</li>
                 </ul>
               </li>
             </ol>

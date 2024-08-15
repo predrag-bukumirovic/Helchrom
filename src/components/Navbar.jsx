@@ -172,7 +172,9 @@ export default function Navbar({ className }) {
                   </li>
 
                   <li>
-                    <CustomLink href="/about-us/our-team">NAVIGATOR</CustomLink>
+                    <CustomLink href="/initiatives/navigator">
+                      NAVIGATOR
+                    </CustomLink>
                   </li>
                   <li>
                     <CustomLink href="/initiatives/innolab">
@@ -272,7 +274,7 @@ export default function Navbar({ className }) {
               >
                 <ul className="change-lng-mobile">
                   <li>ENGLISH</li>
-                  <li>GERMANY</li>
+                  <li>DEUTSCH</li>
                 </ul>
               </li>
             </ol>

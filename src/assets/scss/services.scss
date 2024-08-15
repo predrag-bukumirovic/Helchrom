@@ -81,8 +81,6 @@
 }
 
 .services {
-  padding: 100px 10px 100px 55px;
-
   @media (max-width: 990px) {
     h3 {
       width: 100% !important;
@@ -103,7 +101,7 @@
     position: relative;
     gap: 50px;
     justify-content: space-evenly;
-    padding: 50px 10px;
+    padding: 50px 20px;
 
     @media (max-width: 1400px) {
       gap: 20px !important;
@@ -131,33 +129,6 @@
         padding-left: 10px;
       }
     }
-  }
-}
-
-.img-text {
-  position: absolute !important;
-  top: -70px;
-  left: -30px;
-  display: flex;
-  align-items: center;
-  gap: 30px;
-
-  span {
-    font-weight: 900;
-    color: var(--brend-color) !important;
-    font-size: 18px;
-    letter-spacing: 3px;
-
-    &.blue {
-      color: var(--dark-blue-color) !important;
-    }
-    &.green {
-      color: var(--green-color) !important;
-    }
-  }
-
-  img {
-    width: 40px !important;
   }
 }
 

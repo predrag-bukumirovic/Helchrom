@@ -59,6 +59,10 @@
   }
 }
 
+.header-box.scrolled {
+  background: var(--brend-color) !important;
+}
+
 @media (max-width: 1600px) {
   .header-box {
     width: 100%;
