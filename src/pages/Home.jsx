@@ -524,8 +524,6 @@ export default function Home() {
               </div>
             </div>
           </Carousel>
-
-          {/* <div className="test-sound">PUSTI TEKST</div> */}
         </div>
       </div>
     </div>

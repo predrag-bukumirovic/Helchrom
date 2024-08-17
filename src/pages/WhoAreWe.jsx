@@ -4,9 +4,9 @@ import { useTranslation } from "react-i18next";
 import { Helmet } from "react-helmet";
 import Modal from "react-modal";
 
-import mainImg from "../assets/images/Who/who3.jpg";
-import mainImg2 from "../assets/images/Who/who1.jpg";
-import mainImg1 from "../assets/images/Who/who2.jpg";
+import mainImg1 from "../assets/images/Who/baner1.png";
+import mainImg2 from "../assets/images/Who/baner2.png";
+import mainImg3 from "../assets/images/Who/baner3.png";
 import basicImg from "../assets/images/Who/basicImg.png";
 import OurImg from "../assets/images/Who/our-history.png";
 import OUR_CREDO from "../assets/images/Who/OUR_CREDO.png";
@@ -59,7 +59,7 @@ const WhoAreWe = () => {
       <div>
         <div className="slider">
           <CCarousel className="slider-main" controls transition="crossfade">
-            {[mainImg2, mainImg1, mainImg].map((img, index) =>
+            {[mainImg1, mainImg2, mainImg3].map((img, index) =>
               <CCarouselItem key={index}>
                 <CImage
                   className="d-block w-100"
@@ -70,7 +70,7 @@ const WhoAreWe = () => {
             )}
           </CCarousel>
           <div className="box-img">
-            {[mainImg2, mainImg1, mainImg].map((img, index) =>
+            {[mainImg1, mainImg2, mainImg3].map((img, index) =>
               <div key={index}>
                 <img src={img} alt={`Main ${index + 1}`} />
               </div>

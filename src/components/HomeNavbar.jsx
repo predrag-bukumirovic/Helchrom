@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import logo from "../assets/images/logo.webp";
 import logoWhite from "../assets/images/logowhite.webp";
-import ChemistryConnects from "../assets/images/ChemistryConnects.png";
+import ChemistryConnects from "../assets/images/CHEMISTRYCONNECTSUS-white.png";
 import "../assets/scss/navbar.css";
 import { BiChevronDown } from "react-icons/bi";
 import { MdKeyboardArrowRight } from "react-icons/md";

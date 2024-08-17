@@ -10,10 +10,11 @@ import "../assets/scss/home.scss";
 import mainImg from "../assets/images/Vision/vision1.jpg";
 import mainImg1 from "../assets/images/Vision/vision2.jpg";
 import mainImg2 from "../assets/images/Vision/vision3.jpg";
-import imgTesti from "../assets/images/Vision/imgtesti.jpg";
-import Kawasaki from "../assets/images/Vision/Kawasaki.png";
+import quotation from "../assets/images/quotationLine.png";
 import MVDesno from "../assets/images/Vision/m-v-desno.png";
 import MVLevo from "../assets/images/Vision/m-v-levo.png";
+
+import milosquo from "../assets/images/Vision/Milosquote.png";
 
 import partnerships from "../assets/images/Vision/partnerships.png";
 import portfolio from "../assets/images/Vision/portfolio.png";
@@ -183,10 +184,30 @@ export default function OurVision() {
           </div>
         </div>
       </div>
-      <div className="kawasaki container-main padding30">
-        <div>
-          <img data-aos="fade-right" src={imgTesti} alt="imgTesti" />
-          <img data-aos="fade-left" src={Kawasaki} alt="Kawasaki" />
+      <div className="testimonials container-main">
+        <div className="slider-testi padding30">
+          <div className="testi-item" data-aos="fade-up">
+            <img src={quotation} alt="quotation" />
+
+            <div>
+              <p style={{ marginTop: 30 }}>
+                At Helmchron, our vision is clear: to drive meaningful change
+                through services and partnerships that prioritize health for
+                everyone while protecting our planet. By placing our clients and
+                their outcomes at the core of our mission, we strive to deliver
+                sustainable engineering solutions that will have a lasting
+                impact on the quality of life for the coming generations. This
+                shared commitment empowers our team to uphold the highest
+                professional standards, ensuring we deliver exceptional results
+                every time.
+              </p>
+
+              <div style={{ float: "right" }}>
+                <span style={{ fontSize: 23 }}>Milos Ivosevic, CEO</span>
+              </div>
+            </div>
+          </div>
+          <img className="milos-quo" src={milosquo} alt="quotation" />
         </div>
       </div>
     </div>

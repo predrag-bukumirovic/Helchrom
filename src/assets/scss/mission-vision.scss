@@ -138,3 +138,21 @@
   font-size: 900;
   color: var(--brend-color) !important;
 }
+
+.slider-testi {
+  display: flex;
+
+  @media (max-width: 500px) {
+    flex-direction: column-reverse;
+
+    .milos-quo {
+      width: 200px;
+      margin: 0 auto;
+    }
+  }
+
+  .milos-quo {
+    width: 200px;
+    height: fit-content;
+  }
+}
