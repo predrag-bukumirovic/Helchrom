@@ -254,7 +254,7 @@ export default function Home() {
       <div className="welcome container-main padding30">
         <h1
           dangerouslySetInnerHTML={{ __html: t("home.welcome") }}
-          style={{ padding: "0 40px" }}
+          style={{ padding: "0 20px" }}
         />
         <TextReader texts={welcomeText} />
         <center>
@@ -322,16 +322,10 @@ export default function Home() {
             </a>
           )}
         </div>
-
-        <center>
-          <a className="book-btn" href="/contact">
-            {t("book_btn")}
-          </a>
-        </center>
       </div>
 
       <center className="container-main">
-        <p>
+        <p style={{ marginBottom: 30 }}>
           After the completion of operational activities, we provide guarantees
           and stand accountable for the quality of our work, offering ongoing
           support and consultation within the project scope to address our
@@ -356,6 +350,7 @@ export default function Home() {
           <div className="unique-row">
             <div className="text">
               <p
+                style={{ marginBottom: 40 }}
                 data-aos="fade-right"
                 dangerouslySetInnerHTML={{ __html: t("unique.text") }}
               />

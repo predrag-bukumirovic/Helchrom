@@ -147,7 +147,7 @@ const WhoAreWe = () => {
               className="book-btn"
               onClick={openModal}
             >
-              Read more
+              {t("read_more")}
             </span>
             <Modal
               isOpen={modalIsOpen}
@@ -177,9 +177,7 @@ const WhoAreWe = () => {
         <div className="basic padding30">
           <div className="padding30">
             <h2 className="title" style={{ padding: 0 }} data-aos="fade-right">
-              <b>
-                {t("info.title")}
-              </b>
+              {t("info.title")}
             </h2>
             <ul data-aos="fade-right">
               <li>

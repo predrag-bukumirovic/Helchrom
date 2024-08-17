@@ -161,8 +161,8 @@ const enTranslation = {
     our_values: "Our values",
     competences_services: "competences & services",
     our_core: "Our core competencies",
-    our_services: "Our Services",
-    our_reference: "Our References",
+    our_services: "Services",
+    our_reference: "References",
     career: "career",
     news: "news",
     blog: "blog",
@@ -363,7 +363,7 @@ const enTranslation = {
     unique: "unique service concept"
   },
   career: {
-    title: "Join the helmchron team",
+    title: "Join helmchron team",
     sub_text: `  At Helmchron, we foster a culture of teamwork and agility, where
             diverse perspectives are respected and encouraged. We prioritize
             working in an environment where every team member feels empowered to

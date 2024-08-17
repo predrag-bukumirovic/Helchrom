@@ -1,0 +1,131 @@
+/* .container-main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+} */
+
+.slider-container {
+  position: relative;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  /* overflow: hidden; */
+}
+
+.slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slider-images {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 50px;
+  position: relative;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slider-image {
+  flex: 0 0 auto;
+  height: 300px;
+  width: 200px;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.5s ease-in-out, z-index 0.5s ease-in-out;
+  transform: scale(0.9);
+  opacity: 0.6;
+}
+
+.slider b {
+  font-size: 22px;
+}
+
+.slider-image.active {
+  transform: scale(1.2);
+  z-index: 2;
+  opacity: 1;
+}
+
+.slider-text-container {
+  margin-top: 40px;
+  width: 100%;
+}
+
+.slider-text {
+  color: #000;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+  text-align: center;
+}
+
+.slider-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.slider-button {
+  background: transparent;
+  border: 1px solid #727272;
+  color: #727272;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.slider-dots {
+  display: flex;
+  gap: 10px;
+  margin: 0 20px;
+}
+
+.slider-dot {
+  width: 7px;
+  height: 7px;
+  background: #727272;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider-dot.active {
+  background: var(--brend-color);
+}
+
+.slider-image-counter {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #727272;
+  text-align: center;
+}
+
+/* Responsivni stilovi za mobilne uređaje */
+@media (max-width: 768px) {
+  .slider-images {
+    overflow: visible; /* Osiguraj da slike ne izlaze van granica slajdera */
+    justify-content: flex-start; /* Pomeraj slike na početak za mobilne uređaje */
+  }
+
+  .slider-image {
+    height: 200px;
+    width: 150px;
+  }
+
+  .slider-image.active {
+    transform: scale(1.2); /* Povećaj sliku koja je aktivna */
+  }
+}
+
+@media (max-width: 480px) {
+  .slider-image {
+    height: 300px;
+    width: 200px;
+  }
+}

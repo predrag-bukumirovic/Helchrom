@@ -114,7 +114,6 @@ export default function OurValues() {
             {t("our_way.title")}
             <TextRender texts={IntegrityTexts} />
           </h2>
-
           <div style={{ background: "var(--light-blue-color)" }}>
             <div className="row-img-text row1 container-main">
               <div className="row-img" data-aos="fade-right">
@@ -188,7 +187,6 @@ export default function OurValues() {
               </div>
             </div>
           </div>
-
           <div className="row-img-text container-main row4">
             <div className="row-img" data-aos="fade-left">
               <img src={Diversity} alt="" />
@@ -211,7 +209,6 @@ export default function OurValues() {
               </p>
             </div>
           </div>
-
           <div style={{ background: "var(--light-blue-color)" }}>
             <div className="row-img-text row5 container-main">
               <div className="row-img" data-aos="fade-right">
@@ -236,7 +233,6 @@ export default function OurValues() {
               </div>
             </div>
           </div>
-
           <div
             className="container-main padding30"
             style={{ marginBottom: 100 }}
@@ -251,11 +247,11 @@ export default function OurValues() {
             </h3>
 
             <p
+              style={{ textAlign: "center" }}
               data-aos="fade-up"
               dangerouslySetInnerHTML={{ __html: t("social_respo.text") }}
             />
           </div>
-
           <div className="container-main padding30">
             <img
               data-aos="zoom-in"
@@ -264,7 +260,6 @@ export default function OurValues() {
               alt="in motion"
             />
           </div>
-
           <center>
             <h2 className="title" data-aos="fade-up">
               {t("video_common_values")}

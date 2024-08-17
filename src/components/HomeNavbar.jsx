@@ -203,7 +203,7 @@ export default function HomeNavbar({ className }) {
                   className={`${downMenuInit ? "active" : "menu-down"}`}
                 >
                   <li>
-                    <CustomLink href="/about-us/who-are-we">
+                    <CustomLink href="/initiatives/helmchrone">
                       HELMCHR<b>ONe</b>
                     </CustomLink>
                   </li>

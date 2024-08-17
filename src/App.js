@@ -30,6 +30,7 @@ const LegalStatement = lazy(() => import("./pages/LegalStatement"));
 const Academy = lazy(() => import("./pages/Academy"));
 const InnoLab = lazy(() => import("./pages/innoLab"));
 const Navigator = lazy(() => import("./pages/Navigator"));
+const One = lazy(() => import("./pages/One"));
 
 const Chemicals = lazy(() => import("./pages/Chemicals"));
 const Achema = lazy(() => import("./pages/Achema"));
@@ -94,6 +95,7 @@ function App() {
           <Route path="/initiatives/academy" element={<Academy />} />
           <Route path="/initiatives/innolab" element={<InnoLab />} />
           <Route path="/initiatives/navigator" element={<Navigator />} />
+          <Route path="/initiatives/helmchrone" element={<One />} />
           <Route path="/electronics" element={<Electronics />} />
           <Route path="/food-and-bioproducts" element={<Food />} />
           <Route path="/energy" element={<Energy />} />

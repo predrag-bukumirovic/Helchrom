@@ -145,7 +145,7 @@ export default function References() {
           our references
         </h2>
 
-        <p data-aos="fade-up">
+        <p data-aos="fade-up" style={{ textAlign: "center" }}>
           Our reference page contains our most relevant projects per each of our
           business areas. Explore our milestones and collaborations and learn
           how we contribute to different industries worldwide. For a

@@ -266,7 +266,7 @@ export default function OurTeam() {
         </div>
 
         <center>
-          <p>
+          <p style={{ marginBottom: 30 }}>
             {t("team.text_bottom")}
           </p>
 

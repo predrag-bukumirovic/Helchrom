@@ -97,23 +97,20 @@ export default function Career(i) {
             <TextReader texts={headerText} />
           </h1>
           <p
-            style={{ textAlign: "justify" }}
+            style={{ textAlign: "center" }}
             dangerouslySetInnerHTML={{ __html: t("career.sub_text") }}
           />
         </div>
       </div>
 
-      <div
-        style={{ margin: "100px auto" }}
-        className="container-main padding30"
-      >
+      <div style={{ margin: "50px auto" }} className="container-main padding30">
         <h2 className="title" style={{ padding: "0 40px" }}>
           {t("career.opportunities.title")}
           <TextReader texts={careerText} />
         </h2>
 
         <p
-          className="text-width"
+          style={{ textAlign: "center" }}
           dangerouslySetInnerHTML={{
             __html: t("career.opportunities.sub_text")
           }}

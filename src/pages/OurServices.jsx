@@ -88,10 +88,12 @@ export default function OurCore() {
           <TextReader texts={ourCoreText} />
         </h1>
 
-        <p
-          data-aos="fade-up"
-          dangerouslySetInnerHTML={{ __html: t("our_core.sub_text") }}
-        />
+        <center>
+          <p
+            data-aos="fade-up"
+            dangerouslySetInnerHTML={{ __html: t("our_core.sub_text") }}
+          />
+        </center>
 
         <div className="icon-core">
           <div data-aos="zoom-in" onClick={() => handleClick(0)}>
@@ -283,7 +285,7 @@ export default function OurCore() {
       </div>
 
       <center style={{ marginTop: 50 }}>
-        <p>
+        <p style={{ marginBottom: 30 }}>
           {t("our_core.text_book")}
         </p>
         <a
