@@ -8,14 +8,14 @@ import mainImg2 from "../assets/images/Navigator/banner3.png";
 import Overview from "../assets/images/Navigator/Overview.png";
 import Framework from "../assets/images/Navigator/Framework.png";
 import end from "../assets/images/Navigator/end.png";
+import nav from "../assets/images/Navigator/nav.png";
 
-import icon1 from "../assets/images/Navigator/planning.png";
-import icon2 from "../assets/images/Navigator/Expert.png";
-import icon3 from "../assets/images/Navigator/Agile.png";
-import icon4 from "../assets/images/Navigator/Cost.png";
-import icon5 from "../assets/images/Navigator/support.png";
+import icon1 from "../assets/images/Navigator/1.png";
+import icon2 from "../assets/images/Navigator/2.png";
+import icon3 from "../assets/images/Navigator/3.png";
+import icon4 from "../assets/images/Navigator/4.png";
+import icon5 from "../assets/images/Navigator/5.png";
 
-import "../assets/scss/navigator.scss";
 import "../assets/scss/electronics.scss";
 import "../assets/scss/home.scss";
 
@@ -53,7 +53,7 @@ export default function Navigator() {
       <div>
         <center className="container-main">
           <h1 className="title" style={{ textTransform: "capitalize" }}>
-            Helmchron NAVIGATOR
+            Helmchron N<img src={nav} alt="A Navigator" />VIGATOR
           </h1>
           <p>
             Helmchron Navigator is our initiative designed to provide consulting
@@ -104,21 +104,54 @@ export default function Navigator() {
           </h2>
         </center>
 
-        <div className="benefits container-main">
-          <div>
-            <img src={icon1} alt="" />
-          </div>
-          <div>
-            <img src={icon2} alt="" />
-          </div>
-          <div>
-            <img src={icon3} alt="" />
-          </div>
-          <div>
-            <img src={icon4} alt="" />
-          </div>
-          <div>
-            <img src={icon5} alt="" />
+        <div className="our-home container-main">
+          <div className="services-icon container-main">
+            <div>
+              <img src={icon1} alt="" />
+
+              <h3>Proactive Planning</h3>
+              <p>
+                We identify potential challenges early in the process to
+                mitigate risks and support the client in developing a clear,
+                strategic plan to achieve the outcomes.
+              </p>
+            </div>
+            <div>
+              <img src={icon2} alt="" />
+              <h3>Expert Guidance</h3>
+
+              <p>
+                We conduct in-depth analysis and deliver proposals and
+                recommendations tailored to the project`s specific needs.
+              </p>
+            </div>
+            <div>
+              <img src={icon3} alt="" />
+              <h3>Agile Execution</h3>
+              <p>
+                Our team adapts effectively to changes and evolving project
+                requirements to ensure smooth, timely execution of project
+                plans.
+              </p>
+            </div>
+            <div>
+              <img src={icon4} alt="" />
+              <h3>Cost and Schedule Management</h3>
+              <p>
+                Resources are strategically allocated to ensure they directly
+                contribute to achieving the planned outcomes. Control over the
+                budget and schedule is one of the main benefits.
+              </p>
+            </div>
+            <div>
+              <img src={icon5} alt="" />
+              <h3>Comprehensive Support</h3>
+              <p>
+                Our end-to-end involvement and guidance through every phase of
+                the plant design, enables agile decision-making and continuous
+                improvements.
+              </p>
+            </div>
           </div>
         </div>
 
@@ -148,7 +181,7 @@ export default function Navigator() {
               plant design, including:
             </p>
 
-            <ul>
+            <ul className="framework">
               <li>
                 Initial consultation to understand project goals, requirements,
                 and constraints
@@ -170,7 +203,7 @@ export default function Navigator() {
           <img src={Framework} alt="" />
         </div>
 
-        <div className="row container-main">
+        <div className="guarantee padding30 container-main">
           <img src={end} alt="" />
           <div>
             <span style={{ fontWeight: "bold", fontSize: 20 }}>

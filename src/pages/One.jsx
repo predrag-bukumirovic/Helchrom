@@ -268,7 +268,7 @@ const One = () => {
       </div>
 
       <div className="container-main padding30 why-one">
-        <div>
+        <div style={{ marginTop: 50 }}>
           <span>Why Helmchron ONE?</span>
 
           <p style={{ marginTop: 30 }}>

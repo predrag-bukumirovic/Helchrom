@@ -71,7 +71,7 @@ export default function innoLab() {
           </div>
         </div>
 
-        <div className="row">
+        <div style={{ marginTop: 20 }} className="row">
           <div>
             <span>
               <b>How did it all begin?</b>
@@ -112,7 +112,7 @@ export default function innoLab() {
         </div>
 
         <center>
-          <p style={{ marginBottom: 0 }}>
+          <p style={{ marginBottom: 10 }}>
             Learn how we implement innovative knowledge in our projects and
             discover Helmchron Navigator.
           </p>
