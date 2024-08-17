@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { CCarousel, CCarouselItem, CImage } from "@coreui/react";
 import "../assets/scss/one.css";
+import "../assets/scss/home.scss";
 
 import slideImg1 from "../assets/images/Helmchrone/1.png";
 import slideImg2 from "../assets/images/Helmchrone/2.png";
@@ -11,6 +12,12 @@ import slideImg5 from "../assets/images/Helmchrone/5.png";
 import mainImg from "../assets/images/Helmchrone/banner1.png";
 import mainImg1 from "../assets/images/Helmchrone/banner2.png";
 import mainImg2 from "../assets/images/Helmchrone/banner3.png";
+
+import inzenjer from "../assets/images/Helmchrone/inzenjer.png";
+
+import icon1 from "../assets/images/Helmchrone/icon1.png";
+import icon2 from "../assets/images/Helmchrone/icon2.png";
+import icon3 from "../assets/images/Helmchrone/icon3.png";
 
 const images = [
   {
@@ -71,6 +78,10 @@ const One = () => {
     setCurrentIndex(index);
   };
 
+  const handleImageClick = index => {
+    setCurrentIndex(index);
+  };
+
   const adjustSliderPosition = index => {
     const sliderImages = document.querySelector(".slider-images");
     const sliderImageElements = Array.from(
@@ -88,7 +99,7 @@ const One = () => {
   };
 
   return (
-    <div>
+    <div className="one">
       {/* Slider start */}
       <div className="slider">
         <CCarousel className="slider-main" controls transition="crossfade">
@@ -117,10 +128,86 @@ const One = () => {
       </div>
       {/* Slider end */}
 
-      <div className="container-main">
+      <div className="container-main padding30">
+        <h2 className="title">Focus on Success with HELMCHRONe</h2>
+
+        <center>
+          <p>
+            Helmchron ONE is our service concept in which we dedicate ONE team
+            to ONE project and ONE client only. Collaborating with our clients,
+            we've identified a critical challenge in project management - the
+            absence of focus that leads to prolonged timelines, compromised
+            outcomes, and budget overruns. With Helmchrone ONE, each client is
+            assigned a dedicated team, ensuring focused expertise and prompt
+            responsiveness to feedback and requirements.
+          </p>
+        </center>
+
+        <div className="our-home container-main">
+          <center>
+            <span>Helmchron ONE Approach</span>
+          </center>
+
+          <div
+            className="services-icon"
+            style={{ width: "70%", margin: "50px auto" }}
+          >
+            <div>
+              <img src={icon1} alt="" />
+
+              <h3>ONE TEAM</h3>
+              <p>
+                Each project is assigned a dedicated team who is fully
+                accountable for every aspect of the project. Focusing
+                exclusively on a single project allows the team to stay
+                consistently aware of all the details, from milestones to
+                outcomes.
+              </p>
+            </div>
+            <div>
+              <img src={icon2} alt="" />
+              <h3>ONE CLIENT</h3>
+              <p>
+                We believe that the key to a successful partnership is undivided
+                focus. With Helmchron ONE, a team is dedicated exclusively to
+                one client, fostering stronger partnerships and a deeper
+                understanding of the client’s unique needs and goals.
+              </p>
+            </div>
+            <div>
+              <img src={icon3} alt="" />
+
+              <h3>ONE PROJECT</h3>
+              <p>
+                By concentrating expertise and creativity, we ensure unmatched
+                quality, efficiency, and effectiveness. This focused approach
+                leads to faster decision-making, seamless execution, and
+                successful project outcomes.
+              </p>
+            </div>
+          </div>
+
+          <center>
+            <p style={{ marginBottom: 30 }}>
+              To learn more about Helmchron ONE and our services, schedule a
+              meeting with our team.
+            </p>
+
+            <a
+              style={{ background: "var(--dark-blue-color)" }}
+              className="book-btn"
+              href="/contact"
+            >
+              Book a meeting
+            </a>
+          </center>
+        </div>
+      </div>
+
+      <div>
         <div className="slider-container">
-          <div className="slider">
-            <b>Benefits of Helmchron ONE</b>
+          <div className="slider-one">
+            <span>Benefits of Helmchron ONE</span>
             <div className="slider-images">
               {images.map((image, index) =>
                 <div
@@ -129,6 +216,7 @@ const One = () => {
                     ? "active"
                     : ""}`}
                   style={{ backgroundImage: `url(${image.srcImg})` }}
+                  onClick={() => handleImageClick(index)}
                 />
               )}
             </div>
@@ -143,10 +231,8 @@ const One = () => {
                   {images[currentIndex].text}
                 </p>
               </div>
-              <center>
-                <span>
-                  Click on the next image to read another Helmchron ONE benefit
-                </span>
+              <center style={{ color: "#000" }}>
+                Click on the next image to read another Helmchron ONE benefit
               </center>
             </div>
           </div>
@@ -175,10 +261,38 @@ const One = () => {
               &#10095;
             </button>
           </div>
-          <center>
+          <center style={{ color: "#000" }}>
             {currentIndex + 1}/{images.length}
           </center>
         </div>
+      </div>
+
+      <div className="container-main padding30 why-one">
+        <div>
+          <span>Why Helmchron ONE?</span>
+
+          <p style={{ marginTop: 30 }}>
+            In developing Helmchron ONE, we listened to our clients and observed
+            the challenges that arise when attention is divided across multiple
+            projects. We recognized that this lack of focus often leads to
+            delays, exceeded budgets, and strained resources. Helmchron ONE
+            ensures every project is completed efficiently, effectively, and
+            perfectly aligned with our client`s strategic objectives.
+          </p>
+          <p style={{ marginBottom: 40 }}>
+            Learn more about our initiatives. Discover how Helmchron Navigator
+            can elevate your plant design.
+          </p>
+
+          <a
+            style={{ background: "var(--dark-blue-color)" }}
+            className="book-btn"
+            href="/"
+          >
+            Read more
+          </a>
+        </div>
+        <img src={inzenjer} alt="" />
       </div>
     </div>
   );

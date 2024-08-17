@@ -1,20 +1,16 @@
-/* .container-main {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px 0;
-} */
-
 .slider-container {
   position: relative;
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
-  /* overflow: hidden; */
 }
 
-.slider {
+.one span {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.slider-one {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -38,10 +34,7 @@
   transition: transform 0.5s ease-in-out, z-index 0.5s ease-in-out;
   transform: scale(0.9);
   opacity: 0.6;
-}
-
-.slider b {
-  font-size: 22px;
+  cursor: pointer;
 }
 
 .slider-image.active {
@@ -106,11 +99,10 @@
   text-align: center;
 }
 
-/* Responsivni stilovi za mobilne uređaje */
 @media (max-width: 768px) {
   .slider-images {
-    overflow: visible; /* Osiguraj da slike ne izlaze van granica slajdera */
-    justify-content: flex-start; /* Pomeraj slike na početak za mobilne uređaje */
+    overflow: visible;
+    justify-content: flex-start;
   }
 
   .slider-image {
@@ -119,7 +111,7 @@
   }
 
   .slider-image.active {
-    transform: scale(1.2); /* Povećaj sliku koja je aktivna */
+    transform: scale(1.2);
   }
 }
 
@@ -127,5 +119,31 @@
   .slider-image {
     height: 300px;
     width: 200px;
+  }
+}
+
+.why-one {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.why-one img {
+  width: 30%;
+}
+
+@media (max-width: 850px) {
+  .why-one img {
+    width: 50%;
+  }
+}
+
+@media (max-width: 640px) {
+  .why-one {
+    flex-direction: column;
+  }
+
+  .why-one img {
+    width: 100%;
   }
 }
