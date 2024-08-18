@@ -48,7 +48,7 @@ export default function Academy() {
             Helmchron{" "}
             <span style={{ fontFamily: "DancingScript" }}>Academy</span>
           </h1>
-          <p>
+          <p data-aos="fade-up">
             Helmchron Academy is an initiative aimed at educating and developing
             the team by sharing specific knowledge from complex and advanced
             projects. By focusing on practical experiences, Helmchron Academy
@@ -62,7 +62,7 @@ export default function Academy() {
         </center>
 
         <div className="row academy-row">
-          <div>
+          <div data-aos="fade-right">
             <span>
               <b>Unified Expertise</b>
             </span>
@@ -98,9 +98,9 @@ export default function Academy() {
             </p>
           </div>
 
-          <img src={verticalImg} alt="Inolab 2" />
+          <img data-aos="fade-zoom" src={verticalImg} alt="Inolab 2" />
 
-          <div>
+          <div data-aos="fade-left">
             <span>
               <b>Collaborative Learning Environment</b>
             </span>
@@ -134,7 +134,7 @@ export default function Academy() {
           </div>
         </div>
 
-        <center>
+        <center data-aos="fade-up">
           <p>
             We believe that transparency, clear guidance, and the continuous
             sharing of knowledge and experiences are essential to maintaining a

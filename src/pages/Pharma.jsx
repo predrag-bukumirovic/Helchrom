@@ -66,8 +66,8 @@ export default function Pharma() {
             className="row"
             style={{ background: "var(--light-blue-color)" }}
           >
-            <img src={Pharma1} alt="" />
-            <div>
+            <img data-aos="fade-right" src={Pharma1} alt="" />
+            <div data-aos="fade-left">
               <span>
                 <b>
                   {t("pharma.text2.title")}
@@ -79,7 +79,7 @@ export default function Pharma() {
             </div>
           </div>
 
-          <center>
+          <center data-aos="fade-up">
             <span>
               <b>
                 {t("pharma.text3.title")}
@@ -95,7 +95,7 @@ export default function Pharma() {
             className="row"
             style={{ background: "var(--light-blue-color)" }}
           >
-            <div>
+            <div data-aos="fade-right">
               <span>
                 <b>
                   {t("pharma.text4.title")}
@@ -114,11 +114,11 @@ export default function Pharma() {
                 {t("pharma.text4.text1")}
               </p>
             </div>
-            <img src={Pharma2} alt="" />
+            <img data-aos="fade-left" src={Pharma2} alt="" />
           </div>
 
           <center>
-            <p style={{ marginBottom: 0 }}>
+            <p style={{ margin: "10px 0" }}>
               {t("pharma.check")}
             </p>
             <br />

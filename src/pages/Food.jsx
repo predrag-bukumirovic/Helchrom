@@ -65,7 +65,7 @@ export default function Food() {
             className="row"
             style={{ background: "var(--light-blue-color)" }}
           >
-            <div>
+            <div data-aos="fade-right">
               <span>
                 <b>
                   {t("food.text2.title")}
@@ -79,10 +79,10 @@ export default function Food() {
               </p>
             </div>
 
-            <img src={Food1} alt="" />
+            <img data-aos="fade-left" src={Food1} alt="" />
           </div>
 
-          <center>
+          <center style={{ margin: "20px 0" }} data-aos="fade-up">
             <span>
               <b>
                 {t("food.text3.title")}
@@ -97,8 +97,8 @@ export default function Food() {
             className="row"
             style={{ background: "var(--light-blue-color)" }}
           >
-            <img src={Food2} alt="" />
-            <div>
+            <img data-aos="fade-right" src={Food2} alt="" />
+            <div data-aos="fade-left">
               <span>
                 <b>
                   {t("food.text4.title")}
@@ -120,7 +120,7 @@ export default function Food() {
           </div>
 
           <center>
-            <p style={{ marginBottom: 0 }}>
+            <p style={{ margin: "10px 0" }}>
               {t("food.check")}
             </p>
             <br />

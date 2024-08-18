@@ -43,7 +43,7 @@ export default function Oil() {
         <h1 className="title">
           {t("oil.title")}
         </h1>
-        <center>
+        <center data-aos="fade-up">
           <p>
             {t("oil.sub_text")}
           </p>
@@ -51,7 +51,7 @@ export default function Oil() {
 
         <div>
           <div className="row">
-            <div>
+            <div data-aos="fade-right">
               <span>
                 <b>
                   {t("oil.text1.title")}
@@ -71,12 +71,12 @@ export default function Oil() {
               </p>
             </div>
 
-            <img src={Oil1} alt="" />
+            <img data-aos="fade-left" src={Oil1} alt="" />
           </div>
 
           <div className="row">
-            <img src={Oil2} alt="" />
-            <div>
+            <img data-aos="fade-right" src={Oil2} alt="" />
+            <div data-aos="fade-left">
               <span>
                 <b>
                   {t("oil.text2.title")}

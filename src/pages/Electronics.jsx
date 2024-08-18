@@ -45,14 +45,14 @@ export default function Electronics() {
         <h1 className="title">
           {t("electronics.title")}
         </h1>
-        <center>
+        <center data-aos="fade-up">
           <p>
             {t("electronics.sub_text")}
           </p>
         </center>
 
         <div className="row" style={{ background: "var(--light-blue-color)" }}>
-          <div className="text">
+          <div className="text" data-aos="fade-right">
             <div>
               <span>
                 {t("electronics.text1.title")}
@@ -70,12 +70,12 @@ export default function Electronics() {
               </p>
             </div>
           </div>
-          <div className="img">
+          <div data-aos="fade-left" className="img">
             <img src={imgRow} alt="Slika" />
           </div>
         </div>
 
-        <span style={{ paddingTop: 20 }}>
+        <span data-aos="fade-up" style={{ paddingTop: 20 }}>
           <b>
             {t("electronics.future")}
           </b>
@@ -83,14 +83,14 @@ export default function Electronics() {
           {t("electronics.graph")}
         </span>
         <div className="future">
-          <div style={{ flex: 2 }}>
+          <div data-aos="fade-right" style={{ flex: 2 }}>
             <img src={graph} alt="Graph" />
           </div>
-          <div className="icon-graph">
+          <div data-aos="fade-up" className="icon-graph">
             <img style={{ marginBottom: 10 }} src={market} alt="Market" />
             <img src={cagr} alt="Cagr" />
           </div>
-          <div className="text">
+          <div data-aos="fade-left" className="text">
             <p>
               {t("electronics.text")}
             </p>

@@ -42,14 +42,14 @@ export default function Chemicals() {
         <h1 className="title">
           {t("chemicals.title")}
         </h1>
-        <center>
+        <center data-aos="fade-up">
           <p>
             {t("chemicals.sub_text")}
           </p>
         </center>
 
         <div>
-          <center style={{ marginTop: 40 }}>
+          <center data-aos="fade-up" style={{ marginTop: 40 }}>
             <span>
               <b>
                 {t("chemicals.text1.title")}
@@ -63,8 +63,8 @@ export default function Chemicals() {
             className="row"
             style={{ background: "var(--light-blue-color)" }}
           >
-            <img src={ChemicalsImg} alt="" />
-            <div>
+            <img data-aos="fade-right" src={ChemicalsImg} alt="" />
+            <div data-aos="fade-left">
               <span>
                 <b>
                   {t("chemicals.text2.title")}
@@ -84,7 +84,7 @@ export default function Chemicals() {
               </p>
             </div>
           </div>
-          <center>
+          <center style={{ marginTop: 20 }} data-aos="fade-up">
             <span>
               <b>
                 {t("chemicals.text3.title")}
@@ -95,7 +95,7 @@ export default function Chemicals() {
             </p>
           </center>
 
-          <center>
+          <center data-aos="fade-up">
             <span>
               <b>
                 {t("chemicals.text3.title1")}

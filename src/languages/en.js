@@ -1150,6 +1150,7 @@ const enTranslation = {
       book_text:
         "Schedule a 30-minute meeting with our team to explore how we can tailor our support to meet the unique needs of your project and work collaboratively to achieve your desired outcomes."
     }
-  }
+  },
+  
 };
 export default enTranslation;

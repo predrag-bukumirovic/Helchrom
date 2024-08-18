@@ -43,14 +43,14 @@ export default function Energy() {
         <h1 className="title">
           {t("energy.title")}
         </h1>
-        <center>
+        <center data-aos="fade-up">
           <p>
             {t("energy.sub_text")}
           </p>
         </center>
 
         <div className="row" style={{ background: "var(--light-blue-color)" }}>
-          <div>
+          <div data-aos="fade-right">
             <span>
               <b>
                 {t("energy.text1.title")}
@@ -69,16 +69,16 @@ export default function Energy() {
               {t("energy.text1.text1")}
             </p>
           </div>
-          <img src={EnergyImg1} alt="" />
+          <img data-aos="fade-left" src={EnergyImg1} alt="" />
         </div>
 
         <div>
           <div
             className="row"
-            style={{ background: "var(--light-blue-color)" }}
+            style={{ background: "var(--light-blue-color)", marginTop: 50 }}
           >
-            <img src={EnergyImg2} alt="" />
-            <div>
+            <img data-aos="fade-right" src={EnergyImg2} alt="" />
+            <div data-aos="fade-left">
               <span>
                 <b>
                   {t("energy.text2.title")}
@@ -109,7 +109,7 @@ export default function Energy() {
           </div>
 
           <center>
-            <p style={{ marginBottom: 0 }}>
+            <p style={{ margin: "10px 0" }}>
               {t("energy.check")}
             </p>
             <br />

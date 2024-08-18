@@ -48,7 +48,7 @@ export default function innoLab() {
           <h1 className="title" style={{ textTransform: "capitalize" }}>
             Helmchron InnoLAB
           </h1>
-          <p>
+          <p data-aos="fade-up">
             At Helmchron, we believe in pushing the boundaries of knowledge and
             technology to create a higher quality of life for the coming
             generations. Helmchron InnoLAB is our research initiative dedicated
@@ -60,7 +60,7 @@ export default function innoLab() {
         </center>
 
         <div className="moving-text">
-          <img src={imgLab1} alt="InnoLAN img 1" />
+          <img data-aos="fade-zoom" src={imgLab1} alt="InnoLAN img 1" />
           <div className="marquee">
             <p>
               <span>The Spirit of Innovation</span> Helmchron InnoLAB
@@ -72,7 +72,7 @@ export default function innoLab() {
         </div>
 
         <div style={{ marginTop: 20 }} className="row">
-          <div>
+          <div data-aos="fade-right">
             <span>
               <b>How did it all begin?</b>
             </span>
@@ -108,7 +108,7 @@ export default function innoLab() {
             </p>
           </div>
 
-          <img src={imgLab2} alt="Inolab 2" />
+          <img data-aos="fade-left" src={imgLab2} alt="Inolab 2" />
         </div>
 
         <center>

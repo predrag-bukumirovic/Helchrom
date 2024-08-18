@@ -55,7 +55,7 @@ export default function Navigator() {
           <h1 className="title" style={{ textTransform: "capitalize" }}>
             Helmchron N<img src={nav} alt="A Navigator" />VIGATOR
           </h1>
-          <p>
+          <p data-aos="fade-up">
             Helmchron Navigator is our initiative designed to provide consulting
             and support throughout the entire plant design lifecycle. Whether
             you're commencing a greenfield or brownfield project, Helmchron
@@ -68,7 +68,7 @@ export default function Navigator() {
           style={{ background: "var(--light-blue-color)", margin: "50px 0" }}
         >
           <div className="row container-main">
-            <div>
+            <div data-aos="fade-right">
               <span style={{ fontWeight: "bold", fontSize: 20 }}>
                 Helmchron Navigator Overview
               </span>
@@ -94,11 +94,11 @@ export default function Navigator() {
               </a>
             </div>
 
-            <img src={Overview} alt="" />
+            <img data-aos="fade-left" src={Overview} alt="" />
           </div>
         </div>
 
-        <center>
+        <center data-aos="fade-up">
           <h2 style={{ fontWeight: "bold", marginTop: 40 }}>
             Benefits of Helmchron Navigator
           </h2>
@@ -106,7 +106,7 @@ export default function Navigator() {
 
         <div className="our-home container-main">
           <div className="services-icon container-main">
-            <div>
+            <div data-aos="fade-zoom">
               <img src={icon1} alt="" />
 
               <h3>Proactive Planning</h3>
@@ -116,7 +116,7 @@ export default function Navigator() {
                 strategic plan to achieve the outcomes.
               </p>
             </div>
-            <div>
+            <div data-aos="fade-zoom">
               <img src={icon2} alt="" />
               <h3>Expert Guidance</h3>
 
@@ -125,7 +125,7 @@ export default function Navigator() {
                 recommendations tailored to the project`s specific needs.
               </p>
             </div>
-            <div>
+            <div data-aos="fade-zoom">
               <img src={icon3} alt="" />
               <h3>Agile Execution</h3>
               <p>
@@ -134,7 +134,7 @@ export default function Navigator() {
                 plans.
               </p>
             </div>
-            <div>
+            <div data-aos="fade-zoom">
               <img src={icon4} alt="" />
               <h3>Cost and Schedule Management</h3>
               <p>
@@ -143,7 +143,7 @@ export default function Navigator() {
                 budget and schedule is one of the main benefits.
               </p>
             </div>
-            <div>
+            <div data-aos="fade-zoom">
               <img src={icon5} alt="" />
               <h3>Comprehensive Support</h3>
               <p>
@@ -155,7 +155,7 @@ export default function Navigator() {
           </div>
         </div>
 
-        <center className="container-main">
+        <center data-aos="fade-up" className="container-main">
           <p style={{ marginBottom: 0 }}>
             To learn more about how Helmchron Navigator supports plant projects,
             schedule a meeting with our team.
@@ -171,7 +171,7 @@ export default function Navigator() {
         </center>
 
         <div style={{ margin: "50px auto" }} className="row container-main">
-          <div>
+          <div data-aos="fade-right">
             <span style={{ fontWeight: "bold", fontSize: 20 }}>
               A Structured and Flexible Framework
             </span>
@@ -200,12 +200,12 @@ export default function Navigator() {
             </ul>
           </div>
 
-          <img src={Framework} alt="" />
+          <img data-aos="fade-left" src={Framework} alt="" />
         </div>
 
         <div className="guarantee padding30 container-main">
-          <img src={end} alt="" />
-          <div>
+          <img data-aos="fade-right" src={end} alt="" />
+          <div data-aos="fade-left">
             <span style={{ fontWeight: "bold", fontSize: 20 }}>
               Comprehensive quality guarantee
             </span>

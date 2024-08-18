@@ -116,13 +116,13 @@ const One = () => {
 
         <div className="box-img">
           <div>
-            <img src={mainImg} alt="Main" />
+            <img src={mainImg} alt="Main1" />
           </div>
           <div>
-            <img src={mainImg1} alt="Main" />
+            <img src={mainImg1} alt="Main2" />
           </div>
           <div>
-            <img src={mainImg2} alt="Main" />
+            <img src={mainImg2} alt="Main3" />
           </div>
         </div>
       </div>
@@ -131,7 +131,7 @@ const One = () => {
       <div className="container-main padding30">
         <h2 className="title">Focus on Success with HELMCHRONe</h2>
 
-        <center>
+        <center data-aos="fade-up">
           <p>
             Helmchron ONE is our service concept in which we dedicate ONE team
             to ONE project and ONE client only. Collaborating with our clients,
@@ -144,7 +144,7 @@ const One = () => {
         </center>
 
         <div className="our-home container-main">
-          <center>
+          <center data-aos="fade-up">
             <span>Helmchron ONE Approach</span>
           </center>
 
@@ -152,8 +152,8 @@ const One = () => {
             className="services-icon"
             style={{ width: "70%", margin: "50px auto" }}
           >
-            <div>
-              <img src={icon1} alt="" />
+            <div data-aos="fade-zoom">
+              <img src={icon1} alt="Icon 1" />
 
               <h3>ONE TEAM</h3>
               <p>
@@ -164,8 +164,8 @@ const One = () => {
                 outcomes.
               </p>
             </div>
-            <div>
-              <img src={icon2} alt="" />
+            <div data-aos="fade-zoom">
+              <img src={icon2} alt="Icon 2" />
               <h3>ONE CLIENT</h3>
               <p>
                 We believe that the key to a successful partnership is undivided
@@ -174,8 +174,8 @@ const One = () => {
                 understanding of the client’s unique needs and goals.
               </p>
             </div>
-            <div>
-              <img src={icon3} alt="" />
+            <div data-aos="fade-zoom">
+              <img src={icon3} alt="Icon 3" />
 
               <h3>ONE PROJECT</h3>
               <p>
@@ -187,7 +187,7 @@ const One = () => {
             </div>
           </div>
 
-          <center>
+          <center data-aos="fade-up">
             <p style={{ marginBottom: 30 }}>
               To learn more about Helmchron ONE and our services, schedule a
               meeting with our team.
@@ -268,7 +268,7 @@ const One = () => {
       </div>
 
       <div className="container-main padding30 why-one">
-        <div style={{ marginTop: 50 }}>
+        <div data-aos="fade-right" style={{ marginTop: 50 }}>
           <span>Why Helmchron ONE?</span>
 
           <p style={{ marginTop: 30 }}>
@@ -292,7 +292,7 @@ const One = () => {
             Read more
           </a>
         </div>
-        <img src={inzenjer} alt="" />
+        <img data-aos="fade-left" src={inzenjer} alt="inzenjer" />
       </div>
     </div>
   );
