@@ -77,16 +77,18 @@ export default function News() {
           <div>
             <div>
               <TextRender texts={teamTalk} />
-              <h2>HELMCHRON TeamTalk</h2>
-              <span>April, 2024 I Belgrade, Serbia</span>
+              <h2>
+                {t("news.posts.post1.title")}
+              </h2>
+              <span>
+                {t("news.posts.post1.time")}
+              </span>
               <p>
-                TeamTalk is our short video format concept designed for
-                discussing industry trends, insights, and future perspectives,
-                our expertise and lessons learned, the impact of our values on
-                our and our partners` outcomes, inspirational career path
-                stories and milestones, and more.
+                {t("news.posts.post1.text")}
               </p>
-              <a href="/news/team-talk">Read more</a>
+              <a href="/news/team-talk">
+                {t("read_more")}
+              </a>
             </div>
             <div>
               <img src={Talk} alt="News" />
@@ -99,15 +101,18 @@ export default function News() {
           <div>
             <div>
               <TextRender texts={k2022} />
-              <h2>K2022</h2>
-              <span>19 - 26 October 2022 I Dusseldorf, Germany</span>
+              <h2>
+                {t("news.posts.post2.title")}
+              </h2>
+              <span>
+                {t("news.posts.post2.time")}
+              </span>
               <p>
-                K2022 covered the main challenges and hot topics from the global
-                plastic and rubber industry - circular economy, sustainable
-                materials for the future, and the scope of digitalization in
-                achieving these outcomes.
+                {t("news.posts.post2.text")}
               </p>
-              <a href="/news/k2022">Read more</a>
+              <a href="/news/k2022">
+                {t("read_more")}
+              </a>
             </div>
             <div>
               <img src={Dusseldorf} alt="News" />
@@ -120,16 +125,18 @@ export default function News() {
           <div>
             <div>
               <TextRender texts={achemaText} />
-              <h2>ACHEMA 2022</h2>
-              <span>22 - 26 August 2022 I Frankfurt, Germany</span>
+              <h2>
+                {t("news.posts.post3.title")}
+              </h2>
+              <span>
+                {t("news.posts.post3.time")}
+              </span>
               <p>
-                ACHEMA 2022 was focused on the latest trends and innovations in
-                process and chemical engineering, including sustainability,
-                digitalization, and industry 4.0. It provided an opportunity to
-                discuss some of the most pressing challenges of today and assess
-                potential solutions for the future.
+                {t("news.posts.post3.text")}
               </p>
-              <a href="/news/achema">Read more</a>
+              <a href="/news/achema">
+                {t("read_more")}
+              </a>
             </div>
             <div>
               <img src={Frankfurt} alt="News" />

@@ -501,7 +501,7 @@ export default function Contact() {
             <h2 className="title">
               {t("contact.form.book")}
             </h2>
-            <p>
+            <p style={{ textAlign: "center" }}>
               {t("contact.form.book_text")}
             </p>
 

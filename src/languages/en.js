@@ -1,7 +1,23 @@
 const enTranslation = {
   home: {
     welcome: `<p>WELCOME</p> <b>to Helmchron official website.</b>`,
-    wel_text: `Helmchron is a family-owned company dedicated to providing comprehensive and full-service engineering solutions for the manufacturing facilities of pharmaceuticals, chemicals, food and bio products, electronics, energy, and oil and gas. We take pride in contributing to the manufacturing of globally available, safe, and high-quality products since 2010. Our mission has remained the same since our beginnings - we improve the quality of life for everyone everywhere whilst keeping our environment healthy for the coming generations. Today, our scope is broader and our team more diverse providing unique perspectives, agility, and efficacy.<br /> Our engineering solutions are now delivered to leaders and innovators across different industries with a focus on global impact, sustainable outcomes, and long-lasting partnerships.`
+    wel_text: `Helmchron is a family-owned company dedicated to providing comprehensive and full-service engineering solutions for the manufacturing facilities of pharmaceuticals, chemicals, food and bio products, electronics, energy, and oil and gas. We take pride in contributing to the manufacturing of globally available, safe, and high-quality products since 2010. Our mission has remained the same since our beginnings - we improve the quality of life for everyone everywhere whilst keeping our environment healthy for the coming generations. Today, our scope is broader and our team more diverse providing unique perspectives, agility, and efficacy.<br /> Our engineering solutions are now delivered to leaders and innovators across different industries with a focus on global impact, sustainable outcomes, and long-lasting partnerships.`,
+    after:
+      "After the completion of operational activities, we provide guarantees and stand accountable for the quality of our work, offering ongoing support and consultation within the project scope to address our client's questions and concerns, ensuring the continued success of our joined project even after commissioning.",
+    banners: {
+      banner1: {
+        text: "Delivering plant design engineering and project execution solutions across diverse industries since 2010."
+      },
+      banner2: {
+        text: "Comprehensive plant engineering solutions, from consulting and pre-planning to equipment management and commissioning."
+      },
+      banner3: {
+        text: 'Our references include state-of-the-art aseptic pharma facilities, leading chemical manufacturers, and diverse food producers.'
+      },
+      banner4: {
+        text: 'We operate across six major business departments, with pharma and food being the largest.'
+      },
+    }
   },
   who_are_we: {
     title: "Who are we?",
@@ -134,19 +150,200 @@ const enTranslation = {
         title: "HELMCHRON TeamTalk",
         time: "April, 2024 I Belgrade, Serbia",
         text:
-          "TeamTalk is our short video format concept designed for discussing industry trends, insights, and future perspectives, our expertise and lessons learned, the impact of our values on our and our partners` outcomes, inspirational career path stories and milestones, and more."
+          "TeamTalk is our short video format concept designed for discussing industry trends, insights, and future perspectives, our expertise and lessons learned, the impact of our values on our and our partners` outcomes, inspirational career path stories and milestones, and more.",
+        content: {
+          title: "Introducing TeamTalk",
+          text: `We are thrilled to present TeamTalk, our new initiative created to provide a deeper understanding of trending topics within our domain highlighting the primary drivers behind our mission and commitment to operational excellence. <br/><br/> TeamTalk serves as a platform where our team members share insights into various aspects of our operations, culture, and vision. By discussing industry trends, analyzing market dynamics, and envisioning the evolving landscape, we aim to deliver valuable insights and future perspectives to our community. <br/><br/> In addition to external reflections, we will share how our values shape our strategy, decisions, and results, ultimately impacting our partners' outcomes. TeamTalk will highlight our expertise, lessons learned, and success stories, striving to inspire and inform.<br/><br/> Aligned with our dedication to socially responsible initiatives, we wish to motivate and empower children and teenagers to embrace a healthy lifestyle, fostering discipline and cultivating teamwork skills along the way. <br/><br/> Join the conversation by sharing your questions or topics you would like to hear us discuss. Welcome to TeamTalk!`
+        }
       },
       post2: {
         title: "K2022",
         time: "19 - 26 October 2022 I Dusseldorf, Germany",
         text:
-          "K2022 covered the main challenges and hot topics from the global plastic and rubber industry - circular economy, sustainable materials for the future, and the scope of digitalization in achieving these outcomes."
+          "K2022 covered the main challenges and hot topics from the global plastic and rubber industry - circular economy, sustainable materials for the future, and the scope of digitalization in achieving these outcomes.",
+        content: {
+          title: "K2022",
+          sub_text1:
+            "The industry is facing significant challenges when it comes to energy consumption and carbon footprint. In order to overcome these challenges and become climate neutral and sustainable in the long run, the industry must deliver innovation to abolish plastic already present in our environment and reuse plastic materials at the end of their lifecycle as raw materials.",
+          sub_text2:
+            "This was one of the central topics of K2022. The other was digitalization and the ways it can support sustainability efforts and upgrade services for the end consumers.",
+          text1: `
+              <p>
+                  On the fairgrounds, many exciting innovative solutions were
+                  presented - from different ways how to save energy, produce
+                  energy inside your manufacturing facilities using solar power,
+                  renewable raw materials, digital passports for plastic
+                  materials that will have all the data for the recycling
+                  assessment, etc.
+                </p>
+                <b>
+                  <p>Sustainability and circular economy</p>
+                </b>
+                <p>
+                  The use of alternative energy sources, like solar, wind, or
+                  geothermal, and investment in energy-efficient equipment, will
+                  not only decrease carbon emissions but also reduce energy
+                  costs. Implementation of energy recovery systems to capture
+                  and reuse waste heat and other forms of energy would also be
+                  beneficial.
+                  <br />
+                  It was agreed that circular economy must be part of product
+                  design, including its durability, reparability, and
+                  recyclability.
+                </p>
+          `,
+          text2: `
+              <p>
+                The concept of <b>Extended Producer Responsibility</b> should be
+                implemented, meaning that manufacturers should have full
+                responsibility for the entire lifecycle of their product,
+                including its end-of-life stage.
+              </p>
+              <p>
+                Efficient use of resources and minimization of waste generation
+                can, also, be accomplished by creating sustainable partnerships
+                with other industries or organizations to exchange waste
+                materials, by-products, or energy.
+              </p>
+          `,
+          text3: `
+                <b>
+                  <p>Digitalization</p>
+                </b>
+                <p>
+                  Digitalization was another hot topic of K2022. We could see
+                  and test some interesting digital solutions from playing chess
+                  with a robot to intelligent drying and conveying machines.
+                </p>
+                <p>
+                  Manufacturers are leveraging <b>Digital Twin technology</b> to
+                  optimize operations, enhance efficiency, and reduce waste. By
+                  creating equipment's or plant's digital twin, manufacturers
+                  can simulate various scenarios, identify bottlenecks, and
+                  optimize processes to minimize energy consumption or test the
+                  equipment prior to go-live.
+                </p>
+          `,
+          text4: `
+                <p>
+                  <b>Advanced Process Control</b> systems utilize real-time data
+                  and advanced algorithms to optimize process control, improve
+                  efficiency, and reduce energy consumption. The goal is to
+                  enhance process stability, minimize product variability, and
+                  optimize energy-intensive operations.
+                </p>
+                <p>
+                  <b>Predictive Analytics</b> techniques can assess vast amounts
+                  of data collected from sensors, equipment, and production
+                  processes. This allows the identification of patterns,
+                  predicts failures, optimizes maintenance schedules, and
+                  improves overall operational efficiency.
+                </p>
+                <p>
+                  <b>Energy Management Systems</b> help identify energy-saving
+                  opportunities, monitor energy usage patterns, and enable
+                  proactive energy management to achieve sustainability goals.
+                  These solutions utilize real-time data, automation, and
+                  machine learning to optimize energy consumption.
+                </p>
+          `,
+          text5: `
+            <p>
+              All the innovations presented in K2022 are transforming the
+              industry while driving change toward a healthier environment. We
+              are excited to see what will K fair bring in 2025.
+            </p>
+            <p>See you in Düsseldorf, 18-25 October 2025!</p>
+          `
+        }
       },
       post3: {
         title: "ACHEMA 2022",
         time: "22 - 26 August 2022 I Frankfurt, Germany",
         text:
-          "ACHEMA 2022 was focused on the latest trends and innovations in process and chemical engineering, including sustainability, digitalization, and industry 4.0. It provided an opportunity to discuss some of the most pressing challenges of today and assess potential solutions for the future."
+          "ACHEMA 2022 was focused on the latest trends and innovations in process and chemical engineering, including sustainability, digitalization, and industry 4.0. It provided an opportunity to discuss some of the most pressing challenges of today and assess potential solutions for the future.",
+        content: {
+          sub_text:
+            "ACHEMA 2022 brought together industry leaders, researchers, and innovators from around the world and our team attended it. <br /> The event showcased the latest trends and innovations in the chemical and process industries and provided a platform for discussion and collaboration on some of the most pressing challenges facing the industry today.",
+          text1: `
+              <span>Day 1.</span>
+                <p>
+                  The focus of the first day was on the latest trends and
+                  innovations in the chemical and process industries, with a
+                  particular emphasis on sustainability and digitalization. One
+                  of the most talked-about presentations of the day was a
+                  keynote speech by Dr. Anna Lennquist, the Chief Sustainability
+                  Officer at H&M Group. Dr. Lennquist discussed the importance
+                  of sustainability in the fashion industry and highlighted some
+                  of the ways that H&M is working to reduce its environmental
+                  impact. <br /> Also, several new digital technologies designed
+                  to streamline and optimize various industrial processes were
+                  presented. This included new software platforms for process
+                  monitoring and control, as well as cutting-edge sensors and
+                  instrumentation for real-time data analysis.
+                </p>
+                `,
+          text2: `
+              <span>Day 2.</span>
+              <p>
+                The second day of ACHEMA 2022 was dedicated to the future of
+                chemical engineering and process technology. There were several
+                panel discussions and presentations on topics such as artificial
+                intelligence, robotics, and Industry 4.0. One of the standout
+                events of the day was a panel discussion featuring leading
+                experts in the field of chemical engineering. The panelists
+                discussed the challenges and opportunities facing the industry
+                in the years to come, including the need to embrace new
+                technologies and approaches to manufacturing. <br /> There were
+                also several presentations on the latest developments in
+                renewable energy and sustainable manufacturing. These included
+                new processes for converting waste materials into valuable
+                products, as well as new technologies for capturing and storing
+                carbon emissions.
+              </p>
+          `,
+          text3: `
+              <span>Day 3.</span>
+                <p>
+                  The main topics of the third day were the latest trends and
+                  innovations in the pharmaceutical and biotechnology
+                  industries. There were several presentations and panel
+                  discussions on topics such as drug discovery, bioprocessing,
+                  and personalized medicine. One of the most talked-about events
+                  was a speech by Dr. Jennifer Doudna, the co-discoverer of
+                  CRISPR-Cas9 gene editing technology. Dr. Doudna discussed the
+                  potential of gene editing to revolutionize medicine and
+                  highlighted some of the challenges and ethical considerations
+                  associated with this technology. <br /> Other highlights of
+                  the day included presentations on the latest developments in
+                  bioprocessing and drug delivery, as well as new technologies
+                  for diagnosing and treating diseases.
+                </p>
+          `,
+          text4: `
+              <span>Day 4.</span>
+              <p>
+                The final day of ACHEMA 2022 was focused on the latest trends
+                and innovations in laboratory and analytical equipment. The
+                future of analytical chemistry was also discussed, including the
+                latest developments in analytical instrumentation and
+                techniques, as well as the challenges and opportunities facing
+                the field in the years to come. <br /> Latest developments in
+                laboratory automation and robotics and technologies for sample
+                preparation and handling were also presented.
+              </p>
+              <p>
+                As ACHEMA 2022 came to a close, attention began to turn towards
+                the next edition of the event, ACHEMA 2024. One of the main
+                themes of ACHEMA 2024 is likely to be the continued focus on
+                sustainability and digitalization. As the world becomes
+                increasingly conscious of the need to reduce its environmental
+                impact and embrace new technologies, the chemical and process
+                industries will be at the forefront of this transformation.
+              </p>
+          `,
+          eager: "We are eager to visit ACHEMA 2024."
+        }
       }
     }
   },
@@ -491,7 +688,9 @@ const enTranslation = {
                 quality of life and keep our environment healthy for the coming generations.<br/>
                 Learn about our services and competencies.`
       }
-    }
+    },
+    at_helm:
+      "At Helmchron, our vision is clear: to drive meaningful change through services and partnerships that prioritize health for everyone while protecting our planet. By placing our clients and their outcomes at the core of our mission, we strive to deliver sustainable engineering solutions that will have a lasting impact on the quality of life for the coming generations. This shared commitment empowers our team to uphold the highest professional standards, ensuring we deliver exceptional results every time."
   },
 
   our_values: {
@@ -1104,8 +1303,8 @@ const enTranslation = {
   contact: {
     title: "GET IN TOUCH",
     sub_text:
-      "Looking for more information or would like to learn about career opportunities in Helmchron? <br/> Please submit your inquiry and our team will reply as soon as possible.",
-    required: `You can also submit your inquires via the contact form. <br />
+      "If you’re seeking more information or are interested in career opportunities at Helmchron, please submit your inquiry, <br/> and our team will respond as soon as possible. <br/> Email us directly at office@helmchron.com or use our contact form below.",
+    required: `
             <span class="info-send">
               Fields marked with an asterisk (*) are required.
             </span>`,

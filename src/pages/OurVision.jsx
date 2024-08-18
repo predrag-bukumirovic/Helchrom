@@ -191,15 +191,7 @@ export default function OurVision() {
 
             <div>
               <p style={{ marginTop: 30 }}>
-                At Helmchron, our vision is clear: to drive meaningful change
-                through services and partnerships that prioritize health for
-                everyone while protecting our planet. By placing our clients and
-                their outcomes at the core of our mission, we strive to deliver
-                sustainable engineering solutions that will have a lasting
-                impact on the quality of life for the coming generations. This
-                shared commitment empowers our team to uphold the highest
-                professional standards, ensuring we deliver exceptional results
-                every time.
+                {t("vision.at_helm")}
               </p>
 
               <div style={{ float: "right" }}>

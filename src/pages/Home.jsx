@@ -114,11 +114,10 @@ export default function Home() {
             <h2>Helmchron</h2>
             <div className="line" />
             <p>
-              Delivering plant design engineering and project execution
-              solutions across diverse industries since 2010.
+              {t("home.banners.banner1.text")}
             </p>
             <a className="book-btn" href="/">
-              Read more
+              {t("read_more")}
             </a>
           </div>
 
@@ -127,13 +126,13 @@ export default function Home() {
               <FaCircleChevronRight
                 style={{ color: "var(--brend-color)", fontSize: 30 }}
               />
-              Services
+              {t("navbar.our_services")}
             </a>
             <a href="/our-references">
               <FaCircleChevronRight
                 style={{ color: "var(--brend-color)", fontSize: 30 }}
               />
-              References
+              {t("navbar.our_reference")}
             </a>
             <a href="/our-references">
               <FaCircleChevronRight
@@ -146,14 +145,15 @@ export default function Home() {
         <div className="banner-home banner2">
           <div className="bg" />
           <div className="text-banner">
-            <h2>Services</h2>
+            <h2>
+              {t("navbar.our_services")}
+            </h2>
             <div className="line" />
             <p>
-              Comprehensive plant engineering solutions, from consulting and
-              pre-planning to equipment management and commissioning.
+              {t("home.banners.banner2.text")}
             </p>
             <a className="book-btn" href="/our-services">
-              Read more
+              {t("read_more")}
             </a>
           </div>
 
@@ -162,13 +162,13 @@ export default function Home() {
               <FaCircleChevronRight
                 style={{ color: "var(--brend-color)", fontSize: 30 }}
               />
-              Who are we?
+              {t("navbar.who_are_we")}
             </a>
             <a href="/our-references">
               <FaCircleChevronRight
                 style={{ color: "var(--brend-color)", fontSize: 30 }}
               />
-              References
+              {t("navbar.our_reference")}
             </a>
             <a href="/our-references">
               <FaCircleChevronRight
@@ -181,14 +181,15 @@ export default function Home() {
         <div className="banner-home banner3">
           <div className="bg" />
           <div className="text-banner">
-            <h2>References</h2>
+            <h2>
+              {t("navbar.our_reference")}
+            </h2>
             <div className="line" />
             <p>
-              Our references include state-of-the-art aseptic pharma facilities,
-              leading chemical manufacturers, and diverse food producers.
+              {t("home.banners.banner3.text")}
             </p>
             <a className="book-btn" href="/our-references">
-              Read more
+              {t("read_more")}
             </a>
           </div>
 
@@ -197,13 +198,13 @@ export default function Home() {
               <FaCircleChevronRight
                 style={{ color: "var(--brend-color)", fontSize: 30 }}
               />
-              Who are we?
+              {t("navbar.who_are_we")}
             </a>
             <a href="/our-services">
               <FaCircleChevronRight
                 style={{ color: "var(--brend-color)", fontSize: 30 }}
               />
-              Services
+              {t("navbar.our_services")}
             </a>
             <a href="/our-references">
               <FaCircleChevronRight
@@ -219,11 +220,10 @@ export default function Home() {
             <h2>Departments</h2>
             <div className="line" />
             <p>
-              We operate across six major business departments, with pharma and
-              food being the largest.
+              {t("home.banners.banner4.text")}
             </p>
             <a className="book-btn" href="/">
-              Read more
+              {t("read_more")}
             </a>
           </div>
 
@@ -232,13 +232,13 @@ export default function Home() {
               <FaCircleChevronRight
                 style={{ color: "var(--brend-color)", fontSize: 30 }}
               />
-              Who are we?
+              {t("navbar.who_are_we")}
             </a>
             <a href="/our-services">
               <FaCircleChevronRight
                 style={{ color: "var(--brend-color)", fontSize: 30 }}
               />
-              Services
+              {t("navbar.our_services")}
             </a>
             <a href="/our-references">
               <FaCircleChevronRight
@@ -326,11 +326,7 @@ export default function Home() {
 
       <center className="container-main">
         <p style={{ marginBottom: 30 }}>
-          After the completion of operational activities, we provide guarantees
-          and stand accountable for the quality of our work, offering ongoing
-          support and consultation within the project scope to address our
-          client's questions and concerns, ensuring the continued success of our
-          joined project even after commissioning.
+          {t("home.after")}
         </p>
         <a className="book-btn" href="/our-services">
           {t("read_more")}
