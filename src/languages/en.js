@@ -6,13 +6,13 @@ const enTranslation = {
   who_are_we: {
     title: "Who are we?",
     text_sub:
-      "Helmchron is a family-owned company located in Belgrade, Serbia. We provide best-in-class process and chemical engineering solutions in an agile and sustainable way to both, international and local clients, for more than 10 years. <br/><br/> We specialize in delivering process and chemical engineering solutions in the following business areas:",
+      "Helmchron is a family-owned company based in Belgrade, Serbia, providing plant design engineering and project management solutions for over a decade. Our expertise spans multiple industries, with a strong focus on pharmaceutical manufacturing. We take pride in serving both local and international clients with commitment, expertise, and agility. <br/> Discover our business divisions:",
     history: "our history",
     history_text:
-      "Our journey of innovation and commitment to a sustainable future started in 2010 in Belgrade, Serbia. We have embarked on a mission to revolutionize the quality of life for the coming generations with our process and chemical engineering solutions. <br/><br/> From the early beginnings, we steadily expanded our reach, initially serving local projects. In 2013, we set our sights on the EU market, amplifying our impact on a global scale by partnering with industry leaders in the pharmaceuticals and chemicals sectors. In 2020, the pandemic only fueled our determination to contribute to global health and well-being. <br/><br/> Helmchron path is one of continuous growth and evolution, where every project is a testament to our unwavering commitment to excellence and sustainability. As we look ahead, our aspiration remains steadfast—to make an even greater impact globally, ultimately benefiting everyone everywhere.",
+      "Our journey began in 2010 in Belgrade, Serbia, driven by our commitment to sustainable manufacturing and improving the quality of life through our plant design engineering expertise. Starting with local projects, we gradually expanded our scope and capabilities. <br/><br/> By 2013, we extended our services to the EU market, collaborating with leading companies in the pharmaceuticals and chemicals industries. Our growth continued through the global challenges of 2020 and the pandemic, reinforcing our dedication to health and well-being for everyone. <br/><br/> Our progress has been steady, with a focus on delivering reliable, sustainable plant design engineering solutions. As we look to the future, we remain committed to continuously developing our expertise, fostering strong partnerships, and making a positive global impact, ultimately benefiting everyone, everywhere.",
     credo_title: "our credo",
     credo_text:
-      "Our expertise and our impact are led by our vision and purpose to upgrade the quality of life, maintain strong, long-lasting <br /> partnerships, and empower our team with living by our values. Our accountability lies in providing process and chemical <br /> engineering solutions that enable manufacturing of efficient and safe products globally, guided by the belief in equal <br /> access to pharmaceuticals, chemicals, fuels, energy, and food. We prioritize our partners` needs and outcomes, our core <br /> values, environmental sustainability and stability of our business operations, envisioning a high quality of life for everyone.",
+      "Our expertise and impact are driven by our vision to enhance the quality of life, build enduring client relationships and partnerships, and empower our team through our core values. We are committed to providing plant design engineering solutions that enable the manufacturing of efficient and safe products worldwide. Our service is guided by the belief of equal access to pharmaceuticals, healthy food, chemicals, fuels, and energy. We prioritize our partners’ needs and outcomes, environmental sustainability, and the stability of our business operations while envisioning a healthier future for everyone.",
     quotation:
       "We believe that expertise, innovation, and values create long-term <br/> impact. Our purpose is to deliver outcomes that positively change <br/> the world around us, maintain strong partnerships, and empower <br/> our team to thrive in an environment built on our core values. <br/> Our main responsibility lies within our vision - to support the manufacturing of products that will be efficient and safe and serve the global society and environment."
   },
@@ -179,22 +179,22 @@ const enTranslation = {
   team: {
     title: "Our Team",
     sub_text:
-      "  We are a unified team of professionals coming from diverse educational backgrounds and experiences, all deeply committed to our shared vision and passionate about what we do. Embracing diversity as a core value, we recognize and celebrate the richness of our backgrounds, knowledge, and experiences that collectively drive our results.",
+      "We are a cohesive team of dedicated professionals, each bringing a unique educational background, experience, and passion to our shared vision. Embracing diversity as a fundamental value, we recognize and celebrate the varied perspectives and expertise that enrich our work and drive our collective success. Our commitment to our mission and outcomes unites us in striving for exceptional results.",
 
     team1: {
       name: "Milos Ivosevic, Ph.D.",
       position: "CEO, Mechanical Engineer",
       text:
-        "Milos Ivosevic is the founder of the company and creator of the vision. Enthusiastic and entrepreneurial, Milos was always focused on extensive international projects that contribute to improving the quality of life for the coming generations. The turning point of his university period was the experience he gained at the well-known Paul Scherrer Institut (PSI) in Switzerland. While studying, he was, also, hands-on and involved in multiple engineering projects in Serbia and Croatia. During the last 10 years, Milos worked as part of various multinational teams and did projects for the leading chemical and pharmaceutical innovators (BASF, Novartis, Roche, etc.). He did his Master's and PhD thesis at the University of Belgrade, Faculty of Mechanical Engineering. In his leisure time, he enjoys traveling and discovering new cultures, sports, and relaxing by the river."
+        "Milos Ivosevic is the founder of Helmchron and a third-generation engineer with extensive academic and industry experience. He completed his Master’s and PhD in Process Engineering at the University of Belgrade and gained advanced experience at the Paul Scherrer Institute (PSI) in Switzerland. His professional background includes work with leading global companies and institutions. Milos` dedication to global impact shapes Helmchron’s mission and vision. Milos is actively engaged in several professional organizations and associations, emphasizing ongoing learning and mentorship. In his personal time, he enjoys traveling, learning languages, engaging in sports activities, and relaxing by the river."
     },
     team2: {
       name: "Anja Andjelkovic, M.Sc.",
       position: "CTO, Mechanical Engineer",
       text:
-        "Anja Andjelkovic joined the team in 2020. bringing additional focus to our operations and expansion. Her comprehensive skill set, knowledge, and motivation have brought a new perspective and strengthened the outcomes we deliver to our partners. As a CTO, Anja is responsible for projects` leadership, seamless and agile project execution and coaching our team of projects associates and engineering experts. She holds a Masters degree in Mechanical Engineering from the University of Belgrade. Anja used to play volleyball professionally and her discipline and result orientation are considered to be the qualities that greatly enrich our team. In her spare time, Anja likes to do sports and travel with her family."
+        "Anja Andjelkovic has been a key member of Helmchron team since 2018, significantly contributing to our operations and growth. With a Master’s degree in Mechanical Engineering from the University of Belgrade, Anja oversees efficient project execution and leads our team of engineering experts and project associates. Her background in professional team sports has fostered a disciplined and results-driven approach, enhancing our team`s efficiency and client satisfaction. Anja has contributed to major international projects and is one of the leading mentors at Helmchron Academy. Outside of work, she enjoys staying active, spending time with her dog, and traveling with her family."
     },
     talk: {
-      title: "what do tou value the most?",
+      title: "what do you value the most?",
       sub: `Helmchron <span>TeamTalk</span>`
     },
 
@@ -467,7 +467,8 @@ const enTranslation = {
 
   vision: {
     title: "Our vision and mission",
-    sub_text: `In an era when the health of our planet and humankind has never been more fragile, diverse and long-lasting partnerships will lead the change toward a better future for the coming generations. <br/><br/> With our vision and mission as the priority, we put our clients at the center of everything we do. Our team proactively partners with international and local leaders who share our values and passion for innovative products that will improve the quality of life today and tomorrow. <br/><br/> We believe that bringing value to our clients brings value to our team, end users, and the planet. Together, we build a future that's brighter, fairer, and better for everyone.`,
+    sub_text:
+      "In a time of significant global challenges, leveraging comprehensive knowledge by forging diverse and enduring partnerships is essential for driving positive change and securing a better future for the coming generations. With our vision and mission as the priority, we put our clients at the center of everything we do. Our team strives to collaborate with local and international leaders who share our dedication to innovation and passion for creating products and services that enhance the quality of life today and in the future. We believe that bringing value to our clients brings value to our team, end users, and the planet. Together, we build a future that's brighter, fairer, and better for everyone.",
 
     our_strategic: {
       title: "our strategic focus areas",
@@ -486,32 +487,16 @@ const enTranslation = {
       },
       vision_: {
         title: "OUR VISION",
-        text: ` We deliver high-quality process and chemical engineering
-                    solutions that are meant to enhance the quality of life and
-                    keep our environment healthy for the coming generations.
-                    <br /> Learn about our services and competencies.`
+        text: ` We deliver high-quality plant design engineering and project execution      solutions that aim to enhance the
+                quality of life and keep our environment healthy for the coming generations.<br/>
+                Learn about our services and competencies.`
       }
     }
   },
 
   our_values: {
-    sub_text: `<p>
-            Our mission and our vision define what we do, and our purpose.
-            However, we deliver in our way of work, implementing our values in
-            every segment of our daily operations and in every interaction we
-            make - within our team, with our partners, with society, and with
-            the environment.
-          </p>
-          <p>We always start with ourselves, with our team.</p>
-          <p>
-            We wish that every employee feels safe to be their true and best
-            self, to come to work happy, and feel respected and appreciated. Our
-            team is a mirror of our culture, our expertise, and our values.
-          </p>
-          <p>
-            We are proud our values live within our company and are embedded in
-            Helmchron's DNA.
-          </p>`
+    sub_text:
+      "Our mission and vision define our objectives and purpose, but it is our values that define our way of work. We integrate our values in every segment of our daily operations and in every interaction we make - within our team, with our partners, with the community, and with the environment. We start by fostering a supportive environment within our team, ensuring that every employee feels secure, respected, and appreciated. We aim for each individual to come to work with a sense of satisfaction and to bring their best selves to their roles. Our team is a reflection of our culture, expertise, and core values. We take pride in the fact that our values are deeply embedded in Helmchron's culture, guiding our operations and strategy."
   },
 
   our_way: {
@@ -1151,6 +1136,101 @@ const enTranslation = {
         "Schedule a 30-minute meeting with our team to explore how we can tailor our support to meet the unique needs of your project and work collaboratively to achieve your desired outcomes."
     }
   },
-  
+  references: {
+    title: "Our References",
+    sub_text:
+      "Explore our most relevant projects across all our business divisions, discover our milestones, and our contributions to various sectors worldwide. <br/> For a comprehensive view of our work, schedule a meeting with our team.",
+    pharma: {
+      vettre: {
+        title: "vetter pharma",
+        text:
+          "Detailed engineering and construction planning of clean mediums for the new production plant."
+      },
+      novartis: {
+        title: "novartis",
+        text:
+          "Detailed engineering for the new production plant of innovative therapies."
+      },
+      roche: {
+        title: "roche diagnostics ",
+        text:
+          "Detailed engineering for the new production plant of medical device."
+      },
+      bachem: {
+        title: "bachem",
+        text: "Piping and support design for the new production plant."
+      }
+    },
+    food: {
+      dsm: {
+        title: "dsm",
+        text:
+          "Pre-planning for the new production plant of cattle feed additive."
+      },
+      destilla: {
+        title: "destilla",
+        text: "Basic engineering and consulting for a new extraction plant."
+      },
+      primopus: {
+        title: "primopus",
+        text: "Detailed engineering for the new production segment."
+      },
+      jungbunzlauer: {
+        title: "jungbunzlauer",
+        text:
+          "Pre-planning and basic engineering of the new production plant for bio products."
+      },
+      exyte: {
+        title: "exyte",
+        text:
+          "Basic engineering of the new production plant for nutrition yeast."
+      }
+    },
+    chemicals: {
+      basf: {
+        title: "basf",
+        text: "Detailed engineering for the new production plant of vitamin A."
+      },
+      bayer: {
+        title: "bayer",
+        text:
+          "Detailed engineering of the vacuum system in an existing pesticide plant."
+      },
+      vinex: {
+        title: "vinex",
+        text: "All engineering phases for the new ethanol production plant."
+      }
+    },
+    electronics: {
+      title: "tesla",
+      text: "Pre-planning for the new production plant for batteries"
+    },
+    energy: {
+      jaenschwalde: {
+        title: "jaenschwalde",
+        text: "Detailed engineering of district heating system."
+      },
+      udarnaya: {
+        title: "udarnaya",
+        text: "Detailed engineering for the new steam plant."
+      },
+      mvv: {
+        title: "mvv",
+        text: "Detailed engineering for the new steam boiler plant."
+      }
+    },
+    omv: {
+      title: "omv",
+      text: "Pipe design for the plant revamp."
+    },
+    insights: "our projects insights",
+    share: "Share of projects per business area",
+    year: "Projects per year",
+    duration: "Average project duration",
+    distribution: "Services distribution",
+    months: "months",
+    note:
+      "Please note that our portfolio of projects showcases the extensive expertise and experience of our leadership team. While some projects may not have been delivered under the brand name Helmchron, they reflect the collective knowledge and capabilities honed throughout our careers. The reference list aims to present the depth of our expertise and the know-how behind it remains firmly rooted in many years of dedicated experience."
+  }
 };
 export default enTranslation;

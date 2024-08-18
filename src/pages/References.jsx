@@ -57,6 +57,7 @@ import Energy from "../assets/images/References/Energy.png";
 import FoodBioproducts from "../assets/images/References/Food&Bioproducts.png";
 import Oli from "../assets/images/References/Oil&Gas.png";
 import Pharmaceuticals from "../assets/images/References/Pharmaceuticals&Lifesciences.png";
+import { useTranslation } from "react-i18next";
 
 const mainImages = [mainImg, mainImg1, mainImg2];
 
@@ -117,6 +118,9 @@ export default function References() {
   const handleClick = index => {
     sectionRefs[index].current.scrollIntoView({ behavior: "smooth" });
   };
+
+  const { t } = useTranslation();
+
   return (
     <div>
       <div className="slider">
@@ -142,36 +146,35 @@ export default function References() {
 
       <div className="container-main padding30">
         <h2 className="title" data-aos="fade-up">
-          our references
+          {t("references.title")}
         </h2>
 
-        <p data-aos="fade-up" style={{ textAlign: "center" }}>
-          Our reference page contains our most relevant projects per each of our
-          business areas. Explore our milestones and collaborations and learn
-          how we contribute to different industries worldwide. For a
-          comprehensive list of references, please book a meeting with our team.
-        </p>
+        <p
+          data-aos="fade-up"
+          style={{ textAlign: "center" }}
+          dangerouslySetInnerHTML={{ __html: t("references.sub_text") }}
+        />
       </div>
 
       <div className="container-main padding30">
         <div className="icon-core references">
           <div data-aos="zoom-in" onClick={() => handleClick(0)}>
-            Pharma
+            {t("navbar.pharma")}
           </div>
           <div data-aos="zoom-in" onClick={() => handleClick(1)}>
-            Food & Bio
+            {t("navbar.food")}
           </div>
           <div data-aos="zoom-in" onClick={() => handleClick(2)}>
-            Chemicals
+            {t("navbar.chemicals")}
           </div>
           <div data-aos="zoom-in" onClick={() => handleClick(3)}>
-            Electronics
+            {t("navbar.electronics")}
           </div>
           <div data-aos="zoom-in" onClick={() => handleClick(4)}>
-            Energy
+            {t("navbar.energy")}
           </div>
           <div data-aos="zoom-in" onClick={() => handleClick(5)}>
-            Oil & Gas
+            {t("navbar.oil")}
           </div>
         </div>
       </div>
@@ -191,11 +194,11 @@ export default function References() {
             </div>
             <div className="text">
               <h3 data-aos="fade-right" className="title">
-                vetter pharma <br /> <span className="text-stroke">2022</span>
+                {t("references.pharma.vettre.title")} <br />{" "}
+                <span className="text-stroke">2022</span>
               </h3>
               <p data-aos="fade-right">
-                Detailed engineering and construction planning of clean mediums
-                for the new production plant.
+                {t("references.pharma.vettre.text")}
               </p>
 
               <span
@@ -203,7 +206,7 @@ export default function References() {
                 style={{ background: "var(--dark-blue-color)" }}
                 className="book-btn"
               >
-                Read more
+                {t("read_more")}
               </span>
               <Modal
                 isOpen={modalOpen}
@@ -227,20 +230,18 @@ export default function References() {
             </div>
             <div className="text" data-aos="fade-left">
               <h3 className="title">
-                novartis <br /> <span className="text-stroke">2019</span>
+                {t("references.pharma.novartis.title")} <br />
+                <span className="text-stroke">2019</span>
               </h3>
-
               <p>
-                Detailed engineering for the new production plant of innovative
-                therapies.
+                {t("references.pharma.novartis.text")}
               </p>
-
               <span
                 onClick={() => handleButtonClick(card2)}
                 style={{ background: "var(--dark-blue-color)" }}
                 className="book-btn"
               >
-                Read more
+                {t("read_more")}
               </span>
             </div>
             <div className="ref-img" data-aos="fade-right">
@@ -262,21 +263,18 @@ export default function References() {
             </div>
             <div className="text" data-aos="fade-right">
               <h3 className="title">
-                roche diagnostics <br />
+                {t("references.pharma.roche.title")} <br />
                 <span className="text-stroke">2020</span>
               </h3>
-
               <p>
-                Detailed engineering for the new production plant of medical
-                device.
+                {t("references.pharma.roche.text")}
               </p>
-
               <span
                 onClick={() => handleButtonClick(card3)}
                 style={{ background: "var(--dark-blue-color)" }}
                 className="book-btn"
               >
-                Read more
+                {t("read_more")}
               </span>
             </div>
 
@@ -296,17 +294,18 @@ export default function References() {
             </div>
             <div className="text" data-aos="fade-left">
               <h3 className="title">
-                bachem <br /> <span className="text-stroke">2023</span>
+                {t("references.pharma.bachem.title")} <br />
+                <span className="text-stroke">2023</span>
               </h3>
-
-              <p>Piping and support design for the new production plant.</p>
-
+              <p>
+                {t("references.pharma.bachem.text")}
+              </p>
               <span
                 onClick={() => handleButtonClick(card4)}
                 style={{ background: "var(--dark-blue-color)" }}
                 className="book-btn"
               >
-                Read more
+                {t("read_more")}
               </span>
             </div>
             <div className="ref-img" data-aos="fade-right">
@@ -329,12 +328,12 @@ export default function References() {
             </div>
             <div className="text" data-aos="fade-right">
               <h3 className="title">
-                dsm <br /> <span className="text-stroke green">2021</span>
+                {t("references.food.dsm.title")} <br />
+                <span className="text-stroke green">2021</span>
               </h3>
 
               <p>
-                Pre-planning for the new production plant of cattle feed
-                additive.
+                {t("references.food.dsm.text")}
               </p>
 
               <span
@@ -342,7 +341,7 @@ export default function References() {
                 style={{ background: "var(--green-color)" }}
                 className="book-btn"
               >
-                Read more
+                {t("read_more")}
               </span>
             </div>
             <div className="ref-img" data-aos="fade-left">
@@ -360,22 +359,20 @@ export default function References() {
             </div>
             <div className="text" data-aos="fade-left">
               <h3 className="title">
-                destilla <br /> <span className="text-stroke green">2023</span>
+                {t("references.food.destilla.title")}
+                <br /> <span className="text-stroke green">2023</span>
               </h3>
-
               <p>
-                Basic engineering and consulting for a new extraction plant.
+                {t("references.food.destilla.text")}
               </p>
-
               <span
                 onClick={() => handleButtonClick(card6)}
                 style={{ background: "var(--green-color)" }}
                 className="book-btn"
               >
-                Read more
+                {t("read_more")}
               </span>
             </div>
-
             <div className="ref-img" data-aos="fade-right">
               <img src={Destilla} alt="Destilla" />
             </div>
@@ -394,17 +391,18 @@ export default function References() {
             </div>
             <div className="text" data-aos="fade-right">
               <h3 className="title">
-                primopus <br /> <span className="text-stroke green">2023</span>
+                {t("references.food.primopus.title")} <br />
+                <span className="text-stroke green">2023</span>
               </h3>
-
-              <p>Detailed engineering for the new production segment.</p>
-
+              <p>
+                {t("references.food.primopus.text")}
+              </p>
               <span
                 onClick={() => handleButtonClick(card7)}
                 style={{ background: "var(--green-color)" }}
                 className="book-btn"
               >
-                Read more
+                {t("read_more")}
               </span>
             </div>
 
@@ -423,21 +421,18 @@ export default function References() {
             </div>
             <div className="text" data-aos="fade-left">
               <h3 className="title">
-                jungbunzlauer <br />{" "}
+                {t("references.food.jungbunzlauer.title")} <br />
                 <span className="text-stroke green">2022</span>
               </h3>
-
               <p>
-                Pre-planning and basic engineering of the new production plant
-                for bio products.
+                {t("references.food.jungbunzlauer.text")}
               </p>
-
               <span
                 onClick={() => handleButtonClick(card8)}
                 style={{ background: "var(--green-color)" }}
                 className="book-btn"
               >
-                Read more
+                {t("read_more")}
               </span>
             </div>
             <div className="ref-img" data-aos="fade-right">
@@ -458,12 +453,12 @@ export default function References() {
             </div>
             <div className="text" data-aos="fade-right">
               <h3 className="title">
-                exyte <br /> <span className="text-stroke green">2023</span>
+                {t("references.food.exyte.title")} <br />
+                <span className="text-stroke green">2023</span>
               </h3>
 
               <p>
-                Basic engineering of the new production plant for nutrition
-                yeast.
+                {t("references.food.exyte.text")}
               </p>
 
               <span
@@ -471,7 +466,7 @@ export default function References() {
                 style={{ background: "var(--green-color)" }}
                 className="book-btn"
               >
-                Read more
+                {t("read_more")}
               </span>
             </div>
             <div className="ref-img" data-aos="fade-left">
@@ -489,11 +484,12 @@ export default function References() {
             </div>
             <div className="text" data-aos="fade-left">
               <h3 className="title">
-                basf <br /> <span className="text-stroke orange">2022</span>
+                {t("references.chemicals.basf.title")} <br />
+                <span className="text-stroke orange">2022</span>
               </h3>
 
               <p>
-                Detailed engineering for the new production plant of vitamin A.
+                {t("references.chemicals.basf.text")}
               </p>
 
               <span
@@ -501,7 +497,7 @@ export default function References() {
                 style={{ background: "var(--brend-color)" }}
                 className="book-btn"
               >
-                Read more
+                {t("read_more")}
               </span>
             </div>
             <div className="ref-img" data-aos="fade-right">
@@ -522,12 +518,12 @@ export default function References() {
             </div>
             <div className="text" data-aos="fade-right">
               <h3 className="title">
-                bayer <br /> <span className="text-stroke orange">2023</span>
+                {t("references.chemicals.bayer.title")} <br />
+                <span className="text-stroke orange">2023</span>
               </h3>
 
               <p>
-                Detailed engineering of the vacuum system in an existing
-                pesticide plant.
+                {t("references.chemicals.bayer.text")}
               </p>
 
               <span
@@ -535,7 +531,7 @@ export default function References() {
                 style={{ background: "var(--brend-color)" }}
                 className="book-btn"
               >
-                Read more
+                {t("read_more")}
               </span>
             </div>
             <div className="ref-img" data-aos="fade-left">
@@ -553,11 +549,12 @@ export default function References() {
             </div>
             <div className="text" data-aos="fade-left">
               <h3 className="title">
-                vinex <br /> <span className="text-stroke orange">2018</span>
+                {t("references.chemicals.vinex.title")} <br />
+                <span className="text-stroke orange">2018</span>
               </h3>
 
               <p>
-                All engineering phases for the new ethanol production plant.
+                {t("references.chemicals.vinex.text")}
               </p>
 
               <span
@@ -565,7 +562,7 @@ export default function References() {
                 style={{ background: "var(--brend-color)" }}
                 className="book-btn"
               >
-                Read more
+                {t("read_more")}
               </span>
             </div>
             <div className="ref-img" data-aos="fade-right">
@@ -587,17 +584,20 @@ export default function References() {
             </div>
             <div className="text" data-aos="fade-right">
               <h3 className="title">
-                tesla <br /> <span className="text-stroke blue">2023</span>
+                {t("references.electronics.title")} <br />
+                <span className="text-stroke blue">2023</span>
               </h3>
 
-              <p>Pre-planning for the new production plant for batteries.</p>
+              <p>
+                {t("references.electronics.text")}
+              </p>
 
               <span
                 onClick={() => handleButtonClick(card13)}
                 style={{ background: "var(--dark-blue-color)" }}
                 className="book-btn"
               >
-                Read more
+                {t("read_more")}
               </span>
             </div>
             <div className="ref-img" data-aos="fade-left">
@@ -610,23 +610,26 @@ export default function References() {
           <div className="container-main reverse">
             <div className="vertical-text reference-vertical">
               <h4 style={{ WebkitTextStroke: "1px var(--green-color)" }}>
-                ENETRGY
+                ENERGY
               </h4>
             </div>
             <div className="text" data-aos="fade-left">
               <h3 className="title">
-                jaenschwalde <br />{" "}
+                {t("references.energy.jaenschwalde.title")}
+                <br />
                 <span className="text-stroke green">2022</span>
               </h3>
 
-              <p>Detailed engineering of district heating system.</p>
+              <p>
+                {t("references.energy.jaenschwalde.text")}
+              </p>
 
               <span
                 onClick={() => handleButtonClick(card14)}
                 style={{ background: "var(--green-color)" }}
                 className="book-btn"
               >
-                Read more
+                {t("read_more")}
               </span>
             </div>
             <div className="ref-img" data-aos="fade-right">
@@ -642,22 +645,25 @@ export default function References() {
           <div className="container-main">
             <div className="vertical-text reference-vertical">
               <h4 style={{ WebkitTextStroke: "1px var(--green-color)" }}>
-                ENETRGY
+                ENERGY
               </h4>
             </div>
             <div className="text" data-aos="fade-right">
               <h3 className="title">
-                udarnaya <br /> <span className="text-stroke green">2017</span>
+                {t("references.energy.udarnaya.title")} <br />
+                <span className="text-stroke green">2017</span>
               </h3>
 
-              <p>Detailed engineering for the new steam plant.</p>
+              <p>
+                {t("references.energy.udarnaya.text")}
+              </p>
 
               <span
                 onClick={() => handleButtonClick(card15)}
                 style={{ background: "var(--green-color)" }}
                 className="book-btn"
               >
-                Read more
+                {t("read_more")}
               </span>
             </div>
             <div className="ref-img" data-aos="fade-left">
@@ -670,22 +676,25 @@ export default function References() {
           <div className="container-main reverse">
             <div className="vertical-text reference-vertical">
               <h4 style={{ WebkitTextStroke: "1px var(--green-color)" }}>
-                ENETRGY
+                ENERGY
               </h4>
             </div>
             <div className="text" data-aos="fade-left">
               <h3 className="title">
-                mvv <br /> <span className="text-stroke green">2020</span>
+                {t("references.energy.mvv.title")} <br />
+                <span className="text-stroke green">2020</span>
               </h3>
 
-              <p>Detailed engineering for the new steam boiler plant.</p>
+              <p>
+                {t("references.energy.mvv.text")}
+              </p>
 
               <span
                 onClick={() => handleButtonClick(card16)}
                 style={{ background: "var(--green-color)" }}
                 className="book-btn"
               >
-                Read more
+                {t("read_more")}
               </span>
             </div>
             <div className="ref-img" data-aos="fade-right">
@@ -707,17 +716,20 @@ export default function References() {
             </div>
             <div className="text" data-aos="fade-right">
               <h3 className="title">
-                omv <br /> <span className="text-stroke orange">2016</span>
+                {t("references.omv.title")} <br />
+                <span className="text-stroke orange">2016</span>
               </h3>
 
-              <p>Pipe design for the plant revamp.</p>
+              <p>
+                {t("references.omv.text")}
+              </p>
 
               <span
                 onClick={() => handleButtonClick(card17)}
                 style={{ background: "var(--brend-color)" }}
                 className="book-btn"
               >
-                Read more
+                {t("read_more")}
               </span>
             </div>
             <div className="ref-img" data-aos="fade-left">
@@ -729,10 +741,12 @@ export default function References() {
 
       <div className="insights container-main padding30">
         <h2 className="title" data-aos="fade-up">
-          our projects insights
+          {t("references.insights")}
         </h2>
         <center>
-          <p data-aos="fade-up">Share of projects per business area</p>
+          <p data-aos="fade-up">
+            {t("references.share")}
+          </p>
         </center>
 
         <div className="icon-since container-main">
@@ -740,7 +754,7 @@ export default function References() {
             <img src={Pharmaceuticals} alt="Pharmaceuticals" />
             <div>
               <span>
-                Pharma & <br />Lifesciences
+                {t("navbar.pharma")}
               </span>
             </div>
           </div>
@@ -748,7 +762,7 @@ export default function References() {
             <img src={FoodBioproducts} alt="FoodBioproducts" />
             <div>
               <span>
-                Food & <br /> Bioproducts
+                {t("navbar.food")}
               </span>
             </div>
           </div>
@@ -756,32 +770,42 @@ export default function References() {
           <div data-aos="zoom-in">
             <img src={Chemicals} alt="Chemicals" />
             <div>
-              <span>Chemicals</span>
+              <span>
+                {t("navbar.chemicals")}
+              </span>
             </div>
           </div>
           <div data-aos="zoom-in">
             <img src={Energy} alt="Energy" />
             <div>
-              <span>Energy</span>
+              <span>
+                {t("navbar.energy")}
+              </span>
             </div>
           </div>
           <div data-aos="zoom-in">
             <img src={Electronics} alt="Electronics" />
             <div>
-              <span>Electronics</span>
+              <span>
+                {t("navbar.electronics")}
+              </span>
             </div>
           </div>
           <div data-aos="zoom-in">
             <img src={Oli} alt="Oli" />
             <div>
-              <span>Oil & Gas</span>
+              <span>
+                {t("navbar.oil")}
+              </span>
             </div>
           </div>
         </div>
 
         <div className="statistics container-main">
           <div data-aos="fade-right">
-            <span style={{ margin: "0 0 30px 12px" }}>Projects per year</span>
+            <span style={{ margin: "0 0 30px 12px" }}>
+              {t("references.year")}
+            </span>
             <img
               className="per-year"
               src={Projectsperyear}
@@ -789,16 +813,19 @@ export default function References() {
             />
           </div>
           <div className="months" data-aos="zoom-in">
-            <span>Average project duration</span>
+            <span>
+              {t("references.duration")}
+            </span>
             <div>
               <p>
-                <b>11</b> <br /> months
+                <b>11</b> <br />
+                {t("references.months")}
               </p>
             </div>
           </div>
           <div data-aos="fade-left">
             <span style={{ margin: "0 0 30px 20px" }}>
-              Services distribution
+              {t("references.distribution")}
             </span>
             <img
               className="distribution"
@@ -815,13 +842,7 @@ export default function References() {
         >
           <center>
             <p style={{ fontSize: 11 }}>
-              Please note that our portfolio of projects showcases the extensive
-              expertise and experience of our leadership team. While some
-              projects may not have been delivered under the brand name
-              Helmchron, they reflect the collective knowledge and capabilities
-              honed throughout our careers. The reference list aims to present
-              the depth of our expertise and the know-how behind it remains
-              firmly rooted in many years of dedicated experience.
+              {t("references.note")}
             </p>
           </center>
         </div>
