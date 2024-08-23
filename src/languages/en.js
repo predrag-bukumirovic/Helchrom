@@ -6,17 +6,21 @@ const enTranslation = {
       "After the completion of operational activities, we provide guarantees and stand accountable for the quality of our work, offering ongoing support and consultation within the project scope to address our client's questions and concerns, ensuring the continued success of our joined project even after commissioning.",
     banners: {
       banner1: {
-        text: "Delivering plant design engineering and project execution solutions across diverse industries since 2010."
+        text:
+          "Delivering plant design engineering and project execution solutions across diverse industries since 2010."
       },
       banner2: {
-        text: "Comprehensive plant engineering solutions, from consulting and pre-planning to equipment management and commissioning."
+        text:
+          "Comprehensive plant engineering solutions, from consulting and pre-planning to equipment management and commissioning."
       },
       banner3: {
-        text: 'Our references include state-of-the-art aseptic pharma facilities, leading chemical manufacturers, and diverse food producers.'
+        text:
+          "Our references include state-of-the-art aseptic pharma facilities, leading chemical manufacturers, and diverse food producers."
       },
       banner4: {
-        text: 'We operate across six major business departments, with pharma and food being the largest.'
-      },
+        text:
+          "We operate across six major business departments, with pharma and food being the largest."
+      }
     }
   },
   who_are_we: {
@@ -92,7 +96,8 @@ const enTranslation = {
 
               <p style={{ marginBottom: 50 }}>
                 Ready to focus on success and experience Helmchron ONE?
-              </p>`
+              </p>
+              <a class="book-btn" href="/initiatives/navigator">Read more</a>`
   },
   areas: {
     title: "OUR DIVISIONS",

@@ -5,6 +5,7 @@ import Carousel from "react-multi-carousel";
 import WhoIcons from "../components/WhoIcons";
 import Storyline from "../components/Storyline";
 import TextReader from "../components/TextRender";
+import nav from "../assets/images/Navigator/nav.png";
 
 import Facts2010 from "../assets/images/Home/Founded.png";
 import Facts6 from "../assets/images/Home/Operations.png";
@@ -18,15 +19,18 @@ import icon3 from "../assets/images/Home/3.png";
 import icon4 from "../assets/images/Home/4.png";
 import icon5 from "../assets/images/Home/5.png";
 import quotation from "../assets/images/quotationLine.png";
+import slideImg1 from "../assets/images/Helmchrone/HCONE1.png";
+import slideImg2 from "../assets/images/Helmchrone/HCONE2.png";
+
 import { FaCircleChevronRight } from "react-icons/fa6";
 
 import "../assets/scss/home.scss";
 import "../assets/scss/slider.scss";
+import "../assets/scss/one.css";
 import "@coreui/coreui/dist/css/coreui.min.css";
 import "react-multi-carousel/lib/styles.css";
 
 import { useTranslation } from "react-i18next";
-import BeforeAfterSlider from "../components/BeforeAfterSlider";
 
 const responsive = {
   superLargeDesktop: { breakpoint: { max: 4000, min: 3000 }, items: 1 },
@@ -91,12 +95,67 @@ export default function Home() {
     t("services.icon.text5"),
     t("book_btn")
   ];
-  const uniqueText = [t("unique.title"), t("unique.text"), t("book_btn")];
+
   const areasText = [t("areas.title"), t("areas.sub_text")];
   const factsText = [t("facts.title"), t("facts.sub_text")];
-  // const feedbackText1 = [t("feedback.title"), t("feedback.text1")];
-  // const feedbackText2 = [t("feedback.title"), t("feedback.text2")];
-  // const feedbackText3 = [t("feedback.title"), t("feedback.text3")];
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const images = [
+    {
+      srcImg: slideImg2,
+      title: `Unique Service Concept <h3 className="title">
+              HELMCHR<span style={{ textTransform: "capitalize" }}>ONe</span>
+              </h3>`,
+      text: t("unique.text")
+    },
+    {
+      srcImg: slideImg1,
+      title: `Optimized Project Execution <h3 className="title">
+            HELMCHRON N<img src=${nav} alt="A Navigator" />VIGATOR</h3>`,
+      text: `
+        <p>Navigator is our pioneering initiative designed to provide comprehensive consulting and support
+          throughout the entire plant design lifecycle to streamline processes and optimize resources.</p>
+
+          <p><b>Complete Lifecycle Support</b></p>
+          <p>
+          Whether you're embarking on a greenfield or brownfield project, Helmchron Navigator ensures that every
+          phase of your project is clear, on budget, and on schedule. This initiative offers a structured yet flexible
+          approach that adapts to the unique demands of each industry, including highly regulated sectors like
+          pharmaceuticals and biopharma.<br/><br/>
+          Helmchron Navigator combines proactive planning with expert guidance to anticipate challenges early
+          on, ensuring a strategic plan is in place from the start. Our team conducts thorough analyses and
+          delivers tailored recommendations, allowing for informed decision-making at every stage of your project.
+          </p>
+          <p><b>Agile Execution and Comprehensive Support</b></p>
+
+          <p>Our team efficiently adapts to evolving project requirements, providing end-to-end support to
+          continuously improve and refine the project as it progresses.
+          Ensure your plant design stays on course with Helmchron Navigator.</p>
+
+          <a class="book-btn" href="/initiatives/navigator">Read more</a>`
+    }
+  ];
+
+  const handleNext = () => {
+    setCurrentIndex(
+      prevImage => (prevImage === images.length - 1 ? 0 : prevImage + 1)
+    );
+  };
+
+  const handlePrev = () => {
+    setCurrentIndex(
+      prevImage => (prevImage === 0 ? images.length - 1 : prevImage - 1)
+    );
+  };
+
+  const handleDotClick = index => {
+    setCurrentIndex(index);
+  };
+
+  const handleImageClick = index => {
+    setCurrentIndex(index);
+  };
 
   return (
     <div>
@@ -336,30 +395,74 @@ export default function Home() {
       {/* Unique Service Concept */}
       <div className="unique">
         <div className="container-main padding30">
-          <h2 className="title" style={{ padding: "0 40px", marginBottom: 0 }}>
-            {t("unique.title")}
-          </h2>
-          <h3 className="title">
-            HELMCHR<span style={{ textTransform: "capitalize" }}>ONe</span>
-          </h3>
-
           <div className="unique-row">
             <div className="text">
-              <p
-                style={{ marginBottom: 40 }}
-                data-aos="fade-right"
-                dangerouslySetInnerHTML={{ __html: t("unique.text") }}
-              />
+              <div className="slider-text-container">
+                <div className="slider-text" style={{ textAlign: "start" }}>
+                  <h2
+                    className="title"
+                    dangerouslySetInnerHTML={{
+                      __html: images[currentIndex].title
+                    }}
+                  />
 
-              <a className="book-btn" href="/">
-                {t("book_btn")}
-              </a>
-              <TextReader texts={uniqueText} />
-              <br />
-              <br />
+                  <p
+                    dangerouslySetInnerHTML={{
+                      __html: images[currentIndex].text
+                    }}
+                  />
+                </div>
+              </div>
             </div>
-            <BeforeAfterSlider />
+            <div className="slider-images" style={{ width: 400 }}>
+              {images.map((image, index) => {
+                const isActive = index === currentIndex;
+                const positionStyle = isActive ? { order: -1 } : {};
+                return (
+                  <div
+                    key={index}
+                    className={`slider-image home ${index === currentIndex
+                      ? "active"
+                      : ""}`}
+                    style={{
+                      ...positionStyle,
+                      backgroundImage: `url(${image.srcImg})`
+                    }}
+                    onClick={() => handleImageClick(index)}
+                  />
+                );
+              })}
+            </div>
           </div>
+
+          <div className="slider-controls">
+            <button
+              className="slider-button slider-button-prev"
+              onClick={handlePrev}
+            >
+              &#10094;
+            </button>
+            <div className="slider-dots">
+              {images.map((_, index) =>
+                <div
+                  key={index}
+                  className={`slider-dot ${index === currentIndex
+                    ? "active"
+                    : ""}`}
+                  onClick={() => handleDotClick(index)}
+                />
+              )}
+            </div>
+            <button
+              className="slider-button slider-button-next"
+              onClick={handleNext}
+            >
+              &#10095;
+            </button>
+          </div>
+          <center style={{ color: "#000" }}>
+            {currentIndex + 1}/{images.length}
+          </center>
         </div>
       </div>
 

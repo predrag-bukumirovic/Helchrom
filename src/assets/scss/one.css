@@ -37,15 +37,9 @@
   cursor: pointer;
 }
 
-.slider-image.active {
-  transform: scale(1.2);
-  z-index: 2;
-  opacity: 1;
-}
-
-.slider-text-container {
-  margin-top: 40px;
-  width: 100%;
+.slider-image.home {
+  width: 350px;
+  height: 500px;
 }
 
 .slider-text {
@@ -112,6 +106,10 @@
   .slider-image.active {
     transform: scale(1.2);
   }
+
+  .slider-controls {
+    margin-top: 90px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -145,4 +143,22 @@
   .why-one img {
     width: 100%;
   }
+}
+
+.active-slide {
+  width: 350px;
+  height: 400px;
+}
+.slider-image.active {
+  transform: scale(1.2);
+  z-index: 2;
+  opacity: 1;
+}
+
+.slider-image.next {
+  transform: translateX(100%);
+}
+
+.slider-image.prev {
+  transform: translateX(-100%);
 }
