@@ -70,7 +70,6 @@ const enTranslation = {
     linkedin: "Linkedin profile:"
   },
   unique: {
-    title: "Unique service concept",
     text: `<p>
               Helmchron ONE is our service concept that provides dedicated focus to a project by assigning ONE team
               to ONE client and ONE project only.<br/>
@@ -97,6 +96,7 @@ const enTranslation = {
               <p style={{ marginBottom: 50 }}>
                 Ready to focus on success and experience Helmchron ONE?
               </p>
+              <br/>
               <a class="book-btn" href="/initiatives/navigator">Read more</a>`
   },
   areas: {

@@ -96,6 +96,7 @@
   .slider-images {
     overflow: visible;
     justify-content: flex-start;
+    margin-left: 50px;
   }
 
   .slider-image {
@@ -133,6 +134,10 @@
   .why-one img {
     width: 50%;
   }
+  .slider-image.home {
+    width: 240px;
+    height: 300px;
+  }
 }
 
 @media (max-width: 640px) {
@@ -145,10 +150,6 @@
   }
 }
 
-.active-slide {
-  width: 350px;
-  height: 400px;
-}
 .slider-image.active {
   transform: scale(1.2);
   z-index: 2;

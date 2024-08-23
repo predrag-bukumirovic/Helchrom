@@ -100,6 +100,7 @@ export default function Home() {
   const factsText = [t("facts.title"), t("facts.sub_text")];
 
   const [currentIndex, setCurrentIndex] = useState(0);
+  const sliderRef = useRef(null);
 
   const images = [
     {
@@ -112,7 +113,7 @@ export default function Home() {
     {
       srcImg: slideImg1,
       title: `Optimized Project Execution <h3 className="title">
-            HELMCHRON N<img src=${nav} alt="A Navigator" />VIGATOR</h3>`,
+            HELMCHRON  <span>N<img src=${nav} alt="A Navigator" />VIGATOR</span></h3>`,
       text: `
         <p>Navigator is our pioneering initiative designed to provide comprehensive consulting and support
           throughout the entire plant design lifecycle to streamline processes and optimize resources.</p>
@@ -132,7 +133,7 @@ export default function Home() {
           <p>Our team efficiently adapts to evolving project requirements, providing end-to-end support to
           continuously improve and refine the project as it progresses.
           Ensure your plant design stays on course with Helmchron Navigator.</p>
-
+          <br/>
           <a class="book-btn" href="/initiatives/navigator">Read more</a>`
     }
   ];
@@ -141,12 +142,20 @@ export default function Home() {
     setCurrentIndex(
       prevImage => (prevImage === images.length - 1 ? 0 : prevImage + 1)
     );
+    scrollToTop();
   };
 
   const handlePrev = () => {
     setCurrentIndex(
       prevImage => (prevImage === 0 ? images.length - 1 : prevImage - 1)
     );
+    scrollToTop();
+  };
+
+  const scrollToTop = () => {
+    if (sliderRef.current) {
+      sliderRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
   };
 
   const handleDotClick = index => {
@@ -387,7 +396,7 @@ export default function Home() {
         <p style={{ marginBottom: 30 }}>
           {t("home.after")}
         </p>
-        <a className="book-btn" href="/our-services">
+        <a ref={sliderRef} className="book-btn" href="/our-services">
           {t("read_more")}
         </a>
       </center>
