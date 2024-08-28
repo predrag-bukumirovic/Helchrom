@@ -82,7 +82,7 @@ export default function Navigator() {
                 industries, including highly regulated GxP sectors such as
                 pharmaceuticals and biopharma. Helmchron Navigator can be
                 deployed across all our projects and business departments, from
-                food to chemicals. <br /> Explore our services and competencies
+                food to chemicals. <br /> Explore our services and competencies.
               </p>
 
               <a
@@ -106,7 +106,7 @@ export default function Navigator() {
 
         <div className="our-home container-main">
           <div className="services-icon container-main">
-            <div data-aos="fade-zoom">
+            <div data-aos="zoom-in">
               <img src={icon1} alt="" />
 
               <h3>Proactive Planning</h3>
@@ -116,7 +116,7 @@ export default function Navigator() {
                 strategic plan to achieve the outcomes.
               </p>
             </div>
-            <div data-aos="fade-zoom">
+            <div data-aos="zoom-in">
               <img src={icon2} alt="" />
               <h3>Expert Guidance</h3>
 
@@ -125,7 +125,7 @@ export default function Navigator() {
                 recommendations tailored to the project`s specific needs.
               </p>
             </div>
-            <div data-aos="fade-zoom">
+            <div data-aos="zoom-in">
               <img src={icon3} alt="" />
               <h3>Agile Execution</h3>
               <p>
@@ -134,7 +134,7 @@ export default function Navigator() {
                 plans.
               </p>
             </div>
-            <div data-aos="fade-zoom">
+            <div data-aos="zoom-in">
               <img src={icon4} alt="" />
               <h3>Cost and Schedule Management</h3>
               <p>
@@ -143,7 +143,7 @@ export default function Navigator() {
                 budget and schedule is one of the main benefits.
               </p>
             </div>
-            <div data-aos="fade-zoom">
+            <div data-aos="zoom-in">
               <img src={icon5} alt="" />
               <h3>Comprehensive Support</h3>
               <p>
@@ -170,37 +170,39 @@ export default function Navigator() {
           </a>
         </center>
 
-        <div style={{ margin: "50px auto" }} className="row container-main">
-          <div data-aos="fade-right">
-            <span style={{ fontWeight: "bold", fontSize: 20 }}>
-              A Structured and Flexible Framework
-            </span>
-            <br />
-            <p style={{ marginTop: 20 }}>
-              Helmchron Navigator follows a structured yet adaptable approach to
-              plant design, including:
-            </p>
+        <div style={{ background: "var(--light-blue-color)" }}>
+          <div style={{ margin: "50px auto" }} className="row container-main">
+            <div data-aos="fade-right">
+              <span style={{ fontWeight: "bold", fontSize: 20 }}>
+                A Structured and Flexible Framework
+              </span>
+              <br />
+              <p style={{ marginTop: 20 }}>
+                Helmchron Navigator follows a structured yet adaptable approach
+                to plant design, including:
+              </p>
 
-            <ul className="framework">
-              <li>
-                Initial consultation to understand project goals, requirements,
-                and constraints
-              </li>
-              <li>
-                Detailed planning to develop a comprehensive project plan with
-                clear milestones and deliverables
-              </li>
-              <li>Engineering and design</li>
-              <li>On-site support and supervision</li>
-              <li>All equipment-related activities</li>
-              <li>
-                Commissioning and assistance with the final stages of the
-                project, ensuring a streamlined transition to operations
-              </li>
-            </ul>
+              <ul className="framework">
+                <li>
+                  Initial consultation to understand project goals,
+                  requirements, and constraints
+                </li>
+                <li>
+                  Detailed planning to develop a comprehensive project plan with
+                  clear milestones and deliverables
+                </li>
+                <li>Engineering and design</li>
+                <li>On-site support and supervision</li>
+                <li>All equipment-related activities</li>
+                <li>
+                  Commissioning and assistance with the final stages of the
+                  project, ensuring a streamlined transition to operations
+                </li>
+              </ul>
+            </div>
+
+            <img data-aos="fade-left" src={Framework} alt="" />
           </div>
-
-          <img data-aos="fade-left" src={Framework} alt="" />
         </div>
 
         <div className="guarantee padding30 container-main">

@@ -129,7 +129,22 @@ const One = () => {
       {/* Slider end */}
 
       <div className="container-main padding30">
-        <h2 className="title">Focus on Success with HELMCHRONe</h2>
+        <h2 className="title">
+          Focus on Success with{" "}
+          <span
+            style={{
+              fontSize: "inherit",
+              textTransform: "none",
+              color: "var(--dark-blue-color)"
+            }}
+          >
+            HELMCHR<span
+              style={{ fontSize: "inherit", color: "var(--brend-color)" }}
+            >
+              ONe
+            </span>
+          </span>
+        </h2>
 
         <center data-aos="fade-up">
           <p>
@@ -144,15 +159,15 @@ const One = () => {
         </center>
 
         <div className="our-home container-main">
-          <center data-aos="fade-up">
-            <span>Helmchron ONE Approach</span>
+          <center>
+            <span data-aos="fade-up">Helmchron ONE Approach</span>
           </center>
 
           <div
             className="services-icon"
-            style={{ width: "70%", margin: "50px auto" }}
+            style={{ width: "80%", margin: "50px auto" }}
           >
-            <div data-aos="fade-zoom">
+            <div data-aos="zoom-in">
               <img src={icon1} alt="Icon 1" />
 
               <h3>ONE TEAM</h3>
@@ -164,7 +179,7 @@ const One = () => {
                 outcomes.
               </p>
             </div>
-            <div data-aos="fade-zoom">
+            <div data-aos="zoom-in">
               <img src={icon2} alt="Icon 2" />
               <h3>ONE CLIENT</h3>
               <p>
@@ -174,7 +189,7 @@ const One = () => {
                 understanding of the client’s unique needs and goals.
               </p>
             </div>
-            <div data-aos="fade-zoom">
+            <div data-aos="zoom-in">
               <img src={icon3} alt="Icon 3" />
 
               <h3>ONE PROJECT</h3>

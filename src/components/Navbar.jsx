@@ -1,22 +1,22 @@
-import React, { useState } from "react";
-import logo from "../assets/images/logo.webp";
-import ChemistryConnects from "../assets/images/ChemistryConnects.png";
+import React, { useState, useEffect, useMemo } from "react";
+import logo from "../assets/images/logowhite.webp";
+import logoMobile from "../assets/images/logo.webp";
+import ChemistryConnects from "../assets/images/CHEMISTRYCONNECTSUS-white.png";
 import "../assets/scss/navbar.css";
 import { BiChevronDown } from "react-icons/bi";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { TfiClose } from "react-icons/tfi";
-import { AiOutlineCaretDown } from "react-icons/ai";
 import TikTok from "../assets/images/tiktok.webp";
 import Instagram from "../assets/images/instagram.webp";
 import Linkedine from "../assets/images/linkedine.webp";
 import Twitter from "../assets/images/twitter.png";
 import { useTranslation } from "react-i18next";
+import LanguageModal from "./LanguageModal";
 
 export default function Navbar({ className }) {
   const [openMenu, setOpenMenu] = useState(false);
   const [downMenuAbout, setDownMenuAbout] = useState(false);
   const [downMenuInit, setDownMenuInit] = useState(false);
-  const [downMenu, setDownMenu] = useState(false);
   const { t } = useTranslation();
   const [isSubmenuOpen, setIsSubmenuOpen] = useState(false);
 
@@ -31,6 +31,30 @@ export default function Navbar({ className }) {
     );
   }
 
+  // Lng nav
+  const languageMap = useMemo(() => ({ en: "EN", de: "DE" }), []);
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedLanguage, setSelectedLanguage] = useState("ENGLISH");
+
+  useEffect(
+    () => {
+      const storedLanguage = localStorage.getItem("lng") || "en";
+      setSelectedLanguage(languageMap[storedLanguage] || "ENGLISH");
+    },
+    [languageMap]
+  );
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+  const closeModal = () => setIsModalOpen(false);
+  const handleLanguageSelect = language => {
+    localStorage.setItem("lng", language);
+    setSelectedLanguage(languageMap[language] || "ENGLISH");
+    closeModal();
+  };
+
   return (
     <div className={`navbar-box ${className}`}>
       <div
@@ -38,6 +62,7 @@ export default function Navbar({ className }) {
         style={{
           display: "flex",
           justifyContent: "space-between",
+          alignItems: "center",
           width: 2000
         }}
       >
@@ -56,7 +81,7 @@ export default function Navbar({ className }) {
             <ul className={`${openMenu ? "active" : "menu"}`}>
               <div className="logo-mobile-menu">
                 <a href="/">
-                  <img src={logo} alt="Logo" />
+                  <img src={logoMobile} alt="Logo" />
                 </a>
                 <TfiClose
                   className="close-menu"
@@ -208,6 +233,33 @@ export default function Navbar({ className }) {
                 {t("navbar.contact")}
               </CustomLink>
 
+              <span
+                style={{
+                  cursor: "pointer",
+                  padding: "0 20px",
+                  color: "#000",
+                  fontWeight: "bold",
+                  fontSize: "13px",
+                  background: "var(--light-blue-color)",
+                  width: "40px",
+                  height: "40px",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  borderRadius: "50%",
+                  marginLeft: 20
+                }}
+                onClick={openModal}
+              >
+                {selectedLanguage}
+              </span>
+
+              <LanguageModal
+                isOpen={isModalOpen}
+                onRequestClose={closeModal}
+                onSelectLanguage={handleLanguageSelect}
+              />
+
               {/* Mreze */}
               <div className="internet-mob">
                 <p dangerouslySetInnerHTML={{ __html: t("lets") }} />
@@ -252,7 +304,27 @@ export default function Navbar({ className }) {
         </div>
 
         <ul className="lng-con">
-          <li style={{ width: 55 }}>
+          <span
+            style={{
+              cursor: "pointer",
+              padding: "0 20px",
+              color: "#000",
+              fontWeight: "bold",
+              fontSize: "13px",
+              background: "var(--light-blue-color)",
+              width: "40px",
+              height: "40px",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              borderRadius: "50%",
+              marginLeft: 20
+            }}
+            onClick={openModal}
+          >
+            {selectedLanguage}
+          </span>
+          {/* <li style={{ width: 55 }}>
             <div
               className={`lng-change ${downMenu ? "active" : ""}`}
               onClick={() => setDownMenu(!downMenu)}
@@ -278,7 +350,7 @@ export default function Navbar({ className }) {
                 </ul>
               </li>
             </ol>
-          </li>
+          </li> */}
 
           <div className="burger-icon" onClick={() => setOpenMenu(!openMenu)}>
             <div className="line1 line" />

@@ -42,7 +42,6 @@
     background: var(--light-orange-color);
 
     .text {
-      text-align: justify;
       width: 100%;
 
       @media (max-width: 1200px) {
@@ -73,7 +72,6 @@
   text-align: center;
 
   p {
-    text-align: justify;
     display: flex;
     justify-content: center;
   }
@@ -157,7 +155,7 @@
         font-size: 18px;
 
         img {
-          width: 70px;
+          width: 40px;
           left: -75px;
         }
       }
@@ -171,7 +169,7 @@
 
     div {
       p {
-        padding-left: 65px;
+        padding-left: 30px;
         img {
           margin-left: 60px;
         }

@@ -45,6 +45,7 @@
 .slider-text {
   color: #000;
   padding: 10px;
+  margin-top: 30px;
   border-radius: 5px;
   width: 100%;
   text-align: center;
@@ -96,9 +97,10 @@
   .slider-images {
     overflow: visible;
     justify-content: flex-start;
-    margin-left: 50px;
   }
-
+  .slider-text {
+    margin-top: 0;
+  }
   .slider-image {
     height: 200px;
     width: 150px;
@@ -107,9 +109,8 @@
   .slider-image.active {
     transform: scale(1.2);
   }
-
-  .slider-controls {
-    margin-top: 90px;
+  .slider-text-container {
+    margin-top: 50px;
   }
 }
 

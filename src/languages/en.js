@@ -1,6 +1,6 @@
 const enTranslation = {
   home: {
-    welcome: `<p>WELCOME</p> <b>to Helmchron official website.</b>`,
+    welcome: `<p>WELCOME</p> <b>to Helmchron official website<b/>`,
     wel_text: `Helmchron is a family-owned company dedicated to providing comprehensive and full-service engineering solutions for the manufacturing facilities of pharmaceuticals, chemicals, food and bio products, electronics, energy, and oil and gas. We take pride in contributing to the manufacturing of globally available, safe, and high-quality products since 2010. Our mission has remained the same since our beginnings - we improve the quality of life for everyone everywhere whilst keeping our environment healthy for the coming generations. Today, our scope is broader and our team more diverse providing unique perspectives, agility, and efficacy.<br /> Our engineering solutions are now delivered to leaders and innovators across different industries with a focus on global impact, sustainable outcomes, and long-lasting partnerships.`,
     after:
       "After the completion of operational activities, we provide guarantees and stand accountable for the quality of our work, offering ongoing support and consultation within the project scope to address our client's questions and concerns, ensuring the continued success of our joined project even after commissioning.",
@@ -34,7 +34,7 @@ const enTranslation = {
     credo_text:
       "Our expertise and impact are driven by our vision to enhance the quality of life, build enduring client relationships and partnerships, and empower our team through our core values. We are committed to providing plant design engineering solutions that enable the manufacturing of efficient and safe products worldwide. Our service is guided by the belief of equal access to pharmaceuticals, healthy food, chemicals, fuels, and energy. We prioritize our partners’ needs and outcomes, environmental sustainability, and the stability of our business operations while envisioning a healthier future for everyone.",
     quotation:
-      "We believe that expertise, innovation, and values create long-term <br/> impact. Our purpose is to deliver outcomes that positively change <br/> the world around us, maintain strong partnerships, and empower <br/> our team to thrive in an environment built on our core values. <br/> Our main responsibility lies within our vision - to support the manufacturing of products that will be efficient and safe and serve the global society and environment."
+      "We believe that expertise, innovation, and values create long-term <br/> impact. Our purpose is to deliver outcomes that positively change <br/> the world around us, maintain strong partnerships, and empower <br/> our team to thrive in an environment built on our core values. <br/> Our main responsibility lies within our vision - to support the <br/> manufacturing of products that will be efficient and safe and serve <br/> the global society and environment."
   },
   services: {
     title: "our services",
@@ -47,9 +47,9 @@ const enTranslation = {
       title4: "Equipment & Services",
       title5: "Commissioning",
       text1:
-        "Conceptual and feasibility studies; early design planning; investment assessment and guidance.",
+        "Our scope includes, conceptual and feasibility studies, early design planning, investment assessment and guidance.",
       text2:
-        "We deliver sustainable solutions for facilities, equipment, and process design including process simulation and upgrade",
+        "We deliver sustainable solutions for facilities, equipment, and process design including process simulation and upgrade.",
       text3:
         "We ensure efficient and seamless project execution, including timely delivery, resources management, and targeted outcomes.",
       text4:
@@ -113,10 +113,10 @@ const enTranslation = {
               client satisfaction, ensuring every project is delivered with excellence.`,
     icon_title1: "Founded in",
     icon_title2: "operations areas",
-    icon_title3: "number of week days we provide support to our clients",
+    icon_title3: "number of week days we provide support",
     icon_title4: "minute average feedback time",
     icon_title5: "happy clients and partners",
-    icon_title6: "published papers as a result of our inno lab"
+    icon_title6: "published papers as a result of our innolab"
   },
   our_line: {
     title: "our storyline",
@@ -127,7 +127,7 @@ const enTranslation = {
     img_text2:
       "We are making the first steps towards our vision, gaining valuable perspective from contributing to big, complex teams and projects.",
     img_text3:
-      "We were proud and enthusiastic to witness our outcomes materializing and our mission taking shape as we actively engaged in projects within the global market...",
+      "We were proud and enthusiastic to witness our outcomes materializing and our mission taking shape as we actively engaged in projects within the global market.",
     img_text4:
       "As we continue our growth and development with additional worldwide projects, we fine-tune our strategy towards new business areas to elevate our impact.",
     img_text5:
@@ -429,7 +429,7 @@ const enTranslation = {
       }
     },
     text_bottom:
-      " Do we share the same values? Are you interested in joining our team? Visit our career page",
+      " Do we share the same values? Are you interested in joining our team? Visit our career page.",
     btn_career: "Career page",
 
     transparency: {
@@ -482,7 +482,7 @@ const enTranslation = {
               <li>Workforce needs assessment</li>
               <li>
                 Life-cycle management - equipment and facilities lifecycle plan,
-                maintenance schedules, upgrades and replacements.
+                maintenance schedules, upgrades and replacements
               </li>`,
     design_text1: `
         
@@ -651,7 +651,7 @@ const enTranslation = {
     video_title: "find out more about working in our team"
   },
 
-  book_btn: "Book a meeting",
+  book_btn: "Book a Meeting",
   send: "Send",
   read_more: "Read More",
   video_common: "We have at least one thing in common...",
@@ -768,10 +768,7 @@ const enTranslation = {
             <p>
               To create a vibrant and sustainable future, our values, progress,
               innovation, and social responsibility are focused on the health
-              and prosperity of the coming generations.
-            </p>
-            <p>
-              Commencing from our athletic backgrounds, we understand how
+              and prosperity of the coming generations. Commencing from our athletic backgrounds, we understand how
               discipline, teamwork, agility, empathy, and inclusion are
               instilled from an early age within sports teams.
             </p>`
@@ -1407,7 +1404,7 @@ const enTranslation = {
     },
     electronics: {
       title: "tesla",
-      text: "Pre-planning for the new production plant for batteries"
+      text: "Pre-planning for the new production plant for batteries."
     },
     energy: {
       jaenschwalde: {
@@ -1428,7 +1425,7 @@ const enTranslation = {
       text: "Pipe design for the plant revamp."
     },
     insights: "our projects insights",
-    share: "Share of projects per business area",
+    share: "Share of projects per division",
     year: "Projects per year",
     duration: "Average project duration",
     distribution: "Services distribution",

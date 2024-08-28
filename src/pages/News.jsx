@@ -94,7 +94,7 @@ export default function News() {
               <img src={Talk} alt="News" />
             </div>
           </div>
-          <div className="line" />
+          <div className="line-news" />
         </div>
 
         <div className="news-box padding30">
@@ -118,7 +118,7 @@ export default function News() {
               <img src={Dusseldorf} alt="News" />
             </div>
           </div>
-          <div className="line" />
+          <div className="line-news" />
         </div>
 
         <div className="news-box padding30">

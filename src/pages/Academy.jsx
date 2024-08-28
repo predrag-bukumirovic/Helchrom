@@ -42,13 +42,13 @@ export default function Academy() {
       </div>
       {/* Slider end */}
 
-      <div className="container-main">
-        <center>
+      <div>
+        <center className="container-main">
           <h1 className="title" style={{ textTransform: "capitalize" }}>
             Helmchron{" "}
             <span style={{ fontFamily: "DancingScript" }}>Academy</span>
           </h1>
-          <p data-aos="fade-up">
+          <p data-aos="fade-up" style={{ marginBottom: 50 }}>
             Helmchron Academy is an initiative aimed at educating and developing
             the team by sharing specific knowledge from complex and advanced
             projects. By focusing on practical experiences, Helmchron Academy
@@ -61,80 +61,88 @@ export default function Academy() {
           </p>
         </center>
 
-        <div className="row academy-row">
-          <div data-aos="fade-right">
-            <span>
-              <b>Unified Expertise</b>
-            </span>
+        <div style={{ background: "var(--light-blue-color)" }}>
+          <div className="row academy-row container-main">
+            <div data-aos="fade-right">
+              <span>
+                <b>Unified Expertise</b>
+              </span>
 
-            <p style={{ margin: "20px 0" }}>
-              Our training programs are designed to ensure that all team
-              members, across all levels of the organization, continuously
-              develop their expertise and skills. This is achieved through
-              comprehensive coaching and mentoring by external coaches and
-              experienced team members who are passionate about sharing their
-              practical knowledge.
-            </p>
+              <p style={{ margin: "20px 0" }}>
+                Our training programs are designed to ensure that all team
+                members, across all levels of the organization, continuously
+                develop their expertise and skills. This is achieved through
+                comprehensive coaching and mentoring by external coaches and
+                experienced team members who are passionate about sharing their
+                practical knowledge.
+              </p>
 
-            <span>
-              <b>Tailored Training and Development</b>
-            </span>
+              <span>
+                <b>Tailored Training and Development</b>
+              </span>
 
-            <p style={{ margin: "20px 0" }}>
-              The specialized nature of our work means that finding ready-made
-              experts in the job market can be challenging. Therefore, we focus
-              on training and coaching our team members in specific engineering
-              knowledge and professional skills.
-            </p>
+              <p style={{ margin: "20px 0" }}>
+                The specialized nature of our work means that finding ready-made
+                experts in the job market can be challenging. Therefore, we
+                focus on training and coaching our team members in specific
+                engineering knowledge and professional skills.
+              </p>
 
-            <span>
-              <b>Specialized Knowledge and Skills</b>
-            </span>
-            <p style={{ margin: "20px 0" }}>
-              Each project we undertake often demands a deep understanding of
-              both local and international regulations and standards. Our
-              industry-specific know-how, acquired through years of hands-on
-              experience across various sectors, is critical to our success.
-            </p>
-          </div>
+              <span>
+                <b>Specialized Knowledge and Skills</b>
+              </span>
+              <p style={{ margin: "20px 0" }}>
+                Each project we undertake often demands a deep understanding of
+                both local and international regulations and standards. Our
+                industry-specific know-how, acquired through years of hands-on
+                experience across various sectors, is critical to our success.
+              </p>
+            </div>
 
-          <img data-aos="fade-zoom" src={verticalImg} alt="Inolab 2" />
+            <img data-aos="fade-zoom" src={verticalImg} alt="Inolab 2" />
 
-          <div data-aos="fade-left">
-            <span>
-              <b>Collaborative Learning Environment</b>
-            </span>
+            <div data-aos="fade-left">
+              <span>
+                <b>Collaborative Learning Environment</b>
+              </span>
 
-            <p style={{ margin: "20px 0" }}>
-              An outstanding feature of Helmchron Academy is the systematic
-              sharing of lessons learned from each project across all teams.
-              This approach prevents repetitive learning and enhances our
-              efficiency and effectiveness with every new project.
-            </p>
+              <p style={{ margin: "20px 0" }}>
+                An outstanding feature of Helmchron Academy is the systematic
+                sharing of lessons learned from each project across all teams.
+                This approach prevents repetitive learning and enhances our
+                efficiency and effectiveness with every new project.
+              </p>
 
-            <span>
-              <b>Ongoing Development</b>
-            </span>
+              <span>
+                <b>Ongoing Development</b>
+              </span>
 
-            <p style={{ margin: "20px 0" }}>
-              Operating throughout the year, Helmchron Academy offers
-              industry-specific training programs tailored to all levels of
-              seniority, ensuring that every team member continuously enhances
-              their expertise and skills.
-            </p>
-            <p className="get-team">Get to know our team and our way of work</p>
+              <p style={{ margin: "20px 0" }}>
+                Operating throughout the year, Helmchron Academy offers
+                industry-specific training programs tailored to all levels of
+                seniority, ensuring that every team member continuously enhances
+                their expertise and skills.
+              </p>
+              <p className="get-team">
+                Get to know our team and our way of work
+              </p>
 
-            <a
-              style={{ background: "var(--dark-blue-color)" }}
-              className="book-btn"
-              href="/our-team"
-            >
-              Read more
-            </a>
+              <a
+                style={{ background: "var(--dark-blue-color)" }}
+                className="book-btn"
+                href="/our-team"
+              >
+                Read more
+              </a>
+            </div>
           </div>
         </div>
 
-        <center data-aos="fade-up">
+        <center
+          data-aos="fade-up"
+          className="container-main"
+          style={{ marginTop: 50 }}
+        >
           <p>
             We believe that transparency, clear guidance, and the continuous
             sharing of knowledge and experiences are essential to maintaining a
@@ -167,7 +175,7 @@ export default function Academy() {
         </center>
 
         <center>
-          <p style={{ marginTop: 50 }}>Explore Helmchron InnoLAB</p>
+          <p style={{ marginTop: 50 }}>Explore Helmchron InnoLAB.</p>
           <br />
           <a
             style={{ background: "var(--dark-blue-color)" }}

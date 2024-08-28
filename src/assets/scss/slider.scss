@@ -4,7 +4,6 @@
   justify-content: space-between;
   align-items: center;
   position: relative;
-  margin-top: 125px;
   margin-bottom: 30px;
 
   div {
@@ -98,12 +97,10 @@
 
 @media (max-width: 2000px) {
   .box-img {
-    margin-top: 115px;
     width: 100%;
 
     > div {
       width: 100%;
-      margin: 10px;
       position: relative;
 
       img {
@@ -159,7 +156,7 @@
   margin-bottom: 70px;
 
   @media (max-width: 1000px) {
-    gap: 150px;
+    gap: 50px;
   }
 
   @media (max-width: 740px) {
@@ -172,14 +169,13 @@
       width: 600px;
 
       @media (max-width: 1000px) {
-        width: 300px;
+        width: 100%;
       }
     }
 
     > div {
       position: absolute;
       right: -100px;
-      bottom: -50px;
 
       div {
         width: 200px;
@@ -317,12 +313,5 @@ ol {
         width: 220px;
       }
     }
-  }
-}
-
-@media (max-width: 1178px) {
-  .box-img,
-  .slider-main {
-    margin-top: 45px;
   }
 }

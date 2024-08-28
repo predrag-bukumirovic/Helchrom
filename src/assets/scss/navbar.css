@@ -4,22 +4,8 @@
   align-items: center;
   padding: 10px;
   width: 100%;
-  background: var(--light-blue-color);
+  background: var(--brend-color);
   transition: top 0.3s ease-in-out;
-}
-
-.navbar-box.navbar-fixed {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-}
-
-.navbar-box.scrolled {
-  background: var(--brend-color) !important;
-}
-.navbar-box.home-nav {
-  background: transparent !important;
 }
 
 .logo img {
@@ -53,7 +39,7 @@ nav ul li span {
   text-transform: uppercase;
   text-decoration: none;
   font-weight: bold;
-  color: var(--gray-text-color) !important;
+  color: #000 !important;
   cursor: pointer;
   padding: 10px 20px;
   transition: .3s;
@@ -66,13 +52,14 @@ nav ul li span {
 
 nav ul li a:hover,
 nav ul li span:hover {
-  background: var(--brend-color);
-  color: var(--light-blue-color) !important;
+  color: var(--brend-color) !important;
+  background: var(--light-blue-color);
 }
 
 .lng-con {
   display: flex;
   padding-inline-start: 0;
+  align-items: center;
   margin-bottom: 0;
 }
 .lng-con li {
@@ -80,6 +67,11 @@ nav ul li span:hover {
 }
 
 nav ul li a.active {
+  color: var(--brend-color) !important;
+  background: var(--light-blue-color);
+}
+
+nav ol li a.active {
   background: var(--brend-color);
   color: var(--light-blue-color) !important;
 }
@@ -105,7 +97,7 @@ ul li ol.menu-down {
   position: absolute;
   background: var(--light-blue-color);
   width: 100%;
-  right: -185px;
+  right: -180px;
   top: 0;
 }
 
@@ -128,12 +120,14 @@ ul li ol.menu-down {
 
 ul li ol.menu-down li a,
 ul li ol.menu-down li span {
-  color: var(--gray-text-color);
+  color: #000;
   margin: 0;
-  /* padding: 15px 20px; */
-  text-transform: capitalize !important;
   display: flex;
   width: 100%;
+}
+
+.menu nav ol li a {
+  text-transform: none;
 }
 
 ul li ol.menu-down li a:hover {
@@ -148,8 +142,8 @@ ul li ol.menu-down li a:hover {
   cursor: pointer;
 }
 .line {
-  background: #939393;
-  height: 2px;
+  background: #fff;
+  height: 3px;
 }
 .line.home {
   background: #fff;
@@ -178,10 +172,15 @@ ul li ol.menu-down li a:hover {
     border-radius: 5px;
   }
 
-  nav ul li a.home-links,
-  nav ul li span.home-links {
+  nav ul li a,
+  nav ul li span {
     color: #fff !important;
   }
+  nav ol li a,
+  nav ol li span {
+    color: #000 !important;
+  }
+
   .showMenu {
     display: none;
   }
@@ -234,8 +233,8 @@ ul li ol.menu-down li a:hover {
     padding-right: 15px;
   }
 
-  .menu nav ul ol li a {
-    text-transform: capitalize;
+  .menu nav ol li a {
+    text-transform: none;
   }
 
   .logo img {

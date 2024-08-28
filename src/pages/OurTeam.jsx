@@ -259,7 +259,7 @@ export default function OurTeam() {
                 </b>
               </p>
               <p>
-                {t("team.values_icon.icon5.text")}.
+                {t("team.values_icon.icon5.text")}
               </p>
             </div>
           </div>

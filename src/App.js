@@ -1,4 +1,4 @@
-import React, {lazy, Suspense, useState, useEffect } from "react";
+import React, {lazy, useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Cookies from "./components/Cookies";
 import Thanks from "./pages/Thanks";
@@ -6,14 +6,13 @@ import Thanks from "./pages/Thanks";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import ScrollTop from "./components/ScrollTop";
-import HomeHeader from "./components/HomeHeader";
+import Navbar from "./components/Navbar";
 
 const Blog = lazy(() => import("./pages/Blog"));
 const Volleyball = lazy(() => import("./pages/Volleyball"));
 const Diversity = lazy(() => import("./pages/Diversity"));
 const TeamTalk = lazy(() => import("./pages/TeamTalk"));
 const Sustainability = lazy(() => import("./pages/Sustainability"));
-const Header = lazy(() => import("./components/Header"));
 const Home = lazy(() => import('./pages/Home'))
 const Career = lazy(() => import("./pages/Career"));
 const News = lazy(() => import("./pages/News"));
@@ -45,7 +44,6 @@ const Oil = lazy(() => import("./pages/Oil"));
 
 function App() {
   const [isVisible, setIsVisible] = useState(false);
-  const renderLoader = () => <p>Loading</p>;
 
     useEffect(() => {
       setIsVisible(true);
@@ -55,23 +53,11 @@ function App() {
       AOS.init({ duration: 1000, once: true });
     }, []);
 
-
-      const renderHeader = (location) => {
-    if (location.pathname === '/') {
-      return <HomeHeader />;
-    } else {
-      return <Header />;
-    }
-  };
-
-
   return <div className={`App ${isVisible ? "visible" : ""}`}>
       <Router>
-        <Suspense fallback={renderLoader()}>
-          {renderHeader(window.location)}
-        </Suspense>
+        <Navbar/>
         <Routes>
-          <Route path="/" element={<><Home/> <HomeHeader/></>} />
+          <Route path="/" element={<><Home/></>} />
           <Route path="/career" element={<Career />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/news" element={<News />} />

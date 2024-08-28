@@ -58,6 +58,7 @@
   .moving-text {
     img {
       width: 100%;
+      padding: 10px;
     }
   }
 
@@ -69,7 +70,9 @@
 .academy-row {
   b {
     color: var(--brend-color) !important;
+    font-size: 20px;
   }
+
   .get-team {
     margin: 200px 0 30px 0;
 

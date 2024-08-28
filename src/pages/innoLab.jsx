@@ -71,28 +71,30 @@ export default function innoLab() {
           </div>
         </div>
 
-        <div style={{ marginTop: 20 }} className="row">
-          <div data-aos="fade-right">
-            <span>
-              <b>How did it all begin?</b>
-            </span>
+        <div style={{ marginTop: 50 }} className="padding30">
+          <span style={{ fontSize: 20 }}>
+            <b>How did it all begin?</b>
+          </span>
 
-            <p>
-              Since its inception in 2018, Helmchron InnoLAB has produced
-              groundbreaking insights that were recognized by the scientific
-              community and published in renowned scientific journals. Our team,
-              who serve as authors and co-authors, have so far published five
-              papers that have garnered recognition for their contributions.
-              These publications reflect our dedication to pushing the envelope
-              and driving innovation that can positively impact science and the
-              community.
-            </p>
+          <p style={{ marginTop: 20, marginBottom: 0 }}>
+            Since its inception in 2018, Helmchron InnoLAB has produced
+            groundbreaking insights that were recognized by the scientific
+            community and published in renowned scientific journals. Our team,
+            who serve as authors and co-authors, have so far published five
+            papers that have garnered recognition for their contributions. These
+            publications reflect our dedication to pushing the envelope and
+            driving innovation that can positively impact science and the
+            community.
+          </p>
+        </div>
 
-            <span>
+        <div className="row padding30">
+          <div style={{ padding: 0 }} data-aos="fade-right">
+            <span style={{ fontSize: 20 }}>
               <b>What`s next?</b>
             </span>
 
-            <p>
+            <p style={{ marginTop: 20 }}>
               As our journey progresses, Helmchron InnoLAB remains focused on
               creating more innovations and disruptions in our industry. Our
               work not only aims to expand the frontiers of scientific knowledge
@@ -112,7 +114,7 @@ export default function innoLab() {
         </div>
 
         <center>
-          <p style={{ marginBottom: 10 }}>
+          <p style={{ marginBottom: 10, marginTop: 30 }}>
             Learn how we implement innovative knowledge in our projects and
             discover Helmchron Navigator.
           </p>
