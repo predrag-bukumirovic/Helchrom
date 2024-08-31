@@ -321,7 +321,7 @@ export default function Home() {
             >
               <div key={index} data-aos="zoom-in">
                 <img src={item.icon} alt="" />
-                <h3>
+                <h3 style={{ color: "#000" }}>
                   {item.title}
                 </h3>
                 <p>
