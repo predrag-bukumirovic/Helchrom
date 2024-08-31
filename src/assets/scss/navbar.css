@@ -5,7 +5,13 @@
   padding: 10px;
   width: 100%;
   background: var(--brend-color);
-  transition: top 0.3s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.navbar-box.active {
+  position: fixed;
+  z-index: 999;
 }
 
 .logo img {

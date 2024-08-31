@@ -55,6 +55,23 @@ export default function Navbar({ className }) {
     closeModal();
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const navbar = document.querySelector(".navbar-box");
+      if (window.scrollY > 500) {
+        navbar.classList.add("active");
+      } else {
+        navbar.classList.remove("active");
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <div className={`navbar-box ${className}`}>
       <div
@@ -104,11 +121,10 @@ export default function Navbar({ className }) {
                   style={{ display: "none" }}
                   className={`${downMenuAbout ? "active" : "menu-down"}`}
                 >
-                  <li>
-                    <CustomLink href="/about-us/who-are-we">
-                      {t("navbar.who_are_we")}
-                    </CustomLink>
-                  </li>
+                  <CustomLink href="/about-us/who-are-we">
+                    {t("navbar.who_are_we")}
+                  </CustomLink>
+
                   <li
                     className="menu-item"
                     onMouseEnter={() => setIsSubmenuOpen(true)}
@@ -153,21 +169,18 @@ export default function Navbar({ className }) {
                         </CustomLink>
                       </div>}
                   </li>
-                  <li>
-                    <CustomLink href="/about-us/our-team">
-                      {t("navbar.our_team")}
-                    </CustomLink>
-                  </li>
-                  <li>
-                    <CustomLink href="/about-us/our-vision-and-mission">
-                      {t("navbar.vision_mission")}
-                    </CustomLink>
-                  </li>
-                  <li>
-                    <CustomLink href="/about-us/our-values">
-                      {t("navbar.our_values")}
-                    </CustomLink>
-                  </li>
+
+                  <CustomLink href="/about-us/our-team">
+                    {t("navbar.our_team")}
+                  </CustomLink>
+
+                  <CustomLink href="/about-us/our-vision-and-mission">
+                    {t("navbar.vision_mission")}
+                  </CustomLink>
+
+                  <CustomLink href="/about-us/our-values">
+                    {t("navbar.our_values")}
+                  </CustomLink>
                 </ol>
               </li>
 
@@ -190,30 +203,24 @@ export default function Navbar({ className }) {
                   style={{ display: "none" }}
                   className={`${downMenuInit ? "active" : "menu-down"}`}
                 >
-                  <li>
-                    <CustomLink href="/initiatives/helmchrone">
-                      HELMCHR<b>ONe</b>
-                    </CustomLink>
-                  </li>
+                  <CustomLink href="/initiatives/helmchrone">
+                    HELMCHR<b>ONe</b>
+                  </CustomLink>
 
-                  <li>
-                    <CustomLink href="/initiatives/navigator">
-                      NAVIGATOR
-                    </CustomLink>
-                  </li>
-                  <li>
-                    <CustomLink href="/initiatives/innolab">
-                      Inno<b>LAB</b>
-                    </CustomLink>
-                  </li>
-                  <li>
-                    <CustomLink
-                      href="/initiatives/academy"
-                      style={{ fontFamily: "DancingScript" }}
-                    >
-                      Academy
-                    </CustomLink>
-                  </li>
+                  <CustomLink href="/initiatives/navigator">
+                    NAVIGATOR
+                  </CustomLink>
+
+                  <CustomLink href="/initiatives/innolab">
+                    Inno<b>LAB</b>
+                  </CustomLink>
+
+                  <CustomLink
+                    href="/initiatives/academy"
+                    style={{ fontFamily: "DancingScript" }}
+                  >
+                    Academy
+                  </CustomLink>
                 </ol>
               </li>
 
@@ -324,33 +331,6 @@ export default function Navbar({ className }) {
           >
             {selectedLanguage}
           </span>
-          {/* <li style={{ width: 55 }}>
-            <div
-              className={`lng-change ${downMenu ? "active" : ""}`}
-              onClick={() => setDownMenu(!downMenu)}
-            >
-              EN <AiOutlineCaretDown className="down-icon" />
-            </div>
-            <ol
-              style={{ display: "none", width: 150 }}
-              className={`${downMenu ? "active" : ""}`}
-            >
-              <li
-                style={{
-                  fontSize: 11,
-                  position: "absolute",
-                  width: 100,
-                  background: "#fff",
-                  padding: 10
-                }}
-              >
-                <ul className="change-lng-mobile">
-                  <li>ENGLISH</li>
-                  <li>DEUTSCH</li>
-                </ul>
-              </li>
-            </ol>
-          </li> */}
 
           <div className="burger-icon" onClick={() => setOpenMenu(!openMenu)}>
             <div className="line1 line" />

@@ -169,7 +169,7 @@
     background: var(--dark-blue-color);
     text-decoration: none;
     color: #fff;
-    padding: 15px 50px;
+    padding: 10px 50px;
     border-radius: 100px;
   }
 }
@@ -179,16 +179,18 @@
   text-decoration: none;
   color: #fff !important;
   font-weight: 500;
-  padding: 15px 50px;
+  padding: 10px 50px;
   cursor: pointer;
   border-radius: 100px;
+  transition: .5s;
 }
 
-.book-btn:hover {
-  color: #fff;
-}
 .blue {
   color: var(--dark-blue-color);
+
+  img {
+    width: 18px;
+  }
 }
 
 .our-home {
@@ -295,52 +297,6 @@
   }
 }
 
-.unique {
-  margin-bottom: 50px;
-  margin-top: 100px;
-  h2 {
-    font-weight: 700;
-    text-align: center;
-    text-transform: uppercase;
-  }
-  h3 {
-    text-align: center;
-    margin-bottom: 30px;
-    font-weight: 700;
-    color: var(--brend-color) !important;
-
-    span {
-      color: var(--dark-blue-color) !important;
-    }
-  }
-
-  .unique-row {
-    display: flex;
-    justify-content: space-between;
-    gap: 50px;
-    align-items: center;
-
-    .img {
-      width: 50%;
-
-      @media (max-width: 1200px) {
-        width: 1500px;
-      }
-
-      img {
-        width: 100%;
-      }
-    }
-
-    @media (max-width: 800px) {
-      display: block;
-      .img {
-        width: 100%;
-      }
-    }
-  }
-}
-
 .facts-box {
   .facts {
     margin-top: 60px;
@@ -354,7 +310,7 @@
       background: var(--dark-blue-color);
       text-decoration: none;
       color: #fff;
-      padding: 15px 50px;
+      padding: 10px 50px;
       border-radius: 100px;
     }
 
@@ -705,4 +661,9 @@
       width: 100%;
     }
   }
+}
+
+#blue {
+  color: var(--dark-blue-color) !important;
+  font-size: inherit;
 }

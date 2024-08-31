@@ -5,7 +5,6 @@ import Carousel from "react-multi-carousel";
 import WhoIcons from "../components/WhoIcons";
 import Storyline from "../components/Storyline";
 import TextReader from "../components/TextRender";
-import nav from "../assets/images/Navigator/nav.png";
 
 import Facts2010 from "../assets/images/Home/Founded.png";
 import Facts6 from "../assets/images/Home/Operations.png";
@@ -19,8 +18,6 @@ import icon3 from "../assets/images/Home/3.png";
 import icon4 from "../assets/images/Home/4.png";
 import icon5 from "../assets/images/Home/5.png";
 import quotation from "../assets/images/quotationLine.png";
-import slideImg1 from "../assets/images/Helmchrone/HCONE1.png";
-import slideImg2 from "../assets/images/Helmchrone/HCONE2.png";
 
 import { FaCircleChevronRight } from "react-icons/fa6";
 
@@ -31,6 +28,7 @@ import "@coreui/coreui/dist/css/coreui.min.css";
 import "react-multi-carousel/lib/styles.css";
 
 import { useTranslation } from "react-i18next";
+import Slider from "../components/SliderHelOne";
 
 const responsive = {
   superLargeDesktop: { breakpoint: { max: 4000, min: 3000 }, items: 1 },
@@ -76,6 +74,7 @@ export default function Home() {
       });
       if (currentNumber === finalNumber) clearInterval(interval);
     }, stepTime);
+    return () => clearInterval(interval);
   };
 
   // Texts for spekers
@@ -98,73 +97,6 @@ export default function Home() {
 
   const areasText = [t("areas.title"), t("areas.sub_text")];
   const factsText = [t("facts.title"), t("facts.sub_text")];
-
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const sliderRef = useRef(null);
-
-  const images = [
-    {
-      srcImg: slideImg2,
-      title: `Unique Service Concept <h3 className="title">
-              HELMCHR<span style={{ textTransform: "capitalize" }}>ONe</span>
-              </h3>`,
-      text: t("unique.text")
-    },
-    {
-      srcImg: slideImg1,
-      title: `Optimized Project Execution <h3 className="title">
-            HELMCHRON  <span>N<img src=${nav} alt="A Navigator" />VIGATOR</span></h3>`,
-      text: `
-        <p>Navigator is our pioneering initiative designed to provide comprehensive consulting and support
-          throughout the entire plant design lifecycle to streamline processes and optimize resources.</p>
-
-          <p><b>Complete Lifecycle Support</b></p>
-          <p>
-          Whether you're embarking on a greenfield or brownfield project, Helmchron Navigator ensures that every
-          phase of your project is clear, on budget, and on schedule. This initiative offers a structured yet flexible
-          approach that adapts to the unique demands of each industry, including highly regulated sectors like
-          pharmaceuticals and biopharma.<br/><br/>
-          Helmchron Navigator combines proactive planning with expert guidance to anticipate challenges early
-          on, ensuring a strategic plan is in place from the start. Our team conducts thorough analyses and
-          delivers tailored recommendations, allowing for informed decision-making at every stage of your project.
-          </p>
-          <p><b>Agile Execution and Comprehensive Support</b></p>
-
-          <p>Our team efficiently adapts to evolving project requirements, providing end-to-end support to
-          continuously improve and refine the project as it progresses.
-          Ensure your plant design stays on course with Helmchron Navigator.</p>
-          <br/>
-          <a class="book-btn" href="/initiatives/navigator">Read more</a>`
-    }
-  ];
-
-  const handleNext = () => {
-    setCurrentIndex(
-      prevImage => (prevImage === images.length - 1 ? 0 : prevImage + 1)
-    );
-    scrollToTop();
-  };
-
-  const handlePrev = () => {
-    setCurrentIndex(
-      prevImage => (prevImage === 0 ? images.length - 1 : prevImage - 1)
-    );
-    scrollToTop();
-  };
-
-  const scrollToTop = () => {
-    if (sliderRef.current) {
-      sliderRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
-    }
-  };
-
-  const handleDotClick = index => {
-    setCurrentIndex(index);
-  };
-
-  const handleImageClick = index => {
-    setCurrentIndex(index);
-  };
 
   return (
     <div>
@@ -347,37 +279,46 @@ export default function Home() {
         <div className="services-icon">
           {[
             {
+              id: 1,
               icon: icon1,
               title: t("services.icon.title1"),
               text: t("services.icon.text1"),
               link: "/our-services"
             },
             {
+              id: 2,
               icon: icon2,
               title: t("services.icon.title2"),
               text: t("services.icon.text2"),
               link: "/our-services"
             },
             {
+              id: 3,
               icon: icon3,
               title: t("services.icon.title3"),
               text: t("services.icon.text3"),
               link: "/our-services"
             },
             {
+              id: 4,
               icon: icon4,
               title: t("services.icon.title4"),
               text: t("services.icon.text4"),
               link: "/our-services"
             },
             {
+              id: 5,
               icon: icon5,
               title: t("services.icon.title5"),
               text: t("services.icon.text5"),
               link: "/our-services"
             }
           ].map((item, index) =>
-            <a href={item.link} style={{ textDecoration: "none" }}>
+            <a
+              key={item.id}
+              href={item.link}
+              style={{ textDecoration: "none" }}
+            >
               <div key={index} data-aos="zoom-in">
                 <img src={item.icon} alt="" />
                 <h3>
@@ -396,83 +337,14 @@ export default function Home() {
         <p style={{ marginBottom: 30 }}>
           {t("home.after")}
         </p>
-        <a ref={sliderRef} className="book-btn" href="/our-services">
+        <a className="book-btn" href="/our-services">
           {t("read_more")}
         </a>
       </center>
 
       {/* Unique Service Concept */}
       <div className="unique">
-        <div className="container-main padding30">
-          <div className="unique-row">
-            <div className="text">
-              <div className="slider-text-container">
-                <div className="slider-text" style={{ textAlign: "start" }}>
-                  <h2
-                    className="title"
-                    dangerouslySetInnerHTML={{
-                      __html: images[currentIndex].title
-                    }}
-                  />
-
-                  <p
-                    dangerouslySetInnerHTML={{
-                      __html: images[currentIndex].text
-                    }}
-                  />
-                </div>
-              </div>
-            </div>
-            <div className="slider-images" style={{ width: 400 }}>
-              {images.map((image, index) => {
-                const isActive = index === currentIndex;
-                const positionStyle = isActive ? { order: -1 } : {};
-                return (
-                  <div
-                    key={index}
-                    className={`slider-image home ${index === currentIndex
-                      ? "active"
-                      : ""}`}
-                    style={{
-                      ...positionStyle,
-                      backgroundImage: `url(${image.srcImg})`
-                    }}
-                    onClick={() => handleImageClick(index)}
-                  />
-                );
-              })}
-            </div>
-          </div>
-
-          <div className="slider-controls">
-            <button
-              className="slider-button slider-button-prev"
-              onClick={handlePrev}
-            >
-              &#10094;
-            </button>
-            <div className="slider-dots">
-              {images.map((_, index) =>
-                <div
-                  key={index}
-                  className={`slider-dot ${index === currentIndex
-                    ? "active"
-                    : ""}`}
-                  onClick={() => handleDotClick(index)}
-                />
-              )}
-            </div>
-            <button
-              className="slider-button slider-button-next"
-              onClick={handleNext}
-            >
-              &#10095;
-            </button>
-          </div>
-          <center style={{ color: "#000" }}>
-            {currentIndex + 1}/{images.length}
-          </center>
-        </div>
+        <Slider />
       </div>
 
       {/* Our Business Areas */}
@@ -506,15 +378,15 @@ export default function Home() {
 
           <div ref={factsRef} className="facts-icon">
             {[
-              Facts2010,
-              Facts6,
-              Facts7,
-              Facts180,
-              Factshappy,
-              Facts5
+              { id: 1, src: Facts2010 },
+              { id: 2, src: Facts6 },
+              { id: 3, src: Facts7 },
+              { id: 4, src: Facts180 },
+              { id: 5, src: Factshappy },
+              { id: 6, src: Facts5 }
             ].map((img, index) =>
-              <div key={index} className="icon-item" data-aos="zoom-in">
-                <img src={img} alt="Facts img" />
+              <div key={img.id} className="icon-item" data-aos="zoom-in">
+                <img src={img.src} alt="Facts img" />
                 <div className="text">
                   <span className="word">
                     {index === 0
@@ -550,7 +422,7 @@ export default function Home() {
 
       {/* Video */}
       <div className="video" data-aos="fade-up">
-        <p>
+        <p style={{ color: "#000" }}>
           {t("video_common")}
         </p>
         <center>

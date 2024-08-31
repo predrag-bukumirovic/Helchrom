@@ -17,12 +17,14 @@ const CustomSelect = ({ currentLanguage, onLanguageChange }) => {
     window.location.reload();
   };
 
+  const currentLang = lng.find(lang => lang.code === currentLanguage);
+
   return (
     <div style={{ display: "block", marginTop: 20, position: "relative" }}>
       <label style={{ fontSize: 14 }}>Change Language:</label>
       <div className="custom-select">
         <div className="select-selected" onClick={toggleDropdown}>
-          {lng.find(lang => lang.code === currentLanguage).label}
+          {currentLang ? currentLang.label : "Select Language"}
           <span className="select-arrow">&#9662;</span>
         </div>
       </div>

@@ -8,7 +8,7 @@ import "../assets/scss/mission-vision.scss";
 import "../assets/scss/home.scss";
 
 import mainImg from "../assets/images/Vision/vision1.jpg";
-import mainImg1 from "../assets/images/Vision/vision2.jpg";
+import mainImg1 from "../assets/images/Vision/vision2.png";
 import mainImg2 from "../assets/images/Vision/vision3.jpg";
 import quotation from "../assets/images/quotationLine.png";
 import MVDesno from "../assets/images/Vision/m-v-desno.png";

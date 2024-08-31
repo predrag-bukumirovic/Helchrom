@@ -163,7 +163,7 @@ export default function OurCore() {
           </div>
         </div>
 
-        <div className="container-main services-row">
+        <div style={{ paddingTop: 0 }} className="container-main services-row">
           <div data-aos="fade-right" className="img-design detaild img-row">
             <img src={Detailed} alt="" />
           </div>
@@ -298,13 +298,25 @@ export default function OurCore() {
       </center>
 
       <div className="unique" style={{ marginTop: 100 }}>
-        <h2 style={{ marginBottom: 0 }} className="title">
-          {t("our_core.unique")}
-        </h2>
+        <center>
+          <h2 style={{ marginBottom: 30 }} className="title">
+            {t("our_core.unique")}
 
-        <h3>
-          HELMCHR<span>ONe</span>
-        </h3>
+            <span
+              style={{
+                fontWeight: "bold",
+                textTransform: "none",
+                color: "var(--dark-blue-color)"
+              }}
+            >
+              <br /> HELMCHR<span
+                style={{ fontSize: "inherit", color: "var(--brend-color)" }}
+              >
+                ONe
+              </span>
+            </span>
+          </h2>
+        </center>
 
         <center>
           <iframe

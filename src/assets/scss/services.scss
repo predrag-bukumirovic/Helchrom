@@ -140,9 +140,11 @@
   h4 {
     writing-mode: tb-rl;
     transform: rotate(180deg);
-    font-size: 35px;
+    font-size: 45px;
     font-weight: 900;
+    letter-spacing: -1px;
     color: transparent !important;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     -webkit-text-stroke: 1px var(--brend-color);
   }
 }

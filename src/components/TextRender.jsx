@@ -105,7 +105,7 @@ const TextReader = ({ texts }) => {
         ? <AiOutlinePause />
         : <img
             src={userSound}
-            style={{ width: 25, marginLeft: 10 }}
+            style={{ width: 20, marginLeft: 10 }}
             alt="Sound user"
           />}
     </span>
