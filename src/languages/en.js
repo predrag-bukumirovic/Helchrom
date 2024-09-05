@@ -358,25 +358,24 @@ const enTranslation = {
     how_do_we_work: "How do we work?",
     home: "Home",
     about_us: "About us",
-    our_team: "Our Team",
+    our_team: "Our team",
     vision_mission: "Our vision and mission",
     our_values: "Our values",
     competences_services: "competences & services",
-    our_core: "Our core competencies",
     our_services: "Services",
     our_reference: "References",
     career: "career",
     news: "news",
     blog: "blog",
     contact: "contact",
-    legal: "Legal Statement",
-    departments: "Our Divisions",
-    food: "Food & Bio",
+    legal: "Legal statement",
+    departments: "Our divisions",
+    food: "Food & bio",
     pharma: "Pharma",
     chemicals: "Chemicals",
     electronics: "Electronics",
     energy: "Energy",
-    oil: "Oil & Gas"
+    oil: "Oil & gas"
   },
   team: {
     title: "Our Team",
@@ -775,7 +774,7 @@ const enTranslation = {
   },
 
   policy: {
-    title: "Privacy Policy",
+    title: "Privacy policy",
     sub1:
       "<h2>Thank you for visiting our website and showing interest in our company.</h2>",
     text1: `We, at Helmchron, consider your data protection a priority. This

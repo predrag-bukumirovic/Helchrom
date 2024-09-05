@@ -40,6 +40,7 @@ export default function TeamTalk() {
         </h1>
 
         <p
+          style={{ textAlign: "center" }}
           dangerouslySetInnerHTML={{
             __html: t("news.posts.post1.content.text")
           }}

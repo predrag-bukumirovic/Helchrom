@@ -13,9 +13,11 @@ import oilandgas from "../assets/images/Home/oilandgas.webp";
 import oilandgasColor from "../assets/images/Home/oilandgasColor.png";
 import foodandbio from "../assets/images/Home/foodandbio.webp";
 import foodandbioColor from "../assets/images/Home/foodandbioColor.png";
+import { useTranslation } from "react-i18next";
 
 export default function WhoIcons() {
   const [hoveredImage, setHoveredImage] = useState(null);
+  const { t } = useTranslation();
 
   const handleMouseEnter = image => {
     setHoveredImage(image);
@@ -86,7 +88,7 @@ export default function WhoIcons() {
 
       <center style={{ marginTop: 50 }}>
         <a className="book-btn" href="/contact">
-          Book a meeting
+          {t("read_more")}
         </a>
       </center>
     </div>

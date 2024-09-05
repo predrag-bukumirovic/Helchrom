@@ -55,22 +55,22 @@ export default function Navbar({ className }) {
     closeModal();
   };
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const navbar = document.querySelector(".navbar-box");
-      if (window.scrollY > 500) {
-        navbar.classList.add("active");
-      } else {
-        navbar.classList.remove("active");
-      }
-    };
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     const navbar = document.querySelector(".navbar-box");
+  //     if (window.scrollY > 500) {
+  //       navbar.classList.add("active");
+  //     } else {
+  //       navbar.classList.remove("active");
+  //     }
+  //   };
 
-    window.addEventListener("scroll", handleScroll);
+  //   window.addEventListener("scroll", handleScroll);
 
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, []);
 
   return (
     <div className={`navbar-box ${className}`}>
@@ -133,7 +133,7 @@ export default function Navbar({ className }) {
                   >
                     <span
                       style={{
-                        textTransform: "capitalize",
+                        textTransform: "none",
                         paddingLeft: 20,
                         display: "flex",
                         justifyContent: "space-between",

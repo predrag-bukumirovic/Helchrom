@@ -10,10 +10,10 @@ form div {
 }
 input,
 textarea {
-  padding: 10px;
+  padding: 15px;
   font-size: 16px;
   display: block;
-  border-radius: 10px;
+  border-radius: 30px;
   border: 1px solid #bebebe;
   width: 100%;
   margin-bottom: 17px;
@@ -30,7 +30,8 @@ textarea {
   }
 }
 
-#policy {
+#policy-contact,
+#policy-meeting {
   width: max-content;
   margin-left: 5px;
 }

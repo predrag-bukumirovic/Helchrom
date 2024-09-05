@@ -72,6 +72,7 @@ body,
 .slider {
   width: 2000px;
   margin: 0 auto;
+  margin-top: 60px;
 }
 
 .padding30,
@@ -186,13 +187,20 @@ footer {
 
 .sound-icon {
   position: absolute;
-  left: 6px;
-  top: -30px;
+  right: 10px;
+  top: 0;
   cursor: pointer;
+  background: var(--light-blue-color);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   svg {
     color: var(--brend-color);
     font-size: 20px;
-    margin-left: 10px;
   }
   &:active {
     background: transparent;

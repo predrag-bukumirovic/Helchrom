@@ -101,13 +101,13 @@
     position: relative;
     gap: 50px;
     justify-content: space-evenly;
-    padding: 50px 20px;
+    padding: 50px 150px;
 
     @media (max-width: 1400px) {
       gap: 20px !important;
     }
 
-    @media (max-width: 990px) {
+    @media (max-width: 1100px) {
       grid-template-columns: auto;
 
       .detaild {
@@ -116,6 +116,14 @@
 
       .img-row img {
         width: 100% !important;
+      }
+    }
+
+    @media (max-width: 650px) {
+      padding: 50px 20px 50px 60px;
+
+      .vertical-text {
+        left: -60px;
       }
     }
 
@@ -134,7 +142,7 @@
 
 .vertical-text {
   position: absolute;
-  left: -90px;
+  left: 0;
   z-index: 1;
 
   h4 {

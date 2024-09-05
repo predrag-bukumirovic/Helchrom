@@ -467,13 +467,13 @@ export default function Contact() {
                 />
               </label>
 
-              <label className="label-policy" htmlFor="policy">
+              <label className="label-policy" htmlFor="policy-contact">
                 <p
                   dangerouslySetInnerHTML={{ __html: t("contact.form.policy") }}
                 />
 
                 <input
-                  id="policy"
+                  id="policy-contact"
                   type="checkbox"
                   name="policyAccepted"
                   value={
@@ -553,13 +553,13 @@ export default function Contact() {
                 </div>
               </div>
 
-              <label className="label-policy" htmlFor="policy">
+              <label className="label-policy" htmlFor="policy-meeting">
                 <p
                   dangerouslySetInnerHTML={{ __html: t("contact.form.policy") }}
                 />
 
                 <input
-                  id="policy"
+                  id="policy-meeting"
                   type="checkbox"
                   name="policyAccepted"
                   value={

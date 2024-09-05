@@ -446,7 +446,7 @@ export default function Home() {
       </center>
 
       {/* Testimonials */}
-      <div className="testimonials container-main">
+      <div className="testimonials  container-main">
         <div className="slider-testi padding30">
           <h2 className="title" data-aos="fade-up">
             {t("feedback.title")}
@@ -463,7 +463,11 @@ export default function Home() {
               "superLargeDesktop"
             ]}
           >
-            <div className="testi-item" data-aos="fade-up">
+            <div
+              className="testi-item"
+              style={{ marginBottom: 40 }}
+              data-aos="fade-up"
+            >
               <img src={quotation} alt="quotation" />
 
               <div>

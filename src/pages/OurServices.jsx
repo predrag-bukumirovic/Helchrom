@@ -293,7 +293,7 @@ export default function OurCore() {
           className="book-btn"
           href="/contact"
         >
-          {t("book_btn")}
+          {t("read_more")}
         </a>
       </center>
 

@@ -15,6 +15,7 @@ import Agility from "../assets/images/Values/Agility.png";
 import Diversity from "../assets/images/Values/Diversity.png";
 import Courage from "../assets/images/Values/Courage.png";
 import Oursocial from "../assets/images/Values/Oursocial.gif";
+import OursocialMobile from "../assets/images/Values/OursocialMobile.gif";
 import TextRender from "../components/TextRender";
 import { useTranslation } from "react-i18next";
 
@@ -257,6 +258,13 @@ export default function OurValues() {
               data-aos="zoom-in"
               className="our-social"
               src={Oursocial}
+              alt="in motion"
+            />
+
+            <img
+              data-aos="zoom-in"
+              className="our-social-mobile"
+              src={OursocialMobile}
               alt="in motion"
             />
           </div>

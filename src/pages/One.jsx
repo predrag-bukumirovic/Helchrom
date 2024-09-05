@@ -18,6 +18,7 @@ import inzenjer from "../assets/images/Helmchrone/inzenjer.png";
 import icon1 from "../assets/images/Helmchrone/icon1.png";
 import icon2 from "../assets/images/Helmchrone/icon2.png";
 import icon3 from "../assets/images/Helmchrone/icon3.png";
+import { useTranslation } from "react-i18next";
 
 const images = [
   {
@@ -53,6 +54,7 @@ const images = [
 ];
 
 const One = () => {
+  const { t } = useTranslation();
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(
@@ -213,7 +215,7 @@ const One = () => {
               className="book-btn"
               href="/contact"
             >
-              Book a meeting
+              {t("read_more")}
             </a>
           </center>
         </div>

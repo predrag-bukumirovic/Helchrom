@@ -195,6 +195,26 @@
   width: 100%;
   margin-bottom: 100px;
 }
+.our-social-mobile {
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+@media (max-width: 600px) {
+  .our-social-mobile {
+    display: block;
+  }
+
+  .our-social {
+    display: none;
+  }
+}
+
+@media (min-width: 600px) {
+  .our-social-mobile {
+    display: none;
+  }
+}
 
 .row2,
 .row4 {
