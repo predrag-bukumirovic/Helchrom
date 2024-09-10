@@ -8,7 +8,7 @@
   background-size: cover;
   width: 100%;
   height: 100vh;
-  top: -23px;
+  top: 0;
   position: relative;
 }
 
@@ -416,7 +416,6 @@
   }
 
   .welcome {
-    text-align: justify;
     margin: 50px auto;
 
     h1 {

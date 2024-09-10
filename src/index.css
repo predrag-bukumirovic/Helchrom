@@ -75,10 +75,10 @@ body,
   margin-top: 60px;
 }
 
-.padding30,
+/* .padding30,
 center {
   padding: 0 10px;
-}
+} */
 
 .title {
   text-align: center;
@@ -133,7 +133,7 @@ footer {
 @media (max-width: 1600px) {
   .container-main,
   #App {
-    width: 100%;
+    width: 90%;
   }
 }
 
