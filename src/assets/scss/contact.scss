@@ -23,6 +23,7 @@ textarea {
 .label-policy {
   width: max-content;
   display: flex;
+  margin-top: 20px;
   align-items: center;
 
   p {
@@ -76,11 +77,11 @@ label .star {
   align-items: center;
   text-align: center;
   flex-wrap: wrap;
-  margin: 80px 0;
+  margin-top: 50px;
   gap: 150px;
 }
 .icon-contact img {
-  width: 90px;
+  width: 130px;
   transition: .6s;
 }
 .icon-contact img:hover {
@@ -105,11 +106,7 @@ label .star {
     flex-direction: column;
   }
 }
-@media (max-width: 700px) {
-  .icon-contact img {
-    width: 100px;
-  }
-}
+
 .loading-spiner {
   position: fixed;
   display: flex;

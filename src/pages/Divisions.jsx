@@ -112,7 +112,7 @@ export default function Division() {
 
       <div className="container-main">
         <center>
-          <h1 className="title">OUR DIVISON</h1>
+          <h1 className="title">OUR Divisions</h1>
           <p>
             We provide specialized plant design engineering solutions to
             manufacturers in various industries, including pharmaceuticals, life
