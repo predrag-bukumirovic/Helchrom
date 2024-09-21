@@ -30,6 +30,7 @@ const Academy = lazy(() => import("./pages/Academy"));
 const InnoLab = lazy(() => import("./pages/innoLab"));
 const Navigator = lazy(() => import("./pages/Navigator"));
 const One = lazy(() => import("./pages/One"));
+const Division = lazy(() => import("./pages/Division"));
 
 const Chemicals = lazy(() => import("./pages/Chemicals"));
 const Achema = lazy(() => import("./pages/Achema"));
@@ -86,6 +87,7 @@ function App() {
           <Route path="/food-and-bioproducts" element={<Food />} />
           <Route path="/energy" element={<Energy />} />
           <Route path="/oil&gas" element={<Oil />} />
+          <Route path="/division" element={<Division />} />
           <Route path="/thanks" element={<Thanks />} />
           <Route path="/*" element={<NotFound />} />
         </Routes>

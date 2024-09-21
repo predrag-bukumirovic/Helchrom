@@ -54,10 +54,12 @@
       background: var(--light-blue-color);
       transition: transform 0.5s ease, width 0.5s ease;
       transform: scale(1);
+      opacity: 0.1;
       border: 3px solid var(--light-blue-color);
 
       &.active {
         border: 3px solid var(--brend-color);
+        opacity: 1;
       }
 
       h5 {
@@ -92,7 +94,6 @@
   .slider-controls {
     position: absolute;
     bottom: -100px;
-    width: 100%;
     display: flex;
     transform: translateY(-50%);
     margin-top: 60px;
@@ -123,6 +124,10 @@
   }
 }
 
+.slider-control-helOne {
+  transform: translateX(300px) !important;
+}
+
 .slider-dots {
   display: flex;
   gap: 10px;
@@ -147,6 +152,21 @@
 
 .mobile-text-our-init {
   text-align: center;
+}
+
+@media (max-width: 1000px) {
+  .slider-control-helOne {
+    transform: translate(-50px, 30px) !important;
+  }
+  .slider-content-helone {
+    transform: translateX(0px) !important;
+  }
+}
+
+@media (max-width: 430px) {
+  .slider-control-helOne {
+    transform: translate(-108px, 30px) !important;
+  }
 }
 
 @media (min-width: 800px) {

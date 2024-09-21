@@ -41,8 +41,7 @@ const Slider = () => {
     setCurrentIndex(prevIndex => (prevIndex - 1 + items.length) % items.length);
   };
 
-  return (
-    <div style={{ marginTop: 100 }} className="container-main">
+  return <div style={{ marginTop: 100 }} className="container-main">
       <div className="mobile-text-our-init padding30">
         <h2 className="title">Our initiatives</h2>
         <p>
@@ -68,7 +67,7 @@ const Slider = () => {
               </p>
             </div>
 
-            <div className="slider-content">
+            <div className="slider-content slider-content-helone">
               {items.map((item, index) =>
                 <div
                   key={index}
@@ -95,13 +94,15 @@ const Slider = () => {
                 </div>
               )}
             </div>
-            <div className="slider-controls">
+            <div className="slider-controls slider-control-helOne">
               <button onClick={prevSlide}>&#10094;</button>
               <div className="slider-dots">
                 {items.map((_, index) =>
                   <span
                     key={index}
-                    className={`dot ${index === currentIndex ? "active" : ""}`}
+                    className={`dot ${index === currentIndex
+                      ? "active"
+                      : ""}`}
                     onClick={() => setCurrentIndex(index)}
                   />
                 )}
@@ -111,8 +112,7 @@ const Slider = () => {
           </div>
         </div>
       </div>
-    </div>
-  );
+    </div>;
 };
 
 export default Slider;
