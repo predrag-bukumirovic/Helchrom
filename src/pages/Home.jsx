@@ -131,11 +131,11 @@ export default function Home() {
               />
               {t("navbar.our_reference")}
             </a>
-            <a href="/our-references">
+            <a href="/divisions">
               <FaCircleChevronRight
                 style={{ color: "var(--brend-color)", fontSize: 30 }}
               />
-              Departments
+              Divisons
             </a>
           </div>
         </div>
@@ -167,11 +167,11 @@ export default function Home() {
               />
               {t("navbar.our_reference")}
             </a>
-            <a href="/our-references">
+            <a href="/divisions">
               <FaCircleChevronRight
                 style={{ color: "var(--brend-color)", fontSize: 30 }}
               />
-              Departments
+              Divisons
             </a>
           </div>
         </div>
@@ -203,23 +203,23 @@ export default function Home() {
               />
               {t("navbar.our_services")}
             </a>
-            <a href="/our-references">
+            <a href="/divisions">
               <FaCircleChevronRight
                 style={{ color: "var(--brend-color)", fontSize: 30 }}
               />
-              Departments
+              Divisons
             </a>
           </div>
         </div>
         <div className="banner-home banner4">
           <div className="bg" />
           <div className="text-banner">
-            <h2>Departments</h2>
+            <h2>Divisons</h2>
             <div className="line" />
             <p>
               {t("home.banners.banner4.text")}
             </p>
-            <a className="book-btn" href="/">
+            <a className="book-btn" href="/divisions">
               {t("read_more")}
             </a>
           </div>

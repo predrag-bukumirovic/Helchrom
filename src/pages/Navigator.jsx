@@ -81,7 +81,7 @@ export default function Navigator() {
                 is designed to meet the needs and expectations of various
                 industries, including highly regulated GxP sectors such as
                 pharmaceuticals and biopharma. Helmchron Navigator can be
-                deployed across all our projects and business departments, from
+                deployed across all our projects and business divisions, from
                 food to chemicals. <br /> Explore our services and competencies.
               </p>
 

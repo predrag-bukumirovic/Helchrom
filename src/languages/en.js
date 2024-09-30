@@ -1,6 +1,6 @@
 const enTranslation = {
   home: {
-    welcome: `<p>WELCOME</p> <b>to <p id='blue'>Helmchron</p> official website<b/>`,
+    welcome: `<p>WELCOME</p> <b>to <p>HELMCHRON</p><b/>`,
     wel_text: `Helmchron is a family-owned company dedicated to providing comprehensive and full-service engineering solutions for the manufacturing facilities of pharmaceuticals, chemicals, food and bio products, electronics, energy, and oil and gas. We take pride in contributing to the manufacturing of globally available, safe, and high-quality products since 2010. Our mission has remained the same since our beginnings - we improve the quality of life for everyone everywhere whilst keeping our environment healthy for the coming generations. Today, our scope is broader and our team more diverse providing unique perspectives, agility, and efficacy.<br /> Our engineering solutions are now delivered to leaders and innovators across different industries with a focus on global impact, sustainable outcomes, and long-lasting partnerships.`,
     after:
       "After the completion of operational activities, we provide guarantees and stand accountable for the quality of our work, offering ongoing support and consultation within the project scope to address our client's questions and concerns, ensuring the continued success of our joined project even after commissioning.",
@@ -19,7 +19,7 @@ const enTranslation = {
       },
       banner4: {
         text:
-          "We operate across six major business departments, with pharma and food being the largest."
+          "We operate across six major business divisions, with pharma and food being the largest."
       }
     }
   },

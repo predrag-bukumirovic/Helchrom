@@ -19,7 +19,7 @@ import slider3 from "../assets/images/Division/3.png";
 import slider4 from "../assets/images/Division/4.png";
 import slider5 from "../assets/images/Division/5.png";
 import slider6 from "../assets/images/Division/6.png";
-import Insights from "../components/Insights";
+import InsightsWhite from "../components/InsightsWhite";
 import SliderServices from "../components/SliderServices";
 
 export default function Division() {
@@ -183,7 +183,7 @@ export default function Division() {
       <div style={{ background: "var(--light-blue-color)", margin: "20px 0" }}>
         <div style={{ padding: "50px 0" }} className="insights container-main">
           <h2 className="title">PROJECTS SHARE PER DIVISON</h2>
-          <Insights />
+          <InsightsWhite />
         </div>
       </div>
 
@@ -215,7 +215,7 @@ export default function Division() {
             <a href="/pharma">
               <div>
                 <div className="ref-img">
-                  <span>Parma</span>
+                  <span>Pharma</span>
                 </div>
               </div>
             </a>
@@ -287,20 +287,20 @@ export default function Division() {
           </p>
 
           <div className="initiative-logo">
-            <a href="/initiatives/academy">
-              <img src={academy} alt="Academy Logo" />
-            </a>
-
-            <a href="/initiatives/innolab">
-              <img src={innoLab} alt="InnoLab Logo" />
+            <a href="/initiatives/helmchrone">
+              <img src={one} alt="One Logo" />
             </a>
 
             <a href="/initiatives/navigator">
               <img src={navigator} alt="Navigator Logo" />
             </a>
 
-            <a href="/initiatives/helmchrone">
-              <img src={one} alt="One Logo" />
+            <a href="/initiatives/innolab">
+              <img src={innoLab} alt="InnoLab Logo" />
+            </a>
+
+            <a href="/initiatives/academy">
+              <img src={academy} alt="Academy Logo" />
             </a>
           </div>
         </center>
