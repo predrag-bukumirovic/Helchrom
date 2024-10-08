@@ -135,7 +135,7 @@ export default function Home() {
               <FaCircleChevronRight
                 style={{ color: "var(--brend-color)", fontSize: 30 }}
               />
-              Divisons
+              Divisions
             </a>
           </div>
         </div>
@@ -171,7 +171,7 @@ export default function Home() {
               <FaCircleChevronRight
                 style={{ color: "var(--brend-color)", fontSize: 30 }}
               />
-              Divisons
+              Divisions
             </a>
           </div>
         </div>
@@ -207,14 +207,14 @@ export default function Home() {
               <FaCircleChevronRight
                 style={{ color: "var(--brend-color)", fontSize: 30 }}
               />
-              Divisons
+              Divisions
             </a>
           </div>
         </div>
         <div className="banner-home banner4">
           <div className="bg" />
           <div className="text-banner">
-            <h2>Divisons</h2>
+            <h2>Divisions</h2>
             <div className="line" />
             <p>
               {t("home.banners.banner4.text")}
