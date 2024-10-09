@@ -228,7 +228,6 @@ const geTranslation = {
   quick_links: "",
   contact_us: "",
   download_brochure: "",
-  connects: "",
   video_common_values: "",
   services_vertical: "",
   btn_references: "",

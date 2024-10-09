@@ -1,0 +1,150 @@
+.competences-container {
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+.competence-nav {
+  display: flex;
+  margin-bottom: 20px;
+  overflow-x: hidden; /* Sakriva deo koji prelazi vidljivi prostor */
+}
+
+.nav-slider {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+.competence-nav button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.3s ease;
+  border-bottom: 2px solid #ccc;
+}
+
+.competence-nav button img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 5px;
+}
+
+.competence-nav button.active {
+  border-bottom: 2px solid var(--brend-color);
+}
+
+.competence-nav button span {
+  margin-top: 5px;
+  font-size: 14px;
+  padding: 0 20px;
+  font-weight: 600;
+}
+
+.competence-nav button span.active {
+  color: var(--brend-color);
+}
+
+.competence-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.fade-in {
+  opacity: 1;
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+.competence-text {
+  width: 50%;
+  text-align: left;
+}
+.competence-text h3 {
+  text-transform: uppercase;
+}
+.competence-image {
+  width: 40%;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.img-pin {
+  background: var(--brend-color);
+  color: #fff;
+  padding: 15px 30px;
+  text-transform: uppercase;
+  font-size: 30px;
+  position: absolute;
+  left: 0;
+  bottom: 30px;
+  border-radius: 30px;
+  font-weight: bold;
+}
+
+.competence-image img {
+  width: 100%;
+  height: auto;
+}
+
+.book-meeting {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+/* Responzivnost */
+@media (max-width: 768px) {
+  .competence-nav {
+    overflow-x: scroll; /* Omogućava horizontalno skrolovanje */
+  }
+
+  .nav-slider {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .competence-content {
+    flex-direction: column;
+  }
+
+  .competence-text,
+  .competence-image {
+    width: 100%;
+  }
+
+  .img-pin {
+    font-size: 18px;
+    left: -25px;
+  }
+
+  .competence-image img {
+    margin-top: 20px;
+  }
+
+  .competence-nav button span {
+    font-size: 10px;
+  }
+
+  .competence-text ul {
+    padding: 0;
+  }
+}
+
+@media (min-width: 700px) {
+  .competence-nav {
+    justify-content: center;
+  }
+}

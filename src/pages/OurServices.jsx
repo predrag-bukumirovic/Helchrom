@@ -17,6 +17,7 @@ import "@coreui/coreui/dist/css/coreui.min.css";
 import { Helmet } from "react-helmet";
 import { useTranslation } from "react-i18next";
 import TextReader from "../components/TextRender";
+import OurCompetences from "../components/OurCompetences";
 
 const mainImages = [mainImg, mainImg1, mainImg2];
 
@@ -284,7 +285,7 @@ export default function OurCore() {
         </div>
       </div>
 
-      <center style={{ marginTop: 50 }}>
+      <center style={{ marginTop: 50, padding: "0 20px" }}>
         <p style={{ marginBottom: 30 }}>
           {t("our_core.text_book")}
         </p>
@@ -296,6 +297,8 @@ export default function OurCore() {
           {t("read_more")}
         </a>
       </center>
+
+      <OurCompetences />
 
       <div className="unique" style={{ marginTop: 100 }}>
         <center>

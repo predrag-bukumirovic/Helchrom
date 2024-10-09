@@ -4,7 +4,7 @@ import "../assets/scss/electronics.scss";
 import "../assets/scss/home.scss";
 
 import mainIm1 from "../assets/images/Food/img1.png";
-import mainImg2 from "../assets/images/Food/img2.jpg";
+import mainImg2 from "../assets/images/Food/img2.png";
 import mainImg3 from "../assets/images/Food/img3.png";
 
 import Food1 from "../assets/images/Food/Food1.png";

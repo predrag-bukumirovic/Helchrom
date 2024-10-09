@@ -26,6 +26,11 @@
   src: url('./assets/font/DancingScript.ttf');
   font-display: swap;
 }
+@font-face {
+  font-family: "Calligraphy";
+  src: url('./assets/font/LucidaUnicodeCalligraphy.ttf');
+  font-display: swap;
+}
 
 html {
   scroll-behavior: smooth;

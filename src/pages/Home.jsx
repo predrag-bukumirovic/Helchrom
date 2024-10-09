@@ -16,6 +16,7 @@ import Facts5 from "../assets/images/Home/Inno.png";
 import quotation from "../assets/images/quotationLine.png";
 
 import { FaCircleChevronRight } from "react-icons/fa6";
+import { PiDownloadSimple } from "react-icons/pi";
 
 import "../assets/scss/home.scss";
 import "../assets/scss/slider.scss";
@@ -249,7 +250,7 @@ export default function Home() {
 
       {/* Welcome */}
       <div className="welcome container-main padding30">
-        <h1
+        <div
           dangerouslySetInnerHTML={{ __html: t("home.welcome") }}
           style={{ padding: "0 20px" }}
         />
@@ -364,29 +365,68 @@ export default function Home() {
       <Storyline />
 
       {/* Video */}
-      <div className="video" data-aos="fade-up">
-        <p style={{ color: "#000" }}>
+      <div className="container-main video" data-aos="fade-up">
+        <p style={{ color: "#000", fontSize: 25 }}>
           {t("video_common")}
         </p>
-        <center>
-          <iframe
-            className="video-yt"
-            loading="lazy"
-            src="https://www.youtube.com/embed/KjxWR92Yb4o"
-            title="Helmchron - Chemistry Connects Us"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowFullScreen
-          />
-        </center>
+
+        <div className="video-card">
+          <div className="text-card">
+            <h3 className="sub-title">Connect and convert</h3>
+            <p>
+              Outperform competitors, create more opportunities, and accelerate
+              your buyer journey to drive more revenue for your organization.
+            </p>
+          </div>
+          <div>
+            <iframe
+              loading="lazy"
+              src="https://www.youtube.com/embed/KjxWR92Yb4o"
+              title="Helmchron - Chemistry Connects Us"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            />
+          </div>
+        </div>
       </div>
 
-      <center>
-        <p
-          style={{ margin: 0, fontWeight: "bold", fontSize: 23 }}
-          dangerouslySetInnerHTML={{ __html: t("download_brochure") }}
-        />
-      </center>
+      <div className="container-main brochure">
+        <div className="brochure-subtitle">
+          Learn more about <span>HELMCHRON</span>
+        </div>
+        <div style={{ background: "var(--light-blue-color)", padding: 30 }}>
+          <p>
+            Gain insights into our services and customized plant design
+            engineering solutions. Explore how we achieve plant project outcomes
+            and deliver value through our unique service concepts.
+          </p>
+          <div style={{ display: "flex", alignItems: "center", gap: 20 }}>
+            <b>
+              <p style={{ marginBottom: 0 }}>
+                {t("download_brochure")}
+              </p>
+            </b>{" "}
+            <a
+              href="../HelmchronBrochure.pdf"
+              target="__blank"
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                width: 30,
+                height: 30,
+                fontSize: 18,
+                borderRadius: "50%",
+                background: "var(--dark-blue-color)",
+                color: "#fff"
+              }}
+            >
+              <PiDownloadSimple />
+            </a>
+          </div>
+        </div>
+      </div>
 
       {/* Testimonials */}
       <div className="testimonials  container-main">

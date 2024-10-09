@@ -461,7 +461,6 @@ const data = {
           <a href="../HelmchronBrochure.pdf" target="_blank">
             new corporate brochure
           </a>`,
-      connects: "Connects us",
       video_common_values: "what do we have in common?",
       services_vertical: "SERVICES",
       btn_references: "Our references",

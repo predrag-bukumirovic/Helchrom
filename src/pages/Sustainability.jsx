@@ -1,7 +1,7 @@
 import React from "react";
 
-import mainImg from "../assets/images/Blog//Prvaslika.jpg";
-import mainImg1 from "../assets/images/Blog/Drugaslika.jpg";
+import mainImg from "../assets/images/Blog//Prvaslika.png";
+import mainImg1 from "../assets/images/Blog/Drugaslika.png";
 import mainImg2 from "../assets/images/Blog/Slika3.jpg";
 import "../assets/scss/news-post.scss";
 import { CCarousel, CCarouselItem, CImage } from "@coreui/react";
