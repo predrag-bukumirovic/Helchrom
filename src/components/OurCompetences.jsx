@@ -27,6 +27,7 @@ import roomsIconAc from "../assets/images/Competences/roomsAc.png";
 import HVACIconAc from "../assets/images/Competences/HVACAc.png";
 import UtilitiesIconAc from "../assets/images/Competences/UtilitiesAc.png";
 import MSRIconAc from "../assets/images/Competences/MSRAc.png";
+import { useTranslation } from "react-i18next";
 
 // Podaci za svaku stavku u navigaciji
 const competencesData = {
@@ -142,6 +143,7 @@ const competencesData = {
 };
 
 const Competences = () => {
+  const { t } = useTranslation();
   const [activeCompetence, setActiveCompetence] = useState("piping");
   const [fadeIn, setFadeIn] = useState(true);
 
@@ -228,7 +230,7 @@ const Competences = () => {
           }}
           className="book-btn"
         >
-          Book a meeting
+          {t("book_btn")}
         </a>
       </div>
     </div>

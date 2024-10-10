@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import "../assets/scss/slider.scss";
 import "../assets/scss/services.scss";
 import "../assets/scss/home.scss";
@@ -18,6 +18,7 @@ import { Helmet } from "react-helmet";
 import { useTranslation } from "react-i18next";
 import TextReader from "../components/TextRender";
 import OurCompetences from "../components/OurCompetences";
+import { useLocation } from "react-router-dom";
 
 const mainImages = [mainImg, mainImg1, mainImg2];
 
@@ -55,6 +56,21 @@ export default function OurCore() {
     t("our_core.icon_core.icon5"),
     t("our_core.commissioning_text")
   ];
+
+  const location = useLocation();
+
+  useEffect(
+    () => {
+      const hash = location.hash;
+      if (hash) {
+        const section = document.querySelector(hash);
+        if (section) {
+          section.scrollIntoView({ behavior: "smooth" });
+        }
+      }
+    },
+    [location]
+  );
 
   return (
     <div>
@@ -118,6 +134,7 @@ export default function OurCore() {
       <div
         ref={sectionRefs[0]}
         className="services"
+        id="section1"
         style={{ background: "var(--light-orange-color)", marginTop: 100 }}
       >
         <div className="services-row container-main">
@@ -146,7 +163,7 @@ export default function OurCore() {
         </div>
       </div>
 
-      <div ref={sectionRefs[1]} className="services">
+      <div ref={sectionRefs[1]} className="services" id="section2">
         <div className="services-row container-main">
           <TextReader texts={DesignText} />
           <div className="vertical-text">
@@ -186,6 +203,7 @@ export default function OurCore() {
 
       <div
         ref={sectionRefs[2]}
+        id="section3"
         className="services"
         style={{ background: "var(--light-green-color)" }}
       >
@@ -221,7 +239,7 @@ export default function OurCore() {
         </div>
       </div>
 
-      <div ref={sectionRefs[3]} className="services">
+      <div ref={sectionRefs[3]} className="services" id="section4">
         <div className="services-row container-main">
           <TextReader texts={EquipmentText} />
           <div className="vertical-text">
@@ -253,6 +271,7 @@ export default function OurCore() {
 
       <div
         ref={sectionRefs[4]}
+        id="section5"
         className="services"
         style={{ background: "var(--light-orange-color)" }}
       >

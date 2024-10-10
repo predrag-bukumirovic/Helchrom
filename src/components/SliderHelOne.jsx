@@ -105,7 +105,7 @@ const Slider = () => {
                 <div
                   key={index}
                   style={{
-                    transform: `translateX(-${currentIndex * 105}%)`,
+                    transform: `translateX(-${currentIndex * 106}%)`,
                     transition: "transform 0.5s ease"
                   }}
                   className={`slider-item ${index === currentIndex

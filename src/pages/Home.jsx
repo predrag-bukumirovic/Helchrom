@@ -455,10 +455,7 @@ export default function Home() {
 
               <div>
                 {/* <TextReader texts={feedbackText1} /> */}
-                <p
-                  style={{ marginTop: 30 }}
-                  dangerouslySetInnerHTML={{ __html: t("feedback.text1") }}
-                />
+                <p dangerouslySetInnerHTML={{ __html: t("feedback.text1") }} />
 
                 <div style={{ float: "right" }}>
                   <span>Engineering Dobersek GmbH</span>

@@ -56,6 +56,8 @@ const images = [
 const One = () => {
   const { t } = useTranslation();
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [touchStartX, setTouchStartX] = useState(0);
+  const [touchEndX, setTouchEndX] = useState(0);
 
   useEffect(
     () => {
@@ -82,6 +84,22 @@ const One = () => {
 
   const handleImageClick = index => {
     setCurrentIndex(index);
+  };
+
+  const handleTouchStart = e => {
+    setTouchStartX(e.touches[0].clientX);
+  };
+
+  const handleTouchMove = e => {
+    setTouchEndX(e.touches[0].clientX);
+  };
+
+  const handleTouchEnd = () => {
+    if (touchStartX - touchEndX > 50) {
+      handleNext();
+    } else if (touchEndX - touchStartX > 50) {
+      handlePrev();
+    }
   };
 
   const adjustSliderPosition = index => {
@@ -225,7 +243,12 @@ const One = () => {
         <div className="slider-container">
           <div className="slider-one">
             <span>Benefits of Helmchron ONE</span>
-            <div className="slider-images">
+            <div
+              className="slider-images"
+              onTouchStart={handleTouchStart}
+              onTouchMove={handleTouchMove}
+              onTouchEnd={handleTouchEnd}
+            >
               {images.map((image, index) =>
                 <div
                   key={index}
@@ -306,7 +329,7 @@ const One = () => {
             className="book-btn"
             href="/"
           >
-            Read more
+            {t("read_more")}
           </a>
         </div>
         <img data-aos="fade-left" src={inzenjer} alt="inzenjer" />

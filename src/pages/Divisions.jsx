@@ -21,9 +21,11 @@ import slider5 from "../assets/images/Division/5.png";
 import slider6 from "../assets/images/Division/6.png";
 import InsightsWhite from "../components/InsightsWhite";
 import SliderServices from "../components/SliderServices";
+import { useTranslation } from "react-i18next";
 
 export default function Division() {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const { t } = useTranslation();
 
   const images = [
     {
@@ -155,7 +157,7 @@ export default function Division() {
                 {image.text}
               </p>
               <a className="book-btn" href={image.link}>
-                Read More
+                {t("read_more")}
               </a>
             </div>
           )}
@@ -269,7 +271,7 @@ export default function Division() {
           className="book-btn"
           href="/initiatives/innolab"
         >
-          Book a meeting
+          {t("book_btn")}
         </a>
       </center>
 

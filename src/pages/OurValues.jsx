@@ -14,8 +14,12 @@ import Committment from "../assets/images/Values/Committment.png";
 import Agility from "../assets/images/Values/Agility.png";
 import Diversity from "../assets/images/Values/Diversity.png";
 import Courage from "../assets/images/Values/Courage.png";
-import Oursocial from "../assets/images/Values/Oursocial.gif";
-import OursocialMobile from "../assets/images/Values/OursocialMobile.gif";
+// import Oursocial from "../assets/images/Values/Oursocial.gif";
+// import OursocialMobile from "../assets/images/Values/OursocialMobile.gif";
+
+import levaSlika from "../assets/images/Values/GenSlikalevo.png";
+import desnaSlika from "../assets/images/Values/GenslikaDesno.png";
+import motions from "../assets/images/Values/motions.png";
 import TextRender from "../components/TextRender";
 import { useTranslation } from "react-i18next";
 
@@ -192,7 +196,7 @@ export default function OurValues() {
             />
           </div>
           <div className="container-main padding30">
-            <img
+            {/* <img
               data-aos="zoom-in"
               className="our-social"
               src={Oursocial}
@@ -204,7 +208,28 @@ export default function OurValues() {
               className="our-social-mobile"
               src={OursocialMobile}
               alt="in motion"
-            />
+            /> */}
+
+            <div className="motions">
+              <img
+                data-aos="fade-right"
+                className="left-img"
+                src={levaSlika}
+                alt=""
+              />
+              <img
+                data-aos="fade-up"
+                className="center-img"
+                src={motions}
+                alt=""
+              />
+              <img
+                data-aos="fade-left"
+                className="right-img"
+                src={desnaSlika}
+                alt=""
+              />
+            </div>
           </div>
           <center>
             <h2 className="title" data-aos="fade-up">

@@ -1,7 +1,9 @@
-import React from "react";
+import React, { startTransition } from "react";
 
 import "../assets/scss/home.scss";
 import "../assets/scss/slider.scss";
+
+import { useNavigate } from "react-router-dom";
 
 import icon1 from "../assets/images/Home/1.png";
 import icon2 from "../assets/images/Home/2.png";
@@ -13,6 +15,15 @@ import { useTranslation } from "react-i18next";
 export default function IconServices() {
   const { t } = useTranslation();
 
+  const navigate = useNavigate(); // Definiši useNavigate
+
+  // Funkcija za rukovanje klikom na ikonicu
+  const handleIconClick = sectionId => {
+    startTransition(() => {
+      navigate(`/our-services#${sectionId}`);
+    });
+  };
+
   return (
     <div className="our-home">
       <div className="services-icon">
@@ -22,48 +33,51 @@ export default function IconServices() {
             icon: icon1,
             title: t("services.icon.title1"),
             text: t("services.icon.text1"),
-            link: "/our-services"
+            section: "section1"
           },
           {
             id: 2,
             icon: icon2,
             title: t("services.icon.title2"),
             text: t("services.icon.text2"),
-            link: "/our-services"
+            section: "section2"
           },
           {
             id: 3,
             icon: icon3,
             title: t("services.icon.title3"),
             text: t("services.icon.text3"),
-            link: "/our-services"
+            section: "section3"
           },
           {
             id: 4,
             icon: icon4,
             title: t("services.icon.title4"),
             text: t("services.icon.text4"),
-            link: "/our-services"
+            section: "section4"
           },
           {
             id: 5,
             icon: icon5,
             title: t("services.icon.title5"),
             text: t("services.icon.text5"),
-            link: "/our-services"
+            section: "section5"
           }
         ].map((item, index) =>
-          <a key={item.id} href={item.link} style={{ textDecoration: "none" }}>
-            <div key={index} data-aos="zoom-in">
-              <img src={item.icon} alt="" />
-              <h3 style={{ color: "#000" }}>
-                {item.title}
-              </h3>
-              <p>
-                {item.text}
-              </p>
-            </div>
-          </a>
+          <div
+            style={{ cursor: "pointer" }}
+            onClick={() => handleIconClick(item.section)}
+            key={index}
+            data-aos="zoom-in"
+          >
+            <img src={item.icon} alt="" />
+            <h3 style={{ color: "#000" }}>
+              {item.title}
+            </h3>
+            <p>
+              {item.text}
+            </p>
+          </div>
         )}
       </div>
     </div>

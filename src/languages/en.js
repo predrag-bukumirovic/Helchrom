@@ -112,9 +112,9 @@ const enTranslation = {
               With a focus on expertise, execution, and outcomes, we uphold the utmost integrity, accountability, and
               client satisfaction, ensuring every project is delivered with excellence.`,
     icon_title1: "Founded in",
-    icon_title2: "operations areas",
+    icon_title2: "BUSINESS DIVISIONS",
     icon_title3: "number of week days we provide support",
-    icon_title4: "minute average feedback time",
+    icon_title4: "AVERAGE FEEDBACK TIME IN MINUTES",
     icon_title5: "happy clients and partners",
     icon_title6: "published papers as a result of our innolab"
   },
@@ -657,7 +657,7 @@ const enTranslation = {
   lets: `<b>Let's</b> interact`,
   quick_links: "<b>Quick</b> links",
   contact_us: "<b>Contact</b> us",
-  download_brochure: 'Download our corporate brochure',
+  download_brochure: "Download our corporate brochure",
   video_common_values: "what do we have in common?",
   services_vertical: "SERVICES",
   btn_references: "Our references",

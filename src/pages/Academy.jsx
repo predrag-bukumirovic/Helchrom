@@ -10,8 +10,11 @@ import verticalImg from "../assets/images/Academy/vertikalno.png";
 import "../assets/scss/innoLab.scss";
 import "../assets/scss/electronics.scss";
 import "../assets/scss/home.scss";
+import { useTranslation } from "react-i18next";
 
 export default function Academy() {
+  const { t } = useTranslation();
+
   return (
     <div>
       {/* Slider start */}
@@ -132,7 +135,7 @@ export default function Academy() {
                 className="book-btn"
                 href="/our-team"
               >
-                Read more
+                {t("read_more")}
               </a>
             </div>
           </div>
@@ -182,7 +185,7 @@ export default function Academy() {
             className="book-btn"
             href="/initiatives/innolab"
           >
-            Read more
+            {t("read_more")}
           </a>
         </center>
       </div>

@@ -42,6 +42,7 @@
   margin-top: 5px;
   font-size: 14px;
   padding: 0 20px;
+  color: #000;
   font-weight: 600;
 }
 
@@ -96,19 +97,9 @@
   height: auto;
 }
 
-.book-meeting {
-  background-color: blue;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-  margin-top: 20px;
-}
-
-/* Responzivnost */
 @media (max-width: 768px) {
   .competence-nav {
-    overflow-x: scroll; /* Omogućava horizontalno skrolovanje */
+    overflow-x: scroll;
   }
 
   .nav-slider {

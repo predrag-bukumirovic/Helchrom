@@ -11,8 +11,11 @@ import imgLab2 from "../assets/images/innoLAB/InnoLAB2.png";
 import "../assets/scss/innoLab.scss";
 import "../assets/scss/electronics.scss";
 import "../assets/scss/home.scss";
+import { useTranslation } from "react-i18next";
 
-export default function innoLab() {
+export default function InnoLab() {
+  const { t } = useTranslation();
+
   return (
     <div>
       {/* Slider start */}
@@ -59,14 +62,17 @@ export default function innoLab() {
           </p>
         </center>
 
-        <div className="moving-text">
+        <div
+          className="moving-text container-main"
+          style={{ overflow: "hidden" }}
+        >
           <img data-aos="fade-zoom" src={imgLab1} alt="InnoLAN img 1" />
           <div className="marquee">
             <p>
-              <span>The Spirit of Innovation</span> Helmchron InnoLAB
+              <span>The Spirit of Innovation</span> H E L M C H R O N InnoLAB
             </p>
             <p>
-              <span>The Spirit of Innovation</span> Helmchron InnoLAB
+              <span>The Spirit of Innovation</span> H E L M C H R O N InnoLAB
             </p>
           </div>
         </div>
@@ -124,7 +130,7 @@ export default function innoLab() {
             className="book-btn"
             href="/our-references"
           >
-            Read more
+            {t("read_more")}
           </a>
         </center>
       </div>

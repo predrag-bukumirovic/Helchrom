@@ -18,8 +18,10 @@ import icon5 from "../assets/images/Navigator/5.png";
 
 import "../assets/scss/electronics.scss";
 import "../assets/scss/home.scss";
+import { useTranslation } from "react-i18next";
 
 export default function Navigator() {
+  const { t } = useTranslation();
   return (
     <div>
       {/* Slider start */}
@@ -90,7 +92,7 @@ export default function Navigator() {
                 className="book-btn"
                 style={{ background: "var(--dark-blue-color)" }}
               >
-                Read more
+                {t("read_more")}
               </a>
             </div>
 
@@ -166,7 +168,7 @@ export default function Navigator() {
             className="book-btn"
             href="/contact"
           >
-            Booking a meeting
+            {t("book_btn")}
           </a>
         </center>
 
@@ -230,7 +232,7 @@ export default function Navigator() {
               href="/our-services"
               className="book-btn"
             >
-              Read more
+              {t("read_more")}
             </a>
           </div>
         </div>

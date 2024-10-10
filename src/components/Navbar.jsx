@@ -134,13 +134,18 @@ export default function Navbar({ className }) {
                     <span
                       style={{
                         textTransform: "none",
-                        paddingLeft: 20,
+                        paddingLeft: 0,
+                        paddingTop: 0,
+                        paddingBottom: 0,
                         display: "flex",
                         justifyContent: "space-between",
                         alignItems: "center"
                       }}
                     >
-                      {t("navbar.departments")} <MdKeyboardArrowRight />
+                      <CustomLink href="/divisions">
+                        {t("navbar.departments")}
+                      </CustomLink>
+                      <MdKeyboardArrowRight />
                     </span>
 
                     {isSubmenuOpen &&
@@ -217,7 +222,7 @@ export default function Navbar({ className }) {
 
                   <CustomLink
                     href="/initiatives/academy"
-                    style={{ fontFamily: "DancingScript" }}
+                    style={{ fontFamily: "DancingScript", fontSize: 18 }}
                   >
                     Academy
                   </CustomLink>
