@@ -54,12 +54,12 @@
       background: var(--light-blue-color);
       transition: transform 0.5s ease, width 0.5s ease;
       transform: scale(1);
-      opacity: 0.3;
       border: 3px solid var(--light-blue-color);
+      filter: grayscale(1);
 
       &.active {
         border: 3px solid var(--brend-color);
-        opacity: 1;
+        filter: grayscale(0);
       }
 
       h5 {
@@ -114,6 +114,7 @@
       height: 40px;
       width: 40px;
       display: flex;
+      color: #000;
       margin: 10px;
       justify-content: center;
       align-items: center;

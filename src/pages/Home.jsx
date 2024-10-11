@@ -4,6 +4,7 @@ import Carousel from "react-multi-carousel";
 
 import WhoIcons from "../components/WhoIcons";
 import Storyline from "../components/Storyline";
+import OurCompetencesHome from "../components/OurCompetencesHome";
 import TextReader from "../components/TextRender";
 
 import Facts2010 from "../assets/images/Home/Founded.png";
@@ -306,6 +307,8 @@ export default function Home() {
         <WhoIcons />
       </div>
 
+      <OurCompetencesHome />
+
       {/* Facts About Us */}
       <div className="facts-box">
         <div className="facts container-main padding30">
@@ -366,17 +369,46 @@ export default function Home() {
 
       {/* Video */}
       <div className="container-main video" data-aos="fade-up">
-        <p style={{ color: "#000", fontSize: 25 }}>
-          {t("video_common")}
-        </p>
+        <h2 className="title" style={{ color: "#000" }}>
+          {t("commitment")}
+        </h2>
 
         <div className="video-card">
-          <div className="text-card">
-            <h3 className="sub-title">Connect and convert</h3>
-            <p>
-              Outperform competitors, create more opportunities, and accelerate
-              your buyer journey to drive more revenue for your organization.
-            </p>
+          <div className="brochure">
+            <div className="brochure-subtitle">
+              Learn more about <span>HELMCHRON</span>
+            </div>
+            <div>
+              <p>
+                Gain insights into our services and customized plant design
+                engineering solutions. Explore how we achieve plant project
+                outcomes and deliver value through our unique service concepts.
+              </p>
+              <div style={{ display: "flex", alignItems: "center", gap: 20 }}>
+                <p style={{ marginTop: 10, fontWeight: "bold" }}>
+                  {t("download_brochure")}
+                </p>
+
+                <a
+                  href="../HelmchronBrochure.pdf"
+                  target="__blank"
+                  style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    width: 30,
+                    height: 30,
+                    aspectRatio: 1 / 1,
+                    fontSize: 18,
+                    borderRadius: "50%",
+                    background: "var(--dark-blue-color)",
+                    color: "#fff"
+                  }}
+                >
+                  <PiDownloadSimple />
+                </a>
+              </div>
+            </div>
           </div>
           <div>
             <iframe
@@ -387,43 +419,6 @@ export default function Home() {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen
             />
-          </div>
-        </div>
-      </div>
-
-      <div className="container-main brochure">
-        <div className="brochure-subtitle">
-          Learn more about <span>HELMCHRON</span>
-        </div>
-        <div style={{ background: "var(--light-blue-color)", padding: 30 }}>
-          <p>
-            Gain insights into our services and customized plant design
-            engineering solutions. Explore how we achieve plant project outcomes
-            and deliver value through our unique service concepts.
-          </p>
-          <div style={{ display: "flex", alignItems: "center", gap: 20 }}>
-            <b>
-              <p style={{ marginBottom: 0 }}>
-                {t("download_brochure")}
-              </p>
-            </b>{" "}
-            <a
-              href="../HelmchronBrochure.pdf"
-              target="__blank"
-              style={{
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-                width: 30,
-                height: 30,
-                fontSize: 18,
-                borderRadius: "50%",
-                background: "var(--dark-blue-color)",
-                color: "#fff"
-              }}
-            >
-              <PiDownloadSimple />
-            </a>
           </div>
         </div>
       </div>

@@ -653,7 +653,7 @@ const enTranslation = {
   book_btn: "Book a Meeting",
   send: "Send",
   read_more: "Read More",
-  video_common: "We have at least one thing in common...",
+  commitment: "Our Commitment",
   lets: `<b>Let's</b> interact`,
   quick_links: "<b>Quick</b> links",
   contact_us: "<b>Contact</b> us",
