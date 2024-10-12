@@ -23,7 +23,7 @@
   object-fit: cover;
   transition: transform 1s ease, opacity 1s ease;
   opacity: 0.5;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.9);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9);
   transform-origin: center center;
 
   @media (max-width: 780px) {
@@ -32,6 +32,7 @@
 }
 
 .slider-image.active {
+  width: 85%;
   opacity: 1;
   transform: translate(0, 0) rotate(0deg) !important;
   z-index: 9;

@@ -110,7 +110,7 @@ const competencesData = {
     iconActive: HVACIconAc
   },
   utilities: {
-    title: "Utilitiesu",
+    title: "Utilities",
     description: [
       "Refrigeration",
       "Heat",

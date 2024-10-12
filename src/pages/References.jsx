@@ -447,7 +447,7 @@ export default function References() {
             <div className="text" data-aos="fade-right">
               <h3 className="title">
                 {t("references.food.exyte.title")} <br />
-                <span className="text-stroke green">2023</span>
+                <span className="text-stroke green">2021</span>
               </h3>
 
               <p>

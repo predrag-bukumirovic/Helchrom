@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { startTransition, useState } from "react";
 import "../assets/scss/sliderHelOne.scss";
 import icon1 from "../assets/images/Home/1.png";
 import icon2 from "../assets/images/Home/2.png";
@@ -6,6 +6,7 @@ import icon3 from "../assets/images/Home/3.png";
 import icon4 from "../assets/images/Home/4.png";
 import icon5 from "../assets/images/Home/5.png";
 import { useTranslation } from "react-i18next";
+import { useNavigate } from "react-router-dom";
 
 const SliderServices = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -17,35 +18,40 @@ const SliderServices = () => {
       icon: icon1,
       title: "services.icon.title1",
       text: "services.icon.text1",
-      link: "/our-services"
+      link: "/our-services",
+      section: "section1"
     },
     {
       id: 2,
       icon: icon2,
       title: "services.icon.title2",
       text: "services.icon.text2",
-      link: "/our-services"
+      link: "/our-services",
+      section: "section2"
     },
     {
       id: 3,
       icon: icon3,
       title: "services.icon.title3",
       text: "services.icon.text3",
-      link: "/our-services"
+      link: "/our-services",
+      section: "section3"
     },
     {
       id: 4,
       icon: icon4,
       title: "services.icon.title4",
       text: "services.icon.text4",
-      link: "/our-services"
+      link: "/our-services",
+      section: "section4"
     },
     {
       id: 5,
       icon: icon5,
       title: "services.icon.title5",
       text: "services.icon.text5",
-      link: "/our-services"
+      link: "/our-services",
+      section: "section5"
     }
   ];
 
@@ -55,6 +61,15 @@ const SliderServices = () => {
 
   const prevSlide = () => {
     setCurrentIndex(prevIndex => (prevIndex - 1 + items.length) % items.length);
+  };
+
+  const navigate = useNavigate();
+
+  // Funkcija za rukovanje klikom na ikonicu
+  const handleIconClick = sectionId => {
+    startTransition(() => {
+      navigate(`/our-services#${sectionId}`);
+    });
   };
 
   return (
@@ -78,8 +93,9 @@ const SliderServices = () => {
           <div>
             <div className="slider-content" style={{ width: 900 }}>
               {items.map((item, index) =>
-                <a
+                <div
                   key={index}
+                  onClick={() => handleIconClick(item.section)}
                   style={{
                     textDecoration: "none",
                     transform: `translateX(-${currentIndex * 105}%)`,
@@ -101,7 +117,7 @@ const SliderServices = () => {
                       {t(item.text)}
                     </p>
                   </div>
-                </a>
+                </div>
               )}
             </div>
           </div>

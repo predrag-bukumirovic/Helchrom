@@ -138,13 +138,14 @@ export default function Division() {
                 ? "active"
                 : ""}`}
               style={{
-                transform: `translate(${index * -10}px, ${index *
-                  10}px) rotate(${index * 0}deg)`
+                transform: `translate(${index * -2}px, ${index *
+                  5}px) rotate(${index * 0}deg)`
               }}
             />
           )}
         </div>
         <div className="slider-text" style={{ padding: "20px 0" }}>
+          {/* OUR Divisions slider */}
           {images.map((image, index) =>
             <div
               key={index}
