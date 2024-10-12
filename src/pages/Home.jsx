@@ -252,8 +252,9 @@ export default function Home() {
       {/* Welcome */}
       <div className="welcome container-main padding30">
         <div
+          data-aos="fade-up"
           dangerouslySetInnerHTML={{ __html: t("home.welcome") }}
-          style={{ padding: "0 20px" }}
+          style={{ padding: "0 20px", marginTop: 50 }}
         />
         <TextReader texts={welcomeText} />
         <center>

@@ -661,8 +661,8 @@
   padding: 30px;
 
   .brochure-subtitle {
-    font-size: 55px;
-    line-height: 55px;
+    font-size: 45px;
+    line-height: 45px;
     margin-bottom: 20px;
     font-weight: 600;
 
@@ -672,6 +672,7 @@
 
     @media (max-width: 850px) {
       font-size: 30px;
+      line-height: 30px;
     }
   }
 }

@@ -142,8 +142,18 @@ const Competences = () => {
               </li>
             )}
           </ul>
-
           {/* Male slike ispod */}
+          <span
+            style={{
+              fontSize: 14,
+              color: "var(--brend-color)",
+              fontWeight: "bold",
+              display: "flex",
+              justifyContent: "flex-end"
+            }}
+          >
+            Swipe
+          </span>
           <div className="small-images-scroll">
             <div className="small-images">
               {competencesData.map((competence, index) =>
