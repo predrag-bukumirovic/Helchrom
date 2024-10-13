@@ -3,7 +3,7 @@
   --light-blue-color: #f4f6fc;
   --dark-blue-color: #0b41cd;
   --green-color: #4e8351;
-  --light-green-color: #f3fadc;
+  --light-green-color: #f3fdfa;
   --light-orange-color: #fff2ee;
   --gray-text-color: #000;
   --font-family: 'Montserrat', sans-serif;
@@ -223,7 +223,7 @@ footer {
     font-size: 10px;
     padding: 20px;
     border: 1px solid #000;
-    border-radius: 10px;
+    border-radius: 30px;
     cursor: pointer;
     text-align: center;
     img {
@@ -248,7 +248,7 @@ footer {
 
 .services-icon-slider {
   background: var(--light-blue-color);
-  border-radius: 20px;
+  border-radius: 30px;
   text-align: center;
   padding: 5px 20px;
   width: 290px;

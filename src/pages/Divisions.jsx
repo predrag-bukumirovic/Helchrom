@@ -111,7 +111,6 @@ export default function Division() {
         </div>
       </div>
       {/* Slider end */}
-
       <div className="container-main">
         <center>
           <h1 className="title">OUR Divisions</h1>
@@ -126,7 +125,6 @@ export default function Division() {
           </p>
         </center>
       </div>
-
       <div className="slider-container slider-division container-main">
         <div className="slider-images">
           {images.map((image, index) =>
@@ -149,7 +147,9 @@ export default function Division() {
           {images.map((image, index) =>
             <div
               key={index}
-              className={`text ${currentIndex === index ? "active" : ""}`}
+              className={`text-divisions ${currentIndex === index
+                ? "active"
+                : ""}`}
             >
               <h2 style={{ textAlign: "start" }} className="title">
                 {image.title}
@@ -164,7 +164,6 @@ export default function Division() {
           )}
         </div>
       </div>
-
       {/* Kontrole strelica i tačaka */}
       <div className="slider-controls">
         <button onClick={prevSlide}>&#10094;</button>
@@ -182,18 +181,16 @@ export default function Division() {
       <center style={{ color: "#000" }}>
         {currentIndex + 1}/{images.length}
       </center>
-
       <div style={{ background: "var(--light-blue-color)", margin: "20px 0" }}>
         <div style={{ padding: "50px 0" }} className="insights container-main">
           <h2 className="title">PROJECTS SHARE PER DIVISON</h2>
           <InsightsWhite />
         </div>
       </div>
-
       <div className="unique">
         <SliderServices />
       </div>
-
+      a{" "}
       <div
         style={{
           background: "var(--light-blue-color)",
@@ -260,7 +257,6 @@ export default function Division() {
           </div>
         </div>
       </div>
-
       <center>
         <p style={{ marginTop: 50, padding: "0 20px" }}>
           To gain a complete insight into our work, book a meeting with our
@@ -275,7 +271,6 @@ export default function Division() {
           {t("book_btn")}
         </a>
       </center>
-
       <div className="container-main" style={{ marginTop: 70 }}>
         <center>
           <h2 className="title">OUR INITIATIVES</h2>

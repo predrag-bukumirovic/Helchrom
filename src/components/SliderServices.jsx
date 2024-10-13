@@ -11,6 +11,7 @@ import { useNavigate } from "react-router-dom";
 const SliderServices = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const { t } = useTranslation();
+  const navigate = useNavigate();
 
   const items = [
     {
@@ -18,7 +19,6 @@ const SliderServices = () => {
       icon: icon1,
       title: "services.icon.title1",
       text: "services.icon.text1",
-      link: "/our-services",
       section: "section1"
     },
     {
@@ -26,7 +26,6 @@ const SliderServices = () => {
       icon: icon2,
       title: "services.icon.title2",
       text: "services.icon.text2",
-      link: "/our-services",
       section: "section2"
     },
     {
@@ -34,7 +33,6 @@ const SliderServices = () => {
       icon: icon3,
       title: "services.icon.title3",
       text: "services.icon.text3",
-      link: "/our-services",
       section: "section3"
     },
     {
@@ -42,7 +40,6 @@ const SliderServices = () => {
       icon: icon4,
       title: "services.icon.title4",
       text: "services.icon.text4",
-      link: "/our-services",
       section: "section4"
     },
     {
@@ -50,7 +47,6 @@ const SliderServices = () => {
       icon: icon5,
       title: "services.icon.title5",
       text: "services.icon.text5",
-      link: "/our-services",
       section: "section5"
     }
   ];
@@ -63,12 +59,9 @@ const SliderServices = () => {
     setCurrentIndex(prevIndex => (prevIndex - 1 + items.length) % items.length);
   };
 
-  const navigate = useNavigate();
-
-  // Funkcija za rukovanje klikom na ikonicu
-  const handleIconClick = sectionId => {
+  const handleIconClick = sectionX => {
     startTransition(() => {
-      navigate(`/our-services#${sectionId}`);
+      navigate(`/our-services#${sectionX}`);
     });
   };
 
@@ -97,12 +90,10 @@ const SliderServices = () => {
                   key={index}
                   onClick={() => handleIconClick(item.section)}
                   style={{
-                    textDecoration: "none",
                     transform: `translateX(-${currentIndex * 105}%)`,
                     transition: "transform 0.5s ease"
                   }}
                   className={`${index === currentIndex ? "active" : ""}`}
-                  href={item.link}
                 >
                   <div
                     className="services-icon-slider"

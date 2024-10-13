@@ -255,7 +255,9 @@ const One = () => {
                   className={`slider-image ${index === currentIndex
                     ? "active"
                     : ""}`}
-                  style={{ backgroundImage: `url(${image.srcImg})` }}
+                  style={{
+                    backgroundImage: `url(${image.srcImg})`
+                  }}
                   onClick={() => handleImageClick(index)}
                 />
               )}

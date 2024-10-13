@@ -84,7 +84,6 @@
   @media (max-width: 990px) {
     h3 {
       width: 100% !important;
-      margin-left: 10px;
     }
   }
 
@@ -120,10 +119,10 @@
     }
 
     @media (max-width: 650px) {
-      padding: 50px 20px 50px 60px;
+      padding: 50px 0px 50px 0px;
 
       .vertical-text {
-        left: -60px;
+        display: none;
       }
     }
 
@@ -134,7 +133,7 @@
     div {
       ul {
         margin-bottom: 30px;
-        padding-left: 10px;
+        padding-left: 40px;
       }
     }
   }

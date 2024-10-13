@@ -34,41 +34,47 @@
 
   .our-history {
     display: flex;
-    justify-content: center;
     align-items: center;
     gap: 50px;
     border-radius: 20px;
-    padding: 30px;
-    background: var(--light-orange-color);
+    padding: 0 30px;
+    background: var(--light-blue-color);
 
     .text {
-      width: 100%;
+      flex: 1;
+      padding: 30px 0;
+    }
 
-      @media (max-width: 1200px) {
+    .image-content {
+      display: flex;
+      gap: 10px;
+
+      img {
         width: 100%;
+        max-width: 350px;
+        height: 550px;
+        object-fit: cover;
+
+        @media (max-width: 850px) {
+          width: 49%;
+          height: auto;
+        }
       }
     }
 
-    img {
-      width: 50%;
-
-      @media (max-width: 600px) {
-        width: 100%;
-      }
-    }
-
-    @media (max-width: 1000px) {
+    @media (max-width: 1300px) {
       display: block;
 
       img {
         width: 100%;
+        margin-top: 20px;
       }
     }
   }
 }
 
 .credo {
-  margin-bottom: 100px;
+  margin: 100px auto;
   text-align: center;
 
   p {
@@ -114,16 +120,14 @@
   display: grid;
   grid-template-columns: auto auto;
   align-items: center;
-  gap: 90px;
+  gap: 30px;
   padding: 20px;
   margin-bottom: 100px;
-  background: var(--light-orange-color);
-  border-radius: 20px;
+  background: var(--light-blue-color);
+  border-radius: 40px;
 
-  div {
-    img {
-      width: 100%;
-    }
+  img {
+    width: 80%;
   }
 
   div {
@@ -180,4 +184,200 @@
 
 .ReactModal__Overlay {
   background: rgba(0, 0, 0, 0.5) !important;
+}
+
+.who-circle {
+  display: flex;
+  gap: 10px;
+  margin: 30px 0;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  a {
+    text-decoration: none;
+  }
+
+  div {
+    width: 180px;
+    height: 180px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background: var(--light-blue-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .who-img {
+      width: 170px;
+      height: 170px;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: 0.3s ease-in-out;
+
+      span {
+        font-size: 18px;
+        color: #fff;
+        font-weight: 600;
+        text-transform: uppercase;
+        padding: 10px;
+        border-radius: 30px;
+      }
+    }
+
+    :hover {
+      transform: scale(1.1);
+
+      span {
+        background: var(--brend-color);
+        transform: scale(1);
+      }
+    }
+
+    @media (max-width: 480px) {
+      width: 160px;
+      height: 160px;
+
+      .who-img {
+        width: 140px;
+        height: 140px;
+
+        span {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  :nth-child(1) .who-img {
+    background-image: linear-gradient(
+        rgba(9, 9, 227, 0.4),
+        rgba(9, 9, 227, 0.4)
+      ),
+      url('../images/Competences/orginalImg/Piping.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &:hover {
+      background-image: url('../images/Competences/orginalImg/Piping.png');
+    }
+  }
+
+  :nth-child(2) .who-img {
+    background-image: linear-gradient(
+        rgba(9, 9, 227, 0.4),
+        rgba(9, 9, 227, 0.4)
+      ),
+      url('../images/Competences/orginalImg/Equipment.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &:hover {
+      background-image: url('../images/Competences/orginalImg/Equipment.png');
+    }
+  }
+
+  :nth-child(3) .who-img {
+    background-image: linear-gradient(
+        rgba(9, 9, 227, 0.4),
+        rgba(9, 9, 227, 0.4)
+      ),
+      url('../images/Competences/orginalImg/Clean.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &:hover {
+      background-image: url('../images/Competences/orginalImg/Clean.png');
+    }
+  }
+
+  :nth-child(4) .who-img {
+    background-image: linear-gradient(
+        rgba(9, 9, 227, 0.4),
+        rgba(9, 9, 227, 0.4)
+      ),
+      url('../images/Competences/orginalImg/room.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &:hover {
+      background-image: url('../images/Competences/orginalImg/room.png');
+    }
+  }
+
+  :nth-child(5) .who-img {
+    background-image: linear-gradient(
+        rgba(9, 9, 227, 0.4),
+        rgba(9, 9, 227, 0.4)
+      ),
+      url('../images/Competences/orginalImg/HVAC.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &:hover {
+      background-image: url('../images/Competences/orginalImg/HVAC.png');
+    }
+  }
+
+  :nth-child(6) .who-img {
+    background-image: linear-gradient(
+        rgba(9, 9, 227, 0.4),
+        rgba(9, 9, 227, 0.4)
+      ),
+      url('../images/Competences/orginalImg/Utilities.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &:hover {
+      background-image: url('../images/Competences/orginalImg/Utilities.png');
+    }
+  }
+
+  :nth-child(7) .who-img {
+    background-image: linear-gradient(
+        rgba(9, 9, 227, 0.4),
+        rgba(9, 9, 227, 0.4)
+      ),
+      url('../images/Competences/orginalImg/MSR.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &:hover {
+      background-image: url('../images/Competences/orginalImg/MSR.png');
+    }
+  }
+}
+
+.purpose-values {
+  display: flex;
+  background: var(--light-blue-color);
+  border-radius: 20px;
+  align-items: center;
+
+  :nth-child(1) {
+    flex: 1;
+  }
+
+  :nth-child(2) {
+    flex: 1;
+  }
+  :nth-child(3) {
+    flex: 1;
+  }
+
+  div {
+    img {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 800px) {
+    flex-direction: column;
+  }
 }

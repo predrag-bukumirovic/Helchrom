@@ -5,6 +5,10 @@
   margin-bottom: 100px;
   overflow-x: clip;
 
+  @media (max-width: 768px) {
+    overflow-x: visible;
+  }
+
   .slider-left {
     flex: 1;
 

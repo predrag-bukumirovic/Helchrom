@@ -11,7 +11,7 @@ const enTranslation = {
       },
       banner2: {
         text:
-          "Comprehensive plant engineering solutions, from consulting and pre-planning to equipment management and commissioning."
+          "Comprehensive plant design engineering solutions, from consulting and pre-planning to equipment management and commissioning."
       },
       banner3: {
         text:
@@ -29,7 +29,7 @@ const enTranslation = {
       "Helmchron is a family-owned company based in Belgrade, Serbia, providing plant design engineering and project management solutions for over a decade. Our expertise spans multiple industries, with a strong focus on pharmaceutical manufacturing. We take pride in serving both local and international clients with commitment, expertise, and agility. <br/> Discover our business divisions:",
     history: "our history",
     history_text:
-      "Our journey began in 2010 in Belgrade, Serbia, driven by our commitment to sustainable manufacturing and improving the quality of life through our plant design engineering expertise. Starting with local projects, we gradually expanded our scope and capabilities. <br/><br/> By 2013, we extended our services to the EU market, collaborating with leading companies in the pharmaceuticals and chemicals industries. Our growth continued through the global challenges of 2020 and the pandemic, reinforcing our dedication to health and well-being for everyone. <br/><br/> Our progress has been steady, with a focus on delivering reliable, sustainable plant design engineering solutions. As we look to the future, we remain committed to continuously developing our expertise, fostering strong partnerships, and making a positive global impact, ultimately benefiting everyone, everywhere.",
+      "<b>Since 2010, we have focused on sustainable plant design engineering solutions to create a positive global impact.</b><br/><br/>Our journey began in 2010 in Belgrade, Serbia, driven by our commitment to sustainable manufacturing and improving the quality of life through our plant design engineering expertise. Starting with local projects, we gradually expanded our scope and capabilities. <br/><br/> By 2013, we extended our services to the EU market, collaborating with leading companies in the pharmaceuticals and chemicals industries. Our growth continued through the global challenges of 2020 and the pandemic, reinforcing our dedication to health and well-being for everyone. <br/><br/> Our progress has been steady, with a focus on delivering reliable, sustainable plant design engineering solutions. As we look to the future, we remain committed to continuously developing our expertise, fostering strong partnerships, and making a positive global impact, ultimately benefiting everyone, everywhere. <br/><br/> We continue to advance our services, ensuring we consistently deliver best-in-class plant design solutions.",
     credo_title: "our credo",
     credo_text:
       "Our expertise and impact are driven by our vision to enhance the quality of life, build enduring client relationships and partnerships, and empower our team through our core values. We are committed to providing plant design engineering solutions that enable the manufacturing of efficient and safe products worldwide. Our service is guided by the belief of equal access to pharmaceuticals, healthy food, chemicals, fuels, and energy. We prioritize our partners’ needs and outcomes, environmental sustainability, and the stability of our business operations while envisioning a healthier future for everyone.",

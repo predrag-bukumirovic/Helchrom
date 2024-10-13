@@ -8,12 +8,17 @@ import mainImg1 from "../assets/images/Who/baner1.png";
 import mainImg2 from "../assets/images/Who/baner2.png";
 import mainImg3 from "../assets/images/Who/baner3.png";
 import basicImg from "../assets/images/Who/basicImg.png";
-import OurImg from "../assets/images/Who/our-history.png";
+import history1 from "../assets/images/Who/history1.png";
+import history2 from "../assets/images/Who/history2.png";
+
+import purposeValues from "../assets/images/Who/purposeValues.png";
+
 import OUR_CREDO from "../assets/images/Who/OUR_CREDO.png";
 import quotation from "../assets/images/quotation.png";
 import OurcredoImg from "../assets/images/Who/OurcredoImg.png";
 import "../assets/scss/slider.scss";
 import "../assets/scss/who.scss";
+import "../assets/scss/division.scss";
 import WhoIcons from "../components/WhoIcons";
 import TextReader from "../components/TextRender";
 
@@ -92,7 +97,6 @@ const WhoAreWe = () => {
 
         <WhoIcons />
       </div>
-
       <div className="history">
         <div>
           <div className="container-main padding30">
@@ -101,21 +105,150 @@ const WhoAreWe = () => {
             </h2>
             <TextReader texts={historyText} />
             <div className="our-history">
-              <div
-                data-aos="fade-right"
-                className="text"
-                dangerouslySetInnerHTML={{
-                  __html: t("who_are_we.history_text")
-                }}
-              />
+              <div className="text">
+                <div
+                  data-aos="fade-right"
+                  dangerouslySetInnerHTML={{
+                    __html: t("who_are_we.history_text")
+                  }}
+                />
+                <a
+                  style={{ float: "right" }}
+                  className="book-btn"
+                  href="/our-services"
+                >
+                  {t("read_more")}
+                </a>
+              </div>
 
-              <img data-aos="fade-left" src={OurImg} alt="Our history" />
+              <div style={{ clear: "both" }} class="image-content">
+                <img data-aos="fade-left" src={history1} alt="Our history 1" />
+                <img data-aos="fade-left" src={history2} alt="Our history 2" />
+              </div>
             </div>
           </div>
         </div>
       </div>
+      <div style={{ padding: "30px 0", margin: "50px 0" }}>
+        <div className="container-main">
+          <center>
+            <h2 className="title">OUR COMPETENCES</h2>
+            <p>
+              Our diverse competencies enable us to deliver comprehensive,
+              high-quality engineering solutions tailored to meet the most
+              complex project needs. From piping to cleanroom design and HVAC
+              systems, we are committed to continuously developing our expertise
+              to ensure the successful realization of our partners` outcomes.
+            </p>
+          </center>
 
-      <div className="credo container-main padding30">
+          <div className="who-circle">
+            <a href="/">
+              <div>
+                <div className="who-img">
+                  <span>Piping</span>
+                </div>
+              </div>
+            </a>
+            <a href="/">
+              <div>
+                <div className="who-img">
+                  <span>EQUIPMENT</span>
+                </div>
+              </div>
+            </a>
+            <a href="/">
+              <div>
+                <div className="who-img">
+                  <span>Clean Media</span>
+                </div>
+              </div>
+            </a>
+            <a href="/">
+              <div>
+                <div className="who-img">
+                  <span>Cleam Rooms</span>
+                </div>
+              </div>
+            </a>
+            <a href="/">
+              <div>
+                <div className="who-img">
+                  <span>HVAC</span>
+                </div>
+              </div>
+            </a>
+            <a href="/">
+              <div>
+                <div className="who-img">
+                  <span>Utilities</span>
+                </div>
+              </div>
+            </a>
+            <a href="/">
+              <div>
+                <div className="who-img">
+                  <span>MSR</span>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <center className="container-main">
+            <p>Explore our competences.</p>
+            <a className="book-btn" href="/our-services">
+              {t("read_more")}
+            </a>
+          </center>
+        </div>
+      </div>
+
+      <section className="purpose-values container-main">
+        <div data-aos="fade-right" style={{ padding: 30 }}>
+          <h2 style={{ textAlign: "start" }} className="title">
+            OUR PURPOSE
+          </h2>
+          <p>
+            We provide advanced plant design engineering solutions with the
+            vision to enhance the quality of life for the coming generations
+            worldwide. With our expertise, we aim to drive progress in the
+            manufacturing of products that are essential for global and
+            individual health, ensure the availability of healthy food, and
+            sustainability in the manufacturing of electronics, energy, and oil
+            and gas.
+          </p>
+          <p style={{ marginBottom: 50 }}>
+            Learn more about our vision and mission.
+          </p>
+          <a className="book-btn" href="/">
+            {t("read_more")}
+          </a>
+        </div>
+        <div data-aos="zoom-in">
+          <img src={purposeValues} alt="purposeValues" />
+        </div>
+        <div data-aos="fade-left" style={{ padding: 20 }}>
+          <h2 style={{ textAlign: "start" }} className="title">
+            OUR VALUES
+          </h2>
+          <p>
+            We embed our values into every aspect of our operations and
+            interactions - be it with our team, partners, community, or the
+            environment. By fostering a supportive and respectful environment,
+            we ensure that our team is empowered to deliver exceptional service
+            and solutions. Our core values are integral to our vision and
+            partnerships, driving our commitment to delivering impactful
+            outcomes for our partners and making a meaningful contribution on a
+            global scale.
+          </p>
+          <p style={{ marginBottom: 50 }}>Discover our way of work.</p>
+          <a className="book-btn" href="/">
+            {t("read_more")}
+          </a>
+        </div>
+      </section>
+
+      <section className="credo container-main padding30">
         <h2 className="title">
           {t("who_are_we.credo_title")}
         </h2>
@@ -125,16 +258,15 @@ const WhoAreWe = () => {
           dangerouslySetInnerHTML={{ __html: t("who_are_we.credo_text") }}
         />
         <TextReader texts={credoText} />
-      </div>
+      </section>
 
       <div>
         <div className="container-main credo-testimonial">
-          <div data-aos="fade-right">
-            <img src={OurcredoImg} alt="OurcredoImg" />
-          </div>
+          <img data-aos="fade-right" src={OurcredoImg} alt="OurcredoImg" />
+
           <div>
             <p data-aos="fade-left">
-              <img src={quotation} alt="" />
+              <img src={quotation} alt="quotation" />
 
               <span
                 dangerouslySetInnerHTML={{ __html: t("who_are_we.quotation") }}
@@ -143,7 +275,7 @@ const WhoAreWe = () => {
             <TextReader texts={quotationText} />
             <span
               data-aos="fade-left"
-              style={{ float: "right", cursor: "pointer" }}
+              style={{ cursor: "pointer" }}
               className="book-btn"
               onClick={openModal}
             >
@@ -172,7 +304,6 @@ const WhoAreWe = () => {
           </div>
         </div>
       </div>
-
       <div className="container-main">
         <div className="basic padding30">
           <div>
@@ -189,10 +320,10 @@ const WhoAreWe = () => {
               <li>
                 {t("info.loc")}
               </li>
-              <li>TIN: 112690991</li>
-              <li>
+              {/* <li>TIN: 112690991</li> */}
+              {/* <li>
                 {t("info.reg_num")}
-              </li>
+              </li> */}
             </ul>
             <ul data-aos="fade-right">
               <li>
@@ -204,9 +335,7 @@ const WhoAreWe = () => {
               </li>
               <li>
                 {t("info.email")}{" "}
-                <a href="mailto:milos.ivosevic@helmchron.com">
-                  milos.ivosevic@helmchron.com
-                </a>
+                <a href="mailto:office@helmchron.com">office@helmchron.com</a>
               </li>
               <li>
                 {t("info.linkedin")}{" "}
