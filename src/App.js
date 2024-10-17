@@ -84,7 +84,7 @@ function App() {
           <Route path="/initiatives/navigator" element={<Navigator />} />
           <Route path="/initiatives/helmchrone" element={<One />} />
           <Route path="/electronics" element={<Electronics />} />
-          <Route path="/food-and-bioproducts" element={<Food />} />
+          <Route path="/food" element={<Food />} />
           <Route path="/energy" element={<Energy />} />
           <Route path="/oil&gas" element={<Oil />} />
           <Route path="/divisions" element={<Divisions />} />

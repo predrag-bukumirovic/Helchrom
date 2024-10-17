@@ -8,6 +8,9 @@ const Slider = () => {
   const [isTransitioning, setIsTransitioning] = useState(false);
   const sliderRef = useRef(null);
 
+  const [touchStartX, setTouchStartX] = useState(0);
+  const [touchEndX, setTouchEndX] = useState(0);
+
   const items = [
     {
       title: "HELEMCHR<span class='blue'>ONe<span/>",
@@ -22,16 +25,16 @@ const Slider = () => {
       link: "/initiatives/navigator"
     },
     {
+      title: "HELEMCHR <span class='blue'>InnoLAB<span/>",
+      content:
+        "Helmchron InnoLAB is our research initiative focused on advancing and innovating in plant design, and process and chemical engineering. By pushing the boundaries, we aim to create a more innovative and sustainable future for generations to come. <br/><br/><br/> <br/><br/> Explore our pursuit of innovation.",
+      link: "initiatives/innolab"
+    },
+    {
       title: "HELMCHRON <br/> <span class='blue academy-title'>Academy<span/>",
       content:
         "Helmchron Academy is dedicated to the continuous development of our team through knowledge and experience gained from complex, advanced projects. By emphasizing practical expertise, we ensure leveraging skills, nurturing talent, fostering a culture of ongoing learning. <br/><br/><br/> Explore how we advance expertise.",
       link: "/initiatives/academy"
-    },
-    {
-      title: "<span class='blue'>InnoLAB<span/>",
-      content:
-        "Helmchron InnoLAB is our research initiative focused on advancing and innovating in plant design, and process and chemical engineering. By pushing the boundaries, we aim to create a more innovative and sustainable future for generations to come. <br/><br/><br/> <br/><br/> Explore our pursuit of innovation.",
-      link: "initiatives/innolab"
     }
   ];
 
@@ -73,6 +76,22 @@ const Slider = () => {
     }, 500); // Čekamo da završi trenutna animacija
   };
 
+  const handleTouchStart = e => {
+    setTouchStartX(e.touches[0].clientX);
+  };
+
+  const handleTouchMove = e => {
+    setTouchEndX(e.touches[0].clientX);
+  };
+
+  const handleTouchEnd = () => {
+    if (touchStartX - touchEndX > 50) {
+      nextSlide();
+    } else if (touchEndX - touchStartX > 50) {
+      prevSlide();
+    }
+  };
+
   return (
     <div style={{ marginTop: 100 }} className="container-main">
       <div className="mobile-text-our-init padding30">
@@ -100,7 +119,12 @@ const Slider = () => {
               </p>
             </div>
 
-            <div className="slider-content slider-content-helone">
+            <div
+              onTouchStart={handleTouchStart}
+              onTouchMove={handleTouchMove}
+              onTouchEnd={handleTouchEnd}
+              className="slider-content slider-content-helone"
+            >
               {allItems.map((item, index) =>
                 <div
                   key={index}

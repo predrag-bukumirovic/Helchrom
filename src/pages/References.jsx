@@ -151,22 +151,22 @@ export default function References() {
 
       <div className="container-main padding30">
         <div className="icon-core references">
-          <div data-aos="zoom-in" onClick={() => handleClick(0)}>
+          <div onClick={() => handleClick(0)}>
             {t("navbar.pharma")}
           </div>
-          <div data-aos="zoom-in" onClick={() => handleClick(1)}>
+          <div onClick={() => handleClick(1)}>
             {t("navbar.food")}
           </div>
-          <div data-aos="zoom-in" onClick={() => handleClick(2)}>
+          <div onClick={() => handleClick(2)}>
             {t("navbar.chemicals")}
           </div>
-          <div data-aos="zoom-in" onClick={() => handleClick(3)}>
+          <div onClick={() => handleClick(3)}>
             {t("navbar.electronics")}
           </div>
-          <div data-aos="zoom-in" onClick={() => handleClick(4)}>
+          <div onClick={() => handleClick(4)}>
             {t("navbar.energy")}
           </div>
-          <div data-aos="zoom-in" onClick={() => handleClick(5)}>
+          <div onClick={() => handleClick(5)}>
             {t("navbar.oil")}
           </div>
         </div>

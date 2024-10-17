@@ -51,6 +51,10 @@
   text-align: center;
 }
 
+.slider-text span {
+  font-size: 20px;
+}
+
 .slider-controls {
   display: flex;
   align-items: center;

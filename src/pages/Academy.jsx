@@ -49,7 +49,9 @@ export default function Academy() {
         <center className="container-main">
           <h1 className="title" style={{ textTransform: "capitalize" }}>
             Helmchron{" "}
-            <span style={{ fontFamily: "DancingScript" }}>Academy</span>
+            <span style={{ fontFamily: "DancingScript", fontSize: 40 }}>
+              Academy
+            </span>
           </h1>
           <p data-aos="fade-up" style={{ marginBottom: 50 }}>
             Helmchron Academy is an initiative aimed at educating and developing
@@ -160,7 +162,7 @@ export default function Academy() {
         </center>
 
         <h2 style={{ fontSize: 25, marginTop: 50 }} className="title">
-          What is Helmchron Academy about? VIDEO
+          What is Helmchron Academy about?
         </h2>
 
         {/* Video */}

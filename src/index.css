@@ -3,7 +3,7 @@
   --light-blue-color: #f4f6fc;
   --dark-blue-color: #0b41cd;
   --green-color: #4e8351;
-  --light-green-color: #f3fdfa;
+  --light-green-color: #f8fffd;
   --light-orange-color: #fff2ee;
   --gray-text-color: #000;
   --font-family: 'Montserrat', sans-serif;
@@ -53,6 +53,10 @@ body,
   &.visible {
     animation: transitionIn 1s forwards;
   }
+}
+
+section {
+  margin: 100px 0;
 }
 
 @keyframes transitionIn {
@@ -193,7 +197,7 @@ footer {
 .sound-icon {
   position: absolute;
   right: 10px;
-  top: 0;
+  top: -30px;
   cursor: pointer;
   background: var(--light-blue-color);
   width: 30px;

@@ -1,9 +1,9 @@
-import React, { startTransition } from "react";
+import React from "react";
 
 import "../assets/scss/home.scss";
 import "../assets/scss/slider.scss";
 
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 
 import icon1 from "../assets/images/Home/1.png";
 import icon2 from "../assets/images/Home/2.png";
@@ -15,14 +15,14 @@ import { useTranslation } from "react-i18next";
 export default function IconServices() {
   const { t } = useTranslation();
 
-  const navigate = useNavigate(); // Definiši useNavigate
+  // const navigate = useNavigate(); // Definiši useNavigate
 
-  // Funkcija za rukovanje klikom na ikonicu
-  const handleIconClick = sectionId => {
-    startTransition(() => {
-      navigate(`/our-services#${sectionId}`);
-    });
-  };
+  // // Funkcija za rukovanje klikom na ikonicu
+  // const handleIconClick = sectionId => {
+  //   startTransition(() => {
+  //     navigate(`/our-services#${sectionId}`);
+  //   });
+  // };
 
   return (
     <div className="our-home">
@@ -64,20 +64,23 @@ export default function IconServices() {
             section: "section5"
           }
         ].map((item, index) =>
-          <div
+          <a
+            href="/our-services"
             style={{ cursor: "pointer" }}
-            onClick={() => handleIconClick(item.section)}
+            // onClick={() => handleIconClick(item.section)}
             key={index}
             data-aos="zoom-in"
           >
-            <img src={item.icon} alt="" />
-            <h3 style={{ color: "#000" }}>
-              {item.title}
-            </h3>
-            <p>
-              {item.text}
-            </p>
-          </div>
+            <div>
+              <img src={item.icon} alt="" />
+              <h3 style={{ color: "#000" }}>
+                {item.title}
+              </h3>
+              <p>
+                {item.text}
+              </p>
+            </div>
+          </a>
         )}
       </div>
     </div>

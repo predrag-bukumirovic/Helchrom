@@ -311,7 +311,7 @@ export default function Home() {
       <OurCompetencesHome />
 
       {/* Facts About Us */}
-      <div className="facts-box">
+      <section className="facts-box">
         <div className="facts container-main padding30">
           <h2 className="title">
             {t("facts.title")}
@@ -364,7 +364,7 @@ export default function Home() {
             </a>
           </center>
         </div>
-      </div>
+      </section>
 
       <Storyline />
 

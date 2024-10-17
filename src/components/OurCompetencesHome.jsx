@@ -15,48 +15,48 @@ const images = [
     srcImg: pipingImg,
     title: "Piping",
     text:
-      "We provide advanced piping solutions, including aseptic, hygienic, and utility systems, tailored to the specific needs of pharmaceutical, food, chemical, energy, oil and gas, and electronics industries. Through detailed audits, walk-downs, and installation support, we ensure the highest standards of quality in every project."
+      "We offer a comprehensive range of piping engineering, including aseptic and hygienic pipeline solutions, tailored to meet the specific requirements of various industries within our areas of expertise. From detailed audits and walk-downs to installation support, we provide complete project lifecycle support to ensure seamless execution and client satisfaction."
   },
   {
     srcImg: equipmentImg,
     title: "Equipment",
     text:
-      "By streamlining processes and reducing delays, Helmchron ONE helps clients to maximize the value of their investment. The focused approach minimizes errors and rework, contributing to significant cost savings."
+      "At Helmchron, we understand that proper equipment design is essential for maintaining plant efficiency, ensuring product quality, and safeguarding both personnel and the environment. With a focus on the highest industry standards, regulations, and specific production requirements, we design a wide range of process equipment, including unit operations and heat transfer systems, to meet the needs of our clients."
   },
   {
     srcImg: cleanImg,
     title: "Clean media storage and distribution system design",
     text:
-      "Our clean media storage and distribution system design services encompass a wide range of solutions, including Purified Water (PW), Water for Injection (WFI), Clean Steam (CS), and Clean Condensate (CC). All our services are tailored to meet rigorous standards and ensure reliable and efficient media management throughout production processes."
+      "Our clean media storage and distribution system design services encompass a wide range of solutions, including fluids for pharmaceutical and electronics industry. All our services are tailored to meet rigorous standards and ensure reliable and efficient clean media management throughout production processes."
   },
   {
     srcImg: roomsImg,
     title: "Clean rooms",
     text:
-      "We deliver comprehensive solutions such as H2O2 disinfection system design, pressure cascade design, and optimized personnel and material flow layouts. Our tailored clean room design solutions meet the specific needs of pharmaceutical, biotechnology, microbiology, genetic engineering, electronics, and food industries, ensuring operational efficiency and compliance."
+      "We deliver full range of solutions, including water-peroxide disinfection system design, pressure cascade design, and optimized personnel and material flow layouts. Our tailored clean room design solutions meet the specific needs of pharmaceutical, biotechnology, microbiology, genetic engineering, electronics, and food industries, ensuring operational efficiency and compliance."
   },
   {
     srcImg: HVACImg,
     title: "HVAC",
     text:
-      "We encompass the design and implementation of ventilation and air conditioning systems, process air systems, heat recovery systems, and advanced heating and cooling technologies. We tailor the systems to meet the unique requirements of the pharmaceutical, biotechnology, electronics, and food industries, ensuring optimal environmental conditions and compliance with industry standards."
+      "Our competences include the design and implementation of ventilation and air conditioning systems, along with heat recovery and advanced heating and cooling technologies. Each system is tailored to meet client requirements and the stringent standards of the pharmaceutical, biotechnology, and electronics industries, ensuring optimal environmental conditions and full regulatory compliance."
   },
   {
     srcImg: UtilitiesImg,
     title: "Utilities",
     text:
-      "Encompassing refrigeration, heat, saturated steam, process cooling water, and heat recovery, our utility solutions are tailored to meet the needs and requirements of the project, including regulatory standards and best practices."
+      "Our solutions cover refrigeration and heating media, saturated steam and condensate systems, and process cooling water, while factoring in heat recovery and optimization. Each solution is customized to meet the unique needs and requirements of every project, ensuring compliance with regulatory  standards and adherence to industry best practices."
   },
   {
     srcImg: MSRImg,
     title: "MSR",
     text:
-      "With a focus on MSR (Measurement, Control, and Regulation) solutions, we provide concept development, planning, and tendering, along with control system design using standard CAE systems. Our services include PLC/DDC systems programming, manufacturer-independent building management systems, commissioning of hardware and software, energy management, remote monitoring, training, and maintenance."
+      "We provide MSR concept development, planning, and procurement, alongside control system design using standard CAE systems. Our offerings include PLC/DDC system programming, manufacturer- independent building management systems, hardware and software commissioning, energy management, remote monitoring, as well as training and maintenance services."
   }
 ];
 
 const Competences = () => {
-  const [currentIndex, setCurrentIndex] = useState(3);
+  const [currentIndex, setCurrentIndex] = useState(0);
   const [touchStartX, setTouchStartX] = useState(0);
   const [touchEndX, setTouchEndX] = useState(0);
   const { t } = useTranslation();
@@ -158,7 +158,7 @@ const Competences = () => {
               </p>
             </div>
             <center style={{ color: "#000" }}>
-              Click on the next image to read another Helmchron ONE benefit
+              Click on the next image to explore another of our competences.
             </center>
           </div>
         </div>

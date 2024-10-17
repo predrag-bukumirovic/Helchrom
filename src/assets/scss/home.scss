@@ -22,6 +22,7 @@
 .text-banner {
   width: 50%;
   padding-left: 100px;
+  margin-top: 100px;
   line-height: 50px;
   z-index: 9;
 
@@ -206,9 +207,11 @@
     margin-top: 50px;
     margin-bottom: 50px;
 
-    a div {
-      height: 280px;
-
+    a {
+      text-decoration: none;
+      div {
+        height: 280px;
+      }
       p {
         color: #000;
       }
@@ -300,7 +303,6 @@
 
 .facts-box {
   .facts {
-    margin-top: 60px;
     h2 {
       font-weight: 700;
       text-align: center;
@@ -491,8 +493,6 @@
 }
 
 .testimonials {
-  margin-top: 80px;
-
   .testi-item {
     display: flex;
     align-items: flex-start;

@@ -154,8 +154,7 @@ const One = () => {
           <span
             style={{
               fontSize: "inherit",
-              textTransform: "none",
-              color: "var(--dark-blue-color)"
+              textTransform: "none"
             }}
           >
             HELMCHR<span

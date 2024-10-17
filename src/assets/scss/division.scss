@@ -13,6 +13,7 @@
 
   @media (max-width: 780px) {
     width: 100%;
+    height: 300px;
   }
 }
 
@@ -23,37 +24,36 @@
   object-fit: cover;
   transition: transform 1s ease, opacity 1s ease;
   opacity: 0.5;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
   transform-origin: center center;
 
   @media (max-width: 780px) {
     width: 100%;
+    height: 250px;
   }
 }
 
 .slider-image.active {
-  width: 85%;
   opacity: 1;
-  transform: translate(0, 0) rotate(0deg) !important;
   z-index: 9;
 
   @media (max-width: 780px) {
     width: 100%;
+    height: 250px;
   }
-}
-
-.slider-image:not(.active) {
-  transform: translateX(-10px) rotate(0deg);
-  z-index: 1;
 }
 
 .slider-text {
   width: 50%;
-  padding: 20px;
+  padding: 0 20px;
 }
 
 .text-divisions {
   display: none;
+}
+
+.text-divisions.active {
+  display: block;
 }
 
 .text.active {
@@ -113,16 +113,30 @@
 
 .initiative-logo {
   display: grid;
-  gap: 30px;
+  gap: 50px;
   align-items: flex-start;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 
+  a {
+    background: var(--light-blue-color);
+    border-radius: 30px;
+    padding: 10px;
+    height: 320px;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+
+    p {
+      font-size: 16px;
+      margin-top: 20px;
+    }
+  }
+
   img {
-    width: 300px;
+    width: 180px;
     transition: .3s;
 
     &:hover {
-      transform: scale(1.1);
+      transform: scale(1.05);
     }
   }
 }

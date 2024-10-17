@@ -9,7 +9,7 @@ import mainImg1 from "../assets/images/Division/baner2.png";
 import mainImg2 from "../assets/images/Division/baner3.png";
 
 import academy from "../assets/images/Division/Academy.png";
-import innoLab from "../assets/images/Division/InnoLAB.png";
+import innoLab from "../assets/images/Division/InnoLab.png";
 import navigator from "../assets/images/Division/navigator.png";
 import one from "../assets/images/Division/One.png";
 
@@ -135,14 +135,10 @@ export default function Division() {
               className={`slider-image ${currentIndex === index
                 ? "active"
                 : ""}`}
-              style={{
-                transform: `translate(${index * -2}px, ${index *
-                  5}px) rotate(${index * 0}deg)`
-              }}
             />
           )}
         </div>
-        <div className="slider-text" style={{ padding: "20px 0" }}>
+        <div className="slider-text">
           {/* OUR Divisions slider */}
           {images.map((image, index) =>
             <div
@@ -190,7 +186,6 @@ export default function Division() {
       <div className="unique">
         <SliderServices />
       </div>
-      a{" "}
       <div
         style={{
           background: "var(--light-blue-color)",
@@ -212,48 +207,24 @@ export default function Division() {
           </center>
 
           <div className="ref-circle">
-            <a href="/pharma">
-              <div>
-                <div className="ref-img">
-                  <span>Pharma</span>
+            {[
+              "pharma",
+              "food",
+              "chemicals",
+              "electronics",
+              "energy",
+              "oil&gas"
+            ].map((ref, index) =>
+              <a key={index} href="/our-references">
+                <div>
+                  <div className="ref-img">
+                    <span>
+                      {ref.replace("-", " & ")}
+                    </span>
+                  </div>
                 </div>
-              </div>
-            </a>
-            <a href="/food-and-bioproducts">
-              <div>
-                <div className="ref-img">
-                  <span>Food & bio</span>
-                </div>
-              </div>
-            </a>
-            <a href="/chemicals">
-              <div>
-                <div className="ref-img">
-                  <span>Chemicals</span>
-                </div>
-              </div>
-            </a>
-            <a href="/electronics">
-              <div>
-                <div className="ref-img">
-                  <span>Electronics</span>
-                </div>
-              </div>
-            </a>
-            <a href="/energy">
-              <div>
-                <div className="ref-img">
-                  <span>Energy</span>
-                </div>
-              </div>
-            </a>
-            <a href="/oil&gas">
-              <div>
-                <div className="ref-img">
-                  <span>Oil & Gas</span>
-                </div>
-              </div>
-            </a>
+              </a>
+            )}
           </div>
         </div>
       </div>
@@ -287,18 +258,41 @@ export default function Division() {
           <div className="initiative-logo">
             <a href="/initiatives/helmchrone">
               <img src={one} alt="One Logo" />
+
+              <p>
+                Our innovative service model assigns ONE dedicated team to ONE
+                client and ONE project at a time, ensuring focused execution,
+                on-time delivery, and budget control.
+              </p>
             </a>
 
             <a href="/initiatives/navigator">
               <img src={navigator} alt="Navigator Logo" />
+
+              <p>
+                We offer comprehensive consulting and support across the entire
+                plant design lifecycle, delivering tailored solutions,
+                streamlining processes, and optimizing resources.
+              </p>
             </a>
 
             <a href="/initiatives/innolab">
               <img src={innoLab} alt="InnoLab Logo" />
+              <p>
+                Our research initiative aims to advance innovation in plant
+                design engineering, pushing boundaries to build a more
+                sustainable future for the coming generations.
+              </p>
             </a>
 
             <a href="/initiatives/academy">
               <img src={academy} alt="Academy Logo" />
+
+              <p>
+                We continuously develop our team by leveraging expertise from
+                complex, advanced projects, with a focus on practical skills and
+                mentorship.
+              </p>
             </a>
           </div>
         </center>

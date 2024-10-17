@@ -25,7 +25,7 @@ export default function StoryLineProbe() {
   ];
 
   return (
-    <div className="story-line container-main">
+    <section className="story-line container-main">
       <h2 className="title">
         {t("our_line.title")}
       </h2>
@@ -121,6 +121,6 @@ export default function StoryLineProbe() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

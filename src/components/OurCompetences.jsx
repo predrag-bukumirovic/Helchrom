@@ -35,19 +35,26 @@ const competencesData = {
     title: "Piping",
     description: [
       "Pipe specification development",
-      "Specification-based 3D piping modeling, design, orthographic plan, section, and detail preparation",
-      "Fabrication isometric development",
+      "Specification-based 3D piping modeling, design, orthographic plan, section, and detail",
+      "preparation (up to LOD500)",
+      "Isometric drawing for fabrication",
+      "Welding procedure documentation",
+      "Documentation for fabrication",
       "Preparation of BOM (Bill of Materials) for advanced material procurement",
       "Above and below-ground piping systems",
       "Aseptic, hygienic, and sanitary piping systems",
       "Thermal and dynamic pipe stress analysis and design",
       "Standard and custom pipe support design",
-      "Piping system walkdowns",
+      "Secondary steelwork design",
+      "Piping system walk-downs",
       "Piping installation quality audits",
       "Process piping design",
       "Utility piping design",
-      "Pneumatic convey piping systems",
-      "Flammable and volatile liquid & gas piping systems"
+      "Pneumatic conveying piping design",
+      "Flammable and volatile liquid and gas piping design",
+      "AS-Built Documentation",
+      "Laser Scanning",
+      "Documentation for notified body"
     ],
     text: "To learn more, connect with our team.",
     image: pipingImg,
@@ -56,7 +63,25 @@ const competencesData = {
   },
   equipment: {
     title: "Equipment",
-    description: [],
+    description: [
+      "Dimensioning and specification sheets issuing",
+      "Material selection according to process data",
+      "Design according to relevant standards and regulations as well as related industry praxis and",
+      "recommendations",
+      "3D Design",
+      "Design evaluation and analysis",
+      "2D drawings and BOM issuing",
+      "Workshop documentation and welding procedure specification",
+      "Pump selection and system design",
+      "Special parts design and specification sheets issuing",
+      "Auditing suppliers",
+      "Documentation for inquiries",
+      "Evaluation of offers",
+      "Review of supplier documentation",
+      "Quality assurance with suppliers",
+      "Problem troubleshooting",
+      "Consulting"
+    ],
     text: "To learn more, connect with our team.",
     image: equipmentImg,
     icon: equipmentIcon,
@@ -65,15 +90,15 @@ const competencesData = {
   cleanMedia: {
     title: "Clean Media",
     description: [
+      "Raw water treatment and softening",
       "Purified Water (PW)",
       "Water for Injection (WFI)",
-      "Clean Steam (CS) ",
+      "Clean Steam (CS)",
       "Clean Condensate (CC)",
       "Technical N2 (N2T)",
       "Pharmaceutical N2 (N2P)",
-      "Technical compressed air (DLT)",
-      "Pharmaceutical compressed air (DLP)",
-      "H2O2 system design",
+      "Pharmaceutical compressed air (PCA)",
+      "Hydrogen Peroxide Systems for Clean Room Disinfection (H2O2)",
       "Chemical supply and disposal"
     ],
     text: "To learn more, connect with our team.",
@@ -84,12 +109,16 @@ const competencesData = {
   cleanRooms: {
     title: "Clean rooms",
     description: [
-      "H2O2 disinfection system design",
-      "Pressure cascade design",
-      "Flow of personal",
-      "Flow of material",
-      "HVAC system design ",
-      "Layout design"
+      "Layout planning and design",
+      "Clean zone concept",
+      "Classification and pressure cascade design",
+      "Personnel and material flow concept",
+      "HVAC system design",
+      "Disinfection system planning and design (H2O2)",
+      "Utility station planning inside of clean room",
+      "Piping support design inside of clean room",
+      "Clean room wall penetration design",
+      "Planning and design of particle measurement points"
     ],
     text: "To learn more, connect with our team.",
     image: roomsImg,
@@ -102,7 +131,13 @@ const competencesData = {
       "Ventilation and air conditioning systems",
       "Process air systems",
       "Heat recovery systems",
-      "Heating and cooling technologies"
+      "Heating and cooling systems",
+      "Heating load calculation",
+      "Cooling load calculation",
+      "Duct sizing and layout design",
+      "3D Ducting Design (up to LOD500)",
+      "BOQ and BOM generation",
+      "Workshop documentation"
     ],
     text: "To learn more, connect with our team.",
     image: HVACImg,
@@ -112,11 +147,19 @@ const competencesData = {
   utilities: {
     title: "Utilities",
     description: [
-      "Refrigeration",
-      "Heat",
-      "Saturated steam",
-      "Process cooling water",
-      "Heat recovery"
+      "Saturated steam generation systems",
+      "Saturated steam distribution systems",
+      "Heating system planning and design",
+      "Refrigeration and cooling systems",
+      "Air cooling systems",
+      "Water cooling systems",
+      "Fire protection systems",
+      "Process cooling water treatment",
+      "Heat recovery systems",
+      "Compressed air generation and distribution",
+      "Nitrogen systems",
+      "Utility system analysis and optimization",
+      "Energy audits"
     ],
     text: "To learn more, connect with our team.",
     image: UtilitiesImg,
@@ -133,7 +176,7 @@ const competencesData = {
       "Commissioning of hardware and software",
       "Energy management and remote monitoring",
       "Training",
-      "Maintenance and servicing"
+      "Maintenance and service"
     ],
     text: "To learn more, connect with our team.",
     image: MSRImg,
@@ -157,7 +200,7 @@ const Competences = () => {
 
   return (
     <div className="competences-container">
-      <h2 className="title">OUR COMPETENCES</h2>
+      <h2 className="title">OUR COMPETENCIES</h2>
       <nav className="competence-nav">
         <div className="nav-slider">
           {Object.keys(competencesData).map(key =>

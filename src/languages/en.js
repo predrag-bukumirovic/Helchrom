@@ -362,7 +362,7 @@ const enTranslation = {
     vision_mission: "Our vision and mission",
     our_values: "Our values",
     competences_services: "competences & services",
-    our_services: "Services",
+    our_services: "SERVICES & COMPETENCIES",
     our_reference: "References",
     career: "career",
     news: "news",

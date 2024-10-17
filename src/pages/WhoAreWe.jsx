@@ -143,49 +143,49 @@ const WhoAreWe = () => {
           </center>
 
           <div className="who-circle">
-            <a href="/">
+            <a href="/our-services">
               <div>
                 <div className="who-img">
                   <span>Piping</span>
                 </div>
               </div>
             </a>
-            <a href="/">
+            <a href="/our-services">
               <div>
                 <div className="who-img">
                   <span>EQUIPMENT</span>
                 </div>
               </div>
             </a>
-            <a href="/">
+            <a href="/our-services">
               <div>
                 <div className="who-img">
                   <span>Clean Media</span>
                 </div>
               </div>
             </a>
-            <a href="/">
+            <a href="/our-services">
               <div>
                 <div className="who-img">
-                  <span>Cleam Rooms</span>
+                  <span>Clean Rooms</span>
                 </div>
               </div>
             </a>
-            <a href="/">
+            <a href="/our-services">
               <div>
                 <div className="who-img">
                   <span>HVAC</span>
                 </div>
               </div>
             </a>
-            <a href="/">
+            <a href="/our-services">
               <div>
                 <div className="who-img">
                   <span>Utilities</span>
                 </div>
               </div>
             </a>
-            <a href="/">
+            <a href="/our-services">
               <div>
                 <div className="who-img">
                   <span>MSR</span>
@@ -204,7 +204,7 @@ const WhoAreWe = () => {
       </div>
 
       <section className="purpose-values container-main">
-        <div data-aos="fade-right" style={{ padding: 30 }}>
+        <div data-aos="fade-right" style={{ padding: 40 }}>
           <h2 style={{ textAlign: "start" }} className="title">
             OUR PURPOSE
           </h2>
@@ -227,7 +227,7 @@ const WhoAreWe = () => {
         <div data-aos="zoom-in">
           <img src={purposeValues} alt="purposeValues" />
         </div>
-        <div data-aos="fade-left" style={{ padding: 20 }}>
+        <div data-aos="fade-left" style={{ padding: 40 }}>
           <h2 style={{ textAlign: "start" }} className="title">
             OUR VALUES
           </h2>
