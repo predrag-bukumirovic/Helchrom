@@ -25,7 +25,8 @@ const images = [
   },
   {
     srcImg: cleanImg,
-    title: "Clean media storage and distribution system design",
+    title: "Clean media ",
+    plusTitle: "storage and distribution system design",
     text:
       "Our clean media storage and distribution system design services encompass a wide range of solutions, including fluids for pharmaceutical and electronics industry. All our services are tailored to meet rigorous standards and ensure reliable and efficient clean media management throughout production processes."
   },
@@ -143,17 +144,25 @@ const Competences = () => {
                   borderRadius: 30
                 }}
                 onClick={() => handleImageClick(index)}
-              />
+              >
+                <span
+                  className={`img-title ${index === currentIndex
+                    ? "active"
+                    : ""}`}
+                >
+                  {image.title}
+                </span>
+              </div>
             )}
           </div>
           <div className="slider-text-container">
             <div className="slider-text">
               <b>
                 <span>
-                  {images[currentIndex].title}
+                  {images[currentIndex].title} {images[currentIndex].plusTitle}
                 </span>
               </b>
-              <p>
+              <p style={{ fontSize: 16 }}>
                 {images[currentIndex].text}
               </p>
             </div>

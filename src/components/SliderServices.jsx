@@ -13,6 +13,9 @@ const SliderServices = () => {
   const { t } = useTranslation();
   const navigate = useNavigate();
 
+  const [touchStartX, setTouchStartX] = useState(0);
+  const [touchEndX, setTouchEndX] = useState(0);
+
   const items = [
     {
       id: 1,
@@ -65,6 +68,22 @@ const SliderServices = () => {
     });
   };
 
+  const handleTouchStart = e => {
+    setTouchStartX(e.touches[0].clientX);
+  };
+
+  const handleTouchMove = e => {
+    setTouchEndX(e.touches[0].clientX);
+  };
+
+  const handleTouchEnd = () => {
+    if (touchStartX - touchEndX > 50) {
+      nextSlide();
+    } else if (touchEndX - touchStartX > 50) {
+      prevSlide();
+    }
+  };
+
   return (
     <div style={{ marginTop: 100 }} className="container-main">
       <div className="slider-helmone slider-services container-main">
@@ -84,7 +103,13 @@ const SliderServices = () => {
         </div>
         <div className="slider-right" style={{ right: 0 }}>
           <div>
-            <div className="slider-content" style={{ width: 900 }}>
+            <div
+              onTouchStart={handleTouchStart}
+              onTouchMove={handleTouchMove}
+              onTouchEnd={handleTouchEnd}
+              className="slider-content"
+              style={{ width: 900 }}
+            >
               {items.map((item, index) =>
                 <div
                   key={index}

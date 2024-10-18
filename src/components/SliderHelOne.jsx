@@ -25,7 +25,7 @@ const Slider = () => {
       link: "/initiatives/navigator"
     },
     {
-      title: "HELEMCHR <span class='blue'>InnoLAB<span/>",
+      title: "HELEMCHRON <span class='blue'>InnoLAB<span/>",
       content:
         "Helmchron InnoLAB is our research initiative focused on advancing and innovating in plant design, and process and chemical engineering. By pushing the boundaries, we aim to create a more innovative and sustainable future for generations to come. <br/><br/><br/> <br/><br/> Explore our pursuit of innovation.",
       link: "initiatives/innolab"
@@ -130,11 +130,13 @@ const Slider = () => {
                   key={index}
                   style={{
                     transform: `translateX(-${currentIndex * 106}%)`,
-                    transition: "transform 0.5s ease"
+                    transition: "transform 0.5s ease",
+                    cursor: "pointer"
                   }}
                   className={`slider-item ${index === currentIndex
                     ? "active"
                     : ""}`}
+                  onClick={() => setCurrentIndex(index)}
                 >
                   <h5
                     style={{

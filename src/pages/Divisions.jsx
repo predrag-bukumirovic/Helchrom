@@ -147,10 +147,13 @@ export default function Division() {
                 ? "active"
                 : ""}`}
             >
-              <h2 style={{ textAlign: "start" }} className="title">
+              <h2
+                style={{ textAlign: "start", fontSize: 25, marginBottom: 10 }}
+                className="title"
+              >
                 {image.title}
               </h2>
-              <p>
+              <p style={{ marginBottom: 30 }}>
                 {image.text}
               </p>
               <a className="book-btn" href={image.link}>

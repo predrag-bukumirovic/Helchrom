@@ -200,7 +200,7 @@ const Competences = () => {
 
   return (
     <div className="competences-container">
-      <h2 className="title">OUR COMPETENCIES</h2>
+      <h2 className="title">OUR COMPETENCES</h2>
       <nav className="competence-nav">
         <div className="nav-slider">
           {Object.keys(competencesData).map(key =>

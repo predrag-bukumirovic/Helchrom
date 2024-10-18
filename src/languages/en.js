@@ -362,7 +362,7 @@ const enTranslation = {
     vision_mission: "Our vision and mission",
     our_values: "Our values",
     competences_services: "competences & services",
-    our_services: "SERVICES & COMPETENCIES",
+    our_services: "Services & Competences",
     our_reference: "References",
     career: "career",
     news: "news",
@@ -441,7 +441,7 @@ const enTranslation = {
     }
   },
   our_core: {
-    title: "our services & competencies",
+    title: "our services & competences",
     sub_text: `Our unwavering commitment to understanding and fulfilling the unique
           requirements of each of our clients drives our mission and vision. We
           measure our success by the satisfaction of our partners, and we are
