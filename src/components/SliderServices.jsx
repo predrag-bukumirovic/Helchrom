@@ -21,36 +21,36 @@ const SliderServices = () => {
       id: 1,
       icon: icon1,
       title: "services.icon.title1",
-      text: "services.icon.text1",
-      section: "section1"
+      text: "services.icon.text1"
+      // section: "section1"
     },
     {
       id: 2,
       icon: icon2,
       title: "services.icon.title2",
-      text: "services.icon.text2",
-      section: "section2"
+      text: "services.icon.text2"
+      // section: "section2"
     },
     {
       id: 3,
       icon: icon3,
       title: "services.icon.title3",
-      text: "services.icon.text3",
-      section: "section3"
+      text: "services.icon.text3"
+      // section: "section3"
     },
     {
       id: 4,
       icon: icon4,
       title: "services.icon.title4",
-      text: "services.icon.text4",
-      section: "section4"
+      text: "services.icon.text4"
+      // section: "section4"
     },
     {
       id: 5,
       icon: icon5,
       title: "services.icon.title5",
-      text: "services.icon.text5",
-      section: "section5"
+      text: "services.icon.text5"
+      // section: "section5"
     }
   ];
 

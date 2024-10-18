@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "../assets/scss/competences.css";
 
 // Imgs
-import pipingImg from "../assets/images/Competences/pipingImg.png";
+import pipingImg from "../assets/images/Competences/orginalImg/Piping.jpg";
 import equipmentImg from "../assets/images/Competences/Equipment.png";
 import cleanImg from "../assets/images/Competences/Cleanmedia.png";
 import roomsImg from "../assets/images/Competences/room.png";
@@ -35,8 +35,7 @@ const competencesData = {
     title: "Piping",
     description: [
       "Pipe specification development",
-      "Specification-based 3D piping modeling, design, orthographic plan, section, and detail",
-      "preparation (up to LOD500)",
+      "Specification-based 3D piping modeling, design, orthographic plan, section, and detail preparation (up to LOD500)",
       "Isometric drawing for fabrication",
       "Welding procedure documentation",
       "Documentation for fabrication",
@@ -66,8 +65,7 @@ const competencesData = {
     description: [
       "Dimensioning and specification sheets issuing",
       "Material selection according to process data",
-      "Design according to relevant standards and regulations as well as related industry praxis and",
-      "recommendations",
+      "Design according to relevant standards and regulations as well as related industry praxis and recommendations",
       "3D Design",
       "Design evaluation and analysis",
       "2D drawings and BOM issuing",
@@ -256,6 +254,7 @@ const Competences = () => {
           </div>
           <div className="competence-image">
             <img
+              style={{ borderRadius: "50% 20% 30% 40%" }}
               src={competencesData[activeCompetence].image}
               alt={competencesData[activeCompetence].title}
             />

@@ -27,6 +27,9 @@ export default function Division() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const { t } = useTranslation();
 
+  const [touchStartX, setTouchStartX] = useState(0);
+  const [touchEndX, setTouchEndX] = useState(0);
+
   const images = [
     {
       src: slider1,
@@ -82,6 +85,22 @@ export default function Division() {
     );
   };
 
+  const handleTouchStart = e => {
+    setTouchStartX(e.touches[0].clientX);
+  };
+
+  const handleTouchMove = e => {
+    setTouchEndX(e.touches[0].clientX);
+  };
+
+  const handleTouchEnd = () => {
+    if (touchStartX - touchEndX > 50) {
+      nextSlide();
+    } else if (touchEndX - touchStartX > 50) {
+      prevSlide();
+    }
+  };
+
   return (
     <div>
       {/* Slider start */}
@@ -126,7 +145,12 @@ export default function Division() {
         </center>
       </div>
       <div className="slider-container slider-division container-main">
-        <div className="slider-images">
+        <div
+          className="slider-images"
+          onTouchStart={handleTouchStart}
+          onTouchMove={handleTouchMove}
+          onTouchEnd={handleTouchEnd}
+        >
           {images.map((image, index) =>
             <img
               key={index}
@@ -164,7 +188,7 @@ export default function Division() {
         </div>
       </div>
       {/* Kontrole strelica i tačaka */}
-      <div className="slider-controls">
+      <div style={{ marginTop: 20 }} className="slider-controls">
         <button onClick={prevSlide}>&#10094;</button>
         <div className="slider-dots">
           {images.map((_, index) =>

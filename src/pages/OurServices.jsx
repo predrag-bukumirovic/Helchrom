@@ -112,7 +112,12 @@ export default function OurCore() {
           />
         </center>
 
-        <div className="icon-core">
+        <center>
+          <h3 style={{ marginTop: 50 }} className="title">
+            Our Services
+          </h3>
+        </center>
+        <div className="icon-core" style={{ marginTop: 0 }}>
           <div data-aos="zoom-in" onClick={() => handleClick(0)}>
             {t("our_core.icon_core.icon1")}
           </div>
