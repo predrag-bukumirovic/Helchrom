@@ -58,7 +58,7 @@
     position: relative;
 
     @media (max-width: 750px) {
-      padding-left: 50px;
+      padding: 50px 10px;
       padding-right: 5px;
     }
 
@@ -152,6 +152,7 @@
   }
   @media (max-width: 750px) {
     left: -100px;
+    display: none;
   }
 }
 

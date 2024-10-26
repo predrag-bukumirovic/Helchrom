@@ -1,0 +1,85 @@
+.software-tools {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  margin-top: 50px;
+}
+
+.navigation button {
+  font-size: 13px;
+  color: #000;
+}
+
+.nav-item {
+  padding: 10px;
+  border-radius: 30px;
+  border: none;
+  background: var(--light-blue-color);
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.nav-item.active {
+  background-color: orange;
+  color: white;
+}
+
+.tools-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.tool-card {
+  text-align: center;
+  width: 120px;
+}
+
+.tool-card img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 5px;
+}
+.tool-card p {
+  font-weight: 600;
+}
+
+/* Animacija za tranziciju slika */
+.fade-in {
+  animation: fadeIn .5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.35);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 1200px) {
+  .navigation {
+    justify-content: flex-start;
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-width: none;
+    padding-bottom: 10px;
+  }
+  .tools-container {
+    flex-wrap: wrap;
+  }
+  .tool-card img {
+    width: 70px;
+    height: 70px;
+  }
+}

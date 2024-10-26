@@ -172,27 +172,19 @@ const Competences = () => {
           </div>
         </div>
         <div className="slider-controls">
-          <button
-            className="slider-button slider-button-prev"
-            onClick={handlePrev}
-          >
+          <button className="arrow-slider" onClick={handlePrev}>
             &#10094;
           </button>
           <div className="slider-dots">
             {images.map((_, index) =>
               <div
                 key={index}
-                className={`slider-dot ${index === currentIndex
-                  ? "active"
-                  : ""}`}
+                className={`dot ${index === currentIndex ? "active" : ""}`}
                 onClick={() => handleDotClick(index)}
               />
             )}
           </div>
-          <button
-            className="slider-button slider-button-next"
-            onClick={handleNext}
-          >
+          <button className="arrow-slider" onClick={handleNext}>
             &#10095;
           </button>
         </div>

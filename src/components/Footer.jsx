@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "../assets/scss/footer.scss";
 import TikTok from "../assets/images/tiktok.webp";
 import Instagram from "../assets/images/instagram.webp";
@@ -6,13 +6,19 @@ import Linkedine from "../assets/images/linkedine.webp";
 import Twitter from "../assets/images/twitter.png";
 import Logo from "../assets/images/logowhite.webp";
 import { useTranslation } from "react-i18next";
-import Select from "../components/Select";
+import LanguageModal from "./LanguageModal";
 
 export default function Footer() {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
-  const handleLanguageChange = code => {
-    i18n.changeLanguage(code);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
   };
 
   return (
@@ -29,7 +35,7 @@ export default function Footer() {
                 <a href="/about-us/who-are-we">
                   {t("navbar.who_are_we")}
                 </a>
-                <a href="/competences&services/our-services">
+                <a href="/our-services">
                   {t("navbar.our_services")}
                 </a>
                 <a href="/about-us/our-values">
@@ -88,11 +94,18 @@ export default function Footer() {
                     <span className="tooltip-text">TikTok</span>
                   </a>
                 </div>
-                <Select
-                  currentLanguage={i18n.language}
-                  onLanguageChange={handleLanguageChange}
+                <button onClick={openModal} className="change-leng">
+                  Change language
+                </button>
+
+                <LanguageModal
+                  isOpen={isModalOpen}
+                  onRequestClose={closeModal}
+                  onSelectLanguage={lang =>
+                    console.log(`Selected language: ${lang}`)}
                 />
               </div>
+
               <div className="footer-contact">
                 <p dangerouslySetInnerHTML={{ __html: t("contact_us") }} />
                 <a href="mailto:office@helmchron.com">office@helmchron.com</a>

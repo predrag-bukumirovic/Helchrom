@@ -2,30 +2,36 @@ import React, { useState } from "react";
 import "./accessinility.css";
 
 import { IoMdContrast } from "react-icons/io";
-import { IoLinkOutline, IoInvertMode } from "react-icons/io5";
+import { IoLinkOutline } from "react-icons/io5";
 import { TbTextSize } from "react-icons/tb";
 import { RiTextSpacing } from "react-icons/ri";
 import { LuImageOff } from "react-icons/lu";
 import { RxCursorArrow, RxLineHeight } from "react-icons/rx";
 import { GrTextAlignFull } from "react-icons/gr";
 
+import invert from "./img/1.png";
+import dark from "./img/2.png";
+import light from "./img/3.png";
+
 export default function Nav() {
   const [contrastOption, setContrastOption] = useState(0); // Praćenje stanja kontrasta
 
   // Funkcija za prebacivanje opcija kontrasta
   const handleContrastClick = () => {
-    setContrastOption(prev => (prev + 1) % 3); // Rotira između 0, 1 i 2
+    setContrastOption(prev => (prev + 1) % 4); // Rotira između 0, 1 i 2
   };
 
   // Promena ikone na osnovu opcije kontrasta
   const getContrastIcon = () => {
     switch (contrastOption) {
       case 1:
-        return <IoInvertMode />; // Ikona za inverzne boje
+        return <img style={{ width: 40 }} src={invert} alt="Invert" />; // Ikona za inverzne boje
       case 2:
-        return <IoMdContrast style={{ color: "orange" }} />; // Ikona sa naglašenom bojom
+        return <img style={{ width: 40 }} src={dark} alt="Dark" />; // Ikona sa naglašenom bojom
+      case 3:
+        return <img style={{ width: 40 }} src={light} alt="Dark" />; // Podrazumevana ikona
       default:
-        return <IoMdContrast />; // Podrazumevana ikona
+        return <IoMdContrast />;
     }
   };
 
@@ -53,6 +59,11 @@ export default function Nav() {
               <div
                 style={{
                   backgroundColor: contrastOption === 2 ? "orange" : ""
+                }}
+              />
+              <div
+                style={{
+                  backgroundColor: contrastOption === 3 ? "orange" : ""
                 }}
               />
             </div>

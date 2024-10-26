@@ -157,7 +157,7 @@ export default function Navbar({ className }) {
                         <CustomLink href="/pharma">
                           {t("navbar.pharma")}
                         </CustomLink>
-                        <CustomLink href="/food-and-bioproducts">
+                        <CustomLink href="/food">
                           {t("navbar.food")}
                         </CustomLink>
                         <CustomLink href="/chemicals">

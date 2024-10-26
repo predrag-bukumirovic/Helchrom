@@ -38,7 +38,7 @@ export default function WhoIcons() {
       default: foodandbio,
       color: foodandbioColor,
       alt: "Icon foodandbio",
-      link: "/food-and-bioproducts"
+      link: "/food"
     },
     {
       default: chemicals,

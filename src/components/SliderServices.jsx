@@ -1,17 +1,15 @@
-import React, { startTransition, useState } from "react";
-import "../assets/scss/sliderHelOne.scss";
+import React, { useState } from "react";
+import "../assets/scss/SliderServices.scss";
 import icon1 from "../assets/images/Home/1.png";
 import icon2 from "../assets/images/Home/2.png";
 import icon3 from "../assets/images/Home/3.png";
 import icon4 from "../assets/images/Home/4.png";
 import icon5 from "../assets/images/Home/5.png";
 import { useTranslation } from "react-i18next";
-import { useNavigate } from "react-router-dom";
 
 const SliderServices = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const { t } = useTranslation();
-  const navigate = useNavigate();
 
   const [touchStartX, setTouchStartX] = useState(0);
   const [touchEndX, setTouchEndX] = useState(0);
@@ -20,37 +18,33 @@ const SliderServices = () => {
     {
       id: 1,
       icon: icon1,
-      title: "services.icon.title1",
-      text: "services.icon.text1"
-      // section: "section1"
+      title: "Pre-planning & Consulting",
+      text:
+        "Our scope includes, conceptual and feasibility studies, early design planning, investment assessment and guidance."
     },
     {
       id: 2,
       icon: icon2,
       title: "services.icon.title2",
       text: "services.icon.text2"
-      // section: "section2"
     },
     {
       id: 3,
       icon: icon3,
       title: "services.icon.title3",
       text: "services.icon.text3"
-      // section: "section3"
     },
     {
       id: 4,
       icon: icon4,
       title: "services.icon.title4",
       text: "services.icon.text4"
-      // section: "section4"
     },
     {
       id: 5,
       icon: icon5,
       title: "services.icon.title5",
       text: "services.icon.text5"
-      // section: "section5"
     }
   ];
 
@@ -60,12 +54,6 @@ const SliderServices = () => {
 
   const prevSlide = () => {
     setCurrentIndex(prevIndex => (prevIndex - 1 + items.length) % items.length);
-  };
-
-  const handleIconClick = sectionX => {
-    startTransition(() => {
-      navigate(`/our-services#${sectionX}`);
-    });
   };
 
   const handleTouchStart = e => {
@@ -86,7 +74,7 @@ const SliderServices = () => {
 
   return (
     <div style={{ marginTop: 100 }} className="container-main">
-      <div className="slider-helmone slider-services container-main">
+      <div className="slider-services container-main">
         <div className="slider-left">
           <h2 className="title" style={{ textAlign: "start" }}>
             Our Services
@@ -108,24 +96,20 @@ const SliderServices = () => {
               onTouchMove={handleTouchMove}
               onTouchEnd={handleTouchEnd}
               className="slider-content"
-              style={{ width: 900 }}
             >
               {items.map((item, index) =>
-                <div
+                <a
+                  href="/our-services"
                   key={index}
-                  onClick={() => handleIconClick(item.section)}
                   style={{
-                    transform: `translateX(-${currentIndex * 105}%)`,
-                    transition: "transform 0.5s ease"
+                    transform: `translateX(-${currentIndex * 103}%)`,
+                    transition: "transform 0.5s ease",
+                    textDecoration: "none"
                   }}
                   className={`${index === currentIndex ? "active" : ""}`}
                 >
-                  <div
-                    className="services-icon-slider"
-                    key={index}
-                    data-aos="zoom-in"
-                  >
-                    <img src={item.icon} alt="" />
+                  <div className="services-icon-slider" key={index}>
+                    <img src={item.icon} alt="Slider Services Icon" />
                     <h3 style={{ color: "#000" }}>
                       {t(item.title)}
                     </h3>
@@ -133,7 +117,7 @@ const SliderServices = () => {
                       {t(item.text)}
                     </p>
                   </div>
-                </div>
+                </a>
               )}
             </div>
           </div>
@@ -143,7 +127,9 @@ const SliderServices = () => {
         className="slider-controls"
         style={{ display: "flex", justifyContent: "center" }}
       >
-        <button onClick={prevSlide}>&#10094;</button>
+        <button className="arrow-slider" onClick={prevSlide}>
+          &#10094;
+        </button>
         <div className="slider-dots">
           {items.map((_, index) =>
             <span
@@ -153,7 +139,9 @@ const SliderServices = () => {
             />
           )}
         </div>
-        <button onClick={nextSlide}> &#10095;</button>
+        <button className="arrow-slider" onClick={nextSlide}>
+          &#10095;
+        </button>
       </div>
       <center style={{ color: "#000" }}>
         {currentIndex + 1}/{items.length}

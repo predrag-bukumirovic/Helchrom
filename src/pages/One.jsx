@@ -151,12 +151,7 @@ const One = () => {
       <div className="container-main padding30">
         <h2 className="title">
           Focus on Success with{" "}
-          <span
-            style={{
-              fontSize: "inherit",
-              textTransform: "none"
-            }}
-          >
+          <span style={{ fontSize: "inherit", textTransform: "none" }}>
             HELMCHR<span
               style={{ fontSize: "inherit", color: "var(--brend-color)" }}
             >
@@ -179,7 +174,9 @@ const One = () => {
 
         <div className="our-home container-main">
           <center>
-            <span data-aos="fade-up">Helmchron ONE Approach</span>
+            <span style={{ textTransform: "uppercase" }} data-aos="fade-up">
+              Helmchron ONE Approach
+            </span>
           </center>
 
           <div
@@ -190,7 +187,7 @@ const One = () => {
               <img src={icon1} alt="Icon 1" />
 
               <h3>ONE TEAM</h3>
-              <p>
+              <p style={{ fontSize: 15 }}>
                 Each project is assigned a dedicated team who is fully
                 accountable for every aspect of the project. Focusing
                 exclusively on a single project allows the team to stay
@@ -201,7 +198,7 @@ const One = () => {
             <div data-aos="zoom-in">
               <img src={icon2} alt="Icon 2" />
               <h3>ONE CLIENT</h3>
-              <p>
+              <p style={{ fontSize: 15 }}>
                 We believe that the key to a successful partnership is undivided
                 focus. With Helmchron ONE, a team is dedicated exclusively to
                 one client, fostering stronger partnerships and a deeper
@@ -212,7 +209,7 @@ const One = () => {
               <img src={icon3} alt="Icon 3" />
 
               <h3>ONE PROJECT</h3>
-              <p>
+              <p style={{ fontSize: 15 }}>
                 By concentrating expertise and creativity, we ensure unmatched
                 quality, efficiency, and effectiveness. This focused approach
                 leads to faster decision-making, seamless execution, and
@@ -241,7 +238,9 @@ const One = () => {
       <div>
         <div className="slider-container">
           <div className="slider-one">
-            <span>Benefits of Helmchron ONE</span>
+            <span style={{ textTransform: "uppercase" }}>
+              Benefits of Helmchron ONE
+            </span>
             <div
               className="slider-images"
               onTouchStart={handleTouchStart}
@@ -278,27 +277,19 @@ const One = () => {
             </div>
           </div>
           <div className="slider-controls">
-            <button
-              className="slider-button slider-button-prev"
-              onClick={handlePrev}
-            >
+            <button className="arrow-slider" onClick={handlePrev}>
               &#10094;
             </button>
             <div className="slider-dots">
               {images.map((_, index) =>
                 <div
                   key={index}
-                  className={`slider-dot ${index === currentIndex
-                    ? "active"
-                    : ""}`}
+                  className={`dot ${index === currentIndex ? "active" : ""}`}
                   onClick={() => handleDotClick(index)}
                 />
               )}
             </div>
-            <button
-              className="slider-button slider-button-next"
-              onClick={handleNext}
-            >
+            <button className="arrow-slider" onClick={handleNext}>
               &#10095;
             </button>
           </div>
@@ -310,7 +301,7 @@ const One = () => {
 
       <div className="container-main padding30 why-one">
         <div data-aos="fade-right" style={{ marginTop: 50 }}>
-          <span>Why Helmchron ONE?</span>
+          <span style={{ textTransform: "uppercase" }}>Why Helmchron ONE?</span>
 
           <p style={{ marginTop: 30 }}>
             In developing Helmchron ONE, we listened to our clients and observed

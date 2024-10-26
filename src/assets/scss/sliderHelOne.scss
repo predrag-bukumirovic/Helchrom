@@ -5,10 +5,6 @@
   margin-bottom: 100px;
   overflow-x: clip;
 
-  @media (max-width: 768px) {
-    overflow-x: visible;
-  }
-
   .slider-left {
     flex: 1;
 
@@ -48,15 +44,13 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    gap: 10px;
     overflow: hidden;
-    gap: 1rem;
-
     transition: transform 0.5s ease;
 
     .slider-item {
       width: 270px;
       height: 370px;
-      box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.2);
       padding: 1rem;
       background: var(--light-blue-color);
       transition: transform 0.5s ease, width 0.5s ease;
@@ -111,24 +105,12 @@
       width: max-content;
     }
     @media (max-width: 680px) {
-      left: 0;
-      bottom: -180px;
+      left: 130px;
     }
+  }
 
-    button {
-      background-color: var(--light-blue-color);
-      border-radius: 50%;
-      height: 40px;
-      width: 40px;
-      display: flex;
-      color: #000;
-      margin: 10px;
-      justify-content: center;
-      align-items: center;
-      border: none;
-      font-size: 1rem;
-      cursor: pointer;
-    }
+  @media (max-width: 800px) {
+    overflow: visible;
   }
 }
 
@@ -136,24 +118,6 @@
   transform: translateX(300px) !important;
 }
 
-.slider-dots {
-  display: flex;
-  gap: 10px;
-  margin: 0 15px;
-}
-
-.dot {
-  width: 10px;
-  height: 10px;
-  background-color: #bbb;
-  border-radius: 50%;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.dot.active {
-  background: var(--brend-color);
-}
 .academy-title {
   font-family: DancingScript;
 }

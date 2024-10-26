@@ -129,7 +129,7 @@ const Slider = () => {
                 <div
                   key={index}
                   style={{
-                    transform: `translateX(-${currentIndex * 106}%)`,
+                    transform: `translateX(-${currentIndex * 280}px)`,
                     transition: "transform 0.5s ease",
                     cursor: "pointer"
                   }}
@@ -154,7 +154,9 @@ const Slider = () => {
               )}
             </div>
             <div className="slider-controls slider-control-helOne">
-              <button onClick={prevSlide}>&#10094;</button>
+              <button className="arrow-slider" onClick={prevSlide}>
+                &#10094;
+              </button>
               <div className="slider-dots">
                 {items.map((_, index) =>
                   <span
@@ -166,7 +168,9 @@ const Slider = () => {
                   />
                 )}
               </div>
-              <button onClick={nextSlide}> &#10095;</button>
+              <button className="arrow-slider" onClick={nextSlide}>
+                &#10095;
+              </button>
             </div>
           </div>
         </div>

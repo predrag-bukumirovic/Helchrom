@@ -115,7 +115,7 @@ export default function Home() {
             <p>
               {t("home.banners.banner1.text")}
             </p>
-            <a className="book-btn" href="/">
+            <a className="book-btn" href="/about-us/who-are-we">
               {t("read_more")}
             </a>
           </div>
@@ -157,7 +157,7 @@ export default function Home() {
           </div>
 
           <div className="links-banner">
-            <a href="/who-are-we">
+            <a href="/about-us/who-are-we">
               <FaCircleChevronRight
                 style={{ color: "var(--brend-color)", fontSize: 30 }}
               />
@@ -193,7 +193,7 @@ export default function Home() {
           </div>
 
           <div className="links-banner">
-            <a href="/who-are-we">
+            <a href="/about-us/who-are-we">
               <FaCircleChevronRight
                 style={{ color: "var(--brend-color)", fontSize: 30 }}
               />
@@ -227,7 +227,7 @@ export default function Home() {
           </div>
 
           <div className="links-banner">
-            <a href="/who-are-we">
+            <a href="/about-us/who-are-we">
               <FaCircleChevronRight
                 style={{ color: "var(--brend-color)", fontSize: 30 }}
               />

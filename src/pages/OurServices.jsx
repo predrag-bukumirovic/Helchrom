@@ -19,6 +19,7 @@ import { useTranslation } from "react-i18next";
 import TextReader from "../components/TextRender";
 import OurCompetences from "../components/OurCompetences";
 import { useLocation } from "react-router-dom";
+import SoftwareTools from "../components/SoftwereTools";
 
 const mainImages = [mainImg, mainImg1, mainImg2];
 
@@ -324,7 +325,9 @@ export default function OurCore() {
 
       <OurCompetences />
 
-      <div className="unique" style={{ marginTop: 100 }}>
+      <SoftwareTools />
+
+      <div className="unique" style={{ marginTop: 50 }}>
         <center>
           <h2 style={{ marginBottom: 30 }} className="title">
             {t("our_core.unique")}
@@ -349,8 +352,8 @@ export default function OurCore() {
           <iframe
             className="video-yt"
             loading="lazy"
-            src="https://www.youtube.com/embed/tWflefiRmYw"
-            title="HelmchronONE - New Service Concept"
+            src="https://www.youtube.com/embed/T3n-z2NdV4M"
+            title="Helmchron ONE – an innovative plant design engineering project management service."
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerPolicy="strict-origin-when-cross-origin"

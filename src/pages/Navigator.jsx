@@ -55,7 +55,7 @@ export default function Navigator() {
       <div>
         <center className="container-main">
           <h1 className="title" style={{ textTransform: "capitalize" }}>
-            Helmchron N<img src={nav} alt="A Navigator" />VIGATOR
+            HELMCHRON N<img src={nav} alt="A Navigator" />VIGATOR
           </h1>
           <p data-aos="fade-up">
             Helmchron Navigator is our initiative designed to provide consulting
@@ -71,7 +71,13 @@ export default function Navigator() {
         >
           <div className="row container-main">
             <div data-aos="fade-right">
-              <span style={{ fontWeight: "bold", fontSize: 20 }}>
+              <span
+                style={{
+                  fontWeight: "bold",
+                  fontSize: 20,
+                  textTransform: "uppercase"
+                }}
+              >
                 Helmchron Navigator Overview
               </span>
 
@@ -101,7 +107,13 @@ export default function Navigator() {
         </div>
 
         <center data-aos="fade-up">
-          <h2 style={{ fontWeight: "bold", marginTop: 40 }}>
+          <h2
+            style={{
+              fontWeight: "bold",
+              marginTop: 40,
+              textTransform: "uppercase"
+            }}
+          >
             Benefits of Helmchron Navigator
           </h2>
         </center>
@@ -175,7 +187,13 @@ export default function Navigator() {
         <div style={{ background: "var(--light-blue-color)" }}>
           <div style={{ margin: "50px auto" }} className="row container-main">
             <div data-aos="fade-right">
-              <span style={{ fontWeight: "bold", fontSize: 20 }}>
+              <span
+                style={{
+                  fontWeight: "bold",
+                  fontSize: 20,
+                  textTransform: "uppercase"
+                }}
+              >
                 A Structured and Flexible Framework
               </span>
               <br />
@@ -210,7 +228,13 @@ export default function Navigator() {
         <div className="guarantee padding30 container-main">
           <img data-aos="fade-right" src={end} alt="" />
           <div data-aos="fade-left">
-            <span style={{ fontWeight: "bold", fontSize: 20 }}>
+            <span
+              style={{
+                fontWeight: "bold",
+                fontSize: 20,
+                textTransform: "uppercase"
+              }}
+            >
               Comprehensive quality guarantee
             </span>
 

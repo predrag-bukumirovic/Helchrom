@@ -43,7 +43,7 @@ export default function Division() {
       title: "Food and Bio Products",
       text:
         "We deliver plant design engineering solutions tailored to the unique requirements of food and bio product manufacturers, including dietary supplements and nutraceuticals. We prioritize operational excellence, while adhering to stringent safety and quality standards, ensuring facilities meet GMP or HACCP control guidelines. Sustainability is integrated into our work and solutions, minimizing energy consumption and enhancing resource efficiency.",
-      link: "/food-and-bioproducts"
+      link: "/food"
     },
     {
       src: slider3,
@@ -189,7 +189,9 @@ export default function Division() {
       </div>
       {/* Kontrole strelica i tačaka */}
       <div style={{ marginTop: 20 }} className="slider-controls">
-        <button onClick={prevSlide}>&#10094;</button>
+        <button className="arrow-slider" onClick={prevSlide}>
+          &#10094;
+        </button>
         <div className="slider-dots">
           {images.map((_, index) =>
             <span
@@ -199,7 +201,9 @@ export default function Division() {
             />
           )}
         </div>
-        <button onClick={nextSlide}>&#10095;</button>
+        <button className="arrow-slider" onClick={nextSlide}>
+          &#10095;
+        </button>
       </div>
       <center style={{ color: "#000" }}>
         {currentIndex + 1}/{images.length}

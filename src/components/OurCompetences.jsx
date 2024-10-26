@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import "../assets/scss/competences.css";
 
 // Imgs
-import pipingImg from "../assets/images/Competences/orginalImg/Piping.jpg";
+import pipingImg from "../assets/images/Competences/Piping.png";
 import equipmentImg from "../assets/images/Competences/Equipment.png";
 import cleanImg from "../assets/images/Competences/Cleanmedia.png";
-import roomsImg from "../assets/images/Competences/room.png";
+import roomsImg from "../assets/images/Competences/Cleamroom.png";
 import HVACImg from "../assets/images/Competences/HVAC.png";
 import UtilitiesImg from "../assets/images/Competences/Utilities.png";
 import MSRImg from "../assets/images/Competences/MSR.png";
@@ -224,11 +224,11 @@ const Competences = () => {
       </nav>
 
       <div
-        className="container-main"
+        className="container-main competence-box"
         style={{
           background: "var(--light-blue-color)",
           borderRadius: 30,
-          padding: 30
+          padding: "20px"
         }}
       >
         <div
@@ -254,7 +254,6 @@ const Competences = () => {
           </div>
           <div className="competence-image">
             <img
-              style={{ borderRadius: "50% 20% 30% 40%" }}
               src={competencesData[activeCompetence].image}
               alt={competencesData[activeCompetence].title}
             />
@@ -266,11 +265,13 @@ const Competences = () => {
         <a
           href="/contact"
           style={{
-            border: "none",
             background: "var(--dark-blue-color)",
-            display: "inline-block"
+            display: "flex",
+            justifyContent: "flex-start",
+            width: "max-content",
+            marginLeft: 60
           }}
-          className="book-btn"
+          className="book-btn competence-btn"
         >
           {t("book_btn")}
         </a>

@@ -1,6 +1,6 @@
 .competences-container {
   text-align: center;
-  padding: 20px;
+  padding: 10px;
   margin-top: 50px;
 }
 
@@ -109,6 +109,11 @@
 
   .competence-content {
     flex-direction: column;
+    width: 100%;
+  }
+
+  .competence-box {
+    width: 100%;
   }
 
   .competence-text,

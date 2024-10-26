@@ -1,0 +1,34 @@
+.slider-services {
+  display: flex;
+  gap: 50px;
+}
+
+.slider-content {
+  display: flex;
+  width: 900px;
+  overflow: hidden;
+  scrollbar-width: none;
+
+  gap: 20px;
+
+  a {
+    color: #000;
+  }
+}
+
+@media (max-width: 1000px) {
+  .slider-services {
+    flex-direction: column;
+  }
+  .slider-content {
+    gap: 10px;
+    display: flex;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .slider-content {
+    width: 500px;
+  }
+}

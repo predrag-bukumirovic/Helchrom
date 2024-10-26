@@ -49,7 +49,7 @@ export default function InnoLab() {
       <div className="container-main">
         <center>
           <h1 className="title" style={{ textTransform: "capitalize" }}>
-            Helmchron InnoLAB
+            HELMCHRON InnoLAB
           </h1>
           <p data-aos="fade-up">
             At Helmchron, we believe in pushing the boundaries of knowledge and
@@ -78,7 +78,7 @@ export default function InnoLab() {
         </div>
 
         <div style={{ marginTop: 50 }} className="padding30">
-          <span style={{ fontSize: 20 }}>
+          <span style={{ fontSize: 20, textTransform: "uppercase" }}>
             <b>How did it all begin?</b>
           </span>
 
@@ -96,7 +96,7 @@ export default function InnoLab() {
 
         <div className="row padding30">
           <div style={{ padding: 0 }} data-aos="fade-right">
-            <span style={{ fontSize: 20 }}>
+            <span style={{ fontSize: 20, textTransform: "uppercase" }}>
               <b>What`s next?</b>
             </span>
 

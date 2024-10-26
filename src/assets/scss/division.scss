@@ -45,7 +45,7 @@
 
 .slider-text {
   width: 50%;
-  padding: 0 20px;
+  // padding: 0 20px;
 }
 
 .text-divisions {
@@ -76,39 +76,6 @@
   align-items: center;
   justify-content: center;
   position: none;
-
-  button {
-    background-color: var(--light-blue-color);
-    border-radius: 50%;
-    height: 40px;
-    width: 40px;
-    color: #000;
-    display: flex !important;
-    margin: 10px;
-    justify-content: center;
-    align-items: center;
-    border: none;
-    cursor: pointer;
-  }
-
-  .slider-dots {
-    display: flex;
-    gap: 10px;
-    margin: 0 15px;
-  }
-
-  .dot {
-    width: 10px;
-    height: 10px;
-    background-color: #bbb;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-
-  .dot.active {
-    background: var(--brend-color);
-  }
 }
 
 .initiative-logo {
@@ -121,6 +88,7 @@
     background: var(--light-blue-color);
     border-radius: 30px;
     padding: 10px;
+    color: #000;
     height: 320px;
     box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
     text-decoration: none;

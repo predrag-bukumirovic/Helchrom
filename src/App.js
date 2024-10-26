@@ -7,7 +7,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import ScrollTop from "./components/ScrollTop";
 import Navbar from "./components/Navbar";
-import ActionButton from "./Accessibility/ActionButton";
+// import ActionButton from "./Accessibility/ActionButton";
 
 const Blog = lazy(() => import("./pages/Blog"));
 const Volleyball = lazy(() => import("./pages/Volleyball"));
@@ -95,7 +95,7 @@ function App() {
 
         <Cookies />
         <Footer />
-        <ActionButton/>
+        {/* <ActionButton/> */}
         <ScrollTop />
       </Router>
     </div>;

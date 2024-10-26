@@ -3,6 +3,12 @@ import Modal from "react-modal";
 
 import en from "../assets/images/en.png";
 import de from "../assets/images/de.png";
+import sp from "../assets/images/sp.png";
+import it from "../assets/images/it.png";
+import fr from "../assets/images/fr.png";
+import ru from "../assets/images/ru.png";
+
+import { IoIosCloseCircleOutline } from "react-icons/io";
 
 Modal.setAppElement("#root");
 
@@ -30,6 +36,8 @@ const LanguageModal = ({ isOpen, onRequestClose, onSelectLanguage }) => {
     window.location.reload(); // Ponovno učitavanje stranice
   };
 
+  const isMobile = window.innerWidth <= 768;
+
   return (
     <Modal
       isOpen={isOpen}
@@ -43,24 +51,51 @@ const LanguageModal = ({ isOpen, onRequestClose, onSelectLanguage }) => {
           bottom: "auto",
           transform: "translate(-50%, -50%)",
           padding: "20px",
-          width: "300px",
           background: "white",
-          borderRadius: "10px"
+          borderRadius: "30px",
+          width: isMobile ? "100%" : "40%"
         },
         overlay: { backgroundColor: "rgba(0, 0, 0, 0.75)" }
       }}
     >
-      <h2 style={{ fontSize: "20px", textAlign: "center" }}>Language</h2>
+      <h2
+        style={{
+          fontSize: "20px",
+          textAlign: "center",
+          textTransform: "uppercase"
+        }}
+      >
+        Languages
+      </h2>
       <ul className="change-lng-desktop">
         <li onClick={() => handleLanguageChange("en")}>
-          <img src={en} alt="" /> ENGLISH
+          <div />
+          <img src={en} alt="English" />
+          <p>English</p>
         </li>
-        <li onClick={() => handleLanguageChange("de")}>
-          <img src={de} alt="" /> DEUTSCH
+        <li>
+          <img src={de} alt="Germany" />
+          <p>Coming soon</p>
+        </li>
+        <li>
+          <img src={ru} alt="" />
+          <p>Coming soon</p>
+        </li>
+        <li>
+          <img src={sp} alt="" />
+          <p>Coming soon</p>
+        </li>
+        <li>
+          <img src={it} alt="" />
+          <p>Coming soon</p>
+        </li>
+        <li>
+          <img src={fr} alt="" />
+          <p>Coming soon</p>
         </li>
       </ul>
       <button className="close-btn-lng" onClick={onRequestClose}>
-        x
+        <IoIosCloseCircleOutline />
       </button>
     </Modal>
   );
