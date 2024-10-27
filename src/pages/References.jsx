@@ -80,7 +80,7 @@ const Modal = ({ isOpen, toggleModal, imageSrc }) => {
       onClick={handleClose}
     >
       <div className="modal-content" onClick={e => e.stopPropagation()}>
-        <img onClick={handleClose} src={imageSrc} alt="Slika" />
+        <img loading="lazy" onClick={handleClose} src={imageSrc} alt="Slika" />
       </div>
     </div>
   );
@@ -131,7 +131,7 @@ export default function References() {
         <div className="box-img">
           {mainImages.map((image, index) =>
             <div key={index}>
-              <img src={image} alt="Main" />
+              <img loading="lazy" src={image} alt="Main" />
             </div>
           )}
         </div>
@@ -208,7 +208,7 @@ export default function References() {
               />
             </div>
             <div className="ref-img" data-aos="fade-left">
-              <img src={Vetter} alt="Vetter" />
+              <img loading="lazy" src={Vetter} alt="Vetter" />
             </div>
           </div>
         </div>
@@ -238,7 +238,7 @@ export default function References() {
               </span>
             </div>
             <div className="ref-img" data-aos="fade-right">
-              <img src={Novartis} alt="Novartis" />
+              <img loading="lazy" src={Novartis} alt="Novartis" />
             </div>
           </div>
         </div>
@@ -272,7 +272,11 @@ export default function References() {
             </div>
 
             <div className="ref-img" data-aos="fade-left">
-              <img src={RocheDiagnostics} alt="RocheDiagnostics" />
+              <img
+                loading="lazy"
+                src={RocheDiagnostics}
+                alt="RocheDiagnostics"
+              />
             </div>
           </div>
         </div>
@@ -302,7 +306,7 @@ export default function References() {
               </span>
             </div>
             <div className="ref-img" data-aos="fade-right">
-              <img src={Bachem} alt="Bachem" />
+              <img loading="lazy" src={Bachem} alt="Bachem" />
             </div>
           </div>
         </div>
@@ -338,7 +342,7 @@ export default function References() {
               </span>
             </div>
             <div className="ref-img" data-aos="fade-left">
-              <img src={DSM} alt="DSM" />
+              <img loading="lazy" src={DSM} alt="DSM" />
             </div>
           </div>
         </div>
@@ -367,7 +371,7 @@ export default function References() {
               </span>
             </div>
             <div className="ref-img" data-aos="fade-right">
-              <img src={Destilla} alt="Destilla" />
+              <img loading="lazy" src={Destilla} alt="Destilla" />
             </div>
           </div>
         </div>
@@ -400,7 +404,7 @@ export default function References() {
             </div>
 
             <div className="ref-img" data-aos="fade-left">
-              <img src={primopus} alt="primopus" />
+              <img loading="lazy" src={primopus} alt="primopus" />
             </div>
           </div>
         </div>
@@ -429,7 +433,7 @@ export default function References() {
               </span>
             </div>
             <div className="ref-img" data-aos="fade-right">
-              <img src={Jungbunzlauer} alt="Jungbunzlauer" />
+              <img loading="lazy" src={Jungbunzlauer} alt="Jungbunzlauer" />
             </div>
           </div>
         </div>
@@ -463,7 +467,7 @@ export default function References() {
               </span>
             </div>
             <div className="ref-img" data-aos="fade-left">
-              <img src={Exyte} alt="Exyte" />
+              <img loading="lazy" src={Exyte} alt="Exyte" />
             </div>
           </div>
         </div>
@@ -494,7 +498,7 @@ export default function References() {
               </span>
             </div>
             <div className="ref-img" data-aos="fade-right">
-              <img src={BASF} alt="Basf" />
+              <img loading="lazy" src={BASF} alt="Basf" />
             </div>
           </div>
         </div>
@@ -528,7 +532,7 @@ export default function References() {
               </span>
             </div>
             <div className="ref-img" data-aos="fade-left">
-              <img src={Bayer} alt="Bayer" />
+              <img loading="lazy" src={Bayer} alt="Bayer" />
             </div>
           </div>
         </div>
@@ -559,7 +563,7 @@ export default function References() {
               </span>
             </div>
             <div className="ref-img" data-aos="fade-right">
-              <img src={Vinex} alt="Vinex" />
+              <img loading="lazy" src={Vinex} alt="Vinex" />
             </div>
           </div>
         </div>
@@ -594,7 +598,7 @@ export default function References() {
               </span>
             </div>
             <div className="ref-img" data-aos="fade-left">
-              <img src={Tesla} alt="Tesla" />
+              <img loading="lazy" src={Tesla} alt="Tesla" />
             </div>
           </div>
         </div>
@@ -626,7 +630,7 @@ export default function References() {
               </span>
             </div>
             <div className="ref-img" data-aos="fade-right">
-              <img src={Jaenschwalde} alt="Jaenschwalde" />
+              <img loading="lazy" src={Jaenschwalde} alt="Jaenschwalde" />
             </div>
           </div>
         </div>
@@ -660,7 +664,7 @@ export default function References() {
               </span>
             </div>
             <div className="ref-img" data-aos="fade-left">
-              <img src={Udarnaya} alt="Udarnaya" />
+              <img loading="lazy" src={Udarnaya} alt="Udarnaya" />
             </div>
           </div>
         </div>
@@ -691,7 +695,7 @@ export default function References() {
               </span>
             </div>
             <div className="ref-img" data-aos="fade-right">
-              <img src={MVV} alt="MVV" />
+              <img loading="lazy" src={MVV} alt="MVV" />
             </div>
           </div>
         </div>
@@ -726,7 +730,7 @@ export default function References() {
               </span>
             </div>
             <div className="ref-img" data-aos="fade-left">
-              <img src={OMV} alt="OMV" />
+              <img loading="lazy" src={OMV} alt="OMV" />
             </div>
           </div>
         </div>
@@ -750,6 +754,7 @@ export default function References() {
               {t("references.year")}
             </span>
             <img
+              loading="lazy"
               className="per-year"
               src={Projectsperyear}
               alt="Projectsperyear"

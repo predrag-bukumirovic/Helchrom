@@ -334,7 +334,7 @@ export default function Home() {
               { id: 6, src: Facts5 }
             ].map((img, index) =>
               <div key={img.id} className="icon-item" data-aos="zoom-in">
-                <img src={img.src} alt="Facts img" />
+                <img loading="lazy" src={img.src} alt="Facts img" />
                 <div className="text">
                   <span className="word">
                     {index === 0
@@ -447,7 +447,7 @@ export default function Home() {
               style={{ marginBottom: 40 }}
               data-aos="fade-up"
             >
-              <img src={quotation} alt="quotation" />
+              <img src={quotation} alt="quotation" loading="lazy" />
 
               <div>
                 {/* <TextReader texts={feedbackText1} /> */}
@@ -459,7 +459,7 @@ export default function Home() {
               </div>
             </div>
             <div className="testi-item">
-              <img src={quotation} alt="quotation" />
+              <img src={quotation} alt="quotation" loading="lazy" />
 
               <div>
                 {/* <TextReader texts={feedbackText2} /> */}
@@ -472,7 +472,7 @@ export default function Home() {
               </div>
             </div>
             <div className="testi-item">
-              <img src={quotation} alt="quotation" />
+              <img src={quotation} alt="quotation" loading="lazy" />
               <div>
                 <p dangerouslySetInnerHTML={{ __html: t("feedback.text3") }} />
 

@@ -28,7 +28,7 @@ export default function Footer() {
           <div className="footer-container">
             <div className="footer-box container-main">
               <div className="logo">
-                <img src={Logo} alt="Logo" />
+                <img loading="lazy" src={Logo} alt="Logo" />
               </div>
               <div className="map-links">
                 <p dangerouslySetInnerHTML={{ __html: t("quick_links") }} />
@@ -60,6 +60,7 @@ export default function Footer() {
                     className="tip"
                   >
                     <img
+                      loading="lazy"
                       style={{ marginLeft: 0 }}
                       src={Linkedine}
                       alt="Instagram"
@@ -72,7 +73,7 @@ export default function Footer() {
                     rel="noreferrer"
                     className="tip"
                   >
-                    <img src={Twitter} alt="Instagram" />
+                    <img loading="lazy" src={Twitter} alt="Instagram" />
                     <span className="tooltip-text">X</span>
                   </a>
                   <a
@@ -81,7 +82,7 @@ export default function Footer() {
                     rel="noreferrer"
                     className="tip"
                   >
-                    <img src={Instagram} alt="Instagram" />
+                    <img loading="lazy" src={Instagram} alt="Instagram" />
                     <span className="tooltip-text">Instagram</span>
                   </a>
                   <a
@@ -90,7 +91,7 @@ export default function Footer() {
                     rel="noreferrer"
                     className="tip"
                   >
-                    <img src={TikTok} alt="TikTok" />
+                    <img loading="lazy" src={TikTok} alt="TikTok" />
                     <span className="tooltip-text">TikTok</span>
                   </a>
                 </div>

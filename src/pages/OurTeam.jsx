@@ -82,13 +82,13 @@ export default function OurTeam() {
         </CCarousel>
         <div className="box-img">
           <div>
-            <img src={mainImg} alt="Main" />
+            <img loading="lazy" src={mainImg} alt="Main" />
           </div>
           <div>
-            <img src={mainImg1} alt="Main" />
+            <img loading="lazy" src={mainImg1} alt="Main" />
           </div>
           <div>
-            <img src={mainImg2} alt="Main" />
+            <img loading="lazy" src={mainImg2} alt="Main" />
           </div>
         </div>
       </div>
@@ -111,7 +111,7 @@ export default function OurTeam() {
             <div className="bg-member-img" />
             <div className="team-row">
               <div className="img-team" data-aos="zoom-in">
-                <img src={milos} alt="" />
+                <img loading="lazy" src={milos} alt="Milos Ivosevic" />
               </div>
               <TextReader texts={milosText} />
               <div data-aos="fade-left">
@@ -127,7 +127,7 @@ export default function OurTeam() {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <img src={linkedine} alt="linkedine" />
+                    <img loading="lazy" src={linkedine} alt="linkedine" />
                   </a>
                 </div>
                 <p>

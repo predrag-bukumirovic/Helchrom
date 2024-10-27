@@ -16,78 +16,9 @@
     <link rel="preload" fetchpriority="high" as="image" href="../src/assets/images/logo.png" type="image/webp">
     <meta http-equiv="Cache-Control" content="max-age=31536000, public" />
 
-    <!-- <script src="https://cdn.userway.org/widget.js" data-account="DwpfH87mJy"></script> -->
-
-    <style>
-.loading-spiner {
-  position: fixed;
-  display: flex;
-  width: 100%;
-  z-index: 99999999999999;
-  top: 0;
-  justify-content: center;
-  align-items: center;
-  background: #fff;
-  height: 100%;
-}
-.loading-spiner.active {
-    display: none;
-  }
-
-  .lds-ring {
-  display: inline-block;
-  position: relative;
-  width: 80px;
-  height: 80px;
-}
-.lds-ring div {
-  box-sizing: border-box;
-  display: block;
-  position: absolute;
-  width: 64px;
-  height: 64px;
-  margin: 8px;
-  border: 5px solid var(--brend-color);
-  border-radius: 50%;
-  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-  border-color: var(--brend-color) transparent transparent transparent;
-}
-.lds-ring div:nth-child(1) {
-  animation-delay: -0.45s;
-}
-.lds-ring div:nth-child(2) {
-  animation-delay: -0.3s;
-}
-.lds-ring div:nth-child(3) {
-  animation-delay: -0.15s;
-}
-@keyframes lds-ring {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-.uai {
-  bottom: -540px;
-  left: 3px;
-}
-    </style>
+    <script src="https://cdn.userway.org/widget.js" data-account="DwpfH87mJy"></script>
   </head>
   <body>
     <div id="root"></div>
-
-      <div class="loading-spiner"> 
-      <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
-     </div> 
-
-     
-
-    <script>
-  window.addEventListener('load', () => {
-    document.querySelector('.loading-spiner').classList.add('active')
-  })
-</script>
   </body>
 </html>

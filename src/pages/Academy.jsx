@@ -33,13 +33,13 @@ export default function Academy() {
 
         <div className="box-img">
           <div>
-            <img src={mainImg} alt="Main" />
+            <img loading="lazy" src={mainImg} alt="Main" />
           </div>
           <div>
-            <img src={mainImg1} alt="Main" />
+            <img loading="lazy" src={mainImg1} alt="Main" />
           </div>
           <div>
-            <img src={mainImg2} alt="Main" />
+            <img loading="lazy" src={mainImg2} alt="Main" />
           </div>
         </div>
       </div>
@@ -104,7 +104,12 @@ export default function Academy() {
               </p>
             </div>
 
-            <img data-aos="fade-zoom" src={verticalImg} alt="Inolab 2" />
+            <img
+              loading="lazy"
+              data-aos="fade-zoom"
+              src={verticalImg}
+              alt="Inolab 2"
+            />
 
             <div data-aos="fade-left">
               <span>

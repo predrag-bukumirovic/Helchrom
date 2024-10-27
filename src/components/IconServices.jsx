@@ -3,8 +3,6 @@ import React from "react";
 import "../assets/scss/home.scss";
 import "../assets/scss/slider.scss";
 
-// import { useNavigate } from "react-router-dom";
-
 import icon1 from "../assets/images/Home/1.png";
 import icon2 from "../assets/images/Home/2.png";
 import icon3 from "../assets/images/Home/3.png";
@@ -14,15 +12,6 @@ import { useTranslation } from "react-i18next";
 
 export default function IconServices() {
   const { t } = useTranslation();
-
-  // const navigate = useNavigate(); // Definiši useNavigate
-
-  // // Funkcija za rukovanje klikom na ikonicu
-  // const handleIconClick = sectionId => {
-  //   startTransition(() => {
-  //     navigate(`/our-services#${sectionId}`);
-  //   });
-  // };
 
   return (
     <div className="our-home">
@@ -72,7 +61,7 @@ export default function IconServices() {
             data-aos="zoom-in"
           >
             <div>
-              <img src={item.icon} alt="" />
+              <img loading="lazy" src={item.icon} alt="Icons Services" />
               <h3 style={{ color: "#000" }}>
                 {item.title}
               </h3>

@@ -7,6 +7,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import ScrollTop from "./components/ScrollTop";
 import Navbar from "./components/Navbar";
+import Loader from "./components/Loader";
 // import ActionButton from "./Accessibility/ActionButton";
 
 const Blog = lazy(() => import("./pages/Blog"));
@@ -46,6 +47,7 @@ const Oil = lazy(() => import("./pages/Oil"));
 
 function App() {
   const [isVisible, setIsVisible] = useState(false);
+  const [isLoaded, setIsLoaded] = useState(false);
 
     useEffect(() => {
       setIsVisible(true);
@@ -55,9 +57,15 @@ function App() {
       AOS.init({ duration: 1000, once: true });
     }, []);
 
+    const handleLoaded = () => {
+      setIsLoaded(true); // Postavi stanje kada se učitavanje završi
+    };
+
   return <div className={`App ${isVisible ? "visible" : ""}`}>
       <Router>
-        <Navbar/>
+        {isLoaded ?  (
+          <>
+           <Navbar/>
         <Routes>
           <Route path="/" element={<><Home/></>} />
           <Route path="/career" element={<Career />} />
@@ -97,6 +105,13 @@ function App() {
         <Footer />
         {/* <ActionButton/> */}
         <ScrollTop />
+        </>
+        ) : (
+          
+       <Loader onLoaded={handleLoaded}/> 
+         
+        )}
+       
       </Router>
     </div>;
 }

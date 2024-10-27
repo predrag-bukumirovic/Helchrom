@@ -104,7 +104,7 @@ const Slider = () => {
       </div>
       <div className="slider-helmone container-main">
         <div className="slider-left">
-          <img src={helmOneImg} alt="Background" />
+          <img loading="lazy" src={helmOneImg} alt="Background" />
         </div>
         <div className="slider-right">
           <div className="slider-wrapper" ref={sliderRef}>

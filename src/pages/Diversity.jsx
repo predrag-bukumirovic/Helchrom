@@ -41,13 +41,25 @@ export default function Diversity() {
         </CCarousel>
         <div className="box-img">
           <div>
-            <img src={mainImg} alt="Helmchron Career - Slide 1" />
+            <img
+              loading="lazy"
+              src={mainImg}
+              alt="Helmchron Career - Slide 1"
+            />
           </div>
           <div>
-            <img src={mainImg1} alt="Helmchron Career - Slide 2" />
+            <img
+              loading="lazy"
+              src={mainImg1}
+              alt="Helmchron Career - Slide 2"
+            />
           </div>
           <div>
-            <img src={mainImg2} alt="Helmchron Career - Slide 3" />
+            <img
+              loading="lazy"
+              src={mainImg2}
+              alt="Helmchron Career - Slide 3"
+            />
           </div>
         </div>
       </div>
@@ -73,7 +85,7 @@ export default function Diversity() {
             />
           </div>
           <div style={{ width: "40%" }} className="post-img">
-            <img src={OdbojkaSlikaG} alt="Odbojka" />
+            <img loading="lazy" src={OdbojkaSlikaG} alt="Odbojka" />
           </div>
         </div>
 
@@ -83,7 +95,7 @@ export default function Diversity() {
 
         <div className="post">
           <div style={{ width: "50%" }} className="post-img">
-            <img src={OdbojkaSlikaD} alt="Odbojka" />
+            <img loading="lazy" src={OdbojkaSlikaD} alt="Odbojka" />
           </div>
           <div
             style={{ width: "100%" }}

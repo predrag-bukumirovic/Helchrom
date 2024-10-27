@@ -1,0 +1,38 @@
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.loader img {
+  width: 100px;
+}
+.logo-loader {
+  font-size: 50px; /* Povećaj veličinu fonta po želji */
+  font-weight: bold;
+  margin-top: 200px;
+  display: flex;
+}
+
+@media (max-width: 500px) {
+  .logo-loader {
+    font-size: 30px;
+  }
+}
+
+.letter {
+  position: relative; /* Omogućava pozicioniranje */
+  color: transparent; /* Početna boja slova je transparentna */
+  animation: fillColor 0.1s forwards; /* Animacija punjenja boje */
+  animation-delay: calc(0.1s * var(--i)); /* Odloži svako slovo za 0.5s */
+}
+
+@keyframes fillColor {
+  0% {
+    color: transparent; /* Početna boja slova je transparentna */
+  }
+  100% {
+    color: var(--brend-color); /* Krajnja boja slova */
+  }
+}

@@ -16,7 +16,7 @@ export default function Insights() {
     <div>
       <div className="icon-since container-main">
         <div data-aos="zoom-in">
-          <img src={Pharmaceuticals} alt="Pharmaceuticals" />
+          <img loading="lazy" src={Pharmaceuticals} alt="Pharmaceuticals" />
           <div>
             <span>
               {t("navbar.pharma")}
@@ -24,7 +24,7 @@ export default function Insights() {
           </div>
         </div>
         <div data-aos="zoom-in">
-          <img src={FoodBioproducts} alt="FoodBioproducts" />
+          <img loading="lazy" src={FoodBioproducts} alt="FoodBioproducts" />
           <div>
             <span>
               {t("navbar.food")}
@@ -33,7 +33,7 @@ export default function Insights() {
         </div>
 
         <div data-aos="zoom-in">
-          <img src={Chemicals} alt="Chemicals" />
+          <img loading="lazy" src={Chemicals} alt="Chemicals" />
           <div>
             <span>
               {t("navbar.chemicals")}
@@ -41,7 +41,7 @@ export default function Insights() {
           </div>
         </div>
         <div data-aos="zoom-in">
-          <img src={Energy} alt="Energy" />
+          <img loading="lazy" src={Energy} alt="Energy" />
           <div>
             <span>
               {t("navbar.energy")}
@@ -49,7 +49,7 @@ export default function Insights() {
           </div>
         </div>
         <div data-aos="zoom-in">
-          <img src={Electronics} alt="Electronics" />
+          <img loading="lazy" src={Electronics} alt="Electronics" />
           <div>
             <span>
               {t("navbar.electronics")}
@@ -57,7 +57,7 @@ export default function Insights() {
           </div>
         </div>
         <div data-aos="zoom-in">
-          <img src={Oli} alt="Oli" />
+          <img loading="lazy" src={Oli} alt="Oli" />
           <div>
             <span>
               {t("navbar.oil")}

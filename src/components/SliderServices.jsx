@@ -109,7 +109,11 @@ const SliderServices = () => {
                   className={`${index === currentIndex ? "active" : ""}`}
                 >
                   <div className="services-icon-slider" key={index}>
-                    <img src={item.icon} alt="Slider Services Icon" />
+                    <img
+                      loading="lazy"
+                      src={item.icon}
+                      alt="Slider Services Icon"
+                    />
                     <h3 style={{ color: "#000" }}>
                       {t(item.title)}
                     </h3>

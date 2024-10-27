@@ -172,7 +172,8 @@ const SoftwareTools = () => {
       <div className="tools-container">
         {activeCategory.tools.map((tool, index) =>
           <div key={index} className="tool-card fade-in">
-            {tool.image && <img src={tool.image} alt={tool.name} />}
+            {tool.image &&
+              <img loading="lazy" src={tool.image} alt={tool.name} />}
             <p>
               {tool.name}
             </p>

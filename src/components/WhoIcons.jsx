@@ -77,6 +77,7 @@ export default function WhoIcons() {
           >
             <a href={image.link}>
               <img
+                loading="lazy"
                 data-aos="zoom-in"
                 src={hoveredImage === image.color ? image.color : image.default}
                 alt={image.alt}

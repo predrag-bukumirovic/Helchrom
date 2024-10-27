@@ -94,7 +94,7 @@ export default function OurCore() {
         <div className="box-img">
           {mainImages.map((image, index) =>
             <div key={index}>
-              <img src={image} alt="Main" />
+              <img loading="lazy" src={image} alt="Main" />
             </div>
           )}
         </div>
@@ -152,7 +152,7 @@ export default function OurCore() {
           </div>
 
           <div className="img-row" data-aos="fade-right">
-            <img src={Consulting} alt="Consulting" />
+            <img loading="lazy" src={Consulting} alt="Consulting" />
           </div>
           <div data-aos="fade-left">
             <h3>
@@ -183,13 +183,13 @@ export default function OurCore() {
             />
           </div>
           <div data-aos="fade-left" className="img-design img-row">
-            <img src={Design} alt="" />
+            <img loading="lazy" src={Design} alt="" />
           </div>
         </div>
 
         <div style={{ paddingTop: 0 }} className="container-main services-row">
           <div data-aos="fade-right" className="img-design detaild img-row">
-            <img src={Detailed} alt="" />
+            <img loading="lazy" src={Detailed} alt="" />
           </div>
 
           <div className="text" data-aos="fade-left">
@@ -240,7 +240,7 @@ export default function OurCore() {
           </div>
 
           <div data-aos="fade-left" className="img-row">
-            <img src={management} alt="management" />
+            <img loading="lazy" src={management} alt="management" />
           </div>
         </div>
       </div>
@@ -254,7 +254,7 @@ export default function OurCore() {
             </h4>
           </div>
           <div data-aos="fade-right" className="img-row">
-            <img src={Equipment} alt="Equipment" />
+            <img loading="lazy" src={Equipment} alt="Equipment" />
           </div>
           <div data-aos="fade-left">
             <h3>
@@ -305,7 +305,7 @@ export default function OurCore() {
           </div>
 
           <div data-aos="fade-left" className="img-row">
-            <img src={Commissioning} alt="" />
+            <img loading="lazy" src={Commissioning} alt="Commissioning" />
           </div>
         </div>
       </div>

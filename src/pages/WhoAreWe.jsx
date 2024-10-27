@@ -67,6 +67,7 @@ const WhoAreWe = () => {
             {[mainImg1, mainImg2, mainImg3].map((img, index) =>
               <CCarouselItem key={index}>
                 <CImage
+                  loading="lazy"
                   className="d-block w-100"
                   src={img}
                   alt={`slide ${index + 1}`}
@@ -77,7 +78,7 @@ const WhoAreWe = () => {
           <div className="box-img">
             {[mainImg1, mainImg2, mainImg3].map((img, index) =>
               <div key={index}>
-                <img src={img} alt={`Main ${index + 1}`} />
+                <img loading="lazy" src={img} alt={`Main ${index + 1}`} />
               </div>
             )}
           </div>
@@ -122,8 +123,18 @@ const WhoAreWe = () => {
               </div>
 
               <div style={{ clear: "both" }} class="image-content">
-                <img data-aos="fade-left" src={history1} alt="Our history 1" />
-                <img data-aos="fade-left" src={history2} alt="Our history 2" />
+                <img
+                  loading="lazy"
+                  data-aos="fade-left"
+                  src={history1}
+                  alt="Our history 1"
+                />
+                <img
+                  loading="lazy"
+                  data-aos="fade-left"
+                  src={history2}
+                  alt="Our history 2"
+                />
               </div>
             </div>
           </div>
@@ -225,7 +236,7 @@ const WhoAreWe = () => {
           </a>
         </div>
         <div data-aos="zoom-in">
-          <img src={purposeValues} alt="purposeValues" />
+          <img loading="lazy" src={purposeValues} alt="purposeValues" />
         </div>
         <div data-aos="fade-left" style={{ padding: 20 }}>
           <h2 style={{ textAlign: "start" }} className="title">
@@ -262,11 +273,16 @@ const WhoAreWe = () => {
 
       <div>
         <div className="container-main credo-testimonial">
-          <img data-aos="fade-right" src={OurcredoImg} alt="OurcredoImg" />
+          <img
+            loading="lazy"
+            data-aos="fade-right"
+            src={OurcredoImg}
+            alt="OurcredoImg"
+          />
 
           <div>
             <p data-aos="fade-left">
-              <img src={quotation} alt="quotation" />
+              <img loading="lazy" src={quotation} alt="quotation" />
 
               <span
                 dangerouslySetInnerHTML={{ __html: t("who_are_we.quotation") }}
@@ -299,7 +315,12 @@ const WhoAreWe = () => {
               >
                 X
               </button>
-              <img style={{ width: "100%" }} src={OUR_CREDO} alt="Our Credo" />
+              <img
+                loading="lazy"
+                style={{ width: "100%" }}
+                src={OUR_CREDO}
+                alt="Our Credo"
+              />
             </Modal>
           </div>
         </div>
@@ -320,10 +341,6 @@ const WhoAreWe = () => {
               <li>
                 {t("info.loc")}
               </li>
-              {/* <li>TIN: 112690991</li> */}
-              {/* <li>
-                {t("info.reg_num")}
-              </li> */}
             </ul>
             <ul data-aos="fade-right">
               <li>
@@ -349,7 +366,7 @@ const WhoAreWe = () => {
               </li>
             </ul>
           </div>
-          <img data-aos="fade-left" src={basicImg} alt="Basic" />
+          <img loading="lazy" data-aos="fade-left" src={basicImg} alt="Basic" />
         </div>
       </div>
     </div>

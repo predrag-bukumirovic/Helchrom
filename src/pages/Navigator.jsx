@@ -40,13 +40,13 @@ export default function Navigator() {
 
         <div className="box-img">
           <div>
-            <img src={mainImg} alt="Main" />
+            <img loading="lazy" src={mainImg} alt="Main" />
           </div>
           <div>
-            <img src={mainImg1} alt="Main" />
+            <img loading="lazy" src={mainImg1} alt="Main" />
           </div>
           <div>
-            <img src={mainImg2} alt="Main" />
+            <img loading="lazy" src={mainImg2} alt="Main" />
           </div>
         </div>
       </div>
@@ -55,7 +55,7 @@ export default function Navigator() {
       <div>
         <center className="container-main">
           <h1 className="title" style={{ textTransform: "capitalize" }}>
-            HELMCHRON N<img src={nav} alt="A Navigator" />VIGATOR
+            HELMCHRON N<img loading="lazy" src={nav} alt="A Navigator" />VIGATOR
           </h1>
           <p data-aos="fade-up">
             Helmchron Navigator is our initiative designed to provide consulting
@@ -102,7 +102,7 @@ export default function Navigator() {
               </a>
             </div>
 
-            <img data-aos="fade-left" src={Overview} alt="" />
+            <img loading="lazy" data-aos="fade-left" src={Overview} alt="" />
           </div>
         </div>
 
@@ -121,7 +121,7 @@ export default function Navigator() {
         <div className="our-home container-main">
           <div className="services-icon container-main">
             <div data-aos="zoom-in">
-              <img src={icon1} alt="" />
+              <img loading="lazy" src={icon1} alt="" />
 
               <h3>Proactive Planning</h3>
               <p>
@@ -131,7 +131,7 @@ export default function Navigator() {
               </p>
             </div>
             <div data-aos="zoom-in">
-              <img src={icon2} alt="" />
+              <img loading="lazy" src={icon2} alt="" />
               <h3>Expert Guidance</h3>
 
               <p>
@@ -140,7 +140,7 @@ export default function Navigator() {
               </p>
             </div>
             <div data-aos="zoom-in">
-              <img src={icon3} alt="" />
+              <img loading="lazy" src={icon3} alt="" />
               <h3>Agile Execution</h3>
               <p>
                 Our team adapts effectively to changes and evolving project
@@ -149,7 +149,7 @@ export default function Navigator() {
               </p>
             </div>
             <div data-aos="zoom-in">
-              <img src={icon4} alt="" />
+              <img loading="lazy" src={icon4} alt="" />
               <h3>Cost and Schedule Management</h3>
               <p>
                 Resources are strategically allocated to ensure they directly
@@ -158,7 +158,7 @@ export default function Navigator() {
               </p>
             </div>
             <div data-aos="zoom-in">
-              <img src={icon5} alt="" />
+              <img loading="lazy" src={icon5} alt="" />
               <h3>Comprehensive Support</h3>
               <p>
                 Our end-to-end involvement and guidance through every phase of
@@ -221,12 +221,12 @@ export default function Navigator() {
               </ul>
             </div>
 
-            <img data-aos="fade-left" src={Framework} alt="" />
+            <img loading="lazy" data-aos="fade-left" src={Framework} alt="" />
           </div>
         </div>
 
         <div className="guarantee padding30 container-main">
-          <img data-aos="fade-right" src={end} alt="" />
+          <img loading="lazy" data-aos="fade-right" src={end} alt="" />
           <div data-aos="fade-left">
             <span
               style={{

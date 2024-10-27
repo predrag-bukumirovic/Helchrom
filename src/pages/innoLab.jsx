@@ -34,13 +34,13 @@ export default function InnoLab() {
 
         <div className="box-img">
           <div>
-            <img src={mainImg} alt="Main" />
+            <img loading="lazy" src={mainImg} alt="Main" />
           </div>
           <div>
-            <img src={mainImg1} alt="Main" />
+            <img loading="lazy" src={mainImg1} alt="Main" />
           </div>
           <div>
-            <img src={mainImg2} alt="Main" />
+            <img loading="lazy" src={mainImg2} alt="Main" />
           </div>
         </div>
       </div>
@@ -66,7 +66,12 @@ export default function InnoLab() {
           className="moving-text container-main"
           style={{ overflow: "hidden" }}
         >
-          <img data-aos="fade-zoom" src={imgLab1} alt="InnoLAN img 1" />
+          <img
+            loading="lazy"
+            data-aos="fade-zoom"
+            src={imgLab1}
+            alt="InnoLAN img 1"
+          />
           <div className="marquee">
             <p>
               <span>The Spirit of Innovation</span> H E L M C H R O N InnoLAB
@@ -116,7 +121,12 @@ export default function InnoLab() {
             </p>
           </div>
 
-          <img data-aos="fade-left" src={imgLab2} alt="Inolab 2" />
+          <img
+            loading="lazy"
+            data-aos="fade-left"
+            src={imgLab2}
+            alt="Inolab 2"
+          />
         </div>
 
         <center>

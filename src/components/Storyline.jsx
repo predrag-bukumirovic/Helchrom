@@ -47,12 +47,12 @@ export default function StoryLineProbe() {
           <div className="line-ver" />
           <div className="img">
             <span>2010</span>
-            <img src={Story2010} alt="" />
+            <img loading="lazy" src={Story2010} alt="" />
           </div>
         </div>
         <div className="story-line-item">
           <div className="img">
-            <img src={Story2013} alt="" />
+            <img loading="lazy" src={Story2013} alt="" />
             <span>2013</span>
           </div>
           <div className="line-ver" />
@@ -75,12 +75,12 @@ export default function StoryLineProbe() {
           <div className="line-ver" />
           <div className="img">
             <span>2015</span>
-            <img src={Story2015} alt="" />
+            <img loading="lazy" src={Story2015} alt="" />
           </div>
         </div>
         <div className="story-line-item">
           <div className="img">
-            <img src={Story2016} alt="" />
+            <img loading="lazy" src={Story2016} alt="" />
             <span>2016</span>
           </div>
           <div className="line-ver" />
@@ -103,12 +103,12 @@ export default function StoryLineProbe() {
           <div className="line-ver" />
           <div className="img">
             <span>2020</span>
-            <img src={Story2020} alt="" />
+            <img loading="lazy" src={Story2020} alt="" />
           </div>
         </div>
         <div className="story-line-item">
           <div className="img">
-            <img src={Story2023} alt="" />
+            <img loading="lazy" src={Story2023} alt="" />
             <span>2023</span>
           </div>
           <div className="line-ver" />

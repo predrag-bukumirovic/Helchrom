@@ -208,6 +208,7 @@ const Competences = () => {
               className={activeCompetence === key ? "active" : ""}
             >
               <img
+                loading="lazy"
                 src={
                   activeCompetence === key
                     ? competencesData[key].iconActive
@@ -254,6 +255,7 @@ const Competences = () => {
           </div>
           <div className="competence-image">
             <img
+              loading="lazy"
               src={competencesData[activeCompetence].image}
               alt={competencesData[activeCompetence].title}
             />

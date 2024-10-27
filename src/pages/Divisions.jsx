@@ -119,13 +119,13 @@ export default function Division() {
 
         <div className="box-img">
           <div>
-            <img src={mainImg} alt="Main" />
+            <img loading="lazy" src={mainImg} alt="Main" />
           </div>
           <div>
-            <img src={mainImg1} alt="Main" />
+            <img loading="lazy" src={mainImg1} alt="Main" />
           </div>
           <div>
-            <img src={mainImg2} alt="Main" />
+            <img loading="lazy" src={mainImg2} alt="Main" />
           </div>
         </div>
       </div>
@@ -153,6 +153,7 @@ export default function Division() {
         >
           {images.map((image, index) =>
             <img
+              loading="lazy"
               key={index}
               src={image.src}
               alt={`Slika ${index + 1}`}
@@ -288,7 +289,7 @@ export default function Division() {
 
           <div className="initiative-logo">
             <a href="/initiatives/helmchrone">
-              <img src={one} alt="One Logo" />
+              <img loading="lazy" src={one} alt="One Logo" />
 
               <p>
                 Our innovative service model assigns ONE dedicated team to ONE
@@ -298,7 +299,7 @@ export default function Division() {
             </a>
 
             <a href="/initiatives/navigator">
-              <img src={navigator} alt="Navigator Logo" />
+              <img loading="lazy" src={navigator} alt="Navigator Logo" />
 
               <p>
                 We offer comprehensive consulting and support across the entire
@@ -308,7 +309,7 @@ export default function Division() {
             </a>
 
             <a href="/initiatives/innolab">
-              <img src={innoLab} alt="InnoLab Logo" />
+              <img loading="lazy" src={innoLab} alt="InnoLab Logo" />
               <p>
                 Our research initiative aims to advance innovation in plant
                 design engineering, pushing boundaries to build a more
@@ -317,7 +318,7 @@ export default function Division() {
             </a>
 
             <a href="/initiatives/academy">
-              <img src={academy} alt="Academy Logo" />
+              <img loading="lazy" src={academy} alt="Academy Logo" />
 
               <p>
                 We continuously develop our team by leveraging expertise from
