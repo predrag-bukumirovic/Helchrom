@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from "react";
 import "../assets/scss/competences.css";
 
-import pipingImg from "../assets/images/Competences/orginalImg/Piping.jpg";
-import equipmentImg from "../assets/images/Competences/orginalImg/Equipment.jpg";
-import cleanImg from "../assets/images/Competences/orginalImg/Cleanmedia.jpg";
-import roomsImg from "../assets/images/Competences/orginalImg/Cleanroom.jpg";
-import HVACImg from "../assets/images/Competences/orginalImg/HVAC.jpg";
+import pipingImg from "../assets/images/Competences/orginalImg/Piping.webp";
+import equipmentImg from "../assets/images/Competences/orginalImg/Equipment.webp";
+import cleanImg from "../assets/images/Competences/orginalImg/Cleanmedia.webp";
+import roomsImg from "../assets/images/Competences/orginalImg/Cleanroom.webp";
+import HVACImg from "../assets/images/Competences/orginalImg/HVAC.webp";
 import UtilitiesImg from "../assets/images/Competences/orginalImg/Utilities.jpg";
-import MSRImg from "../assets/images/Competences/orginalImg/MSR.jpg";
+import MSRImg from "../assets/images/Competences/orginalImg/MSR.webp";
 import { useTranslation } from "react-i18next";
 
 const images = [

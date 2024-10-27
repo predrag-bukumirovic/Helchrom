@@ -1,6 +1,6 @@
 import React, { useState, useRef } from "react";
 import "../assets/scss/sliderHelOne.scss";
-import helmOneImg from "../assets/images/Home/helmOne.png";
+import helmOneImg from "../assets/images/Home/helmOne.webp";
 import navigatorArrow from "../assets/images/Navigator/nav.png";
 
 const Slider = () => {
