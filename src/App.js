@@ -65,7 +65,7 @@ function App() {
       <Router>
         {isLoaded ?  (
           <>
-           <Navbar/>
+          <Navbar/>
         <Routes>
           <Route path="/" element={<><Home/></>} />
           <Route path="/career" element={<Career />} />
@@ -108,10 +108,8 @@ function App() {
         </>
         ) : (
           
-       <Loader onLoaded={handleLoaded}/> 
-         
+        <Loader onLoaded={handleLoaded}/>  
         )}
-       
       </Router>
     </div>;
 }

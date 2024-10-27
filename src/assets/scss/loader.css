@@ -3,10 +3,11 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-top: 50px;
 }
 
 .loader img {
-  width: 100px;
+  width: 80px;
 }
 .logo-loader {
   font-size: 50px; /* Povećaj veličinu fonta po želji */
@@ -18,6 +19,9 @@
 @media (max-width: 500px) {
   .logo-loader {
     font-size: 30px;
+  }
+  .loader img {
+    width: 50px;
   }
 }
 

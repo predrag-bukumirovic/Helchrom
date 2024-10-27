@@ -20,6 +20,7 @@ import TextReader from "../components/TextRender";
 import OurCompetences from "../components/OurCompetences";
 import { useLocation } from "react-router-dom";
 import SoftwareTools from "../components/SoftwereTools";
+import SidebarMenu from "../components/SidebarMenu";
 
 const mainImages = [mainImg, mainImg1, mainImg2];
 
@@ -136,6 +137,8 @@ export default function OurCore() {
           </div>
         </div>
       </div>
+
+      <SidebarMenu sectionRefs={sectionRefs} />
 
       <div
         ref={sectionRefs[0]}
@@ -332,12 +335,7 @@ export default function OurCore() {
           <h2 style={{ marginBottom: 30 }} className="title">
             {t("our_core.unique")}
 
-            <span
-              style={{
-                fontWeight: "bold",
-                textTransform: "none"
-              }}
-            >
+            <span style={{ fontWeight: "bold", textTransform: "none" }}>
               <br /> HELMCHR<span>ONe</span>
             </span>
           </h2>

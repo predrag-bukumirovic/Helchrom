@@ -51,6 +51,7 @@ import card16 from "../assets/images/References/cards/16.png";
 import card17 from "../assets/images/References/cards/17.png";
 import { useTranslation } from "react-i18next";
 import Insights from "../components/Insights";
+import SidebarMenuReferences from "../components/SidebarReferences";
 
 const mainImages = [mainImg, mainImg1, mainImg2];
 
@@ -171,6 +172,7 @@ export default function References() {
           </div>
         </div>
       </div>
+      <SidebarMenuReferences sectionRefs={sectionRefs} />
 
       <div className="references-container">
         {/* row 1 */}
