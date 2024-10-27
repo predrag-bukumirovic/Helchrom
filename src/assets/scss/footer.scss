@@ -48,6 +48,12 @@ footer {
   }
 }
 
+.internet-mob {
+  div a svg {
+    color: #000;
+  }
+}
+
 .internet,
 .internet-mob {
   div {
@@ -55,10 +61,9 @@ footer {
     gap: 10px;
   }
 
-  div a img {
+  div a svg {
     width: 30px;
     height: 30px;
-    margin: 5px;
   }
 }
 

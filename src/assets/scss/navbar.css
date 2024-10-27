@@ -146,7 +146,7 @@ ul li ol.menu-down li a:hover {
 }
 .line {
   background: #fff;
-  height: 3px;
+  height: 2px;
 }
 .line.home {
   background: #fff;
@@ -157,7 +157,7 @@ ul li ol.menu-down li a:hover {
 
 .line2 {
   width: 25px;
-  margin: 10px 0;
+  margin: 6px 0;
 }
 .line3 {
   width: 15px;

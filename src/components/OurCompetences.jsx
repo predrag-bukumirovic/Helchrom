@@ -229,7 +229,7 @@ const Competences = () => {
         style={{
           background: "var(--light-blue-color)",
           borderRadius: 30,
-          padding: "20px"
+          padding: "30px"
         }}
       >
         <div

@@ -477,7 +477,9 @@ const enTranslation = {
               <li>Risk analysis</li>
               <li>Cost-benefit analysis / engineering-economic analysis</li>
               <li>Cost estimation</li>
-              <li>Process simulation and sizing of equipment, HAZOP</li>
+              <li>Process simulation</li>
+              <li>Sizing of equipment</li>
+              <li>Process safety (HAZOP, LOPA)</li>
               <li>Workforce needs assessment</li>
               <li>
                 Life-cycle management - equipment and facilities lifecycle plan,

@@ -335,15 +335,10 @@ export default function OurCore() {
             <span
               style={{
                 fontWeight: "bold",
-                textTransform: "none",
-                color: "var(--dark-blue-color)"
+                textTransform: "none"
               }}
             >
-              <br /> HELMCHR<span
-                style={{ fontSize: "inherit", color: "var(--brend-color)" }}
-              >
-                ONe
-              </span>
+              <br /> HELMCHR<span>ONe</span>
             </span>
           </h2>
         </center>

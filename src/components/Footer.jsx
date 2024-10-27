@@ -1,12 +1,11 @@
 import React, { useState } from "react";
 import "../assets/scss/footer.scss";
-import TikTok from "../assets/images/tiktok.webp";
-import Instagram from "../assets/images/instagram.webp";
-import Linkedine from "../assets/images/linkedine.webp";
-import Twitter from "../assets/images/twitter.png";
 import Logo from "../assets/images/logowhite.webp";
 import { useTranslation } from "react-i18next";
 import LanguageModal from "./LanguageModal";
+
+import { FaLinkedin, FaInstagramSquare, FaTiktok } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 export default function Footer() {
   const { t } = useTranslation();
@@ -59,12 +58,7 @@ export default function Footer() {
                     rel="noreferrer"
                     className="tip"
                   >
-                    <img
-                      loading="lazy"
-                      style={{ marginLeft: 0 }}
-                      src={Linkedine}
-                      alt="Instagram"
-                    />
+                    <FaLinkedin />
                     <span className="tooltip-text">LinkedIn</span>
                   </a>
                   <a
@@ -73,7 +67,7 @@ export default function Footer() {
                     rel="noreferrer"
                     className="tip"
                   >
-                    <img loading="lazy" src={Twitter} alt="Instagram" />
+                    <FaXTwitter />
                     <span className="tooltip-text">X</span>
                   </a>
                   <a
@@ -82,7 +76,7 @@ export default function Footer() {
                     rel="noreferrer"
                     className="tip"
                   >
-                    <img loading="lazy" src={Instagram} alt="Instagram" />
+                    <FaInstagramSquare />
                     <span className="tooltip-text">Instagram</span>
                   </a>
                   <a
@@ -91,7 +85,7 @@ export default function Footer() {
                     rel="noreferrer"
                     className="tip"
                   >
-                    <img loading="lazy" src={TikTok} alt="TikTok" />
+                    <FaTiktok />
                     <span className="tooltip-text">TikTok</span>
                   </a>
                 </div>

@@ -5,9 +5,10 @@ import "../assets/scss/home.scss";
 import mainImg from "../assets/images/Team/baner1.png";
 import mainImg1 from "../assets/images/Team/baner2.png";
 import mainImg2 from "../assets/images/Team/baner3.png";
-import linkedine from "../assets/images/linkedine.webp";
 import milos from "../assets/images/Team/Milos.png";
 import anja from "../assets/images/Team/Anja.png";
+
+import { FaLinkedin } from "react-icons/fa";
 
 import Anti from "../assets/images/Team/Anti.png";
 import Code from "../assets/images/Team/Code.png";
@@ -127,7 +128,7 @@ export default function OurTeam() {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <img loading="lazy" src={linkedine} alt="linkedine" />
+                    <FaLinkedin />
                   </a>
                 </div>
                 <p>
@@ -156,7 +157,7 @@ export default function OurTeam() {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <img src={linkedine} alt="linkedine" />
+                    <FaLinkedin />
                   </a>
                 </div>
                 <p>

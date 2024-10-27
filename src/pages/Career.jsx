@@ -5,7 +5,8 @@ import mainImg1 from "../assets/images/Career/Slika2.jpg";
 import mainImg2 from "../assets/images/Career/Slika3.jpg";
 import icon1 from "../assets/images/Career/Milos.png";
 import icon2 from "../assets/images/Career/Anja.png";
-import iconLinkedine from "../assets/images/linkedine.webp";
+
+import { FaLinkedin } from "react-icons/fa";
 import accorImg from "../assets/images/Career/Careerpage.png";
 import "../assets/scss/slider.scss";
 import "../assets/scss/accordion.css";
@@ -210,7 +211,7 @@ export default function Career(i) {
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src={iconLinkedine} alt="Icon linkedin" />{" "}
+                <FaLinkedin />
               </a>
             </div>
           </div>
@@ -239,7 +240,7 @@ export default function Career(i) {
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src={iconLinkedine} alt="LinkedIn icon" />{" "}
+                <FaLinkedin />
               </a>
             </div>
           </div>

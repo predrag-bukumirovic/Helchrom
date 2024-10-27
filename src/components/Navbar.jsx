@@ -6,10 +6,9 @@ import "../assets/scss/navbar.css";
 import { BiChevronDown } from "react-icons/bi";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { TfiClose } from "react-icons/tfi";
-import TikTok from "../assets/images/tiktok.webp";
-import Instagram from "../assets/images/instagram.webp";
-import Linkedine from "../assets/images/linkedine.webp";
-import Twitter from "../assets/images/twitter.png";
+import { FaLinkedin, FaInstagramSquare, FaTiktok } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+
 import { useTranslation } from "react-i18next";
 import LanguageModal from "./LanguageModal";
 
@@ -54,23 +53,6 @@ export default function Navbar({ className }) {
     setSelectedLanguage(languageMap[language] || "ENGLISH");
     closeModal();
   };
-
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     const navbar = document.querySelector(".navbar-box");
-  //     if (window.scrollY > 500) {
-  //       navbar.classList.add("active");
-  //     } else {
-  //       navbar.classList.remove("active");
-  //     }
-  //   };
-
-  //   window.addEventListener("scroll", handleScroll);
-
-  //   return () => {
-  //     window.removeEventListener("scroll", handleScroll);
-  //   };
-  // }, []);
 
   return (
     <div className={`navbar-box ${className}`}>
@@ -280,32 +262,28 @@ export default function Navbar({ className }) {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <img
-                      style={{ marginLeft: 0 }}
-                      src={Linkedine}
-                      alt="Instagram"
-                    />
+                    <FaLinkedin />
                   </a>
                   <a
                     href="https://twitter.com/HelmchronGlobal"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <img src={Twitter} alt="Instagram" />
+                    <FaXTwitter />
                   </a>
                   <a
                     href="https://www.instagram.com/helmchron_global/"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <img src={Instagram} alt="Instagram" />
+                    <FaInstagramSquare />
                   </a>
                   <a
                     href="https://www.tiktok.com/@helmchron_global"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <img src={TikTok} alt="TikTok" />
+                    <FaTiktok />
                   </a>
                 </div>
               </div>
@@ -320,7 +298,6 @@ export default function Navbar({ className }) {
               cursor: "pointer",
               padding: "0 20px",
               color: "#fff",
-              fontWeight: "bold",
               fontSize: "18px",
               width: "40px",
               height: "40px",
