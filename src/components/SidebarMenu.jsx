@@ -44,6 +44,7 @@ const SidebarMenu = ({ sectionRefs }) => {
         <button onClick={() => handleClick(4)}>
           {t("our_core.icon_core.icon5")}
         </button>
+        <button onClick={() => handleClick(5)}>Competences</button>
       </div>
     </div>
   );

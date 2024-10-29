@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import "../assets/scss/loader.css"; // Uvezi CSS stilove]
 import logo from "../assets/images/logo.png";
 
-const Loader = ({ onLoaded }) => {
+const Loader = ({ onLoaded, isInitial }) => {
   const [loading, setLoading] = useState(true);
 
   useEffect(
@@ -11,7 +11,7 @@ const Loader = ({ onLoaded }) => {
       const timer = setTimeout(() => {
         setLoading(false);
         onLoaded(); // Pozivaj funkciju kada se učitavanje završi
-      }, 1500); // Postavi vreme trajanja učitavanja (3 sekunde)
+      }, 800); // Postavi vreme trajanja učitavanja (3 sekunde)
 
       return () => clearTimeout(timer); // Očisti timer kada se komponenta unmountuje
     },

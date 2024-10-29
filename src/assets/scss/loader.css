@@ -28,8 +28,8 @@
 .letter {
   position: relative; /* Omogućava pozicioniranje */
   color: transparent; /* Početna boja slova je transparentna */
-  animation: fillColor 0.1s forwards; /* Animacija punjenja boje */
-  animation-delay: calc(0.1s * var(--i)); /* Odloži svako slovo za 0.5s */
+  animation: fillColor 0.08s forwards; /* Animacija punjenja boje */
+  animation-delay: calc(0.08s * var(--i)); /* Odloži svako slovo za 0.5s */
 }
 
 @keyframes fillColor {

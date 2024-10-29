@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, forwardRef } from "react";
 import "../assets/scss/competences.css";
 
 // Imgs
@@ -183,7 +183,7 @@ const competencesData = {
   }
 };
 
-const Competences = () => {
+const Competences = forwardRef((props, ref) => {
   const { t } = useTranslation();
   const [activeCompetence, setActiveCompetence] = useState("piping");
   const [fadeIn, setFadeIn] = useState(true);
@@ -193,11 +193,11 @@ const Competences = () => {
     setTimeout(() => {
       setActiveCompetence(competence);
       setFadeIn(true);
-    }, 300); // Vreme trajanja izlazne animacije
+    }, 300);
   };
 
   return (
-    <div className="competences-container">
+    <div ref={ref} className="competences-container">
       <h2 className="title">OUR COMPETENCES</h2>
       <nav className="competence-nav">
         <div className="nav-slider">
@@ -280,6 +280,6 @@ const Competences = () => {
       </div>
     </div>
   );
-};
+});
 
 export default Competences;

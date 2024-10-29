@@ -30,6 +30,7 @@ export default function OurCore() {
     useRef(null),
     useRef(null),
     useRef(null),
+    useRef(null),
     useRef(null)
   ];
 
@@ -326,7 +327,7 @@ export default function OurCore() {
         </a>
       </center>
 
-      <OurCompetences />
+      <OurCompetences ref={sectionRefs[5]} />
 
       <SoftwareTools />
 

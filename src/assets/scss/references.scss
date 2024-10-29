@@ -82,6 +82,7 @@
 
       @media (max-width: 850px) {
         flex-direction: column;
+        padding-left: 30px;
 
         .text {
           width: 100%;
@@ -151,8 +152,7 @@
     }
   }
   @media (max-width: 750px) {
-    left: -100px;
-    display: none;
+    left: -75px;
   }
 }
 

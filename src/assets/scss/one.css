@@ -75,9 +75,10 @@
   display: none;
   color: #fff;
   font-weight: 900;
-  margin-top: 40px;
+  padding-top: 50px;
+  height: 100%;
   border-radius: 30px;
-  background: rgba(0, 0, 0, 0.2);
+
   text-align: center;
   color: transparent !important;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -86,6 +87,7 @@
 
 .img-title.active {
   display: flex;
+  background: rgba(9, 9, 227, 0.4);
   justify-content: center;
 }
 
