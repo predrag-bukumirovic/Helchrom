@@ -197,7 +197,7 @@ const Competences = forwardRef((props, ref) => {
   };
 
   return (
-    <div ref={ref} className="competences-container">
+    <div className="competences-container">
       <h2 className="title">OUR COMPETENCES</h2>
       <nav className="competence-nav">
         <div className="nav-slider">
@@ -249,7 +249,7 @@ const Competences = forwardRef((props, ref) => {
               )}
             </ul>
 
-            <p>
+            <p ref={ref}>
               {competencesData[activeCompetence].text}
             </p>
           </div>

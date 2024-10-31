@@ -13,12 +13,12 @@ import innoLab from "../assets/images/Division/InnoLab.png";
 import navigator from "../assets/images/Division/navigator.png";
 import one from "../assets/images/Division/One.png";
 
-import slider1 from "../assets/images/Division/1.png";
-import slider2 from "../assets/images/Division/2.png";
-import slider3 from "../assets/images/Division/3.png";
-import slider4 from "../assets/images/Division/4.png";
-import slider5 from "../assets/images/Division/5.png";
-import slider6 from "../assets/images/Division/6.png";
+import slider1 from "../assets/images/Division/1.webp";
+import slider2 from "../assets/images/Division/2.webp";
+import slider3 from "../assets/images/Division/3.webp";
+import slider4 from "../assets/images/Division/4.webp";
+import slider5 from "../assets/images/Division/5.webp";
+import slider6 from "../assets/images/Division/6.webp";
 import InsightsWhite from "../components/InsightsWhite";
 import SliderServices from "../components/SliderServices";
 import { useTranslation } from "react-i18next";

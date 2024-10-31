@@ -54,8 +54,14 @@ export default function Navigator() {
 
       <div>
         <center className="container-main">
-          <h1 className="title" style={{ textTransform: "capitalize" }}>
-            HELMCHRON N<img loading="lazy" src={nav} alt="A Navigator" />VIGATOR
+          <h1
+            className="title"
+            style={{ textTransform: "capitalize", display: "b" }}
+          >
+            HELMCHRON{" "}
+            <span>
+              N<img loading="lazy" src={nav} alt="A Navigator" />VIGATOR
+            </span>
           </h1>
           <p data-aos="fade-up">
             Helmchron Navigator is our initiative designed to provide consulting

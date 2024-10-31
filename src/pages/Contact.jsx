@@ -13,6 +13,7 @@ import { Helmet } from "react-helmet";
 import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
 import { useTranslation } from "react-i18next";
+import { useNavigate } from "react-router-dom";
 
 export default function Contact() {
   const [name, setName] = useState("");
@@ -25,6 +26,7 @@ export default function Contact() {
   const [policy, setPolicy] = useState(
     "The user has aligned their consent with the privacy policy."
   );
+  const navigate = useNavigate();
 
   const [nameBook, setNameBook] = useState("");
   const [companyBook, setCompanyBook] = useState("");
@@ -149,7 +151,7 @@ export default function Contact() {
         <body>
           <div class="container">
             <div class="header">
-              <img src='https://www.hc.gold-digital.rs/static/media/logo.f4a159523299808f9b18.webp' alt="Logo" class="logo">
+              <img src='https://www.helmchron.com/static/media/logowhite.6b0a4044288765ef7557.webp' alt="Logo" class="logo">
             </div>
             <div class="section">
               <b>Subject:</b> <p>${subject}</p>
@@ -162,7 +164,7 @@ export default function Contact() {
               <b>Message:</b><p class="message-box">${message}</p>
             </div>
             <div class="footer">
-              <p style="margin-bottom: 0;">© 2023 Helmchron | Sva prava zadržana. <a href="https://www.helmchron.gold-digital.rs/privacy-policy">Privacy policy</a></p>
+              <p style="margin-bottom: 0;">© 2023 Helmchron | Sva prava zadržana. <a href="https://www.helmchron.com/privacy-policy">Privacy policy</a></p>
             </div>
           </div>
         </body>
@@ -184,11 +186,12 @@ export default function Contact() {
       });
 
       setLoading(true);
-      setTimeout(() => {
-        setLoading(false);
-        window.open("/thanks", "_self");
-        document.getElementById("form").reset();
-      }, 3000);
+      // setTimeout(() => {
+      setLoading(false);
+      // window.open("/thanks", "_self");
+      navigate("/thanks");
+      document.getElementById("form").reset();
+      // }, 3000);
     } catch (e) {
       console.error(e);
       setLoading(false);
@@ -296,7 +299,7 @@ export default function Contact() {
         <body>
           <div class="container">
             <div class="header">
-              <img src='https://www.hc.gold-digital.rs/static/media/logo.f4a159523299808f9b18.webp' alt="Logo" class="logo">
+              <img src='https://www.helmchron.com/static/media/logowhite.6b0a4044288765ef7557.webp' alt="Logo" class="logo">
             </div>
             <div class="section">
               <b>Name:</b> <p>${nameBook}</p>
@@ -306,7 +309,7 @@ export default function Contact() {
               <b>Privacy policy:</b> <p class="policy">${policy}</p>
             </div>
             <div class="footer">
-              <p style="margin-bottom: 0;">© 2023 Helmchron | Sva prava zadržana. <a href="https://www.helmchron.gold-digital.rs/privacy-policy">Privacy policy</a></p>
+              <p style="margin-bottom: 0;">© 2023 Helmchron | Sva prava zadržana. <a href="https://www.helmchron.com/privacy-policy">Privacy policy</a></p>
             </div>
           </div>
         </body>
@@ -330,11 +333,12 @@ export default function Contact() {
       });
 
       setLoadingBook(true);
-      setTimeout(() => {
-        setLoadingBook(false);
-        window.open("/thanks", "_self");
-        document.getElementById("form").reset();
-      }, 3000);
+      // setTimeout(() => {
+      setLoadingBook(false);
+      // window.open("/thanks", "_self");
+      navigate("/thanks");
+      document.getElementById("form").reset();
+      // }, 3000);
     } catch (e) {
       console.error(e);
       setLoadingBook(false);

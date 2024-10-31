@@ -13,8 +13,27 @@ const SidebarMenu = ({ sectionRefs }) => {
   const handleClick = index => {
     if (sectionRefs[index] && sectionRefs[index].current) {
       sectionRefs[index].current.scrollIntoView({
-        behavior: "smooth"
+        behavior: "smooth",
+        block: "start"
       });
+    }
+    setIsOpen(false);
+  };
+
+  const handleClickToID = id => {
+    const targetElement = document.getElementById(id);
+    if (targetElement) {
+      const elementPosition = targetElement.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.scrollY;
+
+      // Proveri da li je uređaj mobilni
+      if (window.innerWidth < 768) {
+        // Prilagođeni offset za mobilne uređaje
+        window.scrollTo({ top: offsetPosition - -850, behavior: "smooth" }); // prilagodi offset po potreb
+      } else {
+        // Normalno skrolovanje za desktop
+        window.scrollTo({ top: offsetPosition, behavior: "smooth" });
+      }
     }
     setIsOpen(false);
   };
@@ -44,7 +63,9 @@ const SidebarMenu = ({ sectionRefs }) => {
         <button onClick={() => handleClick(4)}>
           {t("our_core.icon_core.icon5")}
         </button>
-        <button onClick={() => handleClick(5)}>Competences</button>
+        <button onClick={() => handleClickToID("our-competences")}>
+          Competences
+        </button>
       </div>
     </div>
   );

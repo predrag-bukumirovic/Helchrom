@@ -138,7 +138,7 @@ export default function InnoLab() {
           <a
             style={{ background: "var(--dark-blue-color)" }}
             className="book-btn"
-            href="/our-references"
+            href="/initiatives/navigator"
           >
             {t("read_more")}
           </a>

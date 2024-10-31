@@ -13,7 +13,7 @@ const Slider = () => {
 
   const items = [
     {
-      title: "HELEMCHR<span class='blue'>ONe<span/>",
+      title: "HELMCHR<span class='blue'>ONe<span/>",
       content:
         "A service concept that provides dedicated focus to a project by assigning ONE team to ONE client and ONE project only. This approach addresses common issues of prolonged delivery times and budget overruns by ensuring that every aspect of the project is handled with complete attention and accountability. <br/><br/> How does Helmchron ONE drive efficiency and client satisfaction?",
       link: "/initiatives/helmchrone"
@@ -25,7 +25,7 @@ const Slider = () => {
       link: "/initiatives/navigator"
     },
     {
-      title: "HELEMCHRON <span class='blue'>InnoLAB<span/>",
+      title: "HELMCHRON <span class='blue'>InnoLAB<span/>",
       content:
         "Helmchron InnoLAB is our research initiative focused on advancing and innovating in plant design, and process and chemical engineering. By pushing the boundaries, we aim to create a more innovative and sustainable future for generations to come. <br/><br/><br/> <br/><br/> Explore our pursuit of innovation.",
       link: "initiatives/innolab"

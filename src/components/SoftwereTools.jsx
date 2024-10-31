@@ -15,6 +15,7 @@ import ED2 from "../assets/images/Equipmentdesign/ED2.jpg";
 
 import PCS1 from "../assets/images/Plantcloud/PCS1.png";
 import PCS2 from "../assets/images/Plantcloud/PCS2.jpg";
+import PCS3 from "../assets/images/Plantcloud/PCS3.png";
 
 import PDA1 from "../assets/images/Processanalysis/PDA1.png";
 import PDA2 from "../assets/images/Processanalysis/PDA2.png";
@@ -40,6 +41,13 @@ import PSA2 from "../assets/images/Pipeanalysis/PSA2.png";
 
 import HEC1 from "../assets/images/Heat/HEC1.png";
 import HEC2 from "../assets/images/Heat/HEC2.png";
+
+import PVD1 from "../assets/images/Pressurevessel/PVD1.png";
+import PVD2 from "../assets/images/Pressurevessel/PVD2.jpg";
+import PVD3 from "../assets/images/Pressurevessel/PVD3.jpg";
+import PVD4 from "../assets/images/Pressurevessel/PVD4.png";
+import PVD5 from "../assets/images/Pressurevessel/PVD5.png";
+import PVD6 from "../assets/images/Pressurevessel/PVD6.jpg";
 
 const softwareData = [
   {
@@ -89,18 +97,18 @@ const softwareData = [
   {
     category: "Pressure Vessel Design",
     tools: [
-      { name: "PV Elite" },
-      { name: "Visual Vessel Design" },
-      { name: "TÜV NORD DIMy" },
-      { name: "PRG NozzlePRO" },
-      { name: "PRG FEPipe" },
-      { name: "MT-Mech" }
+      { name: "PV Elite", image: PVD1 },
+      { name: "Visual Vessel <br/> Design", image: PVD2 },
+      { name: "TÜV NORD DIMy", image: PVD3 },
+      { name: "PRG NozzlePRO", image: PVD4 },
+      { name: "FEA Tools and <br/> Advanced FEA <br/> Tools", image: PVD5 },
+      { name: "MT-Mech", image: PVD6 }
     ]
   },
   {
     category: "Heat exchanger calculation",
     tools: [
-      { name: "Aspen Exchanger Design and Rating", image: HEC1 },
+      { name: "Aspen Exchanger <br/> Design and Rating", image: HEC1 },
       { name: "HTRI", image: HEC2 }
     ]
   },
@@ -129,7 +137,11 @@ const softwareData = [
   },
   {
     category: "Plant cloud solutions",
-    tools: [{ name: "BIM Cloud", image: PCS1 }, { name: "Awaro", image: PCS2 }]
+    tools: [
+      { name: "BIM Cloud", image: PCS1 },
+      { name: "Awaro", image: PCS2 },
+      { name: "AutoDesk <br/> Construction <br/> Cloud", image: PCS3 }
+    ]
   },
   {
     category: "Project Management and Scheduling",
@@ -174,9 +186,7 @@ const SoftwareTools = () => {
           <div key={index} className="tool-card fade-in">
             {tool.image &&
               <img loading="lazy" src={tool.image} alt={tool.name} />}
-            <p>
-              {tool.name}
-            </p>
+            <p dangerouslySetInnerHTML={{ __html: tool.name }} />
           </div>
         )}
       </div>

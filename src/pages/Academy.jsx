@@ -1,11 +1,11 @@
 import { CCarousel, CCarouselItem, CImage } from "@coreui/react";
 import React from "react";
 
-import mainImg from "../assets/images/Academy/baner1.png";
-import mainImg1 from "../assets/images/Academy/baner2.png";
-import mainImg2 from "../assets/images/Academy/baner3.png";
+import mainImg from "../assets/images/Academy/baner1.webp";
+import mainImg1 from "../assets/images/Academy/baner2.webp";
+import mainImg2 from "../assets/images/Academy/baner3.webp";
 
-import verticalImg from "../assets/images/Academy/vertikalno.png";
+import verticalImg from "../assets/images/Academy/vertikalno.webp";
 
 import "../assets/scss/innoLab.scss";
 import "../assets/scss/electronics.scss";
@@ -140,7 +140,7 @@ export default function Academy() {
               <a
                 style={{ background: "var(--dark-blue-color)" }}
                 className="book-btn"
-                href="/our-team"
+                href="/about-us/our-team"
               >
                 {t("read_more")}
               </a>

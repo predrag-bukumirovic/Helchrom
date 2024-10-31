@@ -319,12 +319,17 @@ const One = () => {
           <a
             style={{ background: "var(--dark-blue-color)" }}
             className="book-btn"
-            href="/"
+            href="/initiatives/navigator"
           >
             {t("read_more")}
           </a>
         </div>
-        <img data-aos="fade-left" src={inzenjer} alt="inzenjer" />
+        <img
+          loading="lazy"
+          data-aos="fade-left"
+          src={inzenjer}
+          alt="inzenjer"
+        />
       </div>
     </div>
   );

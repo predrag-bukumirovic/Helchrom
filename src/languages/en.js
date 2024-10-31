@@ -383,10 +383,10 @@ const enTranslation = {
       "We are a cohesive team of dedicated professionals, each bringing a unique educational background, experience, and passion to our shared vision. Embracing diversity as a fundamental value, we recognize and celebrate the varied perspectives and expertise that enrich our work and drive our collective success. Our commitment to our mission and outcomes unites us in striving for exceptional results.",
 
     team1: {
-      name: "Milos Ivosevic, Ph.D.",
-      position: "CEO, Mechanical Engineer",
+      name: "Dr. Milos Ivosevic",
+      position: "CEO of Helmchron",
       text:
-        "Milos Ivosevic is the founder of Helmchron and a third-generation engineer with extensive academic and industry experience. He completed his Master’s and PhD in Process Engineering at the University of Belgrade and gained advanced experience at the Paul Scherrer Institute (PSI) in Switzerland. His professional background includes work with leading global companies and institutions. Milos` dedication to global impact shapes Helmchron’s mission and vision. Milos is actively engaged in several professional organizations and associations, emphasizing ongoing learning and mentorship. In his personal time, he enjoys traveling, learning languages, engaging in sports activities, and relaxing by the river."
+        "Dr. Milos Ivosevic is the founder of Helmchron and serves as the company’s CEO. Milos Ivosevic was born in Belgrade, Serbia in 1987. He completed his Master’s and PhD in Process Engineering at the University of Belgrade and during his studies gained advanced experience at the Paul Scherrer Institute in Villigen, Switzerland. His professional background includes different positions in prestigious and international companies as well as projects with leading global manufacturing companies and institutions. Milos is actively engaged in several professional organizations and associations, emphasizing ongoing learning and mentorship. Outside of his professional life, he enjoys traveling, learning languages, engaging in sports activities, and relaxing by the river."
     },
     team2: {
       name: "Anja Andjelkovic, M.Sc.",

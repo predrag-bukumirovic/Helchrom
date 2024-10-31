@@ -327,7 +327,9 @@ export default function OurCore() {
         </a>
       </center>
 
-      <OurCompetences ref={sectionRefs[5]} />
+      <div id="our-competences">
+        <OurCompetences />
+      </div>
 
       <SoftwareTools />
 

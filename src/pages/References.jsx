@@ -359,7 +359,7 @@ export default function References() {
             <div className="text" data-aos="fade-left">
               <h3 className="title">
                 {t("references.food.destilla.title")}
-                <br /> <span className="text-stroke green">2023</span>
+                <br /> <span className="text-stroke green">2022</span>
               </h3>
               <p>
                 {t("references.food.destilla.text")}
@@ -391,7 +391,7 @@ export default function References() {
             <div className="text" data-aos="fade-right">
               <h3 className="title">
                 {t("references.food.primopus.title")} <br />
-                <span className="text-stroke green">2023</span>
+                <span className="text-stroke green">2021</span>
               </h3>
               <p>
                 {t("references.food.primopus.text")}
@@ -484,7 +484,7 @@ export default function References() {
             <div className="text" data-aos="fade-left">
               <h3 className="title">
                 {t("references.chemicals.basf.title")} <br />
-                <span className="text-stroke orange">2022</span>
+                <span className="text-stroke orange">2020</span>
               </h3>
 
               <p>
@@ -584,7 +584,7 @@ export default function References() {
             <div className="text" data-aos="fade-right">
               <h3 className="title">
                 {t("references.electronics.title")} <br />
-                <span className="text-stroke blue">2023</span>
+                <span className="text-stroke blue">2021</span>
               </h3>
 
               <p>
