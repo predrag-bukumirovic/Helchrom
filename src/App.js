@@ -62,6 +62,7 @@ function App() {
     };
 
   return <div className={`App ${isVisible ? "visible" : ""}`}>
+    
       <Router>
         {isLoaded ?  (
           <>

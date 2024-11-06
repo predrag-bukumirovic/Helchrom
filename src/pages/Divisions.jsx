@@ -4,9 +4,9 @@ import "../assets/scss/division.scss";
 import "../assets/scss/home.scss";
 import "../assets/scss/references.scss";
 
-import mainImg from "../assets/images/Division/baner1.png";
-import mainImg1 from "../assets/images/Division/baner2.png";
-import mainImg2 from "../assets/images/Division/baner3.png";
+import mainImg from "../assets/images/Division/baner1.webp";
+import mainImg1 from "../assets/images/Division/baner2.webp";
+import mainImg2 from "../assets/images/Division/baner3.webp";
 
 import academy from "../assets/images/Division/Academy.png";
 import innoLab from "../assets/images/Division/InnoLab.png";

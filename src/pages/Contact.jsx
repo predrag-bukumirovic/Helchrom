@@ -186,12 +186,11 @@ export default function Contact() {
       });
 
       setLoading(true);
-      // setTimeout(() => {
-      setLoading(false);
-      // window.open("/thanks", "_self");
-      navigate("/thanks");
-      document.getElementById("form").reset();
-      // }, 3000);
+      setTimeout(() => {
+        setLoading(false);
+        navigate("/thanks");
+        document.getElementById("form").reset();
+      }, 3000);
     } catch (e) {
       console.error(e);
       setLoading(false);
@@ -333,12 +332,11 @@ export default function Contact() {
       });
 
       setLoadingBook(true);
-      // setTimeout(() => {
-      setLoadingBook(false);
-      // window.open("/thanks", "_self");
-      navigate("/thanks");
-      document.getElementById("form").reset();
-      // }, 3000);
+      setTimeout(() => {
+        setLoadingBook(false);
+        navigate("/thanks");
+        document.getElementById("form").reset();
+      }, 3000);
     } catch (e) {
       console.error(e);
       setLoadingBook(false);
