@@ -1,5 +1,5 @@
 import React from "react";
-import { useTranslation } from "react-i18next";
+// import { useTranslation } from "react-i18next";
 import { CCarousel, CCarouselItem, CImage } from "@coreui/react";
 import mainImg from "../assets/images/Privacy/1.jpg";
 import mainImg1 from "../assets/images/Privacy/2.jpeg";
@@ -9,7 +9,7 @@ import "../assets/scss/slider.scss";
 import { Helmet } from "react-helmet";
 
 export default function PrivacyPolicy() {
-  const { t } = useTranslation();
+  // const { t } = useTranslation();
   return (
     <div>
       <Helmet>
