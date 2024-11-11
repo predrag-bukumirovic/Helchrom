@@ -8,6 +8,7 @@ import "aos/dist/aos.css";
 import ScrollTop from "./components/ScrollTop";
 import Navbar from "./components/Navbar";
 import Loader from "./components/Loader";
+import CookiePolicy from "./pages/CookiePolicy";
 // import ActionButton from "./Accessibility/ActionButton";
 
 const Blog = lazy(() => import("./pages/Blog"));
@@ -27,7 +28,7 @@ const OurValues = lazy(() => import("./pages/OurValues"));
 const OurServices = lazy(() => import("./pages/OurServices"));
 const Footer = lazy(() => import("./components/Footer"));
 const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy"));
-const LegalStatement = lazy(() => import("./pages/LegalStatement"));
+const Terms = lazy(() => import("./pages/Terms"));
 const Academy = lazy(() => import("./pages/Academy"));
 const InnoLab = lazy(() => import("./pages/innoLab"));
 const Navigator = lazy(() => import("./pages/Navigator"));
@@ -82,7 +83,8 @@ function App() {
           <Route path="/about-us/our-values" element={<OurValues />} />
           <Route path="/our-services" element={<OurServices />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-          <Route path="/legal-statement" element={<LegalStatement />} />
+          <Route path="/terms-and-conditions" element={<Terms />} />
+          <Route path="/cookie-policy" element={<CookiePolicy />} />
           <Route path="/chemicals" element={<Chemicals />} />
           <Route path="/pharma" element={<Pharma />} />
           <Route path="/news/achema" element={<Achema />} />

@@ -45,8 +45,11 @@ export default function Footer() {
                 <a href="/privacy-policy">
                   {t("policy.title")}
                 </a>
-                <a href="/legal-statement">
-                  {t("navbar.legal")}
+                <a href="/terms-and-conditions">
+                  {t("navbar.terms")}
+                </a>
+                <a href="/cookie-policy">
+                  {t("navbar.cookies")}
                 </a>
               </div>
               <div className="internet">

@@ -3,12 +3,12 @@ import React from "react";
 import "../assets/scss/electronics.scss";
 import "../assets/scss/home.scss";
 
-import mainIm1 from "../assets/images/Oil/img1.png";
-import mainImg2 from "../assets/images/Oil/img2.png";
-import mainImg3 from "../assets/images/Oil/img3.png";
+import mainIm1 from "../assets/images/Oil/img1.webp";
+import mainImg2 from "../assets/images/Oil/img2.webp";
+import mainImg3 from "../assets/images/Oil/img3.webp";
 
-import Oil1 from "../assets/images/Oil/rowImg1.png";
-import Oil2 from "../assets/images/Oil/rowImg2.png";
+import Oil1 from "../assets/images/Oil/rowImg1.webp";
+import Oil2 from "../assets/images/Oil/rowImg2.webp";
 import { useTranslation } from "react-i18next";
 
 const mainImages = [mainIm1, mainImg2, mainImg3];

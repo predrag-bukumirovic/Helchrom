@@ -3,15 +3,15 @@ import { CCarousel, CCarouselItem, CImage } from "@coreui/react";
 import "../assets/scss/one.css";
 import "../assets/scss/home.scss";
 
-import slideImg1 from "../assets/images/Helmchrone/1.png";
-import slideImg2 from "../assets/images/Helmchrone/2.png";
-import slideImg3 from "../assets/images/Helmchrone/3.png";
-import slideImg4 from "../assets/images/Helmchrone/4.png";
-import slideImg5 from "../assets/images/Helmchrone/5.png";
+import slideImg1 from "../assets/images/Helmchrone/1.webp";
+import slideImg2 from "../assets/images/Helmchrone/2.webp";
+import slideImg3 from "../assets/images/Helmchrone/3.webp";
+import slideImg4 from "../assets/images/Helmchrone/4.webp";
+import slideImg5 from "../assets/images/Helmchrone/5.webp";
 
-import mainImg from "../assets/images/Helmchrone/banner1.png";
-import mainImg1 from "../assets/images/Helmchrone/banner2.png";
-import mainImg2 from "../assets/images/Helmchrone/banner3.png";
+import mainImg from "../assets/images/Helmchrone/banner1.webp";
+import mainImg1 from "../assets/images/Helmchrone/banner2.webp";
+import mainImg2 from "../assets/images/Helmchrone/banner3.webp";
 
 import inzenjer from "../assets/images/Helmchrone/inzenjer.png";
 
