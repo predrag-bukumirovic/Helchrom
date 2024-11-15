@@ -1,11 +1,39 @@
+.notification {
+  background: var(--dark-blue-color);
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  z-index: 1000;
+  transition: opacity 0.5s;
+}
+
+.notification.hide {
+  opacity: 0;
+}
+
+body {
+  transition: background-color 0.3s, color 0.3s; /* Glatka tranzicija pri promeni kontrasta */
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  overflow-x: hidden; /* Sprečava horizontalno pomeranje */
+}
+
 .action-btn {
   background: #fff;
-  position: fixed;
+  position: fixed !important;
   border-radius: 50%;
   border: 2px solid var(--lightblue-color);
   color: var(--brend-color);
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   right: 20px;
   bottom: 70px;
   cursor: pointer;
@@ -15,9 +43,29 @@
   transform: scale(1.1);
 }
 
-.drawer {
+.action-btn-container {
+  position: relative;
+}
+
+.check-icon-on-button {
   position: fixed;
+  right: 20px;
+  bottom: 70px;
+  background: var(--dark-blue-color);
+  color: #fff;
+  width: 13px;
+  padding: 3px;
+  height: 13px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.drawer {
+  position: fixed !important;
   top: 0;
+  bottom: 0;
   right: -100%;
   width: 450px;
   height: 100%;
@@ -52,8 +100,8 @@ header {
 }
 header button {
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   border: 2px solid #fff;
   cursor: pointer;
   z-index: 999;
@@ -74,7 +122,7 @@ header span {
 .nav-accessibility ul {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   gap: 20px;
 }
 .nav-accessibility ul li {
@@ -102,17 +150,6 @@ header span {
   font-weight: bold;
 }
 
-.line-access {
-  display: flex;
-  justify-content: space-between;
-}
-.line-access div {
-  width: 30%;
-  display: flex;
-  height: 3px;
-  background: var(--brend-color);
-}
-
 .reset-btn {
   padding: 20px;
 }
@@ -123,4 +160,36 @@ header span {
   border: none;
   border-radius: 30px;
   padding: 10px;
+}
+
+.active-contrast {
+  color: var(--brend-color);
+}
+.nav-accessibility button.active-contrast {
+  border: 2px solid #ffa500; /* Dodavanje narandžastog okvira */
+  border-radius: 30px; /* Opcionalno - zaobljeni uglovi */
+}
+
+@media (max-width: 420px) {
+  .drawer {
+    width: 100%;
+  }
+  .nav-accessibility ul {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  }
+  .nav-accessibility ul li {
+    width: 100%;
+    height: 100%;
+  }
+
+  .nav-accessibility ul li button p {
+    font-size: 10px !important;
+    font-weight: bold;
+  }
+
+  .nav-accessibility ul li button svg {
+    font-size: 25px;
+    font-weight: bold;
+  }
 }

@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import "./accessinility.css";
+import React, { useEffect, useState } from "react";
+import "./styles/accessinility.css";
 
 import { IoMdContrast } from "react-icons/io";
 import { IoLinkOutline } from "react-icons/io5";
@@ -13,105 +13,155 @@ import invert from "./img/1.png";
 import dark from "./img/2.png";
 import light from "./img/3.png";
 
-export default function Nav() {
-  const [contrastOption, setContrastOption] = useState(0); // Praćenje stanja kontrasta
+export default function Nav({ contrastOption, setContrastOption }) {
+  const [highlightLinks, setHighlightLinks] = useState(() => {
+    const savedHighlightLinks = localStorage.getItem("highlightLinks");
+    return savedHighlightLinks ? JSON.parse(savedHighlightLinks) : false;
+  });
 
-  // Funkcija za prebacivanje opcija kontrasta
-  const handleContrastClick = () => {
-    setContrastOption(prev => (prev + 1) % 4); // Rotira između 0, 1 i 2
+  useEffect(
+    () => {
+      localStorage.setItem("contrastOption", contrastOption);
+      const body = document.body;
+      const html = document.documentElement;
+
+      body.classList.remove(
+        "contrast-invert",
+        "contrast-high",
+        "contrast-light"
+      );
+      html.classList.remove(
+        "contrast-invert",
+        "contrast-high",
+        "contrast-light"
+      );
+
+      switch (contrastOption) {
+        case 1:
+          html.classList.add("contrast-invert");
+          break;
+        case 2:
+          body.classList.add("contrast-high");
+          break;
+        case 3:
+          body.classList.add("contrast-light");
+          break;
+        default:
+          break;
+      }
+    },
+    [contrastOption]
+  );
+
+  useEffect(
+    () => {
+      const links = document.querySelectorAll("a");
+      if (highlightLinks) {
+        links.forEach(link => link.classList.add("highlighted-link"));
+      } else {
+        links.forEach(link => link.classList.remove("highlighted-link"));
+      }
+      localStorage.setItem("highlightLinks", JSON.stringify(highlightLinks));
+    },
+    [highlightLinks]
+  );
+
+  const handleOptionClick = optionId => {
+    switch (optionId) {
+      case "contrast":
+        setContrastOption(prev => (prev + 1) % 4);
+        break;
+      case "highlight-links":
+        setHighlightLinks(prev => !prev);
+        break;
+      case "bigger-text":
+        // Dodajte logiku za Bigger Text
+        break;
+      case "text-spacing":
+        // Dodajte logiku za Text Spacing
+        break;
+      case "hide-images":
+        // Dodajte logiku za Hide Images
+        break;
+      case "cursor":
+        // Dodajte logiku za Cursor
+        break;
+      case "line-height":
+        // Dodajte logiku za Line Height
+        break;
+      case "text-align":
+        // Dodajte logiku za Text Align
+        break;
+      default:
+        break;
+    }
   };
 
-  // Promena ikone na osnovu opcije kontrasta
+  const navOptions = [
+    {
+      id: "contrast",
+      label: () => getContrastText(),
+      icon: () => getContrastIcon(),
+      isActive: contrastOption > 0
+    },
+    {
+      id: "highlight-links",
+      label: "Highlight Links",
+      icon: <IoLinkOutline />,
+      isActive: highlightLinks
+    },
+    { id: "bigger-text", label: "Bigger Text", icon: <TbTextSize /> },
+    { id: "text-spacing", label: "Text Spacing", icon: <RiTextSpacing /> },
+    { id: "hide-images", label: "Hide Images", icon: <LuImageOff /> },
+    { id: "cursor", label: "Cursor", icon: <RxCursorArrow /> },
+    { id: "line-height", label: "Line Height", icon: <RxLineHeight /> },
+    { id: "text-align", label: "Text Align", icon: <GrTextAlignFull /> }
+  ];
+
   const getContrastIcon = () => {
     switch (contrastOption) {
       case 1:
-        return <img style={{ width: 40 }} src={invert} alt="Invert" />; // Ikona za inverzne boje
+        return <img style={{ width: 40 }} src={invert} alt="Invert" />;
       case 2:
-        return <img style={{ width: 40 }} src={dark} alt="Dark" />; // Ikona sa naglašenom bojom
+        return <img style={{ width: 40 }} src={dark} alt="Dark" />;
       case 3:
-        return <img style={{ width: 40 }} src={light} alt="Dark" />; // Podrazumevana ikona
+        return <img style={{ width: 40 }} src={light} alt="Light" />;
       default:
         return <IoMdContrast />;
+    }
+  };
+
+  const getContrastText = () => {
+    switch (contrastOption) {
+      case 1:
+        return "Invert Colors";
+      case 2:
+        return "High Contrast";
+      case 3:
+        return "Light Mode";
+      default:
+        return "Contrast +";
     }
   };
 
   return (
     <nav className="nav-accessibility">
       <ul>
-        <li>
-          <button
-            onClick={handleContrastClick}
-            className={contrastOption > 0 ? "active-contrast" : ""}
-          >
-            {getContrastIcon()}
-            <p>Contrast +</p>
-            <div className="line-access">
-              <div
-                style={{
-                  backgroundColor: contrastOption === 0 ? "orange" : ""
-                }}
-              />
-              <div
-                style={{
-                  backgroundColor: contrastOption === 1 ? "orange" : ""
-                }}
-              />
-              <div
-                style={{
-                  backgroundColor: contrastOption === 2 ? "orange" : ""
-                }}
-              />
-              <div
-                style={{
-                  backgroundColor: contrastOption === 3 ? "orange" : ""
-                }}
-              />
-            </div>
-          </button>
-        </li>
-        <li>
-          <button>
-            <IoLinkOutline />
-            <p>Highlight Links</p>
-          </button>
-        </li>
-        <li>
-          <button>
-            <TbTextSize />
-            <p>Bigger Text</p>
-          </button>
-        </li>
-        <li>
-          <button>
-            <RiTextSpacing />
-            <p>Text Spacing</p>
-          </button>
-        </li>
-        <li>
-          <button>
-            <LuImageOff />
-            <p>Hide Images</p>
-          </button>
-        </li>
-        <li>
-          <button>
-            <RxCursorArrow />
-            <p>Cursor</p>
-          </button>
-        </li>
-        <li>
-          <button>
-            <RxLineHeight />
-            <p>Line Height</p>
-          </button>
-        </li>
-        <li>
-          <button>
-            <GrTextAlignFull />
-
-            <p>Text Align</p>
-          </button>
-        </li>
+        {navOptions.map(option =>
+          <li key={option.id}>
+            <button
+              onClick={() => handleOptionClick(option.id)}
+              className={option.isActive ? "active-option" : ""}
+            >
+              {typeof option.icon === "function" ? option.icon() : option.icon}
+              <p>
+                {typeof option.label === "function"
+                  ? option.label()
+                  : option.label}
+              </p>
+            </button>
+          </li>
+        )}
       </ul>
     </nav>
   );

@@ -8,6 +8,7 @@ import mainImg2 from "../assets/images/Blog/Baner3.png";
 import Diversity from "../assets/images/Blog/Diversity.png";
 import Odbojka from "../assets/images/Blog/Odbojka.png";
 import Sustainability from "../assets/images/Blog/Sustainability.png";
+import Roda from "../assets/images/Blog/Roda/4.webp";
 
 import { useTranslation } from "react-i18next";
 import TextReader from "../components/TextRender";
@@ -16,6 +17,12 @@ export default function Blog() {
   const { t } = useTranslation();
 
   const headerText = [t("blog.title"), t("blog.text")];
+
+  const blog4Text = [
+    t("blog.blog4.title"),
+    t("blog.blog4.text"),
+    t("read_more")
+  ];
   const blog3Text = [
     t("blog.blog3.title"),
     t("blog.blog3.text"),
@@ -72,6 +79,27 @@ export default function Blog() {
             {t("blog.text")}
           </p>
         </center>
+
+        <div className="news-box padding30">
+          <TextReader texts={blog4Text} />
+          <div>
+            <div>
+              <h2>
+                {t("blog.blog4.title")}
+              </h2>
+              <p>
+                {t("blog.blog4.text")}
+              </p>
+              <a href="/blog/roda">
+                {t("read_more")}
+              </a>
+            </div>
+            <div>
+              <img src={Roda} alt="Roda" />
+            </div>
+          </div>
+          <div className="line" />
+        </div>
 
         <div className="news-box padding30">
           <TextReader texts={blog3Text} />

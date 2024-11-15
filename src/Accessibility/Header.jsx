@@ -1,5 +1,5 @@
 import React from "react";
-import "./accessinility.css";
+import "./styles/accessinility.css";
 
 export default function Header({ onClose }) {
   return (

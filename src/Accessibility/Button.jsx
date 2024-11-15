@@ -1,10 +1,19 @@
 import React from "react";
-import "./accessinility.css";
+import "./styles/accessinility.css";
 
-export default function Button() {
+export default function Button({ onReset }) {
+  const handleReset = () => {
+    localStorage.removeItem("contrastOption");
+    localStorage.removeItem("highlightLinks");
+
+    if (onReset) {
+      onReset();
+    }
+  };
+
   return (
     <div className="reset-btn">
-      <button>Reset All Settings</button>
+      <button onClick={handleReset}>Reset All Settings</button>
     </div>
   );
 }

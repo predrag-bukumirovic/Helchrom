@@ -369,7 +369,7 @@ const enTranslation = {
     blog: "blog",
     contact: "contact",
     terms: "Terms and Conditions",
-    cookies: 'Cookie Policy',
+    cookies: "Cookie Policy",
     departments: "Our divisions",
     food: "Food & bio",
     pharma: "Pharma",
@@ -837,7 +837,28 @@ const enTranslation = {
     title: "Blog",
     text:
       "What we love most about our job is the fact it impacts greatly the everyday lives of people worldwide. Even though engineering, chemicals, pharmaceuticals, and our other business areas might seem complex, in our Blog we wish to share our knowledge and expertise in a captivating manner and make it interesting for everyone.",
-
+    blog4: {
+      title: "VOLLEYBALL TEAM RODA",
+      text:
+        'The cadet female volleyball team "Roda" from Belgrade, Serbia, endorsed by Helmchron, has secured another victory, winning the gold medal. The team’s performance was marked by strong teamwork and passions.',
+      content: {
+        title: "VOLLEYBALL TEAM RODA",
+        text: `
+          We’re thrilled to announce that the cadet volleyball team "Roda" from Belgrade, Serbia, we proudly
+          endorse, has claimed yet another victory, bringing home the gold with an inspiring performance and team
+          play. Congratulations to these talented young ladies and all the team for their hard work, passion, and
+          motivation.<br/><br/>
+          At Helmchron, our For the Generations in Motion initiative is dedicated to promoting healthy lifestyles and
+          encouraging strong work ethics and ambition among kids and young people. Supporting teams like
+          "Roda" aligns with our commitment to support a healthier, brighter future for the coming generations.<br/><br/>
+          Stay connected with our For the Generations in Motion initiative and discover how we’re shaping stronger
+          communities. Together we can make a lasting impact! <br/><br/> 
+          Source: <a href="https://www.instagram.com/okrodabgd?
+          utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">https://www.instagram.com/okrodabgd?
+          utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==</a>
+        `
+      }
+    },
     blog3: {
       title: "IMPERATIV OF SUSTAINABILITY",
       text:

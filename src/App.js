@@ -16,6 +16,7 @@ const Volleyball = lazy(() => import("./pages/Volleyball"));
 const Diversity = lazy(() => import("./pages/Diversity"));
 const TeamTalk = lazy(() => import("./pages/TeamTalk"));
 const Sustainability = lazy(() => import("./pages/Sustainability"));
+const Roda = lazy(() => import("./pages/Roda"));
 const Home = lazy(() => import('./pages/Home'))
 const Career = lazy(() => import("./pages/Career"));
 const News = lazy(() => import("./pages/News"));
@@ -50,6 +51,11 @@ function App() {
   const [isVisible, setIsVisible] = useState(false);
   const [isLoaded, setIsLoaded] = useState(false);
 
+  // const [contrastOption, setContrastOption] = useState(() => {
+  //   const savedContrastOption = localStorage.getItem("contrastOption");
+  //   return savedContrastOption ? parseInt(savedContrastOption, 10) : 0; // Učitaj iz `localStorage` ili postavi na 0
+  // });
+
     useEffect(() => {
       setIsVisible(true);
     }, []);
@@ -61,6 +67,12 @@ function App() {
     const handleLoaded = () => {
       setIsLoaded(true); // Postavi stanje kada se učitavanje završi
     };
+
+    // const handleContrastChange = () => {
+    //   const newContrastOption = (contrastOption + 1) % 4;
+    //   setContrastOption(newContrastOption);
+    //   localStorage.setItem("contrastOption", newContrastOption); // Sačuvaj u `localStorage`
+    // };
 
   return <div className={`App ${isVisible ? "visible" : ""}`}>
     
@@ -77,6 +89,7 @@ function App() {
           <Route path="/blog/volleyball" element={<Volleyball />} />
           <Route path="/blog/diversity" element={<Diversity />} />
           <Route path="/blog/sustainability" element={<Sustainability />} />
+          <Route path="/blog/roda" element={<Roda />} />
           <Route path="/about-us/who-are-we" element={<WhoAreWe />} />
           <Route path="/about-us/our-team" element={<OurTeam />} />
           <Route path="/about-us/our-vision-and-mission" element={<OurVision />} />
@@ -106,7 +119,7 @@ function App() {
 
         <Cookies />
         <Footer />
-        {/* <ActionButton/> */}
+        {/* <ActionButton contrastOption={contrastOption} onContrastChange={handleContrastChange}/> */}
         <ScrollTop />
         </>
         ) : (
