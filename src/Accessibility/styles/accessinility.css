@@ -193,3 +193,122 @@ header span {
     font-weight: bold;
   }
 }
+
+/* Contrast */
+.no-contrast {
+  filter: none !important; /* Sprečava primenu bilo kakvih kontrastnih efekata */
+  background-color: initial !important;
+  color: initial !important;
+}
+
+.contrast-invert {
+  filter: invert(1) hue-rotate(180deg);
+  -webkit-filter: invert(100%);
+}
+
+body.contrast-invert {
+  background: #000;
+}
+
+.contrast-invert img {
+  filter: invert(1) hue-rotate(180deg); /* Sprečavanje dvostruke inverzije na slikama */
+}
+
+body.contrast-high {
+  background-color: #000000 !important; /* Crna pozadina za ceo body */
+  color: #ffff00 !important; /* Svetlo tirkizna boja za tekst */
+}
+
+.contrast-high a {
+  color: #ffff00 !important; /* Žuti linkovi */
+  text-decoration: underline; /* Naglašavanje linkova */
+}
+
+.contrast-high h1,
+.contrast-high h2,
+.contrast-high h3,
+.contrast-high h4,
+.contrast-high h5,
+.contrast-high h6 {
+  color: #ffff00 !important; /* Svetlo tirkizna boja za naslove */
+}
+
+.contrast-high p,
+.contrast-high center {
+  color: #00ffcc !important;
+}
+
+.contrast-high #wel {
+  color: #ffff00 !important;
+}
+
+.contrast-high button,
+.contrast-high .btn {
+  background-color: #222222; /* Tamno siva pozadina za dugmad */
+  border: 2px solid #ffff00; /* Žuti okvir za dugmad */
+  color: #ffff00; /* Žuti tekst za dugmad */
+}
+
+.contrast-high button:hover,
+.contrast-high .btn:hover {
+  background-color: #333333; /* Svetlije tamna nijansa na hover */
+}
+
+.contrast-high img {
+  filter: brightness(0.8) contrast(1.2); /* Prilagođavanje svetline i kontrasta za slike */
+}
+
+/* Stilovi za Light Mode */
+body.contrast-light {
+  background: #ffffff !important; /* Bela pozadina za ceo body */
+  color: #000000 !important; /* Crna boja za tekst */
+}
+
+.contrast-light a,
+.contrast-light span {
+  color: #007acc !important; /* Plavi linkovi */
+  text-decoration: underline; /* Opcionalno naglašavanje linkova */
+  background: transparent !important;
+}
+.contrast-light .text-banner {
+  color: #000 !important;
+}
+.contrast-light h1,
+.contrast-light h2,
+.contrast-light h3,
+.contrast-light h4,
+.contrast-light h5,
+.contrast-light h6,
+.contrast-light p {
+  color: #000 !important; /* Crna boja za naslove */
+}
+
+.contrast-light button,
+.contrast-light .btn,
+.contrast-light div {
+  background: #fff !important; /* Svetlo siva pozadina za dugmad */
+  color: #000 !important;
+}
+
+.contrast-light button:hover,
+.contrast-light .btn:hover {
+  background-color: #e0e0e0; /* Svetlija siva nijansa na hover */
+}
+
+/* Liks */
+a.highlighted-link {
+  background-color: #000 !important; /* Ili druga boja koja naglašava linkove */
+  color: yellow !important; /* Kontrastna boja za tekst */
+  text-decoration: underline !important; /* Opcionalno dodavanje podvlačenja */
+}
+
+a.highlighted-link p,
+a.highlighted-link h3 {
+  color: yellow !important;
+}
+
+/* Zoom */
+.zoomed {
+  transform: scale(var(--zoom-level, 1));
+  transform-origin: 0 0;
+}

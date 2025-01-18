@@ -38,7 +38,7 @@ export default function K2022() {
           <div className="box-img">
             {[mainImg1, mainImg2, mainImg3].map((img, index) =>
               <div key={index}>
-                <img src={img} alt="Main" />
+                <img loading="lazy" src={img} alt="Main" />
               </div>
             )}
           </div>
@@ -66,7 +66,7 @@ export default function K2022() {
                 />
               </div>
               <div className="post-img">
-                <img src={img1} alt="K2022 1" />
+                <img loading="lazy" src={img1} alt="K2022 1" />
               </div>
             </div>
             <div>
@@ -78,7 +78,7 @@ export default function K2022() {
             </div>
             <div className="post">
               <div className="post-img">
-                <img src={img2} alt="Digitalization" />
+                <img loading="lazy" src={img2} alt="Digitalization" />
               </div>
               <div className="post-text">
                 <div
@@ -97,7 +97,7 @@ export default function K2022() {
                 />
               </div>
               <div className="post-img">
-                <img src={img3} alt="Advanced Process Control" />
+                <img loading="lazy" src={img3} alt="Advanced Process Control" />
               </div>
             </div>
             <p

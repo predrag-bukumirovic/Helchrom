@@ -81,7 +81,7 @@ export default function OurVision() {
         <div className="box-img">
           {[mainImg, mainImg1, mainImg2].map((image, index) =>
             <div key={index}>
-              <img src={image} alt="Main" />
+              <img loading="lazy" src={image} alt="Main" />
             </div>
           )}
         </div>
@@ -99,7 +99,7 @@ export default function OurVision() {
           <TextReader texts={visionSubText} />
         </center>
         <div className={showModal ? "modal-img" : "show"} onClick={closeModal}>
-          <img src={showModal} alt="Modal Images" />
+          <img loading="lazy" src={showModal} alt="Modal Images" />
         </div>
         <div style={{ marginTop: 100 }} className="padding30">
           <h2 className="title" data-aos="fade-up">
@@ -116,6 +116,7 @@ export default function OurVision() {
                 style={{ position: "relative" }}
               >
                 <img
+                  loading="lazy"
                   src={hoveredIndex === index ? item.iconHover : item.icon}
                   alt={`icon${index + 1}`}
                 />
@@ -148,7 +149,7 @@ export default function OurVision() {
             <div className="container-main">
               <div className="col">
                 <div className="col-img" data-aos="fade-right">
-                  <img src={MVLevo} alt="Slika" />
+                  <img loading="lazy" src={MVLevo} alt="Slika" />
                 </div>
                 <div className="col-text" data-aos="fade-left">
                   <h3>
@@ -159,14 +160,18 @@ export default function OurVision() {
                       __html: t("vision.our_mission_vision.mission.text")
                     }}
                   />
-                  <a className="book-btn" href="/our-references">
+                  <a
+                    className="book-btn"
+                    href="/our-references"
+                    aria-label="Read more about sustainable fashion"
+                  >
                     {t("read_more")}
                   </a>
                 </div>
               </div>
               <div className="col">
                 <div className="col-img" data-aos="fade-left">
-                  <img src={MVDesno} alt="Slika" />
+                  <img loading="lazy" src={MVDesno} alt="Slika" />
                 </div>
                 <div className="col-text" data-aos="fade-right">
                   <h3>OUR VISION</h3>
@@ -175,7 +180,11 @@ export default function OurVision() {
                       __html: t("vision.our_mission_vision.vision_.text")
                     }}
                   />
-                  <a className="book-btn" href="/our-services">
+                  <a
+                    className="book-btn"
+                    href="/our-services"
+                    aria-label="Read more about sustainable fashion"
+                  >
                     {t("read_more")}
                   </a>
                 </div>
@@ -187,7 +196,7 @@ export default function OurVision() {
       <div className="testimonials container-main">
         <div className="slider-testi padding30">
           <div className="testi-item" data-aos="fade-up">
-            <img src={quotation} alt="quotation" />
+            <img loading="lazy" src={quotation} alt="quotation" />
 
             <div>
               <p style={{ marginTop: 30 }}>
@@ -199,7 +208,12 @@ export default function OurVision() {
               </div>
             </div>
           </div>
-          <img className="milos-quo" src={milosquo} alt="quotation" />
+          <img
+            loading="lazy"
+            className="milos-quo"
+            src={milosquo}
+            alt="quotation"
+          />
         </div>
       </div>
     </div>

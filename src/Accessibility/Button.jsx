@@ -1,14 +1,18 @@
 import React from "react";
 import "./styles/accessinility.css";
 
-export default function Button({ onReset }) {
+export default function Button({ options, setOptions }) {
   const handleReset = () => {
-    localStorage.removeItem("contrastOption");
-    localStorage.removeItem("highlightLinks");
-
-    if (onReset) {
-      onReset();
-    }
+    setOptions({
+      contrastOption: 0,
+      highlightLinks: false,
+      biggerText: false,
+      textSpacing: false,
+      hideImages: false,
+      cursor: false,
+      lineHeight: false,
+      textAlign: false
+    });
   };
 
   return (

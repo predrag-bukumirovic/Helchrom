@@ -88,7 +88,11 @@ export default function WhoIcons() {
       </div>
 
       <center style={{ marginTop: 50 }}>
-        <a className="book-btn" href="/contact">
+        <a
+          className="book-btn"
+          href="/contact"
+          aria-label="Read more about sustainable fashion"
+        >
           {t("read_more")}
         </a>
       </center>

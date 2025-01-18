@@ -103,12 +103,18 @@ export default function Navigator() {
                 href="/our-services"
                 className="book-btn"
                 style={{ background: "var(--dark-blue-color)" }}
+                aria-label="Read more about sustainable fashion"
               >
                 {t("read_more")}
               </a>
             </div>
 
-            <img loading="lazy" data-aos="fade-left" src={Overview} alt="" />
+            <img
+              loading="lazy"
+              data-aos="fade-left"
+              src={Overview}
+              alt="Overview"
+            />
           </div>
         </div>
 
@@ -127,7 +133,7 @@ export default function Navigator() {
         <div className="our-home container-main">
           <div className="services-icon container-main">
             <div data-aos="zoom-in">
-              <img loading="lazy" src={icon1} alt="" />
+              <img loading="lazy" src={icon1} alt="icon1" />
 
               <h3>Proactive Planning</h3>
               <p>
@@ -137,7 +143,7 @@ export default function Navigator() {
               </p>
             </div>
             <div data-aos="zoom-in">
-              <img loading="lazy" src={icon2} alt="" />
+              <img loading="lazy" src={icon2} alt="icon2" />
               <h3>Expert Guidance</h3>
 
               <p>
@@ -146,7 +152,7 @@ export default function Navigator() {
               </p>
             </div>
             <div data-aos="zoom-in">
-              <img loading="lazy" src={icon3} alt="" />
+              <img loading="lazy" src={icon3} alt="icon3" />
               <h3>Agile Execution</h3>
               <p>
                 Our team adapts effectively to changes and evolving project
@@ -155,7 +161,7 @@ export default function Navigator() {
               </p>
             </div>
             <div data-aos="zoom-in">
-              <img loading="lazy" src={icon4} alt="" />
+              <img loading="lazy" src={icon4} alt="icon4" />
               <h3>Cost and Schedule Management</h3>
               <p>
                 Resources are strategically allocated to ensure they directly
@@ -164,7 +170,7 @@ export default function Navigator() {
               </p>
             </div>
             <div data-aos="zoom-in">
-              <img loading="lazy" src={icon5} alt="" />
+              <img loading="lazy" src={icon5} alt="icon5" />
               <h3>Comprehensive Support</h3>
               <p>
                 Our end-to-end involvement and guidance through every phase of
@@ -227,12 +233,17 @@ export default function Navigator() {
               </ul>
             </div>
 
-            <img loading="lazy" data-aos="fade-left" src={Framework} alt="" />
+            <img
+              loading="lazy"
+              data-aos="fade-left"
+              src={Framework}
+              alt="Framework"
+            />
           </div>
         </div>
 
         <div className="guarantee padding30 container-main">
-          <img loading="lazy" data-aos="fade-right" src={end} alt="" />
+          <img loading="lazy" data-aos="fade-right" src={end} alt="end" />
           <div data-aos="fade-left">
             <span
               style={{
@@ -261,6 +272,7 @@ export default function Navigator() {
               style={{ background: "var(--dark-blue-color)" }}
               href="/our-services"
               className="book-btn"
+              aria-label="Read more about sustainable fashion"
             >
               {t("read_more")}
             </a>

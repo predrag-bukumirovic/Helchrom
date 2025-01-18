@@ -141,7 +141,7 @@ export default function OurTeam() {
             <div className="bg-member-img" />
             <div className="team-row">
               <div className="img-team" data-aos="zoom-in">
-                <img src={anja} alt="" />
+                <img loading="lazy" src={anja} alt="anja" />
               </div>
               <TextReader texts={anjaText} />
               <div data-aos="fade-left">
@@ -206,7 +206,7 @@ export default function OurTeam() {
 
           <div className="icon-values">
             <div data-aos="zoom-in">
-              <img src={icon1} alt="icon1" />
+              <img loading="lazy" src={icon1} alt="icon1" />
               <p>
                 <b>
                   {t("team.values_icon.icon1.title")}
@@ -217,7 +217,7 @@ export default function OurTeam() {
               </p>
             </div>
             <div data-aos="zoom-in">
-              <img src={icon2} alt="icon2" />
+              <img loading="lazy" src={icon2} alt="icon2" />
               <p>
                 <b>
                   {t("team.values_icon.icon2.title")}
@@ -228,7 +228,7 @@ export default function OurTeam() {
               </p>
             </div>
             <div data-aos="zoom-in">
-              <img src={icon4} alt="icon4" />
+              <img loading="lazy" src={icon4} alt="icon4" />
               <p>
                 <b>
                   {t("team.values_icon.icon3.title")}
@@ -242,7 +242,7 @@ export default function OurTeam() {
               data-aos="zoom-in"
               style={{ background: "var(--light-orange-color)" }}
             >
-              <img src={icon3} alt="icon3" />
+              <img loading="lazy" src={icon3} alt="icon3" />
               <p>
                 <b>
                   {t("team.values_icon.icon4.title")}
@@ -253,7 +253,7 @@ export default function OurTeam() {
               </p>
             </div>
             <div data-aos="zoom-in">
-              <img src={icon5} alt="icon5" />
+              <img loading="lazy" src={icon5} alt="icon5" />
               <p>
                 <b>
                   {t("team.values_icon.icon5.title")}
@@ -299,7 +299,7 @@ export default function OurTeam() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src={Anti} alt="" />
+                <img loading="lazy" src={Anti} alt="Anti" />
               </a>
               <div>
                 <a
@@ -319,7 +319,7 @@ export default function OurTeam() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src={Code} alt="" />
+                <img loading="lazy" src={Code} alt="Code" />
               </a>
               <div>
                 <a
@@ -338,7 +338,7 @@ export default function OurTeam() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src={Communication} alt="" />
+                <img loading="lazy" src={Communication} alt="Communication" />
               </a>
               <div>
                 <a

@@ -19,7 +19,7 @@ const Slider = () => {
       link: "/initiatives/helmchrone"
     },
     {
-      title: `HELMCHRON <br/> <span class='blue'>N<img src="${navigatorArrow}"/>VIGATOR<span/>`,
+      title: `HELMCHRON <br/> <span class='blue'>N<img src="${navigatorArrow}" alt="navigatorArrow"/>VIGATOR<span/>`,
       content:
         "Designed to provide comprehensive consulting and support throughout the entire plant design lifecycle, Navigator delivers tailored recommendations, streamlines processes, and optimizes resources.  <br/><br/><br/> <br/> Ensure your plant design stays on track with Helmchron Navigator.",
       link: "/initiatives/navigator"
@@ -149,7 +149,12 @@ const Slider = () => {
 
                   <p dangerouslySetInnerHTML={{ __html: item.content }} />
 
-                  <a href={item.link}>Read More</a>
+                  <a
+                    href={item.link}
+                    aria-label="Read more about sustainable fashion"
+                  >
+                    Read More
+                  </a>
                 </div>
               )}
             </div>

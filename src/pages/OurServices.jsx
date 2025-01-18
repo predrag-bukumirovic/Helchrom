@@ -187,13 +187,13 @@ export default function OurCore() {
             />
           </div>
           <div data-aos="fade-left" className="img-design img-row">
-            <img loading="lazy" src={Design} alt="" />
+            <img loading="lazy" src={Design} alt="Design" />
           </div>
         </div>
 
         <div style={{ paddingTop: 0 }} className="container-main services-row">
           <div data-aos="fade-right" className="img-design detaild img-row">
-            <img loading="lazy" src={Detailed} alt="" />
+            <img loading="lazy" src={Detailed} alt="Detailed" />
           </div>
 
           <div className="text" data-aos="fade-left">
@@ -322,6 +322,7 @@ export default function OurCore() {
           style={{ background: "var(--dark-blue-color)" }}
           className="book-btn"
           href="/contact"
+          aria-label="Read more about sustainable fashion"
         >
           {t("read_more")}
         </a>

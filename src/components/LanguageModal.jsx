@@ -53,7 +53,7 @@ const LanguageModal = ({ isOpen, onRequestClose, onSelectLanguage }) => {
           padding: "20px",
           background: "white",
           borderRadius: "30px",
-          width: isMobile ? "100%" : "40%"
+          width: isMobile ? "100%" : ""
         },
         overlay: { backgroundColor: "rgba(0, 0, 0, 0.75)" }
       }}
@@ -70,27 +70,27 @@ const LanguageModal = ({ isOpen, onRequestClose, onSelectLanguage }) => {
       <ul className="change-lng-desktop">
         <li onClick={() => handleLanguageChange("en")}>
           <div />
-          <img src={en} alt="English" />
+          <img src={en} alt="English" loading="lazy" />
           <p>English</p>
         </li>
         <li>
-          <img src={de} alt="Germany" />
+          <img src={de} alt="Germany" loading="lazy" />
           <p>Coming soon</p>
         </li>
         <li>
-          <img src={ru} alt="" />
+          <img src={ru} alt="Coming soon" loading="lazy" />
           <p>Coming soon</p>
         </li>
         <li>
-          <img src={sp} alt="" />
+          <img src={sp} alt="Coming soon" loading="lazy" />
           <p>Coming soon</p>
         </li>
         <li>
-          <img src={it} alt="" />
+          <img src={it} alt="Coming soon" loading="lazy" />
           <p>Coming soon</p>
         </li>
         <li>
-          <img src={fr} alt="" />
+          <img src={fr} alt="Coming soon" loading="lazy" />
           <p>Coming soon</p>
         </li>
       </ul>

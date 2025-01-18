@@ -95,7 +95,7 @@ export default function OurValues() {
           <div style={{ background: "var(--light-blue-color)" }}>
             <div className="row-img-text row1 container-main">
               <div className="row-img" data-aos="fade-right">
-                <img src={Integrity} alt="" />
+                <img loading="lazy" src={Integrity} alt="Integrity" />
                 <div className="rotatingText">
                   <div className="rotatingText-adjective">
                     {t("our_way.integrity.title")}
@@ -114,7 +114,7 @@ export default function OurValues() {
 
           <div className="row-img-text container-main row2">
             <div className="row-img" data-aos="fade-left">
-              <img src={Committment} alt="" />
+              <img loading="lazy" src={Committment} alt="Committment" />
               <div className="rotatingText">
                 <div className="rotatingText-adjective">
                   {t("our_way.commitment.title")}
@@ -130,7 +130,7 @@ export default function OurValues() {
           <div style={{ background: "var(--light-blue-color)" }}>
             <div className="row-img-text row3 container-main">
               <div className="row-img" data-aos="fade-right">
-                <img src={Agility} alt="" />
+                <img loading="lazy" src={Agility} alt="Agility" />
                 <div className="rotatingText">
                   <div className="rotatingText-adjective">
                     {t("our_way.agility.title")}
@@ -146,7 +146,7 @@ export default function OurValues() {
           </div>
           <div className="row-img-text container-main row4">
             <div className="row-img" data-aos="fade-left">
-              <img src={Diversity} alt="" />
+              <img loading="lazy" src={Diversity} alt="Diversity" />
               <div>
                 <div className="rotatingText-adjective">
                   {t("our_way.diversity.title")}
@@ -162,7 +162,7 @@ export default function OurValues() {
           <div style={{ background: "var(--light-blue-color)" }}>
             <div className="row-img-text row5 container-main">
               <div className="row-img" data-aos="fade-right">
-                <img src={Courage} alt="" />
+                <img loading="lazy" src={Courage} alt="Courage" />
                 <div className="rotatingText">
                   <div className="rotatingText-adjective">
                     {t("our_way.courage.title")}
@@ -212,22 +212,25 @@ export default function OurValues() {
 
             <div className="motions">
               <img
+                loading="lazy"
                 data-aos="fade-right"
                 className="left-img"
                 src={levaSlika}
-                alt=""
+                alt="levaSlika"
               />
               <img
+                loading="lazy"
                 data-aos="fade-up"
                 className="center-img"
                 src={motions}
-                alt=""
+                alt="motions"
               />
               <img
+                loading="lazy"
                 data-aos="fade-left"
                 className="right-img"
                 src={desnaSlika}
-                alt=""
+                alt="desnaSlika"
               />
             </div>
           </div>

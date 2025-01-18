@@ -47,12 +47,12 @@ export default function StoryLineProbe() {
           <div className="line-ver" />
           <div className="img">
             <span>2010</span>
-            <img loading="lazy" src={Story2010} alt="" />
+            <img loading="lazy" src={Story2010} alt="Story2010" />
           </div>
         </div>
         <div className="story-line-item">
           <div className="img">
-            <img loading="lazy" src={Story2013} alt="" />
+            <img loading="lazy" src={Story2013} alt="Story2013" />
             <span>2013</span>
           </div>
           <div className="line-ver" />
@@ -75,12 +75,12 @@ export default function StoryLineProbe() {
           <div className="line-ver" />
           <div className="img">
             <span>2015</span>
-            <img loading="lazy" src={Story2015} alt="" />
+            <img loading="lazy" src={Story2015} alt="Story2015" />
           </div>
         </div>
         <div className="story-line-item">
           <div className="img">
-            <img loading="lazy" src={Story2016} alt="" />
+            <img loading="lazy" src={Story2016} alt="Story2016" />
             <span>2016</span>
           </div>
           <div className="line-ver" />
@@ -103,12 +103,12 @@ export default function StoryLineProbe() {
           <div className="line-ver" />
           <div className="img">
             <span>2020</span>
-            <img loading="lazy" src={Story2020} alt="" />
+            <img loading="lazy" src={Story2020} alt="Story2020" />
           </div>
         </div>
         <div className="story-line-item">
           <div className="img">
-            <img loading="lazy" src={Story2023} alt="" />
+            <img loading="lazy" src={Story2023} alt="Story2023" />
             <span>2023</span>
           </div>
           <div className="line-ver" />

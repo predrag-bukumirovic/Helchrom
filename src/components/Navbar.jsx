@@ -72,7 +72,11 @@ export default function Navbar({ className }) {
         <div className="logo">
           <a href="/">
             <img style={{ marginRight: 5 }} src={logo} alt="Helmchron Logo" />
-            <img className="logo-connects" src={ChemistryConnects} alt="" />
+            <img
+              className="logo-connects"
+              src={ChemistryConnects}
+              alt="Chemistry Connects"
+            />
           </a>
         </div>
         <div className="menu">
@@ -231,7 +235,7 @@ export default function Navbar({ className }) {
                 style={{
                   cursor: "pointer",
                   padding: "0 20px",
-                  color: "#fff",
+                  // color: "#fff",
                   fontWeight: "bold",
                   fontSize: "13px",
                   width: "40px",

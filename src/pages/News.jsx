@@ -57,7 +57,7 @@ export default function News() {
         <div className="box-img">
           {[mainImg, mainImg1, mainImg2].map((img, index) =>
             <div key={index}>
-              <img src={img} alt="Main" />
+              <img loading="lazy" src={img} alt="Main" />
             </div>
           )}
         </div>
@@ -86,12 +86,15 @@ export default function News() {
               <p>
                 {t("news.posts.post1.text")}
               </p>
-              <a href="/news/team-talk">
+              <a
+                href="/news/team-talk"
+                aria-label="Read more about sustainable fashion"
+              >
                 {t("read_more")}
               </a>
             </div>
             <div>
-              <img src={Talk} alt="News" />
+              <img loading="lazy" src={Talk} alt="News" />
             </div>
           </div>
           <div className="line-news" />
@@ -110,12 +113,15 @@ export default function News() {
               <p>
                 {t("news.posts.post2.text")}
               </p>
-              <a href="/news/k2022">
+              <a
+                href="/news/k2022"
+                aria-label="Read more about sustainable fashion"
+              >
                 {t("read_more")}
               </a>
             </div>
             <div>
-              <img src={Dusseldorf} alt="News" />
+              <img loading="lazy" src={Dusseldorf} alt="News" />
             </div>
           </div>
           <div className="line-news" />
@@ -134,12 +140,15 @@ export default function News() {
               <p>
                 {t("news.posts.post3.text")}
               </p>
-              <a href="/news/achema">
+              <a
+                href="/news/achema"
+                aria-label="Read more about sustainable fashion"
+              >
                 {t("read_more")}
               </a>
             </div>
             <div>
-              <img src={Frankfurt} alt="News" />
+              <img loading="lazy" src={Frankfurt} alt="News" />
             </div>
           </div>
         </div>

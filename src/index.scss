@@ -267,6 +267,13 @@ footer {
   margin-bottom: 0;
 }
 
+@media (max-width: 910px) {
+  .change-lng-desktop {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+}
+
 .close-btn-lng {
   background: transparent;
   border: none;

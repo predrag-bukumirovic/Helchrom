@@ -117,6 +117,7 @@ const WhoAreWe = () => {
                   style={{ float: "right" }}
                   className="book-btn"
                   href="/our-services"
+                  aria-label="Read more about sustainable fashion"
                 >
                   {t("read_more")}
                 </a>
@@ -207,7 +208,11 @@ const WhoAreWe = () => {
 
           <center className="container-main">
             <p>Explore our competences.</p>
-            <a className="book-btn" href="/our-services">
+            <a
+              className="book-btn"
+              href="/our-services"
+              aria-label="Read more about sustainable fashion"
+            >
               {t("read_more")}
             </a>
           </center>
@@ -231,7 +236,11 @@ const WhoAreWe = () => {
           <p style={{ marginBottom: 50 }}>
             Learn more about our vision and mission.
           </p>
-          <a className="book-btn" href="/">
+          <a
+            className="book-btn"
+            href="/"
+            aria-label="Read more about sustainable fashion"
+          >
             {t("read_more")}
           </a>
         </div>
@@ -253,7 +262,11 @@ const WhoAreWe = () => {
             global scale.
           </p>
           <p style={{ marginBottom: 50 }}>Discover our way of work.</p>
-          <a className="book-btn" href="/">
+          <a
+            className="book-btn"
+            href="/"
+            aria-label="Read more about sustainable fashion"
+          >
             {t("read_more")}
           </a>
         </div>
@@ -294,6 +307,7 @@ const WhoAreWe = () => {
               style={{ cursor: "pointer" }}
               className="book-btn"
               onClick={openModal}
+              aria-label="Read more about sustainable fashion"
             >
               {t("read_more")}
             </span>

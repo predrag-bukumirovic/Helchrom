@@ -72,7 +72,7 @@ export default function Volleyball() {
           />
 
           <div style={{ width: "60%" }} className="post-img">
-            <img src={OdbojkaSlikaG} alt="Odbojka" />
+            <img loading="lazy" src={OdbojkaSlikaG} alt="Odbojka" />
           </div>
         </div>
 
@@ -82,7 +82,7 @@ export default function Volleyball() {
 
         <div className="post">
           <div className="post-img">
-            <img src={OdbojkaSlikaD} alt="Odbojka" />
+            <img loading="lazy" src={OdbojkaSlikaD} alt="Odbojka" />
           </div>
           <div
             dangerouslySetInnerHTML={{ __html: t("blog.blog1.content.text3") }}

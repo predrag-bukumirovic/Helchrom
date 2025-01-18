@@ -33,7 +33,7 @@ export default function Energy() {
         <div className="box-img">
           {mainImages.map((image, index) =>
             <div key={index}>
-              <img src={image} alt="Main" />
+              <img loading="lazy" src={image} alt="Main" />
             </div>
           )}
         </div>
@@ -69,7 +69,12 @@ export default function Energy() {
               {t("energy.text1.text1")}
             </p>
           </div>
-          <img data-aos="fade-left" src={EnergyImg1} alt="" />
+          <img
+            loading="lazy"
+            data-aos="fade-left"
+            src={EnergyImg1}
+            alt="EnergyImg1"
+          />
         </div>
 
         <div>
@@ -77,7 +82,12 @@ export default function Energy() {
             className="row"
             style={{ background: "var(--light-blue-color)", marginTop: 50 }}
           >
-            <img data-aos="fade-right" src={EnergyImg2} alt="" />
+            <img
+              loading="lazy"
+              data-aos="fade-right"
+              src={EnergyImg2}
+              alt="EnergyImg2"
+            />
             <div data-aos="fade-left">
               <span>
                 <b>
@@ -117,6 +127,7 @@ export default function Energy() {
               style={{ background: "var(--dark-blue-color)" }}
               className="book-btn"
               href="/our-references"
+              aria-label="Read more about sustainable fashion"
             >
               {t("read_more")}
             </a>

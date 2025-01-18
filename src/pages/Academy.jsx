@@ -141,6 +141,7 @@ export default function Academy() {
                 style={{ background: "var(--dark-blue-color)" }}
                 className="book-btn"
                 href="/about-us/our-team"
+                aria-label="Read more about sustainable fashion"
               >
                 {t("read_more")}
               </a>
@@ -191,6 +192,7 @@ export default function Academy() {
             style={{ background: "var(--dark-blue-color)" }}
             className="book-btn"
             href="/initiatives/innolab"
+            aria-label="Read more about sustainable fashion"
           >
             {t("read_more")}
           </a>

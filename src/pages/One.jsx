@@ -228,6 +228,7 @@ const One = () => {
               style={{ background: "var(--dark-blue-color)" }}
               className="book-btn"
               href="/contact"
+              aria-label="Read more about sustainable fashion"
             >
               {t("read_more")}
             </a>
@@ -320,6 +321,7 @@ const One = () => {
             style={{ background: "var(--dark-blue-color)" }}
             className="book-btn"
             href="/initiatives/navigator"
+            aria-label="Read more about sustainable fashion"
           >
             {t("read_more")}
           </a>

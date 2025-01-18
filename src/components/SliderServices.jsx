@@ -85,7 +85,11 @@ const SliderServices = () => {
             with manufacturers worldwide to bring their plant visions to life,
             prioritizing efficiency and the highest standards of quality.
           </p>
-          <a className="book-btn" href="/our-services">
+          <a
+            className="book-btn"
+            href="/our-services"
+            aria-label="Read more about sustainable fashion"
+          >
             Read More
           </a>
         </div>

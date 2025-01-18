@@ -33,7 +33,7 @@ export default function Food() {
         <div className="box-img">
           {mainImages.map((image, index) =>
             <div key={index}>
-              <img src={image} alt="Main" />
+              <img loading="lazy" src={image} alt="Main" />
             </div>
           )}
         </div>
@@ -79,7 +79,7 @@ export default function Food() {
               </p>
             </div>
 
-            <img data-aos="fade-left" src={Food1} alt="" />
+            <img loading="lazy" data-aos="fade-left" src={Food1} alt="Food1" />
           </div>
 
           <center style={{ margin: "20px 0" }} data-aos="fade-up">
@@ -97,7 +97,7 @@ export default function Food() {
             className="row"
             style={{ background: "var(--light-blue-color)" }}
           >
-            <img data-aos="fade-right" src={Food2} alt="" />
+            <img loading="lazy" data-aos="fade-right" src={Food2} alt="Food2" />
             <div data-aos="fade-left">
               <span>
                 <b>
@@ -128,6 +128,7 @@ export default function Food() {
               style={{ background: "var(--dark-blue-color)" }}
               className="book-btn"
               href="/our-references"
+              aria-label="Read more about sustainable fashion"
             >
               {t("read_more")}
             </a>

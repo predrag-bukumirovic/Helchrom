@@ -1,9 +1,0 @@
-.highlighted-link {
-  background: yellow !important; /* Ili druga boja koja naglašava linkove */
-  color: black !important; /* Kontrastna boja za tekst */
-  text-decoration: underline !important; /* Opcionalno dodavanje podvlačenja */
-}
-
-button.active-highlight {
-  border: 2px solid yellow !important; /* Obeležavanje aktivnog dugmeta */
-}

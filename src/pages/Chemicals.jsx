@@ -32,7 +32,7 @@ export default function Chemicals() {
         <div className="box-img">
           {mainImages.map((image, index) =>
             <div key={index}>
-              <img src={image} alt="Main" />
+              <img src={image} alt="Main" loading="lazy" />
             </div>
           )}
         </div>
@@ -63,7 +63,12 @@ export default function Chemicals() {
             className="row"
             style={{ background: "var(--light-blue-color)" }}
           >
-            <img data-aos="fade-right" src={ChemicalsImg} alt="" />
+            <img
+              loading="lazy"
+              data-aos="fade-right"
+              src={ChemicalsImg}
+              alt="ChemicalsImg"
+            />
             <div data-aos="fade-left">
               <span>
                 <b>
@@ -115,6 +120,7 @@ export default function Chemicals() {
               style={{ background: "var(--dark-blue-color)" }}
               className="book-btn"
               href="/our-references"
+              aria-label="Read more about sustainable fashion"
             >
               {t("read_more")}
             </a>

@@ -80,13 +80,25 @@ export default function Career(i) {
           </CCarousel>
           <div className="box-img">
             <div>
-              <img src={mainImg} alt="Helmchron Career - Slide 1" />
+              <img
+                loading="lazy"
+                src={mainImg}
+                alt="Helmchron Career - Slide 1"
+              />
             </div>
             <div>
-              <img src={mainImg1} alt="Helmchron Career - Slide 2" />
+              <img
+                loading="lazy"
+                src={mainImg1}
+                alt="Helmchron Career - Slide 2"
+              />
             </div>
             <div>
-              <img src={mainImg2} alt="Helmchron Career - Slide 3" />
+              <img
+                loading="lazy"
+                src={mainImg2}
+                alt="Helmchron Career - Slide 3"
+              />
             </div>
           </div>
         </div>
@@ -175,7 +187,7 @@ export default function Career(i) {
           </div>
 
           <div className="career-img">
-            <img src={accorImg} alt="" />
+            <img src={accorImg} alt="accorImg" loading="lazy" />
           </div>
         </div>
       </div>
@@ -193,6 +205,7 @@ export default function Career(i) {
               rel="noreferrer"
             >
               <img
+                loading="lazy"
                 className="img-team"
                 src={icon1}
                 alt="Miloš Ivošević, PhD - CEO, Mechanical engineer"
@@ -222,6 +235,7 @@ export default function Career(i) {
               rel="noreferrer"
             >
               <img
+                loading="lazy"
                 className="img-team"
                 src={icon2}
                 alt="Anja Anđelković, MSc - Projects Lead, Mechanical engineer"

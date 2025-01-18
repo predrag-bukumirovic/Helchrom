@@ -192,7 +192,11 @@ const Competences = () => {
           {currentIndex + 1}/{images.length}
         </center>
         <center style={{ marginTop: 30 }}>
-          <a className="book-btn" href="/our-services">
+          <a
+            className="book-btn"
+            href="/our-services"
+            aria-label="Read more about sustainable fashion"
+          >
             {t("read_more")}
           </a>
         </center>

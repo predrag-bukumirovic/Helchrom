@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import "./styles/accessinility.css";
 
 import { IoMdContrast } from "react-icons/io";
@@ -13,15 +13,12 @@ import invert from "./img/1.png";
 import dark from "./img/2.png";
 import light from "./img/3.png";
 
-export default function Nav({ contrastOption, setContrastOption }) {
-  const [highlightLinks, setHighlightLinks] = useState(() => {
-    const savedHighlightLinks = localStorage.getItem("highlightLinks");
-    return savedHighlightLinks ? JSON.parse(savedHighlightLinks) : false;
-  });
+export default function Nav({ options, setOptions }) {
+  const { contrastOption, highlightLinks } = options;
 
   useEffect(
     () => {
-      localStorage.setItem("contrastOption", contrastOption);
+      // localStorage.setItem("contrastOption", options.contrastOption);
       const body = document.body;
       const html = document.documentElement;
 
@@ -36,7 +33,7 @@ export default function Nav({ contrastOption, setContrastOption }) {
         "contrast-light"
       );
 
-      switch (contrastOption) {
+      switch (options.contrastOption) {
         case 1:
           html.classList.add("contrast-invert");
           break;
@@ -50,51 +47,59 @@ export default function Nav({ contrastOption, setContrastOption }) {
           break;
       }
     },
-    [contrastOption]
+    [options.contrastOption]
   );
 
   useEffect(
     () => {
-      const links = document.querySelectorAll("a");
-      if (highlightLinks) {
-        links.forEach(link => link.classList.add("highlighted-link"));
-      } else {
-        links.forEach(link => link.classList.remove("highlighted-link"));
-      }
       localStorage.setItem("highlightLinks", JSON.stringify(highlightLinks));
     },
     [highlightLinks]
   );
 
+  useEffect(
+    () => {
+      localStorage.setItem("contrastOption", JSON.stringify(contrastOption));
+    },
+    [contrastOption]
+  );
+
+  useEffect(
+    () => {
+      const links = document.querySelectorAll("a"); // Selektuj sve linkove
+      links.forEach(link => {
+        if (highlightLinks) {
+          link.classList.add("highlighted-link"); // Dodaj klasu ako je opcija aktivna
+        } else {
+          link.classList.remove("highlighted-link"); // Ukloni klasu ako je deaktivirana
+        }
+      });
+    },
+    [highlightLinks]
+  );
+
   const handleOptionClick = optionId => {
-    switch (optionId) {
-      case "contrast":
-        setContrastOption(prev => (prev + 1) % 4);
-        break;
-      case "highlight-links":
-        setHighlightLinks(prev => !prev);
-        break;
-      case "bigger-text":
-        // Dodajte logiku za Bigger Text
-        break;
-      case "text-spacing":
-        // Dodajte logiku za Text Spacing
-        break;
-      case "hide-images":
-        // Dodajte logiku za Hide Images
-        break;
-      case "cursor":
-        // Dodajte logiku za Cursor
-        break;
-      case "line-height":
-        // Dodajte logiku za Line Height
-        break;
-      case "text-align":
-        // Dodajte logiku za Text Align
-        break;
-      default:
-        break;
-    }
+    setOptions(prevOptions => {
+      switch (optionId) {
+        case "contrast":
+          return {
+            ...prevOptions,
+            contrastOption: (prevOptions.contrastOption + 1) % 4
+          };
+        case "highlight-links":
+          return {
+            ...prevOptions,
+            highlightLinks: !prevOptions.highlightLinks
+          };
+        case "zoom":
+          return {
+            ...prevOptions,
+            zoomLevel: Math.min(prevOptions.zoomLevel + 0.25, 2)
+          };
+        default:
+          return prevOptions;
+      }
+    });
   };
 
   const navOptions = [
@@ -102,16 +107,25 @@ export default function Nav({ contrastOption, setContrastOption }) {
       id: "contrast",
       label: () => getContrastText(),
       icon: () => getContrastIcon(),
-      isActive: contrastOption > 0
+      isActive: options.contrastOption > 0
     },
     {
       id: "highlight-links",
       label: "Highlight Links",
       icon: <IoLinkOutline />,
-      isActive: highlightLinks
+      isActive: options.highlightLinks
     },
-    { id: "bigger-text", label: "Bigger Text", icon: <TbTextSize /> },
-    { id: "text-spacing", label: "Text Spacing", icon: <RiTextSpacing /> },
+    {
+      id: "zoom",
+      label: () => `Zoom`,
+      icon: <TbTextSize />
+    },
+    {
+      id: "text-spacing",
+      label: "Text Spacing",
+      icon: <RiTextSpacing />,
+      isActive: options.zoomLevel > 1
+    },
     { id: "hide-images", label: "Hide Images", icon: <LuImageOff /> },
     { id: "cursor", label: "Cursor", icon: <RxCursorArrow /> },
     { id: "line-height", label: "Line Height", icon: <RxLineHeight /> },
@@ -119,20 +133,26 @@ export default function Nav({ contrastOption, setContrastOption }) {
   ];
 
   const getContrastIcon = () => {
-    switch (contrastOption) {
+    switch (options.contrastOption) {
       case 1:
-        return <img style={{ width: 40 }} src={invert} alt="Invert" />;
+        return (
+          <img style={{ width: 40 }} src={invert} alt="Invert" loading="lazy" />
+        );
       case 2:
-        return <img style={{ width: 40 }} src={dark} alt="Dark" />;
+        return (
+          <img style={{ width: 40 }} src={dark} alt="Dark" loading="lazy" />
+        );
       case 3:
-        return <img style={{ width: 40 }} src={light} alt="Light" />;
+        return (
+          <img style={{ width: 40 }} src={light} alt="Light" loading="lazy" />
+        );
       default:
         return <IoMdContrast />;
     }
   };
 
   const getContrastText = () => {
-    switch (contrastOption) {
+    switch (options.contrastOption) {
       case 1:
         return "Invert Colors";
       case 2:

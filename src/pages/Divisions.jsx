@@ -181,7 +181,11 @@ export default function Division() {
               <p style={{ marginBottom: 30 }}>
                 {image.text}
               </p>
-              <a className="book-btn" href={image.link}>
+              <a
+                className="book-btn"
+                href={image.link}
+                aria-label="Read more about sustainable fashion"
+              >
                 {t("read_more")}
               </a>
             </div>

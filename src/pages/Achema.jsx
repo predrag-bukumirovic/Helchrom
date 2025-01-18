@@ -35,13 +35,13 @@ export default function Achema() {
           </CCarousel>
           <div className="box-img">
             <div>
-              <img src={mainImg} alt="Main" />
+              <img src={mainImg} alt="Main" loading="lazy" />
             </div>
             <div>
-              <img src={mainImg1} alt="Main" />
+              <img src={mainImg1} alt="Main" loading="lazy" />
             </div>
             <div>
-              <img src={mainImg2} alt="Main" />
+              <img src={mainImg2} alt="Main" loading="lazy" />
             </div>
           </div>
         </div>

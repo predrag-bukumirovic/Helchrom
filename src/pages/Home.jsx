@@ -115,7 +115,11 @@ export default function Home() {
             <p>
               {t("home.banners.banner1.text")}
             </p>
-            <a className="book-btn" href="/about-us/who-are-we">
+            <a
+              className="book-btn"
+              href="/about-us/who-are-we"
+              aria-label="Read more about sustainable fashion"
+            >
               {t("read_more")}
             </a>
           </div>
@@ -151,7 +155,11 @@ export default function Home() {
             <p>
               {t("home.banners.banner2.text")}
             </p>
-            <a className="book-btn" href="/our-services">
+            <a
+              className="book-btn"
+              href="/our-services"
+              aria-label="Read more about sustainable fashion"
+            >
               {t("read_more")}
             </a>
           </div>
@@ -187,7 +195,11 @@ export default function Home() {
             <p>
               {t("home.banners.banner3.text")}
             </p>
-            <a className="book-btn" href="/our-references">
+            <a
+              className="book-btn"
+              href="/our-references"
+              aria-label="Read more about sustainable fashion"
+            >
               {t("read_more")}
             </a>
           </div>
@@ -221,7 +233,11 @@ export default function Home() {
             <p>
               {t("home.banners.banner4.text")}
             </p>
-            <a className="book-btn" href="/divisions">
+            <a
+              className="book-btn"
+              href="/divisions"
+              aria-label="Read more about sustainable fashion"
+            >
               {t("read_more")}
             </a>
           </div>
@@ -261,7 +277,10 @@ export default function Home() {
           <p dangerouslySetInnerHTML={{ __html: t("home.wel_text") }} />
         </center>
 
-        <a href="/about-us/our-vision-and-mission">
+        <a
+          href="/about-us/our-vision-and-mission"
+          aria-label="Read more about sustainable fashion"
+        >
           {t("read_more")}
         </a>
       </div>
@@ -283,7 +302,11 @@ export default function Home() {
         <p style={{ marginBottom: 30 }}>
           {t("home.after")}
         </p>
-        <a className="book-btn" href="/our-services">
+        <a
+          className="book-btn"
+          href="/our-services"
+          aria-label="Read more about sustainable fashion"
+        >
           {t("read_more")}
         </a>
       </center>
@@ -359,7 +382,10 @@ export default function Home() {
           </div>
 
           <center>
-            <a href="/about-us/who-are-we">
+            <a
+              href="/about-us/who-are-we"
+              aria-label="Read more about sustainable fashion"
+            >
               {t("read_more")}
             </a>
           </center>

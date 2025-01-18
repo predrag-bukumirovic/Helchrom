@@ -35,7 +35,7 @@ export default function Electronics() {
         <div className="box-img">
           {mainImages.map((image, index) =>
             <div key={index}>
-              <img src={image} alt="Main" />
+              <img src={image} alt="Main" loading="lazy" />
             </div>
           )}
         </div>
@@ -71,7 +71,7 @@ export default function Electronics() {
             </div>
           </div>
           <div data-aos="fade-left" className="img">
-            <img src={imgRow} alt="Slika" />
+            <img src={imgRow} alt="Slika" loading="lazy" />
           </div>
         </div>
 
@@ -84,11 +84,16 @@ export default function Electronics() {
         </span>
         <div className="future">
           <div data-aos="fade-right" style={{ flex: 2 }}>
-            <img src={graph} alt="Graph" />
+            <img src={graph} alt="Graph" loading="lazy" />
           </div>
           <div data-aos="fade-up" className="icon-graph">
-            <img style={{ marginBottom: 10 }} src={market} alt="Market" />
-            <img src={cagr} alt="Cagr" />
+            <img
+              loading="lazy"
+              style={{ marginBottom: 10 }}
+              src={market}
+              alt="Market"
+            />
+            <img loading="lazy" src={cagr} alt="Cagr" />
           </div>
           <div data-aos="fade-left" className="text">
             <p>
@@ -118,6 +123,7 @@ export default function Electronics() {
             style={{ background: "var(--dark-blue-color)" }}
             className="book-btn"
             href="/our-references"
+            aria-label="Read more about sustainable fashion"
           >
             {t("read_more")}
           </a>

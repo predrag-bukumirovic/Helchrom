@@ -71,11 +71,11 @@ export default function Oil() {
               </p>
             </div>
 
-            <img data-aos="fade-left" src={Oil1} alt="" />
+            <img data-aos="fade-left" src={Oil1} alt="Oil1" />
           </div>
 
           <div className="row">
-            <img data-aos="fade-right" src={Oil2} alt="" />
+            <img data-aos="fade-right" src={Oil2} alt="Oil2" />
             <div data-aos="fade-left">
               <span>
                 <b>
@@ -106,6 +106,7 @@ export default function Oil() {
               style={{ background: "var(--dark-blue-color)" }}
               className="book-btn"
               href="/our-references"
+              aria-label="Read more about sustainable fashion"
             >
               {t("read_more")}
             </a>

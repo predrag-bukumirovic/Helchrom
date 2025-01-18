@@ -837,6 +837,109 @@ const enTranslation = {
     title: "Blog",
     text:
       "What we love most about our job is the fact it impacts greatly the everyday lives of people worldwide. Even though engineering, chemicals, pharmaceuticals, and our other business areas might seem complex, in our Blog we wish to share our knowledge and expertise in a captivating manner and make it interesting for everyone.",
+    blog6: {
+      title: "Insulin: A Manufacturing Evolution",
+      text:
+        "In the 1920s, treating diabetes required the sacrifice of over 50 animals just to supply enough insulin for the yearly treatment of a single patient. From this labor-intensive process to today’s cutting-edge biotechnology, insulin production has come a long way.",
+      content: {
+        title: "Insulin: A Manufacturing Evolution",
+        text1: `
+          In 1922, insulin was used for the first time in patients, marking the beginning of a medical revolution.
+          Initially extracted from pig pancreases, the process was labor-intensive, requiring over 50 animals to
+          produce enough insulin to treat one person for a single year.<br><br>
+          Dr. Frederick Banting and his assistant, Charles Best, at the University of Toronto, were the first to use
+          insulin in a human patient. After their groundbreaking discovery, Banting and Best sold the patent rights
+          to the University of Toronto, which subsequently licensed them to the pharmaceutical company Eli Lilly in
+          1923, enabling mass production of insulin.<br><br>
+          Fast forward to today, insulin production has become a landmark achievement in biotechnology. Instead
+          of relying on animal pancreas, human insulin is now produced using recombinant DNA technology. The
+          gene for human proinsulin is inserted into E. coli bacteria or yeast, where it is expressed, purified, and
+          processed to remove the C-peptide, resulting in active insulin.<br><br>
+          This advancement has significantly improved the efficiency, sustainability, and scalability of insulin
+          production, ensuring access to essential treatment for populations worldwide.<br><br>
+        `,
+        sub_title2: "Two-Chain Manufacturing (1970s-1980s)",
+        text2: `
+          The first recombinant DNA method for producing insulin used a two-chain approach. DNA sequences for
+          the A and B chains of human insulin were separately synthesized and inserted into bacteria (E. coli) or
+          yeast (Saccharomyces cerevisiae). When expressed, the A and B chains form insoluble aggregates
+          called inclusion bodies. These inclusion bodies are often tagged with bacterial proteins to aid in solubility
+          and purification.<br><br>
+          After expression, the host cells are harvested by centrifugation and then lysed using chemical or
+          mechanical methods to release the inclusion bodies and recombinant insulin. The inclusion bodies are
+          purified through centrifugation and chromatography, based on the tag or solubility.<br><br>
+          This process had two major challenges, it was complex and labor-intensive, and yields were relatively
+          low, making scalability difficult for growing global demand.<br><br>
+        `,
+        sub_title3: "One-Chain Manufacturing (Mid-1980s Onwards)",
+        text3: `
+          The introduction of the proinsulin-based one-chain method revolutionized insulin production, offering a
+simpler and more scalable approach.<br><br>
+A single gene encoding human proinsulin, a precursor that includes both the A and B chains connected
+by a C-peptide, was synthesized. The proinsulin gene was inserted into E. coli or yeast, where host cells
+expressed proinsulin as a single-chain polypeptide.<br><br>
+Proinsulin was then isolated and purified directly from the host organisms. Finally, enzymes like trypsin
+and carboxypeptidase cleaved the C-peptide, leaving the active insulin molecule.<br><br>
+
+Some of the advantages include:
+
+<ul>
+        <li>Simplified manufacturing process compared to the two-chain method</li>
+        <li>Higher yields and lower costs</li>
+        <li>Easier scalability for global production needs</li>
+</ul>
+        `,
+        sub_title4: "The Future of Insulin Manufacturing",
+        text4: `
+          The next frontier in insulin production promises to deliver even greater efficiency, sustainability, and
+patient-centered solutions: <br><br>
+<ul>
+        <li>Plant-Based Expression Systems: Genetically modified plants, such as safflower, are being explored
+to produce proinsulin in their seeds.</li>
+        <li>Cell-Free Protein Synthesis: By eliminating the need for living cells, cell-free systems could produce insulin more rapidly and with fewer resources, streamlining the entire process.</li>
+        <li>Smart Insulins: Innovative insulins that dynamically respond to blood glucose levels are on the horizon.</li>
+</ul>
+
+At Helmchron, we deliver best-in-class plant design, engineering, and project execution solutions for the
+manufacturing of aseptic pharmaceutical and biotechnology products. Learn more about our services:
+<a href="https://www.helmchron.com/our-services">https://www.helmchron.com/our-services</a>
+        `
+      }
+    },
+    blog5: {
+      title: "THE ROLE OF Closed Systems in Biopharmaceutical Manufacturing",
+      text:
+        "The manufacturing of future personalized therapies requires multiple stages of purification and formulation, with closed systems playing a crucial role in reducing cross-contamination risks and ensuring product quality and integrity.",
+      content: {
+        title: "The Role of Closed Systems in Biopharmaceutical Manufacturing",
+        text1: `Manufacturing future personalized therapies involves multiple stages of purification and formulation,
+        relying heavily on closed systems to minimize cross-contamination risks and uphold product quality and
+        integrity.<br><br>
+        A closed system is designed to physically isolate the product from its surrounding environment and
+        personnel, establishing a controlled setting that minimizes contamination risks, prevents product loss,
+        and safeguards product integrity throughout the manufacturing process.<br><br>
+        Biopharmaceuticals, being highly sensitive to external variables such as temperature, pH, and
+        contaminants, require precise environmental control. Closed systems are engineered to maintain these
+        parameters within strict tolerances, ensuring the stability, quality, and efficacy of the final product.<br><br>`,
+        sub_title: "Aseptic Processes and Sterile Fill/Finish",
+        text2:
+          "In aseptic manufacturing, the drug product, excipients, container, and closure are individually sterilized before being assembled in a precisely controlled sterile environment. This critical stage, known as sterile fill/finish, takes place in cleanrooms equipped with specialized closed systems, which are self-contained and maintain strict aseptic conditions. <br><br> Since it is not possible to sterilize the drug product within its final container, the filling and sealing processes must occur under tightly controlled conditions within these closed systems. These systems are designed to prevent exposure to contaminants and are continuously monitored to ensure that microbial contamination and particulate matter are absent. Furthermore, key environmental parameters such as temperature, humidity, air pressure, and ventilation are rigorously controlled to maintain the integrity of the product throughout the process. However, a fully closed aseptic manufacturing process is difficult to design. It typically incorporates several critical systems designed to maintain a sterile environment at every stage, including:",
+        list: `
+          <li>Closed bioreactors ensure the integrity of the cell culture and minimize the risk of contamination.</li>
+          <li>Closed media and reagent delivery systems facilitate the aseptic transfer of fluids, reducing the potential for contamination during media and reagent handling.</li>
+          <li>Closed sampling and monitoring systems enable continuous in-process monitoring of critical manufacturing parameters such as pH, dissolved oxygen, and temperature.</li>
+          <li>Closed harvest and purification systems ensure that bioproducts are isolated from external contaminants during harvesting and purification.</li>
+          <li>Closed formulation and fill/finish systems ensure that the final product is filled and sealed without exposure to contaminants.</li>
+          <li>Closed waste management systems are used to ensure proper containment and disposal of waste materials, preserving sterility throughout the process.</li>
+          <li>Integrated control and automation systems monitor and regulate various aspects of the closed process, ensuring consistent and accurate conditions across production stages.</li>
+          <li>Single-use technologies (SUTs) encompass sterile, disposable, and ready-to-use equipment, including media and buffer bags, filters, tubing and connectors, chromatography columns, and bioreactors. These technologies have become essential components of contemporary biomanufacturing, providing operational flexibility while significantly minimizing the risk of cross-
+          contamination.</li>
+        `,
+        sub_title2: "Challenges in Aseptic Manufacturing",
+        text3:
+          "Despite significant advancements, aseptic manufacturing of novel biologics continues to face unique challenges, particularly the risk of microbial contamination during manual manipulations. Operators remain the primary source of contamination in aseptic processes, accounting for an estimated 80–90% of common contamination events. This concern is especially pronounced in gene therapy production, where traditional manufacturing methods often rely on extensive manual interventions, further increasing the risk of contamination. <br><br> To address these challenges, the implementation of closed systems integrated with single-use technologies (SUTs) has become increasingly critical. These systems provide a fully enclosed manufacturing environment, ensuring sterility and significantly reducing the risk of microbial ingress."
+      }
+    },
     blog4: {
       title: "VOLLEYBALL TEAM RODA",
       text:

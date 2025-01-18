@@ -200,6 +200,7 @@ export default function References() {
                 onClick={() => handleButtonClick(card1)}
                 style={{ background: "var(--dark-blue-color)" }}
                 className="book-btn"
+                aria-label="Read more about sustainable fashion"
               >
                 {t("read_more")}
               </span>
@@ -235,6 +236,7 @@ export default function References() {
                 onClick={() => handleButtonClick(card2)}
                 style={{ background: "var(--dark-blue-color)" }}
                 className="book-btn"
+                aria-label="Read more about sustainable fashion"
               >
                 {t("read_more")}
               </span>
@@ -268,6 +270,7 @@ export default function References() {
                 onClick={() => handleButtonClick(card3)}
                 style={{ background: "var(--dark-blue-color)" }}
                 className="book-btn"
+                aria-label="Read more about sustainable fashion"
               >
                 {t("read_more")}
               </span>
@@ -303,6 +306,7 @@ export default function References() {
                 onClick={() => handleButtonClick(card4)}
                 style={{ background: "var(--dark-blue-color)" }}
                 className="book-btn"
+                aria-label="Read more about sustainable fashion"
               >
                 {t("read_more")}
               </span>
@@ -339,6 +343,7 @@ export default function References() {
                 onClick={() => handleButtonClick(card5)}
                 style={{ background: "var(--green-color)" }}
                 className="book-btn"
+                aria-label="Read more about sustainable fashion"
               >
                 {t("read_more")}
               </span>
@@ -368,6 +373,7 @@ export default function References() {
                 onClick={() => handleButtonClick(card6)}
                 style={{ background: "var(--green-color)" }}
                 className="book-btn"
+                aria-label="Read more about sustainable fashion"
               >
                 {t("read_more")}
               </span>
@@ -400,6 +406,7 @@ export default function References() {
                 onClick={() => handleButtonClick(card7)}
                 style={{ background: "var(--green-color)" }}
                 className="book-btn"
+                aria-label="Read more about sustainable fashion"
               >
                 {t("read_more")}
               </span>
@@ -430,6 +437,7 @@ export default function References() {
                 onClick={() => handleButtonClick(card8)}
                 style={{ background: "var(--green-color)" }}
                 className="book-btn"
+                aria-label="Read more about sustainable fashion"
               >
                 {t("read_more")}
               </span>
@@ -464,6 +472,7 @@ export default function References() {
                 onClick={() => handleButtonClick(card9)}
                 style={{ background: "var(--green-color)" }}
                 className="book-btn"
+                aria-label="Read more about sustainable fashion"
               >
                 {t("read_more")}
               </span>
@@ -495,6 +504,7 @@ export default function References() {
                 onClick={() => handleButtonClick(card10)}
                 style={{ background: "var(--brend-color)" }}
                 className="book-btn"
+                aria-label="Read more about sustainable fashion"
               >
                 {t("read_more")}
               </span>
@@ -529,6 +539,7 @@ export default function References() {
                 onClick={() => handleButtonClick(card11)}
                 style={{ background: "var(--brend-color)" }}
                 className="book-btn"
+                aria-label="Read more about sustainable fashion"
               >
                 {t("read_more")}
               </span>
@@ -560,6 +571,7 @@ export default function References() {
                 onClick={() => handleButtonClick(card12)}
                 style={{ background: "var(--brend-color)" }}
                 className="book-btn"
+                aria-label="Read more about sustainable fashion"
               >
                 {t("read_more")}
               </span>
@@ -595,6 +607,7 @@ export default function References() {
                 onClick={() => handleButtonClick(card13)}
                 style={{ background: "var(--dark-blue-color)" }}
                 className="book-btn"
+                aria-label="Read more about sustainable fashion"
               >
                 {t("read_more")}
               </span>
@@ -627,6 +640,7 @@ export default function References() {
                 onClick={() => handleButtonClick(card14)}
                 style={{ background: "var(--green-color)" }}
                 className="book-btn"
+                aria-label="Read more about sustainable fashion"
               >
                 {t("read_more")}
               </span>
@@ -661,6 +675,7 @@ export default function References() {
                 onClick={() => handleButtonClick(card15)}
                 style={{ background: "var(--green-color)" }}
                 className="book-btn"
+                aria-label="Read more about sustainable fashion"
               >
                 {t("read_more")}
               </span>
@@ -692,6 +707,7 @@ export default function References() {
                 onClick={() => handleButtonClick(card16)}
                 style={{ background: "var(--green-color)" }}
                 className="book-btn"
+                aria-label="Read more about sustainable fashion"
               >
                 {t("read_more")}
               </span>
@@ -727,6 +743,7 @@ export default function References() {
                 onClick={() => handleButtonClick(card17)}
                 style={{ background: "var(--brend-color)" }}
                 className="book-btn"
+                aria-label="Read more about sustainable fashion"
               >
                 {t("read_more")}
               </span>
@@ -778,6 +795,7 @@ export default function References() {
               {t("references.distribution")}
             </span>
             <img
+              loading="lazy"
               className="distribution"
               src={Servicesdistribution}
               alt="Servicesdistribution"
