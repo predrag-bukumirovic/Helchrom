@@ -837,6 +837,41 @@ const enTranslation = {
     title: "Blog",
     text:
       "What we love most about our job is the fact it impacts greatly the everyday lives of people worldwide. Even though engineering, chemicals, pharmaceuticals, and our other business areas might seem complex, in our Blog we wish to share our knowledge and expertise in a captivating manner and make it interesting for everyone.",
+    blog7: {
+      title: "The Power of Co-Creation",
+      text: `Co-creation is reshaping industries, and plant design engineering is no exception. By enabling close collaboration between engineers, clients, and stakeholders, it ensures that expertise, strategic goals, and real-world needs are seamlessly integrated.<br>
+      Explore the impact of co-creation on engineering service innovation.`,
+
+      content: {
+        title: "The Power of Co-Creation",
+        text1: `In an era of complex engineering challenges, traditional top-down approaches to innovation are giving way to more collaborative, integrative models. Co-creation, a concept that has transformed various industries, is now creating a disruption in plant design engineering. By fostering active collaboration between engineers, clients, and stakeholders, co-creation ensures that expertise, strategy, and real-world requirements align seamlessly.`,
+        sub_title: "The Role of Co-Creation in Engineering Service Innovation",
+        text2: `Service innovation is a key driver of value creation, leading many companies to embrace co-creation as a core strategy. This approach shifts the traditional dynamic between businesses and clients, transforming them into collaborative partners in discovering new opportunities.
+In engineering, successful service innovation depends on integrating knowledge, capabilities, and resources from multiple stakeholders. Rather than relying solely on a single organization’s expertise, co-creation fosters:<br>
+Higher-value outcomes through diverse expertise<br>
+A collaborative approach incorporates diverse knowledge bases, ensuring robust and innovative solutions.<br>
+Stronger stakeholder commitment and adaptability<br>
+When clients and partners are actively involved, there is a greater sense of ownership and adaptability to unforeseen challenges.<br>
+Better alignment with end-user needs and requirements<br>
+Co-creation ensures better alignment with end-user needs by integrating insights early in the process, resulting in more practical, efficient, and user-focused solutions.<br><br>
+Co-creating value offers significant advantages, including faster time to market, reduced risk of failure, and enhanced innovation capabilities. By lowering the costs of traditional innovation approaches, companies can shift their focus from delivering products and solutions to meaningful value creation. 
+However, co-creation can also have some challenges, such as increased information sharing with clients. To maximize its success, companies must carefully assess both the potential benefits and the challenges involved.`,
+        sub_title1: "Applying Co-Creation to Plant Design Engineering",
+        text3: `The integration of co-creation principles in engineering includes:
+        <ul>
+          <li>Co-identification of challenges
+Rather than assuming predefined solutions, engineers and clients work together to define real challenges and opportunities.</li>
+          <li>Co-evaluation of solutions
+Designs and strategies are continuously refined based on stakeholder input, ensuring a balance between technical feasibility and operational practicality.</li>
+          <li>Resource optimization 
+Leveraging collective expertise results in more efficient use of materials, energy, and time, leading to cost-effective and sustainable solutions.</li>
+        </ul>
+        Leveraging collective expertise results in more efficient use of materials, energy, and time, leading to cost-effective and sustainable solutions.`,
+        sub_title2: "Looking Ahead: Co-Creation as a Standard Practice",
+        text4:
+          "As engineering projects become more complex and demand greater agility, co-creation is headed to become the industry standard. Organizations that embrace co-creation in plant design engineering will drive better innovation and also ensure their solutions are future-proof and responsive to evolving industry needs."
+      }
+    },
     blog6: {
       title: "Insulin: A Manufacturing Evolution",
       text:

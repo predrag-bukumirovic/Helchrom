@@ -235,7 +235,7 @@ export default function Navbar({ className }) {
                 style={{
                   cursor: "pointer",
                   padding: "0 20px",
-                  // color: "#fff",
+                  color: "#fff",
                   fontWeight: "bold",
                   fontSize: "13px",
                   width: "40px",

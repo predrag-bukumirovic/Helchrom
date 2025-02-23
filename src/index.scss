@@ -240,8 +240,8 @@ footer {
 }
 
 .change-lng-desktop {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: auto auto auto;
   justify-content: center;
   width: 100%;
   gap: 20px;

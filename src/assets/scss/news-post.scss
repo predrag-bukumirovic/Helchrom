@@ -57,5 +57,22 @@
   }
   display: grid;
   gap: 30px;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.blog-row {
+  display: flex;
+
+  img {
+    width: 50%;
+    object-fit: cover;
+  }
+
+  @media (max-width: 1100px) {
+    flex-direction: column;
+
+    img {
+      width: 100%;
+    }
+  }
 }

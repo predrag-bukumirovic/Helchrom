@@ -11,6 +11,7 @@ import Sustainability from "../assets/images/Blog/Sustainability.png";
 import Closed from "../assets/images/Blog/ClosedSystems/closed.png";
 import Roda from "../assets/images/Blog/Roda/4.webp";
 import Insulin from "../assets/images/Blog/Insulin/insulinLP.png";
+import CoCreation from "../assets/images/Blog/CoCreation/landing.png";
 
 import { useTranslation } from "react-i18next";
 import TextReader from "../components/TextRender";
@@ -19,6 +20,12 @@ export default function Blog() {
   const { t } = useTranslation();
 
   const headerText = [t("blog.title"), t("blog.text")];
+
+  const blog7Text = [
+    t("blog.blog7.title"),
+    t("blog.blog7.text"),
+    t("read_more")
+  ];
 
   const blog6Text = [
     t("blog.blog6.title"),
@@ -105,6 +112,29 @@ export default function Blog() {
             {t("blog.text")}
           </p>
         </center>
+
+        <div className="news-box padding30">
+          <TextReader texts={blog7Text} />
+          <div>
+            <div>
+              <h2 style={{ textTransform: "uppercase" }}>
+                {t("blog.blog7.title")}
+              </h2>
+              <p dangerouslySetInnerHTML={{ __html: t("blog.blog7.text") }} />
+
+              <a
+                href="/blog/co-creation"
+                aria-label="Read more about sustainable fashion"
+              >
+                {t("read_more")}
+              </a>
+            </div>
+            <div>
+              <img src={CoCreation} alt="Co creation" loading="lazy" />
+            </div>
+          </div>
+          <div className="line" />
+        </div>
 
         <div className="news-box padding30">
           <TextReader texts={blog6Text} />

@@ -20,6 +20,7 @@ const TeamTalk = lazy(() => import("./pages/TeamTalk"));
 const Sustainability = lazy(() => import("./pages/Sustainability"));
 const Roda = lazy(() => import("./pages/Roda"));
 const Insulin = lazy(() => import("./pages/Insulin"));
+const CoCreation = lazy(() => import("./pages/CoCreation"));
 const Home = lazy(() => import('./pages/Home'));
 const Career = lazy(() => import("./pages/Career"));
 const News = lazy(() => import("./pages/News"));
@@ -121,6 +122,7 @@ function App() {
           <Route path="/blog/roda" element={<Roda />} />
           <Route path="/blog/closed-systems" element={<ClosedS />} />
           <Route path="/blog/insulin" element={<Insulin />} />
+          <Route path="/blog/co-creation" element={<CoCreation />} />
           <Route path="/about-us/who-are-we" element={<WhoAreWe />} />
           <Route path="/about-us/our-team" element={<OurTeam />} />
           <Route path="/about-us/our-vision-and-mission" element={<OurVision />} />
