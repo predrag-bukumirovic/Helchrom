@@ -384,14 +384,14 @@ const enTranslation = {
       "We are a cohesive team of dedicated professionals, each bringing a unique educational background, experience, and passion to our shared vision. Embracing diversity as a fundamental value, we recognize and celebrate the varied perspectives and expertise that enrich our work and drive our collective success. Our commitment to our mission and outcomes unites us in striving for exceptional results.",
 
     team1: {
-      name: "Dr. Milos Ivosevic",
-      position: "CEO of Helmchron",
+      name: "Milos Ivosevic Ph.D.",
+      position: "Chief Executive Officer",
       text:
         "Dr. Milos Ivosevic is the founder of Helmchron and serves as the company’s CEO. Milos Ivosevic was born in Belgrade, Serbia in 1987. He completed his Master’s and PhD in Process Engineering at the University of Belgrade and during his studies gained advanced experience at the Paul Scherrer Institute in Villigen, Switzerland. His professional background includes different positions in prestigious and international companies as well as projects with leading global manufacturing companies and institutions. Milos is actively engaged in several professional organizations and associations, emphasizing ongoing learning and mentorship. Outside of his professional life, he enjoys traveling, learning languages, engaging in sports activities, and relaxing by the river."
     },
     team2: {
       name: "Anja Andjelkovic, M.Sc.",
-      position: "CTO, Mechanical Engineer",
+      position: "Chief Technology Officer",
       text:
         "Anja Andjelkovic has been a key member of Helmchron team since 2018, significantly contributing to our operations and growth. With a Master’s degree in Mechanical Engineering from the University of Belgrade, Anja oversees efficient project execution and leads our team of engineering experts and project associates. Her background in professional team sports has fostered a disciplined and results-driven approach, enhancing our team`s efficiency and client satisfaction. Anja has contributed to major international projects and is one of the leading mentors at Helmchron Academy. Outside of work, she enjoys staying active, spending time with her dog, and traveling with her family."
     },
