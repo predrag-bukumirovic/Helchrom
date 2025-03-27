@@ -114,11 +114,11 @@ export default function Footer() {
                 Helmchron © 2023 {/*{new Date().getFullYear()} {""} */}
                 <a href="/privacy-policy">{t("policy.title")}</a> | by{" "}
                 <a
-                  href="http://www.gold-digital.rs"
+                  href="http://www.brandone.rs/"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  Gold Digital
+                  Brand One
                 </a>
               </div>
               <div />
