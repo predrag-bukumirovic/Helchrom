@@ -1,7 +1,6 @@
 // Loader.js
 import React, { useEffect, useState } from "react";
 import "../assets/scss/loader.css"; // Uvezi CSS stilove]
-import logo from "../assets/images/logo.png";
 
 const Loader = ({ onLoaded, isInitial }) => {
   const [loading, setLoading] = useState(true);
@@ -27,7 +26,6 @@ const Loader = ({ onLoaded, isInitial }) => {
           </div>
         )}
       </div>
-      <img src={logo} alt="Logo" />
     </div>
   );
 };

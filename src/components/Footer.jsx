@@ -6,6 +6,7 @@ import LanguageModal from "./LanguageModal";
 
 import { FaLinkedin, FaInstagramSquare, FaTiktok } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import Newsletter from "./Newsletter";
 
 export default function Footer() {
   const { t } = useTranslation();
@@ -23,7 +24,8 @@ export default function Footer() {
   return (
     <footer>
       <div className="w-100">
-        <div className="">
+        <div>
+        <Newsletter />
           <div className="footer-container">
             <div className="footer-box container-main">
               <div className="logo">

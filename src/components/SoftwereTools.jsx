@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import "../assets/scss/softwereTolols.css";
 
-import Plant3 from "../assets/images/PlantDesign/Plant3.png";
+import Plant3 from "../assets/images/PlantDesign/cad2d.png";
 import PlantAveva from "../assets/images/PlantDesign/PlantAveva..jpg";
 import PlantP3D from "../assets/images/PlantDesign/PlantP3D.png";
-import Plant4 from "../assets/images/PlantDesign/Plant4.png";
+import Plant4 from "../assets/images/PlantDesign/mep.png";
 import Plant5 from "../assets/images/PlantDesign/Plant5.jpg";
-import Plant6 from "../assets/images/PlantDesign/Plant6.png";
-import Plant7 from "../assets/images/PlantDesign/Plant7.png";
-import PlantTricad from "../assets/images/PlantDesign/PlantTricad.png";
+import Plant6 from "../assets/images/PlantDesign/brics.png";
+import Plant7 from "../assets/images/PlantDesign/cadprofi.png";
+import PlantTricad from "../assets/images/PlantDesign/tricad.png";
 
 import ED1 from "../assets/images/Equipmentdesign/ED1.png";
 import ED2 from "../assets/images/Equipmentdesign/ED2.jpg";
@@ -55,44 +55,44 @@ const softwareData = [
     tools: [
       {
         name: "AutoCAD Plant 3D",
-        image: PlantP3D
+        image: PlantP3D,
       },
       {
         name: "Aveva E3D",
-        image: PlantAveva
+        image: PlantAveva,
       },
       {
         name: "AutoCAD 2D",
-        image: Plant3
+        image: Plant3,
       },
       {
         name: "TriCAD",
-        image: PlantTricad
+        image: PlantTricad,
       },
       {
         name: "AutoCAD MEP",
-        image: Plant4
+        image: Plant4,
       },
       {
         name: "CADWorx",
-        image: Plant5
+        image: Plant5,
       },
       {
         name: "BricsCAD",
-        image: Plant6
+        image: Plant6,
       },
       {
         name: "CADProfi",
-        image: Plant7
-      }
-    ]
+        image: Plant7,
+      },
+    ],
   },
   {
     category: "Equipment Design",
     tools: [
       { name: "Inventor", image: ED1 },
-      { name: "SolidWorks", image: ED2 }
-    ]
+      { name: "SolidWorks", image: ED2 },
+    ],
   },
   {
     category: "Pressure Vessel Design",
@@ -102,15 +102,15 @@ const softwareData = [
       { name: "TÜV NORD DIMy", image: PVD3 },
       { name: "PRG NozzlePRO", image: PVD4 },
       { name: "FEA Tools and <br/> Advanced FEA <br/> Tools", image: PVD5 },
-      { name: "MT-Mech", image: PVD6 }
-    ]
+      { name: "MT-Mech", image: PVD6 },
+    ],
   },
   {
     category: "Heat exchanger calculation",
     tools: [
       { name: "Aspen Exchanger <br/> Design and Rating", image: HEC1 },
-      { name: "HTRI", image: HEC2 }
-    ]
+      { name: "HTRI", image: HEC2 },
+    ],
   },
   {
     category: "Process design and analysis",
@@ -120,35 +120,38 @@ const softwareData = [
       { name: "PipeNET", image: PDA3 },
       { name: "Comos", image: PDA4 },
       { name: "Plant Engineer", image: PDA5 },
-      { name: "Custom solutions", image: PDA6 }
-    ]
+      { name: "Custom solutions", image: PDA6 },
+    ],
   },
   {
     category: "Pipe stress analysis",
-    tools: [{ name: "Caesar II", image: PSA1 }, { name: "Rohr2", image: PSA2 }]
+    tools: [
+      { name: "Caesar II", image: PSA1 },
+      { name: "Rohr2", image: PSA2 },
+    ],
   },
   {
     category: "Design review",
     tools: [
       { name: "NavisWorks", image: DR1 },
       { name: "Revizto", image: DR2 },
-      { name: "ReCap", image: DR3 }
-    ]
+      { name: "ReCap", image: DR3 },
+    ],
   },
   {
     category: "Plant cloud solutions",
     tools: [
       { name: "BIM Cloud", image: PCS1 },
       { name: "Awaro", image: PCS2 },
-      { name: "AutoDesk <br/> Construction <br/> Cloud", image: PCS3 }
-    ]
+      { name: "AutoDesk <br/> Construction <br/> Cloud", image: PCS3 },
+    ],
   },
   {
     category: "Project Management and Scheduling",
     tools: [
       { name: "MS Project", image: PJ1 },
-      { name: "Primavera", image: PJ2 }
-    ]
+      { name: "Primavera", image: PJ2 },
+    ],
   },
   {
     category: "Building",
@@ -156,9 +159,9 @@ const softwareData = [
       { name: "Revit", image: build1 },
       { name: "LiNear", image: build2 },
       { name: "Dendrit", image: build3 },
-      { name: "MH-Software", image: build4 }
-    ]
-  }
+      { name: "MH-Software", image: build4 },
+    ],
+  },
 ];
 
 const SoftwareTools = () => {
@@ -168,27 +171,28 @@ const SoftwareTools = () => {
     <div className="software-tools container-main">
       <h1 className="title">Software Tools</h1>
       <div className="navigation">
-        {softwareData.map((item, index) =>
+        {softwareData.map((item, index) => (
           <button
             key={index}
-            className={`nav-item ${activeCategory.category === item.category
-              ? "active"
-              : ""}`}
+            className={`nav-item ${
+              activeCategory.category === item.category ? "active" : ""
+            }`}
             onClick={() => setActiveCategory(item)}
           >
             {item.category}
           </button>
-        )}
+        ))}
       </div>
 
       <div className="tools-container">
-        {activeCategory.tools.map((tool, index) =>
+        {activeCategory.tools.map((tool, index) => (
           <div key={index} className="tool-card fade-in">
-            {tool.image &&
-              <img loading="lazy" src={tool.image} alt={tool.name} />}
+            {tool.image && (
+              <img loading="lazy" src={tool.image} alt={tool.name} />
+            )}
             <p dangerouslySetInnerHTML={{ __html: tool.name }} />
           </div>
-        )}
+        ))}
       </div>
     </div>
   );

@@ -12,6 +12,8 @@ import CookiePolicy from "./pages/CookiePolicy";
 // import ActionButton from "./Accessibility/ActionButton";
 // import Drawer from "./Accessibility/Drawer";
 import ClosedS from "./pages/ClosedS";
+import Admin from "./Admin/Admin";
+import AdminLogin from "./Admin/AdminLogin";
 
 const Blog = lazy(() => import("./pages/Blog"));
 const Volleyball = lazy(() => import("./pages/Volleyball"));
@@ -147,6 +149,8 @@ function App() {
           <Route path="/oil&gas" element={<Oil />} />
           <Route path="/divisions" element={<Divisions />} />
           <Route path="/thanks" element={<Thanks />} />
+          <Route path="/admin" element={<Admin />} />
+          <Route path="/admin/login" element={<AdminLogin />} />
           <Route path="/*" element={<NotFound />} />
         </Routes>
 
