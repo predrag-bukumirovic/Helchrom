@@ -3,7 +3,6 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import logo from "../assets/images/logo.webp";
 
 const Admin = () => {
   const [emails, setEmails] = useState([]);
@@ -22,7 +21,7 @@ const Admin = () => {
   const fetchEmails = async () => {
     try {
       const token = localStorage.getItem("token");
-      const res = await axios.get("http://localhost:3001/api/newsletter", {
+      const res = await axios.get("https://api.helmchron.com/api/newsletter", {
         headers: { Authorization: `Bearer ${token}` },
       });
       setEmails(res.data);
@@ -41,7 +40,7 @@ const Admin = () => {
     const token = localStorage.getItem("token");
     if (!window.confirm("Are you sure you want to delete?")) return;
     try {
-      await axios.delete(`http://localhost:3001/api/newsletter/${id}`, {
+      await axios.delete(`https://api.helmchron.com/api/newsletter/${id}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       setEmails(emails.filter((e) => e.id !== id));
@@ -57,13 +56,18 @@ const Admin = () => {
     navigate("/admin/login");
   };
 
+  const copyAllEmails = () => {
+    const emailList = emails.map(e => e.email).join(", "); // Spajanje svih mejlova u jedan string sa novim redom
+    navigator.clipboard.writeText(emailList)
+      .then(() => toast.success("All emails copied to clipboard!"))
+      .catch((err) => toast.error("Failed to copy emails"));
+  };
+
   return (
     <div className="admin-panel">
       <ToastContainer />
       <div className="container-main">
-        <a href="/">
-          <img src={logo} alt="" />
-        </a>
+  
         <div
           style={{
             display: "flex",
@@ -71,7 +75,7 @@ const Admin = () => {
             alignItems: "center",
           }}
         >
-          <h1>Admin Panel Newsletter</h1>
+          <h1>Admin Panel</h1>
           <button className="logout" onClick={handleLogout}>
             Logout
           </button>
@@ -79,6 +83,7 @@ const Admin = () => {
         {loading ? (
           <p>Loading...</p>
         ) : (
+          <div className="table-container">
           <table>
             <thead>
               <tr>
@@ -114,8 +119,12 @@ const Admin = () => {
                   </tr>
                 ))}
             </tbody>
-          </table>
+            <button onClick={copyAllEmails} className="copy-all">Copy all emails</button>
+          </table>  
+          </div>
         )}
+
+       
       </div>
     </div>
   );

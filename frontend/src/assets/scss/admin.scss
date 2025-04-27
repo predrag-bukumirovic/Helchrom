@@ -1,3 +1,7 @@
+.admin-login {
+  text-align: center;
+}
+
 .admin-login,
 .admin-panel {
   background: #fff;
@@ -7,6 +11,11 @@
   z-index: 9999;
   padding-top: 0px;
 
+  form {
+    width: 500px;
+    margin: 0 auto;
+  }
+
   .button {
     background: var(--dark-blue-color);
     border: none;
@@ -14,6 +23,7 @@
     font-size: 16px;
     padding: 15px 100px;
     background: blue;
+    width: 100%;
     color: #fff;
   }
 
@@ -29,6 +39,7 @@
   input {
     display: block;
     width: 500px;
+    margin: 0 auto;
     border-radius: 30px;
     border: 1px solid gray;
     padding: 15px;
@@ -42,6 +53,12 @@
   p {
     margin: 0 !important;
   }
+
+  @media (max-width: 600px) {
+    form {
+      width: 100%;
+    }
+  }
 }
 
 .admin-panel {
@@ -54,9 +71,15 @@
     color: #fff;
   }
 
+ .table-container {
+  width: 100%;
+  overflow-x: auto;
+
   table {
     width: 900px;
     margin-top: 50px;
+    table-layout: fixed;
+
     button {
       font-size: 13px;
       border: none;
@@ -70,4 +93,15 @@
       background: gray;
     }
   }
+ }
+}
+
+.copy-all {
+  font-size: 16px;
+  border: none;
+  background: gray;
+  color: #fff;
+  border-radius: 20px;
+  padding: 5px 20px;
+  margin-right: 10px;
 }

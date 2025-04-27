@@ -9,7 +9,7 @@ export default function Newsletter() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:3001/api/newsletter", {
+      await axios.post("https://api.helmchron.com/api/newsletter", {
         email,
       });
       toast.success("You have successfully subscribed!");

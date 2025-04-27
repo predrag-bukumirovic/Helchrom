@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "../assets/scss/admin.scss";
 import axios from "axios";
-import logo from "../assets/images/logo.webp";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useNavigate } from "react-router-dom";
@@ -16,7 +15,7 @@ export default function AdminLogin() {
     e.preventDefault();
     try {
       const res = await axios.post(
-        "http://localhost:3001/admin/login",
+        "https://api.helmchron.com/admin/login",
         {
           email,
           password,
@@ -47,10 +46,8 @@ export default function AdminLogin() {
     <div className="admin-login">
       <ToastContainer />
       <div className="container-main">
-        <a href="/">
-          <img src={logo} alt="Helmchron-logo" />
-        </a>
-        <h1>Newsletter LOGIN admin panel</h1>
+       
+        <h1>Login admin panel</h1>
 
         <form onSubmit={handleLogin}>
           <input
@@ -73,6 +70,10 @@ export default function AdminLogin() {
             Login
           </button>
           {message && <p style={{ color: "red" }}>{message}</p>}
+
+          <div style={{marginTop: 50}}>
+          <a href="/">Helmchron Home page</a>
+          </div>
         </form>
       </div>
     </div>
