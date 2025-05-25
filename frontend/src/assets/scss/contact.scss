@@ -8,8 +8,9 @@
 form div {
   width: 100%;
 }
-input,
-textarea {
+
+.form input,
+.form textarea {
   padding: 15px;
   font-size: 16px;
   display: block;
@@ -83,7 +84,7 @@ label .star {
 }
 .icon-contact img {
   width: 130px;
-  transition: .6s;
+  transition: 0.6s;
 }
 .icon-contact img:hover {
   transform: scale(1.07);
@@ -137,7 +138,7 @@ label .star {
   margin: 3px 0 0 10px;
   border: 2px solid #fff;
   border-radius: 50%;
-  animation: lds-ring 1.2s cubic-bezier(.5, 0, .5, 1) infinite;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
   border-color: #fff transparent transparent transparent;
 }
 

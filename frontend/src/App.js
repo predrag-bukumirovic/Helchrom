@@ -1,4 +1,4 @@
-import React, {lazy, useState, useEffect } from "react";
+import React, { lazy, useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Cookies from "./components/Cookies";
 import Thanks from "./pages/Thanks";
@@ -9,11 +9,10 @@ import ScrollTop from "./components/ScrollTop";
 import Navbar from "./components/Navbar";
 import Loader from "./components/Loader";
 import CookiePolicy from "./pages/CookiePolicy";
-// import ActionButton from "./Accessibility/ActionButton";
-// import Drawer from "./Accessibility/Drawer";
 import ClosedS from "./pages/ClosedS";
 import Admin from "./Admin/Admin";
 import AdminLogin from "./Admin/AdminLogin";
+import IntegratingAI from "./pages/IntegratingAI";
 
 const Blog = lazy(() => import("./pages/Blog"));
 const Volleyball = lazy(() => import("./pages/Volleyball"));
@@ -23,7 +22,7 @@ const Sustainability = lazy(() => import("./pages/Sustainability"));
 const Roda = lazy(() => import("./pages/Roda"));
 const Insulin = lazy(() => import("./pages/Insulin"));
 const CoCreation = lazy(() => import("./pages/CoCreation"));
-const Home = lazy(() => import('./pages/Home'));
+const Home = lazy(() => import("./pages/Home"));
 const Career = lazy(() => import("./pages/Career"));
 const News = lazy(() => import("./pages/News"));
 const Contact = lazy(() => import("./pages/Contact"));
@@ -57,119 +56,94 @@ function App() {
   const [isVisible, setIsVisible] = useState(false);
   const [isLoaded, setIsLoaded] = useState(false);
 
-  // const [contrastOption, setContrastOption] = useState(() => {
-  //   const savedContrastOption = localStorage.getItem("contrastOption");
-  //   return savedContrastOption ? parseInt(savedContrastOption, 10) : 0; // Učitaj iz `localStorage` ili postavi na 0
-  // });
+  useEffect(() => {
+    setIsVisible(true);
+  }, []);
 
-  // const [options, setOptions] = useState(() => {
-  //   const savedOptions = localStorage.getItem("accessibilityOptions");
-  //   return savedOptions
-  //     ? JSON.parse(savedOptions)
-  //     : {
-  //         contrastOption: 0,
-  //         highlightLinks: false,
-  //         biggerText: false,
-  //         textSpacing: false,
-  //         hideImages: false,
-  //         cursor: false,
-  //         lineHeight: false,
-  //         textAlign: false,
-  //       };
-  // });
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: true });
+  }, []);
 
-    useEffect(() => {
-      setIsVisible(true);
-    }, []);
+  const handleLoaded = () => {
+    setIsLoaded(true); // Postavi stanje kada se učitavanje završi
+  };
 
-    useEffect(() => {
-      AOS.init({ duration: 1000, once: true });
-    }, []);
+  useEffect(() => {
+    document.cookie =
+      "cookie-name=value; SameSite=None; Secure; path=/; max-age=3600";
+  }, []);
 
-    // useEffect(() => {
-    //   localStorage.setItem("accessibilityOptions", JSON.stringify(options)); // Čuvanje u localStorage
-    // }, [options]);
-
-    const handleLoaded = () => {
-      setIsLoaded(true); // Postavi stanje kada se učitavanje završi
-    };
-
-    useEffect(() => {
-      document.cookie = "cookie-name=value; SameSite=None; Secure; path=/; max-age=3600";
-    }, []);
-
-    
-  // const [isDrawerOpen, setDrawerOpen] = useState(false);
-  //     // Otvori Drawer
-  // const handleOpenDrawer = () => setDrawerOpen(true);
-
-  // // Zatvori Drawer
-  // const handleCloseDrawer = () => setDrawerOpen(false);
-
-  return <div className={`App ${isVisible ? "visible" : ""}`}>
-    
+  return (
+    <div className={`App ${isVisible ? "visible" : ""}`}>
       <Router>
-        {isLoaded ?  (
+        {isLoaded ? (
           <>
-          <Navbar/>
-        <Routes>
-          <Route path="/" element={<><Home/></>} />
-          <Route path="/career" element={<Career />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/news" element={<News />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/blog/volleyball" element={<Volleyball />} />
-          <Route path="/blog/diversity" element={<Diversity />} />
-          <Route path="/blog/sustainability" element={<Sustainability />} />
-          <Route path="/blog/roda" element={<Roda />} />
-          <Route path="/blog/closed-systems" element={<ClosedS />} />
-          <Route path="/blog/insulin" element={<Insulin />} />
-          <Route path="/blog/co-creation" element={<CoCreation />} />
-          <Route path="/about-us/who-are-we" element={<WhoAreWe />} />
-          <Route path="/about-us/our-team" element={<OurTeam />} />
-          <Route path="/about-us/our-vision-and-mission" element={<OurVision />} />
-          <Route path="/about-us/our-values" element={<OurValues />} />
-          <Route path="/our-services" element={<OurServices />} />
-          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-          <Route path="/terms-and-conditions" element={<Terms />} />
-          <Route path="/cookie-policy" element={<CookiePolicy />} />
-          <Route path="/chemicals" element={<Chemicals />} />
-          <Route path="/pharma" element={<Pharma />} />
-          <Route path="/news/achema" element={<Achema />} />
-          <Route path="/news/k2022" element={<K2022 />} />
-          <Route path="/news/team-talk" element={<TeamTalk />} />
-          <Route path="/our-references" element={<References />} />
-          <Route path="/initiatives/academy" element={<Academy />} />
-          <Route path="/initiatives/innolab" element={<InnoLab />} />
-          <Route path="/initiatives/navigator" element={<Navigator />} />
-          <Route path="/initiatives/helmchrone" element={<One />} />
-          <Route path="/electronics" element={<Electronics />} />
-          <Route path="/food" element={<Food />} />
-          <Route path="/energy" element={<Energy />} />
-          <Route path="/oil&gas" element={<Oil />} />
-          <Route path="/divisions" element={<Divisions />} />
-          <Route path="/thanks" element={<Thanks />} />
-          <Route path="/admin" element={<Admin />} />
-          <Route path="/admin/login" element={<AdminLogin />} />
-          <Route path="/*" element={<NotFound />} />
-        </Routes>
+            <Navbar />
+            <Routes>
+              <Route
+                path="/"
+                element={
+                  <>
+                    <Home />
+                  </>
+                }
+              />
+              <Route path="/career" element={<Career />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/news" element={<News />} />
+              <Route path="/blog" element={<Blog />} />
+              <Route path="/blog/volleyball" element={<Volleyball />} />
+              <Route path="/blog/diversity" element={<Diversity />} />
+              <Route path="/blog/sustainability" element={<Sustainability />} />
+              <Route path="/blog/roda" element={<Roda />} />
+              <Route path="/blog/closed-systems" element={<ClosedS />} />
+              <Route path="/blog/insulin" element={<Insulin />} />
+              <Route path="/blog/co-creation" element={<CoCreation />} />
+              <Route path="/blog/integrating-ai" element={<IntegratingAI />} />
+              <Route path="/about-us/who-are-we" element={<WhoAreWe />} />
+              <Route path="/about-us/our-team" element={<OurTeam />} />
 
-        <Cookies />
-        <Footer />
-        {/* <ActionButton options={options} setOptions={setOptions} onOpen={handleOpenDrawer} />
-          <Drawer
-        isOpen={isDrawerOpen}
-        onClose={handleCloseDrawer}
-        options={options}
-        setOptions={setOptions}
-      /> */}
-        <ScrollTop />
-        </>
+              <Route
+                path="/about-us/our-vision-and-mission"
+                element={<OurVision />}
+              />
+              <Route path="/about-us/our-values" element={<OurValues />} />
+              <Route path="/our-services" element={<OurServices />} />
+              <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+              <Route path="/terms-and-conditions" element={<Terms />} />
+              <Route path="/cookie-policy" element={<CookiePolicy />} />
+              <Route path="/chemicals" element={<Chemicals />} />
+              <Route path="/pharma" element={<Pharma />} />
+              <Route path="/news/achema" element={<Achema />} />
+              <Route path="/news/k2022" element={<K2022 />} />
+              <Route path="/news/team-talk" element={<TeamTalk />} />
+              <Route path="/our-references" element={<References />} />
+              <Route path="/initiatives/academy" element={<Academy />} />
+              <Route path="/initiatives/innolab" element={<InnoLab />} />
+              <Route path="/initiatives/navigator" element={<Navigator />} />
+              <Route path="/initiatives/helmchrone" element={<One />} />
+              <Route path="/electronics" element={<Electronics />} />
+              <Route path="/food" element={<Food />} />
+              <Route path="/energy" element={<Energy />} />
+              <Route path="/oil&gas" element={<Oil />} />
+              <Route path="/divisions" element={<Divisions />} />
+              <Route path="/thanks" element={<Thanks />} />
+              <Route path="/admin" element={<Admin />} />
+              <Route path="/admin/login" element={<AdminLogin />} />
+              <Route path="/*" element={<NotFound />} />
+            </Routes>
+
+            <Cookies />
+            <Footer />
+
+            <ScrollTop />
+          </>
         ) : (
-        <Loader onLoaded={handleLoaded}/>  
+          <Loader onLoaded={handleLoaded} />
         )}
       </Router>
-    </div>;
+    </div>
+  );
 }
 
 export default App;

@@ -19,7 +19,7 @@ export default function WhoIcons() {
   const [hoveredImage, setHoveredImage] = useState(null);
   const { t } = useTranslation();
 
-  const handleMouseEnter = image => {
+  const handleMouseEnter = (image) => {
     setHoveredImage(image);
   };
 
@@ -32,44 +32,44 @@ export default function WhoIcons() {
       default: pharma,
       color: pharmaColor,
       alt: "Icon Pharma",
-      link: "/pharma"
+      link: "/pharma",
     },
     {
       default: foodandbio,
       color: foodandbioColor,
       alt: "Icon foodandbio",
-      link: "/food"
+      link: "/food",
     },
     {
       default: chemicals,
       color: chemicalsColor,
       alt: "Icon chemicals",
-      link: "/chemicals"
+      link: "/chemicals",
     },
     {
       default: electronics,
       color: electronicsColor,
       alt: "Icon electronics",
-      link: "/electronics"
+      link: "/electronics",
     },
     {
       default: energy,
       color: energyColor,
       alt: "Icon energy",
-      link: "/energy"
+      link: "/energy",
     },
     {
       default: oilandgas,
       color: oilandgasColor,
       alt: "Icon oilandgas",
-      link: "/oil&gas"
-    }
+      link: "/oil&gas",
+    },
   ];
 
   return (
     <div className="our-home">
       <div className="areas-icon">
-        {images.map((image, index) =>
+        {images.map((image, index) => (
           <div
             key={index}
             onMouseEnter={() => handleMouseEnter(image.color)}
@@ -84,13 +84,13 @@ export default function WhoIcons() {
               />
             </a>
           </div>
-        )}
+        ))}
       </div>
 
       <center style={{ marginTop: 50 }}>
         <a
           className="book-btn"
-          href="/contact"
+          href="/divisions"
           aria-label="Read more about sustainable fashion"
         >
           {t("read_more")}

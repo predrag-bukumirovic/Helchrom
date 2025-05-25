@@ -8,6 +8,7 @@ import { CCarousel, CCarouselItem, CImage } from "@coreui/react";
 import TextRender from "../components/TextRender";
 
 import { useTranslation } from "react-i18next";
+import { Helmet } from "react-helmet";
 
 export default function Sustainability() {
   const { t } = useTranslation();
@@ -15,11 +16,15 @@ export default function Sustainability() {
     t("blog.blog3.content.title"),
     t("blog.blog3.content.sub_text"),
     t("blog.blog3.content.text1"),
-    t("blog.blog3.content.references")
+    t("blog.blog3.content.references"),
   ];
+
   return (
     <div>
       {/* Slider start */}
+      <Helmet>
+        <title>SUSTAINABILITY in Chemical and Pharmaceutical Industries</title>
+      </Helmet>
       <div className="slider">
         <CCarousel className="slider-main" controls transition="crossfade">
           <CCarouselItem>
@@ -54,9 +59,7 @@ export default function Sustainability() {
             dangerouslySetInnerHTML={{ __html: t("blog.blog3.content.title") }}
           />
           <TextRender texts={blogSound} />
-          <p>
-            {t("blog.blog3.content.sub_text")}
-          </p>
+          <p>{t("blog.blog3.content.sub_text")}</p>
         </center>
 
         <div className="post">
@@ -83,7 +86,7 @@ export default function Sustainability() {
         <div
           style={{ marginTop: 50 }}
           dangerouslySetInnerHTML={{
-            __html: t("blog.blog3.content.references")
+            __html: t("blog.blog3.content.references"),
           }}
         />
       </div>

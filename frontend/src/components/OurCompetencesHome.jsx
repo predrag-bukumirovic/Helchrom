@@ -14,46 +14,39 @@ const images = [
   {
     srcImg: pipingImg,
     title: "Piping",
-    text:
-      "We offer a comprehensive range of piping engineering, including aseptic and hygienic pipeline solutions, tailored to meet the specific requirements of various industries within our areas of expertise. From detailed audits and walk-downs to installation support, we provide complete project lifecycle support to ensure seamless execution and client satisfaction."
+    text: "We offer a comprehensive range of piping engineering, including aseptic and hygienic pipeline solutions, tailored to meet the specific requirements of various industries within our areas of expertise. From detailed audits and walk-downs to installation support, we provide complete project lifecycle support to ensure seamless execution and client satisfaction.",
   },
   {
     srcImg: equipmentImg,
     title: "Equipment",
-    text:
-      "At Helmchron, we understand that proper equipment design is essential for maintaining plant efficiency, ensuring product quality, and safeguarding both personnel and the environment. With a focus on the highest industry standards, regulations, and specific production requirements, we design a wide range of process equipment, including unit operations and heat transfer systems, to meet the needs of our clients."
+    text: "At Helmchron, we understand that proper equipment design is essential for maintaining plant efficiency, ensuring product quality, and safeguarding both personnel and the environment. With a focus on the highest industry standards, regulations, and specific production requirements, we design a wide range of process equipment, including unit operations and heat transfer systems, to meet the needs of our clients.",
   },
   {
     srcImg: cleanImg,
     title: "Clean media ",
     plusTitle: "storage and distribution system design",
-    text:
-      "Our clean media storage and distribution system design services encompass a wide range of solutions, including fluids for pharmaceutical and electronics industry. All our services are tailored to meet rigorous standards and ensure reliable and efficient clean media management throughout production processes."
+    text: "Our clean media storage and distribution system design services encompass a wide range of solutions, including fluids for pharmaceutical and electronics industry. All our services are tailored to meet rigorous standards and ensure reliable and efficient clean media management throughout production processes.",
   },
   {
     srcImg: roomsImg,
     title: "Clean rooms",
-    text:
-      "We deliver full range of solutions, including water-peroxide disinfection system design, pressure cascade design, and optimized personnel and material flow layouts. Our tailored clean room design solutions meet the specific needs of pharmaceutical, biotechnology, microbiology, genetic engineering, electronics, and food industries, ensuring operational efficiency and compliance."
+    text: "We deliver full range of solutions, including water-peroxide disinfection system design, pressure cascade design, and optimized personnel and material flow layouts. Our tailored clean room design solutions meet the specific needs of pharmaceutical, biotechnology, microbiology, genetic engineering, electronics, and food industries, ensuring operational efficiency and compliance.",
   },
   {
     srcImg: HVACImg,
     title: "HVAC",
-    text:
-      "Our competences include the design and implementation of ventilation and air conditioning systems, along with heat recovery and advanced heating and cooling technologies. Each system is tailored to meet client requirements and the stringent standards of the pharmaceutical, biotechnology, and electronics industries, ensuring optimal environmental conditions and full regulatory compliance."
+    text: "Our competences include the design and implementation of ventilation and air conditioning systems, along with heat recovery and advanced heating and cooling technologies. Each system is tailored to meet client requirements and the stringent standards of the pharmaceutical, biotechnology, and electronics industries, ensuring optimal environmental conditions and full regulatory compliance.",
   },
   {
     srcImg: UtilitiesImg,
     title: "Utilities",
-    text:
-      "Our solutions cover refrigeration and heating media, saturated steam and condensate systems, and process cooling water, while factoring in heat recovery and optimization. Each solution is customized to meet the unique needs and requirements of every project, ensuring compliance with regulatory  standards and adherence to industry best practices."
+    text: "Our solutions cover refrigeration and heating media, saturated steam and condensate systems, and process cooling water, while factoring in heat recovery and optimization. Each solution is customized to meet the unique needs and requirements of every project, ensuring compliance with regulatory  standards and adherence to industry best practices.",
   },
   {
     srcImg: MSRImg,
     title: "MSR",
-    text:
-      "We provide MSR concept development, planning, and procurement, alongside control system design using standard CAE systems. Our offerings include PLC/DDC system programming, manufacturer- independent building management systems, hardware and software commissioning, energy management, remote monitoring, as well as training and maintenance services."
-  }
+    text: "We provide MSR concept development, planning, and procurement, alongside control system design using standard CAE systems. Our offerings include PLC/DDC system programming, manufacturer- independent building management systems, hardware and software commissioning, energy management, remote monitoring, as well as training and maintenance services.",
+  },
 ];
 
 const Competences = () => {
@@ -62,14 +55,11 @@ const Competences = () => {
   const [touchEndX, setTouchEndX] = useState(0);
   const { t } = useTranslation();
 
-  useEffect(
-    () => {
-      if (window.innerWidth <= 768) {
-        adjustSliderPosition(currentIndex);
-      }
-    },
-    [currentIndex]
-  );
+  useEffect(() => {
+    if (window.innerWidth <= 1668) {
+      adjustSliderPosition(currentIndex);
+    }
+  }, [currentIndex]);
 
   const handleNext = () => {
     const nextIndex = (currentIndex + 1) % images.length;
@@ -81,19 +71,19 @@ const Competences = () => {
     setCurrentIndex(prevIndex);
   };
 
-  const handleDotClick = index => {
+  const handleDotClick = (index) => {
     setCurrentIndex(index);
   };
 
-  const handleImageClick = index => {
+  const handleImageClick = (index) => {
     setCurrentIndex(index);
   };
 
-  const handleTouchStart = e => {
+  const handleTouchStart = (e) => {
     setTouchStartX(e.touches[0].clientX);
   };
 
-  const handleTouchMove = e => {
+  const handleTouchMove = (e) => {
     setTouchEndX(e.touches[0].clientX);
   };
 
@@ -105,7 +95,7 @@ const Competences = () => {
     }
   };
 
-  const adjustSliderPosition = index => {
+  const adjustSliderPosition = (index) => {
     const sliderImages = document.querySelector(".slider-images");
     const sliderImageElements = Array.from(
       document.querySelectorAll(".slider-image")
@@ -133,27 +123,27 @@ const Competences = () => {
             onTouchMove={handleTouchMove}
             onTouchEnd={handleTouchEnd}
           >
-            {images.map((image, index) =>
+            {images.map((image, index) => (
               <div
                 key={index}
-                className={`slider-image ${index === currentIndex
-                  ? "active"
-                  : ""}`}
+                className={`slider-image ${
+                  index === currentIndex ? "active" : ""
+                }`}
                 style={{
                   backgroundImage: `url(${image.srcImg})`,
-                  borderRadius: 30
+                  borderRadius: 30,
                 }}
                 onClick={() => handleImageClick(index)}
               >
                 <span
-                  className={`img-title ${index === currentIndex
-                    ? "active"
-                    : ""}`}
+                  className={`img-title ${
+                    index === currentIndex ? "active" : ""
+                  }`}
                 >
                   {image.title}
                 </span>
               </div>
-            )}
+            ))}
           </div>
           <div className="slider-text-container">
             <div className="slider-text">
@@ -162,9 +152,7 @@ const Competences = () => {
                   {images[currentIndex].title} {images[currentIndex].plusTitle}
                 </span>
               </b>
-              <p style={{ fontSize: 16 }}>
-                {images[currentIndex].text}
-              </p>
+              <p style={{ fontSize: 16 }}>{images[currentIndex].text}</p>
             </div>
             <center style={{ color: "#000" }}>
               Click on the next image to explore another of our competences.
@@ -176,13 +164,13 @@ const Competences = () => {
             &#10094;
           </button>
           <div className="slider-dots">
-            {images.map((_, index) =>
+            {images.map((_, index) => (
               <div
                 key={index}
                 className={`dot ${index === currentIndex ? "active" : ""}`}
                 onClick={() => handleDotClick(index)}
               />
-            )}
+            ))}
           </div>
           <button className="arrow-slider" onClick={handleNext}>
             &#10095;

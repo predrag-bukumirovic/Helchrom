@@ -1,27 +1,23 @@
 const enTranslation = {
   home: {
     welcome: `<h1><p id="wel">Welcome to </p> <p>&nbsp;HELMCHRON</p></h1>`,
-    wel_text: `Helmchron is a family-owned company dedicated to providing comprehensive and full-service engineering solutions for the manufacturing facilities of pharmaceuticals, chemicals, food and bio products, electronics, energy, and oil and gas. We take pride in contributing to the manufacturing of globally available, safe, and high-quality products since 2010. Our mission has remained the same since our beginnings - we improve the quality of life for everyone everywhere whilst keeping our environment healthy for the coming generations. Today, our scope is broader and our team more diverse providing unique perspectives, agility, and efficacy.<br /> Our engineering solutions are now delivered to leaders and innovators across different industries with a focus on global impact, sustainable outcomes, and long-lasting partnerships.`,
+    wel_text: `Helmchron is an engineering company committed to delivering comprehensive, full-service plant design engineering and project management solutions for manufacturing facilities across the pharmaceutical, chemical, food and bio products, electronics, energy, and oil and gas sectors. We take pride in contributing to the manufacturing of globally available, safe, and high-quality products since 2010. Our mission has remained the same since our beginnings - we improve the quality of life for everyone everywhere whilst keeping our environment healthy for the coming generations. Today, our scope is broader and our team more diverse providing unique perspectives, agility, and efficacy.<br /> Our plant design engineering solutions are now delivered to leaders and innovators across different industries with a focus on global impact, sustainable outcomes, and long-lasting partnerships.`,
     after:
       "After the completion of operational activities, we provide guarantees and stand accountable for the quality of our work, offering ongoing support and consultation within the project scope to address our client's questions and concerns, ensuring the continued success of our joined project even after commissioning.",
     banners: {
       banner1: {
-        text:
-          "Delivering plant design engineering and project execution solutions across diverse industries since 2010."
+        text: "Delivering plant design engineering and project execution solutions across diverse industries since 2010.",
       },
       banner2: {
-        text:
-          "Comprehensive plant design engineering solutions, from consulting and pre-planning to equipment management and commissioning."
+        text: "Comprehensive plant design engineering solutions, from consulting and pre-planning to equipment management and commissioning.",
       },
       banner3: {
-        text:
-          "Our references include state-of-the-art aseptic pharma facilities, leading chemical manufacturers, and diverse food producers."
+        text: "Our references include state-of-the-art aseptic pharma facilities, leading chemical manufacturers, and diverse food producers.",
       },
       banner4: {
-        text:
-          "We operate across six major business divisions, with pharma and food being the largest."
-      }
-    }
+        text: "We operate across six major business divisions, with pharma and food being the largest.",
+      },
+    },
   },
   who_are_we: {
     title: "Who are we?",
@@ -34,7 +30,7 @@ const enTranslation = {
     credo_text:
       "Our expertise and impact are driven by our vision to enhance the quality of life, build enduring client relationships and partnerships, and empower our team through our core values. We are committed to providing plant design engineering solutions that enable the manufacturing of efficient and safe products worldwide. Our service is guided by the belief of equal access to pharmaceuticals, healthy food, chemicals, fuels, and energy. We prioritize our partners’ needs and outcomes, environmental sustainability, and the stability of our business operations while envisioning a healthier future for everyone.",
     quotation:
-      "We believe that expertise, innovation, and values create long-term <br/> impact. Our purpose is to deliver outcomes that positively change <br/> the world around us, maintain strong partnerships, and empower <br/> our team to thrive in an environment built on our core values. <br/> Our main responsibility lies within our vision - to support the <br/> manufacturing of products that will be efficient and safe and serve <br/> the global society and environment."
+      "We believe that expertise, innovation, and values create long-term <br/> impact. Our purpose is to deliver outcomes that positively change <br/> the world around us, maintain strong partnerships, and empower <br/> our team to thrive in an environment built on our core values. <br/> Our main responsibility lies within our vision - to support the <br/> manufacturing of products that will be efficient and safe and serve <br/> the global society and environment.",
   },
   services: {
     title: "our services",
@@ -55,8 +51,8 @@ const enTranslation = {
       text4:
         "We design, develop, select, install and integrate facility equipment to ensure performance optimization and efficiency.",
       text5:
-        "We provide verification that all components and systems of the facility are installed, tested, and operate according to the predefined specifications and regulatory requirements. "
-    }
+        "We provide verification that all components and systems of the facility are installed, tested, and operate according to the predefined specifications and regulatory requirements. ",
+    },
   },
   info: {
     title: "basic company information",
@@ -67,7 +63,7 @@ const enTranslation = {
     contact: "Contact person: Milos Ivosevic, PhD, Process Engineer",
     phone: "Phone number:",
     email: "Email address:",
-    linkedin: "Linkedin profile:"
+    linkedin: "Linkedin profile:",
   },
   unique: {
     text: `<p>
@@ -97,12 +93,12 @@ const enTranslation = {
                 Ready to focus on success and experience Helmchron ONE?
               </p>
               <br/>
-              <a class="book-btn" href="/initiatives/navigator">Read more</a>`
+              <a class="book-btn" href="/initiatives/navigator">Read more</a>`,
   },
   areas: {
     title: "OUR DIVISIONS",
     sub_text:
-      "Our six business divisions are strategically aligned with our mission and vision, enabling us to make a lasting impact by delivering safe, compliant, and sustainable plant design engineering solutions across key global industries."
+      "Our six business divisions are strategically aligned with our mission and vision, enabling us to make a lasting impact by delivering safe, compliant, and sustainable plant design engineering solutions across key global industries.",
   },
   facts: {
     title: "facts about us",
@@ -116,7 +112,7 @@ const enTranslation = {
     icon_title3: "number of week days we provide support",
     icon_title4: "AVERAGE FEEDBACK TIME IN MINUTES",
     icon_title5: "happy clients and partners",
-    icon_title6: "published papers as a result of our innolab"
+    icon_title6: "published papers as a result of our innolab",
   },
   our_line: {
     title: "our storyline",
@@ -133,7 +129,7 @@ const enTranslation = {
     img_text5:
       "Throughout the pandemic, our strong focus has been on projects within the pharmaceutical sector, aiming to achieve and sustain global health.",
     img_text6:
-      "We are committed to development and innovation, aiming to master the challenges of manufacturing and sustainability. Enduring value for the coming generations is our goal."
+      "We are committed to development and innovation, aiming to master the challenges of manufacturing and sustainability. Enduring value for the coming generations is our goal.",
   },
   feedback: {
     title: "we value our partners' feedback",
@@ -143,29 +139,26 @@ const enTranslation = {
     text2: `Due to a quick understanding of tasks and deep expertise, integration into new projects was achieved within a short period. High motivation and enthusiasm for various new.   challenges, along with outstanding initiative, were consistently demonstrated.
                 The work delivered was characterized by precision and thoroughness, consistently meeting deadlines and inspiring colleagues. These qualities enabled successful completion of assignments under significant pressure, fully meeting our expectations.`,
     text3:
-      "It's inspiring to see the commitment to streamlining project processes for optimal results. A dedicated team and singular focus [of <span class='ofHc'>HELMCHR<span class='one'>ONe</span></span>] are indeed game-changers in achieving project success. Looking forward to seeing how Helmchron ONE revolutionizes project management dynamics."
+      "It's inspiring to see the commitment to streamlining project processes for optimal results. A dedicated team and singular focus [of <span class='ofHc'>HELMCHR<span class='one'>ONe</span></span>] are indeed game-changers in achieving project success. Looking forward to seeing how Helmchron ONE revolutionizes project management dynamics.",
   },
   news: {
     title: "NEWS AND PROFESSIONAL EVENTS",
-    text:
-      "We love participating in and attending professional fairs and conferences to expand our knowledge, meet our partners and network, and be up-to-date with the latest trends and innovations. Read our impressions and highlights from conferences, events, and fairs we attend.",
+    text: "We love participating in and attending professional fairs and conferences to expand our knowledge, meet our partners and network, and be up-to-date with the latest trends and innovations. Read our impressions and highlights from conferences, events, and fairs we attend.",
 
     posts: {
       post1: {
         title: "HELMCHRON TeamTalk",
         time: "April, 2024 I Belgrade, Serbia",
-        text:
-          "TeamTalk is our short video format concept designed for discussing industry trends, insights, and future perspectives, our expertise and lessons learned, the impact of our values on our and our partners` outcomes, inspirational career path stories and milestones, and more.",
+        text: "TeamTalk is our short video format concept designed for discussing industry trends, insights, and future perspectives, our expertise and lessons learned, the impact of our values on our and our partners` outcomes, inspirational career path stories and milestones, and more.",
         content: {
           title: "Introducing TeamTalk",
-          text: `We are thrilled to present TeamTalk, our new initiative created to provide a deeper understanding of trending topics within our domain highlighting the primary drivers behind our mission and commitment to operational excellence. <br/><br/> TeamTalk serves as a platform where our team members share insights into various aspects of our operations, culture, and vision. By discussing industry trends, analyzing market dynamics, and envisioning the evolving landscape, we aim to deliver valuable insights and future perspectives to our community. <br/><br/> In addition to external reflections, we will share how our values shape our strategy, decisions, and results, ultimately impacting our partners' outcomes. TeamTalk will highlight our expertise, lessons learned, and success stories, striving to inspire and inform.<br/><br/> Aligned with our dedication to socially responsible initiatives, we wish to motivate and empower children and teenagers to embrace a healthy lifestyle, fostering discipline and cultivating teamwork skills along the way. <br/><br/> Join the conversation by sharing your questions or topics you would like to hear us discuss. Welcome to TeamTalk!`
-        }
+          text: `We are thrilled to present TeamTalk, our new initiative created to provide a deeper understanding of trending topics within our domain highlighting the primary drivers behind our mission and commitment to operational excellence. <br/><br/> TeamTalk serves as a platform where our team members share insights into various aspects of our operations, culture, and vision. By discussing industry trends, analyzing market dynamics, and envisioning the evolving landscape, we aim to deliver valuable insights and future perspectives to our community. <br/><br/> In addition to external reflections, we will share how our values shape our strategy, decisions, and results, ultimately impacting our partners' outcomes. TeamTalk will highlight our expertise, lessons learned, and success stories, striving to inspire and inform.<br/><br/> Aligned with our dedication to socially responsible initiatives, we wish to motivate and empower children and teenagers to embrace a healthy lifestyle, fostering discipline and cultivating teamwork skills along the way. <br/><br/> Join the conversation by sharing your questions or topics you would like to hear us discuss. Welcome to TeamTalk!`,
+        },
       },
       post2: {
         title: "K2022",
         time: "19 - 26 October 2022 I Dusseldorf, Germany",
-        text:
-          "K2022 covered the main challenges and hot topics from the global plastic and rubber industry - circular economy, sustainable materials for the future, and the scope of digitalization in achieving these outcomes.",
+        text: "K2022 covered the main challenges and hot topics from the global plastic and rubber industry - circular economy, sustainable materials for the future, and the scope of digitalization in achieving these outcomes.",
         content: {
           title: "K2022",
           sub_text1:
@@ -259,14 +252,13 @@ const enTranslation = {
               are excited to see what will K fair bring in 2025.
             </p>
             <p>See you in Düsseldorf, 18-25 October 2025!</p>
-          `
-        }
+          `,
+        },
       },
       post3: {
         title: "ACHEMA 2022",
         time: "22 - 26 August 2022 I Frankfurt, Germany",
-        text:
-          "ACHEMA 2022 was focused on the latest trends and innovations in process and chemical engineering, including sustainability, digitalization, and industry 4.0. It provided an opportunity to discuss some of the most pressing challenges of today and assess potential solutions for the future.",
+        text: "ACHEMA 2022 was focused on the latest trends and innovations in process and chemical engineering, including sustainability, digitalization, and industry 4.0. It provided an opportunity to discuss some of the most pressing challenges of today and assess potential solutions for the future.",
         content: {
           sub_text:
             "ACHEMA 2022 brought together industry leaders, researchers, and innovators from around the world and our team attended it. <br /> The event showcased the latest trends and innovations in the chemical and process industries and provided a platform for discussion and collaboration on some of the most pressing challenges facing the industry today.",
@@ -347,10 +339,10 @@ const enTranslation = {
                 industries will be at the forefront of this transformation.
               </p>
           `,
-          eager: "We are eager to visit ACHEMA 2024."
-        }
-      }
-    }
+          eager: "We are eager to visit ACHEMA 2024.",
+        },
+      },
+    },
   },
   navbar: {
     who_are_we: "Who are we?",
@@ -376,7 +368,7 @@ const enTranslation = {
     chemicals: "Chemicals",
     electronics: "Electronics",
     energy: "Energy",
-    oil: "Oil & gas"
+    oil: "Oil & gas",
   },
   team: {
     title: "Our Team",
@@ -384,20 +376,18 @@ const enTranslation = {
       "We are a cohesive team of dedicated professionals, each bringing a unique educational background, experience, and passion to our shared vision. Embracing diversity as a fundamental value, we recognize and celebrate the varied perspectives and expertise that enrich our work and drive our collective success. Our commitment to our mission and outcomes unites us in striving for exceptional results.",
 
     team1: {
-      name: "Milos Ivosevic Ph.D.",
+      name: "Milos Ivosevic, Ph.D.",
       position: "Chief Executive Officer",
-      text:
-        "Dr. Milos Ivosevic is the founder of Helmchron and serves as the company’s CEO. Milos Ivosevic was born in Belgrade, Serbia in 1987. He completed his Master’s and PhD in Process Engineering at the University of Belgrade and during his studies gained advanced experience at the Paul Scherrer Institute in Villigen, Switzerland. His professional background includes different positions in prestigious and international companies as well as projects with leading global manufacturing companies and institutions. Milos is actively engaged in several professional organizations and associations, emphasizing ongoing learning and mentorship. Outside of his professional life, he enjoys traveling, learning languages, engaging in sports activities, and relaxing by the river."
+      text: "Milos Ivosevic, PhD, serves as the company’s CEO. Milos Ivosevic was born in Belgrade, Serbia in 1987. He completed his Master’s and PhD in Process Engineering at the University of Belgrade and during his studies gained advanced experience at the Paul Scherrer Institute in Villigen, Switzerland. His professional background includes different positions in prestigious and international companies as well as projects with leading global manufacturing companies and institutions. Milos is actively engaged in several professional organizations and associations, emphasizing ongoing learning and mentorship. Outside of his professional life, he enjoys traveling, learning languages, engaging in sports activities, and relaxing by the river.",
     },
     team2: {
       name: "Anja Andjelkovic, M.Sc.",
       position: "Chief Technology Officer",
-      text:
-        "Anja Andjelkovic has been a key member of Helmchron team since 2018, significantly contributing to our operations and growth. With a Master’s degree in Mechanical Engineering from the University of Belgrade, Anja oversees efficient project execution and leads our team of engineering experts and project associates. Her background in professional team sports has fostered a disciplined and results-driven approach, enhancing our team`s efficiency and client satisfaction. Anja has contributed to major international projects and is one of the leading mentors at Helmchron Academy. Outside of work, she enjoys staying active, spending time with her dog, and traveling with her family."
+      text: "Anja Andjelkovic has been a key member of Helmchron team since 2018, significantly contributing to our operations and growth. With a Master’s degree in Mechanical Engineering from the University of Belgrade, Anja oversees efficient project execution and leads our team of engineering experts and project associates. Her background in professional team sports has fostered a disciplined and results-driven approach, enhancing our team`s efficiency and client satisfaction. Anja has contributed to major international projects and is one of the leading mentors at Helmchron Academy. Outside of work, she enjoys staying active, spending time with her dog, and traveling with her family.",
     },
     talk: {
       title: "what do you value the most?",
-      sub: `Helmchron <span>TeamTalk</span>`
+      sub: `Helmchron <span>TeamTalk</span>`,
     },
 
     values_icon: {
@@ -406,27 +396,24 @@ const enTranslation = {
         "Our core values serve as the foundation of everything we do, inspiring us to strive for operational excellence and innovation in all our projects. Our values enable cohesive and supportive environment shaping the quality of our results and strengthening of our partnerships.",
       icon1: {
         title: "Integrity",
-        text:
-          " We act with integrity and demonstrate ethical behavior in every situation."
+        text: " We act with integrity and demonstrate ethical behavior in every situation.",
       },
       icon2: {
         title: "Commitment",
-        text:
-          "We feel the responsibility towards our partners and the promises given."
+        text: "We feel the responsibility towards our partners and the promises given.",
       },
       icon3: {
         title: "Agility",
-        text: "We act seamlessly and cohesively as one team."
+        text: "We act seamlessly and cohesively as one team.",
       },
       icon4: {
         title: "Diversity",
-        text:
-          "We value our differences and act with respect toward one another."
+        text: "We value our differences and act with respect toward one another.",
       },
       icon5: {
         title: "Courage",
-        text: "We take initiative and step out of our comfort zone."
-      }
+        text: "We take initiative and step out of our comfort zone.",
+      },
     },
     text_bottom:
       " Do we share the same values? Are you interested in joining our team? Visit our career page.",
@@ -438,8 +425,8 @@ const enTranslation = {
         "We are dedicated to realizing our vision and exceeding the expectations of our clients by adhering to the highest ethical standards of conduct and fostering a culture of transparency and accountability. Explore our Anti-Bribery and Anti-Corruption Policy, Code of Conduct, and Communication Policy to learn how we maintain the integrity of our business practices and prioritize the satisfaction and trust of our stakeholders.",
       btn_blue: "Anti-Corruption Policy",
       btn_orange: "Code of Conduct",
-      btn_green: "Communication Policy"
-    }
+      btn_green: "Communication Policy",
+    },
   },
   our_core: {
     title: "our services & competences",
@@ -461,7 +448,7 @@ const enTranslation = {
       icon2: "Engineering & Design",
       icon3: "Project Management",
       icon4: "Equipment & Services",
-      icon5: "Commissioning"
+      icon5: "Commissioning",
     },
     planning_text: `<li>Assessment of investment</li>
               <li>Capacity planning</li>
@@ -564,7 +551,7 @@ const enTranslation = {
               <li>Post-commissioning review to assess the overall process</li>`,
     text_book:
       "If you wish to learn more about our services and references, book a meeting with our team.",
-    unique: "unique service concept"
+    unique: "unique service concept",
   },
   career: {
     title: "Join helmchron team",
@@ -598,11 +585,11 @@ const enTranslation = {
                   you're a recent graduate or a seasoned professional, we offer
                   opportunities to apply and develop your skills. Share your CV
                   at <a href="mailto:jobs@helmchron.com">jobs@helmchron.com</a>
-                  and be part of team and projects that make an impact.`
-      }
+                  and be part of team and projects that make an impact.`,
+      },
     },
     connect: {
-      title: "connect with our team"
+      title: "connect with our team",
     },
     faqs: {
       title: "recruitment faqs",
@@ -647,10 +634,10 @@ const enTranslation = {
                 among our team members. Our commitment to delivering timely
                 results to our partners often requires close coordination within
                 our team, which is why on-site presence may be necessary for
-                certain projects.`
-      }
+                certain projects.`,
+      },
     },
-    video_title: "find out more about working in our team"
+    video_title: "find out more about working in our team",
   },
 
   book_btn: "Book a Meeting",
@@ -672,8 +659,7 @@ const enTranslation = {
 
     our_strategic: {
       title: "our strategic focus areas",
-      text:
-        " Click on the icon to read more about each of our strategic focus areas."
+      text: " Click on the icon to read more about each of our strategic focus areas.",
     },
 
     our_mission_vision: {
@@ -683,22 +669,20 @@ const enTranslation = {
         text: `We are a reliable partner of choice for leading global
                     manufacturers in achieving more effective, innovative, and
                     sustainable ways of producing safe, qualitative, and novel
-                    products for everyone. <br /> Learn about our references.`
+                    products for everyone. <br /> Learn about our references.`,
       },
       vision_: {
         title: "OUR VISION",
-        text: ` We deliver high-quality plant design engineering and project execution      solutions that aim to enhance the
-                quality of life and keep our environment healthy for the coming generations.<br/>
-                Learn about our services and competencies.`
-      }
+        text: `We deliver best-in-class plant design engineering and project execution solutions to manufacturers worldwide, aiming to enhance quality of life and protect the environment for the coming generations.`,
+      },
     },
     at_helm:
-      "At Helmchron, our vision is clear: to drive meaningful change through services and partnerships that prioritize health for everyone while protecting our planet. By placing our clients and their outcomes at the core of our mission, we strive to deliver sustainable engineering solutions that will have a lasting impact on the quality of life for the coming generations. This shared commitment empowers our team to uphold the highest professional standards, ensuring we deliver exceptional results every time."
+      "At Helmchron, our vision is clear: to drive meaningful change through services and partnerships that prioritize health for everyone while protecting our planet. By placing our clients and their outcomes at the core of our mission, we strive to deliver sustainable engineering solutions that will have a lasting impact on the quality of life for the coming generations. This shared commitment empowers our team to uphold the highest professional standards, ensuring we deliver exceptional results every time.",
   },
 
   our_values: {
     sub_text:
-      "Our mission and vision define our objectives and purpose, but it is our values that define our way of work. We integrate our values in every segment of our daily operations and in every interaction we make - within our team, with our partners, with the community, and with the environment. We start by fostering a supportive environment within our team, ensuring that every employee feels secure, respected, and appreciated. We aim for each individual to come to work with a sense of satisfaction and to bring their best selves to their roles. Our team is a reflection of our culture, expertise, and core values. We take pride in the fact that our values are deeply embedded in Helmchron's culture, guiding our operations and strategy."
+      "Our mission and vision define our objectives and purpose, but it is our values that define our way of work. We integrate our values in every segment of our daily operations and in every interaction we make - within our team, with our partners, with the community, and with the environment. We start by fostering a supportive environment within our team, ensuring that every employee feels secure, respected, and appreciated. We aim for each individual to come to work with a sense of satisfaction and to bring their best selves to their roles. Our team is a reflection of our culture, expertise, and core values. We take pride in the fact that our values are deeply embedded in Helmchron's culture, guiding our operations and strategy.",
   },
 
   our_way: {
@@ -716,7 +700,7 @@ const enTranslation = {
                 <li>We take responsibility</li>
                 <li>We stand up for what is right</li>
                 <li>We express gratitude and give credit</li>
-              </ul>`
+              </ul>`,
     },
     commitment: {
       title: "Commitment",
@@ -729,23 +713,20 @@ const enTranslation = {
                 <li>We keep our promises and give promises we can keep</li>
                 <li>We give our best</li>
                 <li>We are loyal</li>
-              </ul>`
+              </ul>`,
     },
     agility: {
       title: "Agility",
-      text:
-        "We act rapidly, but seamlessly and cohesively. We are open to change. We are flexible and efficient in responding to our partners' needs."
+      text: "We act rapidly, but seamlessly and cohesively. We are open to change. We are flexible and efficient in responding to our partners' needs.",
     },
     diversity: {
       title: "Diversity",
-      text:
-        "We empower each other and value our differences to enable growth, empathy, and stronger partnerships. We act with respect and we feel respected."
+      text: "We empower each other and value our differences to enable growth, empathy, and stronger partnerships. We act with respect and we feel respected.",
     },
     courage: {
       title: "Courage",
-      text:
-        " We are honest and transparent about everything we do. We take initiative and step out of our comfort zone. We act and learn in innovative ways. We are not afraid of making mistakes."
-    }
+      text: " We are honest and transparent about everything we do. We take initiative and step out of our comfort zone. We act and learn in innovative ways. We are not afraid of making mistakes.",
+    },
   },
 
   social_respo: {
@@ -769,13 +750,12 @@ const enTranslation = {
               and prosperity of the coming generations. Commencing from our athletic backgrounds, we understand how
               discipline, teamwork, agility, empathy, and inclusion are
               instilled from an early age within sports teams.
-            </p>`
+            </p>`,
   },
 
   policy: {
     title: "Privacy policy",
-    sub1:
-      "<h2>Thank you for visiting our website and showing interest in our company.</h2>",
+    sub1: "<h2>Thank you for visiting our website and showing interest in our company.</h2>",
     text1: `We, at Helmchron, consider your data protection a priority. This
           privacy policy only applies to our website, i.e. does not apply to any
           sites that are not affiliated with our company. We do not take
@@ -790,7 +770,7 @@ const enTranslation = {
       textI: `Personal data are defined as all information related to one
             identifiable natural person, meaning one person can be directly /
             indirectly identified through their name, location, index number or
-            any other personal characteristic.`
+            any other personal characteristic.`,
     },
     text4: `This website is not designed or intended to be used by individuals under the age of 16. We do not knowingly collect any personal data on this website from individuals under the age of 16. All minors should seek their parents or guardians permissions prior to disclosing any personal data on any online platform, including this website.`,
     sub2: "<h3 class='sub-title'>Contact details</h3>",
@@ -801,7 +781,7 @@ const enTranslation = {
       li1: `<li>Responding to your request, comments or inquiries delivered to us via contact form or email address,</li>`,
       li2: `<li>Measuring website performance (analytics),</li>`,
       li3: `<li>Maintaining and securing our website,</li>`,
-      li4: `<li>Aligning with regulations.</li>`
+      li4: `<li>Aligning with regulations.</li>`,
     },
     text7: `Examples of personal data we may collect include your first and last
           name, email address and other contact information. We may also collect
@@ -812,9 +792,8 @@ const enTranslation = {
     text9: `We do not sell or transfer your personal data to any third party for their own direct use, unless we obtain your explicit consent. However, we may share your personal data with third parties, such as service providers, for any of the following purposes:`,
     text9ul: {
       li1: "Technical maintenance of our website,",
-      li2:
-        "Responding to requests of legitimate authorities or when required by the law or other regulations,",
-      li3: "Responding to a complaint or security threat."
+      li2: "Responding to requests of legitimate authorities or when required by the law or other regulations,",
+      li3: "Responding to a complaint or security threat.",
     },
 
     purposes: {
@@ -830,13 +809,16 @@ const enTranslation = {
             on the type of your request, we may need to collect different types
             of data. This is based on our interest to respond to your request in
             an optimal and comprehensive manner.`,
-      li3: "<b>Website analytics</b>"
-    }
+      li3: "<b>Website analytics</b>",
+    },
   },
   blog: {
     title: "Blog",
-    text:
-      "What we love most about our job is the fact it impacts greatly the everyday lives of people worldwide. Even though engineering, chemicals, pharmaceuticals, and our other business areas might seem complex, in our Blog we wish to share our knowledge and expertise in a captivating manner and make it interesting for everyone.",
+    text: "What we love most about our job is the fact it impacts greatly the everyday lives of people worldwide. Even though engineering, chemicals, pharmaceuticals, and our other business areas might seem complex, in our Blog we wish to share our knowledge and expertise in a captivating manner and make it interesting for everyone.",
+    blog8: {
+      title: "Integrating AI for Sustainable and Scalable Pharma Operations",
+      text: "Integrating AI into pharmaceutical manufacturing has a high impact on overall operations, with use cases including digital batch scheduling, dynamic operator allocation, advanced process control, smart monitoring, predictive maintenance, and more, each enhancing efficiency, quality, and operational agility throughout the pharma lifecycle.",
+    },
     blog7: {
       title: "The Power of Co-Creation",
       text: `Co-creation is reshaping industries, and plant design engineering is no exception. By enabling close collaboration between engineers, clients, and stakeholders, it ensures that expertise, strategic goals, and real-world needs are seamlessly integrated.<br>
@@ -869,13 +851,12 @@ Leveraging collective expertise results in more efficient use of materials, ener
         Leveraging collective expertise results in more efficient use of materials, energy, and time, leading to cost-effective and sustainable solutions.`,
         sub_title2: "Looking Ahead: Co-Creation as a Standard Practice",
         text4:
-          "As engineering projects become more complex and demand greater agility, co-creation is headed to become the industry standard. Organizations that embrace co-creation in plant design engineering will drive better innovation and also ensure their solutions are future-proof and responsive to evolving industry needs."
-      }
+          "As engineering projects become more complex and demand greater agility, co-creation is headed to become the industry standard. Organizations that embrace co-creation in plant design engineering will drive better innovation and also ensure their solutions are future-proof and responsive to evolving industry needs.",
+      },
     },
     blog6: {
       title: "Insulin: A Manufacturing Evolution",
-      text:
-        "In the 1920s, treating diabetes required the sacrifice of over 50 animals just to supply enough insulin for the yearly treatment of a single patient. From this labor-intensive process to today’s cutting-edge biotechnology, insulin production has come a long way.",
+      text: "In the 1920s, treating diabetes required the sacrifice of over 50 animals just to supply enough insulin for the yearly treatment of a single patient. From this labor-intensive process to today’s cutting-edge biotechnology, insulin production has come a long way.",
       content: {
         title: "Insulin: A Manufacturing Evolution",
         text1: `
@@ -938,13 +919,12 @@ to produce proinsulin in their seeds.</li>
 At Helmchron, we deliver best-in-class plant design, engineering, and project execution solutions for the
 manufacturing of aseptic pharmaceutical and biotechnology products. Learn more about our services:
 <a href="https://www.helmchron.com/our-services">https://www.helmchron.com/our-services</a>
-        `
-      }
+        `,
+      },
     },
     blog5: {
       title: "THE ROLE OF Closed Systems in Biopharmaceutical Manufacturing",
-      text:
-        "The manufacturing of future personalized therapies requires multiple stages of purification and formulation, with closed systems playing a crucial role in reducing cross-contamination risks and ensuring product quality and integrity.",
+      text: "The manufacturing of future personalized therapies requires multiple stages of purification and formulation, with closed systems playing a crucial role in reducing cross-contamination risks and ensuring product quality and integrity.",
       content: {
         title: "The Role of Closed Systems in Biopharmaceutical Manufacturing",
         text1: `Manufacturing future personalized therapies involves multiple stages of purification and formulation,
@@ -972,13 +952,12 @@ manufacturing of aseptic pharmaceutical and biotechnology products. Learn more a
         `,
         sub_title2: "Challenges in Aseptic Manufacturing",
         text3:
-          "Despite significant advancements, aseptic manufacturing of novel biologics continues to face unique challenges, particularly the risk of microbial contamination during manual manipulations. Operators remain the primary source of contamination in aseptic processes, accounting for an estimated 80–90% of common contamination events. This concern is especially pronounced in gene therapy production, where traditional manufacturing methods often rely on extensive manual interventions, further increasing the risk of contamination. <br><br> To address these challenges, the implementation of closed systems integrated with single-use technologies (SUTs) has become increasingly critical. These systems provide a fully enclosed manufacturing environment, ensuring sterility and significantly reducing the risk of microbial ingress."
-      }
+          "Despite significant advancements, aseptic manufacturing of novel biologics continues to face unique challenges, particularly the risk of microbial contamination during manual manipulations. Operators remain the primary source of contamination in aseptic processes, accounting for an estimated 80–90% of common contamination events. This concern is especially pronounced in gene therapy production, where traditional manufacturing methods often rely on extensive manual interventions, further increasing the risk of contamination. <br><br> To address these challenges, the implementation of closed systems integrated with single-use technologies (SUTs) has become increasingly critical. These systems provide a fully enclosed manufacturing environment, ensuring sterility and significantly reducing the risk of microbial ingress.",
+      },
     },
     blog4: {
       title: "VOLLEYBALL TEAM RODA",
-      text:
-        'The cadet female volleyball team "Roda" from Belgrade, Serbia, endorsed by Helmchron, has secured another victory, winning the gold medal. The team’s performance was marked by strong teamwork and passions.',
+      text: 'The cadet female volleyball team "Roda" from Belgrade, Serbia, endorsed by Helmchron, has secured another victory, winning the gold medal. The team’s performance was marked by strong teamwork and passions.',
       content: {
         title: "VOLLEYBALL TEAM RODA",
         text: `
@@ -994,13 +973,12 @@ manufacturing of aseptic pharmaceutical and biotechnology products. Learn more a
           Source: <a href="https://www.instagram.com/okrodabgd?
           utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">https://www.instagram.com/okrodabgd?
           utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==</a>
-        `
-      }
+        `,
+      },
     },
     blog3: {
       title: "IMPERATIV OF SUSTAINABILITY",
-      text:
-        "Embracing sustainability from a process and chemical engineering perspective involves adopting green principles, optimizing processes, managing waste efficiently, and utilizing renewable energy sources.",
+      text: "Embracing sustainability from a process and chemical engineering perspective involves adopting green principles, optimizing processes, managing waste efficiently, and utilizing renewable energy sources.",
       content: {
         title: `SUSTAINABILITY <br /> in Chemical and Pharmaceutical Industries`,
         sub_text:
@@ -1103,13 +1081,12 @@ manufacturing of aseptic pharmaceutical and biotechnology products. Learn more a
             environment, Contemporary Chemical Approaches for Green and
             Sustainable Drugs, Elsevier, 2022, 27-45.
           </p>
-            `
-      }
+            `,
+      },
     },
     blog2: {
       title: "A WORKPLACE WHERE WE FEEL INCLUDED",
-      text:
-        "The concept of diversity in the workplace has gained significant traction over the past few decades as organizations recognize the immense value it brings. Read a short overview of the various benefits Diversity and Inclusion bring to organizations and society.",
+      text: "The concept of diversity in the workplace has gained significant traction over the past few decades as organizations recognize the immense value it brings. Read a short overview of the various benefits Diversity and Inclusion bring to organizations and society.",
       content: {
         title: "A workplace where we feel included and heard",
         sub_text:
@@ -1217,13 +1194,12 @@ manufacturing of aseptic pharmaceutical and biotechnology products. Learn more a
             Diversity Can Drive Innovation. Harvard Business Review, 91(12),
             30-31.
           </p>
-            `
-      }
+            `,
+      },
     },
     blog1: {
       title: "SUPPORTING JUNIOR FEMALE VOLLEYBALL TEAM",
-      text:
-        "We supported an amazing junior female volleyball team that participated in National Championship held in Belgrade, Serbia, in May 2023. We are so proud of their team spirit, discipline, and results and we are sure there are many great things ahead of them. Find out similarities between volleyball and engineering.",
+      text: "We supported an amazing junior female volleyball team that participated in National Championship held in Belgrade, Serbia, in May 2023. We are so proud of their team spirit, discipline, and results and we are sure there are many great things ahead of them. Find out similarities between volleyball and engineering.",
       content: {
         title: "WE SUPPORTED JUNIOR FEMALE VOLLEYBALL TEAM",
         sub_text: `
@@ -1302,9 +1278,9 @@ manufacturing of aseptic pharmaceutical and biotechnology products. Learn more a
           We, at Helmchron, will continue to nurture talents and provide them
           with opportunities to thrive.
         </p>
-            `
-      }
-    }
+            `,
+      },
+    },
   },
   chemicals: {
     title: "Chemicals",
@@ -1312,26 +1288,23 @@ manufacturing of aseptic pharmaceutical and biotechnology products. Learn more a
       "Our team delivers plant design engineering solutions for the manufacturing of chemicals that are used in everyday lives across the globe - from disinfectants to plastics.",
     text1: {
       title: "Chemistry in our Lives",
-      text:
-        "In a way, the chemical industry is the backbone of our modern day habits. Not only in the sense of products we use daily, but also infrastructure that supports our communities, like roads, bridges, etc. For example, the discovery of polyethylene, a versatile plastic, in the 1930s led to the development of numerous everyday products such as plastic bags, containers, and packaging materials. Polyethylene's low cost, durability, and versatility have made it one of the most widely used plastic materials in the world. However, these benefits and lack of consciousness about environmental impact, has led to overconsumption."
+      text: "In a way, the chemical industry is the backbone of our modern day habits. Not only in the sense of products we use daily, but also infrastructure that supports our communities, like roads, bridges, etc. For example, the discovery of polyethylene, a versatile plastic, in the 1930s led to the development of numerous everyday products such as plastic bags, containers, and packaging materials. Polyethylene's low cost, durability, and versatility have made it one of the most widely used plastic materials in the world. However, these benefits and lack of consciousness about environmental impact, has led to overconsumption.",
     },
     text2: {
       title: "Overcoming Challenges of Chemicals Manufacturing",
-      text:
-        "Environmental concerns and rising regulatory requirements present significant challenges in chemical innovation and manufacturing. For this reason, global manufacturers are engaging with small and medium businesses, due to their focused know-how and agile value creation, to deliver innovation.",
+      text: "Environmental concerns and rising regulatory requirements present significant challenges in chemical innovation and manufacturing. For this reason, global manufacturers are engaging with small and medium businesses, due to their focused know-how and agile value creation, to deliver innovation.",
       title1: "Carbon Capture and Utilization",
       text1:
-        "Carbon dioxide emissions from industrial processes can be converted into valuable products such as chemicals, fuels, and materials. By coupling hydrogen with captured carbon dioxide, chemical manufacturers can reduce their carbon footprint and contribute to efforts to mitigate climate change. Overall, hydrogen offers significant opportunities for the chemical industry to enhance sustainability by enabling cleaner production processes, reducing carbon emissions, and promoting the transition to renewable energy sources."
+        "Carbon dioxide emissions from industrial processes can be converted into valuable products such as chemicals, fuels, and materials. By coupling hydrogen with captured carbon dioxide, chemical manufacturers can reduce their carbon footprint and contribute to efforts to mitigate climate change. Overall, hydrogen offers significant opportunities for the chemical industry to enhance sustainability by enabling cleaner production processes, reducing carbon emissions, and promoting the transition to renewable energy sources.",
     },
     text3: {
       title: "Our Customized Solutions",
-      text:
-        "Our solutions are always in line with unique needs of each of our partners, industry best practices and regulatory standards. We craft our solutions in order to optimize manufacturing processes, ensure cost-effectiveness and long-term sustainability. Our dedication to excellence and passion for our partners` outcomes are the main driving forces of the results we deliver.",
+      text: "Our solutions are always in line with unique needs of each of our partners, industry best practices and regulatory standards. We craft our solutions in order to optimize manufacturing processes, ensure cost-effectiveness and long-term sustainability. Our dedication to excellence and passion for our partners` outcomes are the main driving forces of the results we deliver.",
       title1: "Long Lasting Partnerships",
       text1:
         "We are proactive in our approach, but led by our partners` feedback and requirements. Through collaboration, we gain insight into our partners' vision, facilitate progress, and foster enduring partnerships built on trust and mutual success.",
-      check: "Check out our references in Chemicals"
-    }
+      check: "Check out our references in Chemicals",
+    },
   },
   pharma: {
     title: "LIFE SCIENCES AND PHARMACEUTICALS",
@@ -1339,28 +1312,24 @@ manufacturing of aseptic pharmaceutical and biotechnology products. Learn more a
       "We specialize in delivering cutting-edge plant design engineering solutions that power the advancements in the pharmaceuticals manufacturing.",
     text1: {
       title: "Balance of Science and Engineering",
-      text:
-        "Pharmaceuticals and life sciences are dynamic sectors that require a delicate balance between scientific knowledge and engineering expertise. We understand the role that engineering plays in the development and production of life-saving medicines and in delivering medical advancements. Our team merges scientific and engineering principles to develop solutions that optimize processes, enhance safety, maximize productivity and minimize environmental impact."
+      text: "Pharmaceuticals and life sciences are dynamic sectors that require a delicate balance between scientific knowledge and engineering expertise. We understand the role that engineering plays in the development and production of life-saving medicines and in delivering medical advancements. Our team merges scientific and engineering principles to develop solutions that optimize processes, enhance safety, maximize productivity and minimize environmental impact.",
     },
     text2: {
       title: "Aseptic Manufacturing in Pharma",
-      text:
-        "Aseptic conditions are critical in pharmaceutical manufacturing as they ensure the safety and sterility of products. Our commitment to aseptic manufacturing begins with strictly controlled clean rooms. Through the integration of advanced filtration systems and comprehensive environmental monitoring, compliance regarding airborne particle levels and environmental conditions is ensured. With the use of validated sterilization methods such as steam sterilization, gamma irradiation, and chemical sterilants, the highest levels of sterility is accomplished, meeting regulatory requirements and industry standards."
+      text: "Aseptic conditions are critical in pharmaceutical manufacturing as they ensure the safety and sterility of products. Our commitment to aseptic manufacturing begins with strictly controlled clean rooms. Through the integration of advanced filtration systems and comprehensive environmental monitoring, compliance regarding airborne particle levels and environmental conditions is ensured. With the use of validated sterilization methods such as steam sterilization, gamma irradiation, and chemical sterilants, the highest levels of sterility is accomplished, meeting regulatory requirements and industry standards.",
     },
     text3: {
       title: "Water and Air Quality",
-      text:
-        "Water quality and air quality are closely monitored and controlled to prevent contamination and maintain aseptic conditions throughout the manufacturing process. Water purification systems and high-efficiency particulate air (HEPA) filtration systems ensure that water and air used in production meet the strictest quality standards, safeguarding against contamination."
+      text: "Water quality and air quality are closely monitored and controlled to prevent contamination and maintain aseptic conditions throughout the manufacturing process. Water purification systems and high-efficiency particulate air (HEPA) filtration systems ensure that water and air used in production meet the strictest quality standards, safeguarding against contamination.",
     },
     text4: {
       title: "Optimization for Enhanced Efficiency",
-      text:
-        "Our process engineering solutions are tailored to optimize manufacturing processes and ensure operational effectiveness. By leveraging technology and deep industry know-how, we support our partners to achieve short and long-term outcomes, including reduced impact on the environment.",
+      text: "Our process engineering solutions are tailored to optimize manufacturing processes and ensure operational effectiveness. By leveraging technology and deep industry know-how, we support our partners to achieve short and long-term outcomes, including reduced impact on the environment.",
       title1: "Collaborative Partnerships for Success",
       text1:
-        "Collaboration is at the heart of our approach. We work closely with our partners, forging relationships based on trust and results achieved. By understanding the specific challenges and goals of our partners, we co-create solutions that will improve the quality of life for patients everywhere."
+        "Collaboration is at the heart of our approach. We work closely with our partners, forging relationships based on trust and results achieved. By understanding the specific challenges and goals of our partners, we co-create solutions that will improve the quality of life for patients everywhere.",
     },
-    check: "Check out our references in Pharma and Lifesciences"
+    check: "Check out our references in Pharma and Lifesciences",
   },
   food: {
     title: "FOOD AND BIOPRODUCTS",
@@ -1368,30 +1337,26 @@ manufacturing of aseptic pharmaceutical and biotechnology products. Learn more a
       "In the domain of food and bio products, quality and safety are non-negotiable. With our plant design engineering solutions, we believe we can contribute to safer and more sustainable manufacturing of the highest quality products for everyone everywhere.",
     text1: {
       title: "Food and Bio Product Manufacturing",
-      text:
-        "Process and chemical engineering enable manufacturers to meet evolving consumer expectations and needs, uphold safety standards, and create products that enrich and nourish our everyday lives."
+      text: "Process and chemical engineering enable manufacturers to meet evolving consumer expectations and needs, uphold safety standards, and create products that enrich and nourish our everyday lives.",
     },
     text2: {
       title: "Stringent Standards",
-      text:
-        "To ensure the safety of foods and bio products, manufacturing under sterile conditions is necessary. While the sterility level is not as in pharmaceutical manufacturing, environment conditions are rigorous throughout the manufacturing process.",
+      text: "To ensure the safety of foods and bio products, manufacturing under sterile conditions is necessary. While the sterility level is not as in pharmaceutical manufacturing, environment conditions are rigorous throughout the manufacturing process.",
       text1:
-        "Aspects that need to be sterile include all machinery, utensils, and equipment, surfaces and workspaces, and packaging materials. Specialized equipment such as sterilizers, autoclaves, and aseptic fillers are used to ensure that all components of the manufacturing process remain sterile. These systems utilize heat, steam, or chemical agents to sterilize equipment and packaging materials before they come into contact with the product."
+        "Aspects that need to be sterile include all machinery, utensils, and equipment, surfaces and workspaces, and packaging materials. Specialized equipment such as sterilizers, autoclaves, and aseptic fillers are used to ensure that all components of the manufacturing process remain sterile. These systems utilize heat, steam, or chemical agents to sterilize equipment and packaging materials before they come into contact with the product.",
     },
     text3: {
       title: "Environmental Controls",
-      text:
-        "Air and water used should meet stringent quality standards to prevent contamination of the products. Environmental controls, including temperature, humidity, and air quality, are carefully regulated to create optimal conditions for aseptic manufacturing. High-efficiency particulate air (HEPA) filters and air purification systems are installed to remove airborne contaminants and maintain an optimal atmosphere within the production area."
+      text: "Air and water used should meet stringent quality standards to prevent contamination of the products. Environmental controls, including temperature, humidity, and air quality, are carefully regulated to create optimal conditions for aseptic manufacturing. High-efficiency particulate air (HEPA) filters and air purification systems are installed to remove airborne contaminants and maintain an optimal atmosphere within the production area.",
     },
     text4: {
       title: "Design of Facilities",
-      text:
-        "Facilities are designed with a focus on controlling the environment and minimizing the risk of contamination. This includes the layout of the production area, air handling systems, and the integration of barriers to prevent the entry of contaminants. Clean-in-place (CIP) and sterilization-in-place (SIP) systems are implemented to clean and sanitize equipment and pipelines automatically, reducing the risk of microbial growth and cross-contamination.",
+      text: "Facilities are designed with a focus on controlling the environment and minimizing the risk of contamination. This includes the layout of the production area, air handling systems, and the integration of barriers to prevent the entry of contaminants. Clean-in-place (CIP) and sterilization-in-place (SIP) systems are implemented to clean and sanitize equipment and pipelines automatically, reducing the risk of microbial growth and cross-contamination.",
       title1: "Sustainability",
       text1:
-        "Our engineering solutions are designed to optimize production processes, ensuring alignment with global sustainability objectives. Within process and chemical engineering scope, sustainability strategies focus on minimizing energy consumption during production, resulting in resource optimization and the adoption of greener manufacturing practices."
+        "Our engineering solutions are designed to optimize production processes, ensuring alignment with global sustainability objectives. Within process and chemical engineering scope, sustainability strategies focus on minimizing energy consumption during production, resulting in resource optimization and the adoption of greener manufacturing practices.",
     },
-    check: "Check out our references in Food and Bioproducts"
+    check: "Check out our references in Food and Bioproducts",
   },
   electronics: {
     title: "ELECTRONICS",
@@ -1399,18 +1364,16 @@ manufacturing of aseptic pharmaceutical and biotechnology products. Learn more a
       "In manufacturing of electronics, functionality, reliability, and safety are equally important, demanding a high level of collaboration among multidisciplinary teams.",
     text1: {
       title: "The Manufacturing Process",
-      text:
-        "The fabrication of individual electronic components such as microchips, resistors, and capacitors is conducted using advanced semiconductor manufacturing techniques in cleanroom environments to prevent contamination. Components are assembled onto printed circuit boards using automated assembly equipment. Cleanroom conditions are maintained throughout the assembly process to minimize the risk of particle contamination, which can affect the functionality and lifespan of electronic devices.",
+      text: "The fabrication of individual electronic components such as microchips, resistors, and capacitors is conducted using advanced semiconductor manufacturing techniques in cleanroom environments to prevent contamination. Components are assembled onto printed circuit boards using automated assembly equipment. Cleanroom conditions are maintained throughout the assembly process to minimize the risk of particle contamination, which can affect the functionality and lifespan of electronic devices.",
       title1: "Aseptic Conditions",
       text1:
-        "Aseptic conditions minimize the risk of contamination, ensuring that electronic components and devices function reliably and consistently over their lifespan. Additionally, it means complying with regulations and standards guarantee the quality and reliability of the product."
+        "Aseptic conditions minimize the risk of contamination, ensuring that electronic components and devices function reliably and consistently over their lifespan. Additionally, it means complying with regulations and standards guarantee the quality and reliability of the product.",
     },
     future: "Future of Electronics Manufacturing",
     graph: "Graph 1. Estimated electronics market size (2024-2030)",
     source: "Source:",
     check: "Check out our references in Electronics",
-    text:
-      "The main driver of growth will be adoption of sustainable practices and e-waste reduction. As a global concern, e-waste should be properly recycled or managed to reduce environmental and health impact. Furthermore, electronic devices contain valuable resources such as precious metals and rare earth elements, whose loss contributes to resource depletion. By implementing efficient extraction and purification techniques, recovery of precious metals, rare earth elements, and other resources from discarded electronic devices will be enabled, reducing the need for new materials in manufacturing. Electronic components with modular architectures will facilitate easy disassembly, repair, and upgradeability. Interchangeable parts and standardized interfaces will extend the lifespan of electronic devices and reduce e-waste generation. Breakthroughs in material science will lead to innovative materials with enhanced properties."
+    text: "The main driver of growth will be adoption of sustainable practices and e-waste reduction. As a global concern, e-waste should be properly recycled or managed to reduce environmental and health impact. Furthermore, electronic devices contain valuable resources such as precious metals and rare earth elements, whose loss contributes to resource depletion. By implementing efficient extraction and purification techniques, recovery of precious metals, rare earth elements, and other resources from discarded electronic devices will be enabled, reducing the need for new materials in manufacturing. Electronic components with modular architectures will facilitate easy disassembly, repair, and upgradeability. Interchangeable parts and standardized interfaces will extend the lifespan of electronic devices and reduce e-waste generation. Breakthroughs in material science will lead to innovative materials with enhanced properties.",
   },
   energy: {
     title: "ENERGY",
@@ -1418,24 +1381,22 @@ manufacturing of aseptic pharmaceutical and biotechnology products. Learn more a
       "With our plant design engineering solutions, we strive to redefine the energy landscape, embracing sustainable practices and innovative solutions to create a brighter, cleaner, and energy-abundant future for the coming generations.",
     text1: {
       title: "Thermal Power Plants as a Starting Point",
-      text:
-        "Thermal power plants fueled by coal have been reliable sources of global electricity generation for decades. Our proficiency in energy manufacturing originated from our experience with thermal power plants, serving as the foundation for the development of our expertise in transitioning towards cleaner and renewable energy sources. As awareness of the environmental impacts of fossil fuel combustion has grown, the need for sustainable solutions and focused know-how has become increasingly urgent.",
+      text: "Thermal power plants fueled by coal have been reliable sources of global electricity generation for decades. Our proficiency in energy manufacturing originated from our experience with thermal power plants, serving as the foundation for the development of our expertise in transitioning towards cleaner and renewable energy sources. As awareness of the environmental impacts of fossil fuel combustion has grown, the need for sustainable solutions and focused know-how has become increasingly urgent.",
       title1: "Transition to Solar Energy",
       text1:
-        "Investing in solar infrastructure, including photovoltaic (PV) panels, concentrated solar power (CSP) systems, energy storage, and grid integration technologies, is essential for scaling up solar energy generation and ensuring reliability and resilience of the power grid."
+        "Investing in solar infrastructure, including photovoltaic (PV) panels, concentrated solar power (CSP) systems, energy storage, and grid integration technologies, is essential for scaling up solar energy generation and ensuring reliability and resilience of the power grid.",
     },
     text2: {
       title: "Controlled Conditions",
-      text:
-        "Many steps in the manufacturing process require a cleanroom environment to prevent contamination of the silicon wafers and solar cells. Cleanrooms are equipped with air filtration systems and strict cleanliness protocols to minimize the presence of dust, particles, and other contaminants. Variations in temperature and humidity can affect the performance and longevity of the panels. Monitoring and controlling systems must be in place to maintain consistent conditions at all times.",
+      text: "Many steps in the manufacturing process require a cleanroom environment to prevent contamination of the silicon wafers and solar cells. Cleanrooms are equipped with air filtration systems and strict cleanliness protocols to minimize the presence of dust, particles, and other contaminants. Variations in temperature and humidity can affect the performance and longevity of the panels. Monitoring and controlling systems must be in place to maintain consistent conditions at all times.",
       title2: "Innovation and Adaptability",
       text2:
         "Our engineers design processes that are agile and adaptable to market dynamics, ensuring that energy manufacturing stays competitive and responsive to evolving consumer demands and contemporary needs.",
       title3: "Cost Efficiency and Optimization",
       text3:
-        "By identifying cost-efficient strategies and thorough life cycle analysis, we optimize operations and minimize resource wastage, leading to an overall effective energy manufacturing process."
+        "By identifying cost-efficient strategies and thorough life cycle analysis, we optimize operations and minimize resource wastage, leading to an overall effective energy manufacturing process.",
     },
-    check: "Check out our references in Energy"
+    check: "Check out our references in Energy",
   },
   oil: {
     title: "Oil and gas",
@@ -1443,21 +1404,19 @@ manufacturing of aseptic pharmaceutical and biotechnology products. Learn more a
       "Helmchron plant design engineering solutions contribute to the overall efficiency, safety, sustainability, and profitability of the oil and gas industry. We firmly believe that the integration of process and chemical engineering solutions holds the key to unlocking operational efficiency, maximizing resource utilization, and minimizing environmental impact.",
     text1: {
       title: "Optimized Operations",
-      text:
-        "Our team combines industry expertise and advanced technologies to optimize every aspect of oil and gas operations. We analyze, design, and implement processes that streamline production, reduce costs, and enhance overall operational efficiency.",
+      text: "Our team combines industry expertise and advanced technologies to optimize every aspect of oil and gas operations. We analyze, design, and implement processes that streamline production, reduce costs, and enhance overall operational efficiency.",
       title1: "Sustainable Solutions",
       text1:
-        "Sustainability is part of everything we do. Our process and chemical engineering solutions are environmentally responsible and ensure that manufacturing processes align with global environmental goals."
+        "Sustainability is part of everything we do. Our process and chemical engineering solutions are environmentally responsible and ensure that manufacturing processes align with global environmental goals.",
     },
     text2: {
       title: "Safety First",
-      text:
-        "Safety is non-negotiable in the oil and gas industry. We implement advanced safety measures and technologies that mitigate risks and enhance workplace safety.",
+      text: "Safety is non-negotiable in the oil and gas industry. We implement advanced safety measures and technologies that mitigate risks and enhance workplace safety.",
       title1: "Partnership and Collaboration",
       text1:
-        "Our partners` satisfaction is one of the outcomes we aim for. Collaborating closely and transparently and utilizing cutting-edge technologies, we develop solutions according to unique requirements. Through in-depth analysis, we identify risks, areas for improvement, and opportunities for automation, with the goal of enhancing operational efficiency and profitability."
+        "Our partners` satisfaction is one of the outcomes we aim for. Collaborating closely and transparently and utilizing cutting-edge technologies, we develop solutions according to unique requirements. Through in-depth analysis, we identify risks, areas for improvement, and opportunities for automation, with the goal of enhancing operational efficiency and profitability.",
     },
-    check: "Check out our references in Oil and Gas"
+    check: "Check out our references in Oil and Gas",
   },
   contact: {
     title: "GET IN TOUCH",
@@ -1475,7 +1434,7 @@ manufacturing of aseptic pharmaceutical and biotechnology products. Learn more a
         position: "Position",
         phone: "Phone Number",
         subject: "Subject",
-        message: "Message"
+        message: "Message",
       },
       plac: {
         name: "Please enter your full name",
@@ -1484,15 +1443,15 @@ manufacturing of aseptic pharmaceutical and biotechnology products. Learn more a
         position: "Please enter your position",
         phone: "Please enter your phone number",
         subject: "Please enter your subject",
-        message: "Please enter your message here"
+        message: "Please enter your message here",
       },
       policy: `I agree to the <a href="/privacy-policy">Privacy Policy</a>`,
       send: "Send",
       sending: "Sending...",
       book: "Book a meeting",
       book_text:
-        "Schedule a 30-minute meeting with our team to explore how we can tailor our support to meet the unique needs of your project and work collaboratively to achieve your desired outcomes."
-    }
+        "Schedule a 30-minute meeting with our team to explore how we can tailor our support to meet the unique needs of your project and work collaboratively to achieve your desired outcomes.",
+    },
   },
   references: {
     title: "Our References",
@@ -1501,85 +1460,78 @@ manufacturing of aseptic pharmaceutical and biotechnology products. Learn more a
     pharma: {
       vettre: {
         title: "vetter pharma",
-        text:
-          "Detailed engineering and construction planning of clean mediums for the new production plant."
+        text: "Detailed engineering and construction planning of clean mediums for the new production plant.",
       },
       novartis: {
         title: "novartis",
-        text:
-          "Detailed engineering for the new production plant of innovative therapies."
+        text: "Detailed engineering for the new production plant of innovative therapies.",
       },
       roche: {
         title: "roche diagnostics ",
-        text:
-          "Detailed engineering for the new production plant of medical device."
+        text: "Detailed engineering for the new production plant of medical device.",
       },
       bachem: {
         title: "bachem",
-        text: "Piping and support design for the new production plant."
-      }
+        text: "Piping and support design for the new production plant.",
+      },
     },
     food: {
       dsm: {
         title: "dsm",
-        text:
-          "Pre-planning for the new production plant of cattle feed additive."
+        text: "Pre-planning for the new production plant of cattle feed additive.",
       },
       destilla: {
         title: "destilla",
-        text: "Basic engineering and consulting for a new extraction plant."
+        text: "Basic engineering and consulting for a new extraction plant.",
       },
       primopus: {
         title: "primopus",
-        text: "Detailed engineering for the new production segment."
+        text: "Detailed engineering for the new production segment.",
       },
       jungbunzlauer: {
         title: "jungbunzlauer",
-        text:
-          "Pre-planning and basic engineering of the new production plant for bio products."
+        text: "Pre-planning and basic engineering of the new production plant for bio products.",
       },
       exyte: {
         title: "exyte",
-        text:
-          "Basic engineering of the new production plant for nutrition yeast."
-      }
+        text: "Basic engineering of the new production plant for nutrition yeast.",
+      },
     },
     chemicals: {
       basf: {
         title: "basf",
-        text: "Detailed engineering for the new production plant of vitamin A."
+        text: "Detailed engineering for the new production plant of vitamin A.",
       },
       bayer: {
         title: "bayer",
-        text:
-          "Detailed engineering of the vacuum system in an existing pesticide plant."
+        text: "Detailed engineering of the vacuum system in an existing pesticide plant.",
       },
       vinex: {
         title: "vinex",
-        text: "All engineering phases for the new ethanol production plant."
-      }
+        text: "All engineering phases for the new ethanol production plant.",
+      },
     },
     electronics: {
       title: "tesla",
-      text: "Pre-planning for the new production plant for batteries."
+      text: "Pre-planning for the new production plant for batteries.",
     },
     energy: {
       jaenschwalde: {
         title: "jaenschwalde",
-        text: "Detailed engineering of district heating system."
+        text: "Detailed engineering of district heating system.",
       },
       udarnaya: {
         title: "udarnaya",
-        text: "Detailed engineering for the new steam plant."
+        text: "Detailed engineering for the new steam plant.",
       },
       mvv: {
         title: "mvv",
-        text: "Detailed engineering for the new steam boiler plant."
-      }
+        text: "Detailed engineering for the new steam boiler plant.",
+      },
     },
     omv: {
       title: "omv",
-      text: "Pipe design for the plant revamp."
+      text: "Pipe design for the plant revamp.",
     },
     insights: "our projects insights",
     share: "Share of projects per division",
@@ -1587,8 +1539,7 @@ manufacturing of aseptic pharmaceutical and biotechnology products. Learn more a
     duration: "Average project duration",
     distribution: "Services distribution",
     months: "months",
-    note:
-      "Please note that our portfolio of projects showcases the extensive expertise and experience of our leadership team. While some projects may not have been delivered under the brand name Helmchron, they reflect the collective knowledge and capabilities honed throughout our careers. The reference list aims to present the depth of our expertise and the know-how behind it remains firmly rooted in many years of dedicated experience."
-  }
+    note: "Please note that our portfolio of projects showcases the extensive expertise and experience of our leadership team. While some projects may not have been delivered under the brand name Helmchron, they reflect the collective knowledge and capabilities honed throughout our careers. The reference list aims to present the depth of our expertise and the know-how behind it remains firmly rooted in many years of dedicated experience.",
+  },
 };
 export default enTranslation;

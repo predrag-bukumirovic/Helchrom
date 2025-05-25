@@ -93,6 +93,7 @@
         text-align: start;
         margin-bottom: 20px;
         line-height: 30px;
+        font-size: 38px;
       }
 
       p {
@@ -119,21 +120,6 @@
       }
     }
   }
-}
-.text-stroke {
-  font-size: inherit;
-  font-weight: 900;
-  font-family: Verdana, sans-serif;
-  opacity: 0.5;
-  color: transparent !important;
-  -webkit-text-stroke: 1px var(--dark-blue-color);
-}
-
-.green {
-  -webkit-text-stroke: 1px var(--green-color);
-}
-.orange {
-  -webkit-text-stroke: 1px var(--brend-color);
 }
 
 .reverse {

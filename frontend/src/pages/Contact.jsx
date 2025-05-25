@@ -40,14 +40,14 @@ export default function Contact() {
     new Date("2024-04-19"),
     new Date("2024-04-23"),
     new Date("2024-04-27"),
-    new Date("2024-04-30")
+    new Date("2024-04-30"),
   ]);
 
-  const isDateAvailable = date => {
-    return !busyDates.some(busyDate => isSameDay(busyDate, date));
+  const isDateAvailable = (date) => {
+    return !busyDates.some((busyDate) => isSameDay(busyDate, date));
   };
 
-  const handleDateChange = date => {
+  const handleDateChange = (date) => {
     setSelectedDate(date);
     setDateSelected(true);
   };
@@ -55,7 +55,7 @@ export default function Contact() {
   const [loading, setLoading] = useState(false);
   const [loadingBook, setLoadingBook] = useState(false);
 
-  const submitForm = async e => {
+  const submitForm = async (e) => {
     e.preventDefault();
 
     const emailTemplate = `
@@ -175,14 +175,14 @@ export default function Contact() {
       await fetch("/contact.php", {
         method: "POST",
         headers: {
-          "Content-Type": "application/json"
+          "Content-Type": "application/json",
         },
         body: JSON.stringify({
           name: name,
           email: email,
           subject: subject,
-          message: emailTemplate
-        })
+          message: emailTemplate,
+        }),
       });
 
       setLoading(true);
@@ -197,7 +197,7 @@ export default function Contact() {
     }
   };
 
-  const submitFormBook = async e => {
+  const submitFormBook = async (e) => {
     e.preventDefault();
 
     if (!dateSelected) {
@@ -319,7 +319,7 @@ export default function Contact() {
       await fetch("/contact.php", {
         method: "POST",
         headers: {
-          "Content-Type": "application/json"
+          "Content-Type": "application/json",
         },
         body: JSON.stringify({
           name: nameBook,
@@ -327,8 +327,8 @@ export default function Contact() {
           subject: subjectBook,
           company: companyBook,
           date: selectedDate,
-          message: emailTemplateBook
-        })
+          message: emailTemplateBook,
+        }),
       });
 
       setLoadingBook(true);
@@ -382,9 +382,7 @@ export default function Contact() {
 
       <div className="container-main">
         <center>
-          <h1 className="title">
-            {t("contact.title")}
-          </h1>
+          <h1 className="title">{t("contact.title")}</h1>
           <p dangerouslySetInnerHTML={{ __html: t("contact.sub_text") }} />
         </center>
 
@@ -402,7 +400,7 @@ export default function Contact() {
                   placeholder={t("contact.form.plac.name")}
                   name="name"
                   required
-                  onChange={event => setName(event.target.value)}
+                  onChange={(event) => setName(event.target.value)}
                 />
               </label>
               <label htmlFor="company">
@@ -411,7 +409,7 @@ export default function Contact() {
                   type="text"
                   placeholder={t("contact.form.plac.company")}
                   name="company"
-                  onChange={event => setCompany(event.target.value)}
+                  onChange={(event) => setCompany(event.target.value)}
                 />
               </label>
               <label htmlFor="email">
@@ -421,7 +419,7 @@ export default function Contact() {
                   placeholder={t("contact.form.plac.email")}
                   required
                   name="email"
-                  onChange={event => setEmail(event.target.value)}
+                  onChange={(event) => setEmail(event.target.value)}
                 />
               </label>
               <label htmlFor="position">
@@ -430,7 +428,7 @@ export default function Contact() {
                   type="text"
                   placeholder={t("contact.form.plac.position")}
                   name="position"
-                  onChange={event => setPosition(event.target.value)}
+                  onChange={(event) => setPosition(event.target.value)}
                 />
               </label>
               <label htmlFor="number">
@@ -439,7 +437,7 @@ export default function Contact() {
                   type="text"
                   placeholder={t("contact.form.plac.phone")}
                   name="phone"
-                  onChange={event => setPhone(event.target.value)}
+                  onChange={(event) => setPhone(event.target.value)}
                 />
               </label>
             </div>
@@ -453,7 +451,7 @@ export default function Contact() {
                   placeholder={t("contact.form.plac.subject")}
                   name="subject"
                   required
-                  onChange={event => setSubject(event.target.value)}
+                  onChange={(event) => setSubject(event.target.value)}
                 />
               </label>
               <label htmlFor="message">
@@ -465,7 +463,7 @@ export default function Contact() {
                   rows="10"
                   name="message"
                   required
-                  onChange={event => setMessage(event.target.value)}
+                  onChange={(event) => setMessage(event.target.value)}
                 />
               </label>
 
@@ -482,30 +480,27 @@ export default function Contact() {
                     "The privacy policy has been accepted and is now in effect."
                   }
                   required
-                  onChange={event => setPolicy(event.target.value)}
+                  onChange={(event) => setPolicy(event.target.value)}
                 />
               </label>
 
               <button type="submit" className="btn" disabled={loading}>
                 {loading ? t("contact.form.sending") : t("contact.form.send")}
-                {loading &&
+                {loading && (
                   <div class="lds-ring">
                     <div />
                     <div />
                     <div />
                     <div />
-                  </div>}
+                  </div>
+                )}
               </button>
             </div>
           </form>
 
           <div>
-            <h2 className="title">
-              {t("contact.form.book")}
-            </h2>
-            <p style={{ textAlign: "center" }}>
-              {t("contact.form.book_text")}
-            </p>
+            <h2 className="title">{t("contact.form.book")}</h2>
+            <p style={{ textAlign: "center" }}>{t("contact.form.book_text")}</p>
 
             <form action="" onSubmit={submitFormBook}>
               <div className="book-form">
@@ -518,7 +513,7 @@ export default function Contact() {
                       placeholder={t("contact.form.label.name")}
                       name="name"
                       required
-                      onChange={event => setNameBook(event.target.value)}
+                      onChange={(event) => setNameBook(event.target.value)}
                     />
                   </label>
 
@@ -528,7 +523,7 @@ export default function Contact() {
                       type="text"
                       placeholder={t("contact.form.plac.company")}
                       name="company"
-                      onChange={event => setCompanyBook(event.target.value)}
+                      onChange={(event) => setCompanyBook(event.target.value)}
                     />
                   </label>
 
@@ -540,7 +535,7 @@ export default function Contact() {
                       placeholder={t("contact.form.plac.email")}
                       required
                       name="email"
-                      onChange={event => setEmailBook(event.target.value)}
+                      onChange={(event) => setEmailBook(event.target.value)}
                     />
                   </label>
                 </div>
@@ -550,7 +545,8 @@ export default function Contact() {
                     value={selectedDate}
                     onChange={handleDateChange}
                     tileDisabled={({ date, view }) =>
-                      view === "month" && !isDateAvailable(date)}
+                      view === "month" && !isDateAvailable(date)
+                    }
                   />
                 </div>
               </div>
@@ -568,7 +564,7 @@ export default function Contact() {
                     "The privacy policy has been accepted and is now in effect."
                   }
                   required
-                  onChange={event => setPolicy(event.target.value)}
+                  onChange={(event) => setPolicy(event.target.value)}
                 />
               </label>
 
@@ -576,13 +572,14 @@ export default function Contact() {
                 {loadingBook
                   ? t("contact.form.sending")
                   : t("contact.form.send")}
-                {loadingBook &&
+                {loadingBook && (
                   <div class="lds-ring">
                     <div />
                     <div />
                     <div />
                     <div />
-                  </div>}
+                  </div>
+                )}
               </button>
             </form>
           </div>

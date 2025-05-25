@@ -71,29 +71,29 @@
     color: #fff;
   }
 
- .table-container {
-  width: 100%;
-  overflow-x: auto;
+  .table-container {
+    width: 100%;
+    overflow-x: auto;
 
-  table {
-    width: 900px;
-    margin-top: 50px;
-    table-layout: fixed;
+    table {
+      width: 100%;
+      margin-top: 50px;
+      table-layout: fixed;
 
-    button {
-      font-size: 13px;
-      border: none;
-      background: red;
-      color: #fff;
-      border-radius: 20px;
-      padding: 5px 20px;
-      margin-right: 10px;
-    }
-    .copy {
-      background: gray;
+      button {
+        font-size: 13px;
+        border: none;
+        background: red;
+        color: #fff;
+        border-radius: 20px;
+        padding: 5px 20px;
+        margin-right: 10px;
+      }
+      .copy {
+        background: gray;
+      }
     }
   }
- }
 }
 
 .copy-all {

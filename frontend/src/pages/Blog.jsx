@@ -12,6 +12,7 @@ import Closed from "../assets/images/Blog/ClosedSystems/closed.png";
 import Roda from "../assets/images/Blog/Roda/4.webp";
 import Insulin from "../assets/images/Blog/Insulin/insulinLP.png";
 import CoCreation from "../assets/images/Blog/CoCreation/landing.png";
+import IntegratingAI from "../assets/images/Blog/IntegratingAI/4.webp";
 
 import { useTranslation } from "react-i18next";
 import TextReader from "../components/TextRender";
@@ -21,43 +22,49 @@ export default function Blog() {
 
   const headerText = [t("blog.title"), t("blog.text")];
 
+  const blog8Text = [
+    t("blog.blog8.title"),
+    t("blog.blog8.text"),
+    t("read_more"),
+  ];
+
   const blog7Text = [
     t("blog.blog7.title"),
     t("blog.blog7.text"),
-    t("read_more")
+    t("read_more"),
   ];
 
   const blog6Text = [
     t("blog.blog6.title"),
     t("blog.blog6.text"),
-    t("read_more")
+    t("read_more"),
   ];
 
   const blog5Text = [
     t("blog.blog5.title"),
     t("blog.blog5.text"),
-    t("read_more")
+    t("read_more"),
   ];
 
   const blog4Text = [
     t("blog.blog4.title"),
     t("blog.blog4.text"),
-    t("read_more")
+    t("read_more"),
   ];
   const blog3Text = [
     t("blog.blog3.title"),
     t("blog.blog3.text"),
-    t("read_more")
+    t("read_more"),
   ];
   const blog2Text = [
     t("blog.blog2.title"),
     t("blog.blog2.text"),
-    t("read_more")
+    t("read_more"),
   ];
   const blog1Text = [
     t("blog.blog1.title"),
     t("blog.blog1.text"),
-    t("read_more")
+    t("read_more"),
   ];
 
   return (
@@ -108,10 +115,31 @@ export default function Blog() {
         </h1>
 
         <center>
-          <p>
-            {t("blog.text")}
-          </p>
+          <p>{t("blog.text")}</p>
         </center>
+
+        <div className="news-box padding30">
+          <TextReader texts={blog8Text} />
+          <div>
+            <div>
+              <h2 style={{ textTransform: "uppercase" }}>
+                {t("blog.blog8.title")}
+              </h2>
+              <p dangerouslySetInnerHTML={{ __html: t("blog.blog8.text") }} />
+
+              <a
+                href="/blog/integrating-ai"
+                aria-label="Read more about sustainable fashion"
+              >
+                {t("read_more")}
+              </a>
+            </div>
+            <div>
+              <img src={IntegratingAI} alt="IntegratingAI" loading="lazy" />
+            </div>
+          </div>
+          <div className="line" />
+        </div>
 
         <div className="news-box padding30">
           <TextReader texts={blog7Text} />
@@ -143,9 +171,7 @@ export default function Blog() {
               <h2 style={{ textTransform: "uppercase" }}>
                 {t("blog.blog6.title")}
               </h2>
-              <p>
-                {t("blog.blog6.text")}
-              </p>
+              <p>{t("blog.blog6.text")}</p>
               <a
                 href="/blog/insulin"
                 aria-label="Read more about sustainable fashion"
@@ -167,9 +193,7 @@ export default function Blog() {
               <h2 style={{ textTransform: "uppercase" }}>
                 {t("blog.blog5.title")}
               </h2>
-              <p>
-                {t("blog.blog5.text")}
-              </p>
+              <p>{t("blog.blog5.text")}</p>
               <a
                 href="/blog/closed-systems"
                 aria-label="Read more about sustainable fashion"
@@ -188,12 +212,8 @@ export default function Blog() {
           <TextReader texts={blog4Text} />
           <div>
             <div>
-              <h2>
-                {t("blog.blog4.title")}
-              </h2>
-              <p>
-                {t("blog.blog4.text")}
-              </p>
+              <h2>{t("blog.blog4.title")}</h2>
+              <p>{t("blog.blog4.text")}</p>
               <a
                 href="/blog/roda"
                 aria-label="Read more about sustainable fashion"
@@ -212,12 +232,8 @@ export default function Blog() {
           <TextReader texts={blog3Text} />
           <div>
             <div>
-              <h2>
-                {t("blog.blog3.title")}
-              </h2>
-              <p>
-                {t("blog.blog3.text")}
-              </p>
+              <h2>{t("blog.blog3.title")}</h2>
+              <p>{t("blog.blog3.text")}</p>
               <a
                 href="/blog/sustainability"
                 aria-label="Read more about sustainable fashion"
@@ -240,12 +256,8 @@ export default function Blog() {
           <TextReader texts={blog2Text} />
           <div>
             <div>
-              <h2>
-                {t("blog.blog2.title")}
-              </h2>
-              <p>
-                {t("blog.blog2.text")}
-              </p>
+              <h2>{t("blog.blog2.title")}</h2>
+              <p>{t("blog.blog2.text")}</p>
               <a
                 href="/blog/diversity"
                 aria-label="Read more about sustainable fashion"
@@ -268,12 +280,8 @@ export default function Blog() {
           <TextReader texts={blog1Text} />
           <div>
             <div>
-              <h2>
-                {t("blog.blog1.title")}
-              </h2>
-              <p>
-                {t("blog.blog1.text")}
-              </p>
+              <h2>{t("blog.blog1.title")}</h2>
+              <p>{t("blog.blog1.text")}</p>
               <a
                 href="/blog/volleyball"
                 aria-label="Read more about sustainable fashion"

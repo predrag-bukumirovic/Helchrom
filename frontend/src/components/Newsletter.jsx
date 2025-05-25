@@ -21,10 +21,7 @@ export default function Newsletter() {
 
   return (
     <div className="form-newsletter">
-      <p>
-        Subscribe to our newsletter <br />
-        Get the latest updates, news, and exclusive offers.
-      </p>
+      <p>Stay up to date with expert insights, industry news, and trends</p>
       <ToastContainer />
       <form onSubmit={handleSubmit}>
         <input

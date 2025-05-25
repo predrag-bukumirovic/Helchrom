@@ -11,6 +11,7 @@ import telo2 from "../assets/images/Blog/Insulin/telo2.png";
 import TextRender from "../components/TextRender";
 
 import { useTranslation } from "react-i18next";
+import { Helmet } from "react-helmet";
 
 export default function Volleyball() {
   const { t } = useTranslation();
@@ -22,11 +23,14 @@ export default function Volleyball() {
     t("blog.blog6.content.sub_title3"),
     t("blog.blog6.content.text3"),
     t("blog.blog6.content.sub_title4"),
-    t("blog.blog6.content.text4")
+    t("blog.blog6.content.text4"),
   ];
 
   return (
     <div>
+      <Helmet>
+        <title>Insulin: A Manufacturing Evolution</title>
+      </Helmet>
       {/* Slider start */}
       <div className="slider">
         <CCarousel className="slider-main" controls transition="crossfade">
@@ -56,9 +60,7 @@ export default function Volleyball() {
 
       <div className="container-main padding30">
         <center>
-          <h1 className="title">
-            {t("blog.blog6.content.title")}
-          </h1>
+          <h1 className="title">{t("blog.blog6.content.title")}</h1>
           <TextRender texts={blogSound} />
         </center>
         <div className="post">
@@ -100,7 +102,10 @@ export default function Volleyball() {
         <ul style={{ padding: "0 10px" }}>
           <li>
             Insulin100: The Discovery and Development:{" "}
-            <a href="https://definingmomentscanada.ca/insulin100/timeline/">
+            <a
+              href="https://definingmomentscanada.ca/insulin100/timeline/"
+              target="_blank"
+            >
               https://definingmomentscanada.ca/insulin100/timeline/
             </a>{" "}
             (Last access: 16-Jan-25)
@@ -108,7 +113,10 @@ export default function Volleyball() {
 
           <li>
             The History of a Wonderful Thing We Call Insulin:{" "}
-            <a href="https://diabetes.org/blog/history-wonderful-thing-we-call-insulin">
+            <a
+              href="https://diabetes.org/blog/history-wonderful-thing-we-call-insulin"
+              target="_blank"
+            >
               https://diabetes.org/blog/history-wonderful-thing-we-call-insulin
             </a>{" "}
             (Last access: 18-Jan-25)
@@ -116,7 +124,10 @@ export default function Volleyball() {
 
           <li>
             Insulin Development and Commercialization:{" "}
-            <a href="https://www.acs.org/education/whatischemistry/landmarks/insulin.html">
+            <a
+              href="https://www.acs.org/education/whatischemistry/landmarks/insulin.html"
+              target="_blank"
+            >
               https://www.acs.org/education/whatischemistry/landmarks/insulin.html
             </a>{" "}
             (Last access: 18-Jan-25)
@@ -125,7 +136,10 @@ export default function Volleyball() {
           <li>
             Insulin: evolution of insulin formulations and their application in
             clinical practice over 100 years:{" "}
-            <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9296014/">
+            <a
+              href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9296014/"
+              target="_blank"
+            >
               https://pmc.ncbi.nlm.nih.gov/articles/PMC9296014/
             </a>{" "}
             (Last access: 16-Jan-25)

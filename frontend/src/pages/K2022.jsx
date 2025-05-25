@@ -36,18 +36,16 @@ export default function K2022() {
             </CCarouselItem>
           </CCarousel>
           <div className="box-img">
-            {[mainImg1, mainImg2, mainImg3].map((img, index) =>
+            {[mainImg1, mainImg2, mainImg3].map((img, index) => (
               <div key={index}>
                 <img loading="lazy" src={img} alt="Main" />
               </div>
-            )}
+            ))}
           </div>
         </div>
         <div className="container-main padding30">
           <div className="news-post">
-            <h1 className="title">
-              {t("news.posts.post2.content.title")}
-            </h1>
+            <h1 className="title">{t("news.posts.post2.content.title")}</h1>
             <center>
               {/* <p className="sub">19 - 26 October 2022 I Düsseldorf, Germany</p> */}
               <p style={{ margin: "50px 0" }}>
@@ -61,7 +59,7 @@ export default function K2022() {
               <div className="post-text">
                 <p
                   dangerouslySetInnerHTML={{
-                    __html: t("news.posts.post2.content.text1")
+                    __html: t("news.posts.post2.content.text1"),
                   }}
                 />
               </div>
@@ -72,7 +70,7 @@ export default function K2022() {
             <div>
               <p
                 dangerouslySetInnerHTML={{
-                  __html: t("news.posts.post2.content.text2")
+                  __html: t("news.posts.post2.content.text2"),
                 }}
               />
             </div>
@@ -83,7 +81,7 @@ export default function K2022() {
               <div className="post-text">
                 <div
                   dangerouslySetInnerHTML={{
-                    __html: t("news.posts.post2.content.text3")
+                    __html: t("news.posts.post2.content.text3"),
                   }}
                 />
               </div>
@@ -92,7 +90,7 @@ export default function K2022() {
               <div className="post-text">
                 <div
                   dangerouslySetInnerHTML={{
-                    __html: t("news.posts.post2.content.text4")
+                    __html: t("news.posts.post2.content.text4"),
                   }}
                 />
               </div>
@@ -102,7 +100,7 @@ export default function K2022() {
             </div>
             <p
               dangerouslySetInnerHTML={{
-                __html: t("news.posts.post2.content.text5")
+                __html: t("news.posts.post2.content.text5"),
               }}
             />
           </div>

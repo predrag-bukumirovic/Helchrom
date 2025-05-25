@@ -10,6 +10,7 @@ import telo from "../assets/images/Blog/CoCreation/uztekst.png";
 import TextRender from "../components/TextRender";
 
 import { useTranslation } from "react-i18next";
+import { Helmet } from "react-helmet";
 
 export default function Volleyball() {
   const { t } = useTranslation();
@@ -21,11 +22,14 @@ export default function Volleyball() {
     t("blog.blog7.content.sub_title3"),
     t("blog.blog7.content.text3"),
     t("blog.blog7.content.sub_title4"),
-    t("blog.blog7.content.text4")
+    t("blog.blog7.content.text4"),
   ];
 
   return (
     <div>
+      <Helmet>
+        <title>The Power of Co-Creation</title>
+      </Helmet>
       {/* Slider start */}
       <div className="slider">
         <CCarousel className="slider-main" controls transition="crossfade">
@@ -55,9 +59,7 @@ export default function Volleyball() {
 
       <div className="container-main padding30">
         <center>
-          <h1 className="title">
-            {t("blog.blog7.content.title")}
-          </h1>
+          <h1 className="title">{t("blog.blog7.content.title")}</h1>
           <TextRender texts={blogSound} />
         </center>
         <div className="post">
@@ -83,7 +85,7 @@ export default function Volleyball() {
               </span>
               <p
                 dangerouslySetInnerHTML={{
-                  __html: t("blog.blog7.content.text3")
+                  __html: t("blog.blog7.content.text3"),
                 }}
               />
             </div>
@@ -93,7 +95,7 @@ export default function Volleyball() {
               </span>
               <p
                 dangerouslySetInnerHTML={{
-                  __html: t("blog.blog7.content.text4")
+                  __html: t("blog.blog7.content.text4"),
                 }}
               />
             </div>

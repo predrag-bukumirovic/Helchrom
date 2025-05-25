@@ -33,12 +33,12 @@ export default function OurTeam() {
   const milosText = [
     t("team.team1.name"),
     t("team.team1.position"),
-    t("team.team1.text")
+    t("team.team1.text"),
   ];
   const anjaText = [
     t("team.team2.name"),
     t("team.team2.position"),
-    t("team.team2.text")
+    t("team.team2.text"),
   ];
 
   const ourValuesText = [
@@ -54,14 +54,14 @@ export default function OurTeam() {
     t("team.values_icon.icon4.text"),
     t("team.values_icon.icon5.title"),
     t("team.values_icon.icon5.text"),
-    t("team.text_bottom")
+    t("team.text_bottom"),
   ];
   const transparency = [
     t("team.transparency.title"),
     t("team.transparency.sub_text"),
     t("team.transparency.btn_blue"),
     t("team.transparency.btn_orange"),
-    t("team.transparency.btn_green")
+    t("team.transparency.btn_green"),
   ];
   return (
     <div>
@@ -101,9 +101,7 @@ export default function OurTeam() {
         </h1>
 
         <center>
-          <p data-aos="fade-up">
-            {t("team.sub_text")}
-          </p>
+          <p data-aos="fade-up">{t("team.sub_text")}</p>
           <TextReader texts={valuesSub} />
         </center>
 
@@ -116,12 +114,8 @@ export default function OurTeam() {
               </div>
               <TextReader texts={milosText} />
               <div data-aos="fade-left">
-                <h5 className="name-team">
-                  {t("team.team1.name")}
-                </h5>
-                <h6 className="position-team">
-                  {t("team.team1.position")}
-                </h6>
+                <h5 className="name-team">{t("team.team1.name")}</h5>
+                <h6 className="position-team">{t("team.team1.position")}</h6>
                 <div className="member-links">
                   <a
                     href="https://www.linkedin.com/in/dr-milos-ivosevic-300263166/"
@@ -131,9 +125,7 @@ export default function OurTeam() {
                     <FaLinkedin />
                   </a>
                 </div>
-                <p>
-                  {t("team.team1.text")}
-                </p>
+                <p>{t("team.team1.text")}</p>
               </div>
             </div>
           </div>
@@ -145,12 +137,8 @@ export default function OurTeam() {
               </div>
               <TextReader texts={anjaText} />
               <div data-aos="fade-left">
-                <h5 className="name-team">
-                  {t("team.team2.name")}
-                </h5>
-                <h6 className="position-team">
-                  {t("team.team2.position")}
-                </h6>
+                <h5 className="name-team">{t("team.team2.name")}</h5>
+                <h6 className="position-team">{t("team.team2.position")}</h6>
                 <div className="member-links">
                   <a
                     href="https://www.linkedin.com/in/anja-andjelkovic-866b30182"
@@ -160,9 +148,7 @@ export default function OurTeam() {
                     <FaLinkedin />
                   </a>
                 </div>
-                <p>
-                  {t("team.team2.text")}
-                </p>
+                <p>{t("team.team2.text")}</p>
               </div>
             </div>
           </div>
@@ -198,9 +184,7 @@ export default function OurTeam() {
             {t("team.values_icon.title")}
           </h1>
           <center>
-            <p data-aos="fade-up">
-              {t("team.values_icon.sub_text")}
-            </p>
+            <p data-aos="fade-up">{t("team.values_icon.sub_text")}</p>
             <TextReader texts={ourValuesText} />
           </center>
 
@@ -208,35 +192,23 @@ export default function OurTeam() {
             <div data-aos="zoom-in">
               <img loading="lazy" src={icon1} alt="icon1" />
               <p>
-                <b>
-                  {t("team.values_icon.icon1.title")}
-                </b>
+                <b>{t("team.values_icon.icon1.title")}</b>
               </p>
-              <p>
-                {t("team.values_icon.icon1.text")}
-              </p>
+              <p>{t("team.values_icon.icon1.text")}</p>
             </div>
             <div data-aos="zoom-in">
               <img loading="lazy" src={icon2} alt="icon2" />
               <p>
-                <b>
-                  {t("team.values_icon.icon2.title")}
-                </b>
+                <b>{t("team.values_icon.icon2.title")}</b>
               </p>
-              <p>
-                {t("team.values_icon.icon2.text")}
-              </p>
+              <p>{t("team.values_icon.icon2.text")}</p>
             </div>
             <div data-aos="zoom-in">
               <img loading="lazy" src={icon4} alt="icon4" />
               <p>
-                <b>
-                  {t("team.values_icon.icon3.title")}
-                </b>
+                <b>{t("team.values_icon.icon3.title")}</b>
               </p>
-              <p>
-                {t("team.values_icon.icon3.text")}
-              </p>
+              <p>{t("team.values_icon.icon3.text")}</p>
             </div>
             <div
               data-aos="zoom-in"
@@ -244,32 +216,22 @@ export default function OurTeam() {
             >
               <img loading="lazy" src={icon3} alt="icon3" />
               <p>
-                <b>
-                  {t("team.values_icon.icon4.title")}
-                </b>
+                <b>{t("team.values_icon.icon4.title")}</b>
               </p>
-              <p>
-                {t("team.values_icon.icon4.text")}
-              </p>
+              <p>{t("team.values_icon.icon4.text")}</p>
             </div>
             <div data-aos="zoom-in">
               <img loading="lazy" src={icon5} alt="icon5" />
               <p>
-                <b>
-                  {t("team.values_icon.icon5.title")}
-                </b>
+                <b>{t("team.values_icon.icon5.title")}</b>
               </p>
-              <p>
-                {t("team.values_icon.icon5.text")}
-              </p>
+              <p>{t("team.values_icon.icon5.text")}</p>
             </div>
           </div>
         </div>
 
         <center>
-          <p style={{ marginBottom: 30 }}>
-            {t("team.text_bottom")}
-          </p>
+          <p style={{ marginBottom: 30 }}>{t("team.text_bottom")}</p>
 
           <a className="book-btn" href="/career">
             {t("team.btn_career")}
@@ -286,9 +248,7 @@ export default function OurTeam() {
           </h2>
 
           <center>
-            <p data-aos="fade-up">
-              {t("team.transparency.sub_text")}
-            </p>
+            <p data-aos="fade-up">{t("team.transparency.sub_text")}</p>
             <TextReader texts={transparency} />
           </center>
 

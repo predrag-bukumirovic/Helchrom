@@ -58,18 +58,15 @@ const mainImages = [mainImg, mainImg1, mainImg2];
 const Modal = ({ isOpen, toggleModal, imageSrc }) => {
   const [modalState, setModalState] = useState(isOpen);
 
-  useEffect(
-    () => {
-      setModalState(isOpen);
+  useEffect(() => {
+    setModalState(isOpen);
 
-      if (isOpen) {
-        document.body.style.overflow = "hidden";
-      } else {
-        document.body.style.overflow = "unset";
-      }
-    },
-    [isOpen]
-  );
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+  }, [isOpen]);
 
   const handleClose = () => {
     toggleModal();
@@ -80,7 +77,7 @@ const Modal = ({ isOpen, toggleModal, imageSrc }) => {
       className={`modal ${modalState ? "open" : "closed"}`}
       onClick={handleClose}
     >
-      <div className="modal-content" onClick={e => e.stopPropagation()}>
+      <div className="modal-content" onClick={(e) => e.stopPropagation()}>
         <img loading="lazy" onClick={handleClose} src={imageSrc} alt="Slika" />
       </div>
     </div>
@@ -95,7 +92,7 @@ export default function References() {
     setModalOpen(!modalOpen);
   };
 
-  const handleButtonClick = imageSrc => {
+  const handleButtonClick = (imageSrc) => {
     setCurrentImage(imageSrc);
     toggleModal();
   };
@@ -106,10 +103,10 @@ export default function References() {
     useRef(null),
     useRef(null),
     useRef(null),
-    useRef(null)
+    useRef(null),
   ];
 
-  const handleClick = index => {
+  const handleClick = (index) => {
     sectionRefs[index].current.scrollIntoView({ behavior: "smooth" });
   };
 
@@ -119,7 +116,7 @@ export default function References() {
     <div>
       <div className="slider">
         <CCarousel className="slider-main" controls transition="crossfade">
-          {mainImages.map((image, index) =>
+          {mainImages.map((image, index) => (
             <CCarouselItem key={index}>
               <CImage
                 className="d-block w-100"
@@ -127,14 +124,14 @@ export default function References() {
                 alt={`slide ${index + 1}`}
               />
             </CCarouselItem>
-          )}
+          ))}
         </CCarousel>
         <div className="box-img">
-          {mainImages.map((image, index) =>
+          {mainImages.map((image, index) => (
             <div key={index}>
               <img loading="lazy" src={image} alt="Main" />
             </div>
-          )}
+          ))}
         </div>
       </div>
 
@@ -152,24 +149,12 @@ export default function References() {
 
       <div className="container-main padding30">
         <div className="icon-core references">
-          <div onClick={() => handleClick(0)}>
-            {t("navbar.pharma")}
-          </div>
-          <div onClick={() => handleClick(1)}>
-            {t("navbar.food")}
-          </div>
-          <div onClick={() => handleClick(2)}>
-            {t("navbar.chemicals")}
-          </div>
-          <div onClick={() => handleClick(3)}>
-            {t("navbar.electronics")}
-          </div>
-          <div onClick={() => handleClick(4)}>
-            {t("navbar.energy")}
-          </div>
-          <div onClick={() => handleClick(5)}>
-            {t("navbar.oil")}
-          </div>
+          <div onClick={() => handleClick(0)}>{t("navbar.pharma")}</div>
+          <div onClick={() => handleClick(1)}>{t("navbar.food")}</div>
+          <div onClick={() => handleClick(2)}>{t("navbar.chemicals")}</div>
+          <div onClick={() => handleClick(3)}>{t("navbar.electronics")}</div>
+          <div onClick={() => handleClick(4)}>{t("navbar.energy")}</div>
+          <div onClick={() => handleClick(5)}>{t("navbar.oil")}</div>
         </div>
       </div>
       <SidebarMenuReferences sectionRefs={sectionRefs} />
@@ -190,11 +175,8 @@ export default function References() {
             <div className="text">
               <h3 data-aos="fade-right" className="title">
                 {t("references.pharma.vettre.title")} <br />{" "}
-                <span className="text-stroke">2022</span>
               </h3>
-              <p data-aos="fade-right">
-                {t("references.pharma.vettre.text")}
-              </p>
+              <p data-aos="fade-right">{t("references.pharma.vettre.text")}</p>
 
               <span
                 onClick={() => handleButtonClick(card1)}
@@ -227,11 +209,8 @@ export default function References() {
             <div className="text" data-aos="fade-left">
               <h3 className="title">
                 {t("references.pharma.novartis.title")} <br />
-                <span className="text-stroke">2019</span>
               </h3>
-              <p>
-                {t("references.pharma.novartis.text")}
-              </p>
+              <p>{t("references.pharma.novartis.text")}</p>
               <span
                 onClick={() => handleButtonClick(card2)}
                 style={{ background: "var(--dark-blue-color)" }}
@@ -261,11 +240,8 @@ export default function References() {
             <div className="text" data-aos="fade-right">
               <h3 className="title">
                 {t("references.pharma.roche.title")} <br />
-                <span className="text-stroke">2020</span>
               </h3>
-              <p>
-                {t("references.pharma.roche.text")}
-              </p>
+              <p>{t("references.pharma.roche.text")}</p>
               <span
                 onClick={() => handleButtonClick(card3)}
                 style={{ background: "var(--dark-blue-color)" }}
@@ -297,11 +273,8 @@ export default function References() {
             <div className="text" data-aos="fade-left">
               <h3 className="title">
                 {t("references.pharma.bachem.title")} <br />
-                <span className="text-stroke">2023</span>
               </h3>
-              <p>
-                {t("references.pharma.bachem.text")}
-              </p>
+              <p>{t("references.pharma.bachem.text")}</p>
               <span
                 onClick={() => handleButtonClick(card4)}
                 style={{ background: "var(--dark-blue-color)" }}
@@ -332,12 +305,9 @@ export default function References() {
             <div className="text" data-aos="fade-right">
               <h3 className="title">
                 {t("references.food.dsm.title")} <br />
-                <span className="text-stroke green">2021</span>
               </h3>
 
-              <p>
-                {t("references.food.dsm.text")}
-              </p>
+              <p>{t("references.food.dsm.text")}</p>
 
               <span
                 onClick={() => handleButtonClick(card5)}
@@ -362,13 +332,8 @@ export default function References() {
               </h4>
             </div>
             <div className="text" data-aos="fade-left">
-              <h3 className="title">
-                {t("references.food.destilla.title")}
-                <br /> <span className="text-stroke green">2022</span>
-              </h3>
-              <p>
-                {t("references.food.destilla.text")}
-              </p>
+              <h3 className="title">{t("references.food.destilla.title")}</h3>
+              <p>{t("references.food.destilla.text")}</p>
               <span
                 onClick={() => handleButtonClick(card6)}
                 style={{ background: "var(--green-color)" }}
@@ -397,11 +362,8 @@ export default function References() {
             <div className="text" data-aos="fade-right">
               <h3 className="title">
                 {t("references.food.primopus.title")} <br />
-                <span className="text-stroke green">2021</span>
               </h3>
-              <p>
-                {t("references.food.primopus.text")}
-              </p>
+              <p>{t("references.food.primopus.text")}</p>
               <span
                 onClick={() => handleButtonClick(card7)}
                 style={{ background: "var(--green-color)" }}
@@ -428,11 +390,8 @@ export default function References() {
             <div className="text" data-aos="fade-left">
               <h3 className="title">
                 {t("references.food.jungbunzlauer.title")} <br />
-                <span className="text-stroke green">2022</span>
               </h3>
-              <p>
-                {t("references.food.jungbunzlauer.text")}
-              </p>
+              <p>{t("references.food.jungbunzlauer.text")}</p>
               <span
                 onClick={() => handleButtonClick(card8)}
                 style={{ background: "var(--green-color)" }}
@@ -461,12 +420,9 @@ export default function References() {
             <div className="text" data-aos="fade-right">
               <h3 className="title">
                 {t("references.food.exyte.title")} <br />
-                <span className="text-stroke green">2021</span>
               </h3>
 
-              <p>
-                {t("references.food.exyte.text")}
-              </p>
+              <p>{t("references.food.exyte.text")}</p>
 
               <span
                 onClick={() => handleButtonClick(card9)}
@@ -493,12 +449,9 @@ export default function References() {
             <div className="text" data-aos="fade-left">
               <h3 className="title">
                 {t("references.chemicals.basf.title")} <br />
-                <span className="text-stroke orange">2020</span>
               </h3>
 
-              <p>
-                {t("references.chemicals.basf.text")}
-              </p>
+              <p>{t("references.chemicals.basf.text")}</p>
 
               <span
                 onClick={() => handleButtonClick(card10)}
@@ -528,12 +481,9 @@ export default function References() {
             <div className="text" data-aos="fade-right">
               <h3 className="title">
                 {t("references.chemicals.bayer.title")} <br />
-                <span className="text-stroke orange">2023</span>
               </h3>
 
-              <p>
-                {t("references.chemicals.bayer.text")}
-              </p>
+              <p>{t("references.chemicals.bayer.text")}</p>
 
               <span
                 onClick={() => handleButtonClick(card11)}
@@ -560,12 +510,9 @@ export default function References() {
             <div className="text" data-aos="fade-left">
               <h3 className="title">
                 {t("references.chemicals.vinex.title")} <br />
-                <span className="text-stroke orange">2018</span>
               </h3>
 
-              <p>
-                {t("references.chemicals.vinex.text")}
-              </p>
+              <p>{t("references.chemicals.vinex.text")}</p>
 
               <span
                 onClick={() => handleButtonClick(card12)}
@@ -596,12 +543,9 @@ export default function References() {
             <div className="text" data-aos="fade-right">
               <h3 className="title">
                 {t("references.electronics.title")} <br />
-                <span className="text-stroke blue">2021</span>
               </h3>
 
-              <p>
-                {t("references.electronics.text")}
-              </p>
+              <p>{t("references.electronics.text")}</p>
 
               <span
                 onClick={() => handleButtonClick(card13)}
@@ -629,12 +573,9 @@ export default function References() {
               <h3 className="title">
                 {t("references.energy.jaenschwalde.title")}
                 <br />
-                <span className="text-stroke green">2022</span>
               </h3>
 
-              <p>
-                {t("references.energy.jaenschwalde.text")}
-              </p>
+              <p>{t("references.energy.jaenschwalde.text")}</p>
 
               <span
                 onClick={() => handleButtonClick(card14)}
@@ -664,12 +605,9 @@ export default function References() {
             <div className="text" data-aos="fade-right">
               <h3 className="title">
                 {t("references.energy.udarnaya.title")} <br />
-                <span className="text-stroke green">2017</span>
               </h3>
 
-              <p>
-                {t("references.energy.udarnaya.text")}
-              </p>
+              <p>{t("references.energy.udarnaya.text")}</p>
 
               <span
                 onClick={() => handleButtonClick(card15)}
@@ -696,12 +634,9 @@ export default function References() {
             <div className="text" data-aos="fade-left">
               <h3 className="title">
                 {t("references.energy.mvv.title")} <br />
-                <span className="text-stroke green">2020</span>
               </h3>
 
-              <p>
-                {t("references.energy.mvv.text")}
-              </p>
+              <p>{t("references.energy.mvv.text")}</p>
 
               <span
                 onClick={() => handleButtonClick(card16)}
@@ -732,12 +667,9 @@ export default function References() {
             <div className="text" data-aos="fade-right">
               <h3 className="title">
                 {t("references.omv.title")} <br />
-                <span className="text-stroke orange">2016</span>
               </h3>
 
-              <p>
-                {t("references.omv.text")}
-              </p>
+              <p>{t("references.omv.text")}</p>
 
               <span
                 onClick={() => handleButtonClick(card17)}
@@ -760,9 +692,7 @@ export default function References() {
           {t("references.insights")}
         </h2>
         <center>
-          <p data-aos="fade-up">
-            {t("references.share")}
-          </p>
+          <p data-aos="fade-up">{t("references.share")}</p>
         </center>
 
         <Insights />
@@ -780,9 +710,7 @@ export default function References() {
             />
           </div>
           <div className="months" data-aos="zoom-in">
-            <span>
-              {t("references.duration")}
-            </span>
+            <span>{t("references.duration")}</span>
             <div>
               <p>
                 <b>11</b> <br />
@@ -809,9 +737,7 @@ export default function References() {
           style={{ marginTop: 100 }}
         >
           <center>
-            <p style={{ fontSize: 11 }}>
-              {t("references.note")}
-            </p>
+            <p style={{ fontSize: 11 }}>{t("references.note")}</p>
           </center>
         </div>
       </div>

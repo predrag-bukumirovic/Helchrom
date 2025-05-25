@@ -6,29 +6,29 @@
   --light-green-color: #f8fffd;
   --light-orange-color: #fff2ee;
   --gray-text-color: #000;
-  --font-family: 'Montserrat', sans-serif;
+  --font-family: "Montserrat", sans-serif;
 }
 
 @font-face {
   font-family: "Montserrat";
-  src: url('./assets/font/Montserrat.ttf');
+  src: url("./assets/font/Montserrat.ttf");
   font-display: swap;
 }
 
 @font-face {
   font-family: "Revive80Phatt";
-  src: url('./assets/font/Revive80Phatt.ttf');
+  src: url("./assets/font/Revive80Phatt.ttf");
   font-display: swap;
 }
 
 @font-face {
   font-family: "DancingScript";
-  src: url('./assets/font/DancingScript.ttf');
+  src: url("./assets/font/DancingScript.ttf");
   font-display: swap;
 }
 @font-face {
   font-family: "Calligraphy";
-  src: url('./assets/font/LucidaUnicodeCalligraphy.ttf');
+  src: url("./assets/font/LucidaUnicodeCalligraphy.ttf");
   font-display: swap;
 }
 
@@ -41,11 +41,8 @@ body,
 #root {
   margin: 0;
   padding: 0;
-  position: relative;
   overflow-x: hidden;
-  height: 100%;
   font-family: var(--font-family);
-  // background: #fff;
 }
 
 .App {
@@ -137,7 +134,7 @@ p {
 
 .subtitle {
   font-size: 25px;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 footer {
@@ -294,7 +291,7 @@ footer {
 }
 .services-icon-slider img {
   width: 90px;
-  transition: .5s;
+  transition: 0.5s;
 }
 .services-icon-slider h3 {
   font-weight: bold;
@@ -304,11 +301,6 @@ footer {
 }
 .services-icon-slider p {
   font-size: 13px;
-}
-
-.userway_buttons_wrapper {
-  position: fixed !important;
-  top: 84% !important;
 }
 
 //Form Newletter
@@ -332,7 +324,7 @@ footer {
   input {
     width: 100%;
     padding: 13px;
-    padding-right: 100px;
+    padding-right: 130px;
     border: none;
     border-radius: 30px;
     outline: none;
@@ -346,15 +338,17 @@ footer {
     border: none;
     right: 0;
     height: 100%;
-    font-weight: 600;
+    font-weight: 400;
+    font-size: 16px;
+    width: 120px;
   }
 
   p {
-    font-size: 40px;
+    font-size: 25px;
     color: #fff;
     text-align: center;
     padding: 0 100px;
-    font-weight: 600;
+    font-weight: 400;
   }
 
   @media (max-width: 768px) {
@@ -362,8 +356,44 @@ footer {
       width: 100%;
     }
     p {
-      font-size: 25px;
+      font-size: 18px;
       padding: 0 0px;
     }
+  }
+}
+
+// Integrating Table
+.integratingTable {
+  overflow-x: auto;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 0;
+  margin: 20px 0;
+  width: 100%;
+
+  thead {
+    background-color: #f90;
+    color: white;
+  }
+
+  th,
+  td {
+    padding: 16px;
+    border: 1px solid #fcb448;
+    text-align: left;
+    vertical-align: top;
+    white-space: pre-line;
+  }
+
+  th {
+    font-weight: bold;
+  }
+}
+
+.integratingTable table {
+  @media (max-width: 600px) {
+    overflow-x: scroll;
+    width: 1000px;
   }
 }

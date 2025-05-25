@@ -11,6 +11,7 @@ import OdbojkaSlikaD from "../assets/images/Blog/Odbojkadole.png";
 import TextRender from "../components/TextRender";
 
 import { useTranslation } from "react-i18next";
+import { Helmet } from "react-helmet";
 
 export default function Volleyball() {
   const { t } = useTranslation();
@@ -20,12 +21,15 @@ export default function Volleyball() {
     t("blog.blog1.content.text1"),
     t("blog.blog1.content.text2"),
     t("blog.blog1.content.text3"),
-    t("blog.blog1.content.text4")
+    t("blog.blog1.content.text4"),
   ];
 
   return (
     <div>
       {/* Slider start */}
+      <Helmet>
+        <title>WE SUPPORTED JUNIOR FEMALE VOLLEYBALL TEAM</title>
+      </Helmet>
       <div className="slider">
         <CCarousel className="slider-main" controls transition="crossfade">
           <CCarouselItem>
@@ -54,14 +58,12 @@ export default function Volleyball() {
 
       <div className="container-main padding30">
         <center>
-          <h1 className="title">
-            {t("blog.blog1.content.title")}
-          </h1>
+          <h1 className="title">{t("blog.blog1.content.title")}</h1>
           <TextRender texts={blogSound} />
           <p
             style={{ fontWeight: "bold", fontSize: 18 }}
             dangerouslySetInnerHTML={{
-              __html: t("blog.blog1.content.sub_text")
+              __html: t("blog.blog1.content.sub_text"),
             }}
           />
         </center>

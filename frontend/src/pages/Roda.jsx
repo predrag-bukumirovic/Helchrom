@@ -5,6 +5,7 @@ import mainImg1 from "../assets/images/Blog/Roda/2.webp";
 import mainImg2 from "../assets/images/Blog/Roda/3.webp";
 import TextRender from "../components/TextRender";
 import { useTranslation } from "react-i18next";
+import { Helmet } from "react-helmet";
 
 export default function Roda() {
   const { t } = useTranslation();
@@ -12,11 +13,14 @@ export default function Roda() {
   const blogSound = [
     t("blog.blog4.content.title"),
     t("blog.blog4.content.text"),
-    t("blog.blog4.content.text1")
+    t("blog.blog4.content.text1"),
   ];
 
   return (
     <div>
+      <Helmet>
+        <title>VOLLEYBALL TEAM RODA</title>
+      </Helmet>
       {/* Slider start */}
       <div className="slider">
         <CCarousel className="slider-main" controls transition="crossfade">

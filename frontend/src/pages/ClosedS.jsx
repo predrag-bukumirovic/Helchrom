@@ -14,21 +14,27 @@ import Img2 from "../assets/images/Blog/ClosedSystems/Slika2.png";
 
 import "../assets/scss/news-post.scss";
 import { useTranslation } from "react-i18next";
+import { Helmet } from "react-helmet";
 
 export default function ClosedS() {
   const { t } = useTranslation();
   const blogSound = [
     t("blog.blog5.content.title"),
-    t("blog.blog1.content.tex1"),
-    t("blog.blog1.content.sub_title"),
-    t("blog.blog1.content.tex2"),
-    t("blog.blog1.content.list"),
-    t("blog.blog1.content.sub_title2"),
-    t("blog.blog1.content.text3")
+    t("blog.blog5.content.text1"),
+    t("blog.blog5.content.sub_title"),
+    t("blog.blog5.content.text2"),
+    t("blog.blog5.content.list"),
+    t("blog.blog5.content.sub_title2"),
+    t("blog.blog5.content.text3"),
   ];
 
   return (
     <div>
+      <Helmet>
+        <title>
+          The Role of Closed Systems in Biopharmaceutical Manufacturing
+        </title>
+      </Helmet>
       {/* Slider start */}
       <div className="slider">
         <CCarousel className="slider-main" controls transition="crossfade">
@@ -57,9 +63,7 @@ export default function ClosedS() {
       {/* Slider end */}
 
       <div className="container-main">
-        <h1 className="title">
-          {t("blog.blog5.content.title")}
-        </h1>
+        <h1 className="title">{t("blog.blog5.content.title")}</h1>
         <TextReader texts={blogSound} />
         <p
           dangerouslySetInnerHTML={{ __html: t("blog.blog5.content.text1") }}
@@ -72,13 +76,13 @@ export default function ClosedS() {
             </span>
             <p
               dangerouslySetInnerHTML={{
-                __html: t("blog.blog5.content.text2")
+                __html: t("blog.blog5.content.text2"),
               }}
             />
             <ul>
               <li
                 dangerouslySetInnerHTML={{
-                  __html: t("blog.blog5.content.list")
+                  __html: t("blog.blog5.content.list"),
                 }}
               />
             </ul>
@@ -91,12 +95,12 @@ export default function ClosedS() {
             <span
               style={{ fontWeight: "bold", fontSize: 18 }}
               dangerouslySetInnerHTML={{
-                __html: t("blog.blog5.content.sub_title2")
+                __html: t("blog.blog5.content.sub_title2"),
               }}
             />
             <p
               dangerouslySetInnerHTML={{
-                __html: t("blog.blog5.content.text3")
+                __html: t("blog.blog5.content.text3"),
               }}
             />
           </div>
