@@ -14,7 +14,7 @@ export default function TeamTalk() {
     <div>
       <div className="slider">
         <CCarousel className="slider-main" controls transition="crossfade">
-          {[mainImg, mainImg1, mainImg2].map((img, index) =>
+          {[mainImg, mainImg1, mainImg2].map((img, index) => (
             <CCarouselItem key={index}>
               <CImage
                 className="d-block w-100"
@@ -22,27 +22,25 @@ export default function TeamTalk() {
                 alt={`slide ${index + 1}`}
               />
             </CCarouselItem>
-          )}
+          ))}
         </CCarousel>
 
         <div className="box-img">
-          {[mainImg, mainImg1, mainImg2].map((img, index) =>
+          {[mainImg, mainImg1, mainImg2].map((img, index) => (
             <div key={index}>
               <img style={{ objectFit: "fill" }} src={img} alt="Main" />
             </div>
-          )}
+          ))}
         </div>
       </div>
 
-      <div className="container-main padding30">
-        <h1 className="title">
-          {t("news.posts.post1.content.title")}
-        </h1>
+      <div className="container-sx padding30">
+        <h1 className="title">{t("news.posts.post1.content.title")}</h1>
 
         <p
           style={{ textAlign: "center" }}
           dangerouslySetInnerHTML={{
-            __html: t("news.posts.post1.content.text")
+            __html: t("news.posts.post1.content.text"),
           }}
         />
 

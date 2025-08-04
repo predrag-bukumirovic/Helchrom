@@ -58,7 +58,7 @@ export default function Volleyball() {
       </div>
       {/* Slider end */}
 
-      <div className="container-main padding30">
+      <div className="container-sx padding30">
         <center>
           <h1 className="title">{t("blog.blog6.content.title")}</h1>
           <TextRender texts={blogSound} />
@@ -105,6 +105,7 @@ export default function Volleyball() {
             <a
               href="https://definingmomentscanada.ca/insulin100/timeline/"
               target="_blank"
+              rel="noreferrer"
             >
               https://definingmomentscanada.ca/insulin100/timeline/
             </a>{" "}
@@ -116,6 +117,7 @@ export default function Volleyball() {
             <a
               href="https://diabetes.org/blog/history-wonderful-thing-we-call-insulin"
               target="_blank"
+              rel="noreferrer"
             >
               https://diabetes.org/blog/history-wonderful-thing-we-call-insulin
             </a>{" "}
@@ -127,6 +129,7 @@ export default function Volleyball() {
             <a
               href="https://www.acs.org/education/whatischemistry/landmarks/insulin.html"
               target="_blank"
+              rel="noreferrer"
             >
               https://www.acs.org/education/whatischemistry/landmarks/insulin.html
             </a>{" "}
@@ -139,6 +142,7 @@ export default function Volleyball() {
             <a
               href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9296014/"
               target="_blank"
+              rel="noreferrer"
             >
               https://pmc.ncbi.nlm.nih.gov/articles/PMC9296014/
             </a>{" "}

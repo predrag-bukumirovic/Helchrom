@@ -44,34 +44,35 @@ export default function PrivacyPolicy() {
       </div>
       {/* Slider end */}
 
-      <div className="container-main" style={styles.container}>
+      <div className="container-sx" style={styles.container}>
         <h1 className="title">Privacy policy</h1>
         <p style={styles.updatedDate}>Last Updated: 11-Nov-2024</p>
 
-        <h2 style={styles.heading}>Welcome to Helmchron’s official website.</h2>
+        <h2 className="subtitle">Welcome to Helmchron’s official website.</h2>
         <p style={styles.paragraph}>
           This Privacy Policy outlines how Helmchron collects, uses, and
           discloses personal information from visitors to our website, including
           the types of data we collect, how we protect it, and your rights under
           applicable laws regarding your personal data. We process the personal
-          data you provide through this website and via email. <br /> <br />Personal
-          data refers to any information related to an identifiable individual,
-          including details that can directly or indirectly identify a person,
-          such as their name, location, identification number, or other personal
-          characteristics. <br />
-          <br />Our website is not intended for individuals under the age of 18.
-          We do not knowingly collect personal data from minors. We strongly
-          encourage all minors to seek the consent of their parents or guardians
-          before disclosing any personal information online, including on this
-          website.
+          data you provide through this website and via email. <br /> <br />
+          Personal data refers to any information related to an identifiable
+          individual, including details that can directly or indirectly identify
+          a person, such as their name, location, identification number, or
+          other personal characteristics. <br />
+          <br />
+          Our website is not intended for individuals under the age of 18. We do
+          not knowingly collect personal data from minors. We strongly encourage
+          all minors to seek the consent of their parents or guardians before
+          disclosing any personal information online, including on this website.
         </p>
 
-        <h2 style={styles.heading}>Information We Collect from Users</h2>
+        <h2 className="subtitle">Information We Collect from Users</h2>
         <p style={styles.paragraph}>
           We collect personal information directly from you when you use our
           website, including when you provide us with personal information
-          through a forms on our site. <br />We collect the following categories
-          of personal information about you directly from you:
+          through a forms on our site. <br />
+          We collect the following categories of personal information about you
+          directly from you:
         </p>
         <ul style={styles.list}>
           <li>
@@ -87,9 +88,9 @@ export default function PrivacyPolicy() {
         <p style={styles.paragraph}>
           We automatically collect personal information through cookies when you
           use our site. For more details, please refer to our{" "}
-          <a href="/">Cookie Policy</a>. <br />The following categories of
-          personal information are collected automatically during your use of
-          our site:
+          <a href="/">Cookie Policy</a>. <br />
+          The following categories of personal information are collected
+          automatically during your use of our site:
         </p>
         <ul style={styles.list}>
           <li>
@@ -120,7 +121,7 @@ export default function PrivacyPolicy() {
           identification, health-related data, or other.
         </p>
 
-        <h2 style={styles.heading}>Purpose of Processing Your Personal Data</h2>
+        <h2 className="subtitle">Purpose of Processing Your Personal Data</h2>
         <p style={styles.paragraph}>
           Reasons we process your personal data include:
         </p>
@@ -168,7 +169,7 @@ export default function PrivacyPolicy() {
           </li>
         </ul>
 
-        <h2 style={styles.heading}>Your Rights in Relation to Personal Data</h2>
+        <h2 className="subtitle">Your Rights in Relation to Personal Data</h2>
         <p style={styles.paragraph}>
           We declare that you have certain rights regarding the use and
           processing of your personal data, in accordance with applicable
@@ -201,14 +202,14 @@ export default function PrivacyPolicy() {
           “Contact Us” page of this website.
         </p>
 
-        <h2 style={styles.heading}>Data Retention</h2>
+        <h2 className="subtitle">Data Retention</h2>
         <p style={styles.paragraph}>
           Your personal information will be kept only as long as necessary for
           Helmchron`s business operations and/or legal requests and in line with
           data privacy laws.
         </p>
 
-        <h2 style={styles.heading}>Data Security</h2>
+        <h2 className="subtitle">Data Security</h2>
         <p style={styles.paragraph}>
           To protect your personal data from loss, misuse, disclosure,
           alteration, destruction or unauthorized access, we are taking
@@ -219,7 +220,7 @@ export default function PrivacyPolicy() {
           precaution to protect your personal data you submit to our website.
         </p>
 
-        <h2 style={styles.heading}>Third Party Links</h2>
+        <h2 className="subtitle">Third Party Links</h2>
         <p style={styles.paragraph}>
           Our site may contain links to third-party websites, which operate
           under their own privacy policies, not ours. We do not assume
@@ -228,14 +229,14 @@ export default function PrivacyPolicy() {
           using them.
         </p>
 
-        <h2 style={styles.heading}>Updates to This Privacy Notice</h2>
+        <h2 className="subtitle">Updates to This Privacy Notice</h2>
         <p style={styles.paragraph}>
           We may update this Privacy Policy periodically, and any changes will
           be posted on this page. We recommend reviewing the policy regularly to
           stay informed. This version is current as of the effective date above.
         </p>
 
-        <h2 style={styles.heading}>Contact Details</h2>
+        <h2 className="subtitle">Contact Details</h2>
         <p style={styles.paragraph}>
           The data controller is Helmchron, a legal entity with its registered
           office at Bulevar Arsenija Čarnojevića 133, 11000 Belgrade, Serbia.
@@ -252,21 +253,15 @@ const styles = {
   updatedDate: {
     fontSize: "0.9rem",
     textAlign: "right",
-    marginBottom: "20px"
-  },
-  heading: {
-    fontSize: "20px",
-    fontWeight: "bold",
-    textAlign: "center",
-    margin: "20px 0 10px"
+    marginBottom: "20px",
   },
   paragraph: {
     fontSize: "1rem",
     lineHeight: "1.6",
-    marginBottom: "15px"
+    marginBottom: "15px",
   },
   list: {
     paddingLeft: "20px",
-    marginBottom: "15px"
-  }
+    marginBottom: "15px",
+  },
 };

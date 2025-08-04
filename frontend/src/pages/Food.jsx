@@ -10,6 +10,7 @@ import mainImg3 from "../assets/images/Food/img3.png";
 import Food1 from "../assets/images/Food/Food1.png";
 import Food2 from "../assets/images/Food/Food2.png";
 import { useTranslation } from "react-i18next";
+import { Helmet } from "react-helmet";
 
 const mainImages = [mainIm1, mainImg2, mainImg3];
 
@@ -18,9 +19,12 @@ export default function Food() {
 
   return (
     <div>
+      <Helmet>
+        <title>Food and Bioproducts | Helmchron</title>
+      </Helmet>
       <div className="slider">
         <CCarousel className="slider-main" controls transition="crossfade">
-          {mainImages.map((image, index) =>
+          {mainImages.map((image, index) => (
             <CCarouselItem key={index}>
               <CImage
                 className="d-block w-100"
@@ -28,37 +32,29 @@ export default function Food() {
                 alt={`slide ${index + 1}`}
               />
             </CCarouselItem>
-          )}
+          ))}
         </CCarousel>
         <div className="box-img">
-          {mainImages.map((image, index) =>
+          {mainImages.map((image, index) => (
             <div key={index}>
               <img loading="lazy" src={image} alt="Main" />
             </div>
-          )}
+          ))}
         </div>
       </div>
 
       <div className="container-main padding30">
-        <h1 className="title">
-          {t("food.title")}
-        </h1>
+        <h1 className="title">{t("food.title")}</h1>
         <center>
-          <p>
-            {t("food.sub_text")}
-          </p>
+          <p>{t("food.sub_text")}</p>
         </center>
 
         <div>
           <center style={{ marginTop: 40 }}>
             <span>
-              <b>
-                {t("food.text1.title")}
-              </b>
+              <b>{t("food.text1.title")}</b>
             </span>
-            <p>
-              {t("food.text1.text")}
-            </p>
+            <p>{t("food.text1.text")}</p>
           </center>
 
           <div
@@ -67,9 +63,7 @@ export default function Food() {
           >
             <div data-aos="fade-right">
               <span>
-                <b>
-                  {t("food.text2.title")}
-                </b>
+                <b>{t("food.text2.title")}</b>
               </span>
               <p style={{ marginTop: 15 }}>
                 {t("food.text2.text")}
@@ -84,13 +78,9 @@ export default function Food() {
 
           <center style={{ margin: "20px 0" }} data-aos="fade-up">
             <span>
-              <b>
-                {t("food.text3.title")}
-              </b>
+              <b>{t("food.text3.title")}</b>
             </span>
-            <p>
-              {t("food.text3.text")}
-            </p>
+            <p>{t("food.text3.text")}</p>
           </center>
 
           <div
@@ -100,29 +90,19 @@ export default function Food() {
             <img loading="lazy" data-aos="fade-right" src={Food2} alt="Food2" />
             <div data-aos="fade-left">
               <span>
-                <b>
-                  {t("food.text4.title")}
-                </b>
+                <b>{t("food.text4.title")}</b>
               </span>
-              <p style={{ marginTop: 15 }}>
-                {t("food.text4.text")}
-              </p>
+              <p style={{ marginTop: 15 }}>{t("food.text4.text")}</p>
 
               <span>
-                <b>
-                  {t("food.text4.title1")}
-                </b>
+                <b>{t("food.text4.title1")}</b>
               </span>
-              <p style={{ marginTop: 15 }}>
-                {t("food.text4.text1")}
-              </p>
+              <p style={{ marginTop: 15 }}>{t("food.text4.text1")}</p>
             </div>
           </div>
 
           <center>
-            <p style={{ margin: "10px 0" }}>
-              {t("food.check")}
-            </p>
+            <p style={{ margin: "10px 0" }}>{t("food.check")}</p>
             <br />
             <a
               style={{ background: "var(--dark-blue-color)" }}

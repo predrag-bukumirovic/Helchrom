@@ -43,7 +43,7 @@ export default function K2022() {
             ))}
           </div>
         </div>
-        <div className="container-main padding30">
+        <div className="container-sx padding30">
           <div className="news-post">
             <h1 className="title">{t("news.posts.post2.content.title")}</h1>
             <center>

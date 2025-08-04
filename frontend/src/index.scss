@@ -43,6 +43,7 @@ body,
   padding: 0;
   overflow-x: hidden;
   font-family: var(--font-family);
+  color: #000;
 }
 
 .App {
@@ -79,6 +80,12 @@ p {
   position: relative;
 }
 
+.container-sx {
+  width: 1000px;
+  margin: 0 auto;
+  position: relative;
+}
+
 .slider {
   width: 2000px;
   margin: 0 auto;
@@ -87,7 +94,7 @@ p {
 
 .title {
   text-align: center;
-  font-size: 35px;
+  font-size: 30px;
   font-weight: 700;
   margin: 0 0 30px;
   text-transform: uppercase;
@@ -133,8 +140,8 @@ p {
 }
 
 .subtitle {
-  font-size: 25px;
-  font-weight: 400;
+  font-size: 23px;
+  font-weight: 600;
 }
 
 footer {
@@ -160,6 +167,12 @@ footer {
 @media (max-width: 1600px) {
   .container-main,
   #App {
+    width: 95%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .container-sx {
     width: 95%;
   }
 }

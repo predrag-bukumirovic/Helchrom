@@ -21,7 +21,7 @@ export default function Diversity() {
     t("blog.blog2.content.text1"),
     t("blog.blog2.content.text2"),
     t("blog.blog2.content.text3"),
-    t("blog.blog2.content.references")
+    t("blog.blog2.content.references"),
   ];
 
   return (
@@ -65,11 +65,9 @@ export default function Diversity() {
       </div>
       {/* Slider end */}
 
-      <div className="container-main padding30">
+      <div className="container-sx padding30">
         <center>
-          <h1 className="title">
-            {t("blog.blog2.content.title")}
-          </h1>
+          <h1 className="title">{t("blog.blog2.content.title")}</h1>
           <TextRender texts={blogSound} />
           <p style={{ fontWeight: "bold", fontSize: 18 }}>
             {t("blog.blog2.content.sub_text")}
@@ -80,11 +78,12 @@ export default function Diversity() {
           <div style={{ width: "100%" }}>
             <p
               dangerouslySetInnerHTML={{
-                __html: t("blog.blog2.content.text1")
+                __html: t("blog.blog2.content.text1"),
               }}
             />
           </div>
-          <div style={{ width: "40%" }} className="post-img">
+
+          <div className="post-img">
             <img loading="lazy" src={OdbojkaSlikaG} alt="Odbojka" />
           </div>
         </div>
@@ -94,7 +93,7 @@ export default function Diversity() {
         />
 
         <div className="post">
-          <div style={{ width: "50%" }} className="post-img">
+          <div className="post-img">
             <img loading="lazy" src={OdbojkaSlikaD} alt="Odbojka" />
           </div>
           <div
@@ -106,7 +105,7 @@ export default function Diversity() {
         <div
           style={{ marginTop: 50 }}
           dangerouslySetInnerHTML={{
-            __html: t("blog.blog2.content.references")
+            __html: t("blog.blog2.content.references"),
           }}
         />
       </div>

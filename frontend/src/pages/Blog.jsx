@@ -1,5 +1,4 @@
 import { CCarousel, CCarouselItem, CImage } from "@coreui/react";
-import React from "react";
 import "../assets/scss/news.scss";
 import mainImg from "../assets/images/Blog/Baner1.png";
 import mainImg1 from "../assets/images/Blog/Baner2.png";
@@ -13,6 +12,7 @@ import Roda from "../assets/images/Blog/Roda/4.webp";
 import Insulin from "../assets/images/Blog/Insulin/insulinLP.png";
 import CoCreation from "../assets/images/Blog/CoCreation/landing.png";
 import IntegratingAI from "../assets/images/Blog/IntegratingAI/4.webp";
+import Gmp from "../assets/images/Blog/Gmp/Blog.png";
 
 import { useTranslation } from "react-i18next";
 import TextReader from "../components/TextRender";
@@ -21,6 +21,12 @@ export default function Blog() {
   const { t } = useTranslation();
 
   const headerText = [t("blog.title"), t("blog.text")];
+
+  const blog9Text = [
+    t("blog.blog9.title"),
+    t("blog.blog9.text"),
+    t("read_more"),
+  ];
 
   const blog8Text = [
     t("blog.blog8.title"),
@@ -117,6 +123,29 @@ export default function Blog() {
         <center>
           <p>{t("blog.text")}</p>
         </center>
+
+        <div className="news-box padding30">
+          <TextReader texts={blog9Text} />
+          <div>
+            <div>
+              <h2 style={{ textTransform: "uppercase" }}>
+                {t("blog.blog9.title")}
+              </h2>
+              <p dangerouslySetInnerHTML={{ __html: t("blog.blog9.text") }} />
+
+              <a
+                href="/blog/gmp"
+                aria-label="Read more about sustainable fashion"
+              >
+                {t("read_more")}
+              </a>
+            </div>
+            <div>
+              <img src={Gmp} alt="Gmp" loading="lazy" />
+            </div>
+          </div>
+          <div className="line" />
+        </div>
 
         <div className="news-box padding30">
           <TextReader texts={blog8Text} />

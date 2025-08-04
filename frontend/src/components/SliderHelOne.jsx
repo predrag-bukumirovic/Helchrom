@@ -16,26 +16,32 @@ const Slider = () => {
       title: "HELMCHR<span class='blue'>ONe<span/>",
       content:
         "A service concept that provides dedicated focus to a project by assigning ONE team to ONE client and ONE project only. This approach addresses common issues of prolonged delivery times and budget overruns by ensuring that every aspect of the project is handled with complete attention and accountability. <br/><br/> How does Helmchron ONE drive efficiency and client satisfaction?",
-      link: "/initiatives/helmchrone"
+      link: "/initiatives/helmchrone",
     },
     {
       title: `HELMCHRON <br/> <span class='blue'>N<img src="${navigatorArrow}" alt="navigatorArrow"/>VIGATOR<span/>`,
       content:
         "Designed to provide comprehensive consulting and support throughout the entire plant design lifecycle, Navigator delivers tailored recommendations, streamlines processes, and optimizes resources.  <br/><br/><br/> <br/> Ensure your plant design stays on track with Helmchron Navigator.",
-      link: "/initiatives/navigator"
+      link: "/initiatives/navigator",
+    },
+    {
+      title: "HELMCHRON <span class='blue'>Assure<span/>",
+      content:
+        "A service concept that ensures continued support and accountability beyond commissioning. Developed through continuous reflection on real project challenges and client feedback, this initiative addresses the common gap in post-commissioning support. It ensures that any operational uncertainty is resolved, even long after the formal project handover. <br/><br/> How does Helmchron Assure create long-term value?",
+      link: "initiatives/assure",
     },
     {
       title: "HELMCHRON <span class='blue'>InnoLAB<span/>",
       content:
         "Helmchron InnoLAB is our research initiative focused on advancing and innovating in plant design, and process and chemical engineering. By pushing the boundaries, we aim to create a more innovative and sustainable future for generations to come. <br/><br/><br/> <br/><br/> Explore our pursuit of innovation.",
-      link: "initiatives/innolab"
+      link: "initiatives/innolab",
     },
     {
       title: "HELMCHRON <br/> <span class='blue academy-title'>Academy<span/>",
       content:
         "Helmchron Academy is dedicated to the continuous development of our team through knowledge and experience gained from complex, advanced projects. By emphasizing practical expertise, we ensure leveraging skills, nurturing talent, fostering a culture of ongoing learning. <br/><br/><br/> Explore how we advance expertise.",
-      link: "/initiatives/academy"
-    }
+      link: "/initiatives/academy",
+    },
   ];
 
   // Dupliranje niza stavki radi beskonačnog efekta
@@ -48,7 +54,7 @@ const Slider = () => {
     setIsTransitioning(true);
 
     // Ako smo na poslednjem slajdu u dupliranom nizu, pređi na prvi
-    setCurrentIndex(prevIndex => {
+    setCurrentIndex((prevIndex) => {
       const newIndex = prevIndex + 1;
       // Ako dođemo do kraja originalnog niza, setuj index na 0
       return newIndex >= allItems.length ? 0 : newIndex;
@@ -65,7 +71,7 @@ const Slider = () => {
     setIsTransitioning(true);
 
     // Ako se vraćamo na prvi slajd u dupliranom nizu, pređi na poslednji
-    setCurrentIndex(prevIndex => {
+    setCurrentIndex((prevIndex) => {
       const newIndex = prevIndex - 1;
       // Ako smo na prvom slajdu, setuj index na poslednji
       return newIndex < 0 ? allItems.length - 1 : newIndex;
@@ -76,11 +82,11 @@ const Slider = () => {
     }, 500); // Čekamo da završi trenutna animacija
   };
 
-  const handleTouchStart = e => {
+  const handleTouchStart = (e) => {
     setTouchStartX(e.touches[0].clientX);
   };
 
-  const handleTouchMove = e => {
+  const handleTouchMove = (e) => {
     setTouchEndX(e.touches[0].clientX);
   };
 
@@ -125,24 +131,24 @@ const Slider = () => {
               onTouchEnd={handleTouchEnd}
               className="slider-content slider-content-helone"
             >
-              {allItems.map((item, index) =>
+              {allItems.map((item, index) => (
                 <div
                   key={index}
                   style={{
-                    transform: `translateX(-${currentIndex * 280}px)`,
+                    transform: `translateX(-${currentIndex * 310}px)`,
                     transition: "transform 0.5s ease",
-                    cursor: "pointer"
+                    cursor: "pointer",
                   }}
-                  className={`slider-item ${index === currentIndex
-                    ? "active"
-                    : ""}`}
+                  className={`slider-item ${
+                    index === currentIndex ? "active" : ""
+                  }`}
                   onClick={() => setCurrentIndex(index)}
                 >
                   <h5
                     style={{
                       fontWeight: "900",
                       color: "var(--brend-color)",
-                      marginBottom: "15px"
+                      marginBottom: "15px",
                     }}
                     dangerouslySetInnerHTML={{ __html: item.title }}
                   />
@@ -156,22 +162,22 @@ const Slider = () => {
                     Read More
                   </a>
                 </div>
-              )}
+              ))}
             </div>
             <div className="slider-controls slider-control-helOne">
               <button className="arrow-slider" onClick={prevSlide}>
                 &#10094;
               </button>
               <div className="slider-dots">
-                {items.map((_, index) =>
+                {items.map((_, index) => (
                   <span
                     key={index}
-                    className={`dot ${index === currentIndex % items.length
-                      ? "active"
-                      : ""}`}
+                    className={`dot ${
+                      index === currentIndex % items.length ? "active" : ""
+                    }`}
                     onClick={() => setCurrentIndex(index)}
                   />
-                )}
+                ))}
               </div>
               <button className="arrow-slider" onClick={nextSlide}>
                 &#10095;

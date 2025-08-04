@@ -275,7 +275,7 @@ export default function OurTeam() {
             </div>
             <div data-aos="zoom-in">
               <a
-                href="../Anti-CorruptionPolicy.pdf"
+                href="../Codeofconductprez.pdf"
                 target="_blank"
                 rel="noreferrer"
               >

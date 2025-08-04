@@ -41,11 +41,11 @@ export default function Terms() {
       </div>
       {/* Slider end */}
 
-      <div className="container-main" style={styles.container}>
+      <div className="container-sx" style={styles.container}>
         <h1 className="title">TERMS AND CONDITIONS</h1>
         <p style={styles.updatedDate}>Last Updated: 11-Nov-2024</p>
 
-        <h2 style={styles.heading}>Welcome to Helmchron’s official website.</h2>
+        <h2 className="subtitle">Welcome to Helmchron’s official website.</h2>
         <p style={styles.paragraph}>
           By accessing or using this site, you agree to comply with and be bound
           by these Terms and Conditions, which govern your use of the website
@@ -55,7 +55,7 @@ export default function Terms() {
           from using our website.
         </p>
 
-        <h2 style={styles.heading}>Purpose of the Website</h2>
+        <h2 className="subtitle">Purpose of the Website</h2>
         <p style={styles.paragraph}>
           Helmchron provides this website for informational purposes only, to
           present our company, services, competences, references, and other
@@ -66,7 +66,7 @@ export default function Terms() {
           changes and may not always be comprehensive.
         </p>
 
-        <h2 style={styles.heading}>Intellectual Property</h2>
+        <h2 className="subtitle">Intellectual Property</h2>
         <p style={styles.paragraph}>
           The content on this website, including but not limited to all designs,
           text, images, white papers, press releases, and other materials, is
@@ -80,14 +80,14 @@ export default function Terms() {
           and other relevant legal requirements.
         </p>
 
-        <h2 style={styles.heading}>Trademarks</h2>
+        <h2 className="subtitle">Trademarks</h2>
         <p style={styles.paragraph}>
           The trademarks, logos, images, and service marks of Helmchron
           displayed on this site are owned by Helmchron and may not be used
           without prior permission, and only with appropriate acknowledgment.
         </p>
 
-        <h2 style={styles.heading}>User Privacy, Cookies and Tracking</h2>
+        <h2 className="subtitle">User Privacy, Cookies and Tracking</h2>
         <p style={styles.paragraph}>
           Your use of this website is also governed by our Privacy Policy, which
           explains how we collect, use, and protect your personal information.
@@ -98,7 +98,7 @@ export default function Terms() {
           described in our <a href="/">Cookie Policy</a>.
         </p>
 
-        <h2 style={styles.heading}>
+        <h2 className="subtitle">
           Warranties and Limited Liability Disclaimer
         </h2>
         <p style={styles.paragraph}>
@@ -133,7 +133,7 @@ export default function Terms() {
           costs.
         </p>
 
-        <h2 style={styles.heading}>External Links</h2>
+        <h2 className="subtitle">External Links</h2>
         <p style={styles.paragraph}>
           For your convenience, this website may include links to other sites
           that are not controlled, affiliated, or associated with Helmchron.
@@ -145,7 +145,7 @@ export default function Terms() {
           that site, its provider, or its content.
         </p>
 
-        <h2 style={styles.heading}>Accessibility Features</h2>
+        <h2 className="subtitle">Accessibility Features</h2>
         <p style={styles.paragraph}>
           At Helmchron, we are committed to making our website accessible to all
           users, including those with disabilities. We believe in equal access
@@ -176,7 +176,7 @@ export default function Terms() {
           </li>
         </ul>
 
-        <h2 style={styles.heading}>Feedback</h2>
+        <h2 className="subtitle">Feedback</h2>
         <p style={styles.paragraph}>
           We welcome feedback from all users on their website experience. If you
           encounter any accessibility issues or have suggestions on how we can
@@ -199,21 +199,15 @@ const styles = {
   updatedDate: {
     fontSize: "0.9rem",
     textAlign: "right",
-    marginBottom: "20px"
-  },
-  heading: {
-    fontSize: "20px",
-    fontWeight: "bold",
-    textAlign: "center",
-    margin: "20px 0 10px"
+    marginBottom: "20px",
   },
   paragraph: {
     fontSize: "1rem",
     lineHeight: "1.6",
-    marginBottom: "15px"
+    marginBottom: "15px",
   },
   list: {
     paddingLeft: "20px",
-    marginBottom: "15px"
-  }
+    marginBottom: "15px",
+  },
 };

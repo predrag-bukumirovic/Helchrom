@@ -80,9 +80,9 @@
 
 .initiative-logo {
   display: grid;
-  gap: 50px;
+  gap: 30px;
   align-items: flex-start;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 
   a {
     background: var(--light-blue-color);
@@ -94,14 +94,14 @@
     text-decoration: none;
 
     p {
-      font-size: 16px;
+      font-size: 13px;
       margin-top: 20px;
     }
   }
 
   img {
-    width: 180px;
-    transition: .3s;
+    width: 150px;
+    transition: 0.3s;
 
     &:hover {
       transform: scale(1.05);
@@ -175,13 +175,13 @@
         rgba(9, 9, 227, 0.4),
         rgba(9, 9, 227, 0.4)
       ),
-      url('../images/Division/Pharma.webp');
+      url("../images/Division/Pharma.webp");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 
     &:hover {
-      background-image: url('../images/Division/Pharma.webp');
+      background-image: url("../images/Division/Pharma.webp");
     }
   }
 
@@ -190,13 +190,13 @@
         rgba(9, 9, 227, 0.4),
         rgba(9, 9, 227, 0.4)
       ),
-      url('../images/Division/Food.webp');
+      url("../images/Division/Food.webp");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 
     &:hover {
-      background-image: url('../images/Division/Food.webp');
+      background-image: url("../images/Division/Food.webp");
     }
   }
 
@@ -205,13 +205,13 @@
         rgba(9, 9, 227, 0.4),
         rgba(9, 9, 227, 0.4)
       ),
-      url('../images/Division/Chemicals.webp');
+      url("../images/Division/Chemicals.webp");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 
     &:hover {
-      background-image: url('../images/Division/Chemicals.webp');
+      background-image: url("../images/Division/Chemicals.webp");
     }
   }
 
@@ -220,13 +220,13 @@
         rgba(9, 9, 227, 0.4),
         rgba(9, 9, 227, 0.4)
       ),
-      url('../images/Division/Electronics.webp');
+      url("../images/Division/Electronics.webp");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 
     &:hover {
-      background-image: url('../images/Division/Electronics.webp');
+      background-image: url("../images/Division/Electronics.webp");
     }
   }
 
@@ -235,13 +235,13 @@
         rgba(9, 9, 227, 0.4),
         rgba(9, 9, 227, 0.4)
       ),
-      url('../images/Division/Energy.webp');
+      url("../images/Division/Energy.webp");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 
     &:hover {
-      background-image: url('../images/Division/Energy.webp');
+      background-image: url("../images/Division/Energy.webp");
     }
   }
 
@@ -250,13 +250,13 @@
         rgba(9, 9, 227, 0.4),
         rgba(9, 9, 227, 0.4)
       ),
-      url('../images/Division/Oil.webp');
+      url("../images/Division/Oil.webp");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 
     &:hover {
-      background-image: url('../images/Division/Oil.webp');
+      background-image: url("../images/Division/Oil.webp");
     }
   }
 }

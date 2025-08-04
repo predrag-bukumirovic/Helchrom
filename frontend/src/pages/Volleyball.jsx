@@ -56,7 +56,7 @@ export default function Volleyball() {
       </div>
       {/* Slider end */}
 
-      <div className="container-main padding30">
+      <div className="container-sx padding30">
         <center>
           <h1 className="title">{t("blog.blog1.content.title")}</h1>
           <TextRender texts={blogSound} />
@@ -73,7 +73,7 @@ export default function Volleyball() {
             dangerouslySetInnerHTML={{ __html: t("blog.blog1.content.text1") }}
           />
 
-          <div style={{ width: "60%" }} className="post-img">
+          <div className="post-img" style={{ marginBottom: 50 }}>
             <img loading="lazy" src={OdbojkaSlikaG} alt="Odbojka" />
           </div>
         </div>

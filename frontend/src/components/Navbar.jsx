@@ -36,19 +36,16 @@ export default function Navbar({ className }) {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedLanguage, setSelectedLanguage] = useState("ENGLISH");
 
-  useEffect(
-    () => {
-      const storedLanguage = localStorage.getItem("lng") || "en";
-      setSelectedLanguage(languageMap[storedLanguage] || "ENGLISH");
-    },
-    [languageMap]
-  );
+  useEffect(() => {
+    const storedLanguage = localStorage.getItem("lng") || "en";
+    setSelectedLanguage(languageMap[storedLanguage] || "ENGLISH");
+  }, [languageMap]);
 
   const openModal = () => {
     setIsModalOpen(true);
   };
   const closeModal = () => setIsModalOpen(false);
-  const handleLanguageSelect = language => {
+  const handleLanguageSelect = (language) => {
     localStorage.setItem("lng", language);
     setSelectedLanguage(languageMap[language] || "ENGLISH");
     closeModal();
@@ -62,7 +59,7 @@ export default function Navbar({ className }) {
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
-          width: 2000
+          width: 2000,
         }}
       >
         <div
@@ -125,7 +122,7 @@ export default function Navbar({ className }) {
                         paddingBottom: 0,
                         display: "flex",
                         justifyContent: "space-between",
-                        alignItems: "center"
+                        alignItems: "center",
                       }}
                     >
                       <CustomLink href="/divisions">
@@ -134,18 +131,16 @@ export default function Navbar({ className }) {
                       <MdKeyboardArrowRight />
                     </span>
 
-                    {isSubmenuOpen &&
+                    {isSubmenuOpen && (
                       <div
-                        className={`menu-areas ${downMenuAbout
-                          ? "active"
-                          : "menu-down"}`}
+                        className={`menu-areas ${
+                          downMenuAbout ? "active" : "menu-down"
+                        }`}
                       >
                         <CustomLink href="/pharma">
                           {t("navbar.pharma")}
                         </CustomLink>
-                        <CustomLink href="/food">
-                          {t("navbar.food")}
-                        </CustomLink>
+                        <CustomLink href="/food">{t("navbar.food")}</CustomLink>
                         <CustomLink href="/chemicals">
                           {t("navbar.chemicals")}
                         </CustomLink>
@@ -158,7 +153,8 @@ export default function Navbar({ className }) {
                         <CustomLink href="/oil&gas">
                           {t("navbar.oil")}
                         </CustomLink>
-                      </div>}
+                      </div>
+                    )}
                   </li>
 
                   <CustomLink href="/about-us/our-team">
@@ -202,6 +198,8 @@ export default function Navbar({ className }) {
                     NAVIGATOR
                   </CustomLink>
 
+                  <CustomLink href="/initiatives/assure">ASSURE</CustomLink>
+
                   <CustomLink href="/initiatives/innolab">
                     Inno<b>LAB</b>
                   </CustomLink>
@@ -215,36 +213,28 @@ export default function Navbar({ className }) {
                 </ol>
               </li>
 
-              <CustomLink href="/career">
-                {t("navbar.career")}
-              </CustomLink>
+              <CustomLink href="/career">{t("navbar.career")}</CustomLink>
 
-              <CustomLink href="/news">
-                {t("navbar.news")}
-              </CustomLink>
+              <CustomLink href="/news">{t("navbar.news")}</CustomLink>
 
-              <CustomLink href="/blog">
-                {t("navbar.blog")}
-              </CustomLink>
+              <CustomLink href="/blog">{t("navbar.blog")}</CustomLink>
 
-              <CustomLink href="/contact">
-                {t("navbar.contact")}
-              </CustomLink>
+              <CustomLink href="/contact">{t("navbar.contact")}</CustomLink>
 
               <span
                 style={{
                   cursor: "pointer",
                   padding: "0 20px",
                   color: "#fff",
-                  fontWeight: "bold",
-                  fontSize: "13px",
+                  fontWeight: "500",
+                  fontSize: "14px",
                   width: "40px",
                   height: "40px",
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
                   borderRadius: "50%",
-                  marginLeft: 20
+                  marginLeft: 20,
                 }}
                 onClick={openModal}
               >
@@ -309,7 +299,7 @@ export default function Navbar({ className }) {
               alignItems: "center",
               justifyContent: "center",
               borderRadius: "50%",
-              marginLeft: 20
+              marginLeft: 20,
             }}
             onClick={openModal}
           >

@@ -94,6 +94,10 @@
         margin-bottom: 20px;
         line-height: 30px;
         font-size: 38px;
+
+        @media (max-width: 600px) {
+          font-size: 27px;
+        }
       }
 
       p {
@@ -167,6 +171,7 @@
   display: grid;
   margin-top: 100px;
   gap: 250px;
+  padding: 0 10px;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 
   @media (max-width: 1340px) {

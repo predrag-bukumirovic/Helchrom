@@ -29,7 +29,9 @@ export default function Cookies() {
           sites that are not affiliated with our company. We do not take
           responsibility for the content of any third-party websites, even if we
           share their links.{" "}
-          <a href="/privacy-policy">More about the privacy policy</a>
+          <a target="_blank" rel="noreferrer" href="/privacy-policy">
+            More about the privacy policy
+          </a>
         </p>
 
         <div>

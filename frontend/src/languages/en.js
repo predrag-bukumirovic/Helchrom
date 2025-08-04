@@ -575,8 +575,8 @@ const enTranslation = {
                   enthusiastic future engineers. If you're ready to jumpstart
                   your career and apply your knowledge in a real-world setting,
                   we invite you to share your CV with us at
-                  <a href="mailto:student.practice@helmchron.com">
-                    student.practice@helmchron.com
+                  <a href="mailto:office@helmchron.com">
+                    office@helmchron.com
                   </a>`,
         title2: "For engineers",
         text2: ` Are you a mechanical, process, or thermotechnics engineer
@@ -584,7 +584,7 @@ const enTranslation = {
                   value experience and expertise at all levels. <br /> Whether
                   you're a recent graduate or a seasoned professional, we offer
                   opportunities to apply and develop your skills. Share your CV
-                  at <a href="mailto:jobs@helmchron.com">jobs@helmchron.com</a>
+                  at <a href="mailto:office@helmchron.com">office@helmchron.com</a>
                   and be part of team and projects that make an impact.`,
       },
     },
@@ -597,8 +597,8 @@ const enTranslation = {
       accor: {
         title1: "How can I enroll in the recruitment process?",
         text1: `  To enroll in our recruitment process, simply submit your CV to
-                <a href="mailto:student.practice@helmchron.com">
-                  student.practice@helmchron.com</a> or <a href="mailto:jobs@helmchron.com">jobs@helmchron.com</a>.
+                <a href="mailto:office@helmchron.com">
+                  office@helmchron.com</a>.
                 We welcome applications from candidates with suitable education
                 and qualifications. Our recruitment team carefully reviews all
                 applications, and only shortlisted candidates will be contacted
@@ -818,6 +818,17 @@ const enTranslation = {
     blog8: {
       title: "Integrating AI for Sustainable and Scalable Pharma Operations",
       text: "Integrating AI into pharmaceutical manufacturing has a high impact on overall operations, with use cases including digital batch scheduling, dynamic operator allocation, advanced process control, smart monitoring, predictive maintenance, and more, each enhancing efficiency, quality, and operational agility throughout the pharma lifecycle.",
+    },
+    blog9: {
+      title:
+        "Regulatory Differences in Manufacturing Medicines and Dietary Supplements",
+      text: "Manufacturing medicines and dietary supplements requires facility designs that align with two distinct regulatory frameworks, GMP for pharmaceuticals and food hygiene laws for supplements, each with specific compliance and operational demands. For engineers, understanding and integrating these differences from the earliest planning stages is critical to ensure product integrity.",
+
+      content: {
+        title: "",
+        text1: `For companies involved in plant design or multi-sector manufacturing, aligning design principles with the regulatory expectations is essential from the earliest project stages. Each type of facility must be engineered not only for operational effectiveness but for compliance, inspection readiness, and product integrity and safety.<br/><br/>
+Manufacturing medicinal products and dietary supplements within the European Union is governed by two distinct regulatory frameworks, pharmaceutical GMP (Good Manufacturing Practice) and food hygiene regulations, respectively. While the end goals of both frameworks are aligned, safe, high-quality products for human consumption, the means of achieving them differ significantly.`,
+      },
     },
     blog7: {
       title: "The Power of Co-Creation",

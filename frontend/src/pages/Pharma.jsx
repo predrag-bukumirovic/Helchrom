@@ -2,6 +2,7 @@ import { CCarousel, CCarouselItem, CImage } from "@coreui/react";
 import React from "react";
 import "../assets/scss/electronics.scss";
 import "../assets/scss/home.scss";
+import Helmet from "react-helmet";
 
 import mainIm1 from "../assets/images/Pharma/img1.png";
 import mainImg2 from "../assets/images/Pharma/img2.png";
@@ -18,9 +19,12 @@ export default function Pharma() {
 
   return (
     <div>
+      <Helmet>
+        <title>Life sciences and pharmaceuticals | Helmchron</title>
+      </Helmet>
       <div className="slider">
         <CCarousel className="slider-main" controls transition="crossfade">
-          {mainImages.map((image, index) =>
+          {mainImages.map((image, index) => (
             <CCarouselItem key={index}>
               <CImage
                 className="d-block w-100"
@@ -28,37 +32,29 @@ export default function Pharma() {
                 alt={`slide ${index + 1}`}
               />
             </CCarouselItem>
-          )}
+          ))}
         </CCarousel>
         <div className="box-img">
-          {mainImages.map((image, index) =>
+          {mainImages.map((image, index) => (
             <div key={index}>
               <img loading="lazy" src={image} alt="Main" />
             </div>
-          )}
+          ))}
         </div>
       </div>
 
       <div className="container-main padding30">
-        <h1 className="title">
-          {t("pharma.title")}
-        </h1>
+        <h1 className="title">{t("pharma.title")}</h1>
         <center>
-          <p>
-            {t("pharma.sub_text")}
-          </p>
+          <p>{t("pharma.sub_text")}</p>
         </center>
 
         <center>
           <span>
-            <b>
-              {t("pharma.text1.title")}
-            </b>
+            <b>{t("pharma.text1.title")}</b>
           </span>
 
-          <p style={{ marginTop: 15 }}>
-            {t("pharma.text1.text")}
-          </p>
+          <p style={{ marginTop: 15 }}>{t("pharma.text1.text")}</p>
         </center>
 
         <div>
@@ -74,26 +70,18 @@ export default function Pharma() {
             />
             <div data-aos="fade-left">
               <span>
-                <b>
-                  {t("pharma.text2.title")}
-                </b>
+                <b>{t("pharma.text2.title")}</b>
               </span>
-              <p style={{ marginTop: 15 }}>
-                {t("pharma.text2.text")}
-              </p>
+              <p style={{ marginTop: 15 }}>{t("pharma.text2.text")}</p>
             </div>
           </div>
 
           <center data-aos="fade-up">
             <span>
-              <b>
-                {t("pharma.text3.title")}
-              </b>
+              <b>{t("pharma.text3.title")}</b>
             </span>
 
-            <p style={{ marginTop: 15 }}>
-              {t("pharma.text3.text")}
-            </p>
+            <p style={{ marginTop: 15 }}>{t("pharma.text3.text")}</p>
           </center>
 
           <div
@@ -102,22 +90,14 @@ export default function Pharma() {
           >
             <div data-aos="fade-right">
               <span>
-                <b>
-                  {t("pharma.text4.title")}
-                </b>
+                <b>{t("pharma.text4.title")}</b>
               </span>
-              <p style={{ marginTop: 15 }}>
-                {t("pharma.text4.text")}
-              </p>
+              <p style={{ marginTop: 15 }}>{t("pharma.text4.text")}</p>
 
               <span>
-                <b>
-                  {t("pharma.text4.title1")}
-                </b>
+                <b>{t("pharma.text4.title1")}</b>
               </span>
-              <p style={{ marginTop: 15 }}>
-                {t("pharma.text4.text1")}
-              </p>
+              <p style={{ marginTop: 15 }}>{t("pharma.text4.text1")}</p>
             </div>
             <img
               loading="lazy"
@@ -128,9 +108,7 @@ export default function Pharma() {
           </div>
 
           <center>
-            <p style={{ margin: "10px 0" }}>
-              {t("pharma.check")}
-            </p>
+            <p style={{ margin: "10px 0" }}>{t("pharma.check")}</p>
             <br />
             <a
               style={{ background: "var(--dark-blue-color)" }}

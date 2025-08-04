@@ -57,7 +57,7 @@ export default function Volleyball() {
       </div>
       {/* Slider end */}
 
-      <div className="container-main padding30">
+      <div className="container-sx padding30">
         <center>
           <h1 className="title">{t("blog.blog7.content.title")}</h1>
           <TextRender texts={blogSound} />

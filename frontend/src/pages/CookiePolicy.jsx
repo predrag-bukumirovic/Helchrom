@@ -39,17 +39,17 @@ export default function CookiePolicy() {
         </div>
       </div>
       {/* Slider end */}
-      <div className="container-main" style={styles.container}>
+      <div className="container-sx" style={styles.container}>
         <h1 className="title">Cookie Policy</h1>
         <p style={styles.updatedDate}>Last Updated: 11-Nov-2024</p>
 
-        <h2 style={styles.heading}>Welcome to Helmchron’s official website.</h2>
+        <h2 className="subtitle">Welcome to Helmchron’s official website.</h2>
         <p style={styles.paragraph}>
           At Helmchron, we value your privacy and aim to provide you with a
           transparent understanding of how we use cookies on our website.
         </p>
 
-        <h2 style={styles.heading}>What Are Cookies?</h2>
+        <h2 className="subtitle">What Are Cookies?</h2>
         <p style={styles.paragraph}>
           Cookies are small text files placed on your device to collect standard
           internet log information and visitor behavior information. Cookies
@@ -57,7 +57,7 @@ export default function CookiePolicy() {
           and make our site more user-friendly.
         </p>
 
-        <h2 style={styles.heading}>Types of Cookies We Use</h2>
+        <h2 className="subtitle">Types of Cookies We Use</h2>
         <p style={styles.paragraph}>
           We utilize five (5) types of cookies, as detailed below. Where
           applicable, you have the option to enable or disable each category
@@ -75,16 +75,16 @@ export default function CookiePolicy() {
           These cookies are essential for the operation of our website, enabling
           core functionalities such as page navigation. These cookies do not
           collect personal information and are used solely to ensure the basic
-          functionality of the website <br />List of necessary cookies with
-          purpose and expiration
+          functionality of the website <br />
+          List of necessary cookies with purpose and expiration
         </p>
         <span style={styles.subtitle}>2. Functionality Cookies</span>
         <p style={styles.paragraph}>
           These cookies are essential for the operation of our website, enabling
           core functionalities such as page navigation. These cookies do not
           collect personal information and are used solely to ensure the basic
-          functionality of the website. <br />List of functionality cookies with
-          purpose and expiration
+          functionality of the website. <br />
+          List of functionality cookies with purpose and expiration
         </p>
         <span style={styles.subtitle}>3. Analytics Cookies</span>
         <p style={styles.paragraph}>
@@ -120,7 +120,7 @@ export default function CookiePolicy() {
           cookies.
         </p>
 
-        <h2 style={styles.heading}>Why We Use Cookies</h2>
+        <h2 className="subtitle">Why We Use Cookies</h2>
         <p style={styles.paragraph}>We use cookies to:</p>
 
         <ul style={styles.list}>
@@ -131,7 +131,7 @@ export default function CookiePolicy() {
           <li>Enable the smooth operation of our contact forms</li>
         </ul>
 
-        <h2 style={styles.heading}>Managing Cookies</h2>
+        <h2 className="subtitle">Managing Cookies</h2>
         <p style={styles.paragraph}>
           In compliance with applicable laws, you have the right to choose
           whether or not to accept cookies. However, please note that it is not
@@ -150,14 +150,14 @@ export default function CookiePolicy() {
           <a href="#cookie">Cookie Preference Center</a>
         </center>
 
-        <h2 style={styles.heading}>Cookie Policy Updates</h2>
+        <h2 className="subtitle">Cookie Policy Updates</h2>
         <p style={styles.paragraph}>
           We may update our cookie policy when relevant. Please review this page
           periodically to stay informed of any changes. This policy was last
           updated on 11-Nov-2024.
         </p>
 
-        <h2 style={styles.heading}>Contact Us</h2>
+        <h2 className="subtitle">Contact Us</h2>
         <p style={styles.paragraph}>
           If you have any questions regarding our cookie policy, please contact
           us at office@helmchron.com
@@ -171,24 +171,19 @@ const styles = {
   updatedDate: {
     fontSize: "0.9rem",
     textAlign: "right",
-    marginBottom: "20px"
+    marginBottom: "20px",
   },
-  heading: {
-    fontSize: "20px",
-    fontWeight: "bold",
-    textAlign: "center",
-    margin: "20px 0 10px"
-  },
+
   paragraph: {
     fontSize: "1rem",
     lineHeight: "1.6",
-    marginBottom: "15px"
+    marginBottom: "15px",
   },
   list: {
     paddingLeft: "20px",
-    marginBottom: "15px"
+    marginBottom: "15px",
   },
   subtitle: {
-    fontWeight: "bold"
-  }
+    fontWeight: "bold",
+  },
 };

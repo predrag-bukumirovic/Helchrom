@@ -51,7 +51,7 @@ export default function Sustainability() {
       </div>
       {/* Slider end */}
 
-      <div className="container-main padding30">
+      <div className="container-sx padding30">
         <center>
           <h1
             style={{ textTransform: "inherit" }}

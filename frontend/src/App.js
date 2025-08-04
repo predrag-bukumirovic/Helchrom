@@ -13,6 +13,7 @@ import ClosedS from "./pages/ClosedS";
 import Admin from "./Admin/Admin";
 import AdminLogin from "./Admin/AdminLogin";
 import IntegratingAI from "./pages/IntegratingAI";
+import GMP from "./pages/GMP";
 
 const Blog = lazy(() => import("./pages/Blog"));
 const Volleyball = lazy(() => import("./pages/Volleyball"));
@@ -37,6 +38,7 @@ const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy"));
 const Terms = lazy(() => import("./pages/Terms"));
 const Academy = lazy(() => import("./pages/Academy"));
 const InnoLab = lazy(() => import("./pages/innoLab"));
+const Assure = lazy(() => import("./pages/Assure"));
 const Navigator = lazy(() => import("./pages/Navigator"));
 const One = lazy(() => import("./pages/One"));
 const Divisions = lazy(() => import("./pages/Divisions"));
@@ -100,6 +102,7 @@ function App() {
               <Route path="/blog/insulin" element={<Insulin />} />
               <Route path="/blog/co-creation" element={<CoCreation />} />
               <Route path="/blog/integrating-ai" element={<IntegratingAI />} />
+              <Route path="/blog/gmp" element={<GMP />} />
               <Route path="/about-us/who-are-we" element={<WhoAreWe />} />
               <Route path="/about-us/our-team" element={<OurTeam />} />
 
@@ -120,6 +123,7 @@ function App() {
               <Route path="/our-references" element={<References />} />
               <Route path="/initiatives/academy" element={<Academy />} />
               <Route path="/initiatives/innolab" element={<InnoLab />} />
+              <Route path="/initiatives/assure" element={<Assure />} />
               <Route path="/initiatives/navigator" element={<Navigator />} />
               <Route path="/initiatives/helmchrone" element={<One />} />
               <Route path="/electronics" element={<Electronics />} />

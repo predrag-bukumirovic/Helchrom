@@ -39,7 +39,7 @@ export default function IntegratingAI() {
         </div>
       </div>
 
-      <div className="container-main padding30">
+      <div className="container-sx padding30">
         <div className="news-post">
           <h1 className="title">{titleBlog}</h1>
         </div>
@@ -94,13 +94,14 @@ export default function IntegratingAI() {
           Benefits of AI Above and Beyond the Bottom Line
         </h2>
         <p>
-          According to McKinsey, if every company in the pharmaceutical industry
-          operated as efficiently as the top 25% of performers, the whole sector
-          could save or generate an additional $30 to $40 billion each year. And
-          this improvement could happen without the need to build any new
-          facilities or invest in more physical infrastructure. In other words,
-          smarter operations, enabled by AI and digitalization, could unlock
-          significant value before any new construction begins.
+          According to McKinsey & Company, if every company in the
+          pharmaceutical industry operated as efficiently as the top 25% of
+          performers, the whole sector could save or generate an additional $30
+          to $40 billion each year. And this improvement could happen without
+          the need to build any new facilities or invest in more physical
+          infrastructure. In other words, smarter operations, enabled by AI and
+          digitalization, could unlock significant value before any new
+          construction begins.
         </p>
 
         <p>Further benefits of AI and digitalization implementation include:</p>
@@ -128,11 +129,12 @@ export default function IntegratingAI() {
         <h2 className="subtitle">Helmchron’s Perspective</h2>
         <p>
           At Helmchron, we specialize in plant design engineering and project
-          execution, with best-in-class expertise, particularly in aseptic
-          pharmaceutical manufacturing. Our outcomes combine practical knowledge
-          with extensive experience gained from international projects. We
-          integrate data-driven practices to ensure data is seamlessly embedded
-          into facility design, enabling faster technology transfer, smoother
+          execution, with best-in-class expertise—particularly in aseptic
+          pharmaceutical manufacturing, which represents our largest area of
+          work. Our outcomes combine practical knowledge with extensive
+          experience gained from international projects. We integrate
+          data-driven practices to ensure data is seamlessly embedded into
+          facility design, enabling faster technology transfer, smoother
           scale-up, and reliable performance. Additionally, we provide
           guarantees on all work delivered by our team that extend beyond
           project completion.
@@ -151,6 +153,7 @@ export default function IntegratingAI() {
             <a
               href="https://www.mckinsey.com/capabilities/operations/our-insights/human-machine-harmonization-to-upgrade-biopharma-production"
               target="_blank"
+              rel="noreferrer"
             >
               Link
             </a>{" "}
@@ -161,7 +164,11 @@ export default function IntegratingAI() {
             Request for Feedback: Using Artificial Intelligence & Machine
             Learning in the Development of Drug & Biological Products. February
             2025. Available at:{" "}
-            <a href="https://www.fda.gov/media/167973/download" target="_blank">
+            <a
+              href="https://www.fda.gov/media/167973/download"
+              target="_blank"
+              rel="noreferrer"
+            >
               Link
             </a>{" "}
           </li>
@@ -169,7 +176,11 @@ export default function IntegratingAI() {
           <li>
             U.S. Food and Drug Administration (FDA). Discussion Paper:
             Artificial Intelligence in Drug Manufacturing. 2023. Available at:{" "}
-            <a href="https://www.fda.gov/media/165743/download" target="_blank">
+            <a
+              href="https://www.fda.gov/media/165743/download"
+              target="_blank"
+              rel="noreferrer"
+            >
               Link
             </a>{" "}
           </li>

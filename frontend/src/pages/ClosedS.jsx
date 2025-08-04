@@ -62,7 +62,7 @@ export default function ClosedS() {
       </div>
       {/* Slider end */}
 
-      <div className="container-main">
+      <div className="container-sx">
         <h1 className="title">{t("blog.blog5.content.title")}</h1>
         <TextReader texts={blogSound} />
         <p
@@ -90,7 +90,7 @@ export default function ClosedS() {
           <img src={Img1} alt="Blog 5" />
         </div>
 
-        <div className="row-blog">
+        <div className="row-blog" style={{ flexDirection: "column" }}>
           <div>
             <span
               style={{ fontWeight: "bold", fontSize: 18 }}
